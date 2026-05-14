@@ -1,0 +1,27 @@
+[
+  {
+    "id": "case-001",
+    "current_memo": "완벽하게 준비하려다가 시작을 계속 미루고 있다. 일단 초안부터 만들어야 할 것 같다.",
+    "expected_ids": ["memo-001", "memo-002", "memo-008", "memo-014"]
+  },
+  {
+    "id": "case-002",
+    "current_memo": "회의랑 알림에 계속 끌려다녀서 중요한 작업을 깊게 못 했다.",
+    "expected_ids": ["memo-004", "memo-005", "memo-011"]
+  },
+  {
+    "id": "case-003",
+    "current_memo": "이 앱은 감정 일기만이 아니라 아이디어, 계획, 책 문장까지 다 연결해줘야 한다.",
+    "expected_ids": ["memo-003", "memo-010", "memo-015", "memo-017"]
+  },
+  {
+    "id": "case-004",
+    "current_memo": "해야 할 일이 한꺼번에 떠올라서 막막하다. 먼저 하나만 정해야 움직일 수 있을 것 같다.",
+    "expected_ids": ["memo-011", "memo-012", "memo-008"]
+  },
+  {
+    "id": "case-005",
+    "current_memo": "잠을 못 자서 머리가 무겁고 작은 일에도 집중이 잘 안 된다.",
+    "expected_ids": ["memo-006"]
+  }
+]
