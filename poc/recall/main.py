@@ -7,12 +7,13 @@ import urllib.request
 from pathlib import Path
 
 
-MODEL = "nomic-embed-text"
+DEFAULT_MODEL = "nomic-embed-text"
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
 DEFAULT_TOP_K = 10
 DATA_PATH = Path(__file__).parent / "eval" / "past_memos.json"
 EVAL_PATH = Path(__file__).parent / "eval" / "eval_cases.json"
+EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
 
 
 def load_past_memos(path: Path) -> list[dict]:
@@ -56,34 +57,43 @@ def post_json(url: str, payload: dict) -> dict:
         return json.loads(response.read().decode("utf-8"))
 
 
-def embed_text(text: str) -> list[float]:
+def embed_text(text: str, model: str) -> list[float]:
+    cache_key = (model, text)
+    cached = EMBED_CACHE.get(cache_key)
+    if cached is not None:
+        return cached
+
     try:
-        payload = post_json(OLLAMA_EMBED_URL, {"model": MODEL, "input": text})
-        return payload["embeddings"][0]
+        payload = post_json(OLLAMA_EMBED_URL, {"model": model, "input": text})
+        embedding = payload["embeddings"][0]
+        EMBED_CACHE[cache_key] = embedding
+        return embedding
     except urllib.error.HTTPError as error:
         if error.code != 404:
             raise RuntimeError(
                 "Ollama embedding request failed. "
-                "Run `ollama serve` and `ollama pull nomic-embed-text` first."
+                f"Run `ollama serve` and `ollama pull {model}` first."
             ) from error
     except urllib.error.URLError as error:
         raise RuntimeError(
             "Ollama embedding request failed. "
-            "Run `ollama serve` and `ollama pull nomic-embed-text` first."
+            f"Run `ollama serve` and `ollama pull {model}` first."
         ) from error
 
     try:
         payload = post_json(
             OLLAMA_LEGACY_EMBEDDINGS_URL,
-            {"model": MODEL, "prompt": text},
+            {"model": model, "prompt": text},
         )
     except urllib.error.URLError as error:
         raise RuntimeError(
             "Ollama embedding request failed. "
-            "Run `ollama serve` and `ollama pull nomic-embed-text` first."
+            f"Run `ollama serve` and `ollama pull {model}` first."
         ) from error
 
-    return payload["embedding"]
+    embedding = payload["embedding"]
+    EMBED_CACHE[cache_key] = embedding
+    return embedding
 
 
 def cosine_similarity(left: list[float], right: list[float]) -> float:
@@ -97,12 +107,24 @@ def cosine_similarity(left: list[float], right: list[float]) -> float:
     return dot / (left_norm * right_norm)
 
 
-def find_similar_memos(current_memo: str, past_memos: list[dict], top_k: int) -> list[dict]:
-    current_embedding = embed_text(current_memo)
+def build_past_memo_index(past_memos: list[dict], model: str) -> list[dict]:
+    indexed_memos = []
+
+    for memo in past_memos:
+        indexed_memos.append({**memo, "embedding": embed_text(memo["text"], model)})
+
+    return indexed_memos
+
+
+def find_similar_memos(current_memo: str, past_memos: list[dict], top_k: int, model: str) -> list[dict]:
+    current_embedding = embed_text(current_memo, model)
     results = []
 
     for memo in past_memos:
-        past_embedding = embed_text(memo["text"])
+        past_embedding = memo.get("embedding")
+        if past_embedding is None:
+            past_embedding = embed_text(memo["text"], model)
+
         score = cosine_similarity(current_embedding, past_embedding)
         results.append({**memo, "score": score})
 
@@ -110,12 +132,13 @@ def find_similar_memos(current_memo: str, past_memos: list[dict], top_k: int) ->
 
 
 def print_results(
+    model: str,
     current_memo: str,
     results: list[dict],
     expected_ids: set[str] | None = None,
 ) -> None:
     print("\n=== Recall Retrieval POC ===")
-    print(f"Embedding model: {MODEL}")
+    print(f"Embedding model: {model}")
     print("\n[Current memo]")
     print(current_memo)
     if expected_ids is not None:
@@ -146,26 +169,45 @@ def print_eval_summary(case: dict, results: list[dict], top_k: int) -> None:
     print(f"missed ids: {', '.join(sorted(missed)) if missed else '-'}")
 
 
-def run_eval(args: argparse.Namespace) -> None:
-    past_memos = load_past_memos(args.data)
-    cases = load_eval_cases(args.eval_data)
-
+def evaluate_cases(
+    cases: list[dict],
+    past_memos: list[dict],
+    top_k: int,
+    model: str,
+    print_details: bool,
+) -> tuple[int, int]:
     total_hits = 0
     total_expected = 0
 
     for case in cases:
         expected_ids = set(case["expected_ids"])
-        results = find_similar_memos(case["current_memo"], past_memos, args.top_k)
+        results = find_similar_memos(case["current_memo"], past_memos, top_k, model)
         result_ids = {memo["id"] for memo in results}
         hits = expected_ids & result_ids
 
         total_hits += len(hits)
         total_expected += len(expected_ids)
 
-        print_results(case["current_memo"], results, expected_ids)
-        print_eval_summary(case, results, args.top_k)
+        if print_details:
+            print_results(model, case["current_memo"], results, expected_ids)
+            print_eval_summary(case, results, top_k)
+
+    return total_hits, total_expected
+
+
+def run_eval(args: argparse.Namespace) -> None:
+    past_memos = build_past_memo_index(load_past_memos(args.data), args.model)
+    cases = load_eval_cases(args.eval_data)
+    total_hits, total_expected = evaluate_cases(
+        cases,
+        past_memos,
+        args.top_k,
+        args.model,
+        not args.summary_only,
+    )
 
     print("\n=== Overall Eval Summary ===")
+    print(f"model: {args.model}")
     print(f"cases: {len(cases)}")
     print(f"total hits@{args.top_k}: {total_hits}/{total_expected}")
 
@@ -187,9 +229,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--memo", help="current memo text")
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K, help="number of results")
     parser.add_argument(
+        "--model",
+        default=DEFAULT_MODEL,
+        help="Ollama embedding model to use",
+    )
+    parser.add_argument(
         "--eval",
         action="store_true",
         help="run fixture eval cases instead of a single memo search",
+    )
+    parser.add_argument(
+        "--summary-only",
+        action="store_true",
+        help="print only overall eval summary",
     )
     parser.add_argument(
         "--data",
@@ -218,8 +270,9 @@ def main() -> None:
         raise SystemExit("현재 메모가 비어 있습니다.")
 
     past_memos = load_past_memos(args.data)
-    results = find_similar_memos(current_memo, past_memos, args.top_k)
-    print_results(current_memo, results)
+    indexed_past_memos = build_past_memo_index(past_memos, args.model)
+    results = find_similar_memos(current_memo, indexed_past_memos, args.top_k, args.model)
+    print_results(args.model, current_memo, results)
 
 
 if __name__ == "__main__":
