@@ -11,8 +11,8 @@ MODEL = "nomic-embed-text"
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
 DEFAULT_TOP_K = 10
-DATA_PATH = Path(__file__).parent / "data" / "past_memos.json"
-EVAL_PATH = Path(__file__).parent / "data" / "eval_cases.json"
+DATA_PATH = Path(__file__).parent / "eval" / "past_memos.json"
+EVAL_PATH = Path(__file__).parent / "eval" / "eval_cases.json"
 
 
 def load_past_memos(path: Path) -> list[dict]:

@@ -1,0 +1,109 @@
+[
+  {
+    "id": "case-001",
+    "current_memo": "완벽하게 하려다가 또 시작을 미루는 중이다. 일단 거칠게라도 초안부터 만들어야 할 듯.",
+    "expected_ids": [
+      "memo-006",
+      "memo-022",
+      "memo-013"
+    ]
+  },
+  {
+    "id": "case-002",
+    "current_memo": "하루 종일 대응은 많이 했는데 정작 중요한 작업은 깊게 못 들어갔다. 일정이 자꾸 흐름을 끊는다.",
+    "expected_ids": [
+      "memo-001",
+      "memo-008",
+      "memo-029"
+    ]
+  },
+  {
+    "id": "case-003",
+    "current_memo": "이 앱이 감정 기록만 다루는 것처럼 보이면 안 된다. 계획이나 아이디어, 회피 흔적도 같이 다뤄야 한다.",
+    "expected_ids": [
+      "memo-021",
+      "memo-017",
+      "memo-005"
+    ]
+  },
+  {
+    "id": "case-004",
+    "current_memo": "캘린더에 적어둔 일정과 실제 남긴 메모를 같이 보면 그날의 패턴이 더 잘 보일 것 같다.",
+    "expected_ids": [
+      "memo-002",
+      "memo-015",
+      "memo-023"
+    ]
+  },
+  {
+    "id": "case-005",
+    "current_memo": "계획을 세운다고 적어놓고 사실은 어려운 시작을 피하고 있는 것 같다.",
+    "expected_ids": [
+      "memo-006",
+      "memo-022",
+      "memo-030"
+    ]
+  },
+  {
+    "id": "case-006",
+    "current_memo": "쉬지도 못했고 일도 제대로 안 됐다. 그냥 화면만 보다가 시간이 다 간 느낌.",
+    "expected_ids": [
+      "memo-012",
+      "memo-024",
+      "memo-027"
+    ]
+  },
+  {
+    "id": "case-007",
+    "current_memo": "별거 아닌 답장 하나가 계속 밀리니까 마음이 더 무거워진다.",
+    "expected_ids": [
+      "memo-016",
+      "memo-004"
+    ]
+  },
+  {
+    "id": "case-008",
+    "current_memo": "평가 데이터 문장이 너무 깔끔하면 실제 메모 검색을 보는 맛이 안 난다. 좀 덜 정리된 톤이 필요하다.",
+    "expected_ids": [
+      "memo-025",
+      "memo-026",
+      "memo-013"
+    ]
+  },
+  {
+    "id": "case-009",
+    "current_memo": "급한 일, 중요한 일, 남 신경 쓰이는 일이 한꺼번에 겹치면 뭘 먼저 해야 할지 흐려진다.",
+    "expected_ids": [
+      "memo-018",
+      "memo-029",
+      "memo-001"
+    ]
+  },
+  {
+    "id": "case-010",
+    "current_memo": "자기이해는 내 기분 이름 붙이기보다 자꾸 반복되는 판단 착오를 보는 일에 가까운 것 같다.",
+    "expected_ids": [
+      "memo-019",
+      "memo-028",
+      "memo-003"
+    ]
+  },
+  {
+    "id": "case-011",
+    "current_memo": "개인 일정 때문에 하루 루틴이 깨진 날도 나중에 보면 꽤 중요한 단서가 될 수 있겠다.",
+    "expected_ids": [
+      "memo-011",
+      "memo-015",
+      "memo-023"
+    ]
+  },
+  {
+    "id": "case-012",
+    "current_memo": "바쁜 척하면서 안전한 일만 골라 한 것 같다. 진짜 어려운 결정은 계속 뒤로 밀었다.",
+    "expected_ids": [
+      "memo-009",
+      "memo-022",
+      "memo-029"
+    ]
+  }
+]

@@ -92,8 +92,8 @@ python3 main.py --eval --top-k 10
 ```
 
 데이터:
-- 테스트용 과거 메모: `data/past_memos.json`
-- 평가 케이스: `data/eval_cases.json`
+- 테스트용 과거 메모: `eval/past_memos.json`
+- 평가 케이스: `eval/eval_cases.json`
 
 평가 케이스의 `expected_ids`는 하나의 정답이 아니라,
 top-k 안에 들어오면 좋은 관련 후보 메모 목록이다.
