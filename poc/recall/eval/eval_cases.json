@@ -105,5 +105,802 @@
       "memo-022",
       "memo-029"
     ]
+  },
+  {
+    "id": "case-013",
+    "current_memo": "중요한 일을 앞두면 꼭 정리나 분류 같은 만만한 일부터 한다. 성실하게 일하는 척하면서 피하는 것 같다.",
+    "expected_ids": [
+      "memo-035",
+      "memo-022",
+      "memo-030"
+    ]
+  },
+  {
+    "id": "case-014",
+    "current_memo": "일정 하나만 들어와도 하루 흐름이 끊긴다. 이런 생활 일정 변화도 나중에 보면 꽤 중요한 단서 같다.",
+    "expected_ids": [
+      "memo-038",
+      "memo-011",
+      "memo-023"
+    ]
+  },
+  {
+    "id": "case-015",
+    "current_memo": "회의 전 기대와 끝난 뒤 메모를 같이 보면 내 패턴이 더 잘 보일 것 같다. 일정 자체가 회고 트리거가 되면 좋겠다.",
+    "expected_ids": [
+      "memo-039",
+      "memo-002",
+      "memo-015",
+      "memo-023"
+    ]
+  },
+  {
+    "id": "case-016",
+    "current_memo": "쉬는 날에도 자꾸 뒤처질까봐 불안해서 제대로 못 쉰다.",
+    "expected_ids": [
+      "memo-040",
+      "memo-027",
+      "memo-024"
+    ]
+  },
+  {
+    "id": "case-017",
+    "current_memo": "이 앱은 감정만 모아서는 안 되고, 반복되는 결정 실수나 생활 패턴까지 같이 보여줘야 할 것 같다.",
+    "expected_ids": [
+      "memo-041",
+      "memo-017",
+      "memo-021",
+      "memo-032"
+    ]
+  },
+  {
+    "id": "case-018",
+    "current_memo": "그럴듯한 이유를 대고 있지만 사실은 내가 나를 속이고 있는 느낌이다. 준비라고 쓰지만 회피에 가까운 것 같다.",
+    "expected_ids": [
+      "memo-036",
+      "memo-009",
+      "memo-006",
+      "memo-035"
+    ]
+  },
+  {
+    "id": "case-019",
+    "current_memo": "급한 일, 돈 걱정, 생활 일까지 한꺼번에 겹치면 우선순위가 안 잡히고 멍해진다.",
+    "expected_ids": [
+      "memo-037",
+      "memo-018",
+      "memo-029",
+      "memo-043"
+    ]
+  },
+  {
+    "id": "case-020",
+    "current_memo": "반품이나 답장 같은 작은 생활 일이 밀릴수록 별거 아닌데도 나 자신을 더 초라하게 느끼게 된다.",
+    "expected_ids": [
+      "memo-042",
+      "memo-016",
+      "memo-033"
+    ]
+  },
+  {
+    "id": "case-021",
+    "current_memo": "사람들하고 계속 얘기하긴 했는데 정작 내가 진짜 생각한 건 남기지 못했다. 겉으로 보인 나랑 실제 속이 좀 다르다.",
+    "expected_ids": [
+      "memo-044",
+      "memo-010",
+      "memo-030"
+    ]
+  },
+  {
+    "id": "case-022",
+    "current_memo": "중요한 일 앞에서 자꾸 분류나 정리 같은 만만한 일로 옆길 새는 느낌이다. 바쁜데 진전이 없다.",
+    "expected_ids": [
+      "memo-045",
+      "memo-066",
+      "memo-091",
+      "memo-105"
+    ]
+  },
+  {
+    "id": "case-023",
+    "current_memo": "일정 하나만 끼어도 하루 흐름이 끊긴다. 이런 일정 변화도 회고에선 중요한 단서 같다.",
+    "expected_ids": [
+      "memo-052",
+      "memo-110",
+      "memo-172",
+      "memo-082"
+    ]
+  },
+  {
+    "id": "case-024",
+    "current_memo": "쉬어도 쉬는 느낌이 안 든다. 쉬면 뒤처질 것 같아서 몸을 놔주지 못한다.",
+    "expected_ids": [
+      "memo-056",
+      "memo-160",
+      "memo-108"
+    ]
+  },
+  {
+    "id": "case-025",
+    "current_memo": "반품, 답장, 공과금 같은 생활 일이 쌓일수록 별일 아닌데도 나를 더 초라하게 만든다.",
+    "expected_ids": [
+      "memo-047",
+      "memo-095",
+      "memo-143",
+      "memo-182"
+    ]
+  },
+  {
+    "id": "case-026",
+    "current_memo": "돈 걱정이 올라오는 날은 작은 선택도 다 무겁고 우선순위가 잘 안 잡힌다.",
+    "expected_ids": [
+      "memo-054",
+      "memo-158",
+      "memo-106"
+    ]
+  },
+  {
+    "id": "case-027",
+    "current_memo": "이 앱은 감정만 모으면 안 되고, 반복되는 행동 패턴이나 결정 실수도 같이 보여줘야 할 것 같다.",
+    "expected_ids": [
+      "memo-046",
+      "memo-126"
+    ]
+  },
+  {
+    "id": "case-028",
+    "current_memo": "오늘 읽은 문장이 이상하게 오래 남는다. 내가 왜 같은 자리를 맴도는지 조금 찔리게 한다.",
+    "expected_ids": [
+      "memo-051",
+      "memo-131"
+    ]
+  },
+  {
+    "id": "case-029",
+    "current_memo": "문제는 시간이 없는 게 아니라 내가 피하고 싶은 감각을 자꾸 다른 말로 포장하는 데 있는 것 같다.",
+    "expected_ids": [
+      "memo-048",
+      "memo-080",
+      "memo-112",
+      "memo-140"
+    ]
+  },
+  {
+    "id": "case-030",
+    "current_memo": "몸이 무거운 날은 의지 문제가 아니라 판단 전체가 흐려지는 느낌이다.",
+    "expected_ids": [
+      "memo-057",
+      "memo-085",
+      "memo-129",
+      "memo-166"
+    ]
+  },
+  {
+    "id": "case-031",
+    "current_memo": "별일 아닌 장면 하나가 하루 기분의 방향을 바꾸는 날이 있다.",
+    "expected_ids": [
+      "memo-055"
+    ]
+  },
+  {
+    "id": "case-032",
+    "current_memo": "급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면 뭘 먼저 해야 할지 갑자기 안 보인다.",
+    "expected_ids": [
+      "memo-045",
+      "memo-097",
+      "memo-149"
+    ]
+  },
+  {
+    "id": "case-033",
+    "current_memo": "조사를 더 해야 할 것 같다고 적지만 사실은 시작이 무서워서 미루는 것에 가깝다.",
+    "expected_ids": [
+      "memo-049",
+      "memo-101",
+      "memo-153"
+    ]
+  },
+  {
+    "id": "case-034",
+    "current_memo": "겉으로는 괜찮은 척하고 있는데 실제 속은 전혀 그렇지 않은 날이 있다.",
+    "expected_ids": [
+      "memo-064"
+    ]
+  },
+  {
+    "id": "case-035",
+    "current_memo": "중요한 일 앞에서 자꾸 분류나 정리 같은 만만한 일로 옆길 새는 같다. 바쁜데 진전이 없다.",
+    "expected_ids": [
+      "memo-053",
+      "memo-077",
+      "memo-097",
+      "memo-118"
+    ]
+  },
+  {
+    "id": "case-036",
+    "current_memo": "일정 하나만 끼어도 하루 흐름이 끊긴다. 이런 일정 변화도 회고에선 중요한 단서 같다.",
+    "expected_ids": [
+      "memo-082",
+      "memo-135",
+      "memo-052",
+      "memo-110"
+    ]
+  },
+  {
+    "id": "case-037",
+    "current_memo": "쉬어도 쉬는 느낌이 안 든다. 쉬면 뒤처질 것 같아서 몸을 놔주지 못한다.",
+    "expected_ids": [
+      "memo-108",
+      "memo-056",
+      "memo-160"
+    ]
+  },
+  {
+    "id": "case-038",
+    "current_memo": "반품, 답장, 공과금 같은 생활 일이 쌓일수록 별일 아닌데도 나를 더 초라하게 만든다.",
+    "expected_ids": [
+      "memo-071",
+      "memo-115",
+      "memo-154",
+      "memo-047"
+    ]
+  },
+  {
+    "id": "case-039",
+    "current_memo": "돈 걱정이 올라오는 날은 작은 선택도 다 무겁고 우선순위가 잘 안 잡힌다.",
+    "expected_ids": [
+      "memo-106",
+      "memo-054",
+      "memo-158"
+    ]
+  },
+  {
+    "id": "case-040",
+    "current_memo": "이 앱은 감정만 모으면 안 되고, 반복되는 행동 패턴이나 결정 실수도 같이 보여줘야 할 느낌이다.",
+    "expected_ids": [
+      "memo-087",
+      "memo-163"
+    ]
+  },
+  {
+    "id": "case-041",
+    "current_memo": "오늘 읽은 문장이 이상하게 오래 남는다. 내가 왜 같은 자리를 맴도는지 조금 찔리게 한다.",
+    "expected_ids": [
+      "memo-092",
+      "memo-171"
+    ]
+  },
+  {
+    "id": "case-042",
+    "current_memo": "문제는 시간이 없는 게 아니라 내가 피하고 싶은 감각을 자꾸 다른 말로 포장하는 데 있는 느낌이다.",
+    "expected_ids": [
+      "memo-064",
+      "memo-096",
+      "memo-128",
+      "memo-160"
+    ]
+  },
+  {
+    "id": "case-043",
+    "current_memo": "몸이 무거운 날은 의지 문제가 아니라 판단 전체가 흐려지는 같다.",
+    "expected_ids": [
+      "memo-065",
+      "memo-113",
+      "memo-142",
+      "memo-185"
+    ]
+  },
+  {
+    "id": "case-044",
+    "current_memo": "별일 아닌 장면 하나가 하루 기분의 방향을 바꾸는 날이 있다.",
+    "expected_ids": [
+      "memo-127"
+    ]
+  },
+  {
+    "id": "case-045",
+    "current_memo": "급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면 뭘 먼저 해야 할지 갑자기 안 보인다.",
+    "expected_ids": [
+      "memo-073",
+      "memo-125",
+      "memo-177"
+    ]
+  },
+  {
+    "id": "case-046",
+    "current_memo": "조사를 더 해야 할 느낌이다고 적지만 사실은 시작이 무서워서 미루는 것에 가깝다.",
+    "expected_ids": [
+      "memo-070",
+      "memo-122",
+      "memo-174"
+    ]
+  },
+  {
+    "id": "case-047",
+    "current_memo": "겉으로는 괜찮은 척하고 있는데 실제 속은 전혀 그렇지 않은 날이 있다.",
+    "expected_ids": [
+      "memo-136"
+    ]
+  },
+  {
+    "id": "case-048",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 중요한 일 앞에서 자꾸 분류나 정리 같은 만만한 일로 옆길 새는 느낌이다. 바쁜데 진전이 없다.",
+    "expected_ids": [
+      "memo-066",
+      "memo-091",
+      "memo-105",
+      "memo-129"
+    ]
+  },
+  {
+    "id": "case-049",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 일정 하나만 끼어도 하루 흐름이 끊긴다. 이런 일정 변화도 회고에선 중요한 단서 같다.",
+    "expected_ids": [
+      "memo-110",
+      "memo-172",
+      "memo-082",
+      "memo-135"
+    ]
+  },
+  {
+    "id": "case-050",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 쉬어도 쉬는 느낌이 안 든다. 쉬면 뒤처질 것 같아서 몸을 놔주지 못한다.",
+    "expected_ids": [
+      "memo-160",
+      "memo-108",
+      "memo-056"
+    ]
+  },
+  {
+    "id": "case-051",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 반품, 답장, 공과금 같은 생활 일이 쌓일수록 별일 아닌데도 나를 더 초라하게 만든다.",
+    "expected_ids": [
+      "memo-095",
+      "memo-143",
+      "memo-182",
+      "memo-071"
+    ]
+  },
+  {
+    "id": "case-052",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 돈 걱정이 올라오는 날은 작은 선택도 다 무겁고 우선순위가 잘 안 잡힌다.",
+    "expected_ids": [
+      "memo-158",
+      "memo-106",
+      "memo-054"
+    ]
+  },
+  {
+    "id": "case-053",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 이 앱은 감정만 모으면 안 되고, 반복되는 행동 패턴이나 결정 실수도 같이 보여줘야 할 것 같다.",
+    "expected_ids": [
+      "memo-126",
+      "memo-046"
+    ]
+  },
+  {
+    "id": "case-054",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 오늘 읽은 문장이 이상하게 오래 남는다. 내가 왜 같은 자리를 맴도는지 조금 찔리게 한다.",
+    "expected_ids": [
+      "memo-131",
+      "memo-051"
+    ]
+  },
+  {
+    "id": "case-055",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 문제는 시간이 없는 게 아니라 내가 피하고 싶은 감각을 자꾸 다른 말로 포장하는 데 있는 것 같다.",
+    "expected_ids": [
+      "memo-080",
+      "memo-112",
+      "memo-140",
+      "memo-176"
+    ]
+  },
+  {
+    "id": "case-056",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 몸이 무거운 날은 의지 문제가 아니라 판단 전체가 흐려지는 느낌이다.",
+    "expected_ids": [
+      "memo-085",
+      "memo-129",
+      "memo-166",
+      "memo-057"
+    ]
+  },
+  {
+    "id": "case-057",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 별일 아닌 장면 하나가 하루 기분의 방향을 바꾸는 날이 있다.",
+    "expected_ids": [
+      "memo-055"
+    ]
+  },
+  {
+    "id": "case-058",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면 뭘 먼저 해야 할지 갑자기 안 보인다.",
+    "expected_ids": [
+      "memo-097",
+      "memo-149",
+      "memo-045"
+    ]
+  },
+  {
+    "id": "case-059",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 조사를 더 해야 할 것 같다고 적지만 사실은 시작이 무서워서 미루는 것에 가깝다.",
+    "expected_ids": [
+      "memo-101",
+      "memo-153",
+      "memo-049"
+    ]
+  },
+  {
+    "id": "case-060",
+    "current_memo": "오늘 메모로는 잘 안 잡히는데, 겉으로는 괜찮은 척하고 있는데 실제 속은 전혀 그렇지 않은 날이 있다.",
+    "expected_ids": [
+      "memo-064"
+    ]
+  },
+  {
+    "id": "case-061",
+    "current_memo": "중요한 일 앞에서 자꾸 분류나 정리 같은 만만한 일로 옆길 새는 느낌이다. 바쁜데 진전이 없다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-077",
+      "memo-097",
+      "memo-118",
+      "memo-143"
+    ]
+  },
+  {
+    "id": "case-062",
+    "current_memo": "일정 하나만 끼어도 하루 흐름이 끊긴다. 이런 일정 변화도 회고에선 중요한 단서 같다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-135",
+      "memo-052",
+      "memo-110",
+      "memo-172"
+    ]
+  },
+  {
+    "id": "case-063",
+    "current_memo": "쉬어도 쉬는 느낌이 안 든다. 쉬면 뒤처질 것 같아서 몸을 놔주지 못한다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-056",
+      "memo-160",
+      "memo-108"
+    ]
+  },
+  {
+    "id": "case-064",
+    "current_memo": "반품, 답장, 공과금 같은 생활 일이 쌓일수록 별일 아닌데도 나를 더 초라하게 만든다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-115",
+      "memo-154",
+      "memo-047",
+      "memo-095"
+    ]
+  },
+  {
+    "id": "case-065",
+    "current_memo": "돈 걱정이 올라오는 날은 작은 선택도 다 무겁고 우선순위가 잘 안 잡힌다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-054",
+      "memo-158",
+      "memo-106"
+    ]
+  },
+  {
+    "id": "case-066",
+    "current_memo": "이 앱은 감정만 모으면 안 되고, 반복되는 행동 패턴이나 결정 실수도 같이 보여줘야 할 것 같다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-163",
+      "memo-087"
+    ]
+  },
+  {
+    "id": "case-067",
+    "current_memo": "오늘 읽은 문장이 이상하게 오래 남는다. 내가 왜 같은 자리를 맴도는지 조금 찔리게 한다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-171",
+      "memo-092"
+    ]
+  },
+  {
+    "id": "case-068",
+    "current_memo": "문제는 시간이 없는 게 아니라 내가 피하고 싶은 감각을 자꾸 다른 말로 포장하는 데 있는 것 같다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-096",
+      "memo-128",
+      "memo-160",
+      "memo-188"
+    ]
+  },
+  {
+    "id": "case-069",
+    "current_memo": "몸이 무거운 날은 의지 문제가 아니라 판단 전체가 흐려지는 느낌이다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-113",
+      "memo-142",
+      "memo-185",
+      "memo-065"
+    ]
+  },
+  {
+    "id": "case-070",
+    "current_memo": "별일 아닌 장면 하나가 하루 기분의 방향을 바꾸는 날이 있다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-127"
+    ]
+  },
+  {
+    "id": "case-071",
+    "current_memo": "급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면 뭘 먼저 해야 할지 갑자기 안 보인다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-125",
+      "memo-177",
+      "memo-073"
+    ]
+  },
+  {
+    "id": "case-072",
+    "current_memo": "조사를 더 해야 할 것 같다고 적지만 사실은 시작이 무서워서 미루는 것에 가깝다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-122",
+      "memo-174",
+      "memo-070"
+    ]
+  },
+  {
+    "id": "case-073",
+    "current_memo": "겉으로는 괜찮은 척하고 있는데 실제 속은 전혀 그렇지 않은 날이 있다. 단어보다 결이 비슷한 걸 찾고 싶다.",
+    "expected_ids": [
+      "memo-136"
+    ]
+  },
+  {
+    "id": "case-074",
+    "current_memo": "중요한 일 앞에서 자꾸 분류나 정리 같은 만만한 일로 옆길 새는 느낌이다. 바쁜데 진전이 없다.",
+    "expected_ids": [
+      "memo-091",
+      "memo-105",
+      "memo-129",
+      "memo-149"
+    ]
+  },
+  {
+    "id": "case-075",
+    "current_memo": "일정 하나만 끼어도 하루 흐름이 끊긴다. 이런 일정 변화도 회고에선 중요한 단서 같다.",
+    "expected_ids": [
+      "memo-172",
+      "memo-082",
+      "memo-135",
+      "memo-052"
+    ]
+  },
+  {
+    "id": "case-076",
+    "current_memo": "쉬어도 쉬는 느낌이 안 든다. 쉬면 뒤처질 것 같아서 몸을 놔주지 못한다.",
+    "expected_ids": [
+      "memo-108",
+      "memo-056",
+      "memo-160"
+    ]
+  },
+  {
+    "id": "case-077",
+    "current_memo": "반품, 답장, 공과금 같은 생활 일이 쌓일수록 별일 아닌데도 나를 더 초라하게 만든다.",
+    "expected_ids": [
+      "memo-143",
+      "memo-182",
+      "memo-071",
+      "memo-115"
+    ]
+  },
+  {
+    "id": "case-078",
+    "current_memo": "돈 걱정이 올라오는 날은 작은 선택도 다 무겁고 우선순위가 잘 안 잡힌다.",
+    "expected_ids": [
+      "memo-106",
+      "memo-054",
+      "memo-158"
+    ]
+  },
+  {
+    "id": "case-079",
+    "current_memo": "이 앱은 감정만 모으면 안 되고, 반복되는 행동 패턴이나 결정 실수도 같이 보여줘야 할 것 같다.",
+    "expected_ids": [
+      "memo-046",
+      "memo-126"
+    ]
+  },
+  {
+    "id": "case-080",
+    "current_memo": "오늘 읽은 문장이 이상하게 오래 남는다. 내가 왜 같은 자리를 맴도는지 조금 찔리게 한다.",
+    "expected_ids": [
+      "memo-051",
+      "memo-131"
+    ]
+  },
+  {
+    "id": "case-081",
+    "current_memo": "문제는 시간이 없는 게 아니라 내가 피하고 싶은 감각을 자꾸 다른 말로 포장하는 데 있는 것 같다.",
+    "expected_ids": [
+      "memo-112",
+      "memo-140",
+      "memo-176",
+      "memo-048"
+    ]
+  },
+  {
+    "id": "case-082",
+    "current_memo": "몸이 무거운 날은 의지 문제가 아니라 판단 전체가 흐려지는 느낌이다.",
+    "expected_ids": [
+      "memo-129",
+      "memo-166",
+      "memo-057",
+      "memo-085"
+    ]
+  },
+  {
+    "id": "case-083",
+    "current_memo": "별일 아닌 장면 하나가 하루 기분의 방향을 바꾸는 상태가 된다.",
+    "expected_ids": [
+      "memo-055"
+    ]
+  },
+  {
+    "id": "case-084",
+    "current_memo": "급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면 뭘 먼저 해야 할지 갑자기 안 보인다.",
+    "expected_ids": [
+      "memo-149",
+      "memo-045",
+      "memo-097"
+    ]
+  },
+  {
+    "id": "case-085",
+    "current_memo": "조사를 더 해야 할 것 같다고 적지만 사실은 시작이 무서워서 미루는 것에 가깝다.",
+    "expected_ids": [
+      "memo-153",
+      "memo-049",
+      "memo-101"
+    ]
+  },
+  {
+    "id": "case-086",
+    "current_memo": "겉으로는 괜찮은 척하고 있는데 실제 속은 전혀 그렇지 않은 상태가 된다.",
+    "expected_ids": [
+      "memo-064"
+    ]
+  },
+  {
+    "id": "case-087",
+    "current_memo": "성실해 보이는 행동인데 이상하게 핵심만 계속 비껴간다.",
+    "expected_ids": [
+      "memo-047",
+      "memo-099",
+      "memo-151",
+      "memo-022"
+    ]
+  },
+  {
+    "id": "case-088",
+    "current_memo": "멈추는 능력이 부족해서 회복도 자꾸 일처럼 다뤄 버린다.",
+    "expected_ids": [
+      "memo-128",
+      "memo-076",
+      "memo-180",
+      "memo-027"
+    ]
+  },
+  {
+    "id": "case-089",
+    "current_memo": "하루의 중심이 내 선택이 아니라 끼어든 사건 쪽으로 기울면 밤에 남는 감각이 다르다.",
+    "expected_ids": [
+      "memo-120",
+      "memo-023"
+    ]
+  },
+  {
+    "id": "case-090",
+    "current_memo": "그럴듯한 이유가 많아질수록 오히려 진짜 이유를 숨기고 있는 건 아닌지 의심된다.",
+    "expected_ids": [
+      "memo-100",
+      "memo-180",
+      "memo-030"
+    ]
+  },
+  {
+    "id": "case-091",
+    "current_memo": "남에게 보여준 버전의 나와 혼자 남았을 때의 내가 너무 다르게 느껴진다.",
+    "expected_ids": [
+      "memo-084",
+      "memo-168",
+      "memo-044"
+    ]
+  },
+  {
+    "id": "case-092",
+    "current_memo": "할 일의 크기보다 심리적 소음이 순서를 망친다.",
+    "expected_ids": [
+      "memo-190",
+      "memo-158",
+      "memo-138",
+      "memo-018"
+    ]
+  },
+  {
+    "id": "case-093",
+    "current_memo": "성실해 보이는 행동인데 이상하게 핵심만 계속 비껴간다.",
+    "expected_ids": [
+      "memo-109",
+      "memo-161",
+      "memo-057",
+      "memo-022"
+    ]
+  },
+  {
+    "id": "case-094",
+    "current_memo": "멈추는 능력이 부족해서 회복도 자꾸 일처럼 다뤄 버린다.",
+    "expected_ids": [
+      "memo-128",
+      "memo-076",
+      "memo-180",
+      "memo-027"
+    ]
+  },
+  {
+    "id": "case-095",
+    "current_memo": "하루의 중심이 내 선택이 아니라 끼어든 사건 쪽으로 기울면 밤에 남는 감각이 다르다.",
+    "expected_ids": [
+      "memo-156",
+      "memo-023"
+    ]
+  },
+  {
+    "id": "case-096",
+    "current_memo": "그럴듯한 이유가 많아질수록 오히려 진짜 이유를 숨기고 있는 건 아닌지 의심된다.",
+    "expected_ids": [
+      "memo-192",
+      "memo-116",
+      "memo-030"
+    ]
+  },
+  {
+    "id": "case-097",
+    "current_memo": "남에게 보여준 버전의 나와 혼자 남았을 때의 내가 너무 다르게 느껴진다.",
+    "expected_ids": [
+      "memo-084",
+      "memo-168",
+      "memo-044"
+    ]
+  },
+  {
+    "id": "case-098",
+    "current_memo": "할 일의 크기보다 심리적 소음이 순서를 망친다.",
+    "expected_ids": [
+      "memo-190",
+      "memo-158",
+      "memo-138",
+      "memo-018"
+    ]
+  },
+  {
+    "id": "case-099",
+    "current_memo": "성실해 보이는 행동인데 이상하게 핵심만 계속 비껴간다.",
+    "expected_ids": [
+      "memo-174",
+      "memo-070",
+      "memo-122",
+      "memo-022"
+    ]
+  },
+  {
+    "id": "case-100",
+    "current_memo": "멈추는 능력이 부족해서 회복도 자꾸 일처럼 다뤄 버린다.",
+    "expected_ids": [
+      "memo-128",
+      "memo-076",
+      "memo-180",
+      "memo-027"
+    ]
   }
 ]
