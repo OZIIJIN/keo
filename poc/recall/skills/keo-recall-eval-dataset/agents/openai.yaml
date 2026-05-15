@@ -1,0 +1,4 @@
+interface:
+  display_name: "KEO Recall Eval Dataset"
+  short_description: "KEO recall POC용 retrieval 평가 데이터 생성"
+  default_prompt: "Use $keo-recall-eval-dataset to generate KEO-style retrieval eval data for poc/recall."
