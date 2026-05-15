@@ -1,4 +1,2 @@
-fastapi
-uvicorn
-ollama
-chromadb
+# No Python package dependencies.
+# Ollama must be installed and running locally.
