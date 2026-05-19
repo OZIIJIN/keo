@@ -1,99 +1,145 @@
 ## 목표
 
-현재 POC의 1차 목표는
-현재 메모와 연결될 가능성이 있는 과거 메모 후보 리스트를
-vector retrieval로 얼마나 잘 가져오는지 검증하는 것이다.
+`poc/recall`은 KEO recall의 hybrid retrieval PoC를 검증하기 위한 실험 디렉토리다.
 
-핵심 질문: 현재 메모가 들어왔을 때
-top-k 후보 안에 사람이 보기에 쓸 만한 관련 과거 메모가 들어오는가?
+이번 단계에서 확인하려는 것은 아래다.
+- 한국어 메모에서 dense retrieval과 sparse retrieval을 함께 쓰면 품질이 실제로 좋아지는가
+- 현재 메모가 들어왔을 때 "지금 다시 볼 만한 과거 기록"을 더 안정적으로 가져올 수 있는가
+- 가장 단순한 hybrid 구조만으로도 dense-only 대비 zero-hit를 줄일 수 있는가
+- 로컬에서 반복 실험 가능한 최소 구조를 만들 수 있는가
 
-## 현재 범위
+## 현재 목표 구조
+
+현재 PoC의 목표 흐름은 아래다.
+
+현재 메모 입력
+-> dense retrieval
+-> sparse retrieval
+-> candidate union
+-> fusion score 정렬
+-> final top-k 출력
+
+초기 구현 방향
+- dense: `qwen3-embedding`
+- sparse: BM25 또는 가장 단순한 keyword search
+- fusion: RRF 우선
+
+즉, 이 디렉토리의 현재 목표는
+"좋은 embedding 하나를 찾는 것"이 아니라
+"dense-only 한계를 넘기 위한 가장 작은 hybrid retrieval baseline"을 만드는 것이다.
+
+## 범위
 
 포함
 - 현재 메모 입력
-- 테스트용 과거 메모 저장
-- 임베딩 생성
-- top-k 관련 후보 메모 검색
-- 검색 결과 수동 확인
+- 과거 메모 저장
+- dense 후보 검색
+- sparse 후보 검색
+- 후보 합치기
+- fusion 기반 재정렬
+- eval dataset 일괄 실행
+- top-k 결과 출력
 
 제외
-- 회고 문장 품질 최적화
+- 회고 문장 생성
 - 패턴 분석 고도화
-- 계획 기능 연결
-- 인증/결제/운영 기능
+- 실행 엔진 연결
+- 모바일 UI 연결
+- 운영 구조 / 서비스 구조
 
-## 현재 목표 흐름
+## 왜 hybrid로 가는가
 
-현재 메모 입력
--> 임베딩 생성
--> 과거 메모 top-k 후보 검색
--> 검색 결과 검토
+1차 dense-only PoC에서 확인한 결론은 간단했다.
+- embedding 모델 차이는 분명히 있었다
+- `qwen3-embedding`이 가장 나은 dense 후보였다
+- 그래도 dense-only만으로는 KEO가 원하는 recall 품질이 부족했다
 
-## 현재 고정 기술 조건
+dense-only benchmark 요약
+- eval cases: 100
+- expected total: 479
+- best dense model: `qwen3-embedding`
+- hits: `134 / 479`
+- hit rate: `27.97%`
+- zero-hit: `22`
 
-현재 단계에서 반드시 유지할 조건:
-- Embedding model: nomic-embed-text
-
-그 외 구현 방식은 현재 POC 목적에 맞게 가장 단순한 형태를 우선한다.
+이 결과는
+"dense 모델을 더 고르면 해결된다"보다
+"retrieval 구조 자체를 hybrid로 바꿔야 한다"는 쪽에 더 가깝다.
 
 ## 좋은 retrieval 기준
 
-- 키워드만 겹치는 것이 아니라 의미나 맥락이 연결됨
-- 같은 주제, 고민, 행동 패턴, 과거 결정/다짐이 후보에 포함됨
-- 현재 생각을 확장하는 과거 기록이 후보에 포함됨
-- 엉뚱한 결과가 적음
+- 단순 키워드 중복이 아니라 의미나 맥락이 연결됨
+- 같은 주제, 고민, 행동 패턴, 과거 다짐이 후보에 포함됨
+- 현재 생각을 확장하는 과거 기록이 포함됨
+- 엉뚱한 결과가 줄어듦
 - 사람이 봤을 때 "지금 다시 볼 만한 과거 기록"이라고 느껴짐
 
 ## 평가 질문
 
-1. top-k 안에 expected memo가 들어오는가?
-2. 현재 메모와 주제나 고민이 연결되는가?
-3. 현재 메모의 행동 패턴이나 과거 다짐과 연결되는가?
-4. 단순 단어 중복만으로 잡힌 것은 아닌가?
-5. top-k 안에 실제로 쓸 만한 결과가 있는가?
-
-## 완료 기준
-
-1. 현재 메모 입력 가능
-2. 임베딩 생성 가능
-3. 과거 메모 검색 가능
-4. top-k 결과를 사람이 검토 가능
-5. retrieval 품질을 반복 개선할 수 있음
+1. hybrid top-k 안에 expected memo가 들어오는가
+2. dense-only보다 zero-hit가 줄어드는가
+3. dense-only에서 놓치던 키워드성 연결을 sparse가 보완하는가
+4. sparse-only가 놓치던 의미 연결을 dense가 보완하는가
+5. 최종 fusion 결과가 사람이 보기에 더 자연스러운가
 
 ## 구현 원칙
 
-- 가장 작은 흐름부터 구현
-- retrieval을 generation과 분리해서 확인 가능하게 만들기
-- 결과를 사람이 바로 읽을 수 있게 출력
-- 실험용 데이터와 결과를 파일로 남기기 쉽게 만들기
+- 가장 작은 동작 가능한 hybrid 흐름부터 구현
+- dense, sparse, fusion을 분리해서 검증 가능하게 만들기
+- 로컬에서 바로 재현 가능해야 함
+- 실험 결과를 사람이 읽기 쉬워야 함
+- 데이터와 평가 기준을 파일로 남겨 반복 비교 가능해야 함
+
+## 현재 코드 상태
+
+현재 [main.py](/Users/vonai/Desktop/keo/poc/recall/main.py)는 아직 dense baseline 코드다.
+
+현재 들어있는 것
+- embedding 생성
+- cosine similarity 기반 top-k retrieval
+- eval 실행
+- 모델 교체 실험
+- embedding 캐시
+
+아직 추가해야 하는 것
+- BM25 retrieval
+- candidate union
+- RRF 같은 fusion
+- hybrid eval summary
+
+즉, README의 목표는 hybrid 기준으로 적고,
+코드 구현은 지금부터 그 목표를 따라 확장하면 된다.
 
 ## 실행 방법
 
-전제:
-- Ollama가 실행 중이어야 한다.
-- `nomic-embed-text` 모델이 로컬에 있어야 한다.
+전제
+- Ollama가 실행 중이어야 한다
+- dense retrieval에 사용할 embedding 모델이 로컬에 있어야 한다
+
+현재 dense baseline을 실행하는 방법
 
 ```bash
 cd poc/recall
-ollama pull nomic-embed-text
-python3 main.py --memo "회의와 알림에 계속 끌려다녀서 중요한 작업을 제대로 못 했다." --top-k 10
+ollama pull qwen3-embedding
+python3 main.py --memo "회의와 알림에 계속 끌려다녀서 중요한 작업을 제대로 못 했다." --model qwen3-embedding --top-k 10
 ```
 
-표준 입력으로도 실행할 수 있다.
+eval 전체 실행
 
 ```bash
-echo "할 일은 많은데 우선순위가 흐려서 종일 바빴지만 진전이 적었다." | python3 main.py --top-k 10
+python3 main.py --eval --model qwen3-embedding --top-k 10
 ```
 
-평가 케이스 전체를 실행할 수 있다.
+summary만 보기
 
 ```bash
-python3 main.py --eval --top-k 10
+python3 main.py --eval --model qwen3-embedding --top-k 10 --summary-only
 ```
 
-데이터:
-- 테스트용 과거 메모: `eval/past_memos.json`
-- 평가 케이스: `eval/eval_cases.json`
+## 데이터
 
-평가 케이스의 `expected_ids`는 하나의 정답이 아니라,
-top-k 안에 들어오면 좋은 관련 후보 메모 목록이다.
+- 과거 메모: [eval/past_memos.json](/Users/vonai/Desktop/keo/poc/recall/eval/past_memos.json)
+- 평가 케이스: [eval/eval_cases.json](/Users/vonai/Desktop/keo/poc/recall/eval/eval_cases.json)
+
+평가 케이스의 `expected_ids`는 단일 정답이 아니다.
+top-k 안에 들어오면 좋은 관련 후보 메모 집합이다.
