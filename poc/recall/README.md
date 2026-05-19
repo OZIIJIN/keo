@@ -92,34 +92,38 @@ dense-only benchmark 요약
 
 ## 현재 코드 상태
 
-현재 [main.py](/Users/vonai/Desktop/keo/poc/recall/main.py)는 아직 dense baseline 코드다.
+현재 [main.py](/Users/vonai/Desktop/keo/poc/recall/main.py)는 최소 hybrid baseline까지 포함한다.
 
 현재 들어있는 것
 - embedding 생성
-- cosine similarity 기반 top-k retrieval
+- cosine similarity 기반 dense retrieval
+- BM25 기반 sparse retrieval
+- candidate union
+- RRF 기반 fusion
 - eval 실행
 - 모델 교체 실험
 - embedding 캐시
 
 아직 추가해야 하는 것
-- BM25 retrieval
-- candidate union
-- RRF 같은 fusion
-- hybrid eval summary
+- sparse 품질 개선용 한국어 토큰화 고도화
+- fusion 가중치 실험
+- hybrid 지표 비교 자동화 확장
 
-즉, README의 목표는 hybrid 기준으로 적고,
-코드 구현은 지금부터 그 목표를 따라 확장하면 된다.
+즉, 현재는 가장 작은 hybrid baseline이 들어갔고,
+이제 품질 개선 실험을 이어가면 된다.
 
 ## 실행 방법
 
 전제
 - Ollama가 실행 중이어야 한다
 - dense retrieval에 사용할 embedding 모델이 로컬에 있어야 한다
+- Python 의존성을 먼저 설치해야 한다
 
-현재 dense baseline을 실행하는 방법
+현재 hybrid baseline을 실행하는 방법
 
 ```bash
 cd poc/recall
+python3 -m pip install -r requirements.txt
 ollama pull qwen3-embedding
 python3 main.py --memo "회의와 알림에 계속 끌려다녀서 중요한 작업을 제대로 못 했다." --model qwen3-embedding --top-k 10
 ```
@@ -134,6 +138,12 @@ summary만 보기
 
 ```bash
 python3 main.py --eval --model qwen3-embedding --top-k 10 --summary-only
+```
+
+dense-only와 비교하고 싶으면
+
+```bash
+python3 main.py --eval --mode dense --model qwen3-embedding --top-k 10 --summary-only
 ```
 
 ## 데이터
