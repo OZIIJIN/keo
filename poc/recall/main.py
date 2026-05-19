@@ -7,10 +7,10 @@ import urllib.request
 from pathlib import Path
 
 
-DEFAULT_MODEL = "nomic-embed-text"
+DEFAULT_MODEL = "qwen3-embedding"
+DEFAULT_TOP_K = 10
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
-DEFAULT_TOP_K = 10
 DATA_PATH = Path(__file__).parent / "eval" / "past_memos.json"
 EVAL_PATH = Path(__file__).parent / "eval" / "eval_cases.json"
 EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
@@ -121,11 +121,7 @@ def find_similar_memos(current_memo: str, past_memos: list[dict], top_k: int, mo
     results = []
 
     for memo in past_memos:
-        past_embedding = memo.get("embedding")
-        if past_embedding is None:
-            past_embedding = embed_text(memo["text"], model)
-
-        score = cosine_similarity(current_embedding, past_embedding)
+        score = cosine_similarity(current_embedding, memo["embedding"])
         results.append({**memo, "score": score})
 
     return sorted(results, key=lambda item: item["score"], reverse=True)[:top_k]
@@ -156,17 +152,49 @@ def print_results(
         print(f"   text: {memo['text']}")
 
 
-def print_eval_summary(case: dict, results: list[dict], top_k: int) -> None:
-    expected_ids = set(case["expected_ids"])
+def summarize_hits(expected_ids: set[str], results: list[dict]) -> dict:
     result_ids = {memo["id"] for memo in results}
     hits = expected_ids & result_ids
+    missed = expected_ids - result_ids
+    return {
+        "hits": hits,
+        "missed": missed,
+        "num_hits": len(hits),
+        "num_expected": len(expected_ids),
+    }
+
+
+def print_eval_summary(case: dict, results: list[dict], top_k: int) -> None:
+    summary = summarize_hits(set(case["expected_ids"]), results)
 
     print("\n[Eval summary]")
     print(f"case: {case['id']}")
-    print(f"hits@{top_k}: {len(hits)}/{len(expected_ids)}")
-    print(f"hit ids: {', '.join(sorted(hits)) if hits else '-'}")
-    missed = expected_ids - result_ids
-    print(f"missed ids: {', '.join(sorted(missed)) if missed else '-'}")
+    print(f"hits@{top_k}: {summary['num_hits']}/{summary['num_expected']}")
+    print(f"hit ids: {', '.join(sorted(summary['hits'])) if summary['hits'] else '-'}")
+    print(f"missed ids: {', '.join(sorted(summary['missed'])) if summary['missed'] else '-'}")
+
+
+def empty_stats() -> dict:
+    return {
+        "total_hits": 0,
+        "total_expected": 0,
+        "zero_hit_cases": 0,
+        "full_hit_cases": 0,
+        "partial_hit_cases": 0,
+    }
+
+
+def update_stats(stats: dict, expected_ids: set[str], results: list[dict]) -> None:
+    summary = summarize_hits(expected_ids, results)
+    stats["total_hits"] += summary["num_hits"]
+    stats["total_expected"] += summary["num_expected"]
+
+    if summary["num_hits"] == 0:
+        stats["zero_hit_cases"] += 1
+    elif summary["num_hits"] == summary["num_expected"]:
+        stats["full_hit_cases"] += 1
+    else:
+        stats["partial_hit_cases"] += 1
 
 
 def evaluate_cases(
@@ -175,30 +203,35 @@ def evaluate_cases(
     top_k: int,
     model: str,
     print_details: bool,
-) -> tuple[int, int]:
-    total_hits = 0
-    total_expected = 0
+) -> dict:
+    stats = empty_stats()
 
     for case in cases:
         expected_ids = set(case["expected_ids"])
         results = find_similar_memos(case["current_memo"], past_memos, top_k, model)
-        result_ids = {memo["id"] for memo in results}
-        hits = expected_ids & result_ids
-
-        total_hits += len(hits)
-        total_expected += len(expected_ids)
+        update_stats(stats, expected_ids, results)
 
         if print_details:
             print_results(model, case["current_memo"], results, expected_ids)
             print_eval_summary(case, results, top_k)
 
-    return total_hits, total_expected
+    return stats
+
+
+def print_overall_stats(stats: dict, top_k: int) -> None:
+    total_expected = stats["total_expected"]
+    hit_rate = (stats["total_hits"] / total_expected * 100) if total_expected else 0.0
+    print(f"hits@{top_k}: {stats['total_hits']}/{total_expected}")
+    print(f"hit rate: {hit_rate:.2f}%")
+    print(f"zero-hit cases: {stats['zero_hit_cases']}")
+    print(f"partial-hit cases: {stats['partial_hit_cases']}")
+    print(f"full-hit cases: {stats['full_hit_cases']}")
 
 
 def run_eval(args: argparse.Namespace) -> None:
     past_memos = build_past_memo_index(load_past_memos(args.data), args.model)
     cases = load_eval_cases(args.eval_data)
-    total_hits, total_expected = evaluate_cases(
+    stats = evaluate_cases(
         cases,
         past_memos,
         args.top_k,
@@ -209,7 +242,7 @@ def run_eval(args: argparse.Namespace) -> None:
     print("\n=== Overall Eval Summary ===")
     print(f"model: {args.model}")
     print(f"cases: {len(cases)}")
-    print(f"total hits@{args.top_k}: {total_hits}/{total_expected}")
+    print_overall_stats(stats, args.top_k)
 
 
 def read_current_memo(args: argparse.Namespace) -> str:
@@ -265,13 +298,11 @@ def main() -> None:
         return
 
     current_memo = read_current_memo(args)
-
     if not current_memo:
         raise SystemExit("현재 메모가 비어 있습니다.")
 
-    past_memos = load_past_memos(args.data)
-    indexed_past_memos = build_past_memo_index(past_memos, args.model)
-    results = find_similar_memos(current_memo, indexed_past_memos, args.top_k, args.model)
+    past_memos = build_past_memo_index(load_past_memos(args.data), args.model)
+    results = find_similar_memos(current_memo, past_memos, args.top_k, args.model)
     print_results(args.model, current_memo, results)
 
 
