@@ -135,7 +135,13 @@ dense baseline 위 보강 레이어 쪽을 우선 검토한다.
 - BM25 retrieval
 - hybrid fusion
 - reranker
-- query expansion
+- LLM 기반 query expansion
+
+현재 추가된 것
+- 고정 1차 메모 성격 태그
+- 고정 2차 상세 태그
+- 태그를 retrieval text에 붙이는 expansion mode
+- query/eval case에 대한 LLM 태깅
 
 ## 실행 방법
 
@@ -151,10 +157,48 @@ ollama pull qwen3-embedding
 python3 main.py --memo "회의와 알림에 계속 끌려다녀서 중요한 작업을 제대로 못 했다." --model qwen3-embedding --top-k 10
 ```
 
+태그를 붙여 단건 검색
+
+```bash
+python3 main.py \
+  --memo "소화기 앱 -> pds 다이어리 방향도 괜찮을까. 3개월 회고, 하루 회고 같이." \
+  --model qwen3-embedding \
+  --expansion-mode query_only \
+  --primary-tag product_idea \
+  --secondary-tags event_reflection_link,self_understanding_product
+```
+
+LLM으로 단건 query 태깅 후 검색
+
+```bash
+python3 main.py \
+  --memo "소화기 앱 -> pds 다이어리 방향도 괜찮을까. 3개월 회고, 하루 회고 같이." \
+  --model qwen3-embedding \
+  --expansion-mode query_only \
+  --tagging-mode llm
+```
+
 eval 전체 실행
 
 ```bash
 python3 main.py --eval --model qwen3-embedding --top-k 10
+```
+
+eval에서 query 태그 확장 켜기
+
+```bash
+python3 main.py --eval --model qwen3-embedding --top-k 10 --expansion-mode query_only
+```
+
+eval case를 LLM으로 태깅해서 실행
+
+```bash
+python3 main.py \
+  --eval \
+  --model qwen3-embedding \
+  --top-k 10 \
+  --expansion-mode query_only \
+  --tagging-mode llm
 ```
 
 summary만 보기
@@ -167,6 +211,45 @@ python3 main.py --eval --model qwen3-embedding --top-k 10 --summary-only
 
 - 과거 메모: [eval/past_memos.json](/Users/vonai/Desktop/keo/poc/recall/eval/past_memos.json)
 - 평가 케이스: [eval/eval_cases.json](/Users/vonai/Desktop/keo/poc/recall/eval/eval_cases.json)
+- 태그 스키마: [tag_schema.json](/Users/vonai/Desktop/keo/poc/recall/tag_schema.json)
+- 과거 메모 태그: [eval/past_memo_tags.json](/Users/vonai/Desktop/keo/poc/recall/eval/past_memo_tags.json)
+- 평가 케이스 태그: [eval/eval_case_tags.json](/Users/vonai/Desktop/keo/poc/recall/eval/eval_case_tags.json)
 
 평가 케이스의 `expected_ids`는 단일 정답이 아니다.
 top-k 안에 들어오면 좋은 관련 후보 메모 집합이다.
+
+## 태그 기반 retrieval
+
+태그 구조
+- 1차 메모 성격은 메모의 기록 의도를 나타낸다
+- 2차 상세 태그는 메모가 가진 반복 신호를 나타낸다
+
+expansion mode
+- `none`: 기존 dense-only baseline
+- `query_only`: 현재 메모나 eval case query에만 태그를 붙여 embed
+- `both`: 현재 메모와 과거 메모 모두 태그를 붙여 embed
+
+tagging mode
+- `fixed`: 단건 검색은 CLI 입력 태그를 쓰고, eval은 `eval_case_tags.json`을 사용
+- `llm`: 현재 메모나 eval case를 Ollama generation model로 태깅
+
+기본 tagging model
+- `qwen3:8b`
+- 필요하면 `--tagging-model`로 덮어쓸 수 있다
+
+빈 annotation 파일
+- `eval/past_memo_tags.json`: 과거 메모 고정 태그를 채워 넣는 파일
+- `eval/eval_case_tags.json`: `--tagging-mode fixed`일 때 eval query 태그를 넣는 파일
+- 둘 다 현재는 빈 초기 상태가 맞다
+- `--tagging-mode llm`이면 `eval_case_tags.json`은 비어 있어도 된다
+
+annotation 파일 규격
+
+```json
+{
+  "memo-001": {
+    "primary": "product_idea",
+    "secondary": ["event_reflection_link", "self_understanding_product"]
+  }
+}
+```
