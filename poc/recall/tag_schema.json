@@ -1,0 +1,42 @@
+{
+  "primary_tags": {
+    "daily_log": "그날 있었던 일, 상태, 흐름을 남긴 기록",
+    "self_observation": "내 반응, 판단, 반복 패턴을 관찰한 기록",
+    "plan_or_intent": "앞으로 하려는 일, 다짐, 시도 방향",
+    "product_idea": "제품, 기능, 구조 관련 아이디어",
+    "work_note": "일, 프로젝트, 실행 관련 사실이나 생각 정리",
+    "quote_or_reference": "책, 문장, 콘텐츠, 타인의 말에서 가져온 기록",
+    "decision_note": "선택, 우선순위, 판단 근거를 적은 기록",
+    "open_question": "아직 답 없는 질문, 탐색 중인 문제의식"
+  },
+  "secondary_tags": {
+    "start_avoidance": "시작해야 하는데 자꾸 미룸",
+    "execution_delay": "하기로 했지만 실행이 계속 늦어짐",
+    "safe_task_selection": "중요한 일 대신 만만한 일을 고름",
+    "reactive_work": "주도적 진행보다 들어오는 일에 끌려감",
+    "context_fragmentation": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "overplanning": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "unfinished_loop": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "priority_confusion": "급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려짐",
+    "decision_fog": "뭘 먼저 해야 할지 판단이 흐림",
+    "self_deception": "스스로를 그럴듯하게 속이는 느낌",
+    "avoidance_rationalization": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "evaluation_fear": "평가받을까봐 피하거나 망설임",
+    "control_seeking": "불확실함 대신 통제 가능한 것만 붙잡음",
+    "low_energy_drift": "기운이 없어서 흐려지거나 흘러감",
+    "fatigue_spillover": "피로가 판단과 실행 전반에 번짐",
+    "rhythm_disruption": "수면, 루틴, 생활 리듬이 깨짐",
+    "rest_guilt": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "recovery_failure": "쉬었는데도 회복이 잘 안 됨",
+    "schedule_disruption": "일정 하나가 하루 흐름 전체를 흔듦",
+    "external_priority_capture": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "social_response_delay": "답장, 연락, 관계 응답이 밀림",
+    "life_admin_overload": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "event_aftereffect": "특정 일정이나 사건 이후 여파가 오래 감",
+    "pattern_recognition": "반복 패턴을 알아차리거나 이름 붙임",
+    "event_reflection_link": "사건이나 일정과 회고를 연결하려는 시선",
+    "decision_trace": "판단이 어떻게 흘렀는지 보려는 기록",
+    "identity_gap": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "self_understanding_product": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰"
+  }
+}
