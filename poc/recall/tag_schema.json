@@ -1,15 +1,5 @@
 {
-  "primary_tags": {
-    "daily_log": "그날 있었던 일, 상태, 흐름을 남긴 기록",
-    "self_observation": "내 반응, 판단, 반복 패턴을 관찰한 기록",
-    "plan_or_intent": "앞으로 하려는 일, 다짐, 시도 방향",
-    "product_idea": "제품, 기능, 구조 관련 아이디어",
-    "work_note": "일, 프로젝트, 실행 관련 사실이나 생각 정리",
-    "quote_or_reference": "책, 문장, 콘텐츠, 타인의 말에서 가져온 기록",
-    "decision_note": "선택, 우선순위, 판단 근거를 적은 기록",
-    "open_question": "아직 답 없는 질문, 탐색 중인 문제의식"
-  },
-  "secondary_tags": {
+  "relation_tags": {
     "start_avoidance": "시작해야 하는데 자꾸 미룸",
     "execution_delay": "하기로 했지만 실행이 계속 늦어짐",
     "safe_task_selection": "중요한 일 대신 만만한 일을 고름",

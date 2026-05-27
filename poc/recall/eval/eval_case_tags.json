@@ -1,102 +1,598 @@
 {
-  "case-001": {"primary": "self_observation", "secondary": ["start_avoidance", "evaluation_fear"]},
-  "case-002": {"primary": "self_observation", "secondary": ["reactive_work", "schedule_disruption", "context_fragmentation"]},
-  "case-003": {"primary": "product_idea", "secondary": ["self_understanding_product", "pattern_recognition"]},
-  "case-004": {"primary": "product_idea", "secondary": ["event_reflection_link", "self_understanding_product"]},
-  "case-005": {"primary": "self_observation", "secondary": ["start_avoidance", "avoidance_rationalization", "overplanning"]},
-  "case-006": {"primary": "self_observation", "secondary": ["recovery_failure", "low_energy_drift"]},
-  "case-007": {"primary": "self_observation", "secondary": ["social_response_delay", "unfinished_loop"]},
-  "case-008": {"primary": "work_note", "secondary": ["self_understanding_product"]},
-  "case-009": {"primary": "self_observation", "secondary": ["priority_confusion", "decision_fog"]},
-  "case-010": {"primary": "quote_or_reference", "secondary": ["pattern_recognition", "decision_trace"]},
-  "case-011": {"primary": "product_idea", "secondary": ["schedule_disruption", "event_reflection_link"]},
-  "case-012": {"primary": "self_observation", "secondary": ["safe_task_selection", "avoidance_rationalization", "decision_fog"]},
-  "case-013": {"primary": "self_observation", "secondary": ["safe_task_selection", "overplanning", "pattern_recognition"]},
-  "case-014": {"primary": "product_idea", "secondary": ["schedule_disruption", "event_reflection_link"]},
-  "case-015": {"primary": "product_idea", "secondary": ["event_reflection_link", "self_understanding_product"]},
-  "case-016": {"primary": "self_observation", "secondary": ["rest_guilt", "recovery_failure"]},
-  "case-017": {"primary": "product_idea", "secondary": ["self_understanding_product", "pattern_recognition"]},
-  "case-018": {"primary": "self_observation", "secondary": ["self_deception", "avoidance_rationalization", "start_avoidance"]},
-  "case-019": {"primary": "self_observation", "secondary": ["priority_confusion", "decision_fog", "external_priority_capture"]},
-  "case-020": {"primary": "self_observation", "secondary": ["life_admin_overload", "social_response_delay", "unfinished_loop"]},
-  "case-021": {"primary": "self_observation", "secondary": ["identity_gap"]},
-  "case-022": {"primary": "self_observation", "secondary": ["safe_task_selection", "start_avoidance"]},
-  "case-023": {"primary": "self_observation", "secondary": ["safe_task_selection", "start_avoidance"]},
-  "case-024": {"primary": "self_observation", "secondary": ["safe_task_selection", "unfinished_loop"]},
-  "case-025": {"primary": "self_observation", "secondary": ["start_avoidance", "avoidance_rationalization"]},
-  "case-026": {"primary": "self_observation", "secondary": ["unfinished_loop", "reactive_work"]},
-  "case-027": {"primary": "product_idea", "secondary": ["schedule_disruption", "event_reflection_link"]},
-  "case-028": {"primary": "product_idea", "secondary": ["event_reflection_link", "self_understanding_product"]},
-  "case-029": {"primary": "self_observation", "secondary": ["schedule_disruption", "fatigue_spillover"]},
-  "case-030": {"primary": "self_observation", "secondary": ["schedule_disruption", "event_aftereffect"]},
-  "case-031": {"primary": "product_idea", "secondary": ["event_reflection_link", "schedule_disruption"]},
-  "case-032": {"primary": "self_observation", "secondary": ["rest_guilt", "recovery_failure"]},
-  "case-033": {"primary": "self_observation", "secondary": ["rest_guilt", "recovery_failure"]},
-  "case-034": {"primary": "self_observation", "secondary": ["rest_guilt", "recovery_failure"]},
-  "case-035": {"primary": "self_observation", "secondary": ["rest_guilt", "safe_task_selection"]},
-  "case-036": {"primary": "self_observation", "secondary": ["rest_guilt"]},
-  "case-037": {"primary": "self_observation", "secondary": ["life_admin_overload", "unfinished_loop"]},
-  "case-038": {"primary": "self_observation", "secondary": ["life_admin_overload", "unfinished_loop"]},
-  "case-039": {"primary": "self_observation", "secondary": ["life_admin_overload", "execution_delay"]},
-  "case-040": {"primary": "self_observation", "secondary": ["life_admin_overload", "unfinished_loop"]},
-  "case-041": {"primary": "self_observation", "secondary": ["life_admin_overload", "unfinished_loop"]},
-  "case-042": {"primary": "self_observation", "secondary": ["external_priority_capture", "decision_fog"]},
-  "case-043": {"primary": "self_observation", "secondary": ["external_priority_capture", "decision_fog"]},
-  "case-044": {"primary": "self_observation", "secondary": ["external_priority_capture", "decision_fog"]},
-  "case-045": {"primary": "self_observation", "secondary": ["external_priority_capture", "decision_fog"]},
-  "case-046": {"primary": "self_observation", "secondary": ["external_priority_capture", "decision_fog"]},
-  "case-047": {"primary": "product_idea", "secondary": ["self_understanding_product", "pattern_recognition"]},
-  "case-048": {"primary": "product_idea", "secondary": ["self_understanding_product", "event_reflection_link"]},
-  "case-049": {"primary": "product_idea", "secondary": ["self_understanding_product", "pattern_recognition"]},
-  "case-050": {"primary": "product_idea", "secondary": ["self_understanding_product"]},
-  "case-051": {"primary": "product_idea", "secondary": ["self_understanding_product", "decision_trace"]},
-  "case-052": {"primary": "quote_or_reference", "secondary": ["event_aftereffect", "decision_trace"]},
-  "case-053": {"primary": "quote_or_reference", "secondary": ["pattern_recognition", "decision_trace"]},
-  "case-054": {"primary": "quote_or_reference", "secondary": ["pattern_recognition", "decision_trace"]},
-  "case-055": {"primary": "quote_or_reference", "secondary": ["event_aftereffect"]},
-  "case-056": {"primary": "quote_or_reference", "secondary": ["pattern_recognition", "decision_trace"]},
-  "case-057": {"primary": "self_observation", "secondary": ["avoidance_rationalization", "self_deception"]},
-  "case-058": {"primary": "self_observation", "secondary": ["self_deception", "avoidance_rationalization"]},
-  "case-059": {"primary": "self_observation", "secondary": ["avoidance_rationalization", "decision_trace"]},
-  "case-060": {"primary": "self_observation", "secondary": ["self_deception", "avoidance_rationalization"]},
-  "case-061": {"primary": "self_observation", "secondary": ["self_deception", "avoidance_rationalization"]},
-  "case-062": {"primary": "self_observation", "secondary": ["fatigue_spillover", "decision_fog"]},
-  "case-063": {"primary": "self_observation", "secondary": ["fatigue_spillover", "rhythm_disruption", "decision_fog"]},
-  "case-064": {"primary": "self_observation", "secondary": ["fatigue_spillover", "decision_trace"]},
-  "case-065": {"primary": "self_observation", "secondary": ["fatigue_spillover", "decision_fog"]},
-  "case-066": {"primary": "self_observation", "secondary": ["fatigue_spillover", "rhythm_disruption"]},
-  "case-067": {"primary": "daily_log", "secondary": ["event_aftereffect"]},
-  "case-068": {"primary": "daily_log", "secondary": ["event_aftereffect"]},
-  "case-069": {"primary": "daily_log", "secondary": ["event_aftereffect"]},
-  "case-070": {"primary": "daily_log", "secondary": ["event_aftereffect"]},
-  "case-071": {"primary": "daily_log", "secondary": ["event_aftereffect"]},
-  "case-072": {"primary": "self_observation", "secondary": ["priority_confusion", "decision_fog"]},
-  "case-073": {"primary": "self_observation", "secondary": ["priority_confusion", "decision_fog", "context_fragmentation"]},
-  "case-074": {"primary": "self_observation", "secondary": ["priority_confusion", "decision_fog"]},
-  "case-075": {"primary": "self_observation", "secondary": ["priority_confusion", "context_fragmentation"]},
-  "case-076": {"primary": "self_observation", "secondary": ["priority_confusion", "decision_fog"]},
-  "case-077": {"primary": "self_observation", "secondary": ["avoidance_rationalization", "start_avoidance", "overplanning"]},
-  "case-078": {"primary": "self_observation", "secondary": ["evaluation_fear", "start_avoidance"]},
-  "case-079": {"primary": "self_observation", "secondary": ["evaluation_fear", "start_avoidance"]},
-  "case-080": {"primary": "self_observation", "secondary": ["start_avoidance", "overplanning"]},
-  "case-081": {"primary": "self_observation", "secondary": ["start_avoidance", "evaluation_fear"]},
-  "case-082": {"primary": "self_observation", "secondary": ["identity_gap"]},
-  "case-083": {"primary": "self_observation", "secondary": ["identity_gap"]},
-  "case-084": {"primary": "self_observation", "secondary": ["identity_gap"]},
-  "case-085": {"primary": "self_observation", "secondary": ["identity_gap", "event_aftereffect"]},
-  "case-086": {"primary": "self_observation", "secondary": ["identity_gap"]},
-  "case-087": {"primary": "self_observation", "secondary": ["safe_task_selection", "pattern_recognition"]},
-  "case-088": {"primary": "self_observation", "secondary": ["context_fragmentation", "schedule_disruption", "pattern_recognition"]},
-  "case-089": {"primary": "self_observation", "secondary": ["rest_guilt", "recovery_failure"]},
-  "case-090": {"primary": "self_observation", "secondary": ["life_admin_overload", "unfinished_loop"]},
-  "case-091": {"primary": "self_observation", "secondary": ["external_priority_capture", "decision_fog"]},
-  "case-092": {"primary": "product_idea", "secondary": ["self_understanding_product", "event_reflection_link"]},
-  "case-093": {"primary": "quote_or_reference", "secondary": ["event_aftereffect", "decision_trace"]},
-  "case-094": {"primary": "self_observation", "secondary": ["self_deception", "avoidance_rationalization"]},
-  "case-095": {"primary": "self_observation", "secondary": ["fatigue_spillover", "decision_fog"]},
-  "case-096": {"primary": "daily_log", "secondary": ["event_aftereffect"]},
-  "case-097": {"primary": "self_observation", "secondary": ["priority_confusion", "context_fragmentation"]},
-  "case-098": {"primary": "self_observation", "secondary": ["overplanning", "start_avoidance", "avoidance_rationalization"]},
-  "case-099": {"primary": "self_observation", "secondary": ["identity_gap"]},
-  "case-100": {"primary": "self_observation", "secondary": ["pattern_recognition", "decision_trace"]}
+  "case-001": {
+    "relation_tags": [
+      "start_avoidance",
+      "evaluation_fear"
+    ]
+  },
+  "case-002": {
+    "relation_tags": [
+      "reactive_work",
+      "schedule_disruption",
+      "context_fragmentation"
+    ]
+  },
+  "case-003": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ]
+  },
+  "case-004": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ]
+  },
+  "case-005": {
+    "relation_tags": [
+      "start_avoidance",
+      "avoidance_rationalization",
+      "overplanning"
+    ]
+  },
+  "case-006": {
+    "relation_tags": [
+      "recovery_failure",
+      "low_energy_drift"
+    ]
+  },
+  "case-007": {
+    "relation_tags": [
+      "social_response_delay",
+      "unfinished_loop"
+    ]
+  },
+  "case-008": {
+    "relation_tags": [
+      "self_understanding_product"
+    ]
+  },
+  "case-009": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog"
+    ]
+  },
+  "case-010": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "case-011": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_reflection_link"
+    ]
+  },
+  "case-012": {
+    "relation_tags": [
+      "safe_task_selection",
+      "avoidance_rationalization",
+      "decision_fog"
+    ]
+  },
+  "case-013": {
+    "relation_tags": [
+      "safe_task_selection",
+      "overplanning",
+      "pattern_recognition"
+    ]
+  },
+  "case-014": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_reflection_link"
+    ]
+  },
+  "case-015": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ]
+  },
+  "case-016": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ]
+  },
+  "case-017": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ]
+  },
+  "case-018": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization",
+      "start_avoidance"
+    ]
+  },
+  "case-019": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog",
+      "external_priority_capture"
+    ]
+  },
+  "case-020": {
+    "relation_tags": [
+      "life_admin_overload",
+      "social_response_delay",
+      "unfinished_loop"
+    ]
+  },
+  "case-021": {
+    "relation_tags": [
+      "identity_gap"
+    ]
+  },
+  "case-022": {
+    "relation_tags": [
+      "safe_task_selection",
+      "start_avoidance"
+    ]
+  },
+  "case-023": {
+    "relation_tags": [
+      "safe_task_selection",
+      "start_avoidance"
+    ]
+  },
+  "case-024": {
+    "relation_tags": [
+      "safe_task_selection",
+      "unfinished_loop"
+    ]
+  },
+  "case-025": {
+    "relation_tags": [
+      "start_avoidance",
+      "avoidance_rationalization"
+    ]
+  },
+  "case-026": {
+    "relation_tags": [
+      "unfinished_loop",
+      "reactive_work"
+    ]
+  },
+  "case-027": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_reflection_link"
+    ]
+  },
+  "case-028": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ]
+  },
+  "case-029": {
+    "relation_tags": [
+      "schedule_disruption",
+      "fatigue_spillover"
+    ]
+  },
+  "case-030": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_aftereffect"
+    ]
+  },
+  "case-031": {
+    "relation_tags": [
+      "event_reflection_link",
+      "schedule_disruption"
+    ]
+  },
+  "case-032": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ]
+  },
+  "case-033": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ]
+  },
+  "case-034": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ]
+  },
+  "case-035": {
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ]
+  },
+  "case-036": {
+    "relation_tags": [
+      "rest_guilt"
+    ]
+  },
+  "case-037": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "case-038": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "case-039": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ]
+  },
+  "case-040": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "case-041": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "case-042": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
+  },
+  "case-043": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
+  },
+  "case-044": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
+  },
+  "case-045": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
+  },
+  "case-046": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
+  },
+  "case-047": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ]
+  },
+  "case-048": {
+    "relation_tags": [
+      "self_understanding_product",
+      "event_reflection_link"
+    ]
+  },
+  "case-049": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ]
+  },
+  "case-050": {
+    "relation_tags": [
+      "self_understanding_product"
+    ]
+  },
+  "case-051": {
+    "relation_tags": [
+      "self_understanding_product",
+      "decision_trace"
+    ]
+  },
+  "case-052": {
+    "relation_tags": [
+      "event_aftereffect",
+      "decision_trace"
+    ]
+  },
+  "case-053": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "case-054": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "case-055": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-056": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "case-057": {
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ]
+  },
+  "case-058": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization"
+    ]
+  },
+  "case-059": {
+    "relation_tags": [
+      "avoidance_rationalization",
+      "decision_trace"
+    ]
+  },
+  "case-060": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization"
+    ]
+  },
+  "case-061": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization"
+    ]
+  },
+  "case-062": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_fog"
+    ]
+  },
+  "case-063": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "rhythm_disruption",
+      "decision_fog"
+    ]
+  },
+  "case-064": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_trace"
+    ]
+  },
+  "case-065": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_fog"
+    ]
+  },
+  "case-066": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "rhythm_disruption"
+    ]
+  },
+  "case-067": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-068": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-069": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-070": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-071": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-072": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog"
+    ]
+  },
+  "case-073": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog",
+      "context_fragmentation"
+    ]
+  },
+  "case-074": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog"
+    ]
+  },
+  "case-075": {
+    "relation_tags": [
+      "priority_confusion",
+      "context_fragmentation"
+    ]
+  },
+  "case-076": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog"
+    ]
+  },
+  "case-077": {
+    "relation_tags": [
+      "avoidance_rationalization",
+      "start_avoidance",
+      "overplanning"
+    ]
+  },
+  "case-078": {
+    "relation_tags": [
+      "evaluation_fear",
+      "start_avoidance"
+    ]
+  },
+  "case-079": {
+    "relation_tags": [
+      "evaluation_fear",
+      "start_avoidance"
+    ]
+  },
+  "case-080": {
+    "relation_tags": [
+      "start_avoidance",
+      "overplanning"
+    ]
+  },
+  "case-081": {
+    "relation_tags": [
+      "start_avoidance",
+      "evaluation_fear"
+    ]
+  },
+  "case-082": {
+    "relation_tags": [
+      "identity_gap"
+    ]
+  },
+  "case-083": {
+    "relation_tags": [
+      "identity_gap"
+    ]
+  },
+  "case-084": {
+    "relation_tags": [
+      "identity_gap"
+    ]
+  },
+  "case-085": {
+    "relation_tags": [
+      "identity_gap",
+      "event_aftereffect"
+    ]
+  },
+  "case-086": {
+    "relation_tags": [
+      "identity_gap"
+    ]
+  },
+  "case-087": {
+    "relation_tags": [
+      "safe_task_selection",
+      "pattern_recognition"
+    ]
+  },
+  "case-088": {
+    "relation_tags": [
+      "context_fragmentation",
+      "schedule_disruption",
+      "pattern_recognition"
+    ]
+  },
+  "case-089": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ]
+  },
+  "case-090": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "case-091": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
+  },
+  "case-092": {
+    "relation_tags": [
+      "self_understanding_product",
+      "event_reflection_link"
+    ]
+  },
+  "case-093": {
+    "relation_tags": [
+      "event_aftereffect",
+      "decision_trace"
+    ]
+  },
+  "case-094": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization"
+    ]
+  },
+  "case-095": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_fog"
+    ]
+  },
+  "case-096": {
+    "relation_tags": [
+      "event_aftereffect"
+    ]
+  },
+  "case-097": {
+    "relation_tags": [
+      "priority_confusion",
+      "context_fragmentation"
+    ]
+  },
+  "case-098": {
+    "relation_tags": [
+      "overplanning",
+      "start_avoidance",
+      "avoidance_rationalization"
+    ]
+  },
+  "case-099": {
+    "relation_tags": [
+      "identity_gap"
+    ]
+  },
+  "case-100": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  }
 }

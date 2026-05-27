@@ -1,6 +1,8 @@
 import argparse
+import http.client
 import json
 import math
+import socket
 import sys
 import urllib.error
 import urllib.request
@@ -10,6 +12,8 @@ from pathlib import Path
 DEFAULT_MODEL = "qwen3-embedding"
 DEFAULT_TAGGING_MODEL = "qwen3:8b"
 DEFAULT_TOP_K = 10
+EMBED_TIMEOUT_SECONDS = 60
+GENERATE_TIMEOUT_SECONDS = 180
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
@@ -66,32 +70,26 @@ def load_json_dict(path: Path) -> dict:
 
 def load_tag_schema(path: Path) -> dict:
     schema = load_json_dict(path)
-    primary_tags = schema.get("primary_tags")
-    secondary_tags = schema.get("secondary_tags")
+    relation_tags = schema.get("relation_tags")
 
-    if not isinstance(primary_tags, dict) or not isinstance(secondary_tags, dict):
-        raise ValueError("tag schema must have primary_tags and secondary_tags objects")
+    if not isinstance(relation_tags, dict):
+        raise ValueError("tag schema must have relation_tags object")
 
     return schema
 
 
 def normalize_annotation(annotation: dict, schema: dict) -> dict:
-    primary = annotation.get("primary")
-    secondary = annotation.get("secondary", [])
-    primary_tags = schema["primary_tags"]
-    secondary_tags = schema["secondary_tags"]
+    relation_tags = annotation.get("relation_tags", [])
+    known_relation_tags = schema["relation_tags"]
 
-    if primary is not None and primary not in primary_tags:
-        raise ValueError(f"unknown primary tag: {primary}")
+    if not isinstance(relation_tags, list) or any(not isinstance(tag, str) for tag in relation_tags):
+        raise ValueError("relation_tags must be a list of strings")
 
-    if not isinstance(secondary, list) or any(not isinstance(tag, str) for tag in secondary):
-        raise ValueError("secondary tags must be a list of strings")
+    unknown_relation_tags = [tag for tag in relation_tags if tag not in known_relation_tags]
+    if unknown_relation_tags:
+        raise ValueError(f"unknown relation tags: {', '.join(unknown_relation_tags)}")
 
-    unknown_secondary = [tag for tag in secondary if tag not in secondary_tags]
-    if unknown_secondary:
-        raise ValueError(f"unknown secondary tags: {', '.join(unknown_secondary)}")
-
-    return {"primary": primary, "secondary": secondary}
+    return {"relation_tags": relation_tags}
 
 
 def load_tag_annotations(path: Path, schema: dict) -> dict[str, dict]:
@@ -106,23 +104,20 @@ def load_tag_annotations(path: Path, schema: dict) -> dict[str, dict]:
     return annotations
 
 
-def parse_secondary_tags(raw: str | None, schema: dict) -> list[str]:
+def parse_relation_tags(raw: str | None, schema: dict) -> list[str]:
     if not raw:
         return []
 
-    secondary = [tag.strip() for tag in raw.split(",") if tag.strip()]
-    normalized = normalize_annotation({"secondary": secondary}, schema)
-    return normalized["secondary"]
+    relation_tags = [tag.strip() for tag in raw.split(",") if tag.strip()]
+    normalized = normalize_annotation({"relation_tags": relation_tags}, schema)
+    return normalized["relation_tags"]
 
 
-def build_retrieval_text(text: str, primary: str | None, secondary: list[str]) -> str:
+def build_retrieval_text(text: str, relation_tags: list[str]) -> str:
     parts = [text.strip()]
 
-    if primary:
-        parts.append(f"[primary]\n{primary}")
-
-    if secondary:
-        parts.append("[secondary]\n" + "\n".join(secondary))
+    if relation_tags:
+        parts.append("[relation_tags]\n" + "\n".join(relation_tags))
 
     return "\n\n".join(part for part in parts if part)
 
@@ -131,14 +126,10 @@ def annotate_memo_text(text: str, annotation: dict | None) -> str:
     if annotation is None:
         return text
 
-    return build_retrieval_text(
-        text,
-        annotation.get("primary"),
-        annotation.get("secondary", []),
-    )
+    return build_retrieval_text(text, annotation.get("relation_tags", []))
 
 
-def post_json(url: str, payload: dict) -> dict:
+def post_json(url: str, payload: dict, timeout: int) -> dict:
     body = json.dumps(payload).encode("utf-8")
     request = urllib.request.Request(
         url,
@@ -147,7 +138,7 @@ def post_json(url: str, payload: dict) -> dict:
         method="POST",
     )
 
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
@@ -161,8 +152,9 @@ def generate_text(prompt: str, model: str) -> str:
                 "stream": False,
                 "options": {"temperature": 0},
             },
+            timeout=GENERATE_TIMEOUT_SECONDS,
         )
-    except urllib.error.URLError as error:
+    except (urllib.error.URLError, TimeoutError, socket.timeout, http.client.RemoteDisconnected) as error:
         raise RuntimeError(
             "Ollama generation request failed. "
             f"Run `ollama serve` and `ollama pull {model}` first."
@@ -176,28 +168,26 @@ def generate_text(prompt: str, model: str) -> str:
 
 
 def build_tagging_prompt(text: str, schema: dict) -> str:
-    primary_lines = [
+    relation_lines = [
         f"- {tag}: {description}"
-        for tag, description in schema["primary_tags"].items()
-    ]
-    secondary_lines = [
-        f"- {tag}: {description}"
-        for tag, description in schema["secondary_tags"].items()
+        for tag, description in schema["relation_tags"].items()
     ]
 
     return "\n".join(
         [
-            "You classify a Korean memo into a fixed KEO tag schema.",
-            "Choose exactly one primary tag and up to three secondary tags.",
-            "Prefer observable memo intent and repeated pattern signals over abstract interpretation.",
+            "You classify a Korean memo into fixed KEO relation tags.",
+            "Choose up to two relation tags.",
+            "The goal is to expose retrieval signals, not memo type.",
+            "Use only signals that are directly supported by the memo text.",
+            "Do not infer hidden causes unless the memo clearly states them.",
+            "Prefer concrete, observable tags over abstract or interpretive tags.",
+            "If a tag needs extra interpretation, do not choose it.",
+            "If two relation tags are similar, choose the more literal one.",
             "Return JSON only. Do not add markdown or explanation.",
-            'JSON schema: {"primary":"<tag>","secondary":["<tag1>","<tag2>"]}',
+            'JSON schema: {"relation_tags":["<tag1>","<tag2>"]}',
             "",
-            "[Primary tags]",
-            *primary_lines,
-            "",
-            "[Secondary tags]",
-            *secondary_lines,
+            "[Relation tags]",
+            *relation_lines,
             "",
             "[Memo]",
             text.strip(),
@@ -218,19 +208,24 @@ def extract_json_object(text: str) -> dict:
     return payload
 
 
+def sanitize_relation_tags(annotation: dict, schema: dict) -> dict:
+    raw_relation_tags = annotation.get("relation_tags", [])
+    if not isinstance(raw_relation_tags, list):
+        return {"relation_tags": []}
+
+    known_relation_tags = schema["relation_tags"]
+    relation_tags = [
+        tag for tag in raw_relation_tags
+        if isinstance(tag, str) and tag in known_relation_tags
+    ]
+    return {"relation_tags": relation_tags[:2]}
+
+
 def annotate_with_llm(text: str, schema: dict, model: str) -> dict:
     prompt = build_tagging_prompt(text, schema)
     response = generate_text(prompt, model)
     annotation = extract_json_object(response)
-    normalized = normalize_annotation(annotation, schema)
-
-    if normalized["primary"] is None:
-        raise ValueError("LLM annotation must include a primary tag")
-
-    if len(normalized["secondary"]) > 3:
-        normalized["secondary"] = normalized["secondary"][:3]
-
-    return normalized
+    return sanitize_relation_tags(annotation, schema)
 
 
 def embed_text(text: str, model: str) -> list[float]:
@@ -240,7 +235,11 @@ def embed_text(text: str, model: str) -> list[float]:
         return cached
 
     try:
-        payload = post_json(OLLAMA_EMBED_URL, {"model": model, "input": text})
+        payload = post_json(
+            OLLAMA_EMBED_URL,
+            {"model": model, "input": text},
+            timeout=EMBED_TIMEOUT_SECONDS,
+        )
         embedding = payload["embeddings"][0]
         EMBED_CACHE[cache_key] = embedding
         return embedding
@@ -260,6 +259,7 @@ def embed_text(text: str, model: str) -> list[float]:
         payload = post_json(
             OLLAMA_LEGACY_EMBEDDINGS_URL,
             {"model": model, "prompt": text},
+            timeout=EMBED_TIMEOUT_SECONDS,
         )
     except urllib.error.URLError as error:
         raise RuntimeError(
@@ -299,8 +299,7 @@ def build_past_memo_index(
         indexed_memos.append(
             {
                 **memo,
-                "primary": annotation.get("primary") if annotation else None,
-                "secondary": annotation.get("secondary", []) if annotation else [],
+                "relation_tags": annotation.get("relation_tags", []) if annotation else [],
                 "retrieval_text": retrieval_text,
                 "embedding": embed_text(retrieval_text, model),
             }
@@ -357,10 +356,8 @@ def print_results(
         print(f"\n{rank}. score={memo['score']:.4f}{hit} id={memo['id']}")
         if memo.get("date"):
             print(f"   date: {memo['date']}")
-        if memo.get("primary"):
-            print(f"   primary: {memo['primary']}")
-        if memo.get("secondary"):
-            print(f"   secondary: {', '.join(memo['secondary'])}")
+        if memo.get("relation_tags"):
+            print(f"   relation_tags: {', '.join(memo['relation_tags'])}")
         print(f"   text: {memo['text']}")
 
 
@@ -516,7 +513,11 @@ def resolve_query_annotation(
     if tagging_model is None:
         raise SystemExit("--tagging-model is required when --tagging-mode llm")
 
-    return annotate_with_llm(current_memo, schema, tagging_model)
+    try:
+        return annotate_with_llm(current_memo, schema, tagging_model)
+    except RuntimeError as error:
+        print(f"[warn] LLM tagging failed for query: {error}", file=sys.stderr)
+        return {"relation_tags": []}
 
 
 def parse_args() -> argparse.Namespace:
@@ -574,21 +575,17 @@ def parse_args() -> argparse.Namespace:
         "--expansion-mode",
         choices=[EXPANSION_NONE, EXPANSION_QUERY_ONLY, EXPANSION_BOTH],
         default=EXPANSION_NONE,
-        help="how to apply fixed primary/secondary tags to retrieval text",
+        help="how to apply relation tags to retrieval text",
     )
     parser.add_argument(
-        "--primary-tag",
-        help="primary tag for single memo retrieval",
-    )
-    parser.add_argument(
-        "--secondary-tags",
-        help="comma-separated secondary tags for single memo retrieval",
+        "--relation-tags",
+        help="comma-separated relation tags for single memo retrieval",
     )
     parser.add_argument(
         "--tagging-mode",
         choices=[TAGGING_FIXED, TAGGING_LLM],
         default=TAGGING_FIXED,
-        help="how to produce query tags for single retrieval and eval cases",
+        help="how to produce query relation tags for single retrieval and eval cases",
     )
     parser.add_argument(
         "--tagging-model",
@@ -610,12 +607,8 @@ def main() -> None:
     if not current_memo:
         raise SystemExit("현재 메모가 비어 있습니다.")
 
-    if args.primary_tag is not None and args.primary_tag not in schema["primary_tags"]:
-        raise SystemExit(f"unknown primary tag: {args.primary_tag}")
-
     fixed_annotation = {
-        "primary": args.primary_tag,
-        "secondary": parse_secondary_tags(args.secondary_tags, schema),
+        "relation_tags": parse_relation_tags(args.relation_tags, schema),
     }
     query_annotation = resolve_query_annotation(
         current_memo,
