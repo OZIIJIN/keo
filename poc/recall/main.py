@@ -14,6 +14,7 @@ DEFAULT_TAGGING_MODEL = "qwen3:8b"
 DEFAULT_TOP_K = 10
 EMBED_TIMEOUT_SECONDS = 60
 GENERATE_TIMEOUT_SECONDS = 180
+DEFAULT_RRF_K = 60
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
@@ -22,11 +23,11 @@ EVAL_PATH = Path(__file__).parent / "eval" / "eval_cases.json"
 TAG_SCHEMA_PATH = Path(__file__).parent / "tag_schema.json"
 PAST_TAGS_PATH = Path(__file__).parent / "eval" / "past_memo_tags.json"
 EVAL_CASE_TAGS_PATH = Path(__file__).parent / "eval" / "eval_case_tags.json"
-EXPANSION_NONE = "none"
-EXPANSION_QUERY_ONLY = "query_only"
-EXPANSION_BOTH = "both"
 TAGGING_FIXED = "fixed"
 TAGGING_LLM = "llm"
+RETRIEVAL_TEXT = "text"
+RETRIEVAL_RELATION = "relation"
+RETRIEVAL_RRF = "rrf"
 EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
 
 
@@ -113,20 +114,10 @@ def parse_relation_tags(raw: str | None, schema: dict) -> list[str]:
     return normalized["relation_tags"]
 
 
-def build_retrieval_text(text: str, relation_tags: list[str]) -> str:
-    parts = [text.strip()]
-
-    if relation_tags:
-        parts.append("[relation_tags]\n" + "\n".join(relation_tags))
-
-    return "\n\n".join(part for part in parts if part)
-
-
-def annotate_memo_text(text: str, annotation: dict | None) -> str:
-    if annotation is None:
-        return text
-
-    return build_retrieval_text(text, annotation.get("relation_tags", []))
+def build_relation_text(relation_tags: list[str]) -> str:
+    if not relation_tags:
+        return ""
+    return "[relation_tags]\n" + "\n".join(relation_tags)
 
 
 def post_json(url: str, payload: dict, timeout: int) -> dict:
@@ -286,26 +277,72 @@ def cosine_similarity(left: list[float], right: list[float]) -> float:
 def build_past_memo_index(
     past_memos: list[dict],
     model: str,
-    expansion_mode: str,
     annotations: dict[str, dict],
+    retrieval_mode: str,
 ) -> list[dict]:
     indexed_memos = []
 
     for memo in past_memos:
         annotation = annotations.get(memo["id"])
-        retrieval_text = memo["text"]
-        if expansion_mode == EXPANSION_BOTH:
-            retrieval_text = annotate_memo_text(memo["text"], annotation)
+        relation_tags = annotation.get("relation_tags", []) if annotation else []
+        relation_text = build_relation_text(relation_tags)
+        text_embedding = None
+        relation_embedding = None
+
+        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF}:
+            text_embedding = embed_text(memo["text"], model)
+
+        if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF} and relation_text:
+            relation_embedding = embed_text(relation_text, model)
+
         indexed_memos.append(
             {
                 **memo,
-                "relation_tags": annotation.get("relation_tags", []) if annotation else [],
-                "retrieval_text": retrieval_text,
-                "embedding": embed_text(retrieval_text, model),
+                "relation_tags": relation_tags,
+                "relation_text": relation_text,
+                "text_embedding": text_embedding,
+                "relation_embedding": relation_embedding,
             }
         )
 
     return indexed_memos
+
+
+def rank_by_embedding(
+    query_embedding: list[float] | None,
+    past_memos: list[dict],
+    embedding_field: str,
+) -> list[dict]:
+    if query_embedding is None:
+        return []
+
+    results = []
+    for memo in past_memos:
+        memo_embedding = memo.get(embedding_field)
+        if memo_embedding is None:
+            continue
+        score = cosine_similarity(query_embedding, memo_embedding)
+        results.append({**memo, "score": score})
+
+    return sorted(results, key=lambda item: item["score"], reverse=True)
+
+
+def rrf_fuse(rankings: list[list[dict]], top_k: int, rrf_k: int) -> list[dict]:
+    fused_scores: dict[str, float] = {}
+    memo_by_id: dict[str, dict] = {}
+
+    for ranking in rankings:
+        for rank, memo in enumerate(ranking, start=1):
+            memo_id = memo["id"]
+            fused_scores[memo_id] = fused_scores.get(memo_id, 0.0) + 1.0 / (rrf_k + rank)
+            if memo_id not in memo_by_id:
+                memo_by_id[memo_id] = memo
+
+    fused_results = []
+    for memo_id, score in fused_scores.items():
+        fused_results.append({**memo_by_id[memo_id], "score": score})
+
+    return sorted(fused_results, key=lambda item: item["score"], reverse=True)[:top_k]
 
 
 def find_similar_memos(
@@ -313,27 +350,39 @@ def find_similar_memos(
     past_memos: list[dict],
     top_k: int,
     model: str,
-    expansion_mode: str,
     query_annotation: dict | None,
-) -> tuple[list[dict], str]:
-    retrieval_text = current_memo
-    if expansion_mode in {EXPANSION_QUERY_ONLY, EXPANSION_BOTH}:
-        retrieval_text = annotate_memo_text(current_memo, query_annotation)
+    retrieval_mode: str,
+    rrf_k: int,
+) -> tuple[list[dict], str | None]:
+    relation_tags = query_annotation.get("relation_tags", []) if query_annotation else []
+    relation_text = build_relation_text(relation_tags)
 
-    current_embedding = embed_text(retrieval_text, model)
-    results = []
+    text_query_embedding = None
+    relation_query_embedding = None
 
-    for memo in past_memos:
-        score = cosine_similarity(current_embedding, memo["embedding"])
-        results.append({**memo, "score": score})
+    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF}:
+        text_query_embedding = embed_text(current_memo, model)
 
-    return sorted(results, key=lambda item: item["score"], reverse=True)[:top_k], retrieval_text
+    if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF} and relation_text:
+        relation_query_embedding = embed_text(relation_text, model)
+
+    text_results = rank_by_embedding(text_query_embedding, past_memos, "text_embedding")
+    relation_results = rank_by_embedding(relation_query_embedding, past_memos, "relation_embedding")
+
+    if retrieval_mode == RETRIEVAL_TEXT:
+        return text_results[:top_k], None
+
+    if retrieval_mode == RETRIEVAL_RELATION:
+        return relation_results[:top_k], relation_text or None
+
+    results = rrf_fuse([text_results, relation_results], top_k, rrf_k)
+    return results, relation_text or None
 
 
 def print_results(
     model: str,
     current_memo: str,
-    retrieval_text: str,
+    relation_text: str | None,
     results: list[dict],
     expected_ids: set[str] | None = None,
 ) -> None:
@@ -341,9 +390,9 @@ def print_results(
     print(f"Embedding model: {model}")
     print("\n[Current memo]")
     print(current_memo)
-    if retrieval_text != current_memo:
-        print("\n[Retrieval text]")
-        print(retrieval_text)
+    if relation_text:
+        print("\n[Relation query text]")
+        print(relation_text)
     if expected_ids is not None:
         print("\n[Expected related memo ids]")
         print(", ".join(sorted(expected_ids)))
@@ -412,11 +461,12 @@ def evaluate_cases(
     top_k: int,
     model: str,
     print_details: bool,
-    expansion_mode: str,
     case_annotations: dict[str, dict],
     tagging_mode: str,
     tagging_model: str | None,
     schema: dict,
+    retrieval_mode: str,
+    rrf_k: int,
 ) -> dict:
     stats = empty_stats()
 
@@ -434,8 +484,9 @@ def evaluate_cases(
             past_memos,
             top_k,
             model,
-            expansion_mode,
             query_annotation,
+            retrieval_mode,
+            rrf_k,
         )
         update_stats(stats, expected_ids, results)
 
@@ -463,8 +514,8 @@ def run_eval(args: argparse.Namespace) -> None:
     past_memos = build_past_memo_index(
         load_past_memos(args.data),
         args.model,
-        args.expansion_mode,
         past_tags,
+        args.retrieval_mode,
     )
     cases = load_eval_cases(args.eval_data)
     stats = evaluate_cases(
@@ -473,16 +524,17 @@ def run_eval(args: argparse.Namespace) -> None:
         args.top_k,
         args.model,
         not args.summary_only,
-        args.expansion_mode,
         case_tags,
         args.tagging_mode,
         args.tagging_model,
         schema,
+        args.retrieval_mode,
+        args.rrf_k,
     )
 
     print("\n=== Overall Eval Summary ===")
     print(f"model: {args.model}")
-    print(f"expansion mode: {args.expansion_mode}")
+    print(f"retrieval mode: {args.retrieval_mode}")
     print(f"tagging mode: {args.tagging_mode}")
     if args.tagging_model:
         print(f"tagging model: {args.tagging_model}")
@@ -572,10 +624,10 @@ def parse_args() -> argparse.Namespace:
         help="path to eval case tag annotations",
     )
     parser.add_argument(
-        "--expansion-mode",
-        choices=[EXPANSION_NONE, EXPANSION_QUERY_ONLY, EXPANSION_BOTH],
-        default=EXPANSION_NONE,
-        help="how to apply relation tags to retrieval text",
+        "--retrieval-mode",
+        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF],
+        default=RETRIEVAL_TEXT,
+        help="retrieval channel to use: text-only, relation-only, or text+relation RRF",
     )
     parser.add_argument(
         "--relation-tags",
@@ -591,6 +643,12 @@ def parse_args() -> argparse.Namespace:
         "--tagging-model",
         default=DEFAULT_TAGGING_MODEL,
         help="Ollama generation model to use for LLM tagging",
+    )
+    parser.add_argument(
+        "--rrf-k",
+        type=int,
+        default=DEFAULT_RRF_K,
+        help="RRF constant used when --retrieval-mode rrf",
     )
     return parser.parse_args()
 
@@ -621,16 +679,17 @@ def main() -> None:
     past_memos = build_past_memo_index(
         load_past_memos(args.data),
         args.model,
-        args.expansion_mode,
         past_tags,
+        args.retrieval_mode,
     )
     results, retrieval_text = find_similar_memos(
         current_memo,
         past_memos,
         args.top_k,
         args.model,
-        args.expansion_mode,
         query_annotation,
+        args.retrieval_mode,
+        args.rrf_k,
     )
     print_results(args.model, current_memo, retrieval_text, results)
 
