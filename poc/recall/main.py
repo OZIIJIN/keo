@@ -11,11 +11,13 @@ from pathlib import Path
 
 DEFAULT_MODEL = "qwen3-embedding"
 DEFAULT_TAGGING_MODEL = "qwen3:8b"
+DEFAULT_RERANK_MODEL = "qwen3:8b"
 DEFAULT_TOP_K = 10
 EMBED_TIMEOUT_SECONDS = 60
-GENERATE_TIMEOUT_SECONDS = 180
+GENERATE_TIMEOUT_SECONDS = 900
 DEFAULT_RRF_K = 60
 DEFAULT_RELATION_CANDIDATE_K = 30
+DEFAULT_RERANK_CANDIDATE_K = 30
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
@@ -30,7 +32,26 @@ RETRIEVAL_TEXT = "text"
 RETRIEVAL_RELATION = "relation"
 RETRIEVAL_RRF = "rrf"
 RETRIEVAL_RELATION_GATE = "relation_gate"
+RETRIEVAL_TEXT_RERANK = "text_rerank"
 EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
+RERANK_LABELS = {
+    "회피": "해야 할 본체 대신 주변으로 샘",
+    "미룸": "할 일을 다음으로 계속 넘김",
+    "흐름끊김": "일정이나 알림으로 집중이 깨짐",
+    "피로": "몸 상태가 판단과 실행에 영향을 줌",
+    "쉼불안": "쉬어도 불안하거나 회복이 안 됨",
+    "생활밀림": "자잘한 생활 일이 쌓임",
+    "돈걱정": "돈 생각이 올라와 집중이 흐려짐",
+    "여운": "장면, 문장, 사건의 잔상이 오래 감",
+    "겉속다름": "겉으로 보인 나와 실제 내가 어긋남",
+    "패턴발견": "반복되는 흐름을 알아차림",
+    "아이디어": "앱이나 구조에 대한 통찰",
+    "잘됐다": "흐름이 좋거나 뭔가 잘 풀린 날",
+    "회복": "쉬거나 환경을 바꿔서 나아진 느낌",
+    "발견": "읽다가 또는 우연히 뭔가를 새로 알게 됨",
+    "몰입": "흐름이 잘 타서 깊게 들어간 날",
+    "관찰": "판단 없이 있는 그대로 기록한 메모",
+}
 
 
 def load_past_memos(path: Path) -> list[dict]:
@@ -135,7 +156,7 @@ def post_json(url: str, payload: dict, timeout: int) -> dict:
         return json.loads(response.read().decode("utf-8"))
 
 
-def generate_text(prompt: str, model: str) -> str:
+def generate_text(prompt: str, model: str, timeout: int = GENERATE_TIMEOUT_SECONDS) -> str:
     try:
         payload = post_json(
             OLLAMA_GENERATE_URL,
@@ -145,7 +166,7 @@ def generate_text(prompt: str, model: str) -> str:
                 "stream": False,
                 "options": {"temperature": 0},
             },
-            timeout=GENERATE_TIMEOUT_SECONDS,
+            timeout=timeout,
         )
     except (urllib.error.URLError, TimeoutError, socket.timeout, http.client.RemoteDisconnected) as error:
         raise RuntimeError(
@@ -188,16 +209,64 @@ def build_tagging_prompt(text: str, schema: dict) -> str:
     )
 
 
-def extract_json_object(text: str) -> dict:
+def build_rerank_prompt(current_memo: str, candidates: list[dict], top_k: int) -> str:
+    candidate_lines = []
+    for candidate in candidates:
+        candidate_lines.append(f"- {candidate['id']}: {candidate['text']}")
+    label_lines = [f"- {label}: {description}" for label, description in RERANK_LABELS.items()]
+
+    return "\n".join(
+        [
+            "You review Korean memo retrieval candidates for KEO.",
+            "Select only the candidates that are meaningfully related to the current memo.",
+            "Prefer deeper pattern similarity over surface word overlap.",
+            "A candidate can still be relevant if the domain differs but the repeated pattern is similar.",
+            f"Select up to {top_k} candidate ids from the list below.",
+            "Then choose one label from the fixed label list below.",
+            "Return JSON only. Do not add markdown or explanation outside JSON.",
+            'JSON schema: {"label":"라벨 하나 또는 빈 문자열","reason":"짧은 한 문장 또는 빈 문자열","results":["memo-123","memo-045"]}',
+            "Use only candidate ids from the list.",
+            "Write label and reason in Korean.",
+            "The label must be chosen from the fixed label list below.",
+            "The label should describe the shared pattern of the selected set, not each memo separately.",
+            "Use '회피' when the memo avoids the main thing by moving sideways.",
+            "Use '미룸' when the main thing is simply pushed to later.",
+            "Use '발견' for a new realization and '패턴발견' for noticing a repeated personal pattern.",
+            "If there is no clear shared pattern, return empty strings for label and reason.",
+            "Do not force a pattern when the connection is weak or mixed.",
+            "Keep reason short, one sentence max.",
+            "",
+            "[Fixed labels]",
+            *label_lines,
+            "",
+            "[Current memo]",
+            current_memo.strip(),
+            "",
+            "[Candidates]",
+            *candidate_lines,
+        ]
+    )
+
+
+def extract_json_value(text: str) -> object:
     start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1 or end < start:
+    array_start = text.find("[")
+
+    if start == -1 and array_start == -1:
         raise ValueError("no JSON object found in LLM response")
 
-    payload = json.loads(text[start : end + 1])
+    if array_start != -1 and (start == -1 or array_start < start):
+        start = array_start
+
+    decoder = json.JSONDecoder()
+    payload, _ = decoder.raw_decode(text[start:])
+    return payload
+
+
+def extract_json_object(text: str) -> dict:
+    payload = extract_json_value(text)
     if not isinstance(payload, dict):
         raise ValueError("LLM response JSON must be an object")
-
     return payload
 
 
@@ -214,11 +283,67 @@ def sanitize_relation_tags(annotation: dict, schema: dict) -> dict:
     return {"relation_tags": relation_tags[:2]}
 
 
-def annotate_with_llm(text: str, schema: dict, model: str) -> dict:
+def annotate_with_llm(text: str, schema: dict, model: str, timeout: int = GENERATE_TIMEOUT_SECONDS) -> dict:
     prompt = build_tagging_prompt(text, schema)
-    response = generate_text(prompt, model)
+    response = generate_text(prompt, model, timeout=timeout)
     annotation = extract_json_object(response)
     return sanitize_relation_tags(annotation, schema)
+
+
+def rerank_with_llm(
+    current_memo: str,
+    candidates: list[dict],
+    model: str,
+    top_k: int,
+    timeout: int = GENERATE_TIMEOUT_SECONDS,
+) -> tuple[list[dict], dict | None]:
+    if not candidates:
+        return [], None
+
+    prompt = build_rerank_prompt(current_memo, candidates, top_k)
+    response = generate_text(prompt, model, timeout=timeout)
+    payload = extract_json_value(response)
+    if not isinstance(payload, dict):
+        raise RuntimeError("LLM reranker response must be a JSON object")
+
+    raw_results = payload.get("results", [])
+
+    if not isinstance(raw_results, list):
+        raise RuntimeError("LLM reranker response must contain a results list")
+
+    candidate_by_id = {candidate["id"]: candidate for candidate in candidates}
+    reranked = []
+    seen_ids: set[str] = set()
+
+    for memo_id in raw_results:
+        if not isinstance(memo_id, str) or memo_id not in candidate_by_id or memo_id in seen_ids:
+            continue
+        reranked.append(
+            {
+                **candidate_by_id[memo_id],
+                "score": candidate_by_id[memo_id]["score"],
+            }
+        )
+        seen_ids.add(memo_id)
+
+        if len(reranked) >= top_k:
+            break
+
+    if not reranked:
+        raise RuntimeError("LLM reranker did not return any valid candidate ids")
+
+    label = payload.get("label")
+    reason = payload.get("reason")
+    summary = None
+    if isinstance(label, str) and label not in RERANK_LABELS:
+        label = ""
+    if isinstance(label, str) or isinstance(reason, str):
+        summary = {
+            "label": label if isinstance(label, str) else "",
+            "reason": reason if isinstance(reason, str) else "",
+        }
+
+    return reranked, summary
 
 
 def embed_text(text: str, model: str) -> list[float]:
@@ -291,7 +416,7 @@ def build_past_memo_index(
         text_embedding = None
         relation_embedding = None
 
-        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE}:
+        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK}:
             text_embedding = embed_text(memo["text"], model)
 
         if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE} and relation_text:
@@ -375,14 +500,17 @@ def find_similar_memos(
     retrieval_mode: str,
     rrf_k: int,
     relation_candidate_k: int,
-) -> tuple[list[dict], str | None]:
+    rerank_model: str | None,
+    rerank_candidate_k: int,
+    generate_timeout: int,
+) -> tuple[list[dict], str | None, dict | None]:
     relation_tags = query_annotation.get("relation_tags", []) if query_annotation else []
     relation_text = build_relation_text(relation_tags)
 
     text_query_embedding = None
     relation_query_embedding = None
 
-    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE}:
+    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK}:
         text_query_embedding = embed_text(current_memo, model)
 
     if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE} and relation_text:
@@ -392,18 +520,31 @@ def find_similar_memos(
     relation_results = rank_by_embedding(relation_query_embedding, past_memos, "relation_embedding")
 
     if retrieval_mode == RETRIEVAL_TEXT:
-        return text_results[:top_k], None
+        return text_results[:top_k], None, None
 
     if retrieval_mode == RETRIEVAL_RELATION:
-        return relation_results[:top_k], relation_text or None
+        return relation_results[:top_k], relation_text or None, None
 
     if retrieval_mode == RETRIEVAL_RELATION_GATE:
         relation_candidates = relation_results[:relation_candidate_k]
         results = rerank_by_text(relation_candidates, text_query_embedding, top_k)
-        return results, relation_text or None
+        return results, relation_text or None, None
+
+    if retrieval_mode == RETRIEVAL_TEXT_RERANK:
+        if rerank_model is None:
+            raise RuntimeError("LLM reranker model is required for text_rerank mode")
+        text_candidates = text_results[:rerank_candidate_k]
+        results, summary = rerank_with_llm(
+            current_memo,
+            text_candidates,
+            rerank_model,
+            top_k,
+            timeout=generate_timeout,
+        )
+        return results, None, summary
 
     results = rrf_fuse([text_results, relation_results], top_k, rrf_k)
-    return results, relation_text or None
+    return results, relation_text or None, None
 
 
 def print_results(
@@ -411,6 +552,7 @@ def print_results(
     current_memo: str,
     relation_text: str | None,
     results: list[dict],
+    rerank_summary: dict | None = None,
     expected_ids: set[str] | None = None,
 ) -> None:
     print("\n=== Recall Retrieval POC ===")
@@ -420,6 +562,12 @@ def print_results(
     if relation_text:
         print("\n[Relation query text]")
         print(relation_text)
+    if rerank_summary and (rerank_summary.get("label") or rerank_summary.get("reason")):
+        print("\n[Shared pattern]")
+        if rerank_summary.get("label"):
+            print(f"label: {rerank_summary['label']}")
+        if rerank_summary.get("reason"):
+            print(f"reason: {rerank_summary['reason']}")
     if expected_ids is not None:
         print("\n[Expected related memo ids]")
         print(", ".join(sorted(expected_ids)))
@@ -495,6 +643,9 @@ def evaluate_cases(
     retrieval_mode: str,
     rrf_k: int,
     relation_candidate_k: int,
+    rerank_model: str | None,
+    rerank_candidate_k: int,
+    generate_timeout: int,
 ) -> dict:
     stats = empty_stats()
 
@@ -507,7 +658,7 @@ def evaluate_cases(
             tagging_model,
             schema,
         )
-        results, retrieval_text = find_similar_memos(
+        results, retrieval_text, rerank_summary = find_similar_memos(
             case["current_memo"],
             past_memos,
             top_k,
@@ -516,11 +667,14 @@ def evaluate_cases(
             retrieval_mode,
             rrf_k,
             relation_candidate_k,
+            rerank_model,
+            rerank_candidate_k,
+            generate_timeout,
         )
         update_stats(stats, expected_ids, results)
 
         if print_details:
-            print_results(model, case["current_memo"], retrieval_text, results, expected_ids)
+            print_results(model, case["current_memo"], retrieval_text, results, rerank_summary, expected_ids)
             print_eval_summary(case, results, top_k)
 
     return stats
@@ -560,6 +714,9 @@ def run_eval(args: argparse.Namespace) -> None:
         args.retrieval_mode,
         args.rrf_k,
         args.relation_candidate_k,
+        args.rerank_model,
+        args.rerank_candidate_k,
+        args.generate_timeout,
     )
 
     print("\n=== Overall Eval Summary ===")
@@ -588,6 +745,7 @@ def resolve_query_annotation(
     tagging_mode: str,
     tagging_model: str | None,
     schema: dict,
+    generate_timeout: int,
 ) -> dict | None:
     if tagging_mode == TAGGING_FIXED:
         return fixed_annotation
@@ -596,7 +754,7 @@ def resolve_query_annotation(
         raise SystemExit("--tagging-model is required when --tagging-mode llm")
 
     try:
-        return annotate_with_llm(current_memo, schema, tagging_model)
+        return annotate_with_llm(current_memo, schema, tagging_model, timeout=generate_timeout)
     except RuntimeError as error:
         print(f"[warn] LLM tagging failed for query: {error}", file=sys.stderr)
         return {"relation_tags": []}
@@ -655,9 +813,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--retrieval-mode",
-        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE],
+        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK],
         default=RETRIEVAL_TEXT,
-        help="retrieval channel to use: text-only, relation-only, text+relation RRF, or relation-gated text rerank",
+        help="retrieval channel to use: text-only, relation-only, text+relation RRF, relation-gated text rerank, or dense candidates plus LLM rerank",
     )
     parser.add_argument(
         "--relation-tags",
@@ -686,6 +844,23 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_RELATION_CANDIDATE_K,
         help="candidate set size used when --retrieval-mode relation_gate",
     )
+    parser.add_argument(
+        "--rerank-model",
+        default=DEFAULT_RERANK_MODEL,
+        help="Ollama generation model used when --retrieval-mode text_rerank",
+    )
+    parser.add_argument(
+        "--rerank-candidate-k",
+        type=int,
+        default=DEFAULT_RERANK_CANDIDATE_K,
+        help="dense candidate set size used when --retrieval-mode text_rerank",
+    )
+    parser.add_argument(
+        "--generate-timeout",
+        type=int,
+        default=GENERATE_TIMEOUT_SECONDS,
+        help="timeout in seconds for Ollama generation requests",
+    )
     return parser.parse_args()
 
 
@@ -710,6 +885,7 @@ def main() -> None:
         args.tagging_mode,
         args.tagging_model,
         schema,
+        args.generate_timeout,
     )
     past_tags = load_tag_annotations(args.past_tags, schema)
     past_memos = build_past_memo_index(
@@ -718,7 +894,7 @@ def main() -> None:
         past_tags,
         args.retrieval_mode,
     )
-    results, retrieval_text = find_similar_memos(
+    results, retrieval_text, rerank_summary = find_similar_memos(
         current_memo,
         past_memos,
         args.top_k,
@@ -727,8 +903,11 @@ def main() -> None:
         args.retrieval_mode,
         args.rrf_k,
         args.relation_candidate_k,
+        args.rerank_model,
+        args.rerank_candidate_k,
+        args.generate_timeout,
     )
-    print_results(args.model, current_memo, retrieval_text, results)
+    print_results(args.model, current_memo, retrieval_text, results, rerank_summary)
 
 
 if __name__ == "__main__":
