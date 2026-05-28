@@ -594,5 +594,40 @@
       "pattern_recognition",
       "decision_trace"
     ]
+  },
+  "case-101": {
+    "relation_tags": [
+      "event_reflection_link",
+      "decision_trace"
+    ]
+  },
+  "case-102": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "case-103": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "case-104": {
+    "relation_tags": [
+      "self_understanding_product"
+    ]
+  },
+  "case-105": {
+    "relation_tags": [
+      "event_aftereffect",
+      "decision_trace"
+    ]
+  },
+  "case-106": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ]
   }
 }

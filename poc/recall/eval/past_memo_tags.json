@@ -1167,5 +1167,94 @@
       "recovery_failure",
       "pattern_recognition"
     ]
+  },
+  "memo-201": {
+    "relation_tags": [
+      "event_reflection_link",
+      "decision_trace"
+    ]
+  },
+  "memo-202": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_aftereffect"
+    ]
+  },
+  "memo-203": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "memo-204": {
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ]
+  },
+  "memo-205": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "memo-206": {
+    "relation_tags": [
+      "event_aftereffect",
+      "decision_trace"
+    ]
+  },
+  "memo-207": {
+    "relation_tags": [
+      "self_understanding_product",
+      "event_reflection_link"
+    ]
+  },
+  "memo-208": {
+    "relation_tags": [
+      "self_understanding_product"
+    ]
+  },
+  "memo-209": {
+    "relation_tags": [
+      "social_response_delay",
+      "low_energy_drift"
+    ]
+  },
+  "memo-210": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ]
+  },
+  "memo-211": {
+    "relation_tags": [
+      "event_aftereffect",
+      "decision_trace"
+    ]
+  },
+  "memo-212": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ]
+  },
+  "memo-213": {
+    "relation_tags": [
+      "life_admin_overload",
+      "priority_confusion"
+    ]
+  },
+  "memo-214": {
+    "relation_tags": [
+      "event_reflection_link",
+      "event_aftereffect"
+    ]
+  },
+  "memo-215": {
+    "relation_tags": [
+      "external_priority_capture",
+      "decision_fog"
+    ]
   }
 }
