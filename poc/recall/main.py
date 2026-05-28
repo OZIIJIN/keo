@@ -15,6 +15,7 @@ DEFAULT_TOP_K = 10
 EMBED_TIMEOUT_SECONDS = 60
 GENERATE_TIMEOUT_SECONDS = 180
 DEFAULT_RRF_K = 60
+DEFAULT_RELATION_CANDIDATE_K = 30
 OLLAMA_EMBED_URL = "http://localhost:11434/api/embed"
 OLLAMA_LEGACY_EMBEDDINGS_URL = "http://localhost:11434/api/embeddings"
 OLLAMA_GENERATE_URL = "http://localhost:11434/api/generate"
@@ -28,6 +29,7 @@ TAGGING_LLM = "llm"
 RETRIEVAL_TEXT = "text"
 RETRIEVAL_RELATION = "relation"
 RETRIEVAL_RRF = "rrf"
+RETRIEVAL_RELATION_GATE = "relation_gate"
 EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
 
 
@@ -289,10 +291,10 @@ def build_past_memo_index(
         text_embedding = None
         relation_embedding = None
 
-        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF}:
+        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE}:
             text_embedding = embed_text(memo["text"], model)
 
-        if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF} and relation_text:
+        if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE} and relation_text:
             relation_embedding = embed_text(relation_text, model)
 
         indexed_memos.append(
@@ -345,6 +347,25 @@ def rrf_fuse(rankings: list[list[dict]], top_k: int, rrf_k: int) -> list[dict]:
     return sorted(fused_results, key=lambda item: item["score"], reverse=True)[:top_k]
 
 
+def rerank_by_text(
+    candidates: list[dict],
+    query_embedding: list[float] | None,
+    top_k: int,
+) -> list[dict]:
+    if query_embedding is None:
+        return []
+
+    reranked = []
+    for memo in candidates:
+        memo_embedding = memo.get("text_embedding")
+        if memo_embedding is None:
+            continue
+        score = cosine_similarity(query_embedding, memo_embedding)
+        reranked.append({**memo, "score": score})
+
+    return sorted(reranked, key=lambda item: item["score"], reverse=True)[:top_k]
+
+
 def find_similar_memos(
     current_memo: str,
     past_memos: list[dict],
@@ -353,6 +374,7 @@ def find_similar_memos(
     query_annotation: dict | None,
     retrieval_mode: str,
     rrf_k: int,
+    relation_candidate_k: int,
 ) -> tuple[list[dict], str | None]:
     relation_tags = query_annotation.get("relation_tags", []) if query_annotation else []
     relation_text = build_relation_text(relation_tags)
@@ -360,10 +382,10 @@ def find_similar_memos(
     text_query_embedding = None
     relation_query_embedding = None
 
-    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF}:
+    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE}:
         text_query_embedding = embed_text(current_memo, model)
 
-    if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF} and relation_text:
+    if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE} and relation_text:
         relation_query_embedding = embed_text(relation_text, model)
 
     text_results = rank_by_embedding(text_query_embedding, past_memos, "text_embedding")
@@ -374,6 +396,11 @@ def find_similar_memos(
 
     if retrieval_mode == RETRIEVAL_RELATION:
         return relation_results[:top_k], relation_text or None
+
+    if retrieval_mode == RETRIEVAL_RELATION_GATE:
+        relation_candidates = relation_results[:relation_candidate_k]
+        results = rerank_by_text(relation_candidates, text_query_embedding, top_k)
+        return results, relation_text or None
 
     results = rrf_fuse([text_results, relation_results], top_k, rrf_k)
     return results, relation_text or None
@@ -467,6 +494,7 @@ def evaluate_cases(
     schema: dict,
     retrieval_mode: str,
     rrf_k: int,
+    relation_candidate_k: int,
 ) -> dict:
     stats = empty_stats()
 
@@ -487,6 +515,7 @@ def evaluate_cases(
             query_annotation,
             retrieval_mode,
             rrf_k,
+            relation_candidate_k,
         )
         update_stats(stats, expected_ids, results)
 
@@ -530,6 +559,7 @@ def run_eval(args: argparse.Namespace) -> None:
         schema,
         args.retrieval_mode,
         args.rrf_k,
+        args.relation_candidate_k,
     )
 
     print("\n=== Overall Eval Summary ===")
@@ -625,9 +655,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--retrieval-mode",
-        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF],
+        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE],
         default=RETRIEVAL_TEXT,
-        help="retrieval channel to use: text-only, relation-only, or text+relation RRF",
+        help="retrieval channel to use: text-only, relation-only, text+relation RRF, or relation-gated text rerank",
     )
     parser.add_argument(
         "--relation-tags",
@@ -649,6 +679,12 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=DEFAULT_RRF_K,
         help="RRF constant used when --retrieval-mode rrf",
+    )
+    parser.add_argument(
+        "--relation-candidate-k",
+        type=int,
+        default=DEFAULT_RELATION_CANDIDATE_K,
+        help="candidate set size used when --retrieval-mode relation_gate",
     )
     return parser.parse_args()
 
@@ -690,6 +726,7 @@ def main() -> None:
         query_annotation,
         args.retrieval_mode,
         args.rrf_k,
+        args.relation_candidate_k,
     )
     print_results(args.model, current_memo, retrieval_text, results)
 
