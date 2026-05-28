@@ -1,7 +1,9 @@
 import argparse
+import atexit
 import http.client
 import json
 import math
+import re
 import socket
 import sys
 import urllib.error
@@ -26,6 +28,7 @@ EVAL_PATH = Path(__file__).parent / "eval" / "eval_cases.json"
 TAG_SCHEMA_PATH = Path(__file__).parent / "tag_schema.json"
 PAST_TAGS_PATH = Path(__file__).parent / "eval" / "past_memo_tags.json"
 EVAL_CASE_TAGS_PATH = Path(__file__).parent / "eval" / "eval_case_tags.json"
+CACHE_DIR = Path(__file__).parent / "cache"
 TAGGING_FIXED = "fixed"
 TAGGING_LLM = "llm"
 RETRIEVAL_TEXT = "text"
@@ -34,6 +37,8 @@ RETRIEVAL_RRF = "rrf"
 RETRIEVAL_RELATION_GATE = "relation_gate"
 RETRIEVAL_TEXT_RERANK = "text_rerank"
 EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
+EMBED_CACHE_LOADED_MODELS: set[str] = set()
+EMBED_CACHE_DIRTY_MODELS: set[str] = set()
 RERANK_LABELS = {
     "회피": "해야 할 본체 대신 주변으로 샘",
     "미룸": "할 일을 다음으로 계속 넘김",
@@ -52,6 +57,70 @@ RERANK_LABELS = {
     "몰입": "흐름이 잘 타서 깊게 들어간 날",
     "관찰": "판단 없이 있는 그대로 기록한 메모",
 }
+RERANK_RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "label": {"type": "string"},
+        "reason": {"type": "string"},
+        "results": {
+            "type": "array",
+            "items": {"type": "string"},
+        },
+    },
+    "required": ["label", "reason", "results"],
+}
+
+
+def sanitize_model_name(model: str) -> str:
+    return re.sub(r"[^a-zA-Z0-9._-]+", "_", model)
+
+
+def get_embed_cache_path(model: str) -> Path:
+    return CACHE_DIR / f"embed_cache.{sanitize_model_name(model)}.json"
+
+
+def load_embed_cache_for_model(model: str) -> None:
+    if model in EMBED_CACHE_LOADED_MODELS:
+        return
+
+    cache_path = get_embed_cache_path(model)
+    if cache_path.exists():
+        with cache_path.open("r", encoding="utf-8") as file:
+            payload = json.load(file)
+
+        if not isinstance(payload, dict):
+            raise ValueError(f"embed cache file must contain a JSON object: {cache_path}")
+
+        for text, embedding in payload.items():
+            if isinstance(text, str) and isinstance(embedding, list):
+                EMBED_CACHE[(model, text)] = embedding
+
+    EMBED_CACHE_LOADED_MODELS.add(model)
+
+
+def save_embed_cache_for_model(model: str) -> None:
+    if model not in EMBED_CACHE_DIRTY_MODELS:
+        return
+
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    cache_path = get_embed_cache_path(model)
+    payload = {
+        text: embedding
+        for (cached_model, text), embedding in EMBED_CACHE.items()
+        if cached_model == model
+    }
+    with cache_path.open("w", encoding="utf-8") as file:
+        json.dump(payload, file, ensure_ascii=False)
+
+    EMBED_CACHE_DIRTY_MODELS.discard(model)
+
+
+def save_all_embed_caches() -> None:
+    for model in list(EMBED_CACHE_DIRTY_MODELS):
+        save_embed_cache_for_model(model)
+
+
+atexit.register(save_all_embed_caches)
 
 
 def load_past_memos(path: Path) -> list[dict]:
@@ -156,16 +225,25 @@ def post_json(url: str, payload: dict, timeout: int) -> dict:
         return json.loads(response.read().decode("utf-8"))
 
 
-def generate_text(prompt: str, model: str, timeout: int = GENERATE_TIMEOUT_SECONDS) -> str:
+def generate_text(
+    prompt: str,
+    model: str,
+    timeout: int = GENERATE_TIMEOUT_SECONDS,
+    response_format: str | dict | None = None,
+) -> str:
+    request_payload = {
+        "model": model,
+        "prompt": prompt,
+        "stream": False,
+        "options": {"temperature": 0},
+    }
+    if response_format is not None:
+        request_payload["format"] = response_format
+
     try:
         payload = post_json(
             OLLAMA_GENERATE_URL,
-            {
-                "model": model,
-                "prompt": prompt,
-                "stream": False,
-                "options": {"temperature": 0},
-            },
+            request_payload,
             timeout=timeout,
         )
     except (urllib.error.URLError, TimeoutError, socket.timeout, http.client.RemoteDisconnected) as error:
@@ -217,14 +295,21 @@ def build_rerank_prompt(current_memo: str, candidates: list[dict], top_k: int) -
 
     return "\n".join(
         [
+            "/no_think",
             "You review Korean memo retrieval candidates for KEO.",
-            "Select only the candidates that are meaningfully related to the current memo.",
+            "Return one JSON object only.",
+            "Do not write markdown, bullets, headings, or explanation outside JSON.",
+            "Rank the candidates by relevance to the current memo.",
             "Prefer deeper pattern similarity over surface word overlap.",
             "A candidate can still be relevant if the domain differs but the repeated pattern is similar.",
-            f"Select up to {top_k} candidate ids from the list below.",
+            f"Return exactly {min(top_k, len(candidates))} candidate ids unless there are fewer candidates.",
             "Then choose one label from the fixed label list below.",
-            "Return JSON only. Do not add markdown or explanation outside JSON.",
-            'JSON schema: {"label":"라벨 하나 또는 빈 문자열","reason":"짧은 한 문장 또는 빈 문자열","results":["memo-123","memo-045"]}',
+            'Required JSON shape: {"label":"패턴발견","reason":"짧은 한 문장","results":["memo-123","memo-045"]}',
+            'The "results" field is required.',
+            'Never return an empty object.',
+            'Never return an empty "results" list when candidates are provided.',
+            'Do not put memo ids inside "reason". Put memo ids only inside "results".',
+            'Do not rename keys. Use exactly these keys: "label", "reason", "results".',
             "Use only candidate ids from the list.",
             "Write label and reason in Korean.",
             "The label must be chosen from the fixed label list below.",
@@ -232,9 +317,10 @@ def build_rerank_prompt(current_memo: str, candidates: list[dict], top_k: int) -
             "Use '회피' when the memo avoids the main thing by moving sideways.",
             "Use '미룸' when the main thing is simply pushed to later.",
             "Use '발견' for a new realization and '패턴발견' for noticing a repeated personal pattern.",
-            "If there is no clear shared pattern, return empty strings for label and reason.",
-            "Do not force a pattern when the connection is weak or mixed.",
+            "If the shared pattern is weak or mixed, still rank the closest candidates and use an empty label.",
             "Keep reason short, one sentence max.",
+            'Example valid output: {"label":"패턴발견","reason":"시작을 미루는 반복 패턴이 보인다.","results":["memo-006","memo-022"]}',
+            'Example valid output with weak pattern: {"label":"","reason":"","results":["memo-006","memo-022"]}',
             "",
             "[Fixed labels]",
             *label_lines,
@@ -285,7 +371,7 @@ def sanitize_relation_tags(annotation: dict, schema: dict) -> dict:
 
 def annotate_with_llm(text: str, schema: dict, model: str, timeout: int = GENERATE_TIMEOUT_SECONDS) -> dict:
     prompt = build_tagging_prompt(text, schema)
-    response = generate_text(prompt, model, timeout=timeout)
+    response = generate_text(prompt, model, timeout=timeout, response_format="json")
     annotation = extract_json_object(response)
     return sanitize_relation_tags(annotation, schema)
 
@@ -301,8 +387,14 @@ def rerank_with_llm(
         return [], None
 
     prompt = build_rerank_prompt(current_memo, candidates, top_k)
-    response = generate_text(prompt, model, timeout=timeout)
-    payload = extract_json_value(response)
+    response = generate_text(prompt, model, timeout=timeout, response_format=RERANK_RESPONSE_SCHEMA)
+    try:
+        payload = extract_json_value(response)
+    except Exception as error:
+        raise RuntimeError(
+            "LLM reranker returned invalid JSON. "
+            f"Raw response: {response[:1000]}"
+        ) from error
     if not isinstance(payload, dict):
         raise RuntimeError("LLM reranker response must be a JSON object")
 
@@ -330,7 +422,10 @@ def rerank_with_llm(
             break
 
     if not reranked:
-        raise RuntimeError("LLM reranker did not return any valid candidate ids")
+        raise RuntimeError(
+            "LLM reranker did not return any valid candidate ids. "
+            f"Raw response: {response[:1000]}"
+        )
 
     label = payload.get("label")
     reason = payload.get("reason")
@@ -347,6 +442,7 @@ def rerank_with_llm(
 
 
 def embed_text(text: str, model: str) -> list[float]:
+    load_embed_cache_for_model(model)
     cache_key = (model, text)
     cached = EMBED_CACHE.get(cache_key)
     if cached is not None:
@@ -360,6 +456,7 @@ def embed_text(text: str, model: str) -> list[float]:
         )
         embedding = payload["embeddings"][0]
         EMBED_CACHE[cache_key] = embedding
+        EMBED_CACHE_DIRTY_MODELS.add(model)
         return embedding
     except urllib.error.HTTPError as error:
         if error.code != 404:
@@ -387,6 +484,7 @@ def embed_text(text: str, model: str) -> list[float]:
 
     embedding = payload["embedding"]
     EMBED_CACHE[cache_key] = embedding
+    EMBED_CACHE_DIRTY_MODELS.add(model)
     return embedding
 
 
@@ -649,28 +747,39 @@ def evaluate_cases(
 ) -> dict:
     stats = empty_stats()
 
-    for case in cases:
+    total_cases = len(cases)
+    for index, case in enumerate(cases, start=1):
+        if not print_details:
+            print(f"[eval] {index}/{total_cases} {case['id']}", file=sys.stderr, flush=True)
+
         expected_ids = set(case["expected_ids"])
-        query_annotation = resolve_query_annotation(
-            case["current_memo"],
-            case_annotations.get(case["id"]),
-            tagging_mode,
-            tagging_model,
-            schema,
-        )
-        results, retrieval_text, rerank_summary = find_similar_memos(
-            case["current_memo"],
-            past_memos,
-            top_k,
-            model,
-            query_annotation,
-            retrieval_mode,
-            rrf_k,
-            relation_candidate_k,
-            rerank_model,
-            rerank_candidate_k,
-            generate_timeout,
-        )
+        try:
+            query_annotation = resolve_query_annotation(
+                case["current_memo"],
+                case_annotations.get(case["id"]),
+                tagging_mode,
+                tagging_model,
+                schema,
+                generate_timeout,
+            )
+            results, retrieval_text, rerank_summary = find_similar_memos(
+                case["current_memo"],
+                past_memos,
+                top_k,
+                model,
+                query_annotation,
+                retrieval_mode,
+                rrf_k,
+                relation_candidate_k,
+                rerank_model,
+                rerank_candidate_k,
+                generate_timeout,
+            )
+        except Exception as error:
+            print("\n[Eval failure]")
+            print(f"case: {case['id']}")
+            print(f"current_memo: {case['current_memo']}")
+            raise
         update_stats(stats, expected_ids, results)
 
         if print_details:
