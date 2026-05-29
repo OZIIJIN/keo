@@ -7,6 +7,7 @@
 - relation tag가 retrieval signal로 실제 도움이 되는가
 - 원문 의미 채널과 relation 채널을 분리했을 때 성능이 유지되거나 좋아지는가
 - KEO다운 "같은 사건"이 아니라 "같은 패턴 역할" 연결을 eval이 제대로 측정하고 있는가
+- dense retrieval 위에 query expansion이나 LLM reranker를 얹었을 때 기대할 만큼 충분한 개선이 나오는가
 
 ## 현재 구조
 
@@ -20,6 +21,8 @@
   - text ranking과 relation ranking을 따로 만든 뒤 RRF로 fuse
 - `relation_gate`
   - relation retrieval로 후보군을 먼저 줄인 뒤 text dense로 rerank
+- `text_rerank`
+  - text dense 후보군을 먼저 뽑은 뒤 LLM으로 최종 순서를 다시 정렬
 
 즉 지금은 `원문 + 태그를 한 문자열로 합쳐 한 번에 embed`하는 방식보다, 채널을 분리해서 다루는 쪽을 우선 본다.
 
@@ -29,10 +32,15 @@
 
 - dense-only baseline은 여전히 필요하다
 - relation tag는 retrieval signal로 실제 도움이 된다
-- `text + relation RRF`가 현재 가장 안정적인 보강 구조다
+- query expansion / LLM reranker는 기대한 효과보다 현저히 낮았다
+- 가장 잘 나온 케이스도 hit rate가 49% 수준이라 retrieval 튜닝만으로는 제품 방향을 설명하기 어렵다
+- LLM은 top-k reranker보다 memory maintainer로 쓰는 쪽이 KEO 제품 방향에 더 맞다
 - eval miss 중 일부는 retrieval 실패보다 `expected_ids` undercoverage 문제였다
 
 핵심은 KEO retrieval이 단순 문장 유사도보다 `반복 패턴`, `반응 방식`, `회고 역할` 연결에 더 가깝다는 점이다.
+
+따라서 다음 PoC는 `main.py`에 retrieval mode를 더 붙이는 방식이 아니라, 별도 memory graph 실험으로 분리한다.
+여기서 "wiki 방식"은 마크다운 위키 파일을 앱에 넣는다는 뜻이 아니라, 검색 결과를 매번 버리지 않고 `memory_node`와 `memory_evidence`로 축적하는 앱 데이터 구조를 뜻한다.
 
 ## 현재 결과 스냅샷
 
@@ -40,22 +48,22 @@
 - dataset: `past_memos.json` 215개, `eval_cases.json` 106개
 - top-k: 10
 - embedding model: `qwen3-embedding`
-- relation annotation: fixed
+- eval expected ids: 527개
 
-결과
+최신 reranker audit 결과
 
 | mode | hits | expected | hit rate | zero-hit |
 | --- | ---: | ---: | ---: | ---: |
-| `text` | 134 | 479 | 27.97% | 22 |
-| `relation` | 159 | 479 | 33.19% | 16 |
-| `rrf` | 160 | 479 | 33.40% | 20 |
-| `relation_gate` (`candidate_k=30`) | 153 | 479 | 31.94% | 17 |
+| `text` | 235 | 527 | 44.59% | 8 |
+| `text_rerank` + `qwen3:8b` (`candidate_k=30`) | 208 | 527 | 39.47% | 13 |
 
 현재 해석
-- relation signal은 실제 gain을 만든다
-- `primary/secondary` 구분보다 `relation_tags` 자체가 더 중요했다
-- `rrf`는 relation gain을 유지하면서 text 채널을 분리해둘 수 있어서 구조적으로 가장 낫다
-- `relation_gate`는 가능성은 있지만 `candidate_k`에 민감하다
+- reranker 계열은 실행 가능성은 확인했지만 기대한 품질 개선 폭이 나오지 않았다
+- best case도 hit rate가 약 49% 수준이라, retrieval ranking 자체를 더 복잡하게 만드는 것만으로는 한계가 있다
+- `qwen3:0.6b`는 dense 후보 30개 rerank를 안정적으로 처리하지 못했다
+- `qwen3:1.7b`는 JSON/schema 강제 후 실행은 가능하지만 품질이 낮았다
+- `qwen3:8b`는 가장 안정적으로 실행됐지만 기대한 개선 효과에는 못 미쳤다
+- LLM reranker는 사람이 보기엔 그럴듯한 패턴 후보를 올리지만, eval expected hit 기준에서는 좋은 dense 후보를 밀어내는 경우가 있었다
 
 ## 데이터셋
 
@@ -167,6 +175,7 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 - relation-only retrieval
 - text + relation RRF
 - relation candidate gate + text rerank
+- dense candidate + LLM rerank
 - eval 실행
 - fixed relation tag 실험
 - LLM relation tagging 실험
@@ -174,8 +183,34 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 현재 빠진 것
 - sparse retrieval
 - BM25 hybrid
-- dedicated reranker model
 - relation embedding과 text embedding의 가중 fusion
+- memory graph / wiki pattern 축적 실험
+
+`main.py`는 retrieval eval runner로 유지한다.
+앱 기능으로 이어질 wiki pattern은 `main.py`에 계속 붙이지 않고 별도 PoC로 분리한다.
+
+분리 이유:
+- retrieval eval은 `hits@k`를 비교하는 실험이고
+- wiki pattern은 메모 저장 시점에 `memory_node`와 `memory_evidence`를 갱신하는 앱 기능에 가깝기 때문이다.
+
+다음 실험의 예상 구조는 아래와 같다.
+
+```text
+새 메모 저장
+-> relation tag 분류
+-> dense로 관련 과거 메모 검색
+-> 관련 memory_node 조회/생성
+-> 새 메모를 memory_evidence로 연결
+-> node summary, evidence_count, last_seen_at 갱신
+```
+
+여기서 각 요소의 역할은 아래처럼 본다.
+
+- dense retrieval: 관련 과거 메모를 찾는 evidence finder
+- relation tag: memory node 후보를 좁히는 routing signal
+- LLM: top-k reranker가 아니라 node 연결 판단과 summary 갱신을 맡는 memory maintainer
+- memory_node: 여러 메모가 쌓여 드러난 반복 패턴, 상태, 질문 카드
+- memory_evidence: memory_node를 뒷받침하는 실제 메모 연결
 
 ## 실행 방법
 
@@ -269,6 +304,20 @@ python3 main.py \
   --top-k 10
 ```
 
+LLM reranker eval
+
+```bash
+python3 main.py \
+  --eval \
+  --model qwen3-embedding \
+  --retrieval-mode text_rerank \
+  --rerank-model qwen3:8b \
+  --rerank-candidate-k 30 \
+  --tagging-mode fixed \
+  --top-k 10 \
+  --summary-only
+```
+
 summary만 보기
 
 ```bash
@@ -291,3 +340,5 @@ python3 main.py \
 
 - fixed relation tag는 retrieval signal로 유효한가: `예`
 - LLM이 그 relation signal을 자동으로 충분히 잘 복원하는가: 아직 추가 검증 필요
+- LLM reranker가 기대한 만큼 retrieval 품질을 끌어올리는가: 현재 기준 `아니오`
+- LLM을 reranker보다 memory maintainer로 쓰는 편이 제품 방향에 맞는가: `예`
