@@ -212,6 +212,118 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 - memory_node: 여러 메모가 쌓여 드러난 반복 패턴, 상태, 질문 카드
 - memory_evidence: memory_node를 뒷받침하는 실제 메모 연결
 
+## Memory Graph PoC
+
+[memory_graph.py](/Users/vonai/Desktop/keo/poc/recall/memory_graph.py)는 LLM Wiki 패턴을 앱 데이터 구조로 옮기는 첫 실험이다.
+
+현재 MVP는 아래까지만 한다.
+
+- 새 메모를 `data/memos.json`에 저장
+- relation tag를 `data/memo_annotations.json`에 저장
+- relation tag별 seed `memory_node`를 자동 생성
+- 새 메모를 해당 node의 `memory_evidence`로 연결
+- dense retrieval로 비슷한 과거 메모를 찾고, 그 과거 메모가 이미 연결된 node를 후보로 계산
+- node 후보별 `attach / create / ignore` 판단 결과를 출력
+- node evidence count, confidence, summary를 갱신
+- 충분히 쌓인 evidence를 바탕으로 `memory_links` 후보를 생성
+
+아직 하지 않는 것:
+
+- LLM이 임의로 새 node 생성
+- LLM이 node merge/split 판단
+- LLM이 모든 node link relation을 최종 판정
+- 앱 backend API 연결
+
+즉 현재는 LLM이 마음대로 위키를 쓰는 구조가 아니라, `relation tag + dense evidence` 기반으로 안전하게 memory graph를 쌓는 구조다.
+
+eval past memo를 앱 데이터 형태로 seed:
+
+```bash
+python3 memory_graph.py seed-eval --force
+```
+
+메모 ingest 예시:
+
+```bash
+python3 memory_graph.py ingest \
+  --memo "초안 쓰려다가 또 자료만 찾고 있다." \
+  --relation-tags start_avoidance,overplanning \
+  --dense-top-k 5
+```
+
+LLM으로 relation tag를 분류해서 ingest:
+
+```bash
+python3 memory_graph.py ingest \
+  --memo "답장 하나 못 보냈는데 하루 종일 마음에 걸렸다." \
+  --tagging-mode llm \
+  --tagging-model qwen3:8b \
+  --dense-top-k 5
+```
+
+현재 memory node 확인:
+
+```bash
+python3 memory_graph.py nodes --limit 10
+```
+
+memory link 후보 생성:
+
+```bash
+python3 memory_graph.py build-links \
+  --min-support 3 \
+  --limit 20
+```
+
+현재 memory link 확인:
+
+```bash
+python3 memory_graph.py links --limit 10
+```
+
+기본 `build-links`는 같은 메모에 반복적으로 같이 붙은 node pair를 `overlaps`로 저장한다.
+시간 순서 기반 `follows` 후보는 noise가 많을 수 있어서 명시적으로 켤 때만 사용한다.
+
+```bash
+python3 memory_graph.py build-links \
+  --include-temporal \
+  --min-support 3 \
+  --limit 20
+```
+
+fixture 기반 memory graph eval:
+
+```bash
+python3 memory_graph.py eval \
+  --summary-only \
+  --top-k 10 \
+  --dense-top-k 30 \
+  --node-top-k 3
+```
+
+현재 eval 결과:
+
+| mode | hits | expected | hit rate | zero-hit | full-hit |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| dense baseline | 235 | 527 | 44.59% | 8 | 5 |
+| memory graph (`dense_top_k=10`, `node_top_k=3`) | 298 | 527 | 56.55% | 4 | 12 |
+| memory graph (`dense_top_k=30`, `node_top_k=3`) | 306 | 527 | 58.06% | 3 | 11 |
+| memory graph (`dense_top_k=30`, `node_top_k=5`) | 295 | 527 | 55.98% | 4 | 9 |
+
+이 결과는 아직 앱용 실제 memory graph가 아니라 fixture 기반 offline eval이다.
+즉 `past_memo_tags.json`으로 seed memory node를 만들고, `eval_case_tags.json`로 query node routing을 한 결과다.
+그래도 dense-only보다 node/evidence 기반 routing이 더 높은 hit rate를 보였기 때문에, 다음 PoC를 memory graph 방향으로 볼 근거는 생겼다.
+
+저장 파일:
+
+- `data/memos.json`
+- `data/memo_annotations.json`
+- `data/memory_nodes.json`
+- `data/memory_evidence.json`
+
+초기 설계에서는 `relation_tag 1개 = seed memory_node 1개`로 시작한다.
+데이터가 충분히 쌓이면 이후 단계에서 LLM이 tag 조합과 evidence를 보고 더 구체적인 node를 제안하게 한다.
+
 ## 실행 방법
 
 전제
