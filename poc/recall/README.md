@@ -45,17 +45,17 @@
 ## 현재 결과 스냅샷
 
 기준
-- dataset: `past_memos.json` 215개, `eval_cases.json` 106개
+- dataset: `past_memos.json` 500개, `eval_cases.json` 142개
 - top-k: 10
 - embedding model: `qwen3-embedding`
-- eval expected ids: 527개
+- eval expected ids: 707개
 
-최신 reranker audit 결과
+현재 dense baseline 결과와 일상 메모 추가 전 reranker audit 결과
 
 | mode | hits | expected | hit rate | zero-hit |
 | --- | ---: | ---: | ---: | ---: |
-| `text` | 235 | 527 | 44.59% | 8 |
-| `text_rerank` + `qwen3:8b` (`candidate_k=30`) | 208 | 527 | 39.47% | 13 |
+| `text` | 247 | 707 | 34.94% | 28 |
+| `text_rerank` + `qwen3:8b` (`candidate_k=30`, 일상 메모 추가 전) | 208 | 527 | 39.47% | 13 |
 
 현재 해석
 - reranker 계열은 실행 가능성은 확인했지만 기대한 품질 개선 폭이 나오지 않았다
@@ -81,6 +81,8 @@
 - 책/문장/인용이 오래 남는 메모
 - 제품 아이디어와 일상 메모가 같은 흐름에 섞이는 메모
 - 에너지 저하, 리듬 붕괴, 답장 미룸, 예약 미룸 같은 생활성 메모
+- 장보기, 빨래, 분리수거, 충전기, 우산, 약, 물 마시기 같은 일상 관리 메모
+- 공간, 이동, 날씨, 소비, 관계 온도, 읽기 기록, 제품 관찰 같은 비회피성 일상 메모
 
 의도적으로 너무 템플릿처럼 보이지 않게, 실제 사람이 그때그때 남겼을 법한 질감으로 섞어뒀다.
 
@@ -281,6 +283,30 @@ python3 memory_graph.py build-links \
 python3 memory_graph.py links --limit 10
 ```
 
+memory graph 품질 지표 확인:
+
+```bash
+python3 memory_graph.py audit
+```
+
+현재 `audit`에서 자동 측정하는 지표:
+
+- `node_attach_precision`: 붙인 node 중 `memo_annotations`의 relation tag 기준으로 맞는 비율
+- `node_attach_recall`: relation tag 기준으로 붙었어야 할 node 중 실제 붙은 비율
+- `wrong_attach_rate`: relation tag 기준과 다른 node에 붙은 비율
+- `avg_nodes_per_memo`: 메모 하나가 평균 몇 개 node에 붙는지
+- `dense_added_node_ratio`: 전체 evidence 중 dense 결과로 추가 연결된 비율
+- `node_coherence`: node tag와 evidence memo tag가 겹치는 비율
+- `evidence_count_distribution`: node별 evidence 쏠림 정도
+- `orphan_node_count`: evidence가 적은 node 수
+- `over_broad_node_count`: evidence가 과도하게 몰린 node 수
+- `support_count_distribution`: link가 몇 개 memo에서 반복 관찰됐는지
+- `low_confidence_link_ratio`: confidence가 낮은 link 비율
+
+주의:
+`node_attach_precision`, `node_attach_recall`, `wrong_attach_rate`, `node_coherence`는 현재 fixture tag를 정답처럼 보는 근사 지표다.
+실제 제품 채택 판단에는 사람이 샘플을 보고 `맞는 node인지`, `너무 많이 붙은 것은 아닌지`, `link가 자기이해 카드로 쓸모 있는지`를 별도로 검수해야 한다.
+
 기본 `build-links`는 같은 메모에 반복적으로 같이 붙은 node pair를 `overlaps`로 저장한다.
 시간 순서 기반 `follows` 후보는 noise가 많을 수 있어서 명시적으로 켤 때만 사용한다.
 
@@ -305,10 +331,8 @@ python3 memory_graph.py eval \
 
 | mode | hits | expected | hit rate | zero-hit | full-hit |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| dense baseline | 235 | 527 | 44.59% | 8 | 5 |
-| memory graph (`dense_top_k=10`, `node_top_k=3`) | 298 | 527 | 56.55% | 4 | 12 |
-| memory graph (`dense_top_k=30`, `node_top_k=3`) | 306 | 527 | 58.06% | 3 | 11 |
-| memory graph (`dense_top_k=30`, `node_top_k=5`) | 295 | 527 | 55.98% | 4 | 9 |
+| dense baseline | 247 | 707 | 34.94% | 28 | 1 |
+| memory graph (`dense_top_k=30`, `node_top_k=3`) | 326 | 707 | 46.11% | 13 | 8 |
 
 이 결과는 아직 앱용 실제 memory graph가 아니라 fixture 기반 offline eval이다.
 즉 `past_memo_tags.json`으로 seed memory node를 만들고, `eval_case_tags.json`로 query node routing을 한 결과다.

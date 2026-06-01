@@ -4,6 +4,7 @@ from collections import defaultdict
 from itertools import combinations
 from datetime import datetime
 from pathlib import Path
+from statistics import mean, median
 
 import main as recall
 
@@ -807,6 +808,225 @@ def show_links(args: argparse.Namespace) -> None:
     print(json.dumps(memory_links[: args.limit], ensure_ascii=False, indent=2))
 
 
+def summarize_numeric(values: list[float]) -> dict:
+    if not values:
+        return {
+            "count": 0,
+            "min": 0,
+            "max": 0,
+            "avg": 0,
+            "median": 0,
+        }
+
+    return {
+        "count": len(values),
+        "min": round(min(values), 4),
+        "max": round(max(values), 4),
+        "avg": round(mean(values), 4),
+        "median": round(median(values), 4),
+    }
+
+
+def count_by(items: list[str]) -> dict[str, int]:
+    counts: dict[str, int] = defaultdict(int)
+    for item in items:
+        counts[item] += 1
+    return dict(sorted(counts.items(), key=lambda item: item[1], reverse=True))
+
+
+def expected_node_ids_for_annotation(annotation: dict) -> set[str]:
+    relation_tags = annotation.get("relation_tags", [])
+    if not isinstance(relation_tags, list):
+        return set()
+    return {
+        node_id_for_tag(tag)
+        for tag in relation_tags
+        if isinstance(tag, str)
+    }
+
+
+def calculate_attach_quality(
+    memo_annotations: dict[str, dict],
+    memory_evidence: list[dict],
+) -> dict:
+    actual_pairs = {
+        (evidence.get("memo_id"), evidence.get("node_id"))
+        for evidence in memory_evidence
+        if isinstance(evidence.get("memo_id"), str) and isinstance(evidence.get("node_id"), str)
+    }
+    expected_pairs = set()
+    for memo_id, annotation in memo_annotations.items():
+        for node_id in expected_node_ids_for_annotation(annotation):
+            expected_pairs.add((memo_id, node_id))
+
+    correct_pairs = actual_pairs & expected_pairs
+    wrong_pairs = actual_pairs - expected_pairs
+    missing_pairs = expected_pairs - actual_pairs
+
+    precision = len(correct_pairs) / len(actual_pairs) if actual_pairs else 0.0
+    recall = len(correct_pairs) / len(expected_pairs) if expected_pairs else 0.0
+    wrong_attach_rate = len(wrong_pairs) / len(actual_pairs) if actual_pairs else 0.0
+
+    return {
+        "basis": "memo_annotations relation_tags를 정답 node로 보는 fixture 기준",
+        "actual_attach_count": len(actual_pairs),
+        "expected_attach_count": len(expected_pairs),
+        "correct_attach_count": len(correct_pairs),
+        "missing_attach_count": len(missing_pairs),
+        "wrong_attach_count": len(wrong_pairs),
+        "node_attach_precision": round(precision, 4),
+        "node_attach_recall": round(recall, 4),
+        "wrong_attach_rate": round(wrong_attach_rate, 4),
+    }
+
+
+def calculate_node_coherence(
+    memo_annotations: dict[str, dict],
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+) -> dict:
+    node_scores = []
+    low_coherence_nodes = []
+
+    for node_id, node in memory_nodes.items():
+        node_tags = set(node.get("relation_tags", []))
+        evidence_memo_ids = [
+            evidence["memo_id"]
+            for evidence in memory_evidence
+            if evidence.get("node_id") == node_id and isinstance(evidence.get("memo_id"), str)
+        ]
+        if not evidence_memo_ids:
+            continue
+
+        matching_count = 0
+        for memo_id in evidence_memo_ids:
+            memo_tags = set(memo_annotations.get(memo_id, {}).get("relation_tags", []))
+            if node_tags & memo_tags:
+                matching_count += 1
+
+        coherence = matching_count / len(evidence_memo_ids)
+        node_scores.append(coherence)
+        if coherence < 0.8:
+            low_coherence_nodes.append(
+                {
+                    "node_id": node_id,
+                    "title": node.get("title", node_id),
+                    "coherence": round(coherence, 4),
+                    "evidence_count": len(evidence_memo_ids),
+                }
+            )
+
+    return {
+        "basis": "node relation_tags와 evidence memo relation_tags의 overlap 비율",
+        "node_coherence": summarize_numeric(node_scores),
+        "low_coherence_nodes": sorted(
+            low_coherence_nodes,
+            key=lambda item: item["coherence"],
+        )[:10],
+    }
+
+
+def audit(args: argparse.Namespace) -> None:
+    memos, memo_annotations, memory_nodes, memory_evidence = load_state()
+    memory_links = load_memory_links()
+    memo_node_ids = build_memo_node_map(memory_evidence)
+
+    memo_count = len(memos)
+    node_counts_per_memo = [len(memo_node_ids.get(memo["id"], set())) for memo in memos]
+    evidence_sources = [
+        evidence.get("source", "unknown")
+        for evidence in memory_evidence
+        if isinstance(evidence.get("source", "unknown"), str)
+    ]
+    dense_evidence_count = sum(1 for source in evidence_sources if source == "dense")
+    dense_added_node_ratio = dense_evidence_count / len(memory_evidence) if memory_evidence else 0.0
+
+    evidence_counts = [
+        int(node.get("evidence_count", 0))
+        for node in memory_nodes.values()
+    ]
+    orphan_nodes = [
+        {
+            "node_id": node["id"],
+            "title": node.get("title", node["id"]),
+            "evidence_count": int(node.get("evidence_count", 0)),
+        }
+        for node in memory_nodes.values()
+        if int(node.get("evidence_count", 0)) <= args.orphan_threshold
+    ]
+    over_broad_nodes = [
+        {
+            "node_id": node["id"],
+            "title": node.get("title", node["id"]),
+            "evidence_count": int(node.get("evidence_count", 0)),
+        }
+        for node in memory_nodes.values()
+        if int(node.get("evidence_count", 0)) >= args.over_broad_threshold
+    ]
+
+    link_supports = [
+        int(link.get("support_count", 0))
+        for link in memory_links
+    ]
+    link_confidences = [
+        float(link.get("confidence", 0.0))
+        for link in memory_links
+        if isinstance(link.get("confidence", 0.0), (int, float))
+    ]
+    low_confidence_links = [
+        link
+        for link in memory_links
+        if float(link.get("confidence", 0.0)) < args.low_confidence_threshold
+    ]
+    relation_values = [
+        link.get("relation", "unknown")
+        for link in memory_links
+        if isinstance(link.get("relation", "unknown"), str)
+    ]
+
+    report = {
+        "counts": {
+            "memos": memo_count,
+            "memo_annotations": len(memo_annotations),
+            "memory_nodes": len(memory_nodes),
+            "memory_evidence": len(memory_evidence),
+            "memory_links": len(memory_links),
+        },
+        "node_attach_quality": calculate_attach_quality(memo_annotations, memory_evidence),
+        "node_attach_shape": {
+            "avg_nodes_per_memo": round(mean(node_counts_per_memo), 4) if node_counts_per_memo else 0,
+            "nodes_per_memo": summarize_numeric([float(value) for value in node_counts_per_memo]),
+            "evidence_by_source": count_by(evidence_sources),
+            "dense_added_node_ratio": round(dense_added_node_ratio, 4),
+        },
+        "node_quality": {
+            **calculate_node_coherence(memo_annotations, memory_nodes, memory_evidence),
+            "evidence_count_distribution": summarize_numeric([float(value) for value in evidence_counts]),
+            "orphan_node_count": len(orphan_nodes),
+            "orphan_nodes": orphan_nodes[:10],
+            "over_broad_node_count": len(over_broad_nodes),
+            "over_broad_nodes": sorted(
+                over_broad_nodes,
+                key=lambda item: item["evidence_count"],
+                reverse=True,
+            )[:10],
+            "duplicate_node_rate": "not_measured_in_mvp_relation_tag_seed_nodes",
+        },
+        "link_quality": {
+            "link_precision": "needs_human_review",
+            "relation_accuracy": "needs_human_or_llm_judged_labels",
+            "relation_counts": count_by(relation_values),
+            "support_count_distribution": summarize_numeric([float(value) for value in link_supports]),
+            "confidence_distribution": summarize_numeric(link_confidences),
+            "low_confidence_threshold": args.low_confidence_threshold,
+            "low_confidence_link_count": len(low_confidence_links),
+            "low_confidence_link_ratio": round(len(low_confidence_links) / len(memory_links), 4) if memory_links else 0,
+        },
+    }
+
+    print(json.dumps(report, ensure_ascii=False, indent=2))
+
+
 def evaluate(args: argparse.Namespace) -> None:
     schema = recall.load_tag_schema(args.tag_schema)
     past_memos = recall.load_past_memos(args.data)
@@ -902,6 +1122,11 @@ def parse_args() -> argparse.Namespace:
     links_parser = subparsers.add_parser("links", help="print memory links")
     links_parser.add_argument("--limit", type=int, default=20)
 
+    audit_parser = subparsers.add_parser("audit", help="print memory graph quality metrics")
+    audit_parser.add_argument("--orphan-threshold", type=int, default=1)
+    audit_parser.add_argument("--over-broad-threshold", type=int, default=25)
+    audit_parser.add_argument("--low-confidence-threshold", type=float, default=0.6)
+
     build_links_parser = subparsers.add_parser("build-links", help="build memory links from accumulated evidence")
     build_links_parser.add_argument("--min-support", type=int, default=DEFAULT_LINK_MIN_SUPPORT)
     build_links_parser.add_argument("--window-days", type=int, default=DEFAULT_LINK_WINDOW_DAYS)
@@ -943,6 +1168,8 @@ def main() -> None:
         show_nodes(args)
     elif args.command == "links":
         show_links(args)
+    elif args.command == "audit":
+        audit(args)
     elif args.command == "build-links":
         build_links(args)
     elif args.command == "seed-eval":
