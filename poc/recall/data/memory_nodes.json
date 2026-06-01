@@ -1,0 +1,394 @@
+{
+  "node-reactive-work": {
+    "id": "node-reactive-work",
+    "type": "pattern",
+    "title": "반응형 작업",
+    "summary": "주도적 진행보다 들어오는 일에 끌려감",
+    "relation_tags": [
+      "reactive_work"
+    ],
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-06-01"
+  },
+  "node-context-fragmentation": {
+    "id": "node-context-fragmentation",
+    "type": "pattern",
+    "title": "흐름 끊김",
+    "summary": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "relation_tags": [
+      "context_fragmentation"
+    ],
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-20",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-20"
+  },
+  "node-event-reflection-link": {
+    "id": "node-event-reflection-link",
+    "type": "pattern",
+    "title": "사건-회고 연결",
+    "summary": "사건이나 일정과 회고를 연결하려는 시선",
+    "relation_tags": [
+      "event_reflection_link"
+    ],
+    "evidence_count": 15,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-09",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-09"
+  },
+  "node-self-understanding-product": {
+    "id": "node-self-understanding-product",
+    "type": "pattern",
+    "title": "자기이해 제품 통찰",
+    "summary": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "evidence_count": 24,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-06",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-06"
+  },
+  "node-pattern-recognition": {
+    "id": "node-pattern-recognition",
+    "type": "pattern",
+    "title": "패턴 인식",
+    "summary": "반복 패턴을 알아차리거나 이름 붙임",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "evidence_count": 33,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-08",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-08"
+  },
+  "node-decision-trace": {
+    "id": "node-decision-trace",
+    "type": "pattern",
+    "title": "판단 흐름 기록",
+    "summary": "판단이 어떻게 흘렀는지 보려는 기록",
+    "relation_tags": [
+      "decision_trace"
+    ],
+    "evidence_count": 24,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-08",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-08"
+  },
+  "node-avoidance-rationalization": {
+    "id": "node-avoidance-rationalization",
+    "type": "pattern",
+    "title": "회피 합리화",
+    "summary": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "relation_tags": [
+      "avoidance_rationalization"
+    ],
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-19",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-19"
+  },
+  "node-start-avoidance": {
+    "id": "node-start-avoidance",
+    "type": "pattern",
+    "title": "시작 회피",
+    "summary": "시작해야 하는데 자꾸 미룸 현재 24개 메모에서 반복 관찰됨.",
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "evidence_count": 24,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01T05:53:01Z",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-06-01T05:53:01Z"
+  },
+  "node-overplanning": {
+    "id": "node-overplanning",
+    "type": "pattern",
+    "title": "과계획",
+    "summary": "실제 시작보다 구조, 분류, 계획 쪽으로 샘 현재 9개 메모에서 반복 관찰됨.",
+    "relation_tags": [
+      "overplanning"
+    ],
+    "evidence_count": 9,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01T05:53:01Z",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-06-01T05:53:01Z"
+  },
+  "node-schedule-disruption": {
+    "id": "node-schedule-disruption",
+    "type": "pattern",
+    "title": "일정 흔들림",
+    "summary": "일정 하나가 하루 흐름 전체를 흔듦",
+    "relation_tags": [
+      "schedule_disruption"
+    ],
+    "evidence_count": 18,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-03",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-03"
+  },
+  "node-event-aftereffect": {
+    "id": "node-event-aftereffect",
+    "type": "pattern",
+    "title": "사건 여파",
+    "summary": "특정 일정이나 사건 이후 여파가 오래 감",
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "evidence_count": 24,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-09",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-09"
+  },
+  "node-low-energy-drift": {
+    "id": "node-low-energy-drift",
+    "type": "pattern",
+    "title": "에너지 저하",
+    "summary": "기운이 없어서 흐려지거나 흘러감",
+    "relation_tags": [
+      "low_energy_drift"
+    ],
+    "evidence_count": 17,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-07"
+  },
+  "node-recovery-failure": {
+    "id": "node-recovery-failure",
+    "type": "pattern",
+    "title": "회복 실패",
+    "summary": "쉬었는데도 회복이 잘 안 됨",
+    "relation_tags": [
+      "recovery_failure"
+    ],
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-06-01"
+  },
+  "node-social-response-delay": {
+    "id": "node-social-response-delay",
+    "type": "pattern",
+    "title": "답장 미룸",
+    "summary": "답장, 연락, 관계 응답이 밀림",
+    "relation_tags": [
+      "social_response_delay"
+    ],
+    "evidence_count": 12,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-07"
+  },
+  "node-unfinished-loop": {
+    "id": "node-unfinished-loop",
+    "type": "pattern",
+    "title": "미해결 루프",
+    "summary": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "relation_tags": [
+      "unfinished_loop"
+    ],
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-04",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-04"
+  },
+  "node-priority-confusion": {
+    "id": "node-priority-confusion",
+    "type": "pattern",
+    "title": "우선순위 혼탁",
+    "summary": "급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려짐",
+    "relation_tags": [
+      "priority_confusion"
+    ],
+    "evidence_count": 3,
+    "confidence": 0.65,
+    "last_seen_at": "2026-05-09",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-09"
+  },
+  "node-decision-fog": {
+    "id": "node-decision-fog",
+    "type": "pattern",
+    "title": "판단 흐림",
+    "summary": "뭘 먼저 해야 할지 판단이 흐림",
+    "relation_tags": [
+      "decision_fog"
+    ],
+    "evidence_count": 17,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-10",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-10"
+  },
+  "node-rhythm-disruption": {
+    "id": "node-rhythm-disruption",
+    "type": "pattern",
+    "title": "리듬 붕괴",
+    "summary": "수면, 루틴, 생활 리듬이 깨짐",
+    "relation_tags": [
+      "rhythm_disruption"
+    ],
+    "evidence_count": 12,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-30",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-30"
+  },
+  "node-safe-task-selection": {
+    "id": "node-safe-task-selection",
+    "type": "pattern",
+    "title": "안전한 일 선택",
+    "summary": "중요한 일 대신 만만한 일을 고름 현재 12개 메모에서 반복 관찰됨.",
+    "relation_tags": [
+      "safe_task_selection"
+    ],
+    "evidence_count": 12,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01T05:53:01Z",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-06-01T05:53:01Z"
+  },
+  "node-fatigue-spillover": {
+    "id": "node-fatigue-spillover",
+    "type": "pattern",
+    "title": "피로 번짐",
+    "summary": "피로가 판단과 실행 전반에 번짐",
+    "relation_tags": [
+      "fatigue_spillover"
+    ],
+    "evidence_count": 20,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-31"
+  },
+  "node-rest-guilt": {
+    "id": "node-rest-guilt",
+    "type": "pattern",
+    "title": "쉼 불안",
+    "summary": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "relation_tags": [
+      "rest_guilt"
+    ],
+    "evidence_count": 9,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-27",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-27"
+  },
+  "node-evaluation-fear": {
+    "id": "node-evaluation-fear",
+    "type": "pattern",
+    "title": "평가 두려움",
+    "summary": "평가받을까봐 피하거나 망설임",
+    "relation_tags": [
+      "evaluation_fear"
+    ],
+    "evidence_count": 7,
+    "confidence": 0.85,
+    "last_seen_at": "2026-05-26",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-26"
+  },
+  "node-self-deception": {
+    "id": "node-self-deception",
+    "type": "pattern",
+    "title": "자기기만",
+    "summary": "스스로를 그럴듯하게 속이는 느낌",
+    "relation_tags": [
+      "self_deception"
+    ],
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-07"
+  },
+  "node-life-admin-overload": {
+    "id": "node-life-admin-overload",
+    "type": "pattern",
+    "title": "생활 일 과부하",
+    "summary": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "relation_tags": [
+      "life_admin_overload"
+    ],
+    "evidence_count": 22,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-09",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-09"
+  },
+  "node-execution-delay": {
+    "id": "node-execution-delay",
+    "type": "pattern",
+    "title": "실행 지연",
+    "summary": "하기로 했지만 실행이 계속 늦어짐",
+    "relation_tags": [
+      "execution_delay"
+    ],
+    "evidence_count": 16,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-07"
+  },
+  "node-identity-gap": {
+    "id": "node-identity-gap",
+    "type": "pattern",
+    "title": "정체성 간극",
+    "summary": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-29",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-29"
+  },
+  "node-external-priority-capture": {
+    "id": "node-external-priority-capture",
+    "type": "pattern",
+    "title": "외부 우선순위 잠식",
+    "summary": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "relation_tags": [
+      "external_priority_capture"
+    ],
+    "evidence_count": 12,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-10",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-10"
+  },
+  "node-control-seeking": {
+    "id": "node-control-seeking",
+    "type": "pattern",
+    "title": "통제 추구",
+    "summary": "불확실함 대신 통제 가능한 것만 붙잡음",
+    "relation_tags": [
+      "control_seeking"
+    ],
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-05-13",
+    "created_at": "2026-06-01T05:46:37Z",
+    "updated_at": "2026-05-13"
+  }
+}

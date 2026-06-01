@@ -1,0 +1,339 @@
+[
+  {
+    "from_node_id": "node-event-reflection-link",
+    "to_node_id": "node-self-understanding-product",
+    "relation": "overlaps",
+    "support_count": 11,
+    "evidence_memo_ids": [
+      "memo-002",
+      "memo-005",
+      "memo-023",
+      "memo-032",
+      "memo-039",
+      "memo-059",
+      "memo-087",
+      "memo-111",
+      "memo-139",
+      "memo-163",
+      "memo-207"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 사건-회고 연결 / 자기이해 제품 통찰",
+    "confidence": 0.95,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-decision-trace",
+    "to_node_id": "node-pattern-recognition",
+    "relation": "overlaps",
+    "support_count": 11,
+    "evidence_memo_ids": [
+      "memo-003",
+      "memo-019",
+      "memo-028",
+      "memo-079",
+      "memo-150",
+      "memo-164",
+      "memo-183",
+      "memo-184",
+      "memo-196",
+      "memo-205",
+      "memo-212"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 판단 흐름 기록 / 패턴 인식",
+    "confidence": 0.95,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-execution-delay",
+    "to_node_id": "node-life-admin-overload",
+    "relation": "overlaps",
+    "support_count": 11,
+    "evidence_memo_ids": [
+      "memo-042",
+      "memo-047",
+      "memo-063",
+      "memo-078",
+      "memo-099",
+      "memo-130",
+      "memo-147",
+      "memo-151",
+      "memo-182",
+      "memo-199",
+      "memo-210"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 실행 지연 / 생활 일 과부하",
+    "confidence": 0.95,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-pattern-recognition",
+    "to_node_id": "node-self-understanding-product",
+    "relation": "overlaps",
+    "support_count": 9,
+    "evidence_memo_ids": [
+      "memo-017",
+      "memo-021",
+      "memo-026",
+      "memo-041",
+      "memo-046",
+      "memo-074",
+      "memo-126",
+      "memo-178",
+      "memo-191"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 패턴 인식 / 자기이해 제품 통찰",
+    "confidence": 0.9,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-overplanning",
+    "to_node_id": "node-start-avoidance",
+    "relation": "overlaps",
+    "support_count": 8,
+    "evidence_memo_ids": [
+      "memo-006",
+      "memo-022",
+      "memo-105",
+      "memo-122",
+      "memo-131",
+      "memo-144",
+      "user-memo-001",
+      "user-memo-002"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 과계획 / 시작 회피",
+    "confidence": 0.85,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-event-aftereffect",
+    "to_node_id": "node-schedule-disruption",
+    "relation": "overlaps",
+    "support_count": 8,
+    "evidence_memo_ids": [
+      "memo-011",
+      "memo-052",
+      "memo-068",
+      "memo-082",
+      "memo-120",
+      "memo-156",
+      "memo-187",
+      "memo-202"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 사건 여파 / 일정 흔들림",
+    "confidence": 0.85,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-decision-fog",
+    "to_node_id": "node-external-priority-capture",
+    "relation": "overlaps",
+    "support_count": 6,
+    "evidence_memo_ids": [
+      "memo-106",
+      "memo-125",
+      "memo-158",
+      "memo-177",
+      "memo-198",
+      "memo-215"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 판단 흐림 / 외부 우선순위 잠식",
+    "confidence": 0.75,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-context-fragmentation",
+    "to_node_id": "node-reactive-work",
+    "relation": "overlaps",
+    "support_count": 5,
+    "evidence_memo_ids": [
+      "memo-001",
+      "memo-031",
+      "memo-066",
+      "memo-097",
+      "memo-149"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 흐름 끊김 / 반응형 작업",
+    "confidence": 0.7,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-low-energy-drift",
+    "to_node_id": "node-rhythm-disruption",
+    "relation": "overlaps",
+    "support_count": 5,
+    "evidence_memo_ids": [
+      "memo-020",
+      "memo-085",
+      "memo-117",
+      "memo-169",
+      "memo-189"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 에너지 저하 / 리듬 붕괴",
+    "confidence": 0.7,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-safe-task-selection",
+    "to_node_id": "node-start-avoidance",
+    "relation": "overlaps",
+    "support_count": 5,
+    "evidence_memo_ids": [
+      "memo-022",
+      "memo-053",
+      "memo-157",
+      "user-memo-001",
+      "user-memo-002"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 안전한 일 선택 / 시작 회피",
+    "confidence": 0.7,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-recovery-failure",
+    "to_node_id": "node-rest-guilt",
+    "relation": "overlaps",
+    "support_count": 5,
+    "evidence_memo_ids": [
+      "memo-040",
+      "memo-056",
+      "memo-128",
+      "memo-148",
+      "memo-160"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 회복 실패 / 쉼 불안",
+    "confidence": 0.7,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-decision-trace",
+    "to_node_id": "node-fatigue-spillover",
+    "relation": "overlaps",
+    "support_count": 5,
+    "evidence_memo_ids": [
+      "memo-043",
+      "memo-067",
+      "memo-112",
+      "memo-146",
+      "memo-194"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 판단 흐름 기록 / 피로 번짐",
+    "confidence": 0.7,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-overplanning",
+    "to_node_id": "node-safe-task-selection",
+    "relation": "overlaps",
+    "support_count": 4,
+    "evidence_memo_ids": [
+      "memo-022",
+      "memo-170",
+      "user-memo-001",
+      "user-memo-002"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 과계획 / 안전한 일 선택",
+    "confidence": 0.65,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-fatigue-spillover",
+    "to_node_id": "node-recovery-failure",
+    "relation": "overlaps",
+    "support_count": 4,
+    "evidence_memo_ids": [
+      "memo-024",
+      "memo-109",
+      "memo-114",
+      "memo-133"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 피로 번짐 / 회복 실패",
+    "confidence": 0.65,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-reactive-work",
+    "to_node_id": "node-unfinished-loop",
+    "relation": "overlaps",
+    "support_count": 4,
+    "evidence_memo_ids": [
+      "memo-029",
+      "memo-174",
+      "memo-190",
+      "memo-197"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 반응형 작업 / 미해결 루프",
+    "confidence": 0.65,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-life-admin-overload",
+    "to_node_id": "node-unfinished-loop",
+    "relation": "overlaps",
+    "support_count": 4,
+    "evidence_memo_ids": [
+      "memo-115",
+      "memo-167",
+      "memo-203",
+      "memo-204"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 생활 일 과부하 / 미해결 루프",
+    "confidence": 0.65,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-avoidance-rationalization",
+    "to_node_id": "node-start-avoidance",
+    "relation": "overlaps",
+    "support_count": 3,
+    "evidence_memo_ids": [
+      "memo-006",
+      "memo-105",
+      "memo-140"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 회피 합리화 / 시작 회피",
+    "confidence": 0.6,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-decision-fog",
+    "to_node_id": "node-fatigue-spillover",
+    "relation": "overlaps",
+    "support_count": 3,
+    "evidence_memo_ids": [
+      "memo-033",
+      "memo-062",
+      "memo-119"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 판단 흐림 / 피로 번짐",
+    "confidence": 0.6,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-pattern-recognition",
+    "to_node_id": "node-unfinished-loop",
+    "relation": "overlaps",
+    "support_count": 3,
+    "evidence_memo_ids": [
+      "memo-051",
+      "memo-060",
+      "memo-171"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 패턴 인식 / 미해결 루프",
+    "confidence": 0.6,
+    "created_at": "2026-06-01T05:53:18Z"
+  },
+  {
+    "from_node_id": "node-external-priority-capture",
+    "to_node_id": "node-schedule-disruption",
+    "relation": "overlaps",
+    "support_count": 3,
+    "evidence_memo_ids": [
+      "memo-058",
+      "memo-110",
+      "memo-162"
+    ],
+    "reason": "같은 메모에서 반복적으로 함께 나타남: 외부 우선순위 잠식 / 일정 흔들림",
+    "confidence": 0.6,
+    "created_at": "2026-06-01T05:53:18Z"
+  }
+]
