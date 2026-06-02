@@ -1485,5 +1485,12 @@
       "overplanning"
     ],
     "short_summary": "오늘도 중요한 작업을 시작하기 전에 자료만 더 찾아보고 있다."
+  },
+  "user-memo-003": {
+    "relation_tags": [
+      "event_aftereffect",
+      "schedule_disruption"
+    ],
+    "short_summary": "비 냄새가 나니까 예전 출근길 생각이 같이 올라왔다."
   }
 }

@@ -3238,5 +3238,93 @@
     "source": "dense",
     "weight": 0.65,
     "created_at": "2026-06-01T05:53:01Z"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "user-memo-003",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "user-memo-003",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "user-memo-003",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-240",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-390",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-179",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-249",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-399",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-268",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-418",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-331",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
   }
 ]

@@ -1,5 +1,7 @@
 import argparse
+import hashlib
 import json
+import re
 from collections import defaultdict
 from itertools import combinations
 from datetime import datetime
@@ -22,7 +24,21 @@ DEFAULT_ATTACH_DENSE_NODE_MIN_HITS = 2
 DEFAULT_NODE_TOP_K = 5
 DEFAULT_EVAL_DENSE_TOP_K = 30
 DEFAULT_LINK_MIN_SUPPORT = 3
-DEFAULT_LINK_WINDOW_DAYS = 2
+DEFAULT_LINK_WINDOW_DAYS = 14
+DEFAULT_NODE_SIMILARITY_THRESHOLD = 0.82
+DEFAULT_NODE_EVIDENCE_LIMIT = 8
+
+SEMANTIC_NODE_TYPES = {"pattern", "state", "question", "product_insight"}
+
+
+def state_paths(state_dir: Path) -> dict[str, Path]:
+    return {
+        "memos": state_dir / "memos.json",
+        "memo_annotations": state_dir / "memo_annotations.json",
+        "memory_nodes": state_dir / "memory_nodes.json",
+        "memory_evidence": state_dir / "memory_evidence.json",
+        "memory_links": state_dir / "memory_links.json",
+    }
 
 
 def read_json(path: Path, default):
@@ -59,62 +75,83 @@ def next_memo_id(memos: list[dict]) -> str:
     return f"{prefix}{max_number + 1:03d}"
 
 
-def slugify_tag(tag: str) -> str:
-    return tag.replace("_", "-")
 
 
-def node_id_for_tag(tag: str) -> str:
-    return f"node-{slugify_tag(tag)}"
+
+def normalize_identity_text(value: str) -> str:
+    normalized = re.sub(r"\s+", " ", value.strip().lower())
+    normalized = re.sub(r"[^\w가-힣 ,|:-]+", "", normalized)
+    return normalized
 
 
-def title_for_tag(tag: str, description: str) -> str:
-    title_overrides = {
-        "start_avoidance": "시작 회피",
-        "execution_delay": "실행 지연",
-        "safe_task_selection": "안전한 일 선택",
-        "reactive_work": "반응형 작업",
-        "context_fragmentation": "흐름 끊김",
-        "overplanning": "과계획",
-        "unfinished_loop": "미해결 루프",
-        "priority_confusion": "우선순위 혼탁",
-        "decision_fog": "판단 흐림",
-        "self_deception": "자기기만",
-        "avoidance_rationalization": "회피 합리화",
-        "evaluation_fear": "평가 두려움",
-        "control_seeking": "통제 추구",
-        "social_response_delay": "답장 미룸",
-        "life_admin_overload": "생활 일 과부하",
-        "low_energy_drift": "에너지 저하",
-        "fatigue_spillover": "피로 번짐",
-        "rhythm_disruption": "리듬 붕괴",
-        "rest_guilt": "쉼 불안",
-        "recovery_failure": "회복 실패",
-        "schedule_disruption": "일정 흔들림",
-        "external_priority_capture": "외부 우선순위 잠식",
-        "event_aftereffect": "사건 여파",
-        "pattern_recognition": "패턴 인식",
-        "event_reflection_link": "사건-회고 연결",
-        "decision_trace": "판단 흐름 기록",
-        "identity_gap": "정체성 간극",
-        "self_understanding_product": "자기이해 제품 통찰",
-    }
-    return title_overrides.get(tag, description)
+def is_semantic_node(node: dict) -> bool:
+    relation_tags = node.get("relation_tags")
+
+    return (
+        node.get("type") in SEMANTIC_NODE_TYPES
+        and isinstance(node.get("title"), str)
+        and bool(node.get("title", "").strip())
+        and isinstance(node.get("summary"), str)
+        and bool(node.get("summary", "").strip())
+        and isinstance(relation_tags, list)
+    )
+
+
+def node_identity_text(node: dict) -> str:
+    relation_tags = node.get("relation_tags", [])
+    if not isinstance(relation_tags, list):
+        relation_tags = []
+    return "\n".join(
+        [
+            str(node.get("type", "")),
+            str(node.get("title", "")),
+            str(node.get("summary", "")),
+            ",".join(sorted(tag for tag in relation_tags if isinstance(tag, str))),
+        ]
+    )
+
+
+def build_node_identity_key(node_candidate: dict, evidence_ids: list[str]) -> str:
+    relation_tags = node_candidate.get("relation_tags", [])
+    if not isinstance(relation_tags, list):
+        relation_tags = []
+
+    parts = [
+        normalize_identity_text(str(node_candidate.get("type", ""))),
+        ",".join(sorted(normalize_identity_text(tag) for tag in relation_tags if isinstance(tag, str))),
+        normalize_identity_text(str(node_candidate.get("title", ""))),
+        ",".join(sorted(evidence_ids[:8])),
+    ]
+    return "|".join(parts)
+
+
+def make_semantic_node_id(node_candidate: dict, evidence_ids: list[str]) -> str:
+    node_type = normalize_identity_text(str(node_candidate.get("type", "pattern"))) or "pattern"
+    digest = hashlib.sha1(
+        build_node_identity_key(node_candidate, evidence_ids).encode("utf-8")
+    ).hexdigest()[:8]
+    return f"node-{node_type}-{digest}"
 
 
 def load_state() -> tuple[list[dict], dict[str, dict], dict[str, dict], list[dict]]:
-    memos = read_json(MEMOS_PATH, [])
-    memo_annotations = read_json(MEMO_ANNOTATIONS_PATH, {})
-    memory_nodes = read_json(MEMORY_NODES_PATH, {})
-    memory_evidence = read_json(MEMORY_EVIDENCE_PATH, [])
+    return load_state_from_dir(DATA_DIR)
+
+
+def load_state_from_dir(state_dir: Path) -> tuple[list[dict], dict[str, dict], dict[str, dict], list[dict]]:
+    paths = state_paths(state_dir)
+    memos = read_json(paths["memos"], [])
+    memo_annotations = read_json(paths["memo_annotations"], {})
+    memory_nodes = read_json(paths["memory_nodes"], {})
+    memory_evidence = read_json(paths["memory_evidence"], [])
 
     if not isinstance(memos, list):
-        raise ValueError(f"{MEMOS_PATH} must contain a JSON list")
+        raise ValueError(f"{paths['memos']} must contain a JSON list")
     if not isinstance(memo_annotations, dict):
-        raise ValueError(f"{MEMO_ANNOTATIONS_PATH} must contain a JSON object")
+        raise ValueError(f"{paths['memo_annotations']} must contain a JSON object")
     if not isinstance(memory_nodes, dict):
-        raise ValueError(f"{MEMORY_NODES_PATH} must contain a JSON object")
+        raise ValueError(f"{paths['memory_nodes']} must contain a JSON object")
     if not isinstance(memory_evidence, list):
-        raise ValueError(f"{MEMORY_EVIDENCE_PATH} must contain a JSON list")
+        raise ValueError(f"{paths['memory_evidence']} must contain a JSON list")
 
     return memos, memo_annotations, memory_nodes, memory_evidence
 
@@ -125,56 +162,54 @@ def save_state(
     memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
 ) -> None:
-    write_json(MEMOS_PATH, memos)
-    write_json(MEMO_ANNOTATIONS_PATH, memo_annotations)
-    write_json(MEMORY_NODES_PATH, memory_nodes)
-    write_json(MEMORY_EVIDENCE_PATH, memory_evidence)
+    save_state_to_dir(DATA_DIR, memos, memo_annotations, memory_nodes, memory_evidence)
+
+
+def save_state_to_dir(
+    state_dir: Path,
+    memos: list[dict],
+    memo_annotations: dict[str, dict],
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+) -> None:
+    paths = state_paths(state_dir)
+    write_json(paths["memos"], memos)
+    write_json(paths["memo_annotations"], memo_annotations)
+    write_json(paths["memory_nodes"], memory_nodes)
+    write_json(paths["memory_evidence"], memory_evidence)
 
 
 def load_memory_links() -> list[dict]:
-    links = read_json(MEMORY_LINKS_PATH, [])
+    return load_memory_links_from_dir(DATA_DIR)
+
+
+def load_memory_links_from_dir(state_dir: Path) -> list[dict]:
+    path = state_paths(state_dir)["memory_links"]
+    links = read_json(path, [])
     if not isinstance(links, list):
-        raise ValueError(f"{MEMORY_LINKS_PATH} must contain a JSON list")
+        raise ValueError(f"{path} must contain a JSON list")
     return links
 
 
 def save_memory_links(memory_links: list[dict]) -> None:
-    write_json(MEMORY_LINKS_PATH, memory_links)
+    save_memory_links_to_dir(DATA_DIR, memory_links)
 
 
-def ensure_node_for_tag(
-    tag: str,
-    schema: dict,
-    memory_nodes: dict[str, dict],
-    now: str,
-) -> dict:
-    node_id = node_id_for_tag(tag)
-    existing = memory_nodes.get(node_id)
-    if existing is not None:
-        return existing
-
-    description = schema["relation_tags"][tag]
-    node = {
-        "id": node_id,
-        "type": "pattern",
-        "title": title_for_tag(tag, description),
-        "summary": description,
-        "relation_tags": [tag],
-        "evidence_count": 0,
-        "confidence": 0.5,
-        "last_seen_at": None,
-        "created_at": now,
-        "updated_at": now,
-    }
-    memory_nodes[node_id] = node
-    return node
+def save_memory_links_to_dir(state_dir: Path, memory_links: list[dict]) -> None:
+    write_json(state_paths(state_dir)["memory_links"], memory_links)
 
 
-def evidence_exists(memory_evidence: list[dict], node_id: str, memo_id: str) -> bool:
-    return any(
-        item.get("node_id") == node_id and item.get("memo_id") == memo_id
-        for item in memory_evidence
-    )
+
+
+def find_evidence(
+    memory_evidence: list[dict],
+    node_id: str,
+    memo_id: str,
+) -> dict | None:
+    for item in memory_evidence:
+        if item.get("node_id") == node_id and item.get("memo_id") == memo_id:
+            return item
+    return None
 
 
 def add_evidence(
@@ -187,7 +222,28 @@ def add_evidence(
     weight: float,
     now: str,
 ) -> bool:
-    if evidence_exists(memory_evidence, node_id, memo_id):
+    node = memory_nodes.get(node_id)
+    if node is None:
+        return False
+
+    existing = find_evidence(memory_evidence, node_id, memo_id)
+
+    if existing is not None:
+        existing_weight = float(existing.get("weight", 0.0))
+
+        if weight > existing_weight:
+            existing["reason"] = reason
+            existing["source"] = source
+            existing["weight"] = weight
+            existing["updated_at"] = now
+
+            node["last_seen_at"] = now
+            node["updated_at"] = now
+            node["confidence"] = min(
+                0.95,
+                round(0.5 + int(node.get("evidence_count", 0)) * 0.05, 2),
+            )
+
         return False
 
     memory_evidence.append(
@@ -201,14 +257,10 @@ def add_evidence(
         }
     )
 
-    node = memory_nodes[node_id]
     node["evidence_count"] = int(node.get("evidence_count", 0)) + 1
     node["last_seen_at"] = now
     node["updated_at"] = now
     node["confidence"] = min(0.95, round(0.5 + node["evidence_count"] * 0.05, 2))
-    base_summary = str(node.get("summary", "")).split(" 현재 ")[0]
-    if base_summary:
-        node["summary"] = f"{base_summary} 현재 {node['evidence_count']}개 메모에서 반복 관찰됨."
     return True
 
 
@@ -250,12 +302,40 @@ def dense_search(
     return recall.rank_by_embedding(query_embedding, indexed, "text_embedding")[:top_k]
 
 
-def count_dense_node_hits(dense_matches: list[dict], memory_evidence: list[dict]) -> dict[str, dict]:
+def dense_search_against_memos(
+    memo: dict,
+    candidate_memos: list[dict],
+    annotations: dict[str, dict],
+    model: str,
+    top_k: int,
+) -> list[dict]:
+    candidates = [item for item in candidate_memos if item["id"] != memo["id"]]
+    if not candidates:
+        return []
+
+    indexed = recall.build_past_memo_index(
+        candidates,
+        model,
+        annotations,
+        recall.RETRIEVAL_TEXT,
+    )
+    query_embedding = recall.embed_text(memo["text"], model)
+    return recall.rank_by_embedding(query_embedding, indexed, "text_embedding")[:top_k]
+
+
+def count_dense_node_hits(
+    dense_matches: list[dict],
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+) -> dict[str, dict]:
     memo_to_node_ids: dict[str, list[str]] = {}
     for evidence in memory_evidence:
         memo_id = evidence.get("memo_id")
         node_id = evidence.get("node_id")
         if isinstance(memo_id, str) and isinstance(node_id, str):
+            node = memory_nodes.get(node_id)
+            if node is None or not is_semantic_node(node):
+                continue
             memo_to_node_ids.setdefault(memo_id, []).append(node_id)
 
     node_hits: dict[str, dict] = {}
@@ -270,61 +350,471 @@ def count_dense_node_hits(dense_matches: list[dict], memory_evidence: list[dict]
     return node_hits
 
 
+def get_node_evidence_examples(
+    node_id: str,
+    memory_evidence: list[dict],
+    memo_by_id: dict[str, dict],
+    annotations: dict[str, dict],
+    limit: int,
+) -> list[dict]:
+    examples = []
+    for evidence in memory_evidence:
+        if evidence.get("node_id") != node_id:
+            continue
+        memo_id = evidence.get("memo_id")
+        if not isinstance(memo_id, str) or memo_id not in memo_by_id:
+            continue
+        memo = memo_by_id[memo_id]
+        examples.append(
+            {
+                "memo_id": memo_id,
+                "date": memo.get("date"),
+                "text": memo.get("text", ""),
+                "relation_tags": annotations.get(memo_id, {}).get("relation_tags", []),
+                "source": evidence.get("source"),
+                "reason": evidence.get("reason"),
+            }
+        )
+        if len(examples) >= limit:
+            break
+    return examples
+
+
+def collect_candidate_semantic_nodes(
+    relation_tags: list[str],
+    dense_node_hits: dict[str, dict],
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    memo_by_id: dict[str, dict],
+    annotations: dict[str, dict],
+    limit: int,
+) -> list[dict]:
+    query_tag_set = set(relation_tags)
+    candidates = []
+
+    for node_id, node in memory_nodes.items():
+        if not is_semantic_node(node):
+            continue
+        node_tags = set(node.get("relation_tags", []))
+        dense_hit = dense_node_hits.get(node_id, {})
+        tag_overlap = len(query_tag_set & node_tags)
+        dense_count = int(dense_hit.get("count", 0))
+        if tag_overlap == 0 and dense_count == 0:
+            continue
+
+        candidates.append(
+            {
+                "id": node_id,
+                "type": node.get("type"),
+                "title": node.get("title"),
+                "summary": node.get("summary"),
+                "relation_tags": node.get("relation_tags", []),
+                "evidence_count": node.get("evidence_count", 0),
+                "confidence": node.get("confidence", 0.0),
+                "candidate_score": tag_overlap * 2 + dense_count,
+                "tag_overlap": sorted(query_tag_set & node_tags),
+                "dense_memo_ids": dense_hit.get("memo_ids", []),
+                "evidence_examples": get_node_evidence_examples(
+                    node_id,
+                    memory_evidence,
+                    memo_by_id,
+                    annotations,
+                    3,
+                ),
+            }
+        )
+
+    return sorted(candidates, key=lambda item: item["candidate_score"], reverse=True)[:limit]
+
+
+def build_candidate_evidence(
+    current_memo_id: str,
+    dense_matches: list[dict],
+    annotations: dict[str, dict],
+    limit: int,
+) -> list[dict]:
+    evidence = []
+    for match in dense_matches[:limit]:
+        memo_id = match["id"]
+        if memo_id == current_memo_id:
+            continue
+        evidence.append(
+            {
+                "memo_id": memo_id,
+                "date": match.get("date"),
+                "text": match.get("text", ""),
+                "score": round(float(match.get("score", 0.0)), 4),
+                "relation_tags": annotations.get(memo_id, match).get("relation_tags", []),
+            }
+        )
+    return evidence
+
+
+def build_node_judge_prompt(
+    memo: dict,
+    relation_tags: list[str],
+    candidate_nodes: list[dict],
+    candidate_evidence: list[dict],
+    schema: dict,
+) -> str:
+    tag_lines = [
+        f"- {tag}: {schema['relation_tags'][tag]}"
+        for tag in relation_tags
+        if tag in schema["relation_tags"]
+    ]
+    payload = {
+        "memo": {
+            "memo_id": memo["id"],
+            "date": memo.get("date"),
+            "text": memo["text"],
+            "relation_tags": relation_tags,
+        },
+        "candidate_nodes": candidate_nodes,
+        "candidate_evidence": candidate_evidence,
+    }
+
+    return "\n".join(
+        [
+            "You are building KEO memory_nodes.",
+            "A memory_node is not a relation tag. It is a self-understanding card backed by multiple memo evidence.",
+            "Use relation_tags only as routing metadata.",
+            "Decide whether the current memo should attach to existing semantic nodes, create a new semantic node, both, or be ignored.",
+            "Do not create a node for a one-off observation unless the evidence suggests a repeatable pattern/state/question/product insight.",
+            "Do not invent relation tags outside the fixed list.",
+            "Do not return a node id. The system will create ids.",
+            "Return JSON only.",
+            'JSON schema: {"decision":"attach|create|attach_and_create|ignore","attach_node_ids":["node-id"],"create_node":{"type":"pattern|state|question|product_insight","title":"짧은 한국어 제목","summary":"근거 기반 한국어 요약","relation_tags":["tag"],"confidence":0.0},"evidence_memo_ids":["memo-id"],"evidence_reason":"짧은 한국어 이유"}',
+            "",
+            "[Allowed relation tags for this memo]",
+            *tag_lines,
+            "",
+            "[Input JSON]",
+            json.dumps(payload, ensure_ascii=False, indent=2),
+        ]
+    )
+
+
+def sanitize_node_judgement(payload: dict, schema: dict, candidate_node_ids: set[str], evidence_ids: set[str]) -> dict:
+    decision = payload.get("decision")
+    if decision not in {"attach", "create", "attach_and_create", "ignore"}:
+        decision = "ignore"
+
+    attach_node_ids = payload.get("attach_node_ids", [])
+    if not isinstance(attach_node_ids, list):
+        attach_node_ids = []
+    attach_node_ids = [
+        node_id
+        for node_id in attach_node_ids
+        if isinstance(node_id, str) and node_id in candidate_node_ids
+    ]
+
+    evidence_memo_ids = payload.get("evidence_memo_ids", [])
+    if not isinstance(evidence_memo_ids, list):
+        evidence_memo_ids = []
+    evidence_memo_ids = [
+        memo_id
+        for memo_id in evidence_memo_ids
+        if isinstance(memo_id, str) and memo_id in evidence_ids
+    ]
+
+    create_node = payload.get("create_node")
+    if not isinstance(create_node, dict) or decision not in {"create", "attach_and_create"}:
+        create_node = None
+    else:
+        node_type = create_node.get("type")
+        if node_type not in SEMANTIC_NODE_TYPES:
+            node_type = "pattern"
+
+        title = create_node.get("title")
+        summary = create_node.get("summary")
+        relation_tags = create_node.get("relation_tags", [])
+        confidence = create_node.get("confidence", 0.5)
+        if not isinstance(title, str) or not title.strip():
+            create_node = None
+        elif not isinstance(summary, str) or not summary.strip():
+            create_node = None
+        elif not isinstance(relation_tags, list):
+            create_node = None
+        else:
+            known_tags = schema["relation_tags"]
+            clean_tags = [
+                tag
+                for tag in relation_tags
+                if isinstance(tag, str) and tag in known_tags
+            ]
+            if not clean_tags:
+                create_node = None
+            else:
+                if not isinstance(confidence, (int, float)):
+                    confidence = 0.5
+                create_node = {
+                    "type": node_type,
+                    "title": title.strip()[:80],
+                    "summary": summary.strip()[:500],
+                    "relation_tags": sorted(set(clean_tags)),
+                    "confidence": max(0.0, min(0.95, float(confidence))),
+                }
+
+    reason = payload.get("evidence_reason")
+    if not isinstance(reason, str):
+        reason = ""
+
+    return {
+        "decision": decision,
+        "attach_node_ids": attach_node_ids,
+        "create_node": create_node,
+        "evidence_memo_ids": evidence_memo_ids,
+        "evidence_reason": reason.strip()[:500],
+    }
+
+
+def judge_memory_node_with_llm(
+    memo: dict,
+    relation_tags: list[str],
+    candidate_nodes: list[dict],
+    candidate_evidence: list[dict],
+    schema: dict,
+    model: str,
+    timeout: int,
+) -> dict:
+    prompt = build_node_judge_prompt(memo, relation_tags, candidate_nodes, candidate_evidence, schema)
+    response = recall.generate_text(prompt, model, timeout=timeout, response_format="json")
+    payload = recall.extract_json_object(response)
+    candidate_node_ids = {node["id"] for node in candidate_nodes}
+    evidence_ids = {item["memo_id"] for item in candidate_evidence}
+    evidence_ids.add(memo["id"])
+    judgement = sanitize_node_judgement(payload, schema, candidate_node_ids, evidence_ids)
+    create_node = judgement.get("create_node")
+    if create_node is not None:
+        create_node["relation_tags"] = sorted(
+            set(create_node.get("relation_tags", [])) | set(relation_tags)
+        )
+    return judgement
+
+
+def find_similar_semantic_node(
+    node_candidate: dict,
+    memory_nodes: dict[str, dict],
+    model: str,
+    threshold: float,
+) -> tuple[str | None, float]:
+    semantic_nodes = [
+        node
+        for node in memory_nodes.values()
+        if is_semantic_node(node)
+    ]
+    if not semantic_nodes:
+        return None, 0.0
+
+    query_embedding = recall.embed_text(node_identity_text(node_candidate), model)
+    indexed_nodes = [
+        {
+            **node,
+            "text_embedding": recall.embed_text(node_identity_text(node), model),
+        }
+        for node in semantic_nodes
+    ]
+    ranked = recall.rank_by_embedding(query_embedding, indexed_nodes, "text_embedding")
+    if not ranked:
+        return None, 0.0
+
+    best = ranked[0]
+    score = float(best.get("score", 0.0))
+    if score >= threshold:
+        return best["id"], score
+    return None, score
+
+
+def create_semantic_node(
+    node_candidate: dict,
+    evidence_ids: list[str],
+    memory_nodes: dict[str, dict],
+    now: str,
+) -> dict:
+    node_id = make_semantic_node_id(node_candidate, evidence_ids)
+    suffix = 1
+    base_node_id = node_id
+    while node_id in memory_nodes:
+        suffix += 1
+        node_id = f"{base_node_id}-{suffix}"
+
+    node = {
+        "id": node_id,
+        "source": "llm",
+        "type": node_candidate["type"],
+        "title": node_candidate["title"],
+        "summary": node_candidate["summary"],
+        "relation_tags": node_candidate["relation_tags"],
+        "representative_evidence_ids": sorted(set(evidence_ids)),
+        "identity_key": build_node_identity_key(node_candidate, evidence_ids),
+        "evidence_count": 0,
+        "confidence": node_candidate.get("confidence", 0.5),
+        "last_seen_at": None,
+        "created_at": now,
+        "updated_at": now,
+    }
+    memory_nodes[node_id] = node
+    return node
+
+
+def apply_node_judgement(
+    judgement: dict,
+    memo: dict,
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    model: str,
+    similarity_threshold: float,
+    now: str,
+) -> list[dict]:
+    decisions = []
+    evidence_reason = judgement.get("evidence_reason") or "LLM node judge 판단"
+    evidence_ids = [memo["id"], *judgement.get("evidence_memo_ids", [])]
+    evidence_ids = list(dict.fromkeys(evidence_ids))
+
+    for node_id in judgement.get("attach_node_ids", []):
+        if node_id not in memory_nodes:
+            continue
+        if not is_semantic_node(memory_nodes[node_id]):
+            continue
+
+        attached_any = False
+        for evidence_memo_id in evidence_ids:
+            added = add_evidence(
+                memory_nodes,
+                memory_evidence,
+                node_id,
+                evidence_memo_id,
+                evidence_reason,
+                "llm",
+                0.85 if evidence_memo_id == memo["id"] else 0.65,
+                now,
+            )
+            attached_any = attached_any or added
+
+        decisions.append(
+            {
+                "node_id": node_id,
+                "source": "llm",
+                "decision": "attach" if attached_any else "already_attached",
+                "reason": evidence_reason,
+                "weight": 0.85,
+                "evidence_memo_ids": evidence_ids,
+            }
+        )
+
+    create_node = judgement.get("create_node")
+    if create_node is None:
+        return decisions
+
+    similar_node_id, similarity = find_similar_semantic_node(
+        create_node,
+        memory_nodes,
+        model,
+        similarity_threshold,
+    )
+    if similar_node_id is not None:
+        added = False
+        for evidence_memo_id in evidence_ids:
+            added = add_evidence(
+                memory_nodes,
+                memory_evidence,
+                similar_node_id,
+                evidence_memo_id,
+                f"{evidence_reason} 기존 semantic node와 유사도 {similarity:.4f}로 병합",
+                "llm",
+                0.85 if evidence_memo_id == memo["id"] else 0.65,
+                now,
+            ) or added
+        decisions.append(
+            {
+                "node_id": similar_node_id,
+                "source": "llm",
+                "decision": "attach_existing_similar",
+                "reason": f"{evidence_reason} 기존 node와 유사도 {similarity:.4f}",
+                "weight": 0.85,
+                "evidence_memo_ids": evidence_ids,
+            }
+        )
+        return decisions
+
+    node = create_semantic_node(create_node, evidence_ids, memory_nodes, now)
+    for evidence_memo_id in evidence_ids:
+        add_evidence(
+            memory_nodes,
+            memory_evidence,
+            node["id"],
+            evidence_memo_id,
+            evidence_reason,
+            "llm",
+            0.85 if evidence_memo_id == memo["id"] else 0.65,
+            now,
+        )
+    decisions.append(
+        {
+            "node_id": node["id"],
+            "source": "llm",
+            "decision": "create",
+            "reason": evidence_reason,
+            "weight": 0.85,
+            "created_node": node,
+            "evidence_memo_ids": evidence_ids,
+        }
+    )
+    return decisions
+
+
 def build_fixture_memory_graph(
     past_memos: list[dict],
     annotations: dict[str, dict],
     schema: dict,
 ) -> tuple[dict[str, dict], list[dict]]:
-    now = utc_now()
-    memory_nodes: dict[str, dict] = {}
-    memory_evidence: list[dict] = []
-
-    for memo in past_memos:
-        relation_tags = annotations.get(memo["id"], {}).get("relation_tags", [])
-        for tag in relation_tags:
-            node = ensure_node_for_tag(tag, schema, memory_nodes, now)
-            add_evidence(
-                memory_nodes,
-                memory_evidence,
-                node["id"],
-                memo["id"],
-                schema["relation_tags"][tag],
-                "fixture",
-                0.8,
-                memo.get("date", now),
-            )
-
-    return memory_nodes, memory_evidence
+    # Legacy fixture seed graph is disabled.
+    # Evaluate semantic graph state via `build-eval-graph` + `--use-state`.
+    return {}, []
 
 
 def score_node_candidates(
     query_tags: list[str],
     dense_matches: list[dict],
+    memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
     tag_weight: float,
     dense_weight: float,
 ) -> dict[str, dict]:
     candidates: dict[str, dict] = {}
+    query_tag_set = set(query_tags)
 
-    for tag in query_tags:
-        node_id = node_id_for_tag(tag)
+    for node_id, node in memory_nodes.items():
+        if not is_semantic_node(node):
+            continue
+        node_tags = set(node.get("relation_tags", []))
+        overlap = sorted(query_tag_set & node_tags)
+        if not overlap:
+            continue
         candidate = candidates.setdefault(
             node_id,
             {"score": 0.0, "tag_hits": [], "dense_memo_ids": [], "dense_hits": 0},
         )
-        candidate["score"] += tag_weight
-        candidate["tag_hits"].append(tag)
+        candidate["score"] += len(overlap) * tag_weight
+        candidate["tag_hits"].extend(overlap)
 
     memo_to_node_ids: dict[str, list[str]] = {}
     for evidence in memory_evidence:
         memo_id = evidence.get("memo_id")
         node_id = evidence.get("node_id")
         if isinstance(memo_id, str) and isinstance(node_id, str):
+            node = memory_nodes.get(node_id)
+            if node is None or not is_semantic_node(node):
+                continue
             memo_to_node_ids.setdefault(memo_id, []).append(node_id)
 
     for rank, match in enumerate(dense_matches, start=1):
         rank_score = dense_weight / rank
         for node_id in memo_to_node_ids.get(match["id"], []):
+            if node_id not in memory_nodes:
+                continue
+            if not is_semantic_node(memory_nodes[node_id]):
+                continue
             candidate = candidates.setdefault(
                 node_id,
                 {"score": 0.0, "tag_hits": [], "dense_memo_ids": [], "dense_hits": 0},
@@ -345,6 +835,7 @@ def rank_memory_evidence_memos(
     query_tags: list[str],
     node_top_k: int,
     top_k: int,
+    include_dense_fallback: bool,
 ) -> list[dict]:
     selected_node_ids = [
         node_id
@@ -374,10 +865,11 @@ def rank_memory_evidence_memos(
         memo_scores[memo_id] = memo_scores.get(memo_id, 0.0) + score
         memo_sources.setdefault(memo_id, set()).add(node_id)
 
-    for rank, match in enumerate(dense_matches[:top_k], start=1):
-        memo_id = match["id"]
-        memo_scores[memo_id] = memo_scores.get(memo_id, 0.0) + float(match["score"]) * 1.5 + 0.2 / rank
-        memo_sources.setdefault(memo_id, set()).add("dense")
+    if include_dense_fallback:
+        for rank, match in enumerate(dense_matches[:top_k], start=1):
+            memo_id = match["id"]
+            memo_scores[memo_id] = memo_scores.get(memo_id, 0.0) + float(match["score"]) * 1.5 + 0.2 / rank
+            memo_sources.setdefault(memo_id, set()).add("dense")
 
     ranked_memo_ids = sorted(memo_scores, key=lambda memo_id: memo_scores[memo_id], reverse=True)
     results = []
@@ -411,94 +903,77 @@ def classify_relation_tags(args: argparse.Namespace, schema: dict) -> list[str]:
     return []
 
 
-def ingest(args: argparse.Namespace) -> None:
-    schema = recall.load_tag_schema(args.tag_schema)
-    memos, memo_annotations, memory_nodes, memory_evidence = load_state()
-    now = utc_now()
+def process_memo_into_graph(
+    memo: dict,
+    relation_tags: list[str],
+    memos: list[dict],
+    memo_annotations: dict[str, dict],
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    schema: dict,
+    model: str,
+    dense_top_k: int,
+    attach_dense_node_min_hits: int,
+    use_llm_node_judge: bool,
+    node_judge_model: str,
+    node_candidate_limit: int,
+    node_evidence_limit: int,
+    node_similarity_threshold: float,
+    generate_timeout: int,
+    now: str,
+) -> dict:
+    if any(item["id"] == memo["id"] for item in memos):
+        raise ValueError(f"memo already exists: {memo['id']}")
 
-    memo_id = args.memo_id or next_memo_id(memos)
-    if any(memo["id"] == memo_id for memo in memos):
-        raise SystemExit(f"memo already exists: {memo_id}")
-
-    relation_tags = classify_relation_tags(args, schema)
-    memo = {
-        "id": memo_id,
-        "date": args.date or now[:10],
-        "text": args.memo.strip(),
-        "created_at": now,
-    }
+    previous_memos = list(memos)
     memos.append(memo)
-    memo_annotations[memo_id] = {
+    memo_annotations[memo["id"]] = {
         "relation_tags": relation_tags,
-        "short_summary": args.memo.strip()[:80],
+        "short_summary": memo["text"][:80],
     }
 
-    linked_nodes = []
+    linked_nodes: set[str] = set()
     connection_decisions = []
-    for tag in relation_tags:
-        node_was_existing = node_id_for_tag(tag) in memory_nodes
-        node = ensure_node_for_tag(tag, schema, memory_nodes, now)
-        added = add_evidence(
-            memory_nodes,
-            memory_evidence,
-            node["id"],
-            memo_id,
-            schema["relation_tags"][tag],
-            "relation_tag",
-            0.8,
-            now,
-        )
-        if added:
-            linked_nodes.append(node["id"])
-        connection_decisions.append(
-            {
-                "node_id": node["id"],
-                "source": "relation_tag",
-                "decision": "attach" if node_was_existing else "create",
-                "reason": f"새 메모가 relation tag `{tag}`로 분류됨",
-                "weight": 0.8,
-            }
-        )
-
-    dense_matches = dense_search(
+    dense_matches = dense_search_against_memos(
         memo,
-        memos,
+        previous_memos,
         memo_annotations,
-        schema,
-        args.model,
-        args.dense_top_k,
+        model,
+        dense_top_k,
     )
-    dense_node_hits = count_dense_node_hits(dense_matches, memory_evidence)
+    dense_node_hits = count_dense_node_hits(dense_matches, memory_nodes, memory_evidence)
 
     for node_id, hit in dense_node_hits.items():
+        if node_id not in memory_nodes:
+            continue
+        if not is_semantic_node(memory_nodes[node_id]):
+            continue
         if node_id in linked_nodes:
             continue
-        if hit["count"] < args.attach_dense_node_min_hits:
+        if hit["count"] < attach_dense_node_min_hits:
             connection_decisions.append(
                 {
                     "node_id": node_id,
                     "source": "dense",
                     "decision": "ignore",
-                    "reason": f"dense evidence hit {hit['count']}개로 threshold {args.attach_dense_node_min_hits} 미만",
+                    "reason": f"dense evidence hit {hit['count']}개로 threshold {attach_dense_node_min_hits} 미만",
                     "weight": 0.0,
                 }
             )
-            continue
-        if node_id not in memory_nodes:
             continue
         weight = min(0.75, round(0.45 + hit["count"] * 0.1, 2))
         added = add_evidence(
             memory_nodes,
             memory_evidence,
             node_id,
-            memo_id,
+            memo["id"],
             f"dense 결과에서 이 node의 evidence가 {hit['count']}개 발견됨",
             "dense",
             weight,
             now,
         )
         if added:
-            linked_nodes.append(node_id)
+            linked_nodes.add(node_id)
         connection_decisions.append(
             {
                 "node_id": node_id,
@@ -510,13 +985,114 @@ def ingest(args: argparse.Namespace) -> None:
             }
         )
 
+    if use_llm_node_judge:
+        memo_by_id = {item["id"]: item for item in memos}
+        candidate_nodes = collect_candidate_semantic_nodes(
+            relation_tags,
+            dense_node_hits,
+            memory_nodes,
+            memory_evidence,
+            memo_by_id,
+            memo_annotations,
+            node_candidate_limit,
+        )
+        candidate_evidence = build_candidate_evidence(
+            memo["id"],
+            dense_matches,
+            memo_annotations,
+            node_evidence_limit,
+        )
+        try:
+            node_judgement = judge_memory_node_with_llm(
+                memo,
+                relation_tags,
+                candidate_nodes,
+                candidate_evidence,
+                schema,
+                node_judge_model,
+                generate_timeout,
+            )
+        except RuntimeError as error:
+            connection_decisions.append(
+                {
+                    "node_id": None,
+                    "source": "llm",
+                    "decision": "ignore",
+                    "reason": f"LLM node judge failed: {error}",
+                    "weight": 0.0,
+                }
+            )
+        else:
+            llm_decisions = apply_node_judgement(
+                node_judgement,
+                memo,
+                memory_nodes,
+                memory_evidence,
+                model,
+                node_similarity_threshold,
+                now,
+            )
+            for decision in llm_decisions:
+                node_id = decision.get("node_id")
+                if isinstance(node_id, str):
+                    linked_nodes.add(node_id)
+            connection_decisions.extend(llm_decisions)
+
+    return {
+        "memo": memo,
+        "annotation": memo_annotations[memo["id"]],
+        "connection_decisions": connection_decisions,
+        "linked_node_ids": sorted(
+            linked_nodes
+        ),
+        "dense_matches": dense_matches,
+        "dense_node_candidates": dense_node_hits,
+    }
+
+
+def ingest(args: argparse.Namespace) -> None:
+    schema = recall.load_tag_schema(args.tag_schema)
+    memos, memo_annotations, memory_nodes, memory_evidence = load_state()
+    now = utc_now()
+
+    memo_id = args.memo_id or next_memo_id(memos)
+    relation_tags = classify_relation_tags(args, schema)
+    memo = {
+        "id": memo_id,
+        "date": args.date or now[:10],
+        "text": args.memo.strip(),
+        "created_at": now,
+    }
+    try:
+        processed = process_memo_into_graph(
+            memo,
+            relation_tags,
+            memos,
+            memo_annotations,
+            memory_nodes,
+            memory_evidence,
+            schema,
+            args.model,
+            args.dense_top_k,
+            args.attach_dense_node_min_hits,
+            args.use_llm_node_judge,
+            args.node_judge_model,
+            args.node_candidate_limit,
+            args.node_evidence_limit,
+            args.node_similarity_threshold,
+            args.generate_timeout,
+            now,
+        )
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
+
     save_state(memos, memo_annotations, memory_nodes, memory_evidence)
 
     result = {
         "memo": memo,
         "annotation": memo_annotations[memo_id],
-        "connection_decisions": connection_decisions,
-        "linked_nodes": [memory_nodes[node_id] for node_id in linked_nodes],
+        "connection_decisions": processed["connection_decisions"],
+        "linked_nodes": [memory_nodes[node_id] for node_id in processed["linked_node_ids"]],
         "dense_matches": [
             {
                 "id": match["id"],
@@ -525,9 +1101,9 @@ def ingest(args: argparse.Namespace) -> None:
                 "relation_tags": match.get("relation_tags", []),
                 "text": match["text"],
             }
-            for match in dense_matches
+            for match in processed["dense_matches"]
         ],
-        "dense_node_candidates": dense_node_hits,
+        "dense_node_candidates": processed["dense_node_candidates"],
     }
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
@@ -584,6 +1160,74 @@ def seed_from_eval(args: argparse.Namespace) -> None:
     )
 
 
+def build_eval_graph(args: argparse.Namespace) -> None:
+    state_dir = args.state_dir
+    paths = state_paths(state_dir)
+    if paths["memos"].exists() and not args.force:
+        raise SystemExit(f"{state_dir} already exists. Re-run with --force to replace eval graph state.")
+
+    schema = recall.load_tag_schema(args.tag_schema)
+    past_memos = recall.load_past_memos(args.data)
+    past_tags = recall.load_tag_annotations(args.past_tags, schema)
+    memos: list[dict] = []
+    memo_annotations: dict[str, dict] = {}
+    memory_nodes: dict[str, dict] = {}
+    memory_evidence: list[dict] = []
+    limit = args.limit or len(past_memos)
+    now = utc_now()
+
+    for index, source_memo in enumerate(past_memos[:limit], start=1):
+        if args.summary_only:
+            print(f"[build-eval-graph] {index}/{limit} {source_memo['id']}", flush=True)
+
+        relation_tags = past_tags.get(source_memo["id"], {}).get("relation_tags", [])
+        memo = {
+            **source_memo,
+            "created_at": source_memo.get("date", now),
+        }
+        process_memo_into_graph(
+            memo,
+            relation_tags,
+            memos,
+            memo_annotations,
+            memory_nodes,
+            memory_evidence,
+            schema,
+            args.model,
+            args.dense_top_k,
+            args.attach_dense_node_min_hits,
+            not args.skip_llm_node_judge,
+            args.node_judge_model,
+            args.node_candidate_limit,
+            args.node_evidence_limit,
+            args.node_similarity_threshold,
+            args.generate_timeout,
+            memo.get("created_at") or now,
+        )
+
+        if args.save_every and index % args.save_every == 0:
+            save_state_to_dir(state_dir, memos, memo_annotations, memory_nodes, memory_evidence)
+            save_memory_links_to_dir(state_dir, [])
+
+    save_state_to_dir(state_dir, memos, memo_annotations, memory_nodes, memory_evidence)
+    save_memory_links_to_dir(state_dir, [])
+
+    print(
+        json.dumps(
+            {
+                "state_dir": str(state_dir),
+                "memos": len(memos),
+                "memo_annotations": len(memo_annotations),
+                "memory_nodes": len(memory_nodes),
+                "semantic_nodes": sum(1 for node in memory_nodes.values() if is_semantic_node(node)),
+                "memory_evidence": len(memory_evidence),
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
+
+
 def parse_day(value: str | None):
     if not value:
         return None
@@ -593,12 +1237,19 @@ def parse_day(value: str | None):
         return None
 
 
-def build_memo_node_map(memory_evidence: list[dict]) -> dict[str, set[str]]:
+def build_memo_node_map(
+    memory_evidence: list[dict],
+    memory_nodes: dict[str, dict] | None = None,
+) -> dict[str, set[str]]:
     memo_node_ids: dict[str, set[str]] = defaultdict(set)
     for evidence in memory_evidence:
         memo_id = evidence.get("memo_id")
         node_id = evidence.get("node_id")
         if isinstance(memo_id, str) and isinstance(node_id, str):
+            if memory_nodes is not None:
+                node = memory_nodes.get(node_id)
+                if node is None or not is_semantic_node(node):
+                    continue
             memo_node_ids[memo_id].add(node_id)
     return memo_node_ids
 
@@ -632,13 +1283,14 @@ def add_link_candidate(
 
 def build_link_candidates(
     memos: list[dict],
+    memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
     min_support: int,
     window_days: int,
     include_temporal: bool,
 ) -> list[dict]:
     memo_by_id = {memo["id"]: memo for memo in memos}
-    memo_node_ids = build_memo_node_map(memory_evidence)
+    memo_node_ids = build_memo_node_map(memory_evidence, memory_nodes)
     candidates: dict[tuple[str, str, str], dict] = {}
 
     for memo_id, node_ids in memo_node_ids.items():
@@ -763,6 +1415,7 @@ def build_links(args: argparse.Namespace) -> None:
     memos, _, memory_nodes, memory_evidence = load_state()
     candidates = build_link_candidates(
         memos,
+        memory_nodes,
         memory_evidence,
         args.min_support,
         args.window_days,
@@ -834,49 +1487,40 @@ def count_by(items: list[str]) -> dict[str, int]:
     return dict(sorted(counts.items(), key=lambda item: item[1], reverse=True))
 
 
-def expected_node_ids_for_annotation(annotation: dict) -> set[str]:
-    relation_tags = annotation.get("relation_tags", [])
-    if not isinstance(relation_tags, list):
-        return set()
-    return {
-        node_id_for_tag(tag)
-        for tag in relation_tags
-        if isinstance(tag, str)
-    }
-
 
 def calculate_attach_quality(
+    memos: list[dict],
     memo_annotations: dict[str, dict],
+    memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
 ) -> dict:
     actual_pairs = {
         (evidence.get("memo_id"), evidence.get("node_id"))
         for evidence in memory_evidence
-        if isinstance(evidence.get("memo_id"), str) and isinstance(evidence.get("node_id"), str)
+        if isinstance(evidence.get("memo_id"), str)
+        and isinstance(evidence.get("node_id"), str)
+        and is_semantic_node(memory_nodes.get(evidence.get("node_id"), {}))
     }
-    expected_pairs = set()
-    for memo_id, annotation in memo_annotations.items():
-        for node_id in expected_node_ids_for_annotation(annotation):
-            expected_pairs.add((memo_id, node_id))
-
-    correct_pairs = actual_pairs & expected_pairs
-    wrong_pairs = actual_pairs - expected_pairs
-    missing_pairs = expected_pairs - actual_pairs
-
-    precision = len(correct_pairs) / len(actual_pairs) if actual_pairs else 0.0
-    recall = len(correct_pairs) / len(expected_pairs) if expected_pairs else 0.0
-    wrong_attach_rate = len(wrong_pairs) / len(actual_pairs) if actual_pairs else 0.0
+    attached_memo_ids = set(
+        memo_id
+        for memo_id, node_ids in build_memo_node_map(memory_evidence, memory_nodes).items()
+        if node_ids
+    )
 
     return {
-        "basis": "memo_annotations relation_tags를 정답 node로 보는 fixture 기준",
-        "actual_attach_count": len(actual_pairs),
-        "expected_attach_count": len(expected_pairs),
-        "correct_attach_count": len(correct_pairs),
-        "missing_attach_count": len(missing_pairs),
-        "wrong_attach_count": len(wrong_pairs),
-        "node_attach_precision": round(precision, 4),
-        "node_attach_recall": round(recall, 4),
-        "wrong_attach_rate": round(wrong_attach_rate, 4),
+        "basis": "semantic node attachment in live graph",
+        "attached_pair_count": len(actual_pairs),
+        "attached_memo_count": len(attached_memo_ids),
+        "attachment_coverage": round(len(attached_memo_ids) / len(memos), 4) if memos else 0.0,
+        "source_counts": count_by(
+            [
+                evidence.get("source", "unknown")
+                for evidence in memory_evidence
+                if isinstance(evidence.get("memo_id"), str)
+                and isinstance(evidence.get("node_id"), str)
+                and is_semantic_node(memory_nodes.get(evidence.get("node_id"), {}))
+            ]
+        ),
     }
 
 
@@ -889,6 +1533,8 @@ def calculate_node_coherence(
     low_coherence_nodes = []
 
     for node_id, node in memory_nodes.items():
+        if not is_semantic_node(node):
+            continue
         node_tags = set(node.get("relation_tags", []))
         evidence_memo_ids = [
             evidence["memo_id"]
@@ -929,7 +1575,7 @@ def calculate_node_coherence(
 def audit(args: argparse.Namespace) -> None:
     memos, memo_annotations, memory_nodes, memory_evidence = load_state()
     memory_links = load_memory_links()
-    memo_node_ids = build_memo_node_map(memory_evidence)
+    memo_node_ids = build_memo_node_map(memory_evidence, memory_nodes)
 
     memo_count = len(memos)
     node_counts_per_memo = [len(memo_node_ids.get(memo["id"], set())) for memo in memos]
@@ -989,10 +1635,11 @@ def audit(args: argparse.Namespace) -> None:
             "memos": memo_count,
             "memo_annotations": len(memo_annotations),
             "memory_nodes": len(memory_nodes),
+            "semantic_nodes": sum(1 for node in memory_nodes.values() if is_semantic_node(node)),
             "memory_evidence": len(memory_evidence),
             "memory_links": len(memory_links),
         },
-        "node_attach_quality": calculate_attach_quality(memo_annotations, memory_evidence),
+        "node_attach_quality": calculate_attach_quality(memos, memo_annotations, memory_nodes, memory_evidence),
         "node_attach_shape": {
             "avg_nodes_per_memo": round(mean(node_counts_per_memo), 4) if node_counts_per_memo else 0,
             "nodes_per_memo": summarize_numeric([float(value) for value in node_counts_per_memo]),
@@ -1010,7 +1657,7 @@ def audit(args: argparse.Namespace) -> None:
                 key=lambda item: item["evidence_count"],
                 reverse=True,
             )[:10],
-            "duplicate_node_rate": "not_measured_in_mvp_relation_tag_seed_nodes",
+            "duplicate_node_rate": "not_measured_in_mvp_semantic_nodes",
         },
         "link_quality": {
             "link_precision": "needs_human_review",
@@ -1033,13 +1680,21 @@ def evaluate(args: argparse.Namespace) -> None:
     cases = recall.load_eval_cases(args.eval_data)
     past_tags = recall.load_tag_annotations(args.past_tags, schema)
     case_tags = recall.load_tag_annotations(args.eval_case_tags, schema)
-    memory_nodes, memory_evidence = build_fixture_memory_graph(past_memos, past_tags, schema)
-    memo_by_id = {memo["id"]: memo for memo in past_memos}
+    if args.use_state:
+        stored_memos, stored_annotations, memory_nodes, memory_evidence = load_state_from_dir(args.state_dir)
+        indexed_source_memos = stored_memos
+        annotations = stored_annotations
+    else:
+        memory_nodes, memory_evidence = build_fixture_memory_graph(past_memos, past_tags, schema)
+        indexed_source_memos = past_memos
+        annotations = past_tags
+
+    memo_by_id = {memo["id"]: memo for memo in indexed_source_memos}
 
     indexed_memos = recall.build_past_memo_index(
-        past_memos,
+        indexed_source_memos,
         args.model,
-        past_tags,
+        annotations,
         recall.RETRIEVAL_TEXT,
     )
     dense_stats = recall.empty_stats()
@@ -1058,6 +1713,7 @@ def evaluate(args: argparse.Namespace) -> None:
         node_candidates = score_node_candidates(
             query_tags,
             dense_matches[: args.dense_top_k],
+            memory_nodes,
             memory_evidence,
             args.tag_weight,
             args.dense_weight,
@@ -1066,11 +1722,12 @@ def evaluate(args: argparse.Namespace) -> None:
             node_candidates,
             memory_evidence,
             memo_by_id,
-            past_tags,
+            annotations,
             dense_matches[: args.dense_top_k],
             query_tags,
             args.node_top_k,
             args.top_k,
+            not args.no_dense_fallback,
         )
 
         recall.update_stats(dense_stats, expected_ids, dense_results)
@@ -1090,7 +1747,9 @@ def evaluate(args: argparse.Namespace) -> None:
     print(f"cases: {len(cases)}")
     print(f"expected: {sum(len(case['expected_ids']) for case in cases)}")
     print(f"memory nodes: {len(memory_nodes)}")
+    print(f"semantic nodes: {sum(1 for node in memory_nodes.values() if is_semantic_node(node))}")
     print(f"memory evidence: {len(memory_evidence)}")
+    print(f"graph source: {str(args.state_dir) if args.use_state else 'fixture'}")
     print(f"dense_top_k for node routing: {args.dense_top_k}")
     print(f"node_top_k: {args.node_top_k}")
     print("\n[dense baseline]")
@@ -1114,6 +1773,11 @@ def parse_args() -> argparse.Namespace:
     ingest_parser.add_argument("--model", default=recall.DEFAULT_MODEL)
     ingest_parser.add_argument("--dense-top-k", type=int, default=DEFAULT_DENSE_TOP_K)
     ingest_parser.add_argument("--attach-dense-node-min-hits", type=int, default=DEFAULT_ATTACH_DENSE_NODE_MIN_HITS)
+    ingest_parser.add_argument("--use-llm-node-judge", action="store_true")
+    ingest_parser.add_argument("--node-judge-model", default=recall.DEFAULT_TAGGING_MODEL)
+    ingest_parser.add_argument("--node-candidate-limit", type=int, default=8)
+    ingest_parser.add_argument("--node-evidence-limit", type=int, default=DEFAULT_NODE_EVIDENCE_LIMIT)
+    ingest_parser.add_argument("--node-similarity-threshold", type=float, default=DEFAULT_NODE_SIMILARITY_THRESHOLD)
     ingest_parser.add_argument("--generate-timeout", type=int, default=recall.GENERATE_TIMEOUT_SECONDS)
 
     show_parser = subparsers.add_parser("nodes", help="print memory nodes")
@@ -1137,13 +1801,32 @@ def parse_args() -> argparse.Namespace:
     build_links_parser.add_argument("--link-model", default=recall.DEFAULT_TAGGING_MODEL)
     build_links_parser.add_argument("--generate-timeout", type=int, default=recall.GENERATE_TIMEOUT_SECONDS)
 
-    seed_parser = subparsers.add_parser("seed-eval", help="replace data state with eval past memos")
+    seed_parser = subparsers.add_parser("seed-eval", help="legacy: write eval past memos without seed nodes")
     seed_parser.add_argument("--force", action="store_true", help="replace existing data files")
     seed_parser.add_argument("--data", type=Path, default=recall.DATA_PATH)
     seed_parser.add_argument("--tag-schema", type=Path, default=recall.TAG_SCHEMA_PATH)
     seed_parser.add_argument("--past-tags", type=Path, default=recall.PAST_TAGS_PATH)
 
-    eval_parser = subparsers.add_parser("eval", help="evaluate fixture-backed memory graph retrieval")
+    build_eval_parser = subparsers.add_parser("build-eval-graph", help="build an isolated memory graph from eval past memos")
+    build_eval_parser.add_argument("--state-dir", type=Path, default=BASE_DIR / "data_eval")
+    build_eval_parser.add_argument("--force", action="store_true")
+    build_eval_parser.add_argument("--limit", type=int)
+    build_eval_parser.add_argument("--summary-only", action="store_true")
+    build_eval_parser.add_argument("--save-every", type=int, default=25)
+    build_eval_parser.add_argument("--model", default=recall.DEFAULT_MODEL)
+    build_eval_parser.add_argument("--dense-top-k", type=int, default=DEFAULT_DENSE_TOP_K)
+    build_eval_parser.add_argument("--attach-dense-node-min-hits", type=int, default=DEFAULT_ATTACH_DENSE_NODE_MIN_HITS)
+    build_eval_parser.add_argument("--skip-llm-node-judge", action="store_true")
+    build_eval_parser.add_argument("--node-judge-model", default=recall.DEFAULT_TAGGING_MODEL)
+    build_eval_parser.add_argument("--node-candidate-limit", type=int, default=8)
+    build_eval_parser.add_argument("--node-evidence-limit", type=int, default=DEFAULT_NODE_EVIDENCE_LIMIT)
+    build_eval_parser.add_argument("--node-similarity-threshold", type=float, default=DEFAULT_NODE_SIMILARITY_THRESHOLD)
+    build_eval_parser.add_argument("--generate-timeout", type=int, default=recall.GENERATE_TIMEOUT_SECONDS)
+    build_eval_parser.add_argument("--data", type=Path, default=recall.DATA_PATH)
+    build_eval_parser.add_argument("--tag-schema", type=Path, default=recall.TAG_SCHEMA_PATH)
+    build_eval_parser.add_argument("--past-tags", type=Path, default=recall.PAST_TAGS_PATH)
+
+    eval_parser = subparsers.add_parser("eval", help="evaluate semantic memory graph retrieval")
     eval_parser.add_argument("--model", default=recall.DEFAULT_MODEL)
     eval_parser.add_argument("--top-k", type=int, default=recall.DEFAULT_TOP_K)
     eval_parser.add_argument("--dense-top-k", type=int, default=DEFAULT_EVAL_DENSE_TOP_K)
@@ -1151,6 +1834,9 @@ def parse_args() -> argparse.Namespace:
     eval_parser.add_argument("--tag-weight", type=float, default=2.0)
     eval_parser.add_argument("--dense-weight", type=float, default=1.0)
     eval_parser.add_argument("--summary-only", action="store_true")
+    eval_parser.add_argument("--use-state", action="store_true", help="evaluate persisted semantic memory graph instead of empty fixture graph")
+    eval_parser.add_argument("--state-dir", type=Path, default=DATA_DIR)
+    eval_parser.add_argument("--no-dense-fallback", action="store_true")
     eval_parser.add_argument("--data", type=Path, default=recall.DATA_PATH)
     eval_parser.add_argument("--eval-data", type=Path, default=recall.EVAL_PATH)
     eval_parser.add_argument("--tag-schema", type=Path, default=recall.TAG_SCHEMA_PATH)
@@ -1174,6 +1860,8 @@ def main() -> None:
         build_links(args)
     elif args.command == "seed-eval":
         seed_from_eval(args)
+    elif args.command == "build-eval-graph":
+        build_eval_graph(args)
     elif args.command == "eval":
         evaluate(args)
 

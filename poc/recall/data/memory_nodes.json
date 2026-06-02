@@ -129,29 +129,29 @@
     "id": "node-schedule-disruption",
     "type": "pattern",
     "title": "일정 흔들림",
-    "summary": "일정 하나가 하루 흐름 전체를 흔듦",
+    "summary": "일정 하나가 하루 흐름 전체를 흔듦 현재 19개 메모에서 반복 관찰됨.",
     "relation_tags": [
       "schedule_disruption"
     ],
-    "evidence_count": 18,
+    "evidence_count": 19,
     "confidence": 0.95,
-    "last_seen_at": "2026-05-03",
+    "last_seen_at": "2026-06-02T03:21:10Z",
     "created_at": "2026-06-01T05:46:37Z",
-    "updated_at": "2026-05-03"
+    "updated_at": "2026-06-02T03:21:10Z"
   },
   "node-event-aftereffect": {
     "id": "node-event-aftereffect",
     "type": "pattern",
     "title": "사건 여파",
-    "summary": "특정 일정이나 사건 이후 여파가 오래 감",
+    "summary": "특정 일정이나 사건 이후 여파가 오래 감 현재 25개 메모에서 반복 관찰됨.",
     "relation_tags": [
       "event_aftereffect"
     ],
-    "evidence_count": 24,
+    "evidence_count": 25,
     "confidence": 0.95,
-    "last_seen_at": "2026-05-09",
+    "last_seen_at": "2026-06-02T03:21:10Z",
     "created_at": "2026-06-01T05:46:37Z",
-    "updated_at": "2026-05-09"
+    "updated_at": "2026-06-02T03:21:10Z"
   },
   "node-low-energy-drift": {
     "id": "node-low-energy-drift",
@@ -390,5 +390,33 @@
     "last_seen_at": "2026-05-13",
     "created_at": "2026-06-01T05:46:37Z",
     "updated_at": "2026-05-13"
+  },
+  "node-pattern-b277ee89": {
+    "id": "node-pattern-b277ee89",
+    "node_kind": "semantic",
+    "source": "llm",
+    "type": "pattern",
+    "title": "비 냄새와 예전 출근길 생각의 연관성",
+    "summary": "비 냄새가 나면 예전 출근길의 기억이 떠오르는 경향이 있음. 이는 특정 자극에 의해 과거 경험과 연결되는 인지 패턴을 보여줌. 관련된 메모는 2026-05-17, 2026-06-16, 2026-05-27, 2026-05-19, 2026-06-18, 2026-05-23, 2026-06-22, 2026-06-05의 메모들에서 확인 가능. 현재 9개 메모에서 반복 관찰됨.",
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "representative_evidence_ids": [
+      "memo-179",
+      "memo-240",
+      "memo-249",
+      "memo-268",
+      "memo-331",
+      "memo-390",
+      "memo-399",
+      "memo-418",
+      "user-memo-003"
+    ],
+    "identity_key": "pattern|event_aftereffect|비 냄새와 예전 출근길 생각의 연관성|memo-179,memo-240,memo-249,memo-268,memo-390,memo-399,memo-418,user-memo-003",
+    "evidence_count": 9,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-02T03:21:10Z",
+    "created_at": "2026-06-02T03:21:10Z",
+    "updated_at": "2026-06-02T03:21:10Z"
   }
 }
