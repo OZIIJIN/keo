@@ -946,48 +946,6 @@ def process_memo_into_graph(
     )
     dense_node_hits = count_dense_node_hits(dense_matches, memory_nodes, memory_evidence)
 
-    for node_id, hit in dense_node_hits.items():
-        if node_id not in memory_nodes:
-            continue
-        if not is_semantic_node(memory_nodes[node_id]):
-            continue
-        if node_id in linked_nodes:
-            continue
-        if hit["count"] < attach_dense_node_min_hits:
-            connection_decisions.append(
-                {
-                    "node_id": node_id,
-                    "source": "dense",
-                    "decision": "ignore",
-                    "reason": f"dense evidence hit {hit['count']}개로 threshold {attach_dense_node_min_hits} 미만",
-                    "weight": 0.0,
-                }
-            )
-            continue
-        weight = min(0.75, round(0.45 + hit["count"] * 0.1, 2))
-        added = add_evidence(
-            memory_nodes,
-            memory_evidence,
-            node_id,
-            memo["id"],
-            f"dense 결과에서 이 node의 evidence가 {hit['count']}개 발견됨",
-            "dense",
-            weight,
-            now,
-        )
-        if added:
-            linked_nodes.add(node_id)
-        connection_decisions.append(
-            {
-                "node_id": node_id,
-                "source": "dense",
-                "decision": "attach",
-                "reason": f"dense 결과의 과거 메모 {hit['count']}개가 이미 이 node에 연결되어 있음",
-                "weight": weight,
-                "dense_memo_ids": hit["memo_ids"],
-            }
-        )
-
     if use_llm_node_judge:
         memo_by_id = {item["id"]: item for item in memos}
         candidate_nodes = collect_candidate_semantic_nodes(
@@ -1576,8 +1534,9 @@ def calculate_node_coherence(
 
 
 def audit(args: argparse.Namespace) -> None:
-    memos, memo_annotations, memory_nodes, memory_evidence = load_state()
-    memory_links = load_memory_links()
+    state_dir = getattr(args, "state_dir", DATA_DIR)
+    memos, memo_annotations, memory_nodes, memory_evidence = load_state_from_dir(state_dir)
+    memory_links = load_memory_links_from_dir(state_dir)
     memo_node_ids = build_memo_node_map(memory_evidence, memory_nodes)
 
     memo_count = len(memos)
@@ -1790,6 +1749,7 @@ def parse_args() -> argparse.Namespace:
     links_parser.add_argument("--limit", type=int, default=20)
 
     audit_parser = subparsers.add_parser("audit", help="print memory graph quality metrics")
+    audit_parser.add_argument("--state-dir", type=Path, default=DATA_DIR)
     audit_parser.add_argument("--orphan-threshold", type=int, default=1)
     audit_parser.add_argument("--over-broad-threshold", type=int, default=25)
     audit_parser.add_argument("--low-confidence-threshold", type=float, default=0.6)
