@@ -579,7 +579,10 @@ def judge_memory_node_with_llm(
 ) -> dict:
     prompt = build_node_judge_prompt(memo, relation_tags, candidate_nodes, candidate_evidence, schema)
     response = recall.generate_text(prompt, model, timeout=timeout, response_format="json")
-    payload = recall.extract_json_object(response)
+    try:
+        payload = recall.extract_json_object(response)
+    except (ValueError, Exception) as error:
+        raise RuntimeError(f"LLM node judge returned invalid JSON: {error}") from error
     candidate_node_ids = {node["id"] for node in candidate_nodes}
     evidence_ids = {item["memo_id"] for item in candidate_evidence}
     evidence_ids.add(memo["id"])
