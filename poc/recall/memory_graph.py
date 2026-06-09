@@ -27,6 +27,10 @@ DEFAULT_LINK_MIN_SUPPORT = 3
 DEFAULT_LINK_WINDOW_DAYS = 14
 DEFAULT_NODE_SIMILARITY_THRESHOLD = 0.82
 DEFAULT_NODE_EVIDENCE_LIMIT = 8
+DEFAULT_CREATE_MIN_SUPPORTING_EVIDENCE = 2
+DEFAULT_PENDING_PROMOTION_THRESHOLD = 3
+PENDING_NODE_SIMILARITY_THRESHOLD = 0.80
+NODE_EMBEDDING_MIN_SCORE = 0.70
 
 SEMANTIC_NODE_TYPES = {"pattern", "state", "question", "product_insight"}
 
@@ -88,7 +92,8 @@ def is_semantic_node(node: dict) -> bool:
     relation_tags = node.get("relation_tags")
 
     return (
-        node.get("type") in SEMANTIC_NODE_TYPES
+        node.get("status") != "pending"
+        and node.get("type") in SEMANTIC_NODE_TYPES
         and isinstance(node.get("title"), str)
         and bool(node.get("title", "").strip())
         and isinstance(node.get("summary"), str)
@@ -388,10 +393,33 @@ def collect_candidate_semantic_nodes(
     memo_by_id: dict[str, dict],
     annotations: dict[str, dict],
     limit: int,
+    memo_text: str = "",
+    model: str = "",
 ) -> list[dict]:
     query_tag_set = set(relation_tags)
-    candidates = []
 
+    # Path 3: memo text embedding ↔ node (title+summary) embedding — exposure only
+    embedding_scores: dict[str, float] = {}
+    if memo_text and model:
+        semantic_nodes_for_embed = [node for node in memory_nodes.values() if is_semantic_node(node)]
+        if semantic_nodes_for_embed:
+            memo_embedding = recall.embed_text(memo_text, model)
+            indexed_nodes = [
+                {
+                    **node,
+                    "text_embedding": recall.embed_text(
+                        f"{node.get('title', '')}\n{node.get('summary', '')}", model
+                    ),
+                }
+                for node in semantic_nodes_for_embed
+            ]
+            ranked = recall.rank_by_embedding(memo_embedding, indexed_nodes, "text_embedding")
+            for rank_item in ranked[:DEFAULT_NODE_TOP_K]:
+                score = float(rank_item.get("score", 0.0))
+                if score >= NODE_EMBEDDING_MIN_SCORE:
+                    embedding_scores[rank_item["id"]] = score
+
+    candidates = []
     for node_id, node in memory_nodes.items():
         if not is_semantic_node(node):
             continue
@@ -399,7 +427,8 @@ def collect_candidate_semantic_nodes(
         dense_hit = dense_node_hits.get(node_id, {})
         tag_overlap = len(query_tag_set & node_tags)
         dense_count = int(dense_hit.get("count", 0))
-        if tag_overlap == 0 and dense_count == 0:
+        emb_score = embedding_scores.get(node_id, 0.0)
+        if tag_overlap == 0 and dense_count == 0 and emb_score == 0.0:
             continue
 
         candidates.append(
@@ -411,9 +440,10 @@ def collect_candidate_semantic_nodes(
                 "relation_tags": node.get("relation_tags", []),
                 "evidence_count": node.get("evidence_count", 0),
                 "confidence": node.get("confidence", 0.0),
-                "candidate_score": tag_overlap * 2 + dense_count,
+                "candidate_score": tag_overlap * 2 + dense_count + emb_score,
                 "tag_overlap": sorted(query_tag_set & node_tags),
                 "dense_memo_ids": dense_hit.get("memo_ids", []),
+                "embedding_score": round(emb_score, 4),
                 "evidence_examples": get_node_evidence_examples(
                     node_id,
                     memory_evidence,
@@ -660,6 +690,97 @@ def create_semantic_node(
     return node
 
 
+def create_pending_node(
+    node_candidate: dict,
+    initial_evidence_ids: list[str],
+    memory_nodes: dict[str, dict],
+    now: str,
+) -> dict:
+    node_id = make_semantic_node_id(node_candidate, initial_evidence_ids)
+    suffix = 1
+    base_node_id = node_id
+    while node_id in memory_nodes:
+        suffix += 1
+        node_id = f"{base_node_id}-{suffix}"
+
+    node = {
+        "id": node_id,
+        "source": "llm",
+        "status": "pending",
+        "type": node_candidate["type"],
+        "title": node_candidate["title"],
+        "summary": node_candidate["summary"],
+        "relation_tags": node_candidate["relation_tags"],
+        "pending_evidence_ids": list(dict.fromkeys(initial_evidence_ids)),
+        "identity_key": build_node_identity_key(node_candidate, initial_evidence_ids),
+        "evidence_count": 0,
+        "confidence": node_candidate.get("confidence", 0.5),
+        "last_seen_at": None,
+        "created_at": now,
+        "updated_at": now,
+    }
+    memory_nodes[node_id] = node
+    return node
+
+
+def find_similar_pending_node(
+    node_candidate: dict,
+    memory_nodes: dict[str, dict],
+    model: str,
+    threshold: float,
+) -> tuple[str | None, float]:
+    pending_nodes = [
+        node
+        for node in memory_nodes.values()
+        if node.get("status") == "pending" and node.get("type") in SEMANTIC_NODE_TYPES
+    ]
+    if not pending_nodes:
+        return None, 0.0
+
+    query_embedding = recall.embed_text(node_identity_text(node_candidate), model)
+    indexed = [
+        {
+            **node,
+            "text_embedding": recall.embed_text(node_identity_text(node), model),
+        }
+        for node in pending_nodes
+    ]
+    ranked = recall.rank_by_embedding(query_embedding, indexed, "text_embedding")
+    if not ranked:
+        return None, 0.0
+
+    best = ranked[0]
+    score = float(best.get("score", 0.0))
+    if score >= threshold:
+        return best["id"], score
+    return None, score
+
+
+def promote_pending_node(
+    pending_node: dict,
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    now: str,
+) -> None:
+    evidence_ids = pending_node.pop("pending_evidence_ids", [])
+    pending_node.pop("status", None)
+    pending_node["representative_evidence_ids"] = sorted(set(evidence_ids))
+    pending_node["last_seen_at"] = now
+    pending_node["updated_at"] = now
+
+    for memo_id in evidence_ids:
+        add_evidence(
+            memory_nodes,
+            memory_evidence,
+            pending_node["id"],
+            memo_id,
+            "보류 패턴 반복 확인으로 승격",
+            "llm",
+            0.75,
+            now,
+        )
+
+
 def apply_node_judgement(
     judgement: dict,
     memo: dict,
@@ -738,6 +859,55 @@ def apply_node_judgement(
                 "evidence_memo_ids": evidence_ids,
             }
         )
+        return decisions
+
+    # Create guard: require supporting evidence from other memos
+    other_evidence = [mid for mid in evidence_ids if mid != memo["id"]]
+    if len(other_evidence) < DEFAULT_CREATE_MIN_SUPPORTING_EVIDENCE:
+        similar_pending_id, pending_sim = find_similar_pending_node(
+            create_node, memory_nodes, model, PENDING_NODE_SIMILARITY_THRESHOLD
+        )
+        if similar_pending_id is not None:
+            pending_node = memory_nodes[similar_pending_id]
+            existing = pending_node.get("pending_evidence_ids", [])
+            merged = list(dict.fromkeys([*existing, *evidence_ids]))
+            pending_node["pending_evidence_ids"] = merged
+            pending_node["updated_at"] = now
+            if len(merged) >= DEFAULT_PENDING_PROMOTION_THRESHOLD:
+                promote_pending_node(pending_node, memory_nodes, memory_evidence, now)
+                decisions.append(
+                    {
+                        "node_id": pending_node["id"],
+                        "source": "llm",
+                        "decision": "promoted_from_pending",
+                        "reason": f"보류 패턴 반복 확인 (유사도 {pending_sim:.4f}), evidence {len(merged)}개",
+                        "weight": 0.75,
+                        "evidence_memo_ids": merged,
+                    }
+                )
+            else:
+                decisions.append(
+                    {
+                        "node_id": similar_pending_id,
+                        "source": "llm",
+                        "decision": "pending_merged",
+                        "reason": f"기존 보류 패턴에 추가 (유사도 {pending_sim:.4f}), evidence {len(merged)}개",
+                        "weight": 0.0,
+                        "evidence_memo_ids": merged,
+                    }
+                )
+        else:
+            pending_node = create_pending_node(create_node, evidence_ids, memory_nodes, now)
+            decisions.append(
+                {
+                    "node_id": pending_node["id"],
+                    "source": "llm",
+                    "decision": "pending_created",
+                    "reason": f"반복 근거 부족 (supporting evidence {len(other_evidence)}개), 보류 패턴으로 저장",
+                    "weight": 0.0,
+                    "evidence_memo_ids": evidence_ids,
+                }
+            )
         return decisions
 
     node = create_semantic_node(create_node, evidence_ids, memory_nodes, now)
@@ -956,6 +1126,8 @@ def process_memo_into_graph(
             memo_by_id,
             memo_annotations,
             node_candidate_limit,
+            memo_text=memo["text"],
+            model=model,
         )
         candidate_evidence = build_candidate_evidence(
             memo["id"],
