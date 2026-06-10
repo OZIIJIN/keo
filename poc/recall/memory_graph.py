@@ -784,6 +784,7 @@ def promote_pending_node(
 def apply_node_judgement(
     judgement: dict,
     memo: dict,
+    relation_tags: list[str],
     memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
     model: str,
@@ -794,11 +795,22 @@ def apply_node_judgement(
     evidence_reason = judgement.get("evidence_reason") or "LLM node judge 판단"
     evidence_ids = [memo["id"], *judgement.get("evidence_memo_ids", [])]
     evidence_ids = list(dict.fromkeys(evidence_ids))
+    memo_tag_set = set(relation_tags)
 
     for node_id in judgement.get("attach_node_ids", []):
         if node_id not in memory_nodes:
             continue
         if not is_semantic_node(memory_nodes[node_id]):
+            continue
+        node_tags = set(memory_nodes[node_id].get("relation_tags", []))
+        if not (memo_tag_set & node_tags):
+            decisions.append({
+                "node_id": node_id,
+                "source": "llm",
+                "decision": "attach_rejected_no_tag_overlap",
+                "reason": "메모 relation_tags와 node relation_tags 겹침 없음",
+                "weight": 0.0,
+            })
             continue
 
         attached_any = False
@@ -1159,6 +1171,7 @@ def process_memo_into_graph(
             llm_decisions = apply_node_judgement(
                 node_judgement,
                 memo,
+                relation_tags,
                 memory_nodes,
                 memory_evidence,
                 model,
