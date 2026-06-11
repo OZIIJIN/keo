@@ -31,6 +31,7 @@ DEFAULT_CREATE_MIN_SUPPORTING_EVIDENCE = 2
 DEFAULT_PENDING_PROMOTION_THRESHOLD = 3
 PENDING_NODE_SIMILARITY_THRESHOLD = 0.80
 NODE_EMBEDDING_MIN_SCORE = 0.70
+MIN_EVIDENCE_FOR_EVOLUTION = 10
 
 SEMANTIC_NODE_TYPES = {"pattern", "state", "question", "product_insight"}
 
@@ -782,6 +783,222 @@ def promote_pending_node(
         )
 
 
+def build_node_evolve_prompt(node: dict, evidence_memos: list[dict], schema: dict) -> str:
+    allowed_tags = list(schema.get("relation_tags", {}).keys())
+    evidence_list = [
+        {"memo_id": m["id"], "date": m.get("date"), "text": m["text"]}
+        for m in evidence_memos
+    ]
+    payload = {
+        "node": {
+            "id": node["id"],
+            "type": node["type"],
+            "title": node["title"],
+            "summary": node["summary"],
+            "relation_tags": node.get("relation_tags", []),
+        },
+        "evidence_memos": evidence_list,
+    }
+    return "\n".join(
+        [
+            "You are reviewing a KEO memory_node that has accumulated many evidence memos.",
+            "Decide if this node should be split into more specific sub-patterns, refined (title/summary/tags updated), or confirmed as-is.",
+            "SPLIT: choose when the evidence memos clearly belong to 2+ distinct patterns. Each split node must be more specific than the original.",
+            "REFINE: choose when the title/summary/tags don't accurately represent the evidence, but all memos belong to one pattern.",
+            "CONFIRM: choose when the node accurately represents all evidence.",
+            "Do not create overly broad nodes. Prefer more specific titles.",
+            "Return JSON only.",
+            'JSON schema: {"action":"split|refine|confirm","split_nodes":[{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"],"evidence_memo_ids":["memo-id"]}],"refined_node":{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"]},"reason":"짧은 한국어 이유"}',
+            "",
+            f"[Allowed relation tags]: {', '.join(allowed_tags)}",
+            "",
+            "[Input JSON]",
+            json.dumps(payload, ensure_ascii=False, indent=2),
+        ]
+    )
+
+
+def apply_node_evolution(
+    node: dict,
+    action: str,
+    split_nodes: list[dict],
+    refined_node: dict | None,
+    memo_by_id: dict[str, dict],
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    schema: dict,
+    model: str,
+    similarity_threshold: float,
+    now: str,
+) -> list[dict]:
+    original_id = node["id"]
+    decisions = []
+
+    if action == "confirm":
+        decisions.append({"node_id": original_id, "action": "confirm"})
+        return decisions
+
+    if action == "refine" and refined_node:
+        known_tags = set(schema.get("relation_tags", {}).keys())
+        clean_tags = [t for t in refined_node.get("relation_tags", []) if t in known_tags]
+        if not clean_tags:
+            decisions.append({"node_id": original_id, "action": "confirm", "reason": "refine tags invalid"})
+            return decisions
+        node["title"] = refined_node.get("title", node["title"])
+        node["summary"] = refined_node.get("summary", node["summary"])
+        node["relation_tags"] = clean_tags
+        node["type"] = refined_node.get("type", node["type"])
+        node["updated_at"] = now
+        decisions.append({"node_id": original_id, "action": "refined"})
+        return decisions
+
+    if action == "split" and split_nodes:
+        known_tags = set(schema.get("relation_tags", {}).keys())
+        original_evidence_ids = {
+            e["memo_id"] for e in memory_evidence if e.get("node_id") == original_id
+        }
+        assigned_memo_ids: set[str] = set()
+
+        for split_candidate in split_nodes:
+            raw_tags = split_candidate.get("relation_tags", [])
+            clean_tags = [t for t in raw_tags if t in known_tags]
+            if not clean_tags:
+                continue
+            split_candidate["relation_tags"] = clean_tags
+
+            evidence_memo_ids = [
+                mid for mid in split_candidate.get("evidence_memo_ids", [])
+                if mid in original_evidence_ids
+            ]
+            if not evidence_memo_ids:
+                continue
+
+            similar_id, sim = find_similar_semantic_node(
+                split_candidate, memory_nodes, model, similarity_threshold
+            )
+            if similar_id and similar_id != original_id:
+                for mid in evidence_memo_ids:
+                    add_evidence(memory_nodes, memory_evidence, similar_id, mid,
+                                 f"split에서 기존 유사 node로 재배분 (유사도 {sim:.4f})",
+                                 "evolve", 0.75, now)
+                assigned_memo_ids.update(evidence_memo_ids)
+                decisions.append({"node_id": similar_id, "action": "split_merged_existing",
+                                   "evidence_memo_ids": evidence_memo_ids})
+            else:
+                new_node = create_semantic_node(split_candidate, evidence_memo_ids, memory_nodes, now)
+                for mid in evidence_memo_ids:
+                    add_evidence(memory_nodes, memory_evidence, new_node["id"], mid,
+                                 "split으로 새 node 생성", "evolve", 0.75, now)
+                assigned_memo_ids.update(evidence_memo_ids)
+                decisions.append({"node_id": new_node["id"], "action": "split_created",
+                                   "evidence_memo_ids": evidence_memo_ids})
+
+        if assigned_memo_ids:
+            # remove original node's evidence and the node itself
+            memory_evidence[:] = [
+                e for e in memory_evidence
+                if not (e.get("node_id") == original_id and e.get("memo_id") in assigned_memo_ids)
+            ]
+            remaining = [
+                e for e in memory_evidence if e.get("node_id") == original_id
+            ]
+            if not remaining:
+                del memory_nodes[original_id]
+                decisions.append({"node_id": original_id, "action": "split_removed_original"})
+            else:
+                node["evidence_count"] = len(remaining)
+                node["updated_at"] = now
+                decisions.append({"node_id": original_id, "action": "split_original_kept",
+                                   "remaining_evidence": len(remaining)})
+
+    return decisions
+
+
+def evolve_single_node(
+    node: dict,
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    memo_by_id: dict[str, dict],
+    schema: dict,
+    model: str,
+    node_judge_model: str,
+    similarity_threshold: float,
+    generate_timeout: int,
+    now: str,
+) -> list[dict]:
+    node_id = node["id"]
+    evidence_memo_ids = [
+        e["memo_id"] for e in memory_evidence
+        if e.get("node_id") == node_id and isinstance(e.get("memo_id"), str)
+    ]
+    evidence_memos = [memo_by_id[mid] for mid in evidence_memo_ids if mid in memo_by_id]
+    if not evidence_memos:
+        return []
+
+    prompt = build_node_evolve_prompt(node, evidence_memos, schema)
+    try:
+        response = recall.generate_text(
+            prompt, node_judge_model, timeout=generate_timeout, response_format="json"
+        )
+        payload = recall.extract_json_object(response)
+    except Exception:
+        return []
+
+    action = payload.get("action")
+    if action not in {"split", "refine", "confirm"}:
+        return []
+
+    decisions = apply_node_evolution(
+        node,
+        action,
+        payload.get("split_nodes") or [],
+        payload.get("refined_node"),
+        memo_by_id,
+        memory_nodes,
+        memory_evidence,
+        schema,
+        model,
+        similarity_threshold,
+        now,
+    )
+
+    if node_id in memory_nodes:
+        memory_nodes[node_id]["last_evolved_evidence_count"] = memory_nodes[node_id].get("evidence_count", 0)
+
+    return decisions
+
+
+def should_evolve_node(node: dict) -> bool:
+    ec = node.get("evidence_count", 0)
+    last_ec = node.get("last_evolved_evidence_count", 0)
+    return ec >= MIN_EVIDENCE_FOR_EVOLUTION and (ec - last_ec) >= MIN_EVIDENCE_FOR_EVOLUTION
+
+
+def evolve_semantic_nodes(
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    memo_by_id: dict[str, dict],
+    schema: dict,
+    model: str,
+    node_judge_model: str,
+    similarity_threshold: float,
+    generate_timeout: int,
+    now: str,
+) -> list[dict]:
+    all_decisions = []
+    candidates = [
+        node for node in list(memory_nodes.values())
+        if is_semantic_node(node) and should_evolve_node(node)
+    ]
+    for node in candidates:
+        decisions = evolve_single_node(
+            node, memory_nodes, memory_evidence, memo_by_id,
+            schema, model, node_judge_model, similarity_threshold, generate_timeout, now,
+        )
+        all_decisions.extend(decisions)
+    return all_decisions
+
+
 def apply_node_judgement(
     judgement: dict,
     memo: dict,
@@ -1107,6 +1324,7 @@ def process_memo_into_graph(
     node_similarity_threshold: float,
     generate_timeout: int,
     now: str,
+    use_evolve: bool = False,
 ) -> dict:
     if any(item["id"] == memo["id"] for item in memos):
         raise ValueError(f"memo already exists: {memo['id']}")
@@ -1185,6 +1403,23 @@ def process_memo_into_graph(
                     linked_nodes.add(node_id)
             connection_decisions.extend(llm_decisions)
 
+            if use_evolve:
+                memo_by_id = {item["id"]: item for item in memos}
+                affected_node_ids = {
+                    d["node_id"] for d in llm_decisions
+                    if d.get("decision") in {"attach", "attach_existing_similar", "promoted_from_pending"}
+                    and isinstance(d.get("node_id"), str)
+                }
+                for nid in affected_node_ids:
+                    node = memory_nodes.get(nid)
+                    if node and is_semantic_node(node) and should_evolve_node(node):
+                        evolve_decisions = evolve_single_node(
+                            node, memory_nodes, memory_evidence, memo_by_id,
+                            schema, model, node_judge_model, node_similarity_threshold,
+                            generate_timeout, now,
+                        )
+                        connection_decisions.extend(evolve_decisions)
+
     return {
         "memo": memo,
         "annotation": memo_annotations[memo["id"]],
@@ -1229,6 +1464,7 @@ def ingest(args: argparse.Namespace) -> None:
             args.node_similarity_threshold,
             args.generate_timeout,
             now,
+            use_evolve=not getattr(args, "skip_evolve", False),
         )
     except ValueError as error:
         raise SystemExit(str(error)) from error
@@ -1350,11 +1586,23 @@ def build_eval_graph(args: argparse.Namespace) -> None:
             args.node_similarity_threshold,
             args.generate_timeout,
             memo.get("created_at") or now,
+            use_evolve=not args.skip_evolve,
         )
 
         if args.save_every and index % args.save_every == 0:
             save_state_to_dir(state_dir, memos, memo_annotations, memory_nodes, memory_evidence)
             save_memory_links_to_dir(state_dir, [])
+
+    # post-build pass: catch any nodes that crossed threshold on the very last memo
+    if not args.skip_evolve:
+        if args.summary_only:
+            print("[build-eval-graph] post-build evolve pass...", flush=True)
+        memo_by_id = {m["id"]: m for m in memos}
+        evolve_semantic_nodes(
+            memory_nodes, memory_evidence, memo_by_id,
+            schema, args.model, args.node_judge_model,
+            args.node_similarity_threshold, args.generate_timeout, now,
+        )
 
     save_state_to_dir(state_dir, memos, memo_annotations, memory_nodes, memory_evidence)
     save_memory_links_to_dir(state_dir, [])
@@ -1966,6 +2214,7 @@ def parse_args() -> argparse.Namespace:
     build_eval_parser.add_argument("--dense-top-k", type=int, default=DEFAULT_DENSE_TOP_K)
     build_eval_parser.add_argument("--attach-dense-node-min-hits", type=int, default=DEFAULT_ATTACH_DENSE_NODE_MIN_HITS)
     build_eval_parser.add_argument("--skip-llm-node-judge", action="store_true")
+    build_eval_parser.add_argument("--skip-evolve", action="store_true")
     build_eval_parser.add_argument("--node-judge-model", default=recall.DEFAULT_TAGGING_MODEL)
     build_eval_parser.add_argument("--node-candidate-limit", type=int, default=8)
     build_eval_parser.add_argument("--node-evidence-limit", type=int, default=DEFAULT_NODE_EVIDENCE_LIMIT)
