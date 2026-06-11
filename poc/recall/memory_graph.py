@@ -509,6 +509,7 @@ def build_node_judge_prompt(
             "A memory_node is not a relation tag. It is a self-understanding card backed by multiple memo evidence.",
             "Use relation_tags only as routing metadata.",
             "Decide whether the current memo should attach to existing semantic nodes, create a new semantic node, both, or be ignored.",
+            "ATTACH rule: attach only when this memo is a direct, specific instance of the node's exact pattern. Thematic similarity or shared topic alone is NOT enough. If no candidate fits precisely, prefer create over a loose attach.",
             "Do not create a node for a one-off observation unless the evidence suggests a repeatable pattern/state/question/product insight.",
             "Do not invent relation tags outside the fixed list.",
             "Do not return a node id. The system will create ids.",
