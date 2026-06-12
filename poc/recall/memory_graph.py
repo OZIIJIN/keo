@@ -809,14 +809,15 @@ def build_node_evolve_prompt(node: dict, evidence_memos: list[dict], schema: dic
             "  - You MUST produce at least 2 split_nodes. A split with only 1 node is invalid — use refine instead.",
             "  - Each split_node title and summary MUST be different from the original node. Do NOT copy the original title or summary.",
             "  - Each split_node must be more specific than the original.",
-            "  - Each split_node's relation_tags MUST reflect only the memos assigned to that node — choose tags that best describe those specific memos, not the original node's tags.",
+            "  - Each split_node's relation_tags: choose max 3 tags from the allowed list that best describe that node's specific memos. Do NOT copy the original node's tags — select freely from the full allowed list.",
             "  - Every evidence_memo_id must be assigned to exactly one split_node. Do not leave memos unassigned.",
+            "  - If more than 30% of evidence memos are not directly about the node's core title concept, you MUST split rather than confirm.",
             "",
             "REFINE rules:",
             "  - Choose when title/summary/tags don't accurately represent the evidence, but all memos belong to one pattern.",
-            "  - Update relation_tags to better reflect the actual evidence content.",
+            "  - Update relation_tags: choose max 3 tags from the allowed list that best describe the actual evidence. Select freely — do not limit to the original node's tags.",
             "",
-            "CONFIRM: choose when the node accurately represents all evidence.",
+            "CONFIRM: choose ONLY when the node title precisely describes ALL evidence memos and tags are accurate.",
             "Return JSON only.",
             'JSON schema: {"action":"split|refine|confirm","split_nodes":[{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"],"evidence_memo_ids":["memo-id"]}],"refined_node":{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"]},"reason":"짧은 한국어 이유"}',
             "",
@@ -857,7 +858,7 @@ def apply_node_evolution(
             return decisions
         node["title"] = refined_node.get("title", node["title"])
         node["summary"] = refined_node.get("summary", node["summary"])
-        node["relation_tags"] = clean_tags
+        node["relation_tags"] = clean_tags[:3]
         node["type"] = refined_node.get("type", node["type"])
         node["updated_at"] = now
         decisions.append({"node_id": original_id, "action": "refined"})
@@ -873,7 +874,7 @@ def apply_node_evolution(
         valid_candidates = []
         for sc in split_nodes:
             raw_tags = sc.get("relation_tags", [])
-            clean_tags = [t for t in raw_tags if t in known_tags]
+            clean_tags = [t for t in raw_tags if t in known_tags][:3]
             mids = [m for m in sc.get("evidence_memo_ids", []) if m in original_evidence_ids]
             if clean_tags and mids:
                 sc["relation_tags"] = clean_tags
@@ -1027,6 +1028,88 @@ def evolve_semantic_nodes(
         )
         all_decisions.extend(decisions)
     return all_decisions
+
+
+def merge_similar_nodes(
+    memory_nodes: dict[str, dict],
+    memory_evidence: list[dict],
+    model: str,
+    similarity_threshold: float,
+    now: str,
+) -> list[dict]:
+    active = [n for n in memory_nodes.values() if is_semantic_node(n)]
+    if len(active) < 2:
+        return []
+
+    ev_count: dict[str, int] = defaultdict(int)
+    for e in memory_evidence:
+        nid = e.get("node_id")
+        if nid:
+            ev_count[nid] += 1
+
+    indexed = [
+        {**node, "text_embedding": recall.embed_text(node_identity_text(node), model)}
+        for node in active
+    ]
+
+    decisions = []
+    merged_ids: set[str] = set()
+
+    for i, node_a in enumerate(indexed):
+        if node_a["id"] in merged_ids:
+            continue
+        others = [n for n in indexed[i + 1:] if n["id"] not in merged_ids]
+        if not others:
+            continue
+        ranked = recall.rank_by_embedding(node_a["text_embedding"], others, "text_embedding")
+        for match in ranked:
+            if float(match.get("score", 0)) < similarity_threshold:
+                break
+            victim_id = match["id"]
+            if victim_id in merged_ids:
+                continue
+
+            if ev_count[node_a["id"]] >= ev_count[victim_id]:
+                survivor_id, loser_id = node_a["id"], victim_id
+            else:
+                survivor_id, loser_id = victim_id, node_a["id"]
+
+            for e in memory_evidence:
+                if e.get("node_id") == loser_id:
+                    e["node_id"] = survivor_id
+
+            # deduplicate evidence for survivor
+            seen_mids: set[str] = set()
+            deduped = []
+            for e in memory_evidence:
+                if e.get("node_id") == survivor_id:
+                    mid = e.get("memo_id", "")
+                    if mid in seen_mids:
+                        continue
+                    seen_mids.add(mid)
+                deduped.append(e)
+            memory_evidence[:] = deduped
+
+            merged_ids.add(loser_id)
+            if loser_id in memory_nodes:
+                del memory_nodes[loser_id]
+
+            survivor = memory_nodes.get(survivor_id)
+            if survivor:
+                survivor["evidence_count"] = sum(
+                    1 for e in memory_evidence if e.get("node_id") == survivor_id
+                )
+                survivor["updated_at"] = now
+
+            decisions.append({
+                "action": "merged",
+                "survivor_id": survivor_id,
+                "loser_id": loser_id,
+                "similarity": round(float(match.get("score", 0)), 4),
+            })
+            break
+
+    return decisions
 
 
 def apply_node_judgement(
@@ -1632,6 +1715,12 @@ def build_eval_graph(args: argparse.Namespace) -> None:
             memory_nodes, memory_evidence, memo_by_id, memo_annotations,
             schema, args.model, args.node_judge_model,
             args.node_similarity_threshold, args.generate_timeout, now,
+        )
+
+        if args.summary_only:
+            print("[build-eval-graph] merging similar nodes...", flush=True)
+        merge_similar_nodes(
+            memory_nodes, memory_evidence, args.model, args.node_similarity_threshold, now,
         )
 
     save_state_to_dir(state_dir, memos, memo_annotations, memory_nodes, memory_evidence)
