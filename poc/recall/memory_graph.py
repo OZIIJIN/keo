@@ -803,10 +803,20 @@ def build_node_evolve_prompt(node: dict, evidence_memos: list[dict], schema: dic
         [
             "You are reviewing a KEO memory_node that has accumulated many evidence memos.",
             "Decide if this node should be split into more specific sub-patterns, refined (title/summary/tags updated), or confirmed as-is.",
-            "SPLIT: choose when the evidence memos clearly belong to 2+ distinct patterns. Each split node must be more specific than the original.",
-            "REFINE: choose when the title/summary/tags don't accurately represent the evidence, but all memos belong to one pattern.",
+            "",
+            "SPLIT rules:",
+            "  - Choose ONLY when evidence memos clearly belong to 2 or more DISTINCT patterns.",
+            "  - You MUST produce at least 2 split_nodes. A split with only 1 node is invalid — use refine instead.",
+            "  - Each split_node title and summary MUST be different from the original node. Do NOT copy the original title or summary.",
+            "  - Each split_node must be more specific than the original.",
+            "  - Each split_node's relation_tags MUST reflect only the memos assigned to that node — choose tags that best describe those specific memos, not the original node's tags.",
+            "  - Every evidence_memo_id must be assigned to exactly one split_node. Do not leave memos unassigned.",
+            "",
+            "REFINE rules:",
+            "  - Choose when title/summary/tags don't accurately represent the evidence, but all memos belong to one pattern.",
+            "  - Update relation_tags to better reflect the actual evidence content.",
+            "",
             "CONFIRM: choose when the node accurately represents all evidence.",
-            "Do not create overly broad nodes. Prefer more specific titles.",
             "Return JSON only.",
             'JSON schema: {"action":"split|refine|confirm","split_nodes":[{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"],"evidence_memo_ids":["memo-id"]}],"refined_node":{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"]},"reason":"짧은 한국어 이유"}',
             "",
@@ -824,6 +834,7 @@ def apply_node_evolution(
     split_nodes: list[dict],
     refined_node: dict | None,
     memo_by_id: dict[str, dict],
+    memo_annotations: dict[str, dict],
     memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
     schema: dict,
@@ -857,21 +868,29 @@ def apply_node_evolution(
         original_evidence_ids = {
             e["memo_id"] for e in memory_evidence if e.get("node_id") == original_id
         }
+
+        # split_nodes must have ≥2 valid candidates — otherwise treat as refine/confirm
+        valid_candidates = []
+        for sc in split_nodes:
+            raw_tags = sc.get("relation_tags", [])
+            clean_tags = [t for t in raw_tags if t in known_tags]
+            mids = [m for m in sc.get("evidence_memo_ids", []) if m in original_evidence_ids]
+            if clean_tags and mids:
+                sc["relation_tags"] = clean_tags
+                valid_candidates.append(sc)
+
+        if len(valid_candidates) < 2:
+            decisions.append({"node_id": original_id, "action": "confirm",
+                               "reason": "split candidates < 2, skipped"})
+            return decisions
+
         assigned_memo_ids: set[str] = set()
 
-        for split_candidate in split_nodes:
-            raw_tags = split_candidate.get("relation_tags", [])
-            clean_tags = [t for t in raw_tags if t in known_tags]
-            if not clean_tags:
-                continue
-            split_candidate["relation_tags"] = clean_tags
-
+        for split_candidate in valid_candidates:
             evidence_memo_ids = [
                 mid for mid in split_candidate.get("evidence_memo_ids", [])
                 if mid in original_evidence_ids
             ]
-            if not evidence_memo_ids:
-                continue
 
             similar_id, sim = find_similar_semantic_node(
                 split_candidate, memory_nodes, model, similarity_threshold
@@ -906,6 +925,14 @@ def apply_node_evolution(
                 del memory_nodes[original_id]
                 decisions.append({"node_id": original_id, "action": "split_removed_original"})
             else:
+                # update original node's tags to reflect only remaining evidence memos
+                remaining_memo_ids = {e["memo_id"] for e in remaining}
+                remaining_tags: set[str] = set()
+                for mid in remaining_memo_ids:
+                    ann_tags = memo_annotations.get(mid, {}).get("relation_tags", [])
+                    remaining_tags.update(t for t in ann_tags if t in known_tags)
+                if remaining_tags:
+                    node["relation_tags"] = sorted(remaining_tags)
                 node["evidence_count"] = len(remaining)
                 node["updated_at"] = now
                 decisions.append({"node_id": original_id, "action": "split_original_kept",
@@ -919,6 +946,7 @@ def evolve_single_node(
     memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
     memo_by_id: dict[str, dict],
+    memo_annotations: dict[str, dict],
     schema: dict,
     model: str,
     node_judge_model: str,
@@ -954,6 +982,7 @@ def evolve_single_node(
         payload.get("split_nodes") or [],
         payload.get("refined_node"),
         memo_by_id,
+        memo_annotations,
         memory_nodes,
         memory_evidence,
         schema,
@@ -978,6 +1007,7 @@ def evolve_semantic_nodes(
     memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
     memo_by_id: dict[str, dict],
+    memo_annotations: dict[str, dict],
     schema: dict,
     model: str,
     node_judge_model: str,
@@ -992,7 +1022,7 @@ def evolve_semantic_nodes(
     ]
     for node in candidates:
         decisions = evolve_single_node(
-            node, memory_nodes, memory_evidence, memo_by_id,
+            node, memory_nodes, memory_evidence, memo_by_id, memo_annotations,
             schema, model, node_judge_model, similarity_threshold, generate_timeout, now,
         )
         all_decisions.extend(decisions)
@@ -1414,7 +1444,7 @@ def process_memo_into_graph(
                     node = memory_nodes.get(nid)
                     if node and is_semantic_node(node) and should_evolve_node(node):
                         evolve_decisions = evolve_single_node(
-                            node, memory_nodes, memory_evidence, memo_by_id,
+                            node, memory_nodes, memory_evidence, memo_by_id, memo_annotations,
                             schema, model, node_judge_model, node_similarity_threshold,
                             generate_timeout, now,
                         )
@@ -1599,7 +1629,7 @@ def build_eval_graph(args: argparse.Namespace) -> None:
             print("[build-eval-graph] post-build evolve pass...", flush=True)
         memo_by_id = {m["id"]: m for m in memos}
         evolve_semantic_nodes(
-            memory_nodes, memory_evidence, memo_by_id,
+            memory_nodes, memory_evidence, memo_by_id, memo_annotations,
             schema, args.model, args.node_judge_model,
             args.node_similarity_threshold, args.generate_timeout, now,
         )
