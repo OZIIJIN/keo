@@ -873,9 +873,16 @@ def apply_node_evolution(
         # split_nodes must have ≥2 valid candidates — otherwise treat as refine/confirm
         valid_candidates = []
         for sc in split_nodes:
+            if not isinstance(sc, dict):
+                continue
             raw_tags = sc.get("relation_tags", [])
-            clean_tags = [t for t in raw_tags if t in known_tags][:3]
-            mids = [m for m in sc.get("evidence_memo_ids", []) if m in original_evidence_ids]
+            if not isinstance(raw_tags, list):
+                raw_tags = []
+            clean_tags = [t for t in raw_tags if isinstance(t, str) and t in known_tags][:3]
+            memo_ids = sc.get("evidence_memo_ids", [])
+            if not isinstance(memo_ids, list):
+                memo_ids = []
+            mids = [m for m in memo_ids if isinstance(m, str) and m in original_evidence_ids]
             if clean_tags and mids:
                 sc["relation_tags"] = clean_tags
                 valid_candidates.append(sc)
