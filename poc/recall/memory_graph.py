@@ -507,11 +507,23 @@ def build_node_judge_prompt(
     return "\n".join(
         [
             "You are building KEO memory_nodes.",
-            "A memory_node is not a relation tag. It is a self-understanding card backed by multiple memo evidence.",
-            "Use relation_tags only as routing metadata.",
-            "Decide whether the current memo should attach to existing semantic nodes, create a new semantic node, both, or be ignored.",
-            "ATTACH rule: attach only when this memo is a direct, specific instance of the node's exact pattern. Thematic similarity or shared topic alone is NOT enough. If no candidate fits precisely, prefer create over a loose attach.",
-            "Do not create a node for a one-off observation unless the evidence suggests a repeatable pattern/state/question/product insight.",
+            "A memory_node is a self-understanding card — a specific recurring pattern or state observed across multiple memos.",
+            "Use relation_tags only as routing metadata, not as node concepts.",
+            "",
+            "ATTACH rule:",
+            "  - Attach ONLY when this memo describes the EXACT same trigger and outcome as the node's title.",
+            "  - The node's core trigger must be explicitly present in this memo, not just implied or thematically related.",
+            "  - If the memo is about a similar but different trigger, prefer create over attach.",
+            "  - Shared topic or category alone is NOT enough. The specific situation must match.",
+            "",
+            "CREATE rule:",
+            "  - Node title must follow 'specific trigger + recurring result' structure.",
+            "    Good: '회의 후 원래 목표를 잊어버리는 상태', '메신저 확인 후 오전 흐름이 끊기는 패턴'",
+            "    Bad: '맥락 분할로 인한 일정 방해' (abstract category), '흐름 끊김' (too vague)",
+            "  - Title must NOT be a Korean translation of a relation_tag.",
+            "  - Summary must describe the specific observed pattern in concrete terms — do not use abstract generalizations.",
+            "  - Do not create a node for a one-off observation unless evidence suggests a repeatable pattern.",
+            "",
             "Do not invent relation tags outside the fixed list.",
             "Do not return a node id. The system will create ids.",
             "Return JSON only.",
@@ -623,7 +635,7 @@ def judge_memory_node_with_llm(
     if create_node is not None:
         create_node["relation_tags"] = sorted(
             set(create_node.get("relation_tags", [])) | set(relation_tags)
-        )
+        )[:3]
     return judgement
 
 
@@ -805,19 +817,21 @@ def build_node_evolve_prompt(node: dict, evidence_memos: list[dict], schema: dic
             "Decide if this node should be split into more specific sub-patterns, refined (title/summary/tags updated), or confirmed as-is.",
             "",
             "SPLIT rules:",
-            "  - Choose ONLY when evidence memos clearly belong to 2 or more DISTINCT patterns.",
+            "  - For each evidence memo, ask: does this memo's text explicitly mention the trigger in the node title? If not, it does not belong to this node.",
+            "  - If more than 30% of memos do NOT explicitly match the node's core trigger, you MUST split.",
             "  - You MUST produce at least 2 split_nodes. A split with only 1 node is invalid — use refine instead.",
-            "  - Each split_node title and summary MUST be different from the original node. Do NOT copy the original title or summary.",
-            "  - Each split_node must be more specific than the original.",
-            "  - Each split_node's relation_tags: choose max 3 tags from the allowed list that best describe that node's specific memos. Do NOT copy the original node's tags — select freely from the full allowed list.",
-            "  - Every evidence_memo_id must be assigned to exactly one split_node. Do not leave memos unassigned.",
-            "  - If more than 30% of evidence memos are not directly about the node's core title concept, you MUST split rather than confirm.",
+            "  - Each split_node title must follow 'specific trigger + recurring result' structure. Do NOT copy the original title.",
+            "  - Each split_node summary must be written fresh based on its assigned memos. Do NOT copy or paraphrase the original node's summary.",
+            "  - Each split_node's relation_tags: choose max 3 tags from the allowed list. Select freely — do NOT copy the original node's tags.",
+            "  - Every evidence_memo_id must be assigned to exactly one split_node.",
             "",
             "REFINE rules:",
             "  - Choose when title/summary/tags don't accurately represent the evidence, but all memos belong to one pattern.",
-            "  - Update relation_tags: choose max 3 tags from the allowed list that best describe the actual evidence. Select freely — do not limit to the original node's tags.",
+            "  - Rewrite title in 'specific trigger + recurring result' structure.",
+            "  - Write summary fresh — describe the concrete observed pattern. Do NOT copy or paraphrase the original summary.",
+            "  - Update relation_tags: max 3 tags, select freely from the full allowed list.",
             "",
-            "CONFIRM: choose ONLY when the node title precisely describes ALL evidence memos and tags are accurate.",
+            "CONFIRM: choose ONLY when the node title's specific trigger is explicitly present in ALL evidence memos.",
             "Return JSON only.",
             'JSON schema: {"action":"split|refine|confirm","split_nodes":[{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"],"evidence_memo_ids":["memo-id"]}],"refined_node":{"type":"pattern|state|question|product_insight","title":"한국어 제목","summary":"한국어 요약","relation_tags":["tag"]},"reason":"짧은 한국어 이유"}',
             "",
@@ -940,7 +954,7 @@ def apply_node_evolution(
                     ann_tags = memo_annotations.get(mid, {}).get("relation_tags", [])
                     remaining_tags.update(t for t in ann_tags if t in known_tags)
                 if remaining_tags:
-                    node["relation_tags"] = sorted(remaining_tags)
+                    node["relation_tags"] = sorted(remaining_tags)[:3]
                 node["evidence_count"] = len(remaining)
                 node["updated_at"] = now
                 decisions.append({"node_id": original_id, "action": "split_original_kept",
