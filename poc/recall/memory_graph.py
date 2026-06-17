@@ -1740,9 +1740,10 @@ def build_eval_graph(args: argparse.Namespace) -> None:
 
         if args.summary_only:
             print("[build-eval-graph] merging similar nodes...", flush=True)
-        merge_similar_nodes(
+        while merge_similar_nodes(
             memory_nodes, memory_evidence, args.model, args.node_similarity_threshold, now,
-        )
+        ):
+            pass
 
     save_state_to_dir(state_dir, memos, memo_annotations, memory_nodes, memory_evidence)
     save_memory_links_to_dir(state_dir, [])
