@@ -429,7 +429,7 @@ def collect_candidate_semantic_nodes(
         tag_overlap = len(query_tag_set & node_tags)
         dense_count = int(dense_hit.get("count", 0))
         emb_score = embedding_scores.get(node_id, 0.0)
-        if tag_overlap == 0 and dense_count == 0 and emb_score == 0.0:
+        if dense_count == 0 and emb_score == 0.0:
             continue
 
         candidates.append(
@@ -1133,20 +1133,61 @@ def merge_similar_nodes(
     return decisions
 
 
+def _required_attach_similarity(node: dict) -> float:
+    ec = node.get("evidence_count", 0)
+    if ec >= 20:
+        return 0.76
+    if ec >= 10:
+        return 0.72
+    return 0.0
+
+
+def _passes_representative_evidence_guard(
+    memo: dict,
+    node_id: str,
+    memory_evidence: list[dict],
+    memo_by_id: dict[str, dict],
+    model: str,
+    required_sim: float,
+    sample_size: int = 5,
+) -> bool:
+    if required_sim <= 0.0:
+        return True
+    node_evidences = [e for e in memory_evidence if e["node_id"] == node_id]
+    if not node_evidences:
+        return True
+    recent = sorted(node_evidences, key=lambda e: e.get("created_at", ""), reverse=True)[:sample_size]
+    rep_texts = [
+        memo_by_id[e["memo_id"]]["text"]
+        for e in recent
+        if e["memo_id"] in memo_by_id and e["memo_id"] != memo["id"]
+    ]
+    if not rep_texts:
+        return True
+    memo_emb = recall.embed_text(memo["text"], model)
+    sims = [recall.cosine_similarity(memo_emb, recall.embed_text(t, model)) for t in rep_texts]
+    return max(sims) >= required_sim
+
+
 def apply_node_judgement(
     judgement: dict,
     memo: dict,
     relation_tags: list[str],
     memory_nodes: dict[str, dict],
     memory_evidence: list[dict],
+    memo_by_id: dict[str, dict],
     model: str,
     similarity_threshold: float,
     now: str,
 ) -> list[dict]:
     decisions = []
     evidence_reason = judgement.get("evidence_reason") or "LLM node judge 판단"
-    evidence_ids = [memo["id"], *judgement.get("evidence_memo_ids", [])]
-    evidence_ids = list(dict.fromkeys(evidence_ids))
+    attach_evidence_ids = [memo["id"]]
+    supporting_evidence_ids = [
+        eid for eid in judgement.get("evidence_memo_ids", [])
+        if isinstance(eid, str) and eid
+    ]
+    evidence_ids = list(dict.fromkeys([memo["id"], *supporting_evidence_ids]))
     memo_tag_set = set(relation_tags)
 
     for node_id in judgement.get("attach_node_ids", []):
@@ -1154,7 +1195,8 @@ def apply_node_judgement(
             continue
         if not is_semantic_node(memory_nodes[node_id]):
             continue
-        node_tags = set(memory_nodes[node_id].get("relation_tags", []))
+        node = memory_nodes[node_id]
+        node_tags = set(node.get("relation_tags", []))
         if not (memo_tag_set & node_tags):
             decisions.append({
                 "node_id": node_id,
@@ -1165,8 +1207,21 @@ def apply_node_judgement(
             })
             continue
 
+        required_sim = _required_attach_similarity(node)
+        if not _passes_representative_evidence_guard(
+            memo, node_id, memory_evidence, memo_by_id, model, required_sim
+        ):
+            decisions.append({
+                "node_id": node_id,
+                "source": "llm",
+                "decision": "attach_rejected_evidence_guard",
+                "reason": f"대표 evidence 유사도 미달 (required {required_sim:.2f})",
+                "weight": 0.0,
+            })
+            continue
+
         attached_any = False
-        for evidence_memo_id in evidence_ids:
+        for evidence_memo_id in attach_evidence_ids:
             added = add_evidence(
                 memory_nodes,
                 memory_evidence,
@@ -1174,7 +1229,7 @@ def apply_node_judgement(
                 evidence_memo_id,
                 evidence_reason,
                 "llm",
-                0.85 if evidence_memo_id == memo["id"] else 0.65,
+                0.85,
                 now,
             )
             attached_any = attached_any or added
@@ -1186,7 +1241,7 @@ def apply_node_judgement(
                 "decision": "attach" if attached_any else "already_attached",
                 "reason": evidence_reason,
                 "weight": 0.85,
-                "evidence_memo_ids": evidence_ids,
+                "evidence_memo_ids": attach_evidence_ids,
             }
         )
 
@@ -1527,6 +1582,7 @@ def process_memo_into_graph(
                 relation_tags,
                 memory_nodes,
                 memory_evidence,
+                memo_by_id,
                 model,
                 node_similarity_threshold,
                 now,
