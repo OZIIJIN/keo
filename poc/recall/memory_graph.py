@@ -429,8 +429,9 @@ def collect_candidate_semantic_nodes(
         tag_overlap = len(query_tag_set & node_tags)
         dense_count = int(dense_hit.get("count", 0))
         emb_score = embedding_scores.get(node_id, 0.0)
-        if dense_count == 0 and emb_score == 0.0:
+        if tag_overlap == 0 and dense_count == 0 and emb_score == 0.0:
             continue
+        candidate_score = dense_count + emb_score + tag_overlap * 0.5
 
         candidates.append(
             {
@@ -441,7 +442,7 @@ def collect_candidate_semantic_nodes(
                 "relation_tags": node.get("relation_tags", []),
                 "evidence_count": node.get("evidence_count", 0),
                 "confidence": node.get("confidence", 0.0),
-                "candidate_score": tag_overlap * 2 + dense_count + emb_score,
+                "candidate_score": candidate_score,
                 "tag_overlap": sorted(query_tag_set & node_tags),
                 "dense_memo_ids": dense_hit.get("memo_ids", []),
                 "embedding_score": round(emb_score, 4),
