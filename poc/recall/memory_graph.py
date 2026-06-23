@@ -34,6 +34,7 @@ NODE_EMBEDDING_MIN_SCORE = 0.70
 MIN_EVIDENCE_FOR_EVOLUTION = 10
 
 SEMANTIC_NODE_TYPES = {"pattern", "state", "question", "product_insight"}
+PATTERN_STRUCTURE_FIELDS = ("trigger", "response", "outcome")
 
 
 def state_paths(state_dir: Path) -> dict[str, Path]:
@@ -115,6 +116,45 @@ def node_identity_text(node: dict) -> str:
             ",".join(sorted(tag for tag in relation_tags if isinstance(tag, str))),
         ]
     )
+
+
+def sanitize_pattern_structure(value: object) -> dict[str, str]:
+    if not isinstance(value, dict):
+        return {}
+
+    cleaned = {}
+    for field in PATTERN_STRUCTURE_FIELDS:
+        raw = value.get(field)
+        if isinstance(raw, str) and raw.strip():
+            cleaned[field] = raw.strip()[:160]
+    return cleaned
+
+
+def pattern_structure_text(node: dict) -> str:
+    pattern_structure = sanitize_pattern_structure(node.get("pattern_structure"))
+    if not pattern_structure:
+        return ""
+    return "\n".join(
+        f"{field}: {pattern_structure.get(field, '')}"
+        for field in PATTERN_STRUCTURE_FIELDS
+        if pattern_structure.get(field)
+    )
+
+
+def pending_node_identity_text(node: dict) -> str:
+    relation_tags = node.get("relation_tags", [])
+    if not isinstance(relation_tags, list):
+        relation_tags = []
+
+    pattern_text = pattern_structure_text(node)
+    parts = [
+        str(node.get("type", "")),
+        pattern_text,
+        str(node.get("title", "")),
+        str(node.get("summary", "")),
+        ",".join(sorted(tag for tag in relation_tags if isinstance(tag, str))),
+    ]
+    return "\n".join(part for part in parts if part)
 
 
 def build_node_identity_key(node_candidate: dict, evidence_ids: list[str]) -> str:
@@ -431,7 +471,7 @@ def collect_candidate_semantic_nodes(
         emb_score = embedding_scores.get(node_id, 0.0)
         if tag_overlap == 0 and dense_count == 0 and emb_score == 0.0:
             continue
-        candidate_score = dense_count + emb_score + tag_overlap * 0.5
+        candidate_score = dense_count + emb_score + tag_overlap * 0.25
 
         candidates.append(
             {
@@ -523,12 +563,13 @@ def build_node_judge_prompt(
             "    Bad: '맥락 분할로 인한 일정 방해' (abstract category), '흐름 끊김' (too vague)",
             "  - Title must NOT be a Korean translation of a relation_tag.",
             "  - Summary must describe the specific observed pattern in concrete terms — do not use abstract generalizations.",
+            "  - pattern_structure must describe the repeatable trigger → response → outcome structure, not just the surface event.",
             "  - Do not create a node for a one-off observation unless evidence suggests a repeatable pattern.",
             "",
             "Do not invent relation tags outside the fixed list.",
             "Do not return a node id. The system will create ids.",
             "Return JSON only.",
-            'JSON schema: {"decision":"attach|create|attach_and_create|ignore","attach_node_ids":["node-id"],"create_node":{"type":"pattern|state|question|product_insight","title":"짧은 한국어 제목","summary":"근거 기반 한국어 요약","relation_tags":["tag"],"confidence":0.0},"evidence_memo_ids":["memo-id"],"evidence_reason":"짧은 한국어 이유"}',
+            'JSON schema: {"decision":"attach|create|attach_and_create|ignore","attach_node_ids":["node-id"],"create_node":{"type":"pattern|state|question|product_insight","title":"짧은 한국어 제목","summary":"근거 기반 한국어 요약","pattern_structure":{"trigger":"반복 트리거","response":"반복 반응","outcome":"반복 결과"},"relation_tags":["tag"],"confidence":0.0},"evidence_memo_ids":["memo-id"],"evidence_reason":"짧은 한국어 이유"}',
             "",
             "[Allowed relation tags for this memo]",
             *tag_lines,
@@ -572,6 +613,7 @@ def sanitize_node_judgement(payload: dict, schema: dict, candidate_node_ids: set
 
         title = create_node.get("title")
         summary = create_node.get("summary")
+        pattern_structure = sanitize_pattern_structure(create_node.get("pattern_structure"))
         relation_tags = create_node.get("relation_tags", [])
         confidence = create_node.get("confidence", 0.5)
         if not isinstance(title, str) or not title.strip():
@@ -596,6 +638,7 @@ def sanitize_node_judgement(payload: dict, schema: dict, candidate_node_ids: set
                     "type": node_type,
                     "title": title.strip()[:80],
                     "summary": summary.strip()[:500],
+                    "pattern_structure": pattern_structure,
                     "relation_tags": sorted(set(clean_tags)),
                     "confidence": max(0.0, min(0.95, float(confidence))),
                 }
@@ -692,6 +735,7 @@ def create_semantic_node(
         "type": node_candidate["type"],
         "title": node_candidate["title"],
         "summary": node_candidate["summary"],
+        "pattern_structure": sanitize_pattern_structure(node_candidate.get("pattern_structure")),
         "relation_tags": node_candidate["relation_tags"],
         "representative_evidence_ids": sorted(set(evidence_ids)),
         "identity_key": build_node_identity_key(node_candidate, evidence_ids),
@@ -725,6 +769,7 @@ def create_pending_node(
         "type": node_candidate["type"],
         "title": node_candidate["title"],
         "summary": node_candidate["summary"],
+        "pattern_structure": sanitize_pattern_structure(node_candidate.get("pattern_structure")),
         "relation_tags": node_candidate["relation_tags"],
         "pending_evidence_ids": list(dict.fromkeys(initial_evidence_ids)),
         "identity_key": build_node_identity_key(node_candidate, initial_evidence_ids),
@@ -752,11 +797,11 @@ def find_similar_pending_node(
     if not pending_nodes:
         return None, 0.0
 
-    query_embedding = recall.embed_text(node_identity_text(node_candidate), model)
+    query_embedding = recall.embed_text(pending_node_identity_text(node_candidate), model)
     indexed = [
         {
             **node,
-            "text_embedding": recall.embed_text(node_identity_text(node), model),
+            "text_embedding": recall.embed_text(pending_node_identity_text(node), model),
         }
         for node in pending_nodes
     ]
