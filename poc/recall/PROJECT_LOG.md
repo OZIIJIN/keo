@@ -167,3 +167,85 @@ tags_over_3  # 태그 3개 초과 노드 수
 - Ollama (로컬 LLM): qwen3:8b (judge), qwen3-embedding (embedding)
 - Embedding 캐시: JSON 기반 (모델별 파일)
 - 저장: JSON flat files (memory_nodes, memory_evidence, memos, memo_annotations)
+
+---
+
+## 최종 수정사항 — 개인 패턴 core evidence / supporting context 역할 분리
+
+### 배경
+
+pattern_structure 적용 후 아이디어/인용/해석 메모까지 개인 memory_node의 evidence_count에 포함되는 문제가 드러났다. 이 메모들은 패턴 옆에 맥락으로 보여줄 수는 있지만, 패턴이 반복됐다는 증거는 아니다.
+
+### 수정 내용
+
+1. `PERSONAL_PATTERN_TAGS` / `NON_PERSONAL_MARKERS` / `MEMO_ROLE_*` 상수 추가
+2. `classify_memo_role()` 추가
+   - text 마커 기반 우선 판정: 책 문장/밑줄 → `quote_or_reference`, 아이디어/KEO/화면/기능 → `idea`
+   - PERSONAL_PATTERN_TAGS 겹침 없으면 `reflection`, 있으면 `personal_observation`
+3. `is_personal_memory_candidate()` 추가
+   - `personal_observation` 또는 `reflection`일 때만 True
+4. `memory_supporting_evidence.json` 신설 + CRUD 함수 추가
+   - node_id, memo_id, role, reason, source, weight 저장
+   - 동일 쌍 중복 시 weight 높을 때만 갱신
+5. `apply_node_judgement()` 처리 변경
+   - evidence_ids를 `core_evidence_ids`(personal/reflection만) / `context_evidence_ids`(나머지)로 분리
+   - 비개인 메모가 attach 요청 시 → `memory_supporting_evidence`에 저장, evidence_count 미반영
+   - 비개인 메모가 create/pending 요청 시 → 유사 node 있으면 supporting 연결, 없으면 종료
+6. `sanitize_node_judgement()`에서 `product_insight` 타입 create 무효화
+
+### 결과
+
+| 지표 | new16 (pattern_structure) | new19 (역할 분리) |
+|------|--------------------------|-------------------|
+| active | 12 | 4 |
+| pending | 19 | 23 |
+| max_ev | 10 | 13 |
+| memory_evidence | 77 | 36 |
+| memory_supporting_evidence | — | 2 |
+
+- idea/quote 분리 자체는 정상 동작 (supporting_evidence 2건 모두 quote_or_reference)
+- active 12 → 4 감소: core_evidence_ids만으로 create threshold 체크하니, LLM이 고른 과거 evidence에 personal tag 없는 메모가 섞이면 threshold 미달 → pending으로 밀림
+
+---
+
+## 결국 마주한 근본 문제
+
+### 문제 1 — tag 기반 candidate generation의 구조적 한계
+
+`start_avoidance` 태그가 "시작 회피" 뿐 아니라 계획 메모, 목차 정리 메모 등에도 붙어 있어서, "메신저 확인 후 작업 중단" 노드에 태그만 겹치는 전혀 다른 메모들이 candidate로 올라온다. LLM은 그중에서 attach를 고르므로 잘못 붙는다.
+
+노드 title은 specific하게 만들어지는데 relation_tags는 broad하게 달린다. 이것도 LLM이 결정하는 거라 같은 패턴이 반복된다.
+
+### 문제 2 — LLM judge가 explicit rule을 무시
+
+프롬프트에 "The node's core trigger must be explicitly present in this memo"를 강제해도 LLM이 트리거 확인을 건너뛰고 결과 분위기(흐름 끊김, 에너지 저하 등)만 보고 attach 판단한다. attach에서도 관대하고 evolve에서도 관대하다. 같은 LLM이 같은 bias로 판단하기 때문이다.
+
+### 문제 3 — active node 회귀 (역할 분리 후)
+
+역할 분리 후 active 12 → 4로 떨어졌다. core_evidence_ids만으로 create threshold를 체크하니, LLM이 고른 과거 evidence에 personal tag 없는 메모가 섞이면 threshold 미달이 돼서 정상적인 패턴도 pending으로 밀린다.
+
+### 문제 4 — pending 병목
+
+pending_ev=2에서 멈춰 있는 노드들이 많다. promotion threshold=3인데, 같은 패턴이라도 표면 사건이나 표현이 달라지면 pending끼리 같은 것으로 묶이지 못한다. pattern_structure로 일부 완화됐으나 LLM-only 경로에서는 여전히 title embedding 유사도에 의존한다.
+
+---
+
+## 최종 결정 — MVP는 dense retrieval만
+
+### 이유
+
+위의 두 가지 근본 문제는 이 실험에서 해결되지 않았다.
+
+- 코드 guard(tag overlap, create guard, representative evidence guard)
+- 프롬프트 강화(trigger 명시, 30% rule)
+- pattern_structure 도입
+- 역할 분리
+
+이 모든 수정을 쌓아도 두 문제는 계속 드러났다. 수정을 더 쌓을수록 다른 병목이 새로 나타났다.
+
+### MVP 방향
+
+- 사용자에게 필요한 건 지금 단계에서 "비슷한 기록이 있어요" 수준이다.
+- 기존 dense retrieval이 이미 동작하고 있고, 이쪽이 더 단순하고 정확하다.
+- LLM wiki 패턴(memory_graph.py)은 다음 버전에서 다시 시작한다.
+- 이 브랜치(poc/llm-wiki-pattern)의 코드와 수정사항은 보존한다.
