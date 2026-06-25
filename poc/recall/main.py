@@ -235,7 +235,7 @@ def generate_text(
         "model": model,
         "prompt": prompt,
         "stream": False,
-        "options": {"temperature": 0, "num_ctx": 8192},
+        "options": {"temperature": 0},
     }
     if response_format is not None:
         request_payload["format"] = response_format
