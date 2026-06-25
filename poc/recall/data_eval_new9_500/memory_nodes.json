@@ -1,0 +1,1171 @@
+{
+  "node-state-2c398fa2": {
+    "id": "node-state-2c398fa2",
+    "source": "llm",
+    "type": "state",
+    "title": "메신저 확인 후 오전 흐름이 끊기는 패턴",
+    "summary": "메신저 확인 행동이 오전 작업 흐름을 끊는 구체적 패턴. 아침 의욕이 있었으나 메신저 확인 후 흐름이 끊기고 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "context_fragmentation",
+      "recovery_failure"
+    ],
+    "identity_key": "state|context_fragmentation,reactive_work|메신저 확인 후 오전 흐름이 끊기는 패턴|memo-001",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-22",
+    "created_at": "2026-04-07",
+    "updated_at": "2026-05-22",
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-003",
+      "memo-010"
+    ],
+    "last_evolved_evidence_count": 1
+  },
+  "node-state-35611202": {
+    "id": "node-state-35611202",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정 끝난 날 밤 메모 정리 상태",
+    "summary": "일정이 끝난 날 밤에 해당 일정의 메모를 다시 확인하고 정리하는 행동 패턴. 회의 전 기대감과 끝난 후 지침 내용을 되새기는 행동이 반복됨.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-002"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일정 끝난 날 밤 메모 정리 상태|memo-002",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-07",
+    "updated_at": "2026-04-07"
+  },
+  "node-state-0fc6a496": {
+    "id": "node-state-0fc6a496",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일을 피하기 위한 핑계로 운동을 포기하는 상태",
+    "summary": "운동을 하기 싫어하는 감정을 일로 핑계를 대고 운동을 포기하는 행동이 반복적으로 나타남. 이 날은 일도 별로 못 해서 더 큰 실패감을 느킴",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-004"
+    ],
+    "identity_key": "state|avoidance_rationalization,pattern_recognition|일을 피하기 위한 핑계로 운동을 포기하는 상태|memo-004",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-state-d42ac7b7": {
+    "id": "node-state-d42ac7b7",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "과거 다짐을 현재에 연결하는 상태",
+    "summary": "KEO 메모에서 과거의 다짐을 현재의 메모로 연결하여 자기이해를 도모하는 행동",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-005"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|과거 다짐을 현재에 연결하는 상태|memo-005",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-state-843dd54d": {
+    "id": "node-state-843dd54d",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "목표 설정 후 카테고리 분할로 시작 미룸",
+    "summary": "목표를 세우려는 순간 카테고리 분할로 계획 세우는 척하면서 실제 시작을 미룸. 이는 시작을 미루는 회피 행동으로, 계획 세우는 것에 대한 정당화로 사용됨.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "overplanning",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-006"
+    ],
+    "identity_key": "state|avoidance_rationalization,overplanning,start_avoidance|목표 설정 후 카테고리 분할로 시작 미룸|memo-006",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-state-d9bc5d9e": {
+    "id": "node-state-d9bc5d9e",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "회의 후 원래 목표를 잊어버리는 상태",
+    "summary": "회의 두 개를 마치면 원래 계획했던 일을 기억하지 못하고, 일정이 하루를 먹는 느낌으로 일정이 흐름을 방해함",
+    "relation_tags": [
+      "context_fragmentation",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-008",
+      "memo-009"
+    ],
+    "identity_key": "state|context_fragmentation,schedule_disruption|회의 후 원래 목표를 잊어버리는 상태|memo-008",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-09",
+    "updated_at": "2026-04-09"
+  },
+  "node-state-1624591e": {
+    "id": "node-state-1624591e",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "짧은 메모 남기기 회피",
+    "summary": "짧은 메모를 남기려는 의도가 있지만, 길게 정리하려는 욕구가 오히려 작성하지 않는 행동으로 이어짐. 메모 작성 시 짧게 남기려는 의도와 길게 정리하려는 욕구 간의 갈등이 반복됨.",
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-013"
+    ],
+    "identity_key": "state|start_avoidance|짧은 메모 남기기 회피|memo-013",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-11",
+    "updated_at": "2026-04-11"
+  },
+  "node-state-5eba18b9": {
+    "id": "node-state-5eba18b9",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "할 일 적다가 급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려지는 상태",
+    "summary": "할 일 목록 작성 시 급한 것, 중요한 것, 남 눈치 보이는 것이 혼합되어 머리가 복잡해지는 구체적 패턴. 메모 작성 시 우선순위 판단이 어려워지고, 결과적으로 작업 흐름이 방해받는 현상.",
+    "relation_tags": [
+      "decision_fog",
+      "priority_confusion"
+    ],
+    "pending_evidence_ids": [
+      "memo-018"
+    ],
+    "identity_key": "state|decision_fog,priority_confusion|할 일 적다가 급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려지는 상태|memo-018",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-12",
+    "updated_at": "2026-04-12"
+  },
+  "node-state-4c3c3cf5": {
+    "id": "node-state-4c3c3cf5",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "KEO 온보딩에서 감정 일기 앱처럼 보이면 안 되는 상태",
+    "summary": "KEO 온보딩 시 사용자가 감정 일기 앱으로 오인할 수 있는 구체적 상태. 아이디어, 계획, 회피 기록이 혼합되어 들어오면서 제품의 본질적 목적과 헷갈릴 수 있음.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-021"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|keo 온보딩에서 감정 일기 앱처럼 보이면 안 되는 상태|memo-021",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-14",
+    "updated_at": "2026-04-14"
+  },
+  "node-state-59aa01d4": {
+    "id": "node-state-59aa01d4",
+    "source": "llm",
+    "type": "state",
+    "title": "일정이 회고 트리거가 되는 상태",
+    "summary": "회의 전 기대와 회의 후 남은 한 줄을 비교해보면, 일정이 회고의 시작점이 되는 패턴이 반복되고 있다. 이는 일정이 트리거로 작용해 회고를 유도하는 구조적 특징을 보여준다.",
+    "relation_tags": [
+      "decision_trace",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-002",
+      "memo-015",
+      "memo-023"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일정이 회고 트리거가 되는 상태|memo-002,memo-015,memo-023",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-05-31",
+    "last_evolved_evidence_count": 1
+  },
+  "node-state-4de673ab": {
+    "id": "node-state-4de673ab",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "피로가 쌓여서 산책도 포기하는 상태",
+    "summary": "피로가 쌓여서 산책을 포기하고, 자책을 적게 하며 일찍 자는 행동 패턴. 이날은 피로가 판단과 실행 전반에 영향을 주어 자제력이 떨어짐.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "recovery_failure"
+    ],
+    "pending_evidence_ids": [
+      "memo-024"
+    ],
+    "identity_key": "state|fatigue_spillover,recovery_failure|피로가 쌓여서 산책도 포기하는 상태|memo-024",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-15",
+    "updated_at": "2026-04-15"
+  },
+  "node-state-2d265fe5": {
+    "id": "node-state-2d265fe5",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "메모 톤이 모범답안이면 신뢰도 떨어지는 상태",
+    "summary": "사용자가 메모의 톤이 모범답안처럼 보이면, 그 메모를 믿지 않으려는 경향이 있음을 보여주는 구체적 패턴. 중간에 끊긴 문장이나 애매한 표현이 오히려 살아 있는 듯한 느낌을 줄 수 있음.",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-025"
+    ],
+    "identity_key": "state|self_understanding_product|메모 톤이 모범답안이면 신뢰도 떨어지는 상태|memo-025",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-16",
+    "updated_at": "2026-04-16"
+  },
+  "node-state-53383886": {
+    "id": "node-state-53383886",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "eval 데이터 재구성 시 실제 검색 감 잃는 상태",
+    "summary": "새 기능보다 먼저 eval data를 다시 만들 때, 데이터가 너무 깨끗해서 실제 검색 감이 잃어버리는 패턴이 반복되고 있다. 이는 데이터의 완전성과 실제 사용 시의 감각을 분리하는 구조적 문제를 보여준다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-026"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|eval 데이터 재구성 시 실제 검색 감 잃는 상태|memo-026",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-16",
+    "updated_at": "2026-04-16"
+  },
+  "node-state-496702cb": {
+    "id": "node-state-496702cb",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "어려운 일 앞두면 안전한 일 먼저 하는 상태",
+    "summary": "어려운 일 앞두면 이상하게 정리, 분류, 청소 같은 걸 먼저 한다. 성실한 척 회피하는 패턴",
+    "relation_tags": [
+      "pattern_recognition",
+      "safe_task_selection"
+    ],
+    "pending_evidence_ids": [
+      "memo-035"
+    ],
+    "identity_key": "state|pattern_recognition,safe_task_selection|어려운 일 앞두면 안전한 일 먼저 하는 상태|memo-035",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-20",
+    "updated_at": "2026-04-20"
+  },
+  "node-state-ba640f62": {
+    "id": "node-state-ba640f62",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "진실을 숨기기보다 그럴듯한 이유를 붙이는 상태",
+    "summary": "진실을 숨기기보다는, 그럴듯한 이유를 붙여 자기 자신을 속이는 구체적 패턴. 자기 속임에 대한 감각이 높아질수록, 그럴듯한 이유를 붙이는 능력이 높아짐. 이는 자기이해와 관련된 반복적 행동 패턴.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "pending_evidence_ids": [
+      "memo-036",
+      "memo-100"
+    ],
+    "identity_key": "state|avoidance_rationalization,self_deception|진실을 숨기기보다 그럴듯한 이유를 붙이는 상태|memo-036",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-20",
+    "updated_at": "2026-05-07"
+  },
+  "node-state-959eb1a3": {
+    "id": "node-state-959eb1a3",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "쉬는 날에도 할 일 떠오름",
+    "summary": "쉬는 날에도 할 일 생각이 떠오르며 쉬는 시간을 빚처럼 느끼는 상태. 이 상태는 쉬는 날에도 일상 업무나 할 일에 대한 생각이 지속적으로 떠오르는 것을 의미하며, 쉬는 시간을 빚처럼 느끼는 감정을 동반합니다.",
+    "relation_tags": [
+      "recovery_failure",
+      "rest_guilt"
+    ],
+    "pending_evidence_ids": [
+      "memo-040"
+    ],
+    "identity_key": "state|recovery_failure,rest_guilt|쉬는 날에도 할 일 떠오름|memo-040",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-22",
+    "updated_at": "2026-04-22"
+  },
+  "node-state-33a372a5": {
+    "id": "node-state-33a372a5",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "감정 이름만 모으는 게 아니라, 반복되는 결정 실수도 보여줘야 자기이해 쪽이 선명해질 듯",
+    "summary": "메모에서 감정 이름을 수집하는 것보다는, 반복되는 결정 실수를 보여주는 것이 자기이해를 더 명확하게 표현하는 구조적 패턴이 반복되고 있다. 이는 특정한 상태를 나타내는 구조적 패턴을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-041"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|감정 이름만 모으는 게 아니라, 반복되는 결정 실수도 보여줘야 자기이해 쪽이 선명해질 듯|memo-041",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-22",
+    "updated_at": "2026-04-22"
+  },
+  "node-state-ded5fdd2": {
+    "id": "node-state-ded5fdd2",
+    "source": "llm",
+    "type": "state",
+    "title": "결정 실수를 기록해 감정을 이해하는 상태",
+    "summary": "KEO는 비슷한 결정 실수를 묶어 보여주는 방식으로 감정을 이해하는 구조적 패턴을 보여준다. 이는 사용자가 자신의 행동 패턴을 인식하고, 감정을 더 명확히 이해하는 데 기여한다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-021",
+      "memo-041",
+      "memo-046"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|결정 실수를 기록해 감정을 이해하는 상태|memo-021,memo-041,memo-046",
+    "evidence_count": 5,
+    "confidence": 0.75,
+    "last_seen_at": "2026-05-02",
+    "created_at": "2026-04-24",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-7524b2df": {
+    "id": "node-state-7524b2df",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "엄마 병원 일정으로 인한 원래 일 루틴 방해",
+    "summary": "엄마 병원 일정을 함께 보고 나서 원래 계획했던 일에 대한 집중력이 떨어지는 상태. 일 루틴이 완전히 깨지고, 이후로는 회고를 통해 중요성을 인식하는 경향.",
+    "relation_tags": [
+      "external_priority_capture",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-058",
+      "memo-011"
+    ],
+    "identity_key": "state|external_priority_capture,schedule_disruption|엄마 병원 일정으로 인한 원래 일 루틴 방해|memo-011,memo-058",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-27",
+    "updated_at": "2026-04-27"
+  },
+  "node-state-0a37e99c": {
+    "id": "node-state-0a37e99c",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "비 오는 날 시작 버튼 누르기 어려움",
+    "summary": "비 오는 날엔 시작 버튼을 누르는 것이 더 어렵고, 이로 인해 중요한 활동을 시작하지 못하는 패턴. 날씨가 비가 오는 날일 때, 시작을 미루는 경향이 있음.",
+    "relation_tags": [
+      "low_energy_drift",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-065"
+    ],
+    "identity_key": "state|low_energy_drift,start_avoidance|비 오는 날 시작 버튼 누르기 어려움|memo-065",
+    "evidence_count": 0,
+    "confidence": 0.8,
+    "last_seen_at": null,
+    "created_at": "2026-04-29",
+    "updated_at": "2026-04-29"
+  },
+  "node-state-87c4ac2d": {
+    "id": "node-state-87c4ac2d",
+    "source": "llm",
+    "type": "state",
+    "title": "바쁨을 이유로 중요한 결정을 미루는 상태",
+    "summary": "바쁜 말로 중요한 결정을 미루는 행동이 반복적으로 나타나는 구체적 패턴. 실제는 마음이 산만해 흐름이 끊기고, 결과 없는 바쁨으로 이어짐.",
+    "relation_tags": [
+      "context_fragmentation",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-009",
+      "memo-012",
+      "memo-029",
+      "memo-037",
+      "memo-072"
+    ],
+    "identity_key": "state|context_fragmentation,pattern_recognition|바쁨을 이유로 중요한 결정을 미루는 상태|memo-009,memo-012,memo-029,memo-037,memo-072",
+    "evidence_count": 7,
+    "confidence": 0.85,
+    "last_seen_at": "2026-05-28",
+    "created_at": "2026-04-30",
+    "updated_at": "2026-05-28"
+  },
+  "node-state-e103b119": {
+    "id": "node-state-e103b119",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "생활업무 부담으로 인한 일정 방해 상태",
+    "summary": "생활업무 부담으로 인해 예정된 일정이 지연되거나 무시되는 상태. 약국 방문을 미루다 감기약이 떨어지는 등, 일정을 지키지 못해 문제를 일으키는 패턴이 반복됨.",
+    "relation_tags": [
+      "execution_delay",
+      "life_admin_overload"
+    ],
+    "pending_evidence_ids": [
+      "memo-078"
+    ],
+    "identity_key": "state|execution_delay,life_admin_overload|생활업무 부담으로 인한 일정 방해 상태|memo-078",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-02",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-87aa647a": {
+    "id": "node-state-87aa647a",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "습한 날은 생각도 같이 눅눅해지는 상태",
+    "summary": "습기로 인한 정신적 무기력감이 지속됨. 습한 날에는 사고가 둔钝해지고 판단력이 떨어짐. 이는 반복적으로 관찰됨.",
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-085"
+    ],
+    "identity_key": "state|low_energy_drift,rhythm_disruption|습한 날은 생각도 같이 눅눅해지는 상태|memo-085",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-04",
+    "updated_at": "2026-05-04"
+  },
+  "node-state-ad8ad94e": {
+    "id": "node-state-ad8ad94e",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "수면 부족으로 인한 하루 종일 멍함 상태",
+    "summary": "중간에 몇 번 깨서 그런지 하루 종일 멍함. 수면이 불규칙하거나 불충분해지면 판단력과 집중력이 떨어져 무의미한 활동에 빠지는 상태.",
+    "relation_tags": [
+      "decision_fog",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-090"
+    ],
+    "identity_key": "state|decision_fog,rhythm_disruption|수면 부족으로 인한 하루 종일 멍함 상태|memo-090",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-05",
+    "updated_at": "2026-05-05"
+  },
+  "node-state-5a7a9468": {
+    "id": "node-state-5a7a9468",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "감정 이름을 몰라도 메모 남길 수 있는 상태",
+    "summary": "사용자가 감정 이름을 몰라도 메모를 남길 수 있는 구조적 패턴. 이는 사용자가 자신의 감정을 명확히 인식하지 않아도, 상황이나 결정에 대한 메모를 통해 자기이해를 쌓는 방식을 보여준다.",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-098",
+      "memo-178"
+    ],
+    "identity_key": "state|self_understanding_product|감정 이름을 몰라도 메모 남길 수 있는 상태|memo-098",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-07",
+    "updated_at": "2026-05-27"
+  },
+  "node-state-bcac09d0": {
+    "id": "node-state-bcac09d0",
+    "source": "llm",
+    "type": "state",
+    "title": "일정 종료 후 회고 트리거 발생",
+    "summary": "일정이 끝난 후 남은 한 줄 메모가 회고를 유도하는 구조가 반복되고 있다. 이는 일정이 끝난 후 발생하는 트리거로 회고를 시작하는 패턴을 보여준다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-002",
+      "memo-015",
+      "memo-039",
+      "memo-087",
+      "memo-101"
+    ],
+    "identity_key": "state|event_reflection_link,pattern_recognition,self_understanding_product|일정 종료 후 회고 트리거 발생|memo-002,memo-015,memo-039,memo-087,memo-101",
+    "evidence_count": 5,
+    "confidence": 0.75,
+    "last_seen_at": "2026-05-10",
+    "created_at": "2026-05-10",
+    "updated_at": "2026-05-10"
+  },
+  "node-state-71991597": {
+    "id": "node-state-71991597",
+    "source": "llm",
+    "type": "state",
+    "title": "회의 전 기대와 후 결과 비교 트리거",
+    "summary": "회의 전 기대했던 내용과 회의 후 남은 한 줄을 비교해보는 행동이 반복되고 있다. 이는 회의 전후의 차이를 트리거로 삼아 회고를 유도하는 구조적 패턴을 보여준다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "decision_trace",
+      "identity_gap"
+    ],
+    "representative_evidence_ids": [
+      "memo-023",
+      "memo-030",
+      "memo-032",
+      "memo-059",
+      "memo-111"
+    ],
+    "identity_key": "state|decision_trace,event_reflection_link,identity_gap|회의 전 기대와 후 결과 비교 트리거|memo-023,memo-030,memo-032,memo-059,memo-111",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-24",
+    "created_at": "2026-05-10",
+    "updated_at": "2026-05-24"
+  },
+  "node-state-a49e176c": {
+    "id": "node-state-a49e176c",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "돈 생각 올라오는 날엔 뭘 해도 여유가 줄어드는 상태",
+    "summary": "돈에 대한 고민이 늘어날수록 일상 활동에서의 여유가 줄어드는 구체적 패턴. 돈에 대한 걱정이 뇌의 자원을 차지해 다른 활동에 대한 판단력과 집중력이 떨어지며, 결과적으로 일상의 여유가 사라지는 현상이 반복적으로 관찰됨.",
+    "relation_tags": [
+      "decision_fog",
+      "external_priority_capture"
+    ],
+    "pending_evidence_ids": [
+      "memo-125"
+    ],
+    "identity_key": "state|decision_fog,external_priority_capture|돈 생각 올라오는 날엔 뭘 해도 여유가 줄어드는 상태|memo-125",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-14",
+    "updated_at": "2026-05-14"
+  },
+  "node-state-ca036859": {
+    "id": "node-state-ca036859",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "생활 일 미루는 패턴도 회고 재료로 보여주면 자기이해에 도움 될 것 같다.",
+    "summary": "이 memo는 일상생활에서 일 미루는 패턴이 회고의 자료로 활용될 수 있음을 제시하며, 이는 자기이해에 기여할 수 있는 구체적인 관찰을 보여준다. 일 미루는 행동이 반복적으로 나타나고, 이를 회고 자료로 활용함으로써 사용자가 자신의 행동 패턴을 인식하고, 감정을 더 명확히 이해하는 데 기여할 수 있다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-126"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|생활 일 미루는 패턴도 회고 재료로 보여주면 자기이해에 도움 될 것 같다|memo-126",
+    "evidence_count": 0,
+    "confidence": 0.75,
+    "last_seen_at": null,
+    "created_at": "2026-05-14",
+    "updated_at": "2026-05-14"
+  },
+  "node-state-5a2fc7a4": {
+    "id": "node-state-5a2fc7a4",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "특정 노래 한 소절로 인한 과거 감정 회상",
+    "summary": "골목에서 들은 노래 한 소절이 특정 과거의 감정 상태를 자극해 현재로 이식하는 현상이 반복되고 있다. 이는 특정 음악 요소가 감정 트리거로 작용하는 구조적 패턴을 보여준다.",
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "pending_evidence_ids": [
+      "memo-127"
+    ],
+    "identity_key": "state|event_aftereffect|특정 노래 한 소절로 인한 과거 감정 회상|memo-127",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-14",
+    "updated_at": "2026-05-14"
+  },
+  "node-state-c3ffaa7c": {
+    "id": "node-state-c3ffaa7c",
+    "source": "llm",
+    "type": "state",
+    "title": "메신저 알림 확인 후 중요한 작업 시작 지연",
+    "summary": "메신저 알림 확인 행동이 중요한 작업 시작을 지연시키는 패턴. 아침 의욕이 있었으나 메신저 확인 후 중요한 작업이 시작되지 않아 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "context_fragmentation",
+      "decision_trace",
+      "execution_delay",
+      "external_priority_capture",
+      "life_admin_overload",
+      "pattern_recognition",
+      "reactive_work",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-029",
+      "memo-031",
+      "memo-045",
+      "memo-066",
+      "memo-097"
+    ],
+    "identity_key": "state|context_fragmentation,execution_delay,priority_confusion|메신저 알림 확인 후 중요한 작업 시작 지연|memo-001,memo-029,memo-031,memo-045,memo-066,memo-097",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-05-15",
+    "updated_at": "2026-06-01",
+    "last_evolved_evidence_count": 6
+  },
+  "node-state-c3ffaa7c-2": {
+    "id": "node-state-c3ffaa7c-2",
+    "source": "llm",
+    "type": "state",
+    "title": "메신저 알림 확인 후 중요한 작업 시작 지연",
+    "summary": "메신저 알림 확인 후 중요한 작업을 시작하지 못하는 상태. 아침 의욕이 있었으나 메신저 확인 후 중요한 작업이 시작되지 않아 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "execution_delay",
+      "context_fragmentation",
+      "priority_confusion"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-029",
+      "memo-031",
+      "memo-045",
+      "memo-066",
+      "memo-097"
+    ],
+    "identity_key": "state|context_fragmentation,execution_delay,priority_confusion|메신저 알림 확인 후 중요한 작업 시작 지연|memo-001,memo-029,memo-031,memo-045,memo-066,memo-097",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-05-15",
+    "created_at": "2026-05-15",
+    "updated_at": "2026-05-15"
+  },
+  "node-state-320f396a": {
+    "id": "node-state-320f396a",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "다양한 메모가 공유하는 밑바닥 유사성 인식",
+    "summary": "이번 주 메모들은 내용이 다 다르지만, 모두 밑바닥에서 비슷한 상태를 공유하고 있는 것으로 보여진다. 이는 다양한 메모가 동일한 근본적 상태를 반복적으로 인식하고 표현하는 구조적 패턴을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-132"
+    ],
+    "identity_key": "state|pattern_recognition|다양한 메모가 공유하는 밑바닥 유사성 인식|memo-132",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-15",
+    "updated_at": "2026-05-15"
+  },
+  "node-state-e40b0dc7": {
+    "id": "node-state-e40b0dc7",
+    "source": "llm",
+    "type": "state",
+    "title": "저녁 피로로 인한 무의미한 활동 흐름 상태",
+    "summary": "저녁에 피로가 쌓여 판단력이 떨어지면서 유튜브 같은 무의미한 활동에 빠져 시간을 보내는 상태. 쉬는 것도 아니고 일한 것도 아니면서 시간이 흐르는 것을 느끼지 못하는 경향이 있음.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "context_fragmentation",
+      "decision_fog"
+    ],
+    "representative_evidence_ids": [
+      "memo-012"
+    ],
+    "identity_key": "state|context_fragmentation,decision_fog,fatigue_spillover|저녁 피로로 인한 무의미한 활동 흐름 상태|memo-012",
+    "evidence_count": 22,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-05-16",
+    "updated_at": "2026-06-01"
+  },
+  "node-state-66685efa": {
+    "id": "node-state-66685efa",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "외출 일정으로 인한 에너지 소모 상태",
+    "summary": "외출 일정이 들어오면 전후 준비 과정에서 예상보다 많은 에너지가 소모되어 피로가 쌓이는 상태. 일정이 하루의 흐름을 방해하고, 준비 과정에서 에너지가 급격히 줄어드는 것을 경험함.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-135"
+    ],
+    "identity_key": "state|fatigue_spillover,schedule_disruption|외출 일정으로 인한 에너지 소모 상태|memo-135",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-16",
+    "updated_at": "2026-05-16"
+  },
+  "node-state-a0ca26a5": {
+    "id": "node-state-a0ca26a5",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "바람 많은 날의 몸 들뜸 상태",
+    "summary": "바람이 심한 날엔 이유 없이 몸이 들떠서 오래 앉아 있기가 어렵다. 이 상태는 일상적인 활동에 방해를 주며, 의도적인 활동 수행이 어려워진다.",
+    "relation_tags": [
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-137"
+    ],
+    "identity_key": "state|rhythm_disruption|바람 많은 날의 몸 들뜸 상태|memo-137",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-17",
+    "updated_at": "2026-05-17"
+  },
+  "node-state-9088777e": {
+    "id": "node-state-9088777e",
+    "source": "llm",
+    "type": "state",
+    "title": "초안 작성 전 레퍼런스 수집 회피",
+    "summary": "초안 작성보다는 레퍼런스 수집에 집중하며, 구조 분석이나 목차 작성으로 시간을 보내는 경향이 있음. 이는 실제 작업보다는 안전한 일에 시간을 할애하는 회피 행동으로, 시작을 미루는 경향과 과도한 계획 수립이 동반됨.",
+    "relation_tags": [
+      "start_avoidance",
+      "overplanning",
+      "avoidance_rationalization"
+    ],
+    "representative_evidence_ids": [
+      "memo-022",
+      "memo-034",
+      "memo-049",
+      "memo-089",
+      "memo-105"
+    ],
+    "identity_key": "state|avoidance_rationalization,overplanning,start_avoidance|초안 작성 전 레퍼런스 수집 회피|memo-022,memo-034,memo-049,memo-089,memo-105",
+    "evidence_count": 9,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-05-18",
+    "updated_at": "2026-05-31"
+  },
+  "node-state-01ecd208": {
+    "id": "node-state-01ecd208",
+    "source": "llm",
+    "type": "state",
+    "title": "초안 작성 시 시작 전 준비 과다 행동",
+    "summary": "초안 작성 시 실제 작업보다는 준비 단계에 시간을 할애하며, 시작을 미루는 심리가 반복적으로 나타남. 이는 시작을 두려워하는 감정과 과도한 계획 수립이 동반되어, 실제 작업을 지연시키는 패턴임.",
+    "relation_tags": [
+      "start_avoidance",
+      "overplanning",
+      "execution_delay"
+    ],
+    "representative_evidence_ids": [
+      "memo-122",
+      "memo-124",
+      "memo-131",
+      "memo-140",
+      "memo-141",
+      "memo-144"
+    ],
+    "identity_key": "state|execution_delay,overplanning,start_avoidance|초안 작성 시 시작 전 준비 과다 행동|memo-122,memo-124,memo-131,memo-140,memo-141,memo-144",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-22",
+    "created_at": "2026-05-18",
+    "updated_at": "2026-05-22"
+  },
+  "node-state-4cc9b462": {
+    "id": "node-state-4cc9b462",
+    "source": "llm",
+    "type": "state",
+    "title": "저녁 피로로 인한 충동적 소비 상태",
+    "summary": "저녁 시간에 피로가 쌓여서 불필요한 구매를 반복하는 상태. 이는 피로가 심화되면서 판단력을 잃고, 즉각적인 만족을 추구하는 행동으로 이어짐.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_trace",
+      "overplanning"
+    ],
+    "representative_evidence_ids": [
+      "memo-033",
+      "memo-043",
+      "memo-081",
+      "memo-112",
+      "memo-146"
+    ],
+    "identity_key": "state|decision_trace,fatigue_spillover,overplanning|저녁 피로로 인한 충동적 소비 상태|memo-033,memo-043,memo-081,memo-112,memo-146",
+    "evidence_count": 5,
+    "confidence": 0.75,
+    "last_seen_at": "2026-05-19",
+    "created_at": "2026-05-19",
+    "updated_at": "2026-05-19"
+  },
+  "node-state-5ccf74e7": {
+    "id": "node-state-5ccf74e7",
+    "source": "llm",
+    "type": "state",
+    "title": "관계에 들어가는 에너지 부족으로 인한 답장 지연",
+    "summary": "메신저 답장이 귀찮아서가 아니라 관계에 들어가는 에너지가 부족해서 미뤄지는 상태. 중요한 일은 하지 못하고 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "low_energy_drift",
+      "social_response_delay"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-016",
+      "memo-050",
+      "memo-091",
+      "memo-143",
+      "memo-152"
+    ],
+    "identity_key": "state|low_energy_drift,social_response_delay|관계에 들어가는 에너지 부족으로 인한 답장 지연|memo-001,memo-016,memo-050,memo-091,memo-143,memo-152",
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-05-20",
+    "updated_at": "2026-05-31"
+  },
+  "node-state-e434f6a5": {
+    "id": "node-state-e434f6a5",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 감정 반응 과잉 상태",
+    "summary": "피로가 쌓이면 작은 자극에도 과도한 감정 반응을 보이는 상태. 예를 들어, 가격표 하나에도 방어적으로 반응하거나, 유튜브 같은 무의미한 활동에 빠져 시간을 보내는 경향이 있음.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "overplanning",
+      "evaluation_fear"
+    ],
+    "representative_evidence_ids": [
+      "memo-012",
+      "memo-020",
+      "memo-061",
+      "memo-062",
+      "memo-067",
+      "memo-081",
+      "memo-107",
+      "memo-109",
+      "memo-112",
+      "memo-114",
+      "memo-119",
+      "memo-133",
+      "memo-158"
+    ],
+    "identity_key": "state|evaluation_fear,fatigue_spillover,overplanning|피로로 인한 감정 반응 과잉 상태|memo-020,memo-062,memo-107,memo-109,memo-112,memo-114,memo-119,memo-133",
+    "evidence_count": 16,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-05-22",
+    "updated_at": "2026-05-31"
+  },
+  "node-state-c19849a3": {
+    "id": "node-state-c19849a3",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "퇴근길 아이의 반복적 질문 기억",
+    "summary": "퇴근길에 어떤 아이가 같은 질문을 반복적으로 하던 장면이 오래 기억에 남는다. 이는 특정 상황에서 발생하는 지속적인 인상으로, 이후 회고나 분석을 유도하는 요소로 작용할 수 있다.",
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "pending_evidence_ids": [
+      "memo-159"
+    ],
+    "identity_key": "state|event_aftereffect|퇴근길 아이의 반복적 질문 기억|memo-159",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-22",
+    "updated_at": "2026-05-22"
+  },
+  "node-state-581d03ba": {
+    "id": "node-state-581d03ba",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "도서관 도착 후 정리에만 시간 쓰는 상태",
+    "summary": "도서관에 도착했지만 실제 작업 대신 정리나 준비 활동에 시간을 할애하며, 본래 목표보다는 안전한 일에 시간을 할애하는 경향이 있음. 이는 시작을 미루는 심리와 과도한 계획 수립이 동반되어, 실제 작업을 지연시키는 패턴임.",
+    "relation_tags": [
+      "overplanning",
+      "safe_task_selection"
+    ],
+    "pending_evidence_ids": [
+      "memo-170"
+    ],
+    "identity_key": "state|overplanning,safe_task_selection|도서관 도착 후 정리에만 시간 쓰는 상태|memo-170",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-25",
+    "updated_at": "2026-05-25"
+  },
+  "node-state-278daf36": {
+    "id": "node-state-278daf36",
+    "source": "llm",
+    "type": "state",
+    "title": "미루는 행동이 자존감에 영향을 미치는 상태",
+    "summary": "사소한 미룸이 쌓이면 자존감이 손상되기 시작하는 구체적 패턴. 이는 일상적인 작은 결정을 지연시키는 행동이 반복되면서 자기 이미지에 부정적인 영향을 미치는 현상을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "unfinished_loop"
+    ],
+    "representative_evidence_ids": [
+      "memo-042",
+      "memo-051",
+      "memo-171"
+    ],
+    "identity_key": "state|pattern_recognition,unfinished_loop|미루는 행동이 자존감에 영향을 미치는 상태|memo-042,memo-051,memo-171",
+    "evidence_count": 4,
+    "confidence": 0.7,
+    "last_seen_at": "2026-05-30",
+    "created_at": "2026-05-25",
+    "updated_at": "2026-05-30"
+  },
+  "node-state-fa399832": {
+    "id": "node-state-fa399832",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 식사 후 피로 지속 상태",
+    "summary": "야식이나 간식을 먹고 나서 피로가 오히려 증가하거나 지속되는 상태. 식사 후에도 피로가 지속되며, 판단력 저하와 함께 무의미한 활동에 빠지는 경향이 있음.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "execution_delay",
+      "low_energy_drift"
+    ],
+    "representative_evidence_ids": [
+      "memo-061",
+      "memo-081",
+      "memo-165"
+    ],
+    "identity_key": "state|execution_delay,fatigue_spillover,low_energy_drift|피로로 인한 식사 후 피로 지속 상태|memo-061,memo-081,memo-165",
+    "evidence_count": 5,
+    "confidence": 0.75,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-05-25",
+    "updated_at": "2026-06-01"
+  },
+  "node-state-4962a42c": {
+    "id": "node-state-4962a42c",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 집중력 저하 상태",
+    "summary": "피로가 쌓여 집중력이 떨어지면서 유튜브 같은 무의미한 활동에 빠져 시간을 보내는 상태. 쉬는 것도 아니고 일한 것도 아니면서 시간이 흐르는 것을 느끼지 못하는 경향이 있음.",
+    "relation_tags": [
+      "decision_trace",
+      "event_aftereffect",
+      "fatigue_spillover",
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-172"
+    ],
+    "identity_key": "state|context_fragmentation,decision_fog,fatigue_spillover|피로로 인한 집중력 저하 상태|memo-172",
+    "evidence_count": 3,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-05-25",
+    "updated_at": "2026-06-01",
+    "last_evolved_evidence_count": 3
+  },
+  "node-state-13588161": {
+    "id": "node-state-13588161",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "외부 자극에 대한 방어적 반응 상태",
+    "summary": "외부 자극에 대해 방어적으로 반응하는 경향이 있는 상태. 예를 들어, 가격표 하나에도 방어적으로 반응하거나, 유튜브 같은 무의미한 활동에 빠져 시간을 보내는 경향이 있음.",
+    "relation_tags": [
+      "evaluation_fear",
+      "identity_gap"
+    ],
+    "pending_evidence_ids": [
+      "memo-176",
+      "memo-158"
+    ],
+    "identity_key": "state|evaluation_fear,identity_gap|외부 자극에 대한 방어적 반응 상태|memo-158,memo-176",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-26",
+    "updated_at": "2026-05-26"
+  },
+  "node-state-41bd1ebf": {
+    "id": "node-state-41bd1ebf",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 무의식적 회피 행동",
+    "summary": "피로가 쌓이면 쉬운 선택을 하기보다는 무의미한 활동에 몰입하거나, 중요한 일보다는 불안을 줄이는 행동을 선택하는 경향이 있음. 판단력 저하로 인해 선택을 하기보다는 보류를 선택하는 경향이 있음.",
+    "relation_tags": [
+      "execution_delay",
+      "low_energy_drift",
+      "overplanning"
+    ],
+    "representative_evidence_ids": [
+      "memo-158",
+      "memo-161",
+      "memo-165",
+      "memo-169",
+      "memo-177"
+    ],
+    "identity_key": "state|execution_delay,low_energy_drift,overplanning|피로로 인한 무의식적 회피 행동|memo-158,memo-161,memo-165,memo-169,memo-177",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-05-27",
+    "updated_at": "2026-05-31"
+  },
+  "node-state-9d604ff2": {
+    "id": "node-state-9d604ff2",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "창밖 흐림으로 인한 판단력 저하 상태",
+    "summary": "창밖이 흐리면 머릿속도 조금 천천히 움직인다. 외부 환경의 변화가 판단력에 직접적인 영향을 미쳐, 판단이 어려워지고 무의미한 활동에 몰입하는 경향이 있음.",
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-189"
+    ],
+    "identity_key": "state|low_energy_drift,rhythm_disruption|창밖 흐림으로 인한 판단력 저하 상태|memo-189",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-30",
+    "updated_at": "2026-05-30"
+  },
+  "node-state-8249ce5d": {
+    "id": "node-state-8249ce5d",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 판단력 저하 상태",
+    "summary": "저녁에 피로가 쌓여 판단력이 떨어지면서 유튜브 같은 무의미한 활동에 빠져 시간을 보내는 상태. 쉬는 것도 아니고 일한 것도 아니면서 시간이 흐르는 것을 느끼지 못하는 경향이 있음.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "context_fragmentation",
+      "decision_fog"
+    ],
+    "representative_evidence_ids": [
+      "memo-012",
+      "memo-020",
+      "memo-061",
+      "memo-062",
+      "memo-067",
+      "memo-081",
+      "memo-107",
+      "memo-109",
+      "memo-112",
+      "memo-114",
+      "memo-119",
+      "memo-133",
+      "memo-158",
+      "memo-165",
+      "memo-172",
+      "memo-194"
+    ],
+    "identity_key": "state|context_fragmentation,decision_fog,fatigue_spillover|피로로 인한 판단력 저하 상태|memo-020,memo-062,memo-107,memo-109,memo-112,memo-114,memo-119,memo-133",
+    "evidence_count": 16,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-31",
+    "created_at": "2026-05-31",
+    "updated_at": "2026-05-31"
+  },
+  "node-state-d8a45b7e-2": {
+    "id": "node-state-d8a45b7e-2",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 판단력 저하 상태",
+    "summary": "피로가 쌓이면 간단한 결정도 어려워지고, 무의미한 활동에 몰입하는 경향이 있는 상태. 판단력 저하로 인해 선택을 하기보다는 보류를 선택하는 경향이 있음.",
+    "relation_tags": [
+      "decision_fog",
+      "low_energy_drift",
+      "execution_delay"
+    ],
+    "representative_evidence_ids": [
+      "memo-012",
+      "memo-020",
+      "memo-061",
+      "memo-062",
+      "memo-067",
+      "memo-081",
+      "memo-107",
+      "memo-109",
+      "memo-112",
+      "memo-114",
+      "memo-119",
+      "memo-133",
+      "memo-158",
+      "memo-198"
+    ],
+    "identity_key": "state|decision_fog,execution_delay,low_energy_drift|피로로 인한 판단력 저하 상태|memo-020,memo-062,memo-107,memo-109,memo-112,memo-114,memo-119,memo-133",
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-06-01",
+    "updated_at": "2026-06-01"
+  }
+}

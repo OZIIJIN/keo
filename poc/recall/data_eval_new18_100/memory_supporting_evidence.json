@@ -1,0 +1,20 @@
+[
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-067",
+    "role": "quote_or_reference",
+    "reason": "이 memo는 피로가 판단에 영향을 주는 구체적인 상황을 설명하고 있으며, 기존 노드의 핵심 트리거인 '낮의 피로가 일정 수행을 방해'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.55,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-e8db74ab",
+    "memo_id": "memo-036",
+    "role": "quote_or_reference",
+    "reason": "메모-100에서 합리적인 이유를 붙이려는 욕구와 스스로를 속이는 감각이 명확히 드러나며, 메모-036과 메모-004는 이 패턴을 보완적으로 보여줌. 이는 반복적으로 나타나는 상태로 판단됨.",
+    "source": "llm",
+    "weight": 0.5,
+    "created_at": "2026-05-07"
+  }
+]

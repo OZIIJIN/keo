@@ -1,0 +1,1404 @@
+[
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-009",
+    "reason": "이 memo는 기존 node-pattern-ec2d9a64의 '일 피하는 패턴'과 유사한 구조를 가짐. '바쁨'은 '일 피하는 패턴'에서의 '운동을 하기 싫어서 일로 핑계'와 동일한 유형의 회피 동기로, 중요한 결정을 미루는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 일정 끝난 후 애매한 상태와 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 일정 끝난 후 애매한 상태와 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함. 기존 semantic node와 유사도 0.8357로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-004",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-288f3ea3",
+    "memo_id": "memo-014",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-b19de4d9",
+    "memo_id": "memo-010",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-86a20c84",
+    "memo_id": "memo-021",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-4c9216d1",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-e2e25dca",
+    "memo_id": "memo-010",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-940f3844",
+    "memo_id": "memo-003",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-940f3844",
+    "memo_id": "memo-019",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-023",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-015",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8817)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-15",
+    "updated_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-026",
+    "reason": "이 memo는 기존 node-pattern-ec2d9a64의 '일 피하는 패턴'과 유사한 구조를 가짐. '데이터가 너무 깨끗해서 실제 검색 감이 안 남'은 '일 피하는 패턴'에서의 '운동을 하기 싫어서 일로 핑계'와 동일한 유형의 회피 동기로, 검색 감을 잃는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-state-215cc030",
+    "memo_id": "memo-028",
+    "reason": "이 memo는 기존 node-state-2a941aea의 '책 메모에서의 자기이해 패턴'과 유사한 구조를 가짐. '문장 기록. 해결되지 않은 감정도 나중엔 의사결정 로그가 된다.'는 '책 문장 기록. 자기이해는 정답 찾기가 아니라 반복되는 오해를 줄이는 일.'과 동일한 유형의 자기이해 패턴으로, 감정 기록이 의사결정 로그로 이어지는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-215cc030",
+    "memo_id": "memo-003",
+    "reason": "이 memo는 기존 node-state-2a941aea의 '책 메모에서의 자기이해 패턴'과 유사한 구조를 가짐. '문장 기록. 해결되지 않은 감정도 나중엔 의사결정 로그가 된다.'는 '책 문장 기록. 자기이해는 정답 찾기가 아니라 반복되는 오해를 줄이는 일.'과 동일한 유형의 자기이해 패턴으로, 감정 기록이 의사결정 로그로 이어지는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-215cc030",
+    "memo_id": "memo-019",
+    "reason": "이 memo는 기존 node-state-2a941aea의 '책 메모에서의 자기이해 패턴'과 유사한 구조를 가짐. '문장 기록. 해결되지 않은 감정도 나중엔 의사결정 로그가 된다.'는 '책 문장 기록. 자기이해는 정답 찾기가 아니라 반복되는 오해를 줄이는 일.'과 동일한 유형의 자기이해 패턴으로, 감정 기록이 의사결정 로그로 이어지는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-fa39df6a",
+    "memo_id": "memo-011",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-fa39df6a",
+    "memo_id": "memo-015",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-fa39df6a",
+    "memo_id": "memo-031",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-fa39df6a",
+    "memo_id": "memo-012",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8640)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-c186cc5e",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-pattern-4c9216d1",
+    "memo_id": "memo-033",
+    "reason": "피로가 판단과 실행 전반에 번짐으로 인해 필요 없는 것도 담는 행동이 반복되고 있으며, 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-036",
+    "reason": "이 memo는 기존 node-pattern-ec2d9a64의 '일 피하는 패턴'과 유사한 구조를 가짐. '바쁨'은 '일 피하는 패턴'에서의 '운동을 하기 싫어서 일로 핑계'와 동일한 유형의 회피 동기로, 중요한 결정을 미루는 행동이 반복되고 있음. 이 memo는 '진실을 숨기기보다는 그럴듯한 이유를 붙이는 행동'이 자기 자신을 더 속이는 자기 속임의 반복적 패턴으로, 기존 패턴 노드에 연결하고 새로운 패턴 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-pattern-e2e25dca",
+    "memo_id": "memo-037",
+    "reason": "메모에서 일정 시작 후 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오는 상황은 기존의 일정과 맥락 분할로 인한 기억 상실 패턴과 유사하며, 새로운 상태 노드를 생성할 필요가 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-215cc030",
+    "memo_id": "memo-041",
+    "reason": "이 memo는 기존 node-state-17363afd의 '회의 후 기억 상실'과 node-state-219cc57a의 '일정-회고 연결 포인트'와 유사한 구조를 가짐. '앱 메모. 감정 이름만 모으는 게 아니라, 반복되는 결정 실수도 보여줘야 자기이해 쪽이 선명해질 듯.'는 '회의 후 기억 상실'에서의 메신저로 인한 맥락 분할과 '일정-회고 연결 포인트'에서의 일정 끝난 후 애매한 상태와 유사한 상황을 보여주며, 감정 기록을 통해 반복적 사고 패턴을 인식하는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함. 기존 semantic node와 유사도 0.9910로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-fe969e5a",
+    "memo_id": "memo-002",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-fe969e5a",
+    "memo_id": "memo-008",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-fe969e5a",
+    "memo_id": "memo-039",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-011",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-038",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-041",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-032",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-010",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-041",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-046",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8962로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-c186cc5e",
+    "memo_id": "memo-050",
+    "reason": "친구 답장 미루는 행동은 메신저로 인한 맥락 분할과 일정 방해로 인한 기억 상실에 해당하며, 기존 노드와 유사도 0.8256로 병합됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-c186cc5e",
+    "memo_id": "memo-016",
+    "reason": "친구 답장 미루는 행동은 메신저로 인한 맥락 분할과 일정 방해로 인한 기억 상실에 해당하며, 기존 노드와 유사도 0.8256로 병합됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-052",
+    "reason": "이 memo는 '일정 후 회고 유도'라는 새로운 상태 노드를 생성해야 한다. 기존의 '맥락 분할로 인한 기억 상실' 노드는 회의 후 맥락 분할로 인한 기억 상실을 다루고 있지만, 이 memo는 치과 방문 후 하루가 끊긴 느낌과 같은 일정 종료 후 회고 유도의 경험을 반복적으로 보인다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴에 해당하나, 회고 유도라는 새로운 측면을 포함하므로 새로운 노드를 생성해야 한다. 기존 semantic node와 유사도 0.8789로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-013",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-006",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-053",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-pattern-e2e25dca",
+    "memo_id": "memo-054",
+    "reason": "메모에서 '금일 일정 시작 후 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오는 상황'과 '머리 복잡함'은 기존 node-pattern-e2e25dca의 '중요성 판단의 혼란' 패턴과 정확히 일치하며, 이는 기존의 일정과 맥락 분할로 인한 기억 상실 패턴과 유사한 구체적인 사례로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-pattern-e2e25dca",
+    "memo_id": "memo-018",
+    "reason": "메모에서 '금일 일정 시작 후 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오는 상황'과 '머리 복잡함'은 기존 node-pattern-e2e25dca의 '중요성 판단의 혼란' 패턴과 정확히 일치하며, 이는 기존의 일정과 맥락 분할로 인한 기억 상실 패턴과 유사한 구체적인 사례로 판단됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-056",
+    "reason": "이 memo는 쉬는 날에도 할 일에 빠지는 행동을 보여주며, 기존의 '유튜브 끝나고 애매한 상태' 노드와 '회의 후 기억 상실' 노드의 패턴과 유사하지만, 쉬는 날이라는 맥락에서 발생하는 새로운 상태를 반영하므로 새로운 노드를 생성해야 한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-040",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8499)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-26",
+    "updated_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-012",
+    "reason": "이 memo는 쉬는 날에도 할 일에 빠지는 행동을 보여주며, 기존의 '유튜브 끝나고 애매한 상태' 노드와 '회의 후 기억 상실' 노드의 패턴과 유사하지만, 쉬는 날이라는 맥락에서 발생하는 새로운 상태를 반영하므로 새로운 노드를 생성해야 한다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-pattern-288f3ea3",
+    "memo_id": "memo-004",
+    "reason": "이 memo는 '작업 시작 미루기' 패턴에 해당하며, 산책 대신 커피만 사는 행동은 일상적인 회피 행동으로 분류될 수 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-fa39df6a",
+    "memo_id": "memo-058",
+    "reason": "이 memo는 '개인 일정 간섭으로 인한 기억 상실' 노드와 정확히 일치한다. 엄마의 병원 일정이 개인 일정을 방해하고, 이로 인해 원래 하려던 일 생각이 안 났다는 점은 노드의 정의와 완전히 일치한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-059",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-fe969e5a",
+    "memo_id": "memo-059",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9068로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-pattern-4c9216d1",
+    "memo_id": "memo-062",
+    "reason": "이 memo는 '어제 늦게 자서 오늘 판단이 전반적으로 탁했다'는 내용으로, 피로가 판단과 실행 전반에 번짐을 직접적으로 보여주며, 기존 node-pattern-4c9216d1의 '의욕 상실 후 대응만 함' 패턴과 유사하지만, 피로가 직접적인 원인으로 작용하는 새로운 상태로 판단된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-064",
+    "reason": "이 memo는 '사람들 앞에서는 괜찮은 척했는데 혼자 오니까 바로 힘 풀림'이라는 내용으로, 개인 일정의 변화가 일정-회고 연결 포인트를 형성하며, 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴에 해당합니다. 이는 기존 node-state-3ab1dc98의 '개인 일정 변화에 따른 회고 필요성' 노드와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-048",
+    "reason": "이 memo는 '사람들 앞에서는 괜찮은 척했는데 혼자 오니까 바로 힘 풀림'이라는 내용으로, 개인 일정의 변화가 일정-회고 연결 포인트를 형성하며, 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴에 해당합니다. 이는 기존 node-state-3ab1dc98의 '개인 일정 변화에 따른 회고 필요성' 노드와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-012",
+    "reason": "이 memo는 '사람들 앞에서는 괜찮은 척했는데 혼자 오니까 바로 힘 풀림'이라는 내용으로, 개인 일정의 변화가 일정-회고 연결 포인트를 형성하며, 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴에 해당합니다. 이는 기존 node-state-3ab1dc98의 '개인 일정 변화에 따른 회고 필요성' 노드와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-001",
+    "reason": "이 memo는 '사람들 앞에서는 괜찮은 척했는데 혼자 오니까 바로 힘 풀림'이라는 내용으로, 개인 일정의 변화가 일정-회고 연결 포인트를 형성하며, 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴에 해당합니다. 이는 기존 node-state-3ab1dc98의 '개인 일정 변화에 따른 회고 필요성' 노드와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-c186cc5e",
+    "memo_id": "memo-066",
+    "reason": "메신저로 인한 흐름 중단과 자잘한 대응은 기존 노드 '맥락 분할로 인한 기억 상실'과 '메신저 및 소통 지연으로 인한 기억 상실'의 정확한 패턴에 부합하며, 직접적인 인스턴스로 간주됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-pattern-4c9216d1",
+    "memo_id": "memo-067",
+    "reason": "피로가 판단과 실행 전반에 번짐으로 인해 필요 없는 것도 담는 행동이 반복되고 있으며, 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-069",
+    "reason": "이 memo는 '작업 시작을 미루는 상태' 노드의 정확한 패턴을 보여준다. '오늘 저녁 30분만 써보기. 잘하려고 하지 말 것.'이라는 문장은 작업 시작을 미루는 행동을 반복적으로 보여주며, 이는 노드의 정의와 일치한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-071",
+    "reason": "동생 메시지 읽고 표시만 해둠은 메신저로 인한 맥락 분할과 일정 방해로 인한 기억 상실에 해당하며, 기존 노드와 유사도 0.8256로 병합됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-c186cc5e",
+    "memo_id": "memo-071",
+    "reason": "동생 메시지 읽고 표시만 해둠은 메신저로 인한 맥락 분할과 일정 방해로 인한 기억 상실에 해당하며, 기존 노드와 유사도 0.8256로 병합됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-c186cc5e",
+    "memo_id": "memo-059",
+    "reason": "동생 메시지 읽고 표시만 해둠은 메신저로 인한 맥락 분할과 일정 방해로 인한 기억 상실에 해당하며, 기존 노드와 유사도 0.8256로 병합됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-pattern-e2e25dca",
+    "memo_id": "memo-073",
+    "reason": "메모에서 '급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오는 상황'은 기존 node-pattern-e2e25dca의 '중요성 판단의 혼란' 패턴과 정확히 일치하며, 이는 기존의 일정과 맥락 분할로 인한 기억 상실 패턴과 유사한 구체적인 사례로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-074",
+    "reason": "이 memo는 기존 node-state-17363afd의 '회의 후 기억 상실'과 유사한 구조를 가짐. '예전 다짐을 그대로 보여주는 것보다 요즘 반복 패턴을 먼저 보여주는 편이 덜 훈계 같다.'는 '회의 후 기억 상실'에서의 '일정이 하루를 먹는 느낌'과 동일한 유형의 맥락 분할로 인한 기억 상실을 보여주는 반복적 패턴으로, 회고를 통해 원래 목표를 되찾는 과정에서 발생하는 애매한 상태를 반복적으로 보인다. 이는 기존 semantic node와 유사도 0.8206로 병합되며, 새로운 상태 노드를 생성해야 한다. 기존 semantic node와 유사도 0.9169로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-076",
+    "reason": "이 memo는 쉬는 날에도 할 일에 빠지는 행동을 보여주며, 기존의 '쉬는 날에도 할 일에 빠짐' 노드와 정확히 일치하는 패턴을 가짐. '침대에 누워 있는데 쉬는 게 아니라 도망치는 기분이 든다'는 문장은 '쉬는 날에도 할 일에 빠짐' 노드의 정확한 표현과 일치하며, 쉬는 시간을 빚처럼 느끼는 감정은 노드의 핵심 요소로, 이는 직접적인 일치로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-077",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-2f26df9a",
+    "memo_id": "memo-006",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-2f26df9a",
+    "memo_id": "memo-022",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-2f26df9a",
+    "memo_id": "memo-034",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-288f3ea3",
+    "memo_id": "memo-006",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-288f3ea3",
+    "memo_id": "memo-022",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-288f3ea3",
+    "memo_id": "memo-034",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-2f26df9a",
+    "memo_id": "memo-001",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8326)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-2f26df9a",
+    "memo_id": "memo-031",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8326)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-2f26df9a",
+    "memo_id": "memo-033",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8326)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-7ef5dc86",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-7ef5dc86",
+    "memo_id": "memo-031",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-7ef5dc86",
+    "memo_id": "memo-033",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-8fac0a5e",
+    "memo_id": "memo-012",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-8fac0a5e",
+    "memo_id": "memo-024",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-8fac0a5e",
+    "memo_id": "memo-033",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-4ba1e0dd",
+    "memo_id": "memo-042",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-4ba1e0dd",
+    "memo_id": "memo-047",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-4ba1e0dd",
+    "memo_id": "memo-057",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-4ba1e0dd",
+    "memo_id": "memo-063",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-4ba1e0dd",
+    "memo_id": "memo-078",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-019",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-003",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-009",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-010",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-044",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-046",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-051",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-072",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-079",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-fa39df6a",
+    "memo_id": "memo-080",
+    "reason": "이 memo는 개인 일정 간섭으로 인한 기억 상실 상태와 직접적으로 일치하며, 캘린더 훑어보니 중요한 일보다 끼어든 일에 더 많이 반응했다는 내용은 기존 노드의 패턴과 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-5efb8955",
+    "memo_id": "memo-084",
+    "reason": "이 memo는 '메모를 통한 자기 인식 정리' 노드의 정확한 패턴과 일치한다. '오늘 말은 많았는데 정작 진짜 생각은 하나도 안 꺼낸 느낌'은 메모를 통해 자기 인식을 정리하는 과정에서 반복되는 오해를 줄이는 자기이해의 반복적 사고 패턴을 보여주며, 이는 노드의 정의와 정확히 일치한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-5633cd4d",
+    "memo_id": "memo-012",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-084",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8499)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-95619e3e",
+    "memo_id": "memo-065",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-95619e3e",
+    "memo_id": "memo-085",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-e6b434c4",
+    "memo_id": "memo-048",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-e6b434c4",
+    "memo_id": "memo-084",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-c7c93e3d",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-c7c93e3d",
+    "memo_id": "memo-004",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-c7c93e3d",
+    "memo_id": "memo-024",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-008",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-038",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-052",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-066",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-072",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-009",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-082",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-083",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-073",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-048",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-084",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-086",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-012",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-031",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-045",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-219cc57a",
+    "memo_id": "memo-087",
+    "reason": "이 memo는 '일정-회고 연결 포인트'라는 기존 노드와 정확히 일치하는 패턴을 보입니다. '일정 끝난 뒤 남긴 한 줄이 의외로 회고의 핵심일 수 있음'이라는 내용은 기존 노드의 '일정이 끝나고 나서 회고를 통해 원래 목표를 되찾는 과정에서 발생하는 애매한 상태'와 정확히 일치합니다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴에 해당하므로, 기존 노드에 직접적으로 연결됩니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-089",
+    "reason": "출근 전에 첫 문장만 적어두는 행동은 작업 시작을 미루는 패턴으로, 기존 노드의 '작업 시작을 미루는 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-031",
+    "reason": "출근 전에 첫 문장만 적어두는 행동은 작업 시작을 미루는 패턴으로, 기존 노드의 '작업 시작을 미루는 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-049",
+    "reason": "출근 전에 첫 문장만 적어두는 행동은 작업 시작을 미루는 패턴으로, 기존 노드의 '작업 시작을 미루는 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-066",
+    "reason": "출근 전에 첫 문장만 적어두는 행동은 작업 시작을 미루는 패턴으로, 기존 노드의 '작업 시작을 미루는 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-034",
+    "reason": "출근 전에 첫 문장만 적어두는 행동은 작업 시작을 미루는 패턴으로, 기존 노드의 '작업 시작을 미루는 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-76fc3734",
+    "memo_id": "memo-008",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-76fc3734",
+    "memo_id": "memo-050",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-76fc3734",
+    "memo_id": "memo-051",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-76fc3734",
+    "memo_id": "memo-060",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-76fc3734",
+    "memo_id": "memo-073",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-004",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-010",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-016",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-041",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-046",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-074",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-079",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-441316ae",
+    "memo_id": "memo-091",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-092",
+    "reason": "이 memo는 기존 node-state-0d67c821의 '감정과 메모의 연관성 강조'와 직접적인 일치를 보인다. '오늘 꽂힌 문장: 결심은 미래형이고 습관은 현재형이다.'는 감정 상태와 메모의 연관성을 강조하며, 회고를 통해 자기이해를 촉진하는 상태로, 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴을 보여준다. 이는 기존 노드의 정의와 정확히 일치하므로, 기존 노드에 첨부한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-074",
+    "reason": "이 memo는 기존 node-state-0d67c821의 '감정과 메모의 연관성 강조'와 직접적인 일치를 보인다. '오늘 꽂힌 문장: 결심은 미래형이고 습관은 현재형이다.'는 감정 상태와 메모의 연관성을 강조하며, 회고를 통해 자기이해를 촉진하는 상태로, 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴을 보여준다. 이는 기존 노드의 정의와 정확히 일치하므로, 기존 노드에 첨부한다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-033",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-043",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-062",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-067",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-081",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-090",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-083",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-020",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-052",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-094",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-41ffceba-2",
+    "memo_id": "memo-054",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-033",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-043",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-062",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-081",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-090",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-083",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-020",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-052",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-3a8d44a0",
+    "memo_id": "memo-094",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-096",
+    "reason": "이 memo는 '쉬는 날에도 할 일에 빠지는 행동'을 보여주며, 기존의 '쉬는 날에도 할 일에 빠짐' 노드와 정확히 일치하는 패턴을 보여서 직접적으로 연결할 수 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-4206b07a",
+    "memo_id": "memo-027",
+    "reason": "이 memo는 '쉬는 날에도 할 일에 빠지는 행동'을 보여주며, 기존의 '쉬는 날에도 할 일에 빠짐' 노드와 정확히 일치하는 패턴을 보여서 직접적으로 연결할 수 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-53421a94",
+    "memo_id": "memo-097",
+    "reason": "메신저 및 소통 지연으로 인한 기억 상실과 유사한 맥락 분할로 인한 일정 방해 패턴에 부합하며, '메신저 몇 개 보고 흐름 끊김'이라는 구체적 사례로 직접적인 일치가 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-0d67c821",
+    "memo_id": "memo-098",
+    "reason": "메모는 감정 이름을 몰라도 메모를 남길 수 있어야 함을 강조하며, 이는 기존 '감정과 메모의 연관성 강조' 노드와 정확히 일치하는 패턴으로, 감정 상태와 메모의 연관성을 강조하는 구체적인 사례로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-pattern-4ba1e0dd",
+    "memo_id": "memo-099",
+    "reason": "이 memo는 '냉장고 정리해야지 해놓고 또 배달부터 시킴'이라는 내용으로, 반복적으로 생활 업무를 미루는 행동 패턴을 보여주며, 이는 node-pattern-4ba1e0dd의 '작업 시작 전 자존감에 대한 우려' 패턴과 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-100",
+    "reason": "이 memo는 '일 피하는 핑계 만들기' 패턴 노드와 유사한 구조를 가짐. '합리적인 이유를 붙이는데 이상하게 스스로도 잘 안 믿긴다'는 문장은 합리적인 핑계를 통해 스스로를 속이는 행동을 보여주며, 이는 기존 패턴 노드에서 유래한 반복적 행동을 반영함. 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-6b360a2f",
+    "memo_id": "memo-100",
+    "reason": "이 memo는 '일 피하는 핑계 만들기' 패턴 노드와 유사한 구조를 가짐. '합리적인 이유를 붙이는데 이상하게 스스로도 잘 안 믿긴다'는 문장은 합리적인 핑계를 통해 스스로를 속이는 행동을 보여주며, 이는 기존 패턴 노드에서 유래한 반복적 행동을 반영함. 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-6b360a2f",
+    "memo_id": "memo-004",
+    "reason": "이 memo는 '일 피하는 핑계 만들기' 패턴 노드와 유사한 구조를 가짐. '합리적인 이유를 붙이는데 이상하게 스스로도 잘 안 믿긴다'는 문장은 합리적인 핑계를 통해 스스로를 속이는 행동을 보여주며, 이는 기존 패턴 노드에서 유래한 반복적 행동을 반영함. 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-6b360a2f",
+    "memo_id": "memo-036",
+    "reason": "이 memo는 '일 피하는 핑계 만들기' 패턴 노드와 유사한 구조를 가짐. '합리적인 이유를 붙이는데 이상하게 스스로도 잘 안 믿긴다'는 문장은 합리적인 핑계를 통해 스스로를 속이는 행동을 보여주며, 이는 기존 패턴 노드에서 유래한 반복적 행동을 반영함. 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-c2e0ac48",
+    "memo_id": "memo-054",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-15T00:38:23Z"
+  }
+]

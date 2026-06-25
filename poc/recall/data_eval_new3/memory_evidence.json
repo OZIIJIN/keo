@@ -1,0 +1,466 @@
+[
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-006",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-004",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-001",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-009",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴의 구체적 사례로, 회피를 위한 변명으로서의 바쁨을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-013",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴에 해당하며, 계획 세우는 척하면서 실제 시작을 미루는 행동을 반복하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-021",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-005",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-002",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-010",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-017",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-022",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴에 직접적인 사례로, 구조부터 만지고 있음이 명확히 드러남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-023",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-025",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-026",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 제시하며, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨. '아이디어, 계획, 회피 기록'을 포함하는 쪽으로 설계되어야 한다는 주장은 node-pattern-b8738beb의 'KEO 온보딩은 감정 일기 앱처럼 보이면 안 되고, 아이디어, 계획, 회피 기록을 포함하는 쪽으로 설계되어야 한다'와 직접적인 일치를 보임.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-028",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-032",
+    "reason": "이 메모는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-033",
+    "reason": "다수의 메모에서 피로와 관련된 증상이 반복적으로 나타나고, 판단력 저하와 무의식적 행동이 공통적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-020",
+    "reason": "다수의 메모에서 피로와 관련된 증상이 반복적으로 나타나고, 판단력 저하와 무의식적 행동이 공통적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-012",
+    "reason": "다수의 메모에서 피로와 관련된 증상이 반복적으로 나타나고, 판단력 저하와 무의식적 행동이 공통적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-024",
+    "reason": "다수의 메모에서 피로와 관련된 증상이 반복적으로 나타나고, 판단력 저하와 무의식적 행동이 공통적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-027",
+    "reason": "다수의 메모에서 피로와 관련된 증상이 반복적으로 나타나고, 판단력 저하와 무의식적 행동이 공통적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-029",
+    "reason": "다수의 메모에서 피로와 관련된 증상이 반복적으로 나타나고, 판단력 저하와 무의식적 행동이 공통적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-034",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴에 해당합니다. '문서 초안 1개만'이라는 구체적인 행동은 과거의 회피 패턴과 유사하며, '조사 더 하지 말고 일단 목차부터'는 시작을 미루는 전형적인 전략입니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-036",
+    "reason": "이 memo는 회피를 위한 그럴듯한 이유를 붙이는 행동을 보여주며, node-pattern-ab0185f2의 '목표 분할로 시작 미루기' 패턴과 직접적인 일치를 보입니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-037",
+    "reason": "이 memo는 피로와 관련된 판단력 저하와 무의식적 행동을 나타내며, 기존 node-state-453c66a1의 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-018",
+    "reason": "이 memo는 피로와 관련된 판단력 저하와 무의식적 행동을 나타내며, 기존 node-state-453c66a1의 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-039",
+    "reason": "이 memo는 일정 기준으로 전후 메모를 연결하는 방향으로, 기존 node-pattern-b8738beb의 'KEO 온보딩에서 감정 일기 대신 아이디어 및 회피 기록 중심으로'와 직접적인 일치를 보인다. 이전 메모들은 일정과 회고를 연결하는 방향으로 작성되었으며, 현재 memo도 이 패턴을 따르고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-041",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 반복적으로 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-043",
+    "reason": "이 메모는 피로가 판단과 실행에 영향을 미치는 현상을 보여주며, 이미 존재하는 '결정력 저하 상태' 노드와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-046",
+    "reason": "이 memo는 기존의 회피 패턴과 자기 이해 제품 태그와 연결된 구조를 가짐. 비슷한 결정 실수끼리 묶는 방향은 기존 노드의 패턴과 일치하며, 사용자에게 반복되는 실수를 인식할 수 있도록 유도하는 데 기여함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-049",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴과 정확히 일치하며, '목차만 잡기'라는 구체적인 행동은 기존 노드의 패턴에 해당하므로 기존 노드에 첨부합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-051",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향과 관련된 기존 패턴 인식과 연결되며, 미뤄진 일과 자존감에 대한 언급은 기존 노드의 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-053",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴에 해당합니다. '문서 열기 싫어서 폴더 이름 고침'은 실제 작업을 미루고, 대신에 작은 작업으로 시작하려는 행동으로, 이는 memo-034와 memo-049에서 보이는 '목표 분할로 시작 미루기' 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-054",
+    "reason": "이 memo는 피로와 관련된 판단력 저하 상태를 반복적으로 나타내며, 'decision_fog' 태그와 공유하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-059",
+    "reason": "이 메모는 KEO 온보딩의 설계 방향을 반복적으로 제시하며, 사용자가 현재 상태를 반영하는 메모를 작성할 수 있도록 유도하는 데 기여함. 이는 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-060",
+    "reason": "이 메모는 과거의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-061",
+    "reason": "피로가 판단력에 영향을 미쳐 무의식적인 행동이 나타나는 현상이 공유됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-062",
+    "reason": "이 memo는 '어제 늦게 자서 오늘 판단이 전반적으로 탁했다'는 내용으로, 피로가 판단에 영향을 미치는 fatigue_spillover와 판단이 흐려지는 decision_fog 태그가 포함되어 있음. 이는 node-state-453c66a1의 요약과 태그에 정확히 일치하며, 이전 메모에서 유사한 증상이 반복적으로 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-065",
+    "reason": "비 오는 날엔 시작 버튼 누르기 어려운 경험은 기존의 '목표 분할로 시작 미루기' 패턴과 유사함. 비 오는 날이라는 외부 요인으로 인한 시작 미루기는 기존의 회피 패턴과 동일한 메커니즘을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-067",
+    "reason": "이 memo는 피로가 판단에 영향을 미치는 현상을 보여주며, 이는 node-state-453c66a1의 요약과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-069",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴과 일치하며, 메모-049와 메모-013과 같은 방식으로 목표를 세우는 척하면서 실제 시작을 미루는 행동을 보여줍니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-073",
+    "reason": "이 메모는 피로와 관련된 판단력 저하 및 무의식적 행동을 보여주며, 기존 노드의 요약과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-074",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 반복 패턴으로 제시하며, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-076",
+    "reason": "쉬는 날에 할 일 생각이 드는 현상이 기존 회피 패턴과 유사함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-040",
+    "reason": "쉬는 날에 할 일 생각이 드는 현상이 기존 회피 패턴과 유사함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-056",
+    "reason": "쉬는 날에 할 일 생각이 드는 현상이 기존 회피 패턴과 유사함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-012",
+    "reason": "쉬는 날에 할 일 생각이 드는 현상이 기존 회피 패턴과 유사함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-027",
+    "reason": "쉬는 날에 할 일 생각이 드는 현상이 기존 회피 패턴과 유사함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-079",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-081",
+    "reason": "이 메모는 피로가 판단력에 미치는 영향을 보여주는 구체적인 사례로, 기존 노드의 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-087",
+    "reason": "이 memo는 일정 끝난 후 회고를 유도하는 메모로, 기존 node-pattern-b8738beb의 'KEO 온보딩에서 감정 일기 대신 아이디어 및 회피 기록 중심으로'와 직접적인 일치를 보입니다. 이전 메모들은 일정과 회고의 연결을 강조하며, 이 memo도 같은 맥락에서 일정이 회고 트리거가 되는 패턴을 반복하고 있습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-088",
+    "reason": "이 memo는 회피를 위한 포장과 시작 미루기 패턴에 해당하며, memo-004와 memo-001의 유사한 맥락과 태그 오버랩이 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-089",
+    "reason": "이 memo는 '목표 분할로 시작 미루기' 패턴의 구체적 사례로, 목표를 세우려는 척하면서 실제 시작을 미루는 행동을 보여줍니다. 이는 기존 노드의 근거와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-090",
+    "reason": "이 memo는 피로로 인한 판단력 저하와 무의식적 행동을 보여주며, 이는 node-state-453c66a1의 요약과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-093",
+    "reason": "이 memo는 목표 분할로 시작 미루는 행동을 보여주며, 이는 node-pattern-ab0185f2의 '목표 분할로 시작 미루기' 패턴과 정확히 일치함. 메모-006의 계획 세우는 척하면서 시작 미루기, 메모-004의 회피 포장, 메모-001의 반응형 작업 패턴이 근거로 사용됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-453c66a1",
+    "memo_id": "memo-094",
+    "reason": "이 memo는 피로와 관련된 판단력 저하와 무의식적 행동을 나타내며, node-state-453c66a1의 요약과 직접적으로 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-pattern-b8738beb",
+    "memo_id": "memo-098",
+    "reason": "이 memo는 KEO 온보딩의 설계 방향을 명확히 제시하며, 이전의 회피 패턴과 유사한 구조를 가짐. 사용자가 아이디어와 회피 기록을 기록할 수 있도록 유도하는 방향으로, 기존의 패턴 인식과 자기 이해 제품 태그와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-pattern-ab0185f2",
+    "memo_id": "memo-100",
+    "reason": "이 memo는 스스로를 그럴듯하게 속이는 느낌(self_deception)과 회피를 준비하는 행동(avoidance_rationalization)을 보여주며, 이는 기존 노드 '목표 분할로 시작 미루기'의 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  }
+]
