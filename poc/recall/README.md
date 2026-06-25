@@ -158,7 +158,7 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 
 즉 이번 audit의 핵심은 `같은 표현군만 정답으로 인정하던 좁은 정답셋`을 `같은 패턴 역할 메모`까지 포함하도록 넓힌 것이다.
 
-## 구현 원칙
+예:
 
 - 가장 작은 동작 가능한 실험 구조 유지
 - retrieval 품질과 generation 품질을 분리해서 보기
@@ -166,7 +166,7 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 - 실험 결과를 사람이 읽기 쉽게 출력
 - eval dataset을 계속 보정 가능한 구조로 유지
 
-## 현재 코드 상태
+이 tag를 `node-start-avoidance` 같은 node로 만들지 않는다.
 
 현재 [main.py](/Users/vonai/Desktop/keo/poc/recall/main.py)는 아래를 지원한다.
 
@@ -212,7 +212,64 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 - memory_node: 여러 메모가 쌓여 드러난 반복 패턴, 상태, 질문 카드
 - memory_evidence: memory_node를 뒷받침하는 실제 메모 연결
 
-## 실행 방법
+각 요소의 역할은 아래처럼 본다.
+
+| 요소 | 역할 |
+| --- | --- |
+| dense retrieval | 관련 과거 메모를 찾는 evidence finder |
+| relation tag | memory node 후보를 좁히는 routing signal |
+| LLM | top-k reranker가 아니라 node 연결 판단과 node 생성 판단을 맡는 memory maintainer |
+| memory_node | 여러 메모가 쌓여 드러난 반복 패턴, 상태, 질문, 제품 통찰 카드 |
+| memory_evidence | memory_node를 뒷받침하는 실제 메모 연결 |
+| memory_links | 반복적으로 함께 나타난 memory_node 간 관계 |
+
+---
+
+## Memory Graph MVP가 하는 것
+
+현재 MVP는 아래까지만 한다.
+
+- 새 메모를 `data/memos.json`에 저장
+- relation tag를 `data/memo_annotations.json`에 저장
+- dense retrieval로 비슷한 과거 메모를 찾기
+- 이미 쌓인 semantic node를 후보로 계산
+- LLM이 `attach / create / attach_and_create / ignore` 판단
+- 선택된 semantic node의 `memory_evidence` 갱신
+- node `evidence_count`, `confidence`, `last_seen_at` 갱신
+- 충분히 쌓인 evidence를 바탕으로 `memory_links` 후보 생성
+
+아직 하지 않는 것:
+
+- LLM이 node merge/split을 자동으로 확정
+- LLM이 모든 node link relation을 최종 판정
+- 앱 backend API 연결
+- DB 트랜잭션/동시성 제어
+
+---
+
+## Memory Graph 저장 파일
+
+기본 ingest 결과는 `data/`에 저장된다.
+
+```text
+data/
+├── memos.json
+├── memo_annotations.json
+├── memory_nodes.json
+├── memory_evidence.json
+└── memory_links.json
+```
+
+eval dataset 기반 graph 생성 결과는 `data_eval/`에 저장하는 것을 권장한다.
+
+```text
+data_eval/
+├── memos.json
+├── memo_annotations.json
+├── memory_nodes.json
+├── memory_evidence.json
+└── memory_links.json
+```
 
 전제
 - Ollama가 실행 중이어야 한다
@@ -221,7 +278,6 @@ KEO에서는 아래처럼 서로 다른 표면 타입도 같은 역할이면 연
 기본 text-only 검색
 
 ```bash
-cd poc/recall
 ollama pull qwen3-embedding
 python3 main.py \
   --memo "회의와 알림에 계속 끌려다녀서 중요한 작업을 제대로 못 했다." \
@@ -260,7 +316,11 @@ python3 main.py \
   --tagging-mode llm
 ```
 
-eval 전체 실행
+---
+
+## 1. Retrieval baseline 실행
+
+### text-only 검색
 
 ```bash
 python3 main.py \
@@ -318,7 +378,7 @@ python3 main.py \
   --summary-only
 ```
 
-summary만 보기
+### relation-only 검색
 
 ```bash
 python3 main.py \

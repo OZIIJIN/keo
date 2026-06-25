@@ -1,0 +1,874 @@
+[
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-004",
+    "reason": "기존 메모에서 피하는 행동과 패턴 인식이 언급되어 있어, 새로운 패턴 노드를 생성하고 기존 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-001",
+    "reason": "기존 메모에서 피하는 행동과 패턴 인식이 언급되어 있어, 새로운 패턴 노드를 생성하고 기존 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-003",
+    "reason": "기존 메모에서 피하는 행동과 패턴 인식이 언급되어 있어, 새로운 패턴 노드를 생성하고 기존 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-006",
+    "reason": "새로운 메모는 기존 패턴 노드에 대한 추가 증거로, 작업 시작을 미루는 행동이 반복되고 있음을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-008",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-001",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-004",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-009",
+    "reason": "이 memo는 기존 node-pattern-ec2d9a64의 '일 피하는 패턴'과 유사한 구조를 가짐. '바쁨'은 '일 피하는 패턴'에서의 '운동을 하기 싫어서 일로 핑계'와 동일한 유형의 회피 동기로, 중요한 결정을 미루는 행동이 반복되고 있음. 이는 상태의 지속적인 반복 사례로, 새로운 상태 노드를 생성하고 기존 패턴 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-010",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8206로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-011",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-012",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-001",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-004",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-008",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-014",
+    "reason": "기존 노드에서 회피 행동과 패턴 인식이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-015",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-016",
+    "reason": "기존 메모에서 메신저로 인한 맥락 분할이 언급되어 있어, 기존 상태 노드에 연결하고 새로운 상태 노드를 생성함. 기존 semantic node와 유사도 0.8256로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-012",
+    "reason": "기존 메모에서 메신저로 인한 맥락 분할이 언급되어 있어, 기존 상태 노드에 연결하고 새로운 상태 노드를 생성함. 기존 semantic node와 유사도 0.8256로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 일정 끝난 후 애매한 상태와 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-010",
+    "reason": "기존 메모에서 일정 끝난 후 애매한 상태와 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 일정 끝난 후 애매한 상태와 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함. 기존 semantic node와 유사도 0.8357로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-019",
+    "reason": "기존 패턴 노드에 메모의 자기이해 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-019",
+    "reason": "기존 패턴 노드에 메모의 자기이해 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-003",
+    "reason": "기존 패턴 노드에 메모의 자기이해 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-009",
+    "reason": "기존 패턴 노드에 메모의 자기이해 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-010",
+    "reason": "기존 패턴 노드에 메모의 자기이해 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-021",
+    "reason": "기존 패턴 노드 '일을 피하는 패턴'과 자기이해 관련 상태 노드에 메모의 자기이해 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-002",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-001",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-023",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-024",
+    "reason": "이 memo는 '유튜브만 보다 끝'이라는 구체적인 상황과 '쉬었는데도 회복이 잘 안 됨'이라는 상태를 반복적으로 보여주므로 기존 노드에 직접적으로 연결된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-025",
+    "reason": "이 memo는 일정 종료 후 메모 정리 필요 노드와 직접적으로 관련이 있으며, 사용자 메모 톤이 모범답안이 아닌 점, 중간에 끊긴 문장과 애매한 표현이 살아 있어야 함을 강조하는 것으로, 기존 노드의 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-026",
+    "reason": "기존 노드 '일정 종료 후 메모 정리 필요'는 메모 정리에 초점을 맞추고 있지만, 현재 메모는 데이터 재구성에 대한 인식을 반복적으로 보여준다. 이는 새로운 상태 노드를 생성하고 기존 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-028",
+    "reason": "이 메모는 감정 기록이 의사결정 로그로 전환되는 과정을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 기존의 자기이해 패턴 노드에 메모의 감정 기록 전환 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-028",
+    "reason": "이 메모는 감정 기록이 의사결정 로그로 전환되는 과정을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 기존의 자기이해 패턴 노드에 메모의 감정 기록 전환 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-003",
+    "reason": "이 메모는 감정 기록이 의사결정 로그로 전환되는 과정을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 기존의 자기이해 패턴 노드에 메모의 감정 기록 전환 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-019",
+    "reason": "이 메모는 감정 기록이 의사결정 로그로 전환되는 과정을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 기존의 자기이해 패턴 노드에 메모의 감정 기록 전환 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-009",
+    "reason": "이 메모는 감정 기록이 의사결정 로그로 전환되는 과정을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 기존의 자기이해 패턴 노드에 메모의 감정 기록 전환 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-029",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-001",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-008",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-012",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-030",
+    "reason": "이 메모는 피하는 행동의 동기 분석을 위한 새로운 상태 노드를 생성하고, 기존의 자기이해 패턴 노드에 연결함. 피하는 행동의 동기 분석은 기존 노드의 맥락 분할과 유사하며, 평가받을까봐 피하는 동기와 의사결정 추적을 포함하므로 새로운 노드 생성이 필요함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-031",
+    "reason": "메신저 처리로 인한 주요 작업 맥락 분할이 기존 노드에 기반한 반복적 패턴으로, 새로운 상태 노드 생성 필요.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-031",
+    "reason": "메신저 처리로 인한 주요 작업 맥락 분할이 기존 노드에 기반한 반복적 패턴으로, 새로운 상태 노드 생성 필요.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-032",
+    "reason": "이 메모는 일정 종료 후 메모 정리의 반복적 패턴을 직접적으로 보여주며, 기존 노드의 정리된 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-013",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-006",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-034",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-035",
+    "reason": "이 메모는 기존 패턴 노드 '일을 피하는 패턴'과 유사한 행동 패턴을 보여주며, 'safe_task_selection' 태그와 'pattern_recognition' 태그를 공유하고 있어 기존 노드에 연결하고 새로운 패턴 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-036",
+    "reason": "새로운 메모는 '자기 자신을 속이는 전략'에 대한 질문 형태로, 기존의 '일 피하는 패턴'과 '책 메모에서의 자기이해 패턴' 노드에 연결되어 있으며, 이 메모는 자기이해를 위한 반복적 사고 패턴을 반영하고 있어 새로운 질문 노드를 생성해야 한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-038",
+    "reason": "기존 노드 '회의 후 기억 상실'에서 일정이 하루를 먹는 느낌이 언급되었고, 현재 메모는 생활 일정(치과 방문) 후 하루 흐름 중단을 경험함. 이는 일정 중단이 맥락 분할로 이어져 기억 상실을 유발하는 반복적 패턴으로, 기존 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-040",
+    "reason": "이 memo는 쉬는 시간을 자꾸 빚처럼 느낌이라는 구체적인 표현이 기존 노드의 '유튜브 끝나고 애매한 상태'와 '회의 후 기억 상실'에 정확히 부합하므로, 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-041",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-041",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-043",
+    "reason": "이 메모는 피로가 판단과 실행에 영향을 미치는 구체적인 사례로, 기존 '책 메모에서의 자기이해 패턴' 노드에 'fatigue_spillover' 태그가 매칭되어 있어 연결 가능. 새로운 '피로로 인한 결정력 저하' 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-045",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-046",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-046",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-046",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8990로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-048",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 사람과의 만남으로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-008",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 사람과의 만남으로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-038",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 사람과의 만남으로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-049",
+    "reason": "이 memo는 '작업 시작을 미루는 상태' 노드의 정확한 패턴을 반복하고 있으므로, 기존 노드에 첨부합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-051",
+    "reason": "이 메모는 미루는 일과 자존감의 관계를 직접적으로 설명하며, 기존의 감정 기록 전환 패턴과 자기이해 패턴 노드에 연결될 수 있는 구체적인 사례로, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-051",
+    "reason": "이 메모는 미루는 일과 자존감의 관계를 직접적으로 설명하며, 기존의 감정 기록 전환 패턴과 자기이해 패턴 노드에 연결될 수 있는 구체적인 사례로, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-052",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 사람과의 만남으로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-053",
+    "reason": "이 memo는 작업 시작을 미루는 행동을 반복하고 있음을 보여주는 '작업 시작을 미루는 상태' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-054",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9625로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-055",
+    "reason": "기존 메모에서 사람과의 만남으로 인한 애매한 상태가 언급되어 있어, 이 메모는 그 패턴에 직접적인 사례로 포함될 수 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-056",
+    "reason": "이 memo는 '유튜브 끝나고 애매한 상태'와 매우 유사하며, 쉬는 날에도 뭔가 해야 할 것 같은 느낌이 드는 점이 일치합니다. 이는 기존 노드의 정확한 패턴에 해당하므로 직접적인 사례로 분류됩니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-058",
+    "reason": "기존 노드 '회의 후 기억 상실'은 일정 변경으로 인한 맥락 분할과 유사한 메커니즘을 가짐. 외부 우선순위(엄마 병원)가 원래 일정을 방해함. 새로운 노드는 일정 변경 후의 상태를 정확히 반영하며, 기존 노드와의 유사성과 차이를 고려해 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-059",
+    "reason": "메모는 일정 종료 후 메모 정리의 필요성을 언급하며, 이는 기존 노드 '일정 종료 후 메모 정리 필요'와 직접적으로 연결되며, 자기이해 패턴을 반복적으로 인식하는 데 기여함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-059",
+    "reason": "메모는 일정 종료 후 메모 정리의 필요성을 언급하며, 이는 기존 노드 '일정 종료 후 메모 정리 필요'와 직접적으로 연결되며, 자기이해 패턴을 반복적으로 인식하는 데 기여함. 기존 semantic node와 유사도 0.8697로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-061",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 사람과의 만남으로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-065",
+    "reason": "비 오는 날엔 시작 버튼 누르기가 어려운 경험은 메신저로 인한 맥락 분할과 유사한 '작업 시작을 미루는 상태'로 분류된다. 메신저 처리로 인한 흐려짐과 비 오는 날의 시작 어려움은 동일한 'start_avoidance' 태그를 공유하며, 시작을 미루는 행동 패턴을 반복적으로 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-001",
+    "reason": "비 오는 날엔 시작 버튼 누르기가 어려운 경험은 메신저로 인한 맥락 분할과 유사한 '작업 시작을 미루는 상태'로 분류된다. 메신저 처리로 인한 흐려짐과 비 오는 날의 시작 어려움은 동일한 'start_avoidance' 태그를 공유하며, 시작을 미루는 행동 패턴을 반복적으로 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-066",
+    "reason": "메신저 처리로 인한 주요 작업 맥락 분할이 기존 노드에 기반한 반복적 패턴으로, 새로운 상태 노드 생성 필요.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-066",
+    "reason": "메신저 처리로 인한 주요 작업 맥락 분할이 기존 노드에 기반한 반복적 패턴으로, 새로운 상태 노드 생성 필요.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-067",
+    "reason": "이 메모는 감정 기록이 의사결정 로그로 전환되는 과정을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 기존의 자기이해 패턴 노드에 메모의 감정 기록 전환 패턴을 연결하고, 새로운 상태 노드를 생성하여 반복적 사고 패턴을 기록함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-068",
+    "reason": "메신저로 인한 맥락 분할이 원인으로, 기존 노드의 정의와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-069",
+    "reason": "이 memo는 '작업 시작을 미루는 상태' 노드의 정확한 패턴과 일치합니다. '오늘 저녁 30분만 써보기. 잘하려고 하지 말 것.'은 시작을 미루는 행동의 구체적인 사례로, 이 노드의 정의와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-074",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-074",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-075",
+    "reason": "기존 메모에서 사람과의 만남 이후 애매한 상태가 언급되어 있어, 이 메모의 '편의점 냉장고 앞에서 한참 멍한 순간'은 사람과의 만남 후의 맥락 분할로 인한 상태로 판단되며, 기존 노드에 직접적으로 연결된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-66a7b3ec",
+    "memo_id": "memo-077",
+    "reason": "기존 메모에서 유튜브 끝나고 애매한 상태가 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-126f65cf",
+    "memo_id": "memo-079",
+    "reason": "메모는 반복되는 하루의 구조적 패턴을 드러내며, 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다. 기존 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-079",
+    "reason": "메모는 반복되는 하루의 구조적 패턴을 드러내며, 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다. 기존 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-080",
+    "reason": "기존 메모에서 회의 후 기억 상실과 메신저로 인한 맥락 분할이 언급되어 있어, 기존 패턴 노드에 연결하고 새로운 상태 노드를 생성함. 기존 semantic node와 유사도 0.8724로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-082",
+    "reason": "집안 일 처리 후 애매한 상태는 기존의 '사람들 만나고 나면 애매한 상태'와 유사한 맥락 분할로 인한 상태로, 일정 종료 후의 맥락 분할이 반복되는 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-083",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-085",
+    "reason": "습한 날은 생각도 같이 눅눅해지는 느낌. 이는 사람들과의 만남 이후의 애매한 상태와 유사한 맥락 분할로 인한 저에너지 드리프트 상태로 판단된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-086",
+    "reason": "메신저로 인한 맥락 분할과 유사한 상황으로, 일정 중단 후 메신저 사용으로 인한 집중력 상실이 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-087",
+    "reason": "이 memo는 일정 종료 후 메모 정리의 반복 패턴에 정확히 부합하며, '일정 끝난 뒤 남긴 한 줄이 의외로 회고의 핵심일 수 있음'이라는 내용은 기존 노드의 요약과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-088",
+    "reason": "메모는 불편한 감각을 피하기 위해 일로 핑계를 댄 행동을 기록하고 있으며, 이는 기존의 '일을 피하는 패턴' 노드와 유사한 구조를 가진다. 또한, 메신저나 메일 처리로 인한 맥락 분할이 원인으로 보여, '메신저로 인한 맥락 분할' 상태 노드와도 연결된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-fbdf8d69",
+    "memo_id": "memo-089",
+    "reason": "이 memo는 작업 시작을 미루는 상태에 해당하며, '출근 전에 첫 문장만 적어두기'라는 행동은 기존의 '작업 시작을 미루는 상태' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-090",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9655로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-2a941aea",
+    "memo_id": "memo-092",
+    "reason": "문장은 자기이해 패턴과 감정 기록 전환 상태에 해당하는 기존 노드와도 관련이 있지만, 결심과 습관의 태도 차이에 대한 구체적인 인식을 보여주므로 새로운 상태 노드를 생성하고 기존 decision_trace 노드에 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-093",
+    "reason": "메신저 처리로 인한 맥락 분할이 작업 시작 지연을 유발하는 반복적 패턴으로, 기존 회의 후 기억 상실 노드와 연결하여 새로운 상태 노드 생성. 기존 semantic node와 유사도 0.9030로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-094",
+    "reason": "메신저로 인한 맥락 분할이 기존 노드에 언급되어 있어, 정확한 패턴에 맞는 직접적인 사례로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-001",
+    "reason": "메신저로 인한 맥락 분할이 기존 노드에 언급되어 있어, 정확한 패턴에 맞는 직접적인 사례로 판단됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-b505b0f3",
+    "memo_id": "memo-095",
+    "reason": "이 메모는 생활 일정 처리 지연(공과금 확인 못 함)이 감정 저하(기분이 탁해짐)로 이어지는 구체적 사례로, 기존 '사람들 만나고 나면 애매한 상태' 노드의 감정 변화 패턴과 일치하며, 생활 일정 관련 태그가 추가로 존재하므로 새로운 노드 생성이 필요함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-596c706d",
+    "memo_id": "memo-096",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 쉬는 날에도 작은 할 일이 생겨 애매한 상태가 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-596c706d",
+    "memo_id": "memo-027",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 쉬는 날에도 작은 할 일이 생겨 애매한 상태가 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-596c706d",
+    "memo_id": "memo-056",
+    "reason": "기존 메모에서 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 쉬는 날에도 작은 할 일이 생겨 애매한 상태가 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-17363afd",
+    "memo_id": "memo-097",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-c6513bdc",
+    "memo_id": "memo-097",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-e1f0082e",
+    "memo_id": "memo-098",
+    "reason": "이 메모는 '일정 종료 후 메모 정리 필요' 노드의 '회의 전 기대, 끝나고 지침 같은 거' 패턴과 유사하게, 메모의 존재 이유와 해석의 유연성을 강조하고 있다. 또한, 자기이해 제품 태그와의 일치로 새로운 상태 노드를 생성하는 것이 적절하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-pattern-ec2d9a64",
+    "memo_id": "memo-100",
+    "reason": "이 memo는 자기 자신을 속이려는 합리적인 이유를 붙이는 행동을 반복하고 있으며, 이는 기존의 '일을 피하는 패턴' 노드와 유사한 구조를 가진다. 하지만 이는 상태를 반영하는 새로운 노드를 생성해야 하므로, 기존 노드에 연결하고 새로운 상태 노드를 생성한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  }
+]

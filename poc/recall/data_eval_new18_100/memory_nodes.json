@@ -1,0 +1,660 @@
+{
+  "node-state-2c398fa2": {
+    "id": "node-state-2c398fa2",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "메신저 확인 후 오전 흐름이 끊기는 패턴",
+    "summary": "메신저 확인 행동이 오전 일정의 흐름을 끊는 반복적 패턴으로, 이로 인해 자잘한 대응만 발생함",
+    "pattern_structure": {
+      "trigger": "메신저 확인 행동",
+      "response": "오전 일정의 흐름이 끊김",
+      "outcome": "자잘한 대응만 발생함"
+    },
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "pending_evidence_ids": [
+      "memo-001",
+      "memo-044"
+    ],
+    "identity_key": "state|context_fragmentation,reactive_work|메신저 확인 후 오전 흐름이 끊기는 패턴|memo-001",
+    "evidence_count": 0,
+    "confidence": 0.9,
+    "last_seen_at": null,
+    "created_at": "2026-04-07",
+    "updated_at": "2026-04-23"
+  },
+  "node-state-06f2cbda": {
+    "id": "node-state-06f2cbda",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일을 피하려는 핑계로 운동을 포기하는 상태",
+    "summary": "운동을 하기 싫어하는 감정을 일의 핑계로 변명하고, 실제로는 일도 못하는 상태로 이어짐",
+    "pattern_structure": {
+      "trigger": "운동을 하기 싫은 감정",
+      "response": "일을 하기 위한 핑계로 변명",
+      "outcome": "일도 별로 못 하며 운동을 포기한 상태"
+    },
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-004"
+    ],
+    "identity_key": "state|avoidance_rationalization,pattern_recognition|일을 피하려는 핑계로 운동을 포기하는 상태|memo-004",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-state-843dd54d": {
+    "id": "node-state-843dd54d",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "목표 설정 후 카테고리 분할로 시작 미룸",
+    "summary": "목표를 세우려는 순간 카테고리 분할로 시작을 미룸. 계획 세우는 척하면서 실제 행동을 미루는 패턴.",
+    "pattern_structure": {
+      "trigger": "목표 설정 시",
+      "response": "카테고리 분할로 계획 세우기",
+      "outcome": "실제 시작 지연"
+    },
+    "relation_tags": [
+      "avoidance_rationalization",
+      "overplanning",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-006"
+    ],
+    "identity_key": "state|avoidance_rationalization,overplanning,start_avoidance|목표 설정 후 카테고리 분할로 시작 미룸|memo-006",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-state-d9bc5d9e": {
+    "id": "node-state-d9bc5d9e",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "회의 후 원래 목표를 잊어버리는 상태",
+    "summary": "회의 후 원래 목표를 잊는 현상이 반복적으로 발생함. 일정이 하루 흐름을 방해함.",
+    "pattern_structure": {
+      "trigger": "회의 두 개 진행",
+      "response": "회의 후 목표를 잊음",
+      "outcome": "일정이 하루 흐름을 방해함"
+    },
+    "relation_tags": [
+      "context_fragmentation",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-008",
+      "memo-015"
+    ],
+    "identity_key": "state|context_fragmentation,schedule_disruption|회의 후 원래 목표를 잊어버리는 상태|memo-008",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-09",
+    "updated_at": "2026-04-11"
+  },
+  "node-state-47f85bfe": {
+    "id": "node-state-47f85bfe",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "개인 일정으로 인한 일 루틴 방해",
+    "summary": "개인 일정이 일 루틴을 완전히 방해하는 상황이 반복적으로 발생함. 일정이 하루 흐름을 완전히 끊는 결과를 초래함.",
+    "pattern_structure": {
+      "trigger": "개인 일정의 갑작스러운 변화",
+      "response": "일 루틴을 챙기기 위한 조정",
+      "outcome": "일 루틴이 완전히 방해받고 일정이 하루 흐름을 끊음"
+    },
+    "relation_tags": [
+      "event_aftereffect",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-011"
+    ],
+    "identity_key": "state|event_aftereffect,schedule_disruption|개인 일정으로 인한 일 루틴 방해|memo-011",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-10",
+    "updated_at": "2026-04-10"
+  },
+  "node-state-40d8320b": {
+    "id": "node-state-40d8320b",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "유튜브 끝나고 애매한 상태",
+    "summary": "유튜브를 보다 끝나고 나서 일도 쉬지도 않아서 애매한 상태가 반복되고 있음",
+    "pattern_structure": {
+      "trigger": "유튜브 시청 종료",
+      "response": "일도 쉬지도 않음",
+      "outcome": "애매한 상태 지속"
+    },
+    "relation_tags": [
+      "low_energy_drift",
+      "recovery_failure"
+    ],
+    "pending_evidence_ids": [
+      "memo-012",
+      "memo-020"
+    ],
+    "identity_key": "state|low_energy_drift,recovery_failure|유튜브 끝나고 애매한 상태|memo-012",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-10",
+    "updated_at": "2026-04-13"
+  },
+  "node-state-710b62a9": {
+    "id": "node-state-710b62a9",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "짧게 메모하려는 충동",
+    "summary": "메신저 확인 후 오전 흐름이 끊기는 패턴에 따라, 메모 작성 시 길게 정리하려는 의도가 있으면서도 짧게 남기려는 충동이 발생함",
+    "pattern_structure": {
+      "trigger": "메신저 확인 후 오전 흐름이 끊김",
+      "response": "메모 작성 시 길게 정리하려는 의도",
+      "outcome": "짧게 메모하려는 충동 발생"
+    },
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-013",
+      "memo-001"
+    ],
+    "identity_key": "state|start_avoidance|짧게 메모하려는 충동|memo-001,memo-013",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-11",
+    "updated_at": "2026-04-11"
+  },
+  "node-state-868e3b31": {
+    "id": "node-state-868e3b31",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "친구 답장 미루는 상태",
+    "summary": "친구의 메시지에 답장을 미루는 행동이 반복적으로 발생하며, 이로 인해 쌓이는 미루는 행동이 심리적으로 부담스러워지는 상태",
+    "pattern_structure": {
+      "trigger": "친구의 메시지 수신",
+      "response": "답장을 미루는 행동",
+      "outcome": "미루는 행동이 쌓이며 심리적 부담 증가"
+    },
+    "relation_tags": [
+      "social_response_delay",
+      "unfinished_loop"
+    ],
+    "pending_evidence_ids": [
+      "memo-016"
+    ],
+    "identity_key": "state|social_response_delay,unfinished_loop|친구 답장 미루는 상태|memo-016",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-12",
+    "updated_at": "2026-04-12"
+  },
+  "node-state-d9cbf622": {
+    "id": "node-state-d9cbf622",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "할 일 정리 시 우선순위 혼란",
+    "summary": "할 일 목록을 작성할 때 급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 머리가 복잡해지는 상태",
+    "pattern_structure": {
+      "trigger": "할 일 정리 시도",
+      "response": "급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 머리 복잡",
+      "outcome": "할 일 정리가 제대로 이루어지지 않음"
+    },
+    "relation_tags": [
+      "decision_fog",
+      "priority_confusion"
+    ],
+    "pending_evidence_ids": [
+      "memo-018"
+    ],
+    "identity_key": "state|decision_fog,priority_confusion|할 일 정리 시 우선순위 혼란|memo-018",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-12",
+    "updated_at": "2026-04-12"
+  },
+  "node-state-d31f030c": {
+    "id": "node-state-d31f030c",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "안전한 일만 고르는 중",
+    "summary": "초안 작성 시 구조 수정에 집중하며 중요한 작업 대신 안전한 일을 선택하는 경향",
+    "pattern_structure": {
+      "trigger": "초안 작성 의도",
+      "response": "구조 수정에 집중",
+      "outcome": "중요한 작업 대신 안전한 일 선택"
+    },
+    "relation_tags": [
+      "overplanning",
+      "safe_task_selection",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-022",
+      "memo-006"
+    ],
+    "identity_key": "state|overplanning,safe_task_selection,start_avoidance|안전한 일만 고르는 중|memo-006,memo-022",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-14",
+    "updated_at": "2026-04-14"
+  },
+  "node-state-3042f514": {
+    "id": "node-state-3042f514",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 일정 방해 상태",
+    "summary": "낮에 피로가 심해지면 일정을 이행하지 못하고 자책하지 않고 쉬는 것이 적절한 상태",
+    "pattern_structure": {
+      "trigger": "낮에 심한 피로",
+      "response": "일정 이행 포기 및 자책 감소",
+      "outcome": "쉬는 것이 적절하다는 인식"
+    },
+    "relation_tags": [
+      "fatigue_spillover",
+      "recovery_failure"
+    ],
+    "representative_evidence_ids": [
+      "memo-012",
+      "memo-020",
+      "memo-024"
+    ],
+    "identity_key": "state|fatigue_spillover,recovery_failure|피로로 인한 일정 방해 상태|memo-012,memo-020,memo-024",
+    "evidence_count": 10,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-02",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-6863b237": {
+    "id": "node-state-6863b237",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "회고 질문 피하는 상태",
+    "summary": "회고 질문을 피하는 행동이 반복적으로 나타나며, 이는 평가받을까봐 피하거나 일이 어려워서 피하는 상황을 반영한다. 메모 작성 시 피한 행동에 대한 자기 분석이 부족해진다.",
+    "pattern_structure": {
+      "trigger": "회고 질문이 제기될 때",
+      "response": "피하는 행동으로 대응",
+      "outcome": "자기 분석이 부족해짐"
+    },
+    "relation_tags": [
+      "decision_trace",
+      "evaluation_fear"
+    ],
+    "pending_evidence_ids": [
+      "memo-030"
+    ],
+    "identity_key": "state|decision_trace,evaluation_fear|회고 질문 피하는 상태|memo-030",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-18",
+    "updated_at": "2026-04-18"
+  },
+  "node-state-b12fbc4a": {
+    "id": "node-state-b12fbc4a",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "어려운 일 앞두면 안전한 일 고르는 상태",
+    "summary": "어려운 일 앞두면 이상하게 정리, 분류, 청소 같은 걸 먼저 한다. 성실한 척 회피하는 패턴",
+    "pattern_structure": {
+      "trigger": "어려운 일 앞두기",
+      "response": "정리, 분류, 청소 같은 안전한 일 수행",
+      "outcome": "작은 성공감을 얻고 큰 일은 미루는 결과"
+    },
+    "relation_tags": [
+      "pattern_recognition",
+      "safe_task_selection"
+    ],
+    "pending_evidence_ids": [
+      "memo-035"
+    ],
+    "identity_key": "state|pattern_recognition,safe_task_selection|어려운 일 앞두면 안전한 일 고르는 상태|memo-035",
+    "evidence_count": 0,
+    "confidence": 0.9,
+    "last_seen_at": null,
+    "created_at": "2026-04-20",
+    "updated_at": "2026-04-20"
+  },
+  "node-state-f15e0f91": {
+    "id": "node-state-f15e0f91",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정 시작 전 급한 일과 생활 일로 인한 멍함 상태",
+    "summary": "일정 시작 전에 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면서 머리가 복잡해지는 패턴. 이는 일정 시작 전에 미루는 안전한 선택으로 이어짐",
+    "pattern_structure": {
+      "trigger": "일정 시작 전",
+      "response": "급한 일, 생활 일, 돈 걱정이 한꺼번에 올라옴",
+      "outcome": "머리가 복잡해져 멍함 상태로 이어짐"
+    },
+    "relation_tags": [
+      "decision_fog",
+      "life_admin_overload",
+      "priority_confusion"
+    ],
+    "pending_evidence_ids": [
+      "memo-037",
+      "memo-018"
+    ],
+    "identity_key": "state|decision_fog,life_admin_overload,priority_confusion|일정 시작 전 급한 일과 생활 일로 인한 멍함 상태|memo-018,memo-037",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-21",
+    "updated_at": "2026-04-21"
+  },
+  "node-state-96bde458": {
+    "id": "node-state-96bde458",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "사람들 만나고 나면 하루 흐름 중단",
+    "summary": "사회적 상호작용 후 일정 흐름이 중단되는 상태로, 일상적인 일정이 중단되고 회고에서 중요한 역할을 함",
+    "pattern_structure": {
+      "trigger": "사람들과의 만남",
+      "response": "일상적인 일정 중단 및 회고 필요성 인식",
+      "outcome": "하루 흐름 중단 및 회고에서 중요한 역할 부여"
+    },
+    "relation_tags": [
+      "event_aftereffect",
+      "low_energy_drift"
+    ],
+    "pending_evidence_ids": [
+      "memo-048"
+    ],
+    "identity_key": "state|event_aftereffect,low_energy_drift|사람들 만나고 나면 하루 흐름 중단|memo-048",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-24",
+    "updated_at": "2026-04-24"
+  },
+  "node-state-21be4d04": {
+    "id": "node-state-21be4d04",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "지하철에서 졸다 깬 사람 표정이 하루 종일 남는다",
+    "summary": "지하철에서 졸다 깬 사람의 표정이 하루 종일 기억에 남아, 이후 일정에 부정적인 영향을 미침",
+    "pattern_structure": {
+      "trigger": "지하철에서 졸다 깬 사람의 표정",
+      "response": "표정을 보고 감정적으로 반응",
+      "outcome": "하루 종일 그 표정이 기억에 남아 일정에 방해가 됨"
+    },
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "pending_evidence_ids": [
+      "memo-055"
+    ],
+    "identity_key": "state|event_aftereffect|지하철에서 졸다 깬 사람 표정이 하루 종일 남는다|memo-055",
+    "evidence_count": 0,
+    "confidence": 0.9,
+    "last_seen_at": null,
+    "created_at": "2026-04-26",
+    "updated_at": "2026-04-26"
+  },
+  "node-state-851349f5": {
+    "id": "node-state-851349f5",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정-회고 연결 포인트",
+    "summary": "지난주 금요일 집중 작업을 회의로 밀어넘기며 일정과 회고가 연결되지 못한 상태",
+    "pattern_structure": {
+      "trigger": "집중 작업 일정 설정",
+      "response": "회의로 일정 밀어넘기기",
+      "outcome": "회고와 일정 연결 실패"
+    },
+    "relation_tags": [
+      "pattern_recognition",
+      "unfinished_loop"
+    ],
+    "pending_evidence_ids": [
+      "memo-060",
+      "memo-015"
+    ],
+    "identity_key": "state|pattern_recognition,unfinished_loop|일정-회고 연결 포인트|memo-015,memo-060",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-27",
+    "updated_at": "2026-04-27"
+  },
+  "node-state-87d767e3": {
+    "id": "node-state-87d767e3",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "결정 전 캘린더 색만 만지는 상태",
+    "summary": "중요한 결정을 내리기 전에 캘린더 색만 조정하는 행동이 반복적으로 나타나며, 이는 안전한 선택을 통해 일정을 미루는 패턴",
+    "pattern_structure": {
+      "trigger": "중요한 결정이 필요할 때",
+      "response": "캘린더 색만 조정하는 행동",
+      "outcome": "결정을 내리지 못하고 일정을 미루는 결과"
+    },
+    "relation_tags": [
+      "control_seeking",
+      "safe_task_selection"
+    ],
+    "pending_evidence_ids": [
+      "memo-070"
+    ],
+    "identity_key": "state|control_seeking,safe_task_selection|결정 전 캘린더 색만 만지는 상태|memo-070",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-30",
+    "updated_at": "2026-04-30"
+  },
+  "node-state-826d89ab": {
+    "id": "node-state-826d89ab",
+    "source": "llm",
+    "type": "state",
+    "title": "생활 일정으로 인한 일 루틴 중단",
+    "summary": "생활 일정이 예상보다 더 많은 영향을 미쳐 일 루틴을 중단시키는 현상",
+    "pattern_structure": {},
+    "relation_tags": [
+      "life_admin_overload",
+      "schedule_disruption",
+      "priority_confusion"
+    ],
+    "representative_evidence_ids": [
+      "memo-011",
+      "memo-058"
+    ],
+    "identity_key": "state|life_admin_overload,priority_confusion,schedule_disruption|생활 일정으로 인한 일 루틴 중단|memo-011,memo-058",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-23T07:21:19Z",
+    "created_at": "2026-05-01",
+    "updated_at": "2026-06-23T07:21:19Z"
+  },
+  "node-state-ee08bc7d": {
+    "id": "node-state-ee08bc7d",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "냉장고 앞 멍해진 상태",
+    "summary": "편의점 냉장고 앞에서 멍해진 경험은 이후 하루 종일 기억에 남는 특이한 상태",
+    "pattern_structure": {
+      "trigger": "편의점 냉장고 앞에서 멍해지기",
+      "response": "기억에 남는 경험",
+      "outcome": "이후 하루 종일 이 경험을 기억으로 남김"
+    },
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "pending_evidence_ids": [
+      "memo-075"
+    ],
+    "identity_key": "state|event_aftereffect|냉장고 앞 멍해진 상태|memo-075",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-01",
+    "updated_at": "2026-05-01"
+  },
+  "node-state-87aa647a": {
+    "id": "node-state-87aa647a",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "습한 날은 생각도 같이 눅눅해지는 상태",
+    "summary": "습한 날에는 정서적 반응이 둔해지고 일상 활동에 대한 집중력이 떨어지는 상태",
+    "pattern_structure": {
+      "trigger": "습한 날",
+      "response": "정서적 반응이 둔해지고 일상 활동에 대한 집중력 저하",
+      "outcome": "일상 활동 수행에 어려움 발생"
+    },
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-085"
+    ],
+    "identity_key": "state|low_energy_drift,rhythm_disruption|습한 날은 생각도 같이 눅눅해지는 상태|memo-085",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-04",
+    "updated_at": "2026-05-04"
+  },
+  "node-state-0c3435a1": {
+    "id": "node-state-0c3435a1",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "중간 깨임으로 인한 하루 흐름 중단 상태",
+    "summary": "중간에 몇 번 깨서 그런지 하루 종일 멍함. 이 상태는 일정 수행을 방해하고, 쉬는 것이 적절한 상태로 판단됨",
+    "pattern_structure": {
+      "trigger": "중간에 몇 번 깨서",
+      "response": "하루 종일 멍함",
+      "outcome": "일정 수행 방해 및 쉬는 것이 적절함"
+    },
+    "relation_tags": [
+      "decision_fog",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-090"
+    ],
+    "identity_key": "state|decision_fog,rhythm_disruption|중간 깨임으로 인한 하루 흐름 중단 상태|memo-090",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-05",
+    "updated_at": "2026-05-05"
+  },
+  "node-state-46af5b4c": {
+    "id": "node-state-46af5b4c",
+    "source": "llm",
+    "type": "state",
+    "title": "비워도 되는 날에 작은 할 일 찾는 상태",
+    "summary": "쉬는 날에도 계속 뭔가 해야 할 것 같아서 작은 할 일을 찾아내는 패턴. 이는 쉬는 날을 빚처럼 느끼는 감정과 연결됨",
+    "pattern_structure": {
+      "trigger": "쉬는 날",
+      "response": "작은 할 일 찾기",
+      "outcome": "작은 할 일이 실제 성과로 이어지지 않음"
+    },
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ],
+    "representative_evidence_ids": [
+      "memo-027",
+      "memo-056",
+      "memo-096"
+    ],
+    "identity_key": "state|rest_guilt,safe_task_selection|비워도 되는 날에 작은 할 일 찾는 상태|memo-027,memo-056,memo-096",
+    "evidence_count": 3,
+    "confidence": 0.65,
+    "last_seen_at": "2026-05-06",
+    "created_at": "2026-05-06",
+    "updated_at": "2026-05-06"
+  },
+  "node-state-a1e1493d": {
+    "id": "node-state-a1e1493d",
+    "source": "llm",
+    "type": "state",
+    "title": "메신저 확인 후 작업 중단 상태",
+    "summary": "아침에 메신저 알림을 확인하는 행동이 작업 흐름을 중단시키는 패턴으로 반복되고 있음. 이는 일정을 시작하기 전에 미루는 안전한 선택으로 이어짐",
+    "pattern_structure": {},
+    "relation_tags": [
+      "start_avoidance",
+      "context_fragmentation",
+      "execution_delay"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-031",
+      "memo-066",
+      "memo-069",
+      "memo-089",
+      "memo-097"
+    ],
+    "identity_key": "state|context_fragmentation,execution_delay,start_avoidance|메신저 확인 후 작업 중단 상태|memo-001,memo-031,memo-066,memo-069,memo-089,memo-097",
+    "evidence_count": 10,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-05-07",
+    "updated_at": "2026-06-23T07:21:19Z"
+  },
+  "node-state-e8db74ab": {
+    "id": "node-state-e8db74ab",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "합리적인 이유로 회피하는 상태",
+    "summary": "자신의 행동을 합리적인 이유로 정당화하면서도 실제로는 스스로를 속이는 감각이 반복적으로 나타나는 상태",
+    "pattern_structure": {
+      "trigger": "합리적인 이유를 붙이려는 욕구",
+      "response": "자신의 행동을 그럴듯한 이유로 정당화",
+      "outcome": "자신은 이 정당화를 믿지 않으면서도 계속 회피하는 행동"
+    },
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "pending_evidence_ids": [
+      "memo-100",
+      "memo-004"
+    ],
+    "identity_key": "state|avoidance_rationalization,self_deception|합리적인 이유로 회피하는 상태|memo-004,memo-100",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-07",
+    "updated_at": "2026-05-07"
+  }
+}

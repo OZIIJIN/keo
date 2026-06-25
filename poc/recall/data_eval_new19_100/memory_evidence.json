@@ -1,0 +1,290 @@
+[
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-024",
+    "reason": "다수의 메모에서 낮의 피로가 일정 수행을 방해하고, 쉬는 것이 적절하다는 인식이 반복적으로 나타남",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-020",
+    "reason": "다수의 메모에서 낮의 피로가 일정 수행을 방해하고, 쉬는 것이 적절하다는 인식이 반복적으로 나타남",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-012",
+    "reason": "다수의 메모에서 낮의 피로가 일정 수행을 방해하고, 쉬는 것이 적절하다는 인식이 반복적으로 나타남",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-033",
+    "reason": "이 memo는 피로가 결정을 느슨하게 만드는 패턴을 반복적으로 나타내는 것으로, candidate_nodes의 node-state-3042f514와 동일한 구조와 관찰을 공유합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-034",
+    "reason": "메신저 확인 행동이 아침 일정의 흐름을 끊는 패턴으로 반복되고 있으며, 이는 일정 시작 전에 미루는 안전한 선택으로 이어짐",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-040",
+    "reason": "이 memo는 쉬는 날에도 일해야 할 일 떠오르는 상황을 설명하며, '쉬는 시간을 자꾸 빚처럼 느낌'이라는 표현은 node-state-3042f514의 '피로로 인한 일정 방해 상태'와 동일한 트리거와 결과를 나타냄. 이전 메모에서 피로가 일정 수행을 방해하고 쉬는 것이 적절하다는 인식이 반복적으로 나타남에 따라, 이 memo는 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-043",
+    "reason": "이 memo는 피로가 충동 구매 결정에 영향을 주는 구체적인 패턴을 설명하고 있으며, node-state-3042f514는 낮의 피로가 일정 수행을 방해하고 쉬는 것이 적절하다는 인식을 반복적으로 나타내므로, 동일한 트리거와 결과를 가짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-056",
+    "reason": "이 memo는 쉬는 날인데도 뭔가 해야 할 것 같은 느낌을 자꾸 느끼는 것이 node-state-3042f514의 '낮에 피로가 심해지면 일정을 이행하지 못하고 자책하지 않고 쉬는 것이 적절한 상태'와 동일한 구조를 가짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-061",
+    "reason": "이 메모는 피로가 일정 수행을 방해하고, 쉬는 것이 적절하다는 인식이 반복적으로 나타나는 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-062",
+    "reason": "이 메모는 '어제 늦게 자서 오늘 판단이 전반적으로 탁했다'는 내용으로, 피로가 판단과 실행 전반에 번짐을 나타내며, 이는 '피로로 인한 일정 방해 상태' 노드의 트리거인 '낮에 피로가 심해지면 일정을 이행하지 못하고 자책하지 않고 쉬는 것이 적절한 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-042",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-047",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-063",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-068",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-011",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-058",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-038",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-052",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-3042f514",
+    "memo_id": "memo-077",
+    "reason": "운동복 입고도 결국 누워 있는 행위는 피로로 인한 일정 방해 상태의 재현으로, 피로가 일정 수행을 방해하고 쉬는 것이 적절하다는 인식이 반복적으로 나타남",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-080",
+    "reason": "이 memo는 캘린더에서 중요한 일보다 끼어든 일에 더 반응하는 구체적인 패턴을 보여주며, 이는 기존 노드와 다른 새로운 관찰로, 반복 트리거와 결과가 명확히 일치함. 기존 semantic node와 유사도 0.8493로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-086",
+    "reason": "이 memo는 메신저 확인 후 흐름이 끊기는 패턴과 일치하며, '아침에 메신저 확인 후 흐름 끊김 상태' 노드의 정의와 완전히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-095",
+    "reason": "공과금 확인 미루는 행동이 작은 생활 일 미루기 패턴과 일치하며, 결과로 하루 흐름 중단이 발생함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-46af5b4c",
+    "memo_id": "memo-096",
+    "reason": "메모에서 쉬는 날에도 작은 할 일을 찾아내는 행동이 반복적으로 나타나며, 이는 쉬는 날을 빚처럼 느끼는 감정과 안전한 선택으로 이어짐",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-46af5b4c",
+    "memo_id": "memo-027",
+    "reason": "메모에서 쉬는 날에도 작은 할 일을 찾아내는 행동이 반복적으로 나타나며, 이는 쉬는 날을 빚처럼 느끼는 감정과 안전한 선택으로 이어짐",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-46af5b4c",
+    "memo_id": "memo-056",
+    "reason": "메모에서 쉬는 날에도 작은 할 일을 찾아내는 행동이 반복적으로 나타나며, 이는 쉬는 날을 빚처럼 느끼는 감정과 안전한 선택으로 이어짐",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-031",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-066",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-069",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-089",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-097",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-049",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9030)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-a1e1493d",
+    "memo_id": "memo-053",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9030)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-099",
+    "reason": "이 memo는 '냉장고 정리해야지 해놓고 또 배달부터 시킴'이라는 구체적인 행동 패턴을 보여주며, 이는 '생활 일정으로 인한 하루 시작 지연' 노드의 트리거와 결과가 정확히 일치함. 기존 semantic node와 유사도 0.8493로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-037",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8537)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-23T08:17:27Z"
+  },
+  {
+    "node_id": "node-state-826d89ab",
+    "memo_id": "memo-073",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8537)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-23T08:17:27Z"
+  }
+]

@@ -1,0 +1,3330 @@
+[
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-001",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-001",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-002",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-002",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-003",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-003",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-004",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-004",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-005",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-005",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-006",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-006",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-006",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-008",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-008",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-009",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-009",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-010",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-010",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-011",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-011",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-012",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-012",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-013",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-014",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-015",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-015",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-016",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-016",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-017",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-017",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-priority-confusion",
+    "memo_id": "memo-018",
+    "reason": "급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-018",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-019",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-019",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-020",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-020",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-021",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-021",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-022",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-022",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-022",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-023",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-023",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-024",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-024",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-025",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-026",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-026",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-027",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-027",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-028",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-028",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-029",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-029",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-030",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-030",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-031",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-031",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-032",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-032",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-033",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-033",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-034",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-035",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-035",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-self-deception",
+    "memo_id": "memo-036",
+    "reason": "스스로를 그럴듯하게 속이는 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-036",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-priority-confusion",
+    "memo_id": "memo-037",
+    "reason": "급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-037",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-037",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-038",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-038",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-039",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-039",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-040",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-040",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-041",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-041",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-042",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-042",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-043",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-043",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-044",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-044",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-045",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-045",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-046",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-046",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-047",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-047",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-048",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-048",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-049",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-050",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-051",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-051",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-052",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-052",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-053",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-053",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-054",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-055",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-056",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-056",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-057",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-058",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-058",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-059",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-059",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-060",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-060",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-061",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-061",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-062",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-062",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-062",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-063",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-063",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-064",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-065",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-065",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-066",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-066",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-067",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-067",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-068",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-068",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-069",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-control-seeking",
+    "memo_id": "memo-070",
+    "reason": "불확실함 대신 통제 가능한 것만 붙잡음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-070",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-071",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-072",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-072",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-073",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-073",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-074",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-074",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-075",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-076",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-076",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-077",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-077",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-078",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-078",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-079",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-079",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-080",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-080",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-081",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-082",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-082",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-083",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-083",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-084",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-085",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-085",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-086",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-087",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-087",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-088",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-088",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-089",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-090",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-090",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-091",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-091",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-092",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-093",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-093",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-094",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-094",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-095",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-095",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-096",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-096",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-097",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-097",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-098",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-099",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-099",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-self-deception",
+    "memo_id": "memo-100",
+    "reason": "스스로를 그럴듯하게 속이는 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-100",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-101",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-102",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-102",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-103",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-103",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-104",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-104",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-105",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-105",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-105",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-106",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-106",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-107",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-107",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-108",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-108",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-109",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-109",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-110",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-110",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-111",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-111",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-112",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-112",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-113",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-114",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-114",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-115",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-115",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-116",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-116",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-117",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-117",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-118",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-118",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-119",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-119",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-120",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-120",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-control-seeking",
+    "memo_id": "memo-121",
+    "reason": "불확실함 대신 통제 가능한 것만 붙잡음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-122",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-122",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-122",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-123",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-124",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-124",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-125",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-125",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-126",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-126",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-127",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-128",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-128",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-129",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-129",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-130",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-130",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-131",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-131",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-132",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-133",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-133",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-134",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-134",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-135",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-135",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-136",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-136",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-137",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-138",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-138",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-139",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-139",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-140",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-140",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-141",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-142",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-142",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-143",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-143",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-144",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-144",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-145",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-avoidance-rationalization",
+    "memo_id": "memo-145",
+    "reason": "회피를 준비, 조사, 정리 같은 이유로 포장함",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-146",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-146",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-147",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-147",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-148",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-148",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-149",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-context-fragmentation",
+    "memo_id": "memo-149",
+    "reason": "메신저, 일정, 잡다한 일로 흐름이 끊김",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-150",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-150",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-151",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-151",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-152",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-152",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-153",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-154",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-155",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-155",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-156",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-156",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-157",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-157",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-158",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-158",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-159",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-160",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-160",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-161",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-161",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-162",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-162",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-163",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-163",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-164",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-164",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-165",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-165",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-166",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-166",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-167",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-167",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-168",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-169",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-169",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "memo-170",
+    "reason": "중요한 일 대신 만만한 일을 고름",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "memo-170",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-171",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-171",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-172",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-172",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-173",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-174",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-174",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-175",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-175",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-176",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-evaluation-fear",
+    "memo_id": "memo-176",
+    "reason": "평가받을까봐 피하거나 망설임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-177",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-177",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-178",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-178",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-179",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-179",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-rest-guilt",
+    "memo_id": "memo-180",
+    "reason": "쉬어도 불안하고 쉼을 빚처럼 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-181",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-181",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-182",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-182",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-183",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-183",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-184",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-184",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-185",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-185",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-186",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-186",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-187",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-187",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-identity-gap",
+    "memo_id": "memo-188",
+    "reason": "겉으로 보인 나와 실제 내가 어긋난 느낌",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-188",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-rhythm-disruption",
+    "memo_id": "memo-189",
+    "reason": "수면, 루틴, 생활 리듬이 깨짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-189",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-190",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-190",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-191",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-191",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-192",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-192",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "memo-193",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-fatigue-spillover",
+    "memo_id": "memo-194",
+    "reason": "피로가 판단과 실행 전반에 번짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-194",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-195",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-195",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-196",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-196",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-197",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-reactive-work",
+    "memo_id": "memo-197",
+    "reason": "주도적 진행보다 들어오는 일에 끌려감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-198",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-198",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-199",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-199",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-recovery-failure",
+    "memo_id": "memo-200",
+    "reason": "쉬었는데도 회복이 잘 안 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-200",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-201",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-201",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "memo-202",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-202",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-203",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-203",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-204",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-unfinished-loop",
+    "memo_id": "memo-204",
+    "reason": "끝내지 못한 일이나 열린 루프가 쌓임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-205",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-205",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-206",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-206",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-207",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-207",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-self-understanding-product",
+    "memo_id": "memo-208",
+    "reason": "KEO의 자기이해 방향과 직접 맞닿은 제품 통찰",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-social-response-delay",
+    "memo_id": "memo-209",
+    "reason": "답장, 연락, 관계 응답이 밀림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-low-energy-drift",
+    "memo_id": "memo-209",
+    "reason": "기운이 없어서 흐려지거나 흘러감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-210",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-execution-delay",
+    "memo_id": "memo-210",
+    "reason": "하기로 했지만 실행이 계속 늦어짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-211",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-211",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-pattern-recognition",
+    "memo_id": "memo-212",
+    "reason": "반복 패턴을 알아차리거나 이름 붙임",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-decision-trace",
+    "memo_id": "memo-212",
+    "reason": "판단이 어떻게 흘렀는지 보려는 기록",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-life-admin-overload",
+    "memo_id": "memo-213",
+    "reason": "반품, 병원, 장보기 같은 생활 일이 부담이 됨",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-priority-confusion",
+    "memo_id": "memo-213",
+    "reason": "급한 것, 중요한 것, 남 눈치 보이는 것이 섞여 흐려짐",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-event-reflection-link",
+    "memo_id": "memo-214",
+    "reason": "사건이나 일정과 회고를 연결하려는 시선",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "memo-214",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-external-priority-capture",
+    "memo_id": "memo-215",
+    "reason": "남의 요청, 외부 자극이 우선순위를 잡아먹음",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-decision-fog",
+    "memo_id": "memo-215",
+    "reason": "뭘 먼저 해야 할지 판단이 흐림",
+    "source": "fixture",
+    "weight": 0.8,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "user-memo-001",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-01T05:47:59Z"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "user-memo-001",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-01T05:47:59Z"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "user-memo-001",
+    "reason": "dense 결과에서 이 node의 evidence가 2개 발견됨",
+    "source": "dense",
+    "weight": 0.65,
+    "created_at": "2026-06-01T05:47:59Z"
+  },
+  {
+    "node_id": "node-start-avoidance",
+    "memo_id": "user-memo-002",
+    "reason": "시작해야 하는데 자꾸 미룸",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-01T05:53:01Z"
+  },
+  {
+    "node_id": "node-overplanning",
+    "memo_id": "user-memo-002",
+    "reason": "실제 시작보다 구조, 분류, 계획 쪽으로 샘",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-01T05:53:01Z"
+  },
+  {
+    "node_id": "node-safe-task-selection",
+    "memo_id": "user-memo-002",
+    "reason": "dense 결과에서 이 node의 evidence가 2개 발견됨",
+    "source": "dense",
+    "weight": 0.65,
+    "created_at": "2026-06-01T05:53:01Z"
+  },
+  {
+    "node_id": "node-event-aftereffect",
+    "memo_id": "user-memo-003",
+    "reason": "특정 일정이나 사건 이후 여파가 오래 감",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-schedule-disruption",
+    "memo_id": "user-memo-003",
+    "reason": "일정 하나가 하루 흐름 전체를 흔듦",
+    "source": "relation_tag",
+    "weight": 0.8,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "user-memo-003",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-240",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-390",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-179",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-249",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-399",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-268",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-418",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  },
+  {
+    "node_id": "node-pattern-b277ee89",
+    "memo_id": "memo-331",
+    "reason": "다수의 메모에서 비 냄새나 비 오는 출근길이 과거의 경험과 연결되어 기억이 떠오르는 패턴이 반복적으로 나타나고 있어, 이는 인지 패턴으로 분류할 수 있는 반복적 관찰이므로 새로운 노드를 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02T03:21:10Z"
+  }
+]

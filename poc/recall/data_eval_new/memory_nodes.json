@@ -1,0 +1,1223 @@
+{
+  "node-state-e7d6b8cf": {
+    "id": "node-state-e7d6b8cf",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "흐름이 끊기는 일상 상태",
+    "summary": "메신저 상호작용으로 인해 컨텍스트가 조각내져, 일관된 작업 흐름이 방해받는 상태. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "pending_evidence_ids": [
+      "memo-001"
+    ],
+    "identity_key": "state|context_fragmentation,reactive_work|흐름이 끊기는 일상 상태|memo-001",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-07",
+    "updated_at": "2026-04-07"
+  },
+  "node-state-2e7eb766": {
+    "id": "node-state-2e7eb766",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정 종료 후 메모 정리 상태",
+    "summary": "일정이 끝난 날 밤에 해당 일정의 메모를 다시 묶어 보여주는 행위는 회의 전 기대와 끝나고 지침을 연결하는 자기이해 상태를 나타낸다. 이는 일정 종료 후 지속적인 피드백 루틴을 형성하는 데 기여한다. 관련 메모-001은 자잘한 대응으로 인한 컨텍스트 분할을 보여주며, 이는 현재 상태와 연결되어 있다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-002",
+      "memo-001"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일정 종료 후 메모 정리 상태|memo-001,memo-002",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-07",
+    "updated_at": "2026-04-07"
+  },
+  "node-question-11c8a1d6": {
+    "id": "node-question-11c8a1d6",
+    "source": "llm",
+    "type": "question",
+    "title": "기록의 목적에 대한 의문",
+    "summary": "기록이 단순히 정보 저장이 아니라, 나중의 나에게 힌트를 전달하는 역할을 한다는 점을 반복적으로 인식하고 있다. 이는 자기 이해를 위한 반복 패턴 인식과 판단 과정을 기록하는 데서 비롯된다.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-003"
+    ],
+    "identity_key": "question|decision_trace,pattern_recognition|기록의 목적에 대한 의문|memo-001,memo-002,memo-003",
+    "evidence_count": 98,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-04-07",
+    "updated_at": "2026-07-08"
+  },
+  "node-question-18934938": {
+    "id": "node-question-18934938",
+    "source": "llm",
+    "type": "question",
+    "title": "일의 회피 패턴 분석",
+    "summary": "운동을 피하기 위해 일로 핑계를 댔지만, 실제로는 일도 잘 못 한 경험을 반복적으로 인식함. 이는 일의 회피 행동과 관련된 반복적 패턴을 파악하려는 자기 이해의 시도로, 회피 행동의 동기와 결과를 분석하는 데 기여함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-003",
+      "memo-004"
+    ],
+    "identity_key": "question|avoidance_rationalization,pattern_recognition|일의 회피 패턴 분석|memo-001,memo-002,memo-003,memo-004",
+    "evidence_count": 67,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-06",
+    "created_at": "2026-04-08",
+    "updated_at": "2026-07-06"
+  },
+  "node-question-0813c79e": {
+    "id": "node-question-0813c79e",
+    "source": "llm",
+    "type": "question",
+    "title": "회의 후 기억 상실 패턴 분석",
+    "summary": "회의 후에 원래 계획했던 일을 잊는 현상이 반복적으로 발생하며, 이는 일정의 흐름을 방해하는 일종의 기억 상실 패턴으로 분류된다. 회의가 끝난 후 개인의 주의력과 기억력이 저하되어, 원래의 목표를 잊는 경향이 있으며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "context_fragmentation",
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-004",
+      "memo-006",
+      "memo-007",
+      "memo-008"
+    ],
+    "identity_key": "question|context_fragmentation,schedule_disruption|회의 후 기억 상실 패턴 분석|memo-001,memo-002,memo-004,memo-006,memo-007,memo-008",
+    "evidence_count": 217,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-04-09",
+    "updated_at": "2026-07-07"
+  },
+  "node-question-188f4f38": {
+    "id": "node-question-188f4f38",
+    "source": "llm",
+    "type": "question",
+    "title": "작업 시작 회피 패턴 분석",
+    "summary": "초안 작성 대신 구조부터 고민하는 행동은 작업 시작을 회피하는 반복적 패턴으로, 이는 안전한 일만 고르는 성향과 관련이 있다. 이 패턴은 작업 시작을 미루는 행동을 반복적으로 인식하고, 그 동기와 결과를 분석하는 자기 이해의 시도로, 작업 회피의 원인과 해결 방안을 탐색하는 데 기여한다.",
+    "relation_tags": [
+      "overplanning",
+      "safe_task_selection",
+      "start_avoidance"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-006",
+      "memo-013",
+      "memo-018",
+      "memo-020",
+      "memo-022"
+    ],
+    "identity_key": "question|overplanning,safe_task_selection,start_avoidance|작업 시작 회피 패턴 분석|memo-001,memo-006,memo-013,memo-018,memo-020,memo-022",
+    "evidence_count": 89,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-24",
+    "created_at": "2026-04-14",
+    "updated_at": "2026-06-24"
+  },
+  "node-pattern-0f4e0c08": {
+    "id": "node-pattern-0f4e0c08",
+    "source": "llm",
+    "type": "pattern",
+    "title": "회의 전후 기대-지침 연결 패턴 분석",
+    "summary": "회의 전 기대와 회의 후 지침이 일정의 회고 트리거가 되며, 이는 일정 관리와 자기 이해를 위한 반복적 패턴으로 작용합니다. 회의 전 기대와 후 지침의 연결이 일정의 흐름을 유지하고, 반복적인 회고를 통해 자기 이해를 깊이 있게 할 수 있습니다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-002",
+      "memo-015",
+      "memo-023"
+    ],
+    "identity_key": "pattern|event_reflection_link,self_understanding_product|회의 전후 기대-지침 연결 패턴 분석|memo-002,memo-015,memo-023",
+    "evidence_count": 110,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-07-08"
+  },
+  "node-question-65aaf765": {
+    "id": "node-question-65aaf765",
+    "source": "llm",
+    "type": "question",
+    "title": "피로로 인한 일정 관리 실패 분석",
+    "summary": "피로가 심해져 일정 관리에 실패하는 반복적 패턴이 관찰되며, 이는 일정의 흐름을 방해하는 피로로 인한 판단과 실행의 저하로 분류된다. 피로가 판단과 실행 전반에 번짐으로 인해 일정을 관리하는 데 어려움을 겪고 있으며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "recovery_failure"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-012",
+      "memo-020",
+      "memo-024"
+    ],
+    "identity_key": "question|fatigue_spillover,recovery_failure|피로로 인한 일정 관리 실패 분석|memo-001,memo-012,memo-020,memo-024",
+    "evidence_count": 113,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-04-15",
+    "updated_at": "2026-07-07"
+  },
+  "node-question-99fa5a00": {
+    "id": "node-question-99fa5a00",
+    "source": "llm",
+    "type": "question",
+    "title": "쉬는 것에 대한 죄책감과 안전한 일 선택 패턴 분석",
+    "summary": "쉬는 것에 대한 죄책감으로 인해 작은 할 일만 선택하는 행동이 반복적으로 나타나며, 이는 일정 관리와 자기 이해에 영향을 미치는 반복적 패턴으로 분류된다. 쉬는 것을 빚처럼 느끼고, 중요한 일 대신 만만한 일을 고르는 성향이 반복적으로 관찰된다.",
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ],
+    "identity_key": "question|rest_guilt,safe_task_selection|쉬는 것에 대한 죄책감과 안전한 일 선택 패턴 분석|memo-027",
+    "evidence_count": 3,
+    "confidence": 0.65,
+    "last_seen_at": "2026-05-27",
+    "created_at": "2026-04-17",
+    "updated_at": "2026-05-27",
+    "representative_evidence_ids": [
+      "memo-027",
+      "memo-076",
+      "memo-180"
+    ]
+  },
+  "node-question-db33b2cd": {
+    "id": "node-question-db33b2cd",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "피한 이유 분석: 어려움 vs 평가 두려움",
+    "summary": "이 memo는 회고 질문을 통해 피한 행동의 동기인 일의 어려움과 평가받을까봐의 두려움을 분석하려는 의도를 가지고 있다. 이는 자기 이해를 위한 반복적 패턴 인식과 판단 기록을 기반으로 한 질문 형식으로, 피한 행동의 동기와 결과를 분석하는 데 기여한다.",
+    "relation_tags": [
+      "decision_trace",
+      "evaluation_fear"
+    ],
+    "pending_evidence_ids": [
+      "memo-030"
+    ],
+    "identity_key": "question|decision_trace,evaluation_fear|피한 이유 분석: 어려움 vs 평가 두려움|memo-030",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-18",
+    "updated_at": "2026-04-18"
+  },
+  "node-question-72e0ae9e": {
+    "id": "node-question-72e0ae9e",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "자기 속임의 동기 분석",
+    "summary": "문장 기록. 사람은 진실을 숨길 때보다 그럴듯한 이유를 붙일 때 자기 자신을 더 잘 속인다. 이는 자기 속임의 동기와 결과를 분석하는 자기 이해의 시도로, 회피 행동의 동기와 결과를 분석하는 데 기여함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "pending_evidence_ids": [
+      "memo-036"
+    ],
+    "identity_key": "question|avoidance_rationalization,self_deception|자기 속임의 동기 분석|memo-036",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-20",
+    "updated_at": "2026-04-20"
+  },
+  "node-question-0e824dfe": {
+    "id": "node-question-0e824dfe",
+    "source": "llm",
+    "type": "question",
+    "title": "회의 후 일정 관리 혼란 분석",
+    "summary": "회의 후 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라오면서 일정 관리가 어려워지는 현상이 반복적으로 발생하며, 이는 일정의 흐름을 방해하는 일종의 기억 상실과 판단 혼란으로 분류된다. 회의가 끝난 후 개인의 주의력과 기억력이 저하되어, 원래의 목표를 잊는 경향이 있으며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "decision_fog",
+      "life_admin_overload",
+      "priority_confusion"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-008",
+      "memo-018",
+      "memo-037"
+    ],
+    "identity_key": "question|decision_fog,life_admin_overload,priority_confusion|회의 후 일정 관리 혼란 분석|memo-001,memo-008,memo-018,memo-037",
+    "evidence_count": 77,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-06",
+    "created_at": "2026-04-21",
+    "updated_at": "2026-07-06"
+  },
+  "node-question-c3da810b": {
+    "id": "node-question-c3da810b",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "표현과 실제 행동 간 격차 분석",
+    "summary": "말로는 많은 일을 했지만 실제 행동으로는 별로 성과가 없었던 경험을 반복적으로 인식하며, 이는 자기 이해를 위한 반복적 패턴 인식과 판단 과정을 탐색하는 시도로, 표현과 실제 행동 간의 격차를 분석하는 데 기여함.",
+    "relation_tags": [
+      "identity_gap",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-044",
+      "memo-362"
+    ],
+    "identity_key": "question|identity_gap,pattern_recognition|표현과 실제 행동 간 격차 분석|memo-044",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-23",
+    "updated_at": "2026-06-11"
+  },
+  "node-question-333312b7": {
+    "id": "node-question-333312b7",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "KEO의 자기이해 기록 방향성",
+    "summary": "KEO는 감정 일기 앱이 아니라, 반복되는 결정 실수를 기록하고 분석하여 자기이해를 도모하는 도구로, 이는 사용자의 행동 패턴과 판단 과정을 반복적으로 기록하고 분석하는 데 초점을 맞추어야 한다. 이는 제품의 자기이해 기능을 강화하고, 사용자의 행동을 더 깊이 이해하는 데 기여한다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-046"
+    ],
+    "identity_key": "question|pattern_recognition,self_understanding_product|keo의 자기이해 기록 방향성|memo-046",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-24",
+    "updated_at": "2026-04-24"
+  },
+  "node-question-a09f5495": {
+    "id": "node-question-a09f5495",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "생활비 부담으로 인한 일정 관리 혼란 분석",
+    "summary": "생활비 계산 과정에서 갑작스럽게 생활비 부담이 느껴지면서, 일정 관리에 혼란이 생기는 반복적 패턴이 관찰된다. 이는 일정의 흐름을 방해하는 생활 부담과 판단 혼란으로 분류되며, 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "decision_fog",
+      "life_admin_overload"
+    ],
+    "pending_evidence_ids": [
+      "memo-073"
+    ],
+    "identity_key": "question|decision_fog,life_admin_overload|생활비 부담으로 인한 일정 관리 혼란 분석|memo-073",
+    "evidence_count": 0,
+    "confidence": 0.9,
+    "last_seen_at": null,
+    "created_at": "2026-05-01",
+    "updated_at": "2026-05-01"
+  },
+  "node-question-053881ba": {
+    "id": "node-question-053881ba",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "회의 후 회피 행동 분석",
+    "summary": "오늘 피한 건 일이 아니라 불편한 감각 쪽이었던 것 같다. 회의 후에 불편한 감각이 일어나고, 이는 일정 관리와 판단에 영향을 주는 회피 행동으로 분류된다. 이는 반복적으로 발생하는 패턴으로, 회피 행동의 동기와 결과를 분석하는 자기 이해의 시도로, 작업 회피의 원인과 해결 방안을 탐색하는 데 기여한다.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "decision_trace"
+    ],
+    "pending_evidence_ids": [
+      "memo-088"
+    ],
+    "identity_key": "question|avoidance_rationalization,decision_trace|회의 후 회피 행동 분석|memo-088",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-04",
+    "updated_at": "2026-05-04"
+  },
+  "node-question-a6c3cbbf": {
+    "id": "node-question-a6c3cbbf",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "수면 부족으로 인한 판단 혼란 분석",
+    "summary": "수면 부족으로 인해 판단력이 저하되어, 일정 관리와 판단 결정에 혼란이 생기는 반복적 패턴이 관찰된다. 하루 종일 멍함과 판단 흐름의 중단이 반복적으로 나타나며, 이는 수면 부족이 일상의 흐름을 방해하는 주요 원인으로 분류된다.",
+    "relation_tags": [
+      "decision_fog",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-090",
+      "memo-166"
+    ],
+    "identity_key": "question|decision_fog,rhythm_disruption|수면 부족으로 인한 판단 혼란 분석|memo-090",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-05",
+    "updated_at": "2026-05-24"
+  },
+  "node-question-01982c62": {
+    "id": "node-question-01982c62",
+    "source": "llm",
+    "type": "question",
+    "title": "자기 속임의 반복 패턴 분석",
+    "summary": "자신을 속이기 위해 합리적인 이유를 붙이는 행동이 반복적으로 나타나며, 이는 자기 이해와 반복 패턴 인식을 위한 자기 탐색의 일환으로, 이러한 행동의 동기와 결과를 분석하는 데 기여함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "representative_evidence_ids": [
+      "memo-004",
+      "memo-036",
+      "memo-044",
+      "memo-056",
+      "memo-084",
+      "memo-100"
+    ],
+    "identity_key": "question|avoidance_rationalization,self_deception|자기 속임의 반복 패턴 분석|memo-004,memo-036,memo-044,memo-056,memo-084,memo-100",
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-13",
+    "created_at": "2026-05-07",
+    "updated_at": "2026-05-13"
+  },
+  "node-question-36bc851c": {
+    "id": "node-question-36bc851c",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "휴대폰 사용으로 인한 회복 실패 분석",
+    "summary": "머리를 쉬라고 하는데 손은 휴대폰을 놓지 못하는 현상은 회복 실패의 반복적 패턴으로, 이는 휴대폰 사용이 회복 과정을 방해하는 자기 이해의 시도로, 휴대폰 사용의 동기와 결과를 분석하는 데 기여함.",
+    "relation_tags": [
+      "context_fragmentation",
+      "recovery_failure"
+    ],
+    "pending_evidence_ids": [
+      "memo-108"
+    ],
+    "identity_key": "question|context_fragmentation,recovery_failure|휴대폰 사용으로 인한 회복 실패 분석|memo-108",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-09",
+    "updated_at": "2026-05-09"
+  },
+  "node-state-26f54ee4": {
+    "id": "node-state-26f54ee4",
+    "source": "llm",
+    "type": "state",
+    "title": "생활 업무 지연 상태 분석",
+    "summary": "택배 상자 처리, 냉장고 정리, 반품 등 반복적인 생활 업무 지연이 일어나고 있으며, 이는 일상적인 관리 부담으로 인한 지속적인 스트레스와 자기 관리 능력 저하를 나타내는 상태로 분류된다. 이러한 지연은 일정 관리와 자기 이해에 부정적인 영향을 미친다.",
+    "relation_tags": [
+      "life_admin_overload",
+      "unfinished_loop"
+    ],
+    "representative_evidence_ids": [
+      "memo-029",
+      "memo-042",
+      "memo-099",
+      "memo-104",
+      "memo-115"
+    ],
+    "identity_key": "state|life_admin_overload,unfinished_loop|생활 업무 지연 상태 분석|memo-029,memo-042,memo-099,memo-104,memo-115",
+    "evidence_count": 71,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-05-11",
+    "updated_at": "2026-07-07"
+  },
+  "node-question-08a4992b": {
+    "id": "node-question-08a4992b",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "피로로 인한 선택 회피 패턴 분석",
+    "summary": "피로가 심해지면 선택보다는 보류를 선택하는 반복적 패턴이 관찰되며, 이는 일정 관리와 판단력 저하로 이어지는 피로의 영향을 반영합니다. 피로가 판단과 실행 전반에 영향을 주어, 중요한 결정을 미루는 경향이 반복적으로 나타나고 있습니다.",
+    "relation_tags": [
+      "decision_fog",
+      "fatigue_spillover"
+    ],
+    "pending_evidence_ids": [
+      "memo-119"
+    ],
+    "identity_key": "question|decision_fog,fatigue_spillover|피로로 인한 선택 회피 패턴 분석|memo-119",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-12",
+    "updated_at": "2026-05-12"
+  },
+  "node-question-443c5cd6": {
+    "id": "node-question-443c5cd6",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "생활 일 미루는 패턴 자기이해",
+    "summary": "생활 일 미루는 행동이 반복적으로 나타나고, 이는 자기이해를 위한 반복 패턴 인식과 판단 기록에 기여함. 회고 재료로 활용하여 자기 이해를 깊이 있게 할 수 있음.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-126"
+    ],
+    "identity_key": "question|pattern_recognition,self_understanding_product|생활 일 미루는 패턴 자기이해|memo-126",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-14",
+    "updated_at": "2026-05-14"
+  },
+  "node-state-e41d9edc": {
+    "id": "node-state-e41d9edc",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "외출 일정으로 인한 에너지 소모 패턴",
+    "summary": "외출 일정이 들어오면 전후 준비 과정에서 예상보다 많은 에너지를 소모하는 현상이 반복적으로 관찰된다. 이는 일정의 흐름을 방해하는 일종의 에너지 소모 패턴으로, 피로가 판단과 실행 전반에 번짐을 유발할 수 있는 상태로 분류된다. 일정의 시작과 종료 시점에서의 준비와 정리 과정이 에너지 소모의 주요 원인으로 작용하며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-135"
+    ],
+    "identity_key": "state|fatigue_spillover,schedule_disruption|외출 일정으로 인한 에너지 소모 패턴|memo-135",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-16",
+    "updated_at": "2026-05-16"
+  },
+  "node-state-7444ee17": {
+    "id": "node-state-7444ee17",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "외부 모습과 내면의 불일치",
+    "summary": "외부적으로는 바쁘고 정상처럼 보이지만 내면에서는 조용히 무너지는 상태를 반복적으로 인식함. 이는 피로, 판단력 저하, 자기 인식의 격차로 이어지며, 일정 관리와 자기 이해에 영향을 미친다. 외부 모습과 내면의 불일치는 일상적인 패턴으로서 반복적으로 나타나고 있으며, 이는 자기 이해를 위한 반복 패턴 인식의 일부로 분류된다.",
+    "relation_tags": [
+      "identity_gap",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-136"
+    ],
+    "identity_key": "state|identity_gap,pattern_recognition|외부 모습과 내면의 불일치|memo-136",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-16",
+    "updated_at": "2026-05-16"
+  },
+  "node-question-bc87572c": {
+    "id": "node-question-bc87572c",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "작업 시작 회피와 기억 상실의 관계 분석",
+    "summary": "해야 할 일을 알면서도 몸을 다른 곳으로 숨기는 행동은 작업 시작 회피 패턴으로 분류되며, 이는 회의 후 기억 상실로 인한 판단 저하와 연결되어 있다. 이 두 패턴은 서로 영향을 주며, 작업 시작 회피는 기억 상실을 악화시키고, 기억 상실은 작업 시작 회피를 유발할 수 있는 반복적 관계를 형성한다.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "context_fragmentation",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-140"
+    ],
+    "identity_key": "question|avoidance_rationalization,context_fragmentation,start_avoidance|작업 시작 회피와 기억 상실의 관계 분석|memo-140",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-17",
+    "updated_at": "2026-05-17"
+  },
+  "node-question-5796f9c7": {
+    "id": "node-question-5796f9c7",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "사회적 응답 지연과 평가 두려움의 패턴 분석",
+    "summary": "짧게 답하면 되는 건데 괜히 타이밍 재다가 더 늦어짐과 같은 메모에서 사회적 응답 지연과 평가 두려움이 반복적으로 나타나며, 이는 일상적인 의사소통에서의 지연과 자기 평가에 대한 두려움을 반복적으로 인식하는 패턴으로 분류된다. 이는 자기 이해와 반복 패턴 인식에 기여하며, 사회적 상호작용과 자기 인식의 관계를 탐색하는 데 기여한다.",
+    "relation_tags": [
+      "evaluation_fear",
+      "social_response_delay"
+    ],
+    "pending_evidence_ids": [
+      "memo-143"
+    ],
+    "identity_key": "question|evaluation_fear,social_response_delay|사회적 응답 지연과 평가 두려움의 패턴 분석|memo-143",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-18",
+    "updated_at": "2026-05-18"
+  },
+  "node-pattern-46f8bcaf": {
+    "id": "node-pattern-46f8bcaf",
+    "source": "llm",
+    "type": "pattern",
+    "title": "피로로 인한 지출 패턴 분석",
+    "summary": "피로가 심할 때는 지출 결정이 영향을 받고, 이는 반복적으로 관찰되는 패턴으로 분류된다. 피로가 판단과 실행 전반에 영향을 주어, 지출이 증가하는 경향이 있으며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "decision_trace",
+      "fatigue_spillover"
+    ],
+    "representative_evidence_ids": [
+      "memo-033",
+      "memo-043",
+      "memo-112",
+      "memo-146"
+    ],
+    "identity_key": "pattern|decision_trace,fatigue_spillover|피로로 인한 지출 패턴 분석|memo-033,memo-043,memo-112,memo-146",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-17",
+    "created_at": "2026-05-19",
+    "updated_at": "2026-06-17"
+  },
+  "node-question-5d30dc3d": {
+    "id": "node-question-5d30dc3d",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "결정을 미루면 판단이 흐려진다.",
+    "summary": "결정을 미루는 행동은 판단의 혼란으로 이어지며, 이는 일정 관리와 자기 이해에 영향을 미친다. 회복 실패와 판단 흐름의 상관관계를 분석하며, 이는 일정의 흐름을 방해하는 반복적 패턴으로 분류된다.",
+    "relation_tags": [
+      "decision_fog",
+      "recovery_failure"
+    ],
+    "pending_evidence_ids": [
+      "memo-155"
+    ],
+    "identity_key": "question|decision_fog,recovery_failure|결정을 미루면 판단이 흐려진다|memo-155",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-21",
+    "updated_at": "2026-05-21"
+  },
+  "node-state-3602de74": {
+    "id": "node-state-3602de74",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "자기 이미지 손상 상태 분석",
+    "summary": "적어둔 문장. 사소한 미룸이 쌓이면 사람은 자기 이미지부터 깎아먹는다. 이는 일상적인 관리 부담으로 인한 지속적인 스트레스와 자기 관리 능력 저하를 나타내는 상태로 분류된다. 이러한 지연은 일정 관리와 자기 이해에 부정적인 영향을 미친다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "unfinished_loop"
+    ],
+    "pending_evidence_ids": [
+      "memo-171"
+    ],
+    "identity_key": "state|pattern_recognition,unfinished_loop|자기 이미지 손상 상태 분석|memo-171",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-25",
+    "updated_at": "2026-05-25"
+  },
+  "node-question-fb2fd4f1": {
+    "id": "node-question-fb2fd4f1",
+    "source": "llm",
+    "type": "question",
+    "title": "에너지 부족으로 인한 사회적 응답 지연 분석",
+    "summary": "에너지가 부족해 사회적 응답이 지연되는 반복적 패턴이 관찰되며, 이는 관계 유지와 일정 관리에 영향을 미치는 일종의 판단과 실행 저하로 분류된다. 에너지 부족이 사회적 상호작용에 대한 동기 부여를 줄이고, 일정 관리에 실패하는 경향이 반복적으로 나타나고 있다.",
+    "relation_tags": [
+      "low_energy_drift",
+      "social_response_delay"
+    ],
+    "representative_evidence_ids": [
+      "memo-016",
+      "memo-050",
+      "memo-091",
+      "memo-143",
+      "memo-152",
+      "memo-175"
+    ],
+    "identity_key": "question|low_energy_drift,social_response_delay|에너지 부족으로 인한 사회적 응답 지연 분석|memo-016,memo-050,memo-091,memo-143,memo-152,memo-175",
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-14",
+    "created_at": "2026-05-26",
+    "updated_at": "2026-05-14"
+  },
+  "node-question-61519f73": {
+    "id": "node-question-61519f73",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "회의 후 자기 인식 혼란 분석",
+    "summary": "회의 후에 겉으로는 정상이지만 속으로는 한 발 물러선 상태가 반복적으로 발생하며, 이는 자기 인식의 혼란과 일정 관리의 어려움으로 이어지는 패턴이다. 외부적 상황과 내면의 불안정한 상태가 겹쳐져, 일정의 흐름을 방해하고 자기 이해에 방해가 된다.",
+    "relation_tags": [
+      "evaluation_fear",
+      "identity_gap"
+    ],
+    "pending_evidence_ids": [
+      "memo-176"
+    ],
+    "identity_key": "question|evaluation_fear,identity_gap|회의 후 자기 인식 혼란 분석|memo-176",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-26",
+    "updated_at": "2026-05-26"
+  },
+  "node-state-981e4104": {
+    "id": "node-state-981e4104",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "돈 걱정으로 인한 우선순위 혼란 상태 분석",
+    "summary": "돈 걱정이 생기면 중요한 일보다 당장 불안을 줄이는 쪽으로 우선순위가 빠르게 전환되는 반복적 패턴이 관찰되며, 이는 일상적인 관리 부담으로 인한 지속적인 스트레스와 자기 관리 능력 저하를 나타내는 상태로 분류된다. 이러한 혼란은 일정 관리와 자기 이해에 부정적인 영향을 미친다.",
+    "relation_tags": [
+      "decision_fog",
+      "external_priority_capture"
+    ],
+    "pending_evidence_ids": [
+      "memo-177"
+    ],
+    "identity_key": "state|decision_fog,external_priority_capture|돈 걱정으로 인한 우선순위 혼란 상태 분석|memo-177",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-27",
+    "updated_at": "2026-05-27"
+  },
+  "node-question-d2ebb073": {
+    "id": "node-question-d2ebb073",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "반응 패턴의 반복성 분석",
+    "summary": "지난주와 유사한 반응 패턴이 반복적으로 나타나고 있으며, 이는 자기 이해와 판단 과정을 기록하는 데서 비롯된 반복적 인식을 반영한다. 이 패턴은 상황이 아니라 반응 자체에 기반하며, 이는 자기 이해를 위한 반복적 분석과 기록을 통해 인식된 반복적 행동 양식이다.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-184"
+    ],
+    "identity_key": "question|decision_trace,pattern_recognition|반응 패턴의 반복성 분석|memo-184",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-28",
+    "updated_at": "2026-05-28"
+  },
+  "node-state-901a3436": {
+    "id": "node-state-901a3436",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "에너지 부족으로 인한 내면적 수축 상태",
+    "summary": "에너지가 부족해 속에서 작게 움츠러들어 있는 상태로, 이는 일상적인 활동에서의 참여도 감소와 자기 인식의 겉보기와 실제의 차이를 유발하는 내면적 수축 상태로 분류된다. 일상적인 활동에서의 참여도 감소와 자기 인식의 겉보기와 실제의 차이를 유발하는 내면적 수축 상태로, 이는 에너지 부족이 사회적 상호작용과 일정 관리에 영향을 미치는 일종의 판단과 실행 저하로 분류된다.",
+    "relation_tags": [
+      "identity_gap",
+      "low_energy_drift"
+    ],
+    "pending_evidence_ids": [
+      "memo-188"
+    ],
+    "identity_key": "state|identity_gap,low_energy_drift|에너지 부족으로 인한 내면적 수축 상태|memo-188",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-29",
+    "updated_at": "2026-05-29"
+  },
+  "node-question-b50faaad": {
+    "id": "node-question-b50faaad",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "창밖 흐림과 에너지 저하의 관계 분석",
+    "summary": "창밖이 흐리면 머릿속도 천천히 움직이는 현상은 외부 환경 변화와 내면 에너지 저하가 연결된 반복적 패턴으로, 이는 일상의 흐름을 방해하는 일종의 정서적 지연 상태로 분류된다. 외부 환경의 변화가 내면의 에너지 상태에 영향을 주어, 판단과 실행 능력이 저하되는 경향이 반복적으로 나타나고 있다.",
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-189"
+    ],
+    "identity_key": "question|low_energy_drift,rhythm_disruption|창밖 흐림과 에너지 저하의 관계 분석|memo-189",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-30",
+    "updated_at": "2026-05-30"
+  },
+  "node-state-67958caf": {
+    "id": "node-state-67958caf",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "의도 없는 작업 처리 상태 분석",
+    "summary": "의도 없이 받은 메시지나 일부터 처리하는 행동이 반복적으로 나타나며, 이는 일정의 흐름을 방해하는 작업 처리 패턴으로 분류된다. 주도적인 작업보다는 들어오는 일에 끌려가며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "reactive_work",
+      "unfinished_loop"
+    ],
+    "pending_evidence_ids": [
+      "memo-190"
+    ],
+    "identity_key": "state|reactive_work,unfinished_loop|의도 없는 작업 처리 상태 분석|memo-190",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-30",
+    "updated_at": "2026-05-30"
+  },
+  "node-pattern-88603ba4": {
+    "id": "node-pattern-88603ba4",
+    "source": "llm",
+    "status": "pending",
+    "type": "pattern",
+    "title": "사용자 메모의 반복 패턴을 기반으로 한 자기 이해 촉진",
+    "summary": "사용자가 자신의 행동 패턴을 인식하고, 이를 기반으로 자기 이해를 촉진하는 메모 작성 방식이 반복적으로 나타나는 현상. 이는 사용자가 자신의 행동을 반성하고, 향후 행동을 조정하는 데 기여하며, KEO의 자기 이해 기능을 강화하는 반복적 패턴으로 작용합니다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-191"
+    ],
+    "identity_key": "pattern|pattern_recognition,self_understanding_product|사용자 메모의 반복 패턴을 기반으로 한 자기 이해 촉진|memo-191",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-30",
+    "updated_at": "2026-05-30"
+  },
+  "node-question-5d06cca3": {
+    "id": "node-question-5d06cca3",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "작업 시작 전 메신저 우선 처리 패턴 분석",
+    "summary": "작업 시작 전에 메신저 읽기, 메일함 뒤적이는 등의 행동이 반복적으로 발생하며, 이는 작업 시작 회피와 맥락 분할의 반복적 패턴으로 분류된다. 이는 작업 시작을 미루는 행동과 주의력 분산을 동시에 나타내며, 자기 이해와 반복 패턴 인식에 기여한다.",
+    "relation_tags": [
+      "context_fragmentation",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-223"
+    ],
+    "identity_key": "question|context_fragmentation,start_avoidance|작업 시작 전 메신저 우선 처리 패턴 분석|memo-223",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-12",
+    "updated_at": "2026-05-12"
+  },
+  "node-question-25fd0b5a": {
+    "id": "node-question-25fd0b5a",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "의도 없는 반복 패턴 인식",
+    "summary": "의도하지 않은 반복 패턴을 인식하고, 이는 자기 이해와 반복 패턴 인식을 위한 자기 탐색의 일환으로, 이러한 패턴의 동기와 결과를 분석하는 데 기여함.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-261"
+    ],
+    "identity_key": "question|pattern_recognition|의도 없는 반복 패턴 인식|memo-261",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-22",
+    "updated_at": "2026-05-22"
+  },
+  "node-question-efd6dd30": {
+    "id": "node-question-efd6dd30",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "기록의 잔상 효과",
+    "summary": "기록은 사건 자체보다, 그때의 감각이나 자세, 판단의 잔상이 오래 남는다. 이는 자기 이해와 반복 패턴 인식에 기여하며, 기록이 단순한 정보 저장이 아니라 나중의 나에게 힌트를 전달하는 역할을 한다.",
+    "relation_tags": [
+      "event_aftereffect",
+      "event_reflection_link"
+    ],
+    "pending_evidence_ids": [
+      "memo-279"
+    ],
+    "identity_key": "question|event_aftereffect,event_reflection_link|기록의 잔상 효과|memo-279",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-25",
+    "updated_at": "2026-05-25"
+  },
+  "node-state-b049bc78": {
+    "id": "node-state-b049bc78",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "추운 카페에서의 몸 상태 지속",
+    "summary": "추운 카페에 오래 앉아 있었기 때문에 집에 와서도 몸이 굳어 있는 상태를 지속하고 있으며, 이는 특정 사건 이후의 신체적 여파로 분류된다. 추운 환경에서 오래 머무르는 행동이 신체에 지속적인 영향을 미치는 것으로 보이며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "pending_evidence_ids": [
+      "memo-285"
+    ],
+    "identity_key": "state|event_aftereffect|추운 카페에서의 몸 상태 지속|memo-285",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-26",
+    "updated_at": "2026-05-26"
+  },
+  "node-state-01573358": {
+    "id": "node-state-01573358",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "아침 커피 필터 재고로 인한 일정 시작 톤 변화",
+    "summary": "아침에 커피 필터가 다 떨어진 상태에서 하루의 시작 톤이 급격히 바뀌는 현상이 반복적으로 관찰된다. 이는 생활 업무 지연 상태와 유사한 패턴으로, 작은 재고의 누적이 일상적인 관리 부담으로 이어지며, 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "life_admin_overload"
+    ],
+    "pending_evidence_ids": [
+      "memo-296"
+    ],
+    "identity_key": "state|life_admin_overload|아침 커피 필터 재고로 인한 일정 시작 톤 변화|memo-296",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-29",
+    "updated_at": "2026-05-29"
+  },
+  "node-state-f11f6304": {
+    "id": "node-state-f11f6304",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "장소와 시간의 반복적 회상 상태 분석",
+    "summary": "같은 장소에 다시 가면 예전의 나와 지금의 내가 나란히 보이는 경험은, 시간의 흐름과 자기 인식의 변화를 반복적으로 인식하는 상태로 분류된다. 이는 일상적인 자기 관리와 자기 이해에 영향을 미치는 반복적 회상 패턴을 나타내며, 이는 자기 인식의 변화와 시간의 흐름을 반복적으로 인식하는 상태로 분류된다.",
+    "relation_tags": [
+      "event_aftereffect",
+      "event_reflection_link"
+    ],
+    "pending_evidence_ids": [
+      "memo-309",
+      "memo-459"
+    ],
+    "identity_key": "state|event_aftereffect,event_reflection_link|장소와 시간의 반복적 회상 상태 분석|memo-309",
+    "evidence_count": 0,
+    "confidence": 0.92,
+    "last_seen_at": null,
+    "created_at": "2026-05-31",
+    "updated_at": "2026-06-30"
+  },
+  "node-question-2bcc7e7d": {
+    "id": "node-question-2bcc7e7d",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "아침 루틴 안정화 실패 분석",
+    "summary": "약통을 채우고 아침 루틴을 안정화하려는 시도가 반복적으로 실패하며, 이는 일정 관리와 자기 이해에 영향을 미치는 반복적 패턴으로 분류된다. 루틴 안정화 실패는 일상적인 판단과 실행 전반에 영향을 주고, 일정 관리에 실패하는 경향이 반복적으로 나타나고 있다.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-310"
+    ],
+    "identity_key": "question|recovery_failure,rhythm_disruption|아침 루틴 안정화 실패 분석|memo-310",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-31",
+    "updated_at": "2026-05-31"
+  },
+  "node-question-0566e2fc": {
+    "id": "node-question-0566e2fc",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "카페인 과다 섭취로 인한 집중력 저하 분석",
+    "summary": "카페인 섭취 후 집중력이 오히려 떨어지는 현상이 반복적으로 관찰되며, 이는 피로와 불안을 유발하는 반복적 패턴으로 분류된다. 카페인 섭취 후 몸의 조급함과 불안이 증가하며, 이는 일정 관리와 집중력에 부정적인 영향을 미친다. 이는 피로의 확산과 회복 실패로 이어지며, 반복적인 관찰을 통해 자기 이해와 개선 전략을 도출할 수 있다.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-314"
+    ],
+    "identity_key": "question|recovery_failure,rhythm_disruption|카페인 과다 섭취로 인한 집중력 저하 분석|memo-314",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-06-01",
+    "updated_at": "2026-06-01"
+  },
+  "node-question-253bc961": {
+    "id": "node-question-253bc961",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "기억의 시기적 판단 패턴 분석",
+    "summary": "메모에서 특정 시점의 판단이 먼저 떠오르는 현상은 일정의 후유증과 회고에 연결되어, 기억의 시기적 판단이 반복적으로 발생하는 패턴을 나타낸다. 이는 일정의 흐름과 자기 이해에 영향을 미치는 반복적 인식 과정이다.",
+    "relation_tags": [
+      "event_aftereffect",
+      "event_reflection_link"
+    ],
+    "pending_evidence_ids": [
+      "memo-339"
+    ],
+    "identity_key": "question|event_aftereffect,event_reflection_link|기억의 시기적 판단 패턴 분석|memo-339",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-06-06",
+    "updated_at": "2026-06-06"
+  },
+  "node-question-cab0851c": {
+    "id": "node-question-cab0851c",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "문서 읽기 시 집중력 저하 패턴 분석",
+    "summary": "문서를 끝까지 읽는 시간이 생각보다 귀하다는 경험을 반복적으로 인식하며, 이는 일정 관리와 자기 이해에 영향을 미치는 집중력 저하의 반복적 패턴으로 분류된다. 문서 읽기 시 주의력이 빠르게 소모되어, 원래의 목표를 잊는 경향이 있으며, 이는 일정의 흐름을 방해하는 일종의 기억 상실 패턴으로 분류된다.",
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "pending_evidence_ids": [
+      "memo-353"
+    ],
+    "identity_key": "question|context_fragmentation,reactive_work|문서 읽기 시 집중력 저하 패턴 분석|memo-353",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-09"
+  },
+  "node-question-5756d058": {
+    "id": "node-question-5756d058",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "산책을 통한 회복 실패 분석",
+    "summary": "산책을 통해 몸과 정신을 회복하려는 시도가 있지만, 짧은 산책만으로도 회복이 제대로 이루어지지 않는 현상이 반복적으로 나타나고 있다. 이는 회복 실패로 이어지며, 일정의 흐름을 방해하는 요소로 작용한다. 짧은 산책만으로도 회복이 제대로 이루어지지 않는 이유를 분석하고, 이를 해결하기 위한 전략을 모색해야 한다.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-359"
+    ],
+    "identity_key": "question|recovery_failure,rhythm_disruption|산책을 통한 회복 실패 분석|memo-359",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-06-10",
+    "updated_at": "2026-06-10"
+  },
+  "node-question-c160a7d9": {
+    "id": "node-question-c160a7d9",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "일상의 작은 사건이 기억에 오래 남는 현상 분석",
+    "summary": "일상의 작은 사건이 기억에 오래 남는 현상은 주의력과 감정의 연결, 자기 인식의 반복적 강화로 인해 발생하며, 이는 일정 관리와 자기 이해에 영향을 미친다. 이러한 현상은 일상의 작은 사건이 개인의 주의력과 감정에 깊은 인상을 남기고, 반복적으로 자기 인식을 강화하는 데 기여한다.",
+    "relation_tags": [
+      "event_reflection_link"
+    ],
+    "pending_evidence_ids": [
+      "memo-391"
+    ],
+    "identity_key": "question|event_reflection_link|일상의 작은 사건이 기억에 오래 남는 현상 분석|memo-391",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-06-17",
+    "updated_at": "2026-06-17"
+  },
+  "node-question-97d032d1": {
+    "id": "node-question-97d032d1",
+    "source": "llm",
+    "type": "question",
+    "title": "카페 기억 유발 효과 분석",
+    "summary": "카페 환경이 특정 기억을 정확하게 불러오는 현상이 반복적으로 발생하며, 이는 일정 관리와 자기 이해에 영향을 미치는 기억 상실 패턴의 일종으로 분류된다. 카페 자리나 환경이 기억을 유발하는 요소로 작용하며, 이는 일정의 흐름을 방해하거나, 자기 이해에 기여할 수 있는 반복적 패턴이다.",
+    "relation_tags": [
+      "event_aftereffect",
+      "event_reflection_link"
+    ],
+    "representative_evidence_ids": [
+      "memo-241",
+      "memo-264",
+      "memo-391",
+      "memo-414"
+    ],
+    "identity_key": "question|event_aftereffect,event_reflection_link|카페 기억 유발 효과 분석|memo-241,memo-264,memo-391,memo-414",
+    "evidence_count": 32,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-06-21",
+    "updated_at": "2026-07-07"
+  },
+  "node-question-a9df61a8": {
+    "id": "node-question-a9df61a8",
+    "source": "llm",
+    "type": "question",
+    "title": "상대에 맞춘 대답 후 내 생각 지연 현상 분석",
+    "summary": "상대에게 맞춘 대답을 하고 나면 내 생각이 뒤늦게 따라오는 현상이 반복적으로 발생하며, 이는 일정의 흐름을 방해하는 일종의 기억 상실 패턴으로 분류된다. 회의가 끝난 후 개인의 주의력과 기억력이 저하되어, 원래의 목표를 잊는 경향이 있으며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "representative_evidence_ids": [
+      "memo-257",
+      "memo-272",
+      "memo-362",
+      "memo-407",
+      "memo-422"
+    ],
+    "identity_key": "question|identity_gap|상대에 맞춘 대답 후 내 생각 지연 현상 분석|memo-257,memo-272,memo-362,memo-407,memo-422",
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-06-23",
+    "updated_at": "2026-07-08"
+  },
+  "node-question-a840a0b5": {
+    "id": "node-question-a840a0b5",
+    "source": "llm",
+    "type": "question",
+    "title": "결제 알림으로 인한 지출 의심 현상 분석",
+    "summary": "구독료 결제 문자가 오면 그날 다른 지출도 한 번씩 의심하게 되는 반복적 패턴이 관찰되며, 이는 외부 자극에 의해 판단이 흐려지는 상태로 분류된다. 외부 자극이 우선순위를 잡아먹고, 판단이 어려워지는 현상이 반복적으로 나타나며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "decision_fog",
+      "external_priority_capture"
+    ],
+    "representative_evidence_ids": [
+      "memo-227",
+      "memo-273",
+      "memo-423"
+    ],
+    "identity_key": "question|decision_fog,external_priority_capture|결제 알림으로 인한 지출 의심 현상 분석|memo-227,memo-273,memo-423",
+    "evidence_count": 16,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-06-23",
+    "updated_at": "2026-07-08"
+  },
+  "node-question-f80e99eb": {
+    "id": "node-question-f80e99eb",
+    "source": "llm",
+    "type": "question",
+    "title": "루틴 안정화 실패 분석",
+    "summary": "약통 채우기, 루틴 고정 등 반복적 행동을 통해 루틴의 불안정성을 줄이고자 하는 시도가 반복되며, 이는 일정 관리와 자기 이해에 영향을 미치는 루틴 안정화 실패 패턴으로 분류된다. 이러한 행동은 루틴의 일관성을 유지하는 데 어려움을 겪고 있으며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-228",
+      "memo-310",
+      "memo-329",
+      "memo-340",
+      "memo-460"
+    ],
+    "identity_key": "question|recovery_failure,rhythm_disruption|루틴 안정화 실패 분석|memo-228,memo-310,memo-329,memo-340,memo-460",
+    "evidence_count": 15,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-06-30",
+    "updated_at": "2026-07-07"
+  },
+  "node-question-e7543da0": {
+    "id": "node-question-e7543da0",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "청소로 인한 환경 정리 실패 분석",
+    "summary": "청소를 통해 환경을 정리하려는 시도가 반복되지만, 효과가 제한적이며 이는 일정 관리와 자기 이해에 영향을 미치는 환경 정리 실패 패턴으로 분류된다. 환경 정리의 반복적 시도는 일정의 흐름을 방해하는 요소로 작용하며, 이는 자기 이해와 반복 패턴 인식에 기여함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-475",
+      "memo-325"
+    ],
+    "identity_key": "question|recovery_failure,rhythm_disruption|청소로 인한 환경 정리 실패 분석|memo-325,memo-475",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-07-03",
+    "updated_at": "2026-07-03"
+  },
+  "node-question-37c90489": {
+    "id": "node-question-37c90489",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "일정 중단 후 돈 생각의 지연 패턴 분석",
+    "summary": "일정 중단 후 돈 생각이 뒤늦게 붙는 현상이 반복적으로 발생하며, 이는 일정의 흐름을 방해하는 일종의 기억 상실과 판단 혼란으로 분류된다. 일정이 중단되었을 때, 돈에 대한 고려가 후행적으로 발생하며, 이는 일정 관리와 자기 이해에 영향을 미친다.",
+    "relation_tags": [
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-478"
+    ],
+    "identity_key": "question|schedule_disruption|일정 중단 후 돈 생각의 지연 패턴 분석|memo-478",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-07-04",
+    "updated_at": "2026-07-04"
+  },
+  "node-question-36a8c9d9": {
+    "id": "node-question-36a8c9d9",
+    "source": "llm",
+    "type": "question",
+    "title": "일의 방향이 많을 때 산만함",
+    "summary": "일의 양보다 들어오는 방향이 많을 때 더 산만하다는 경험을 반복적으로 보여주는 패턴. 이는 주의력 분산과 일정 관리의 어려움으로 이어지며, 자기 이해와 작업 방식 개선에 도움이 될 수 있다.",
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "representative_evidence_ids": [
+      "memo-072",
+      "memo-080",
+      "memo-252",
+      "memo-338",
+      "memo-402",
+      "memo-488"
+    ],
+    "identity_key": "question|context_fragmentation,reactive_work|일의 방향이 많을 때 산만함|memo-072,memo-080,memo-252,memo-338,memo-402,memo-488",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-07-06",
+    "created_at": "2026-07-06",
+    "updated_at": "2026-07-06"
+  }
+}

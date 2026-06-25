@@ -1,0 +1,620 @@
+[
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-001",
+    "reason": "기록을 남기는 행동이 흐름 끊김과 관련된 메모에서 언급된 '메신저 확인 후 오전 흐름이 끊기는 패턴'과 연결되어, 기록이 흐름에 영향을 미치는 방식으로 작용하는 것을 인식함",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-005",
+    "reason": "이 memo는 과거의 다짐을 현재 메모로 남기는 행위를 설명하며, 이는 기존 노드에서 언급된 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 동일한 구조를 가짐. 메모의 핵심 트리거인 '과거 다짐을 메모로 남김'이 노드의 제목에 명시적으로 포함되어 있어, 첨부가 가능하지만, 노드의 정확한 트리거와 결과가 일치하므로 생성이 적절함. 기존 semantic node와 유사도 0.8208로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-009",
+    "reason": "이 memo는 바쁨을 변명으로 삼아 중요한 결정을 미루는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-004",
+    "reason": "이 memo는 바쁨을 변명으로 삼아 중요한 결정을 미루는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-006",
+    "reason": "이 memo는 바쁨을 변명으로 삼아 중요한 결정을 미루는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-008",
+    "reason": "이 memo는 바쁨을 변명으로 삼아 중요한 결정을 미루는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-031",
+    "reason": "메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-001",
+    "reason": "메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-029",
+    "reason": "메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-034",
+    "reason": "메신저 확인 행동이 문서 초안 작성 전에 시작 회피를 유발하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-001",
+    "reason": "메신저 확인 행동이 문서 초안 작성 전에 시작 회피를 유발하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-031",
+    "reason": "메신저 확인 행동이 문서 초안 작성 전에 시작 회피를 유발하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-035",
+    "reason": "이 memo는 어려운 일 앞두면 안전한 일 먼저 하는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-004",
+    "reason": "이 memo는 어려운 일 앞두면 안전한 일 먼저 하는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-022",
+    "reason": "이 memo는 어려운 일 앞두면 안전한 일 먼저 하는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-006",
+    "reason": "이 memo는 어려운 일 앞두면 안전한 일 먼저 하는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-039",
+    "reason": "이 memo는 일정이 끝난 후에 메모를 다시 묶는 행동을 기록하고 있으며, 이는 '회의 후 원래 목표를 잊어버리는 상태'와 유사한 구조를 가짐. 메모를 묶는 행위가 흐름을 이해하는 데 도움을 주는 패턴으로 반복적으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-002",
+    "reason": "이 memo는 일정이 끝난 후에 메모를 다시 묶는 행동을 기록하고 있으며, 이는 '회의 후 원래 목표를 잊어버리는 상태'와 유사한 구조를 가짐. 메모를 묶는 행위가 흐름을 이해하는 데 도움을 주는 패턴으로 반복적으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-023",
+    "reason": "이 memo는 일정이 끝난 후에 메모를 다시 묶는 행동을 기록하고 있으며, 이는 '회의 후 원래 목표를 잊어버리는 상태'와 유사한 구조를 가짐. 메모를 묶는 행위가 흐름을 이해하는 데 도움을 주는 패턴으로 반복적으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-045",
+    "reason": "메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-046",
+    "reason": "이 memo는 제품 메모에서 결정 실수를 기록하고 반성하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 '일정 기준으로 전후 메모를 묶는 상태'와 유사한 구조를 가짐. 그러나 이 memo는 결정 실수에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-041",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8811)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-24",
+    "updated_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-021",
+    "reason": "이 memo는 제품 메모에서 결정 실수를 기록하고 반성하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 '일정 기준으로 전후 메모를 묶는 상태'와 유사한 구조를 가짐. 그러나 이 memo는 결정 실수에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-010",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8811)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-04-24",
+    "updated_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-049",
+    "reason": "메신저 확인 행동이 문서 초안 작성 전에 시작 회피를 유발하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-053",
+    "reason": "이 memo는 '문서 열기 싫어서 폴더 이름부터 고침'이라는 특정 트리거와 결과를 보여주며, 이는 '어려운 일 앞두면 안전한 일 먼저 하는 상태'라는 노드의 제목과 정확히 일치합니다. 메모에서 '문서 열기 싫음'이라는 구체적인 트리거와 '폴더 이름 고침'이라는 반응이 노드의 '어려운 일 앞두면 안전한 일 먼저 하는 행동'과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-057",
+    "reason": "이 memo는 산책 나가기 전 메신저 확인 행동이 시작 회피를 유발하는 패턴을 기록하고 있으며, 이는 다른 memo들과 유사한 구조를 가짐. 기존 semantic node와 유사도 0.8413로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-3ce2e729",
+    "memo_id": "memo-059",
+    "reason": "이 메모는 메모가 특정 상황에서 뜨는 이유를 설명하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 유사한 구조를 가짐. 그러나 이 메모는 메모가 뜨는 이유를 직접 설명하는 행동에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰' 및 '사건이나 일정과 회고를 연결하려는 시선'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-3ce2e729",
+    "memo_id": "memo-032",
+    "reason": "이 메모는 메모가 특정 상황에서 뜨는 이유를 설명하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 유사한 구조를 가짐. 그러나 이 메모는 메모가 뜨는 이유를 직접 설명하는 행동에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰' 및 '사건이나 일정과 회고를 연결하려는 시선'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-3ce2e729",
+    "memo_id": "memo-010",
+    "reason": "이 메모는 메모가 특정 상황에서 뜨는 이유를 설명하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 유사한 구조를 가짐. 그러나 이 메모는 메모가 뜨는 이유를 직접 설명하는 행동에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰' 및 '사건이나 일정과 회고를 연결하려는 시선'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-3ce2e729",
+    "memo_id": "memo-017",
+    "reason": "이 메모는 메모가 특정 상황에서 뜨는 이유를 설명하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 유사한 구조를 가짐. 그러나 이 메모는 메모가 뜨는 이유를 직접 설명하는 행동에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰' 및 '사건이나 일정과 회고를 연결하려는 시선'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-3ce2e729",
+    "memo_id": "memo-025",
+    "reason": "이 메모는 메모가 특정 상황에서 뜨는 이유를 설명하는 행동을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태'와 유사한 구조를 가짐. 그러나 이 메모는 메모가 뜨는 이유를 직접 설명하는 행동에 특화되어 있고, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰' 및 '사건이나 일정과 회고를 연결하려는 시선'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-066",
+    "reason": "메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-067",
+    "reason": "이 memo는 피로가 판단에 영향을 미치는 패턴을 기록하고 있으며, 이는 '기록을 통해 나중의 나에게 힌트 남기는 상태' 노드의 관찰 범위에 포함됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-069",
+    "reason": "메신저 확인 행동이 문서 초안 작성 전에 시작 회피를 유발하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-070",
+    "reason": "이 memo는 '결정 하나 내려야 하는데 캘린더 색만 만지고 있었다.'라는 문맥에서 '안전한 일만 고르는 중'이라는 상태를 보여주며, 이는 node-state-e3656e18의 '어려운 일 앞두면 안전한 일 먼저 하는 상태'와 정확히 일치하는 트리거와 결과를 가짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-072",
+    "reason": "메모에서 '바빴다는 말은 쉬운데, 사실은 마음이 산만했다는 말이 더 정확함'이라는 문장은 메신저 확인 후 오전 흐름이 끊기는 패턴과 동일한 트리거와 결과를 나타내며, '산만함'이라는 결과는 해당 노드의 '자잘한 대응만 하는 상태'와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-9cb90f7a",
+    "memo_id": "memo-042",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-9cb90f7a",
+    "memo_id": "memo-047",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-9cb90f7a",
+    "memo_id": "memo-063",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-9cb90f7a",
+    "memo_id": "memo-068",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-9cb90f7a",
+    "memo_id": "memo-073",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-076",
+    "reason": "이 memo는 쉬는 시간을 빚처럼 느끼는 감정을 기록하고 있으며, 이는 node-state-4c95967d의 '바쁨을 변명으로 삼아 중요한 결정을 미루는 상태'와 유사한 감정적 반응을 보이지만, 트리거와 결과가 다름. 이 memo의 트리거는 '침대에 누워 쉬는 중'이고, 결과는 '도망치는 기분'으로, node의 트리거와 결과와는 다름.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-c255c50d",
+    "memo_id": "memo-077",
+    "reason": "이 memo는 운동복을 입고도 운동을 하지 않고 누워 있는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-c255c50d",
+    "memo_id": "memo-004",
+    "reason": "이 memo는 운동복을 입고도 운동을 하지 않고 누워 있는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-c255c50d",
+    "memo_id": "memo-012",
+    "reason": "이 memo는 운동복을 입고도 운동을 하지 않고 누워 있는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-c255c50d",
+    "memo_id": "memo-057",
+    "reason": "이 memo는 운동복을 입고도 운동을 하지 않고 누워 있는 행동을 기록하고 있으며, 이는 다른 memo들에서 유사한 패턴으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-080",
+    "reason": "이 memo는 메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨을 기록하고 있으며, 이는 node-state-22292cab의 정의와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-086",
+    "reason": "이 memo는 메신저 확인 후 오전 흐름이 끊기는 패턴과 동일한 트리거(메신저 확인)와 결과(흐름 끊김)를 포함하고 있으며, 반복 트리거인 메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고 이후 자잘한 대응만 하는 상태를 반복적으로 관찰하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-087",
+    "reason": "이 memo는 일정이 끝난 후에 메모를 다시 묶는 행동을 기록하고 있으며, 이는 '일정 기준으로 전후 메모를 묶는 상태'와 정확히 일치하는 구조를 가짐. 메모를 묶는 행위가 흐름을 이해하는 데 도움을 주는 패턴으로 반복적으로 나타나고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-088",
+    "reason": "이 memo는 바쁨을 중요한 결정을 미루는 변명으로 사용하는 행동을 기록하고 있으며, 이는 node-state-4c95967d에서 관찰된 패턴과 정확히 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-bd5aa8c0",
+    "memo_id": "memo-089",
+    "reason": "메신저 확인 행동이 문서 초안 작성 전에 시작 회피를 유발하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-78487af7",
+    "memo_id": "memo-003",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-002",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-017",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-019",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-028",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-079",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ef93fc4c",
+    "memo_id": "memo-092",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-43c50b87",
+    "memo_id": "memo-028",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-43c50b87",
+    "memo_id": "memo-092",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-43c50b87",
+    "memo_id": "memo-041",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8789)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-43c50b87",
+    "memo_id": "memo-010",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9485)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-e3656e18",
+    "memo_id": "memo-096",
+    "reason": "이 memo는 '쉬어도 불안하고 쉼을 빚처럼 느낌'과 '중요한 일 대신 만만한 일을 고름'이라는 관계 태그를 포함하고 있으며, 이는 '어려운 일 앞두면 안전한 일 먼저 하는 상태' 노드의 트리거와 결과가 정확히 일치합니다. 메모에서 '비워도 되는데 계속 작은 할 일을 찾아냈다'는 문장은 노드의 제목에 명시된 '어려운 일 앞두면 안전한 일 먼저 하는 상태'와 동일한 상황을 설명하고 있습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-22292cab",
+    "memo_id": "memo-097",
+    "reason": "메신저 확인 행동이 오전 흐름을 끊는 것으로 인식하고, 이후 자잘한 대응만 하는 패턴이 반복적으로 관찰됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-3ce2e729",
+    "memo_id": "memo-098",
+    "reason": "이 메모들은 모두 메모가 특정 상황에서 뜨는 이유를 설명하는 행동을 기록하고 있으며, 'KEO의 자기이해 방향과 직접 맞닿은 제품 통찰'이라는 관계 태그를 포함하고 있어, 새로운 노드로 생성해야 함. 기존 semantic node와 유사도 0.9167로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-22c5d7ab",
+    "memo_id": "memo-038",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-22c5d7ab",
+    "memo_id": "memo-052",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-22c5d7ab",
+    "memo_id": "memo-058",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-22c5d7ab",
+    "memo_id": "memo-011",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-f663e85c",
+    "memo_id": "memo-008",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-f663e85c",
+    "memo_id": "memo-082",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-f663e85c",
+    "memo_id": "memo-083",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-f663e85c",
+    "memo_id": "memo-095",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-f663e85c",
+    "memo_id": "memo-099",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-f663e85c",
+    "memo_id": "memo-075",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-4c95967d",
+    "memo_id": "memo-100",
+    "reason": "이 memo는 '합리적인 이유를 붙이는데 이상하게 스스로도 잘 안 믿긴다'는 내용으로, 이는 '바쁨을 변명으로 삼아 중요한 결정을 미루는 상태'와 동일한 트리거와 결과를 가진다. '바쁨'이라는 구체적인 트리거와 '중요한 결정을 미루는' 결과가 명확히 나타나며, 이는 node-state-4c95967d의 정의와 일치한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  }
+]

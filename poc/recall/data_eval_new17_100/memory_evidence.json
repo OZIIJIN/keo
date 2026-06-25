@@ -1,0 +1,346 @@
+[
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-009",
+    "reason": "모두 중요한 결정을 미루는 변명으로 바쁨을 이유로 사용하고 있으며, 이는 반복되는 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-006",
+    "reason": "모두 중요한 결정을 미루는 변명으로 바쁨을 이유로 사용하고 있으며, 이는 반복되는 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-004",
+    "reason": "모두 중요한 결정을 미루는 변명으로 바쁨을 이유로 사용하고 있으며, 이는 반복되는 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-031",
+    "reason": "메신저 확인이 흐름 끊음의 주요 원인으로 반복적으로 나타나며, 메신저 확인 후 작은 일에 집중하는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-001",
+    "reason": "메신저 확인이 흐름 끊음의 주요 원인으로 반복적으로 나타나며, 메신저 확인 후 작은 일에 집중하는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-029",
+    "reason": "메신저 확인이 흐름 끊음의 주요 원인으로 반복적으로 나타나며, 메신저 확인 후 작은 일에 집중하는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-022",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-006",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-035",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-036",
+    "reason": "이 memo는 중요한 결정을 미루는 변명으로 바쁨을 사용하고 있으며, 이는 node-state-21497ba0의 반복 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-045",
+    "reason": "메신저 확인 후 오전 흐름이 끊기는 상태의 노드는 메신저 확인이 흐름 끊음의 주요 원인으로 반복적으로 나타나며, 메신저 확인 후 작은 일에 집중하는 패턴이 반복됨. 현재 메모는 카페에서 메신저 확인 후 문서 작업을 하지 않고 메일함을 뒤적이는 행동을 보여, 메신저 확인 후 흐름이 끊기는 상태와 정확히 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-049",
+    "reason": "이 memo는 '안전한 일만 고르는 상태'의 정의와 일치하며, 'start_avoidance' 태그가 공유되고 동일한 보류 패턴이 반복적으로 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-c3e2d6b8",
+    "memo_id": "memo-042",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-c3e2d6b8",
+    "memo_id": "memo-047",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-c3e2d6b8",
+    "memo_id": "memo-051",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-053",
+    "reason": "메모에서 '문서 열기 싫어서 폴더 이름 고침'은 '안전한 일만 고르는 상태'의 '문서 열기 대신 폴더 이름 고침'과 동일한 트리거와 결과를 나타내므로, 정확히 일치하는 패턴으로 첨부합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-055",
+    "reason": "치과 치료 후 하루가 중간에서 끊기는 느낌이 반복적으로 나타나며, 이는 'event_aftereffect' 태그와 관련된 지속적인 상태로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-052",
+    "reason": "치과 치료 후 하루가 중간에서 끊기는 느낌이 반복적으로 나타나며, 이는 'event_aftereffect' 태그와 관련된 지속적인 상태로 판단됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-038",
+    "reason": "치과 치료 후 하루가 중간에서 끊기는 느낌이 반복적으로 나타나며, 이는 'event_aftereffect' 태그와 관련된 지속적인 상태로 판단됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-056",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 집착하는 패턴이 반복적으로 나타남. 이는 '쉬는 날'이라는 트리거에 '할 일에 집착'이라는 반응이 일어나 '계획된 활동 제대로 못 함'이라는 결과를 낳는 구조로 일관됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-040",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 집착하는 패턴이 반복적으로 나타남. 이는 '쉬는 날'이라는 트리거에 '할 일에 집착'이라는 반응이 일어나 '계획된 활동 제대로 못 함'이라는 결과를 낳는 구조로 일관됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-027",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 집착하는 패턴이 반복적으로 나타남. 이는 '쉬는 날'이라는 트리거에 '할 일에 집착'이라는 반응이 일어나 '계획된 활동 제대로 못 함'이라는 결과를 낳는 구조로 일관됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-012",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 집착하는 패턴이 반복적으로 나타남. 이는 '쉬는 날'이라는 트리거에 '할 일에 집착'이라는 반응이 일어나 '계획된 활동 제대로 못 함'이라는 결과를 낳는 구조로 일관됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-004",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 집착하는 패턴이 반복적으로 나타남. 이는 '쉬는 날'이라는 트리거에 '할 일에 집착'이라는 반응이 일어나 '계획된 활동 제대로 못 함'이라는 결과를 낳는 구조로 일관됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-c3e2d6b8",
+    "memo_id": "memo-063",
+    "reason": "이 memo는 '세탁기 돌려야 하는데 이상하게 계속 뒤로 밀림'이라는 구체적인 상황을 보여주며, 이는 '생활업무 과부하로 인한 자존감 저하 상태' 노드의 '작은 생활 업무를 반복적으로 미루다 보면 자존감에 은근한 영향을 주는 상태'라는 요약과 일치합니다. 메모의 트리거인 '세탁기 돌리기'는 노드의 트리거인 '작은 생활 업무'에 해당하며, 결과인 '뒤로 밀림'은 노드의 결과인 '자존감에 영향'과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-066",
+    "reason": "메신저 확인 후 오전 흐름이 끊기는 패턴과 일치. '메신저 확인'이라는 트리거가 명확히 존재하며, '오전 흐름 끊김'이라는 결과가 일관되게 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-067",
+    "reason": "이 memo는 '바쁨'이라는 트리거에 '중요한 결정을 미루는 변명'이라는 반응이 일어나 '중요한 결정을 내리지 못함'이라는 결과를 낳는 구조로, candidate_nodes의 node-state-21497ba0과 정확히 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-068",
+    "reason": "이 memo는 '은행 들렀다 오니까 다시 일 모드 붙이기 어려웠다'라는 트리거가 '치과 후 하루가 중간에서 끊기는 상태' 노드의 '치과 치료' 트리거와 정확히 일치하며, '하루가 중간에서 끊긴 느낌'이라는 결과도 일치합니다. 'schedule_disruption' 및 'event_aftereffect' 태그도 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-069",
+    "reason": "이 memo는 'start_avoidance' 태그와 함께 '오늘 저녁 30분만 써보기. 잘하려고 하지 말 것.'이라는 메모가 포함되어 있으며, 이는 '안전한 일만 고르는 상태' 노드의 '시작을 미루는' 행동 패턴과 일치합니다. 메모의 내용은 작은 일에 집중하고, 큰 일은 하지 않는 것으로 보여 '안전한 일만 고르는 상태' 노드의 정의에 부합합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-070",
+    "reason": "메모에서 '안전한 일만 고르는 중'이라는 표현이 노드의 제목과 일치하며, '구조부터 만지고 있음'은 노드의 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-075",
+    "reason": "이 memo는 '편의점 냉장고 앞에서 한참 멍했던 순간'이 'event_aftereffect' 태그와 관련된 지속적인 상태로, '치과 후 하루가 중간에서 끊기는 상태'와 유사한 구조를 가짐. '치과 치료'와 '편의점 냉장고 앞 멍' 모두 특정 사건 이후의 지속적인 상태를 나타내며, '하루가 중간에서 끊기는 느낌'과 '한참 멍했던 순간'은 동일한 패턴 구조를 가짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-076",
+    "reason": "이 memo는 '쉬는 날'이라는 트리거에 '할 일에 집착'이라는 반응이 일어나 '계획된 활동 제대로 못 함'이라는 결과를 낳는 구조로 일관되며, 이는 node-state-839fdb5b의 정의와 정확히 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-077",
+    "reason": "이 memo는 '운동복까지 입었는데 결국 누워 있었다'라는 문장에서 '쉬는 날'이라는 트리거와 '할 일에 집착'이라는 반응, '계획된 활동 제대로 못 함'이라는 결과가 명확히 드러나며, 이는 node-state-839fdb5b의 정의와 일치합니다. '쉬는 날'이라는 트리거가 명확히 존재하며, 이에 대한 반응과 결과가 일관되게 나타나므로 attach가 적절합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-c3e2d6b8",
+    "memo_id": "memo-078",
+    "reason": "약국 가는 것도 미뤄서 감기약 다 떨어짐. 이는 생활업무 과부하로 인한 자존감 저하 상태의 구체적 사례로, 미루는 행동이 반복적으로 자존감에 영향을 주는 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-082",
+    "reason": "메신저 확인 후 흐름 끊김의 패턴과 유사하지만, 집안 부탁 처리 후 집중 붙이기 어려운 상황은 '치과 후 하루가 중간에서 끊기는 상태'와 동일한 'event_aftereffect' 태그를 공유하고, 일정이 중단된 듯한 느낌이 동일하게 나타나므로, 동일한 상태로 분류됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-086",
+    "reason": "이 memo는 메신저 확인 후 오전 흐름이 끊기는 상태와 동일한 트리거(메신저 확인)와 결과(흐름 끊김)를 가짐. 이전 메모에서 메신저 확인 후 작은 일에 집중하는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-088",
+    "reason": "이 memo는 중요한 결정을 미루는 변명으로 바쁨을 이유로 사용하는 패턴과 일치하며, 'avoidance_rationalization'과 'decision_trace' 태그가 동일하게 포함되어 있어 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-cb4e24d2",
+    "memo_id": "memo-089",
+    "reason": "이 memo는 출근 전에 첫 문장만 적어두는 행동이 '안전한 일만 고르는 상태'의 트리거와 일치하며, 'start_avoidance' 태그가 공유되어 정확한 매칭이 가능합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-ce0d2761",
+    "memo_id": "memo-094",
+    "reason": "이 memo는 자동이체 빠져나간 거 보고 집중 확 꺾임이라는 내용으로, '치과 후 하루가 중간에서 끊기는 상태'의 노드와 동일한 'event_aftereffect' 태그와 동일한 '일정 중단'이라는 구체적인 상황을 공유하고 있어, 정확한 트리거와 결과를 공유하고 있으므로 attach가 적절함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-c3e2d6b8",
+    "memo_id": "memo-095",
+    "reason": "공과금 미확인은 '생활업무 과부하'에 해당하며, 미루는 행동이 자존감 저하로 이어지는 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-839fdb5b",
+    "memo_id": "memo-096",
+    "reason": "이 memo는 '쉬는 날에도 할 일에 집착하는 상태' 노드의 정확한 트리거와 결과를 포함하고 있음. '쉬는 날'이라는 트리거가 명확히 존재하며, '작은 할 일 찾음'이라는 반응과 '계획된 활동 제대로 못 함'이라는 결과가 일관되게 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-159905a3",
+    "memo_id": "memo-097",
+    "reason": "메신저 확인 후 오전 흐름이 끊기는 상태 노드의 트리거인 '메신저 확인'이 명확히 포함되어 있으며, '흐름 끊김' 결과가 일치하므로 첨부가 적절함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-21497ba0",
+    "memo_id": "memo-100",
+    "reason": "이 memo는 중요한 결정을 미루는 변명으로 바쁨을 이유로 사용하는 패턴과 일치하며, '중요한 결정을 미루는 변명'이라는 노드의 트리거와 결과가 정확히 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  }
+]

@@ -1,0 +1,5034 @@
+[
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-003",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-001",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-002",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-07"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-004",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-004",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-001",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-002",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-003",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-005",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능. 기존 semantic node와 유사도 0.8535로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-006",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-009",
+    "reason": "이 memo는 일의 회피 패턴과 관련된 기존 질문 노드에 연결 가능하며, '운동을 피하기 위해 일로 핑계를 댔지만, 실제로는 일도 잘 못 한 경험'과 '기록을 남기는 것이 아니라, 나중의 나에게 힌트를 남기는' 등의 기존 메모와 유사한 반복적 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-09"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-010",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-10"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-013",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9727로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-014",
+    "reason": "이 memo는 일의 회피 패턴과 관련된 기존 노드에 연결되며, 운동 피하기 위해 일 핑계를 댄 경험을 반복적으로 인식하고 있음을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-015",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-002",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-008",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-11"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-12"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-019",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 메모가 이 질문 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-13"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-021",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-14"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-023",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-024",
+    "reason": "피로 관련 증상과 회복 실패, 자책감 대신 수면 선택이 반복적으로 기록되어 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-020",
+    "reason": "피로 관련 증상과 회복 실패, 자책감 대신 수면 선택이 반복적으로 기록되어 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-012",
+    "reason": "피로 관련 증상과 회복 실패, 자책감 대신 수면 선택이 반복적으로 기록되어 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-001",
+    "reason": "피로 관련 증상과 회복 실패, 자책감 대신 수면 선택이 반복적으로 기록되어 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-026",
+    "reason": "기존 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-026",
+    "reason": "기존 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-010",
+    "reason": "기존 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-021",
+    "reason": "기존 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-16"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-028",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 메모도 이에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-17"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-030",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-032",
+    "reason": "이 메모는 데이터 수집의 목적에 대한 의문과 자기 이해, 패턴 인식에 대한 반복적 인식을 보여주므로 기존 노드 '데이터의 목적에 대한 의문'에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-033",
+    "reason": "피로로 인한 결정 흐름 상태는 기존 피로 회복 실패 상태와 유사하지만, 'decision_fog' 태그가 추가되어 판단 흐림을 강조함. 새로운 메모는 피로가 결정 과정에 미치는 영향을 보다 명확히 기록하고 있어, 기존 노드와 함께 연결하여 통합적인 상태 인식을 제공함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-035",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-036",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-019",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-028",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-013",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-036",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-003",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-009",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-019",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-028",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-013",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-20"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-038",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-037",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-039",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-040",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-040",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-012",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-033",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-041",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-22"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-043",
+    "reason": "피로가 판단과 실행 전반에 영향을 주고, 회복 실패가 반복적으로 기록된 메모들과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-044",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-046",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-049",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8506로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-051",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-040",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-051",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-009",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-040",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-051",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-028",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-009",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-040",
+    "reason": "이 메모는 미뤄진 일과 자존감, 회피 행동, 반복 패턴 인식, 판단 기록, 회복 실패, 쉬는 날의 불안감 등이 반복적으로 언급된 기존 메모들과 유사한 주제를 공유하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-052",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-25"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-056",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-058",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-011",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-027",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-058",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-011",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-037",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-038",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-027",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-059",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-025",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-059",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-032",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-010",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-017",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-025",
+    "reason": "기존 메모에서 메모의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-061",
+    "reason": "메모에서 피로가 심해 활동을 포기하고 자책감 대신 수면을 선택하는 패턴이 반복적으로 기록되어 기존 노드와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-062",
+    "reason": "이 memo는 피로로 인한 판단 저하와 회복 실패를 반복적으로 기록한 node-state-59068015에 부합하므로 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-067",
+    "reason": "피로가 심해 산책 같은 활동을 포기하고, 자책감 대신 조기 수면을 선택하는 반복적 행동 패턴이 기존 노드에 기록되어 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-068",
+    "reason": "이 메모는 일정이 하루의 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드 '일정으로 인한 일의 흐름 방해'와 '일정-회고 연결의 중요성'에 해당하는 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-052",
+    "reason": "이 메모는 일정이 하루의 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드 '일정으로 인한 일의 흐름 방해'와 '일정-회고 연결의 중요성'에 해당하는 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-001",
+    "reason": "이 메모는 일정이 하루의 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드 '일정으로 인한 일의 흐름 방해'와 '일정-회고 연결의 중요성'에 해당하는 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-068",
+    "reason": "이 메모는 일정이 하루의 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드 '일정으로 인한 일의 흐름 방해'와 '일정-회고 연결의 중요성'에 해당하는 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-001",
+    "reason": "이 메모는 일정이 하루의 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드 '일정으로 인한 일의 흐름 방해'와 '일정-회고 연결의 중요성'에 해당하는 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-072",
+    "reason": "메모에서 '바빴다는 말은 쉬운데, 사실은 마음이 산만했다는 말이 더 정확함'이라는 표현은 기존 메모에서 반복적으로 인식하고 있는 자기 이해와 반복 패턴 인식, 판단 기록에 대한 주제와 일치하며, 이는 '기록의 목적에 대한 의문'이라는 기존 질문 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-30"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-074",
+    "reason": "기존 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-076",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-077",
+    "reason": "피로로 인한 활동 회피 상태와 회복 실패가 반복적으로 기록되어 있으며, 이 메모도 유사한 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-079",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해에 대한 인식을 반복적으로 드러내며, 기존의 '기록의 목적에 대한 의문' 노드와 유사한 주제와 태그를 공유합니다. 또한, 쉬는 날의 불안감과 회복 실패, 일의 회피 패턴 등 다양한 관련 메모와도 연결 가능합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-074",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해에 대한 인식을 반복적으로 드러내며, 기존의 '기록의 목적에 대한 의문' 노드와 유사한 주제와 태그를 공유합니다. 또한, 쉬는 날의 불안감과 회복 실패, 일의 회피 패턴 등 다양한 관련 메모와도 연결 가능합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-056",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해에 대한 인식을 반복적으로 드러내며, 기존의 '기록의 목적에 대한 의문' 노드와 유사한 주제와 태그를 공유합니다. 또한, 쉬는 날의 불안감과 회복 실패, 일의 회피 패턴 등 다양한 관련 메모와도 연결 가능합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-073",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해에 대한 인식을 반복적으로 드러내며, 기존의 '기록의 목적에 대한 의문' 노드와 유사한 주제와 태그를 공유합니다. 또한, 쉬는 날의 불안감과 회복 실패, 일의 회피 패턴 등 다양한 관련 메모와도 연결 가능합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-080",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-015",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-081",
+    "reason": "피로가 심해 산책 같은 활동을 포기하고, 자책감 대신 조기 수면을 선택하는 반복적 행동 패턴이 현재 메모에도 해당됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-082",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-008",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-082",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-083",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-062",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-020",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-087",
+    "reason": "이전 메모에서 일정이 회고 트리거가 되고, 메모의 목적에 대한 의문이 반복적으로 나타나는 패턴이 현재 메모와 일치하여 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-023",
+    "reason": "이전 메모에서 일정이 회고 트리거가 되고, 메모의 목적에 대한 의문이 반복적으로 나타나는 패턴이 현재 메모와 일치하여 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-002",
+    "reason": "이전 메모에서 일정이 회고 트리거가 되고, 메모의 목적에 대한 의문이 반복적으로 나타나는 패턴이 현재 메모와 일치하여 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-039",
+    "reason": "이전 메모에서 일정이 회고 트리거가 되고, 메모의 목적에 대한 의문이 반복적으로 나타나는 패턴이 현재 메모와 일치하여 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-015",
+    "reason": "이전 메모에서 일정이 회고 트리거가 되고, 메모의 목적에 대한 의문이 반복적으로 나타나는 패턴이 현재 메모와 일치하여 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-088",
+    "reason": "기존 메모에서 일의 회피 패턴과 감각 피하기 행동이 연결되어 있다는 점을 강조하고 있어, 현재 메모도 이 패턴을 반복적으로 인식하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-090",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9418로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-092",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-093",
+    "reason": "메모에서 일의 회피 패턴과 관련된 자기 이해의 시도가 드러나며, 기존 노드 '일의 회피 패턴 분석'과 태그 'avoidance_rationalization'이 일치하여 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-096",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-027",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-098",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9875로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-question-d1995e4f",
+    "memo_id": "memo-100",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-101",
+    "reason": "이 메모는 회의 후 정리 문단을 작성하는 행동을 반복적으로 언급하며, 이는 기존 메모에서 메모의 목적에 대한 의문과 일정-회고 연결의 중요성에 대한 패턴을 반복적으로 인식하고 있다는 점을 기반으로 기존 노드에 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-101",
+    "reason": "이 메모는 회의 후 정리 문단을 작성하는 행동을 반복적으로 언급하며, 이는 기존 메모에서 메모의 목적에 대한 의문과 일정-회고 연결의 중요성에 대한 패턴을 반복적으로 인식하고 있다는 점을 기반으로 기존 노드에 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-087",
+    "reason": "이 메모는 회의 후 정리 문단을 작성하는 행동을 반복적으로 언급하며, 이는 기존 메모에서 메모의 목적에 대한 의문과 일정-회고 연결의 중요성에 대한 패턴을 반복적으로 인식하고 있다는 점을 기반으로 기존 노드에 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-103",
+    "reason": "이 메모는 '도망은 종종 성실한 얼굴을 하고 온다'는 문장으로, 회피 행동에 대한 그럴듯한 이유를 붙이는 행동을 반복적으로 인식하고 있음. 이는 기존 '일의 회피 패턴 분석' 노드와 관련된 반복적 패턴 인식과 회피 행동의 동기 분석에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-104",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-042",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-073",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-104",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-042",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-073",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-105",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-106",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-107",
+    "reason": "이전 메모에서 피로가 심해 산책 같은 활동을 포기하고, 자책감 대신 조기 수면을 선택하는 반복적 행동 패턴이 기록되어 있으며, 현재 메모도 피로로 인한 자각이 반복적으로 나타나고 있어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-108",
+    "reason": "이 메모는 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패를 반복적으로 기록하고 있어, 기존의 '쉬는 날에도 불안으로 인한 활동 회피 상태' 노드와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-109",
+    "reason": "이 메모는 피로로 인한 활동 회피 상태와 회복 실패를 반복적으로 기록하고 있어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-110",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-110",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-111",
+    "reason": "메모가 단순한 정보 저장이 아니라, 사용자의 현재 상태와 반복된 패턴을 이해하기 위한 자기 이해의 기초가 되어야 한다는 점을 인식하고 있다. 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-112",
+    "reason": "피로가 소비 패턴에 직접적인 영향을 미쳐 씁쓸함을 느끼는 현상이 반복적으로 기록되어, 기존 피로 관련 상태 노드와 연결 가능하면서 새로운 패턴을 강조하고 있어 새로운 상태 노드 생성이 필요함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-114",
+    "reason": "이 메모는 피로로 인한 회복 실패와 자책감 대신 수면 선택의 반복적 행동 패턴을 반영하고 있으며, 이는 기존 노드 '피로로 인한 활동 회피 상태'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-117",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9249로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-119",
+    "reason": "피로가 심해 산책 같은 활동을 포기하고, 자책감 대신 조기 수면을 선택하는 반복적 행동 패턴이 현재 메모의 내용과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-120",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-044",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-084",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-093",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-120",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-044",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-084",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-093",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-125",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-126",
+    "reason": "이 memo는 기존의 자기이해와 패턴 인식에 대한 반복적 인식을 기반으로 새로운 질문 형식으로 연결 가능하다는 점에서 node-question-5296ae8a에 부합한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-128",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-114",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-129",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-130",
+    "reason": "다수의 메모에서 일상 생활 관리 업무 처리 지연이 반복적으로 나타나고 있으며, 이는 일관된 패턴으로 보여짐",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-099",
+    "reason": "다수의 메모에서 일상 생활 관리 업무 처리 지연이 반복적으로 나타나고 있으며, 이는 일관된 패턴으로 보여짐",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-057",
+    "reason": "다수의 메모에서 일상 생활 관리 업무 처리 지연이 반복적으로 나타나고 있으며, 이는 일관된 패턴으로 보여짐",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-132",
+    "reason": "이번 주 메모들이 다 다른 얘기 같지만 밑바닥은 비슷하다는 점은 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-133",
+    "reason": "이 메모는 피로가 심해 산책 같은 활동을 포기하고, 자책감 대신 조기 수면을 선택하는 반복적 행동 패턴을 보이는 '피로로 인한 활동 회피 상태'와 일치합니다. '달달한 거 먹는 순간만 괜찮고 그 뒤엔 더 늘어졌다'는 문장은 피로가 판단과 실행 전반에 영향을 주고, 회복이 제대로 이루어지지 않는 상태를 반영합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-134",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-135",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고 피로가 판단과 실행에 영향을 주는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-033",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고 피로가 판단과 실행에 영향을 주는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-135",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고 피로가 판단과 실행에 영향을 주는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-008",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고 피로가 판단과 실행에 영향을 주는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-011",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고 피로가 판단과 실행에 영향을 주는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-037",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고 피로가 판단과 실행에 영향을 주는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-139",
+    "reason": "이 메모는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-074",
+    "reason": "이 메모는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-141",
+    "reason": "이전 메모에서 작업 시작 지연 패턴이 반복적으로 나타나고 있으며, 현재 메모도 동일한 맥락을 보여주므로 기존 노드에 연결하고 새로운 질문 형식으로 확장하여 분석을 심화함. 기존 semantic node와 유사도 0.8352로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-089",
+    "reason": "이전 메모에서 작업 시작 지연 패턴이 반복적으로 나타나고 있으며, 현재 메모도 동일한 맥락을 보여주므로 기존 노드에 연결하고 새로운 질문 형식으로 확장하여 분석을 심화함. 기존 semantic node와 유사도 0.8352로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-022",
+    "reason": "이전 메모에서 작업 시작 지연 패턴이 반복적으로 나타나고 있으며, 현재 메모도 동일한 맥락을 보여주므로 기존 노드에 연결하고 새로운 질문 형식으로 확장하여 분석을 심화함. 기존 semantic node와 유사도 0.8352로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-034",
+    "reason": "이전 메모에서 작업 시작 지연 패턴이 반복적으로 나타나고 있으며, 현재 메모도 동일한 맥락을 보여주므로 기존 노드에 연결하고 새로운 질문 형식으로 확장하여 분석을 심화함. 기존 semantic node와 유사도 0.8352로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-031",
+    "reason": "이전 메모에서 작업 시작 지연 패턴이 반복적으로 나타나고 있으며, 현재 메모도 동일한 맥락을 보여주므로 기존 노드에 연결하고 새로운 질문 형식으로 확장하여 분석을 심화함. 기존 semantic node와 유사도 0.8352로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-142",
+    "reason": "이 메모는 피로로 인한 판단력 저하와 회복 실패를 반복적으로 기록한 메모들과 유사하며, '피로가 판단과 실행 전반에 번짐'이라는 관계 태그가 공유됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-143",
+    "reason": "업무 연락 미루기 상태는 여러 메모에서 반복적으로 나타나며, 타이밍 재는 행동이 지연을 악화시키는 패턴이 확인됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-091",
+    "reason": "업무 연락 미루기 상태는 여러 메모에서 반복적으로 나타나며, 타이밍 재는 행동이 지연을 악화시키는 패턴이 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-122",
+    "reason": "업무 연락 미루기 상태는 여러 메모에서 반복적으로 나타나며, 타이밍 재는 행동이 지연을 악화시키는 패턴이 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-022",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-105",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-144",
+    "reason": "보류 패턴 반복 확인으로 승격",
+    "source": "llm",
+    "weight": 0.75,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-145",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-145",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-146",
+    "reason": "피로가 지출 결정에 영향을 미치는 반복적 패턴이 여러 메모에서 기록되어 새로운 상태 노드를 생성하고 기존 노드와 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-146",
+    "reason": "피로가 지출 결정에 영향을 미치는 반복적 패턴이 여러 메모에서 기록되어 새로운 상태 노드를 생성하고 기존 노드와 연결함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-112",
+    "reason": "피로가 지출 결정에 영향을 미치는 반복적 패턴이 여러 메모에서 기록되어 새로운 상태 노드를 생성하고 기존 노드와 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-043",
+    "reason": "피로가 지출 결정에 영향을 미치는 반복적 패턴이 여러 메모에서 기록되어 새로운 상태 노드를 생성하고 기존 노드와 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-033",
+    "reason": "피로가 지출 결정에 영향을 미치는 반복적 패턴이 여러 메모에서 기록되어 새로운 상태 노드를 생성하고 기존 노드와 연결함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-147",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 기존의 '생활 관리 부담으로 인한 행동 지연' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-148",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-150",
+    "reason": "이 메모는 기존 질문 노드 '기록의 목적에 대한 의문'과 동일한 주제인 자기 이해와 반복 패턴 인식, 판단 기록에 대한 인식을 반복적으로 강조하고 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-151",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 해당하며, '생활 관리 부담으로 인한 행동 지연' 노드와 일치하는 내용을 포함하고 있습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-152",
+    "reason": "이 메모는 사회적 응답 지연과 관련된 패턴을 반복적으로 나타내며, 기존 노드 '업무 연락 미루기'와 일치하는 내용을 포함하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-154",
+    "reason": "이 메모는 기존의 '업무 연락 미루기' 상태와 일치하며, 사회적 응답 지연의 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-155",
+    "reason": "메모에서 회복 실패와 판단 흐름이 반복적으로 기록되어, 결정 미루기와 회복 지연의 관계를 강조하고 있어 새로운 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-155",
+    "reason": "메모에서 회복 실패와 판단 흐름이 반복적으로 기록되어, 결정 미루기와 회복 지연의 관계를 강조하고 있어 새로운 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-020",
+    "reason": "메모에서 회복 실패와 판단 흐름이 반복적으로 기록되어, 결정 미루기와 회복 지연의 관계를 강조하고 있어 새로운 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-155",
+    "reason": "메모에서 회복 실패와 판단 흐름이 반복적으로 기록되어, 결정 미루기와 회복 지연의 관계를 강조하고 있어 새로운 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-114",
+    "reason": "메모에서 회복 실패와 판단 흐름이 반복적으로 기록되어, 결정 미루기와 회복 지연의 관계를 강조하고 있어 새로운 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-020",
+    "reason": "메모에서 회복 실패와 판단 흐름이 반복적으로 기록되어, 결정 미루기와 회복 지연의 관계를 강조하고 있어 새로운 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-156",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-157",
+    "reason": "이전 메모에서 보류 패턴 반복 확인으로 승격하며, 현재 메모도 동일한 안전한 일 선택과 시작 회피 행동을 반복하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-158",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-160",
+    "reason": "메모는 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패를 반복적으로 기록하고 있어, 기존 노드 '쉬는 날에도 불안으로 인한 활동 회피 상태'와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-109",
+    "reason": "메모는 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패를 반복적으로 기록하고 있어, 기존 노드 '쉬는 날에도 불안으로 인한 활동 회피 상태'와 일치함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-161",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-162",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-163",
+    "reason": "메모가 단순한 정보 저장이 아니라, 사용자의 현재 상태와 반복된 패턴을 이해하기 위한 자기 이해의 기초가 되어야 한다는 점을 인식하고 있다. 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-164",
+    "reason": "이 메모는 기존 질문 노드 '기록의 목적에 대한 의문'과 관련된 반복 패턴 인식과 판단 기록을 강조하고 있어 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-165",
+    "reason": "점심 후 집중력 저하가 피로와 에너지 감소로 인한 반복적 패턴으로 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-166",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-167",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연과 관련된 반복적 패턴을 보여주며, 기존 node-state-de2ae434에서 언급된 '생활 관리 부담으로 인한 행동 지연'과 일치함. 또한, 'unfinished_loop' 태그가 포함되어 있어 끝내지 못한 일의 쌓임을 반영함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-051",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연과 관련된 반복적 패턴을 보여주며, 기존 node-state-de2ae434에서 언급된 '생활 관리 부담으로 인한 행동 지연'과 일치함. 또한, 'unfinished_loop' 태그가 포함되어 있어 끝내지 못한 일의 쌓임을 반영함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-040",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연과 관련된 반복적 패턴을 보여주며, 기존 node-state-de2ae434에서 언급된 '생활 관리 부담으로 인한 행동 지연'과 일치함. 또한, 'unfinished_loop' 태그가 포함되어 있어 끝내지 못한 일의 쌓임을 반영함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-170",
+    "reason": "이 memo는 작업 시작 회피와 과도한 계획 수립 패턴을 반복적으로 보여주므로 기존 node-question-ec29ce42에 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-045",
+    "reason": "이 memo는 작업 시작 회피와 과도한 계획 수립 패턴을 반복적으로 보여주므로 기존 node-question-ec29ce42에 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-031",
+    "reason": "이 memo는 작업 시작 회피와 과도한 계획 수립 패턴을 반복적으로 보여주므로 기존 node-question-ec29ce42에 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-013",
+    "reason": "이 memo는 작업 시작 회피와 과도한 계획 수립 패턴을 반복적으로 보여주므로 기존 node-question-ec29ce42에 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-049",
+    "reason": "이 memo는 작업 시작 회피와 과도한 계획 수립 패턴을 반복적으로 보여주므로 기존 node-question-ec29ce42에 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-171",
+    "reason": "이 메모는 '미뤄진 일'이 자존감에 영향을 미치는 패턴을 반복적으로 인식하고 있으며, 이는 기존의 '일의 회피 패턴 분석' 질문 노드와 관련된 경험과 유사합니다. 특히, '사소한 미룸이 쌓이면 사람은 자기 이미지부터 깎아먹는다'는 문장은 기존 노드에서 언급된 '일의 회피'와 '자기 이미지 손상'의 관계를 강조하고 있습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-172",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-172",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-172",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8728로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-173",
+    "reason": "이 memo는 작업 시작 회피와 과도한 계획 수립 패턴에 해당하며, 기존 노드에 이미 관련된 증거가 존재하므로 기존 노드에 첨부합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-175",
+    "reason": "이 메모는 에너지 부족으로 인한 연락 지연을 반복적으로 나타내는 패턴과 일치하며, 사회적 응답 지연과 저에너지 흐름이 병행되는 상태를 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-176",
+    "reason": "이 메모는 '업무 연락 미루기' 상태와 유사한 패턴을 보여주며, 타이밍 재는 행동이 지연을 악화시킨다는 점에서 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-177",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-178",
+    "reason": "이 memo는 기존의 '데이터의 목적에 대한 의문' 노드와 관련된 반복 패턴 인식과 자기 이해에 대한 논의를 기반으로 하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-180",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-181",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-181",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8727로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-182",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 기존 노드 '생활 관리 부담으로 인한 행동 지연'과 직접적으로 관련이 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-063",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 기존 노드 '생활 관리 부담으로 인한 행동 지연'과 직접적으로 관련이 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-077",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 기존 노드 '생활 관리 부담으로 인한 행동 지연'과 직접적으로 관련이 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-093",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 기존 노드 '생활 관리 부담으로 인한 행동 지연'과 직접적으로 관련이 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-183",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 메모도 이에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-184",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-question-18934938",
+    "memo_id": "memo-184",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-185",
+    "reason": "스트레스가 증가할 때 행동 속도가 빨라지는 현상은 피로로 인한 판단력 저하와 실행력 약화를 반영하며, 이는 기존 피로 관련 상태 노드와 일치하는 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-186",
+    "reason": "이전 메모에서 가족 일정이 마음에 오래 남는 현상이 언급되었고, 현재 메모도 비슷한 맥락으로 가족 일에 대한 감정이 오래 남는다는 점을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-187",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-187",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-191",
+    "reason": "이 memo는 기존의 자기 이해와 패턴 인식에 대한 반복적인 인식을 기반으로 하며, '데이터의 목적에 대한 의문'이라는 기존 노드와 유사한 맥락에서 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-192",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-193",
+    "reason": "이 메모는 '작업 시작 회피와 과도한 계획 수립' 노드와 일치하는 'start_avoidance' 태그를 포함하고 있으며, 반복적인 보류 패턴을 반영하고 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-006",
+    "reason": "이 메모는 '작업 시작 회피와 과도한 계획 수립' 노드와 일치하는 'start_avoidance' 태그를 포함하고 있으며, 반복적인 보류 패턴을 반영하고 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-069",
+    "reason": "이 메모는 '작업 시작 회피와 과도한 계획 수립' 노드와 일치하는 'start_avoidance' 태그를 포함하고 있으며, 반복적인 보류 패턴을 반영하고 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-194",
+    "reason": "피로가 판단과 실행 전반에 영향을 주는 패턴이 기존 메모에서 반복적으로 기록되어 있고, 현재 메모도 이 패턴을 강조하고 있어 기존 노드와 연결하여 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-194",
+    "reason": "피로가 판단과 실행 전반에 영향을 주는 패턴이 기존 메모에서 반복적으로 기록되어 있고, 현재 메모도 이 패턴을 강조하고 있어 기존 노드와 연결하여 새로운 상태 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-195",
+    "reason": "이 메모는 '업무 연락 미루기' 상태와 관련된 반복적인 패턴을 보여주며, 타이밍 재는 행동이 지연을 악화시킨다는 점에서 기존 노드에 부합합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-196",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-198",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-199",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴에 해당하며, 기존의 '생활 관리 부담으로 인한 행동 지연' 노드와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-200",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-200",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-201",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-201",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-201",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-101",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-002",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-039",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-087",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-023",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-202",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-202",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-135",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-106",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-203",
+    "reason": "이 memo는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴과 일치하며, '생활 관리 부담으로 인한 행동 지연' 노드에 해당하므로 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-204",
+    "reason": "반품 박스를 처리하지 않은 상태가 반복적으로 기록되어 있으며, 이는 일상 생활 관리 업무 처리 지연의 일환으로 판단됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-115",
+    "reason": "반품 박스를 처리하지 않은 상태가 반복적으로 기록되어 있으며, 이는 일상 생활 관리 업무 처리 지연의 일환으로 판단됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-205",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-205",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-206",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-206",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-207",
+    "reason": "이전 메모에서 일정 전후 메모를 연결해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-208",
+    "reason": "이전 메모에서 데이터 수집의 목적에 대한 의문이 반복적으로 나타나고 있으며, 이는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-209",
+    "reason": "이전 메모에서 사회적 응답 지연과 에너지 부족이 반복적으로 언급되었으며, 현재 메모도 이 두 가지 요소와 관련이 있어 기존 노드에 연결하고 새로운 요소를 추가하여 상태를 보완하는 것이 적절하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-050",
+    "reason": "이전 메모에서 사회적 응답 지연과 에너지 부족이 반복적으로 언급되었으며, 현재 메모도 이 두 가지 요소와 관련이 있어 기존 노드에 연결하고 새로운 요소를 추가하여 상태를 보완하는 것이 적절하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-016",
+    "reason": "이전 메모에서 사회적 응답 지연과 에너지 부족이 반복적으로 언급되었으며, 현재 메모도 이 두 가지 요소와 관련이 있어 기존 노드에 연결하고 새로운 요소를 추가하여 상태를 보완하는 것이 적절하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-210",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-211",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-212",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-213",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴과 일치하며, 기존 노드 '생활 관리 부담으로 인한 행동 지연'과 연결되어 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-214",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-211",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-214",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-211",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-215",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-215",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-216",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 부합하며, 기존 노드에 추가됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-217",
+    "reason": "이 메모는 세탁기 돌리기, 건조대 비우기 같은 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 이는 '생활 관리 부담으로 인한 행동 지연' 상태와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-218",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연이 반복적으로 나타나는 패턴을 보여주며, 기존 노드의 요약과 일치함. 반품 업무 미루는 행동은 기존 노드에서 관찰된 행동과 유사하므로 기존 노드에 연결하고 새로운 증거로 추가함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-219",
+    "reason": "냉장고 정리 미루는 행동은 일상 생활 관리 업무 처리 지연 패턴과 일치하며, 이는 기존 노드에 해당하는 반복적 행동을 나타냄.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-220",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-221",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 부합하며, '생활 관리 부담으로 인한 행동 지연' 노드에 해당합니다. '택배 상자 그대로 현관에 며칠째'라는 표현은 기존 노드의 '생활 관리 업무가 쌓여가며 실행 지연이 발생'하는 상태와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-222",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-222",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-223",
+    "reason": "이 메모는 작업 시작 회피와 관련된 패턴을 반복적으로 보여주며, 기존의 '작업 시작 회피와 과도한 계획 수립' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-118",
+    "reason": "이 메모는 작업 시작 회피와 관련된 패턴을 반복적으로 보여주며, 기존의 '작업 시작 회피와 과도한 계획 수립' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-149",
+    "reason": "이 메모는 작업 시작 회피와 관련된 패턴을 반복적으로 보여주며, 기존의 '작업 시작 회피와 과도한 계획 수립' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-224",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 해당하며, '생활 관리 부담으로 인한 행동 지연' 노드와 일치하는 내용을 포함하고 있습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-225",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.9906로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-226",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-227",
+    "reason": "메모에서 일정이 하루 흐름을 방해하고, 회복 실패와 판단 흐름이 반복적으로 기록되어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-227",
+    "reason": "메모에서 일정이 하루 흐름을 방해하고, 회복 실패와 판단 흐름이 반복적으로 기록되어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-106",
+    "reason": "메모에서 일정이 하루 흐름을 방해하고, 회복 실패와 판단 흐름이 반복적으로 기록되어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-228",
+    "reason": "메모에서 피로로 인한 결정 흐름과 회복 실패가 기존 노드와 일치하며, 루틴 부드러워짐은 회복 실패와 관련된 행동 변화로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-228",
+    "reason": "메모에서 피로로 인한 결정 흐름과 회복 실패가 기존 노드와 일치하며, 루틴 부드러워짐은 회복 실패와 관련된 행동 변화로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-229",
+    "reason": "친구 답장 지연이 반복적으로 나타나고 있으며, 이는 사회적 응답 지연 상태와 관련된 패턴으로, 타이밍 재는 행동이 지연을 악화시키는 것으로 확인됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-071",
+    "reason": "친구 답장 지연이 반복적으로 나타나고 있으며, 이는 사회적 응답 지연 상태와 관련된 패턴으로, 타이밍 재는 행동이 지연을 악화시키는 것으로 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-5b7b28ce",
+    "memo_id": "memo-001",
+    "reason": "친구 답장 지연이 반복적으로 나타나고 있으며, 이는 사회적 응답 지연 상태와 관련된 패턴으로, 타이밍 재는 행동이 지연을 악화시키는 것으로 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-230",
+    "reason": "이 메모는 집에 쌓여 있는 박스를 처리하지 않아서 집에 들어올 때 답답함을 느끼는 경험을 기록하고 있으며, 이는 일상 생활 관리 업무 처리 지연(생활 관리 부담으로 인한 행동 지연)과 유사한 패턴으로, 기존 노드에 해당됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-204",
+    "reason": "이 메모는 집에 쌓여 있는 박스를 처리하지 않아서 집에 들어올 때 답답함을 느끼는 경험을 기록하고 있으며, 이는 일상 생활 관리 업무 처리 지연(생활 관리 부담으로 인한 행동 지연)과 유사한 패턴으로, 기존 노드에 해당됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-115",
+    "reason": "이 메모는 집에 쌓여 있는 박스를 처리하지 않아서 집에 들어올 때 답답함을 느끼는 경험을 기록하고 있으며, 이는 일상 생활 관리 업무 처리 지연(생활 관리 부담으로 인한 행동 지연)과 유사한 패턴으로, 기존 노드에 해당됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-221",
+    "reason": "이 메모는 집에 쌓여 있는 박스를 처리하지 않아서 집에 들어올 때 답답함을 느끼는 경험을 기록하고 있으며, 이는 일상 생활 관리 업무 처리 지연(생활 관리 부담으로 인한 행동 지연)과 유사한 패턴으로, 기존 노드에 해당됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-231",
+    "reason": "이 메모는 냉장고 정리와 같은 일상 생활 관리 업무 처리 지연 패턴에 해당하며, 기존 노드에서 관찰된 일관된 행동 지연 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-234",
+    "reason": "물 마시는 행동을 반복적으로 회피하고 있으며, 이는 쉬는 날에도 불안으로 인한 활동 회피 상태와 회복 실패에 해당하는 기존 노드와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-234",
+    "reason": "물 마시는 행동을 반복적으로 회피하고 있으며, 이는 쉬는 날에도 불안으로 인한 활동 회피 상태와 회복 실패에 해당하는 기존 노드와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-question-ec29ce42",
+    "memo_id": "memo-235",
+    "reason": "이전 메모에서 시작 회피와 안전한 일 선택 패턴이 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-236",
+    "reason": "냉장고 정리 미루는 행동은 일상 생활 관리 업무 처리 지연의 일관된 패턴으로, 기존 노드에 추가 적합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-238",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-239",
+    "reason": "메모에서 피로 관련 증상과 회복 실패가 기록되어 있으며, '물 적게 마신 날'이라는 구체적 원인은 새로운 증상으로 추가될 수 있으나, 기존 노드에 이미 회복 실패와 관련된 증상이 기록되어 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-241",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-243",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-244",
+    "reason": "이 메모는 '빠른 결정은 종종 피곤함의 다른 이름일 수 있다'라는 문장이 피로와 판단력 저하, 결정 과정에 대한 반복적 인식을 보여주며, 이는 기존 노드 '기록의 목적에 대한 의문'과 '피로로 인한 지출 패턴 상태'에서 언급된 피로와 판단, 결정 과정에 대한 인식과 연결됩니다. 특히 'decision_trace' 태그가 공유되어 기존 노드와의 연결성이 높습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-067",
+    "reason": "이 메모는 '빠른 결정은 종종 피곤함의 다른 이름일 수 있다'라는 문장이 피로와 판단력 저하, 결정 과정에 대한 반복적 인식을 보여주며, 이는 기존 노드 '기록의 목적에 대한 의문'과 '피로로 인한 지출 패턴 상태'에서 언급된 피로와 판단, 결정 과정에 대한 인식과 연결됩니다. 특히 'decision_trace' 태그가 공유되어 기존 노드와의 연결성이 높습니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-033",
+    "reason": "이 메모는 '빠른 결정은 종종 피곤함의 다른 이름일 수 있다'라는 문장이 피로와 판단력 저하, 결정 과정에 대한 반복적 인식을 보여주며, 이는 기존 노드 '기록의 목적에 대한 의문'과 '피로로 인한 지출 패턴 상태'에서 언급된 피로와 판단, 결정 과정에 대한 인식과 연결됩니다. 특히 'decision_trace' 태그가 공유되어 기존 노드와의 연결성이 높습니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-119",
+    "reason": "이 메모는 '빠른 결정은 종종 피곤함의 다른 이름일 수 있다'라는 문장이 피로와 판단력 저하, 결정 과정에 대한 반복적 인식을 보여주며, 이는 기존 노드 '기록의 목적에 대한 의문'과 '피로로 인한 지출 패턴 상태'에서 언급된 피로와 판단, 결정 과정에 대한 인식과 연결됩니다. 특히 'decision_trace' 태그가 공유되어 기존 노드와의 연결성이 높습니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-246",
+    "reason": "이 메모는 '요즘은 아침보다 저녁 메모가 더 솔직하다'는 내용으로, 메모의 솔직함과 반복 패턴 인식에 대한 인식을 반복적으로 보여준다. 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-132",
+    "reason": "이 메모는 '요즘은 아침보다 저녁 메모가 더 솔직하다'는 내용으로, 메모의 솔직함과 반복 패턴 인식에 대한 인식을 반복적으로 보여준다. 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-201",
+    "reason": "이 메모는 '요즘은 아침보다 저녁 메모가 더 솔직하다'는 내용으로, 메모의 솔직함과 반복 패턴 인식에 대한 인식을 반복적으로 보여준다. 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-192",
+    "reason": "이 메모는 '요즘은 아침보다 저녁 메모가 더 솔직하다'는 내용으로, 메모의 솔직함과 반복 패턴 인식에 대한 인식을 반복적으로 보여준다. 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-247",
+    "reason": "이 메모는 일의 회피 패턴과 판단 기록에 대한 이해를 반복적으로 기록하고 있으며, 기존의 '기록의 목적에 대한 의문' 노드와 직접적인 연결이 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-031",
+    "reason": "이 메모는 일의 회피 패턴과 판단 기록에 대한 이해를 반복적으로 기록하고 있으며, 기존의 '기록의 목적에 대한 의문' 노드와 직접적인 연결이 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-049",
+    "reason": "이 메모는 일의 회피 패턴과 판단 기록에 대한 이해를 반복적으로 기록하고 있으며, 기존의 '기록의 목적에 대한 의문' 노드와 직접적인 연결이 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-089",
+    "reason": "이 메모는 일의 회피 패턴과 판단 기록에 대한 이해를 반복적으로 기록하고 있으며, 기존의 '기록의 목적에 대한 의문' 노드와 직접적인 연결이 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-249",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-240",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-127",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-159",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-249",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-240",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-127",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-159",
+    "reason": "이전 메모에서 특정 사건 이후의 여파와 회고 연결이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-250",
+    "reason": "메모에서 피로 관련 증상과 회복 실패, 자책감 대신 수면 선택이 반복적으로 기록되어 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-251",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 부합하며, 기존 노드의 증거 기반 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-253",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-254",
+    "reason": "메모에서 '아침 햇빛을 못 보면 하루가 조금 늦게 켜지는 느낌이다'는 문장은 피로로 인한 활동 회피 상태와 회복 실패를 반복적으로 기록하고 있는 'node-state-59068015'와 유사한 패턴을 보인다. 이전 메모에서 피로가 심해 산책 같은 활동을 포기하고, 자책감 대신 조기 수면을 선택하는 행동이 반복적으로 기록되어 있으며, 현재 메모도 비슷한 맥락에서 수면 선택과 회복 실패를 기록하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-256",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-255",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-179",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-254",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-007",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-237",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-258",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-259",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-260",
+    "reason": "이 메모는 기존 질문 노드에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 연결 가능. 장보기 메모도 회고 재료가 될 수 있지만 항상 깊은 의미를 붙이면 피곤하다는 내용은 메모의 목적에 대한 의문, 작업 시작 회피와 과도한 계획 수립, 데이터의 목적에 대한 의문과 모두 관련이 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-260",
+    "reason": "이 메모는 기존 질문 노드에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 연결 가능. 장보기 메모도 회고 재료가 될 수 있지만 항상 깊은 의미를 붙이면 피곤하다는 내용은 메모의 목적에 대한 의문, 작업 시작 회피와 과도한 계획 수립, 데이터의 목적에 대한 의문과 모두 관련이 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-260",
+    "reason": "이 메모는 기존 질문 노드에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 연결 가능. 장보기 메모도 회고 재료가 될 수 있지만 항상 깊은 의미를 붙이면 피곤하다는 내용은 메모의 목적에 대한 의문, 작업 시작 회피와 과도한 계획 수립, 데이터의 목적에 대한 의문과 모두 관련이 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-261",
+    "reason": "이 memo는 기존의 '기록의 목적에 대한 의문' 노드와 관련된 반복 패턴 인식을 보여주므로 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-262",
+    "reason": "이번 주 메모는 반복 패턴 인식과 자기 이해에 대한 기존 메모와 일관되며, '이번 주는 약속이 가운데 있어서 앞뒤 블록을 작게 잡는 편이 맞다'는 문장은 기존 메모에서 반복적으로 나타나는 자기 이해와 판단 기록의 패턴을 반영하고 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-265",
+    "reason": "이 메모는 피로 관련 증상과 회복 실패를 기록하고 있으며, 이는 기존 노드 '피로로 인한 활동 회피 상태'와 일치하는 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-266",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 부합하며, 장바구니에서 물건을 빠뜨리는 행동은 일관된 생활 관리 부담의 징후로 분류됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-268",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-268",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-253",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-269",
+    "reason": "스트레칭 10분 하려던 것도 미룸. 오늘은 몸을 돌보는 일 자체가 귀찮았다. 이 메모는 쉬는 날에도 불안으로 인한 활동 회피 상태와 관련된 회복 실패를 기록하고 있으며, 현재 메모도 유사한 패턴을 보여줘 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-161",
+    "reason": "스트레칭 10분 하려던 것도 미룸. 오늘은 몸을 돌보는 일 자체가 귀찮았다. 이 메모는 쉬는 날에도 불안으로 인한 활동 회피 상태와 관련된 회복 실패를 기록하고 있으며, 현재 메모도 유사한 패턴을 보여줘 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-271",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-273",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-273",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-273",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-227",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-106",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-274",
+    "reason": "이 메모는 '기록의 목적에 대한 의문'과 '짧은 한 줄 메모의 회고 가치'에 해당하는 기존 노드와 연결 가능. '좋은 문장은 답보다 내가 어디서 멈췄는지를 보여준다'는 문장은 기존 메모에서 반복적으로 언급된 자기 이해와 반복 패턴 인식, 판단 기록에 대한 인식과 일치하며, 짧은 메모가 회고에 기여하는 점을 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-274",
+    "reason": "이 메모는 '기록의 목적에 대한 의문'과 '짧은 한 줄 메모의 회고 가치'에 해당하는 기존 노드와 연결 가능. '좋은 문장은 답보다 내가 어디서 멈췄는지를 보여준다'는 문장은 기존 메모에서 반복적으로 언급된 자기 이해와 반복 패턴 인식, 판단 기록에 대한 인식과 일치하며, 짧은 메모가 회고에 기여하는 점을 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-259",
+    "reason": "이 메모는 '기록의 목적에 대한 의문'과 '짧은 한 줄 메모의 회고 가치'에 해당하는 기존 노드와 연결 가능. '좋은 문장은 답보다 내가 어디서 멈췄는지를 보여준다'는 문장은 기존 메모에서 반복적으로 언급된 자기 이해와 반복 패턴 인식, 판단 기록에 대한 인식과 일치하며, 짧은 메모가 회고에 기여하는 점을 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-276",
+    "reason": "짧은 메모가 자기 이해와 반복 패턴 인식에 기여한다는 점을 기존 메모와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-279",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-280",
+    "reason": "운동복 준비와 아침 활동 결정 감소, 피로로 인한 결정 느슨함이 반복적으로 기록되어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-226",
+    "reason": "운동복 준비와 아침 활동 결정 감소, 피로로 인한 결정 느슨함이 반복적으로 기록되어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-281",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-283",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-284",
+    "reason": "메모에서 피로로 인한 활동 회피 상태와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-286",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-288",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-288",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-289",
+    "reason": "메모에서 낮과 저녁의 판단 차이를 반복적으로 인식하고 있으며, 이는 자기 이해를 위한 반복 패턴 인식과 판단 기록에 대한 기존 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-289",
+    "reason": "메모에서 낮과 저녁의 판단 차이를 반복적으로 인식하고 있으며, 이는 자기 이해를 위한 반복 패턴 인식과 판단 기록에 대한 기존 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-246",
+    "reason": "메모에서 낮과 저녁의 판단 차이를 반복적으로 인식하고 있으며, 이는 자기 이해를 위한 반복 패턴 인식과 판단 기록에 대한 기존 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-212",
+    "reason": "메모에서 낮과 저녁의 판단 차이를 반복적으로 인식하고 있으며, 이는 자기 이해를 위한 반복 패턴 인식과 판단 기록에 대한 기존 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-192",
+    "reason": "메모에서 낮과 저녁의 판단 차이를 반복적으로 인식하고 있으며, 이는 자기 이해를 위한 반복 패턴 인식과 판단 기록에 대한 기존 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-290",
+    "reason": "메모가 짧고 직관적인 이유는 기존 질문 노드에서 반복적으로 언급된 메모의 목적과 회고 가치에 대한 인식과 일치하며, 이는 자기 이해와 반복 패턴 인식에 기반한 자기 통찰을 반영합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-290",
+    "reason": "메모가 짧고 직관적인 이유는 기존 질문 노드에서 반복적으로 언급된 메모의 목적과 회고 가치에 대한 인식과 일치하며, 이는 자기 이해와 반복 패턴 인식에 기반한 자기 통찰을 반영합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-111",
+    "reason": "메모가 짧고 직관적인 이유는 기존 질문 노드에서 반복적으로 언급된 메모의 목적과 회고 가치에 대한 인식과 일치하며, 이는 자기 이해와 반복 패턴 인식에 기반한 자기 통찰을 반영합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-291",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해에 대한 인식을 반복적으로 강조하고 있으며, 이는 기존의 '기록의 목적에 대한 의문' 노드와 직접적으로 연결 가능합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-294",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-295",
+    "reason": "이 memo는 회복 실패와 루틴 깨짐 태그를 가진 기존 노드와 일치하며, 아침 활동의 부드러움과 관련된 증상이 반복적으로 기록되어 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-296",
+    "reason": "아침 커피 필터 재고가 하루 시작 톤을 바꾼다는 경험은 일상 생활 관리 업무 처리 지연 패턴과 유사하며, 이는 일상 업무 처리에 대한 피로감이 반복되고 있음을 반영함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-298",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-299",
+    "reason": "메모에서 '피곤하면 결정이 다 느슨해지는 느낌'과 '생각이 길어지면 수면이 무너지고, 다음날 결정도 같이 흔들린다'는 표현은 기존 '결정을 미루면 회복도 지연된다' 상태와 유사한 판단 흐름과 회복 실패의 관계를 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-033",
+    "reason": "메모에서 '피곤하면 결정이 다 느슨해지는 느낌'과 '생각이 길어지면 수면이 무너지고, 다음날 결정도 같이 흔들린다'는 표현은 기존 '결정을 미루면 회복도 지연된다' 상태와 유사한 판단 흐름과 회복 실패의 관계를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-301",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 강조하고 있어 기존 노드에서 이 패턴을 반복적으로 언급한 메모와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-298",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 강조하고 있어 기존 노드에서 이 패턴을 반복적으로 언급한 메모와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-301",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 강조하고 있어 기존 노드에서 이 패턴을 반복적으로 언급한 메모와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-271",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 강조하고 있어 기존 노드에서 이 패턴을 반복적으로 언급한 메모와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-256",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 강조하고 있어 기존 노드에서 이 패턴을 반복적으로 언급한 메모와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-298",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 강조하고 있어 기존 노드에서 이 패턴을 반복적으로 언급한 메모와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-303",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-304",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-305",
+    "reason": "이 메모는 자기 이해와 패턴 인식에 대한 반복적 인식을 기반으로 기존 질문 노드에 연결 가능. '데이터의 목적에 대한 의문', '메모의 목적에 대한 의문', '짧은 한 줄 메모의 회고 가치' 노드와 관련된 반복적 패턴 인식이 확인됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-192",
+    "reason": "이 메모는 자기 이해와 패턴 인식에 대한 반복적 인식을 기반으로 기존 질문 노드에 연결 가능. '데이터의 목적에 대한 의문', '메모의 목적에 대한 의문', '짧은 한 줄 메모의 회고 가치' 노드와 관련된 반복적 패턴 인식이 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-305",
+    "reason": "이 메모는 자기 이해와 패턴 인식에 대한 반복적 인식을 기반으로 기존 질문 노드에 연결 가능. '데이터의 목적에 대한 의문', '메모의 목적에 대한 의문', '짧은 한 줄 메모의 회고 가치' 노드와 관련된 반복적 패턴 인식이 확인됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-192",
+    "reason": "이 메모는 자기 이해와 패턴 인식에 대한 반복적 인식을 기반으로 기존 질문 노드에 연결 가능. '데이터의 목적에 대한 의문', '메모의 목적에 대한 의문', '짧은 한 줄 메모의 회고 가치' 노드와 관련된 반복적 패턴 인식이 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-305",
+    "reason": "이 메모는 자기 이해와 패턴 인식에 대한 반복적 인식을 기반으로 기존 질문 노드에 연결 가능. '데이터의 목적에 대한 의문', '메모의 목적에 대한 의문', '짧은 한 줄 메모의 회고 가치' 노드와 관련된 반복적 패턴 인식이 확인됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-074",
+    "reason": "이 메모는 자기 이해와 패턴 인식에 대한 반복적 인식을 기반으로 기존 질문 노드에 연결 가능. '데이터의 목적에 대한 의문', '메모의 목적에 대한 의문', '짧은 한 줄 메모의 회고 가치' 노드와 관련된 반복적 패턴 인식이 확인됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-306",
+    "reason": "이 메모는 반복 패턴 인식에 대한 인식을 반복적으로 강조하고 있으며, 기존 '기록의 목적에 대한 의문' 노드와 관련된 증거로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-307",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-309",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-310",
+    "reason": "이 memo는 아침 루틴의 안정성과 회복 실패, 루틴 깨짐을 기록하고 있어 기존 node-state-59068015에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-311",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴과 일치하며, '생활 관리 부담으로 인한 행동 지연' 노드에 해당하는 반복적 행동을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-313",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-249",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-313",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-314",
+    "reason": "메모에서 피로 관련 증상과 회복 실패가 기록되어 있으며, 카페인 섭취 후 몸의 조급함이 나타나는 현상은 피로 회복 실패와 관련이 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-316",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-318",
+    "reason": "이전 메모에서 일정이나 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-318",
+    "reason": "이전 메모에서 일정이나 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-198",
+    "reason": "이전 메모에서 일정이나 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-073",
+    "reason": "이전 메모에서 일정이나 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-125",
+    "reason": "이전 메모에서 일정이나 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-319",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-321",
+    "reason": "이전 메모에서 반복 패턴 인식과 자기 이해에 대한 언급이 있어 현재 메모도 같은 맥락으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-322",
+    "reason": "메모는 피로와 쉬는 날의 불안감, 일정-회고 연결에 대한 반복적 인식을 기반으로 기존 노드와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-state-9e21e039",
+    "memo_id": "memo-027",
+    "reason": "메모는 피로와 쉬는 날의 불안감, 일정-회고 연결에 대한 반복적 인식을 기반으로 기존 노드와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-322",
+    "reason": "메모는 피로와 쉬는 날의 불안감, 일정-회고 연결에 대한 반복적 인식을 기반으로 기존 노드와 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-194",
+    "reason": "메모는 피로와 쉬는 날의 불안감, 일정-회고 연결에 대한 반복적 인식을 기반으로 기존 노드와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-027",
+    "reason": "메모는 피로와 쉬는 날의 불안감, 일정-회고 연결에 대한 반복적 인식을 기반으로 기존 노드와 연결됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-324",
+    "reason": "LLM node judge 판단 기존 semantic node와 유사도 0.8803로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-325",
+    "reason": "청소기 사용 후 배경 소음 감소는 피로 회복 실패와 관련된 환경 변화에 대한 반응으로, 기존 노드의 증상과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-03"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-326",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 부합하며, '생활 관리 부담으로 인한 행동 지연' 노드와 연결되어 있어 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-04"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-328",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-04"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-329",
+    "reason": "약 먹는 시간 고정이 루틴 안정화에 기여하는 점은 '피로로 인한 활동 회피 상태'와 유사한 메모에서 반복적으로 기록된 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-04"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-331",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-05"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-331",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-05"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-333",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-05"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-334",
+    "reason": "이 메모는 '읽은 내용이 바로 행동으로 이어지진 않았지만 말의 틀은 남았다'는 내용으로, 기존 메모에서 반복적으로 언급된 자기 이해와 판단 기록에 대한 패턴 인식과 연결된다. 특히 '기록의 목적에 대한 의문'과 '짧은 한 줄 메모의 회고 가치' 노드에서 이 메모가 반복 패턴 인식과 판단 기록에 대한 인식을 강조하고 있어 기존 노드에 첨부되어야 한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-05"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-334",
+    "reason": "이 메모는 '읽은 내용이 바로 행동으로 이어지진 않았지만 말의 틀은 남았다'는 내용으로, 기존 메모에서 반복적으로 언급된 자기 이해와 판단 기록에 대한 패턴 인식과 연결된다. 특히 '기록의 목적에 대한 의문'과 '짧은 한 줄 메모의 회고 가치' 노드에서 이 메모가 반복 패턴 인식과 판단 기록에 대한 인식을 강조하고 있어 기존 노드에 첨부되어야 한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-05"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-044",
+    "reason": "이 메모는 '읽은 내용이 바로 행동으로 이어지진 않았지만 말의 틀은 남았다'는 내용으로, 기존 메모에서 반복적으로 언급된 자기 이해와 판단 기록에 대한 패턴 인식과 연결된다. 특히 '기록의 목적에 대한 의문'과 '짧은 한 줄 메모의 회고 가치' 노드에서 이 메모가 반복 패턴 인식과 판단 기록에 대한 인식을 강조하고 있어 기존 노드에 첨부되어야 한다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-05"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-336",
+    "reason": "이 메모는 일상 메모가 많아지면 감정보다 생활 조건이 먼저 보인다는 점을 반복적으로 인식하고 있으며, 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 기존 질문 형식과 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-335",
+    "reason": "이 메모는 일상 메모가 많아지면 감정보다 생활 조건이 먼저 보인다는 점을 반복적으로 인식하고 있으며, 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 기존 질문 형식과 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-208",
+    "reason": "이 메모는 일상 메모가 많아지면 감정보다 생활 조건이 먼저 보인다는 점을 반복적으로 인식하고 있으며, 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 기존 질문 형식과 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-032",
+    "reason": "이 메모는 일상 메모가 많아지면 감정보다 생활 조건이 먼저 보인다는 점을 반복적으로 인식하고 있으며, 이는 기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 기존 질문 형식과 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-337",
+    "reason": "이 메모는 일정 관리와 자기 이해의 반복적 패턴 인식에 해당하며, 기존 노드 '기록의 목적에 대한 의문'과 유사한 맥락을 가짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-338",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-080",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-278",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-252",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-138",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-340",
+    "reason": "메모에서 피로와 회복 실패, 자책감 대신 수면 선택이 반복적으로 기록되어 상태 인식에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-06"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-341",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 해당하며, 이미 존재하는 '생활 관리 부담으로 인한 행동 지연' 노드와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-07"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-342",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-07"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-343",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-07"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-344",
+    "reason": "이 memo는 밤에 폰 사용으로 인한 수면 방해와 다음 날 피로를 기록하고 있으며, 이는 이미 존재하는 '피로로 인한 활동 회피 상태' 노드와 관련된 증상과 일치합니다. 이전 메모들에서 피로가 판단과 실행에 영향을 주고 회복 실패가 반복적으로 기록되었으므로, 이 memo도 해당 노드에 첨부되어야 합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-07"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-346",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-08"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-348",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-08"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-349",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-08"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-351",
+    "reason": "메모에서 같은 카페에서 쓴 메모들의 톤이 닮아 있다는 점은 기존의 자기 이해와 반복 패턴 인식, 판단 기록에 대한 인식과 일치하며, 이는 '기록의 목적에 대한 의문' 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-09"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-352",
+    "reason": "메모에서 일정 관리와 자기 성찰의 관계, 판단 기록에 대한 언급이 있어 기존 질문 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-09"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-194",
+    "reason": "메모에서 일정 관리와 자기 성찰의 관계, 판단 기록에 대한 언급이 있어 기존 질문 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-09"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-353",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-09"
+  },
+  {
+    "node_id": "node-question-03627f92",
+    "memo_id": "memo-354",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-09"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-355",
+    "reason": "이 메모는 수면 환경 개선과 회복 실패, 루틴 깨짐을 기록하고 있는 기존 노드와 일치합니다. 화면 멀리 두는 행동은 수면 품질에 영향을 주고, 아침 흐림은 회복 실패를 반영합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-09"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-356",
+    "reason": "이 메모는 냉장고 정리 업무 지연 패턴에 해당하며, 이전 메모에서 나타난 일관된 행동 지연 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-10"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-357",
+    "reason": "창문 열어두니 방 공기 흐름이 개선되고, 이는 일정이나 잡다한 일로 인한 맥락 분열을 완화하는 경험과 유사함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-10"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-358",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-10"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-358",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-10"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-359",
+    "reason": "메모에서 피로와 불안감으로 인한 활동 회피, 일정으로 인한 일의 흐름 방해, 회복 실패가 반복적으로 기록되어 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-10"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-361",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-363",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-364",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-365",
+    "reason": "이 메모는 자기이해의 과정에서 정답이 아닌 가설적인 접근이 필요하다는 점을 강조하고 있으며, 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-019",
+    "reason": "이 메모는 자기이해의 과정에서 정답이 아닌 가설적인 접근이 필요하다는 점을 강조하고 있으며, 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-196",
+    "reason": "이 메모는 자기이해의 과정에서 정답이 아닌 가설적인 접근이 필요하다는 점을 강조하고 있으며, 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-question-5296ae8a",
+    "memo_id": "memo-275",
+    "reason": "이 메모는 자기이해의 과정에서 정답이 아닌 가설적인 접근이 필요하다는 점을 강조하고 있으며, 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-11"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-366",
+    "reason": "이 메모는 반복 패턴 인식에 대한 인식을 반복적으로 강조하고 있으며, 기존에 존재하는 '기록의 목적에 대한 의문'이라는 질문 노드와 유사한 주제를 공유하고 있어 기존 노드에 첨부되어야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-191",
+    "reason": "이 메모는 반복 패턴 인식에 대한 인식을 반복적으로 강조하고 있으며, 기존에 존재하는 '기록의 목적에 대한 의문'이라는 질문 노드와 유사한 주제를 공유하고 있어 기존 노드에 첨부되어야 함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-367",
+    "reason": "이전 메모에서 할 일 목록보다 메모가 더 정직하다는 점을 반복적으로 인식하고 있으며, 현재 메모도 이 패턴을 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-368",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-369",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-294",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-370",
+    "reason": "메모는 피로로 인한 활동 회피 상태와 관련된 회복 실패 및 자책감 대신 수면 선택의 반복적 행동 패턴을 반영하고 있으며, 기존 노드의 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-12"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-372",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-13"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-072",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-13"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-291",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-13"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-282",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-13"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-223",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-13"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-376",
+    "reason": "메모에서 '사람 메모는 사건보다 그 뒤에 남은 몸의 느낌이 더 중요할 때가 있다'는 내용은 기존 메모에서 '기록은 사건보다 그때의 자세를 남긴다'와 '감정보다 생활 조건이 먼저 보인다' 등의 패턴을 반복적으로 인식하고 있으며, 이는 일정과 회고의 연결, 자기 이해의 패턴 인식에 대한 기존 인식과 일치하여 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-14"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-003",
+    "reason": "메모에서 '사람 메모는 사건보다 그 뒤에 남은 몸의 느낌이 더 중요할 때가 있다'는 내용은 기존 메모에서 '기록은 사건보다 그때의 자세를 남긴다'와 '감정보다 생활 조건이 먼저 보인다' 등의 패턴을 반복적으로 인식하고 있으며, 이는 일정과 회고의 연결, 자기 이해의 패턴 인식에 대한 기존 인식과 일치하여 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-14"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-183",
+    "reason": "메모에서 '사람 메모는 사건보다 그 뒤에 남은 몸의 느낌이 더 중요할 때가 있다'는 내용은 기존 메모에서 '기록은 사건보다 그때의 자세를 남긴다'와 '감정보다 생활 조건이 먼저 보인다' 등의 패턴을 반복적으로 인식하고 있으며, 이는 일정과 회고의 연결, 자기 이해의 패턴 인식에 대한 기존 인식과 일치하여 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-14"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-378",
+    "reason": "이전 메모에서 결제 알림이나 계좌 잔액 확인 후 판단이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-14"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-215",
+    "reason": "이전 메모에서 결제 알림이나 계좌 잔액 확인 후 판단이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-14"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-379",
+    "reason": "이전 메모에서 기록이 나중의 나에게 힌트를 전달하는 역할을 한다는 점을 반복적으로 인식하고 있으며, 현재 메모도 이 패턴을 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-14"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-381",
+    "reason": "이 메모는 하루의 구조를 반복적으로 인식하는 패턴을 강조하고 있으며, 이는 기존 '기록의 목적에 대한 의문' 노드에서 다루고 있는 자기 이해와 반복 패턴 인식에 대한 주제와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-382",
+    "reason": "이 메모는 기존 질문 노드 '기록의 목적에 대한 의문'과 관련된 반복 패턴 인식과 판단 기록에 대한 맥락을 공유하고 있어 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-383",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-001",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-384",
+    "reason": "이 메모는 장소와 회고의 연결을 강조하며, 이는 기존 메모에서 반복적으로 언급된 일정과 회고의 연결 패턴에 부합합니다. 특히, 장소가 사건보다 오래 남는 폴더 같은 상황을 언급하며, 이는 '짧은 한 줄 메모의 회고 가치'라는 기존 노드와 직접적으로 연결됩니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-354",
+    "reason": "이 메모는 장소와 회고의 연결을 강조하며, 이는 기존 메모에서 반복적으로 언급된 일정과 회고의 연결 패턴에 부합합니다. 특히, 장소가 사건보다 오래 남는 폴더 같은 상황을 언급하며, 이는 '짧은 한 줄 메모의 회고 가치'라는 기존 노드와 직접적으로 연결됩니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-264",
+    "reason": "이 메모는 장소와 회고의 연결을 강조하며, 이는 기존 메모에서 반복적으로 언급된 일정과 회고의 연결 패턴에 부합합니다. 특히, 장소가 사건보다 오래 남는 폴더 같은 상황을 언급하며, 이는 '짧은 한 줄 메모의 회고 가치'라는 기존 노드와 직접적으로 연결됩니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-385",
+    "reason": "메모는 피로로 인한 활동 회피 상태와 회복 실패를 반복적으로 기록하고 있으며, 관련 메모의 증거와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-15"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-386",
+    "reason": "이 메모는 이미 존재하는 '생활 관리 부담으로 인한 행동 지연' 노드와 유사한 패턴을 보이며, 냉장고 정리 지연과 관련된 반복적인 관찰이 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-16"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-387",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-16"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-237",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-16"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-388",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-16"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-389",
+    "reason": "물 섭취 부족이 피로와 회복 실패를 유발하는 패턴이 기존 노드에 기록되어 있어 현재 메모도 이 패턴을 반복하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-16"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-391",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-17"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-393",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-17"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-243",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-17"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-394",
+    "reason": "이 메모는 '빠른 결정은 종종 피곤함의 다른 이름일 수 있다'라는 문장이 '기록의 목적에 대한 의문'이라는 기존 질문 노드와 관련된 판단 추적을 반복적으로 인식하고 있는 패턴에 부합함. 이는 자기 이해를 위한 반복 패턴 인식과 판단 기록에 대한 기존 메모와 일치하므로 기존 노드에 첨부됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-17"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-397",
+    "reason": "기존 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-18"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-398",
+    "reason": "이 메모는 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드에 부합합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-18"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-248",
+    "reason": "이 메모는 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드에 부합합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-18"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-066",
+    "reason": "이 메모는 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴을 반복적으로 강조하고 있어 기존 노드에 부합합니다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-18"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-399",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-18"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-400",
+    "reason": "이 메모는 수면 환경 개선 후 잠들기 전 기분 변화를 기록하고 있으며, 이는 피로 회복 실패와 수면 리듬 방해와 관련된 기존 노드에 해당하는 반복적 패턴을 반영하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-18"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-401",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 부합하며, 기존 노드에 추가되어야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-19"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-402",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-19"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-403",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하는 패턴이 반복적으로 언급되고, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-19"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-404",
+    "reason": "메모에서 '아침 햇빛을 못 보면 하루가 조금 늦게 켜지는 느낌이다'라는 문장은 피로로 인한 활동 회피 상태와 회복 실패의 증상으로, 기존 노드의 요약과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-19"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-406",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-408",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-408",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-258",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-409",
+    "reason": "이 메모는 기존 질문 노드에서 반복적으로 인식되는 자기 이해와 판단 기록의 패턴에 부합하며, '읽다가 멈춘 부분이 오늘 선택을 설명해주는 것 같았다'는 문장은 기록의 목적과 자기 이해의 과정을 반복적으로 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-409",
+    "reason": "이 메모는 기존 질문 노드에서 반복적으로 인식되는 자기 이해와 판단 기록의 패턴에 부합하며, '읽다가 멈춘 부분이 오늘 선택을 설명해주는 것 같았다'는 문장은 기록의 목적과 자기 이해의 과정을 반복적으로 강조하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-410",
+    "reason": "이 메모는 장보기 메모가 회고 재료로 사용될 수 있다는 점을 언급하며, 이는 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-20"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-411",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-21"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-412",
+    "reason": "이번 주는 약속이 가운데 있어서 앞뒤 블록을 작게 잡는 편이 맞다.는 기존 노드에서 반복적으로 관찰되는 자기 이해와 판단 기록의 패턴에 해당하며, 이는 기록의 목적에 대한 의문이라는 기존 노드와 유사한 맥락을 공유하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-21"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-413",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-21"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-263",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-21"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-414",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-21"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-415",
+    "reason": "이 메모는 회복 실패와 루틴 깨짐이라는 관계 태그를 가진 기존 노드와 일치하며, 아침 시작의 부드러움과 관련된 증상이 반복적으로 기록되어 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-21"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-416",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴과 일치하며, 장바구니에서 항목을 빠뜨리는 행동은 일관된 관리 부담의 징후로 분류됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-22"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-417",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-22"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-267",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-22"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-418",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-22"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-418",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-22"
+  },
+  {
+    "node_id": "node-state-4797d1c2",
+    "memo_id": "memo-419",
+    "reason": "이전 메모에서 쉬는 날에도 불안감으로 인한 활동 회피와 회복 실패가 반복적으로 기록되어, 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-22"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-421",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-23"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-423",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-23"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-424",
+    "reason": "이 메모는 '기록의 목적에 대한 의문'이라는 기존 노드와 유사한 주제를 가진 반복적 패턴 인식을 보여준다. '좋은 문장은 답보다 내가 어디서 멈췄는지를 보여준다'는 문장은 기존 메모에서 자주 언급된 자기 이해와 판단 기록에 대한 인식을 반복적으로 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-23"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-427",
+    "reason": "이 메모는 일정 관리와 회고의 연결, 피로로 인한 활동 회피, 그리고 일정이 하루 흐름을 방해하는 패턴을 반복적으로 인식하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-24"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-277",
+    "reason": "이 메모는 일정 관리와 회고의 연결, 피로로 인한 활동 회피, 그리고 일정이 하루 흐름을 방해하는 패턴을 반복적으로 인식하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-24"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-427",
+    "reason": "이 메모는 일정 관리와 회고의 연결, 피로로 인한 활동 회피, 그리고 일정이 하루 흐름을 방해하는 패턴을 반복적으로 인식하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-24"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-277",
+    "reason": "이 메모는 일정 관리와 회고의 연결, 피로로 인한 활동 회피, 그리고 일정이 하루 흐름을 방해하는 패턴을 반복적으로 인식하고 있어 기존 노드와 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-24"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-428",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-24"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-430",
+    "reason": "이 메모는 피로로 인한 활동 회피 상태와 회복 실패를 반복적으로 기록하고 있으며, '운동복을 미리 꺼내두니 아침 결정이 하나 줄었다'는 문장은 피로로 인한 결정 지연과 회복 실패를 반영하고 있어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-24"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-431",
+    "reason": "이 메모는 냉장고에 음식이 이미 있어 배달을 하지 않는 선택을 한 것이며, 이는 기존의 '생활 관리 부담으로 인한 행동 지연' 노드에서 관찰된 패턴과 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-25"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-432",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-25"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-433",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-25"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-434",
+    "reason": "메모에서 '잠은 충분한 줄 알았는데 일어나서 한 시간 동안 몸이 안 켜졌다.'라는 내용은 피로로 인한 활동 회피 상태와 회복 실패를 반복적으로 기록하고 있는 메모와 일치합니다. 이는 피로가 판단과 실행 전반에 영향을 주고, 회복이 제대로 이루어지지 않는 상태를 반영합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-25"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-436",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-438",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-438",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-439",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-396",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-439",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-396",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-440",
+    "reason": "이 메모는 짧은 한 줄 메모의 회고 가치와 관련된 반복 패턴을 강조하고 있으며, 이는 기존 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨을 반영합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-26"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-441",
+    "reason": "이 메모는 '기록의 목적에 대한 의문'이라는 기존 노드와 유사한 반복 패턴 인식과 자기 이해에 대한 맥락을 공유합니다. '내가 자주 적는 말이 실제 관심사보다 불편한 지점을 더 보여준다'는 문장은 기존 메모에서 반복적으로 자기 이해와 패턴 인식을 강조하는 흐름에 부합합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-442",
+    "reason": "이 메모는 피로로 인한 활동 회피 상태와 기록의 목적에 대한 의문이라는 기존 노드와 일치하는 패턴을 보여줌. '빨래, 식사, 산책' 순서로 가면 몸이 덜 꼬일 것이라는 판단은 피로 관리와 회복에 대한 반복적 인식을 반영하며, 이는 기존 노드에서 기록이 자기 이해를 위한 판단 기록이라는 관점과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-292",
+    "reason": "이 메모는 피로로 인한 활동 회피 상태와 기록의 목적에 대한 의문이라는 기존 노드와 일치하는 패턴을 보여줌. '빨래, 식사, 산책' 순서로 가면 몸이 덜 꼬일 것이라는 판단은 피로 관리와 회복에 대한 반복적 인식을 반영하며, 이는 기존 노드에서 기록이 자기 이해를 위한 판단 기록이라는 관점과 일치함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-443",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-293",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-444",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-445",
+    "reason": "이 메모는 '가방 정리'와 같은 사소한 준비 행동이 회복 실패와 루틴 깨짐을 완화시킨다는 점을 강조하고 있음. 이는 기존 '피로로 인한 활동 회피 상태' 노드에서 피로 관련 증상과 회복 실패를 기록하고 있는 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-27"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-446",
+    "reason": "아침 커피 필터 재고가 일상 생활 관리 업무 지연 패턴과 일치하며, 생활 부담 관련 태그가 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-28"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-447",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-28"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-297",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-28"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-448",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-28"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-448",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-28"
+  },
+  {
+    "node_id": "node-state-f87faf43",
+    "memo_id": "memo-449",
+    "reason": "메모에서 '점심을 늦게 먹으면 저녁까지 판단이 조금 거칠어진다'는 내용은 '결정을 미루면 회복도 지연된다'라는 상태와 일치하며, 판단 흐름과 회복 실패의 관계를 반복적으로 기록하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-28"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-451",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 반복적으로 강조하고 있어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-29"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-451",
+    "reason": "이 메모는 일정과 회고의 연결, 자기 이해의 패턴 인식을 반복적으로 강조하고 있어 기존 노드에 부합함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-29"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-453",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-29"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-454",
+    "reason": "이전 메모에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 언급이 있어 새로운 질문 형식으로 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-29"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-456",
+    "reason": "이 메모는 반복 패턴 인식에 대한 기존 메모와 일관되며, 작은 문장들 사이의 패턴을 강조하고 있어 기존 노드에 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-457",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-30"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-458",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-30"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-308",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-30"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-459",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-30"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-460",
+    "reason": "이 memo는 루틴 안정화를 위한 행동(약통 채우기)과 회복 실패, 루틴 깨짐 관련 태그를 포함하고 있어 기존 node-state-59068015에 해당하는 피로로 인한 활동 회피 상태와 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-30"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-461",
+    "reason": "이 메모는 '생활 관리 부담으로 인한 행동 지연' 상태와 일치하며, 채소 구매 후 처리 지연이 반복적으로 나타나는 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-01"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-462",
+    "reason": "메모에서 위치에 따른 주목도 변화를 언급하며, 이는 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-01"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-312",
+    "reason": "메모에서 위치에 따른 주목도 변화를 언급하며, 이는 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-07-01"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-463",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-01"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-463",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-01"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-464",
+    "reason": "이 메모는 피로 관련 증상과 회복 실패를 기록하고 있으며, 이전 메모에서 피로가 판단과 실행 전반에 영향을 주고 회복 실패가 반복적으로 기록된 상태와 일치하므로 기존 노드에 연결됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-01"
+  },
+  {
+    "node_id": "node-question-104acc43",
+    "memo_id": "memo-466",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-02"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-468",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-469",
+    "reason": "이 메모는 기존의 '기록의 목적에 대한 의문' 노드와 유사한 주제를 가진 반복적 패턴 인식과 판단 기록에 대한 언급을 포함하고 있어 기존 노드에 첨부되어야 함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-02"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-471",
+    "reason": "이 memo는 기존의 반복 패턴 인식에 대한 인식과 일관되며, 비슷한 순서의 반복이 중요하다는 점을 강조하고 있어 기존 노드에 첨부할 수 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-03"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-472",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-03"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-473",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-03"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-323",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-07-03"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-475",
+    "reason": "청소기 사용 후 배경 소음 감소는 피로 회복 실패와 수면 리듬 방해와 관련된 기존 노드의 증상에 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-03"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-476",
+    "reason": "이 메모는 일상 생활 관리 업무 처리 지연 패턴에 해당하며, 물티슈, 휴지, 치약 같은 소비재의 존재감 변화를 통해 일상 업무의 부담을 반영하고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-04"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-477",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-04"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-327",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-07-04"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-478",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-04"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-479",
+    "reason": "약 먹는 시간 고정이 루틴 안정화에 기여함을 기록한 메모와 일치하며, 회복 실패와 루틴 흔들림 관련 태그가 공유됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-04"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-481",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-05"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-483",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-05"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-484",
+    "reason": "이 메모는 '읽은 내용이 바로 행동으로 이어지지 않았지만 말의 틀은 남았다'는 관찰을 통해 기존 질문 노드에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 논의를 이어갈 수 있는 근거를 제공함. 이는 기록의 목적과 회고 가치에 대한 질문 노드와 연결되며, 반복적 인식 패턴을 강조함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-05"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-484",
+    "reason": "이 메모는 '읽은 내용이 바로 행동으로 이어지지 않았지만 말의 틀은 남았다'는 관찰을 통해 기존 질문 노드에서 자기 이해와 반복 패턴 인식, 판단 기록에 대한 논의를 이어갈 수 있는 근거를 제공함. 이는 기록의 목적과 회고 가치에 대한 질문 노드와 연결되며, 반복적 인식 패턴을 강조함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-05"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-486",
+    "reason": "이 메모는 기존의 '기록의 목적에 대한 의문' 노드와 유사한 반복 패턴 인식과 자기 이해에 대한 맥락을 가진다. '일상 메모가 많아지면 감정보다 생활 조건이 먼저 보인다'는 문장은 기존 메모에서 반복적으로 나타나는 자기 이해와 패턴 인식에 대한 인식을 기반으로 새로운 질문 형식으로 연결 가능하다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-06"
+  },
+  {
+    "node_id": "node-question-11c8a1d6",
+    "memo_id": "memo-487",
+    "reason": "이 메모는 '기록의 목적에 대한 의문'이라는 기존 질문 노드와 일치하는 'decision_trace' 태그를 가지고 있으며, '오전엔 밖에서 처리할 일, 오후엔 앉아서 할 일로 나누기'라는 내용은 자기 이해와 반복 패턴 인식, 판단 기록에 대한 기존 메모와 유사한 맥락을 가진다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-06"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-488",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-06"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-489",
+    "reason": "LLM node judge 판단",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-06"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-490",
+    "reason": "물병 채우기 같은 작은 일도 오후 컨디션에 영향을 주는 것은 피로 회복 실패와 생활 리듬 깨짐을 반복적으로 기록한 메모와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-06"
+  },
+  {
+    "node_id": "node-state-de2ae434",
+    "memo_id": "memo-491",
+    "reason": "이 메모는 이미 존재하는 '생활 관리 부담으로 인한 행동 지연' 노드의 증거로 분류됩니다. 집에 있는 음식을 우선적으로 먹는 선택은 일상 생활 관리 업무 처리 지연의 일환으로, 이 패턴이 반복되고 있음을 보여줍니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-07"
+  },
+  {
+    "node_id": "node-state-c2e868bf",
+    "memo_id": "memo-492",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-07"
+  },
+  {
+    "node_id": "node-state-162d47bb",
+    "memo_id": "memo-493",
+    "reason": "이전 메모에서 일정이 하루 흐름을 방해하고, 회고를 통해 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-07"
+  },
+  {
+    "node_id": "node-state-59068015",
+    "memo_id": "memo-494",
+    "reason": "이 메모는 밤에 폰 사용과 수면 패턴, 회복 실패를 반복적으로 기록하고 있는 '피로로 인한 활동 회피 상태'와 일치하며, 관련 메모들에서 유사한 증상과 회복 실패가 반복적으로 기록되어 있어 기존 노드에 첨부함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-07"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-496",
+    "reason": "이전 메모에서 짧은 한 줄 메모가 일정과 회고의 연결점으로서 자기 이해를 도모하는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-08"
+  },
+  {
+    "node_id": "node-state-0252d879",
+    "memo_id": "memo-498",
+    "reason": "이전 메모에서 결제 알림이 판단을 방해하고, 결정이 흐려지는 패턴이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-08"
+  },
+  {
+    "node_id": "node-question-8dfdfe49",
+    "memo_id": "memo-499",
+    "reason": "이전 메모에서 일정과 회고의 연결, 자기 이해의 패턴 인식이 반복적으로 언급됨. 현재 메모도 이 패턴을 강조하고 있어 연결 가능.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-07-08"
+  }
+]

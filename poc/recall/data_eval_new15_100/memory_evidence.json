@@ -1,0 +1,242 @@
+[
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-023",
+    "reason": "모든 관련 메모에서 일정이 회고 트리거로 작용하는 구체적인 상황이 반복적으로 언급되고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-002",
+    "reason": "모든 관련 메모에서 일정이 회고 트리거로 작용하는 구체적인 상황이 반복적으로 언급되고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-015",
+    "reason": "모든 관련 메모에서 일정이 회고 트리거로 작용하는 구체적인 상황이 반복적으로 언급되고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-15"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-030",
+    "reason": "모든 관련 메모에서 일정이 회고 트리거로 작용하는 구체적인 상황이 반복적으로 언급되고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 보여준다. 기존 semantic node와 유사도 0.9538로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-18"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-032",
+    "reason": "이 메모는 일정이 회고 트리거로 작용하는 구체적인 상황을 설명하고 있으며, 이는 '일정이 회고 트리거가 되는 상태'라는 노드의 제목과 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-19"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-039",
+    "reason": "이 memo는 일정이 회고 트리거로 작용하는 구체적인 상황을 설명하고 있으며, 이는 candidate_node의 핵심 트리거인 '일정이 회고 트리거'와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-043",
+    "reason": "저녁 피로가 결정력 저하를 유발해 충동 구매와 무의미한 활동으로 이어지는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-033",
+    "reason": "저녁 피로가 결정력 저하를 유발해 충동 구매와 무의미한 활동으로 이어지는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-012",
+    "reason": "저녁 피로가 결정력 저하를 유발해 충동 구매와 무의미한 활동으로 이어지는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-23"
+  },
+  {
+    "node_id": "node-state-ded5fdd2",
+    "memo_id": "memo-046",
+    "reason": "이 메모들은 모두 KEO가 감정을 이해하기 위해 결정 실수를 기록하고 분류하는 방식을 언급하고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 반복적으로 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-ded5fdd2",
+    "memo_id": "memo-041",
+    "reason": "이 메모들은 모두 KEO가 감정을 이해하기 위해 결정 실수를 기록하고 분류하는 방식을 언급하고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 반복적으로 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-ded5fdd2",
+    "memo_id": "memo-021",
+    "reason": "이 메모들은 모두 KEO가 감정을 이해하기 위해 결정 실수를 기록하고 분류하는 방식을 언급하고 있으며, 이는 특정한 상태를 나타내는 구조적 패턴을 반복적으로 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-059",
+    "reason": "이 메모는 일정이 회고 트리거로 작용하는 구체적인 상황을 설명하고 있으며, 이는 '일정이 회고 트리거가 되는 상태'라는 기존 노드와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-27"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-061",
+    "reason": "배고픔을 느끼고 먹고 나서도 피곤함은 피로의 스피롤로 이어지는 패턴과 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-062",
+    "reason": "이 memo는 저녁 피로로 인한 결정력 저하를 명확히 언급하고 있으며, 이는 node-state-f8e51dbf의 핵심 트리거인 '저녁 피로'와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-28"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-067",
+    "reason": "이 memo는 저녁 피로로 인한 결정력 저하 상태와 정확히 일치하는 트리거와 결과를 보여줍니다. '피곤할수록 쉬운 설명을 고른다'는 문장은 노드의 핵심 트리거인 '저녁 피로'를 명확히 포함하고 있으며, 이는 노드의 결과인 결정력 저하와 직접적으로 연결됩니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-29"
+  },
+  {
+    "node_id": "node-state-ded5fdd2",
+    "memo_id": "memo-074",
+    "reason": "이 메모는 KEO가 감정을 이해하기 위해 결정 실수를 기록하고 분류하는 방식을 언급하며, 이는 '결정 실수를 기록해 감정을 이해하는 상태'와 정확히 일치하는 구체적 상황을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-ded5fdd2",
+    "memo_id": "memo-079",
+    "reason": "이 메모는 KEO가 감정을 이해하기 위해 결정 실수를 기록하고 분류하는 방식을 언급하며, 이는 특정한 상태를 나타내는 구조적 패턴을 반복적으로 보여주는 것으로, '결정 실수를 기록해 감정을 이해하는 상태' 노드와 정확히 일치하는 내용을 포함하고 있습니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-f8e51dbf",
+    "memo_id": "memo-081",
+    "reason": "이 memo는 저녁 피로로 인한 결정력 저하 상태의 구체적인 사례로, 피로가 판단에 영향을 주어 무의미한 활동에 빠지는 패턴을 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-03"
+  },
+  {
+    "node_id": "node-state-59aa01d4",
+    "memo_id": "memo-087",
+    "reason": "이 메모는 일정 끝난 후 남긴 한 줄이 회고의 핵심이 되는 구체적인 상황을 설명하고 있으며, 이는 '일정이 회고 트리거가 되는 상태'라는 기존 노드의 정의와 완전히 일치한다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-03a9b354",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-03a9b354",
+    "memo_id": "memo-029",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-03a9b354",
+    "memo_id": "memo-031",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-03a9b354",
+    "memo_id": "memo-045",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-03a9b354",
+    "memo_id": "memo-066",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-03a9b354",
+    "memo_id": "memo-097",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-4438043a",
+    "memo_id": "memo-003",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-4438043a",
+    "memo_id": "memo-010",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-4438043a",
+    "memo_id": "memo-072",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-4438043a",
+    "memo_id": "memo-086",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  }
+]

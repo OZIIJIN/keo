@@ -1,0 +1,778 @@
+{
+  "node-state-e1f0082e": {
+    "id": "node-state-e1f0082e",
+    "source": "llm",
+    "type": "state",
+    "title": "일정 종료 후 메모 정리 필요",
+    "summary": "일정이 끝난 날 밤에 해당 일정의 메모를 다시 묶어 보여주는 것이 회의 전 기대감과 지침을 정리하는 데 도움이 된다. 이는 일정 종료 후의 상태를 반영하는 반복 가능한 패턴이다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일정 종료 후 메모 정리 필요|memo-001,memo-002",
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-04-07",
+    "updated_at": "2026-05-07",
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-023"
+    ]
+  },
+  "node-question-cafb54a0": {
+    "id": "node-question-cafb54a0",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "기록의 목적에 대한 의문",
+    "summary": "기록이 단순히 정보 저장이 아니라, 미래의 나에게 힌트를 제공하는 역할을 한다는 점을 강조. 이는 기록의 목적에 대한 질문으로, 메모-003의 내용이 이에 대한 직접적인 인스턴스이다.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-003"
+    ],
+    "identity_key": "question|decision_trace,pattern_recognition|기록의 목적에 대한 의문|memo-003",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-07",
+    "updated_at": "2026-04-07"
+  },
+  "node-pattern-ec2d9a64": {
+    "id": "node-pattern-ec2d9a64",
+    "source": "llm",
+    "type": "pattern",
+    "title": "일을 피하는 패턴",
+    "summary": "운동을 하기 싫어서 일로 핑계를 댔지만, 실제로는 일도 잘 못 했다. 이는 일 피하는 패턴의 반복적 사례로, 같은 상황에서 유사한 행동이 반복되고 있음을 보여준다.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-003",
+      "memo-004"
+    ],
+    "identity_key": "pattern|avoidance_rationalization,pattern_recognition|일을 피하는 패턴|memo-001,memo-003,memo-004",
+    "evidence_count": 15,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-04-08",
+    "updated_at": "2026-05-07"
+  },
+  "node-pattern-5b18f087": {
+    "id": "node-pattern-5b18f087",
+    "source": "llm",
+    "status": "pending",
+    "type": "pattern",
+    "title": "과거 다짐을 현재에 연결하는 패턴",
+    "summary": "과거에 세운 다짐을 현재의 메모로 연결하여 자기 이해를 돕는 방식. 이는 자기 이해를 위한 제품 통찰로, 과거의 의도와 현재의 행동을 연결하는 데 도움을 줌.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-005",
+      "memo-002"
+    ],
+    "identity_key": "pattern|event_reflection_link,self_understanding_product|과거 다짐을 현재에 연결하는 패턴|memo-002,memo-005",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-pattern-268e9a0d": {
+    "id": "node-pattern-268e9a0d",
+    "source": "llm",
+    "status": "pending",
+    "type": "pattern",
+    "title": "작업 시작을 미루는 패턴",
+    "summary": "목표를 세우는 척하면서 실제 작업 시작을 미루는 행동이 반복되고 있음. 계획 세우기보다는 회피를 위한 정당화로 사용됨.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "overplanning",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-006",
+      "memo-035"
+    ],
+    "identity_key": "pattern|avoidance_rationalization,overplanning,start_avoidance|작업 시작을 미루는 패턴|memo-006",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-20"
+  },
+  "node-state-17363afd": {
+    "id": "node-state-17363afd",
+    "source": "llm",
+    "type": "state",
+    "title": "회의 후 기억 상실",
+    "summary": "회의가 끝난 후 자신의 원래 목표나 의도를 잊는 상태로, 일정이 하루를 먹는 느낌을 주며, 메신저나 잡다한 일로 인한 맥락 분할이 원인으로 보인다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "context_fragmentation",
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-004",
+      "memo-008"
+    ],
+    "identity_key": "state|context_fragmentation,schedule_disruption|회의 후 기억 상실|memo-001,memo-004,memo-008",
+    "evidence_count": 20,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-04-09",
+    "updated_at": "2026-05-07"
+  },
+  "node-state-3e7d180c": {
+    "id": "node-state-3e7d180c",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일을 피하는 상태",
+    "summary": "바쁨을 이유로 중요한 결정을 미루는 행동이 반복되고 있으며, 이는 일 피하는 상태의 지속적인 반복 사례로, 같은 상황에서 유사한 행동이 반복되고 있음을 보여준다.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "decision_trace"
+    ],
+    "pending_evidence_ids": [
+      "memo-009",
+      "memo-088"
+    ],
+    "identity_key": "state|avoidance_rationalization,decision_trace|일을 피하는 상태|memo-009",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-09",
+    "updated_at": "2026-05-04"
+  },
+  "node-state-66a7b3ec": {
+    "id": "node-state-66a7b3ec",
+    "source": "llm",
+    "type": "state",
+    "title": "유튜브 끝나고 애매한 상태",
+    "summary": "유튜브만 보다 끝나고 쉬지도 않았고 일도 하지 않아 애매한 상태로, 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "low_energy_drift",
+      "recovery_failure"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-004",
+      "memo-008",
+      "memo-012"
+    ],
+    "identity_key": "state|low_energy_drift,recovery_failure|유튜브 끝나고 애매한 상태|memo-001,memo-004,memo-008,memo-012",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-02",
+    "created_at": "2026-04-10",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-fbdf8d69": {
+    "id": "node-state-fbdf8d69",
+    "source": "llm",
+    "type": "state",
+    "title": "작업 시작을 미루는 상태",
+    "summary": "작업을 시작하지 않으려는 의도로, 시작해야 하는데 자꾸 미룸. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴의 일종으로, 시작을 미루는 행동이 반복되고 있음을 보여준다.",
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "identity_key": "state|start_avoidance|작업 시작을 미루는 상태|memo-006,memo-013",
+    "evidence_count": 9,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-05",
+    "created_at": "2026-04-11",
+    "updated_at": "2026-05-05",
+    "representative_evidence_ids": [
+      "memo-006",
+      "memo-013",
+      "memo-034"
+    ]
+  },
+  "node-state-ce260261": {
+    "id": "node-state-ce260261",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "미루기 없이 회피 냄새",
+    "summary": "미루기 없이 회피 행동이 발생했지만, 회피 냄새가 잡히는 상태로, 이는 맥락 분할이나 일정 중단으로 인한 반복적 패턴의 일환으로 판단된다. 회피 냄새는 행동이 아닌 상태로, 미루기 없이도 발생할 수 있는 잠재적 상태로 보인다.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-014"
+    ],
+    "identity_key": "state|pattern_recognition|미루기 없이 회피 냄새|memo-014",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-11",
+    "updated_at": "2026-04-11"
+  },
+  "node-state-a47685b6": {
+    "id": "node-state-a47685b6",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정과 맥락 분할로 인한 혼란",
+    "summary": "오늘 할 일 적다가 급한 것, 중요한 것, 남 눈치 보이는 것이 섞여서 머리 복잡. 이는 일정과 맥락 분할로 인한 반복적 혼란 상태로, 여러 요소가 섞여 기억과 판단이 어려워지는 상황이다.",
+    "relation_tags": [
+      "decision_fog",
+      "priority_confusion"
+    ],
+    "pending_evidence_ids": [
+      "memo-018",
+      "memo-037"
+    ],
+    "identity_key": "state|decision_fog,priority_confusion|일정과 맥락 분할로 인한 혼란|memo-018",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-12",
+    "updated_at": "2026-04-21"
+  },
+  "node-state-2a941aea": {
+    "id": "node-state-2a941aea",
+    "source": "llm",
+    "type": "state",
+    "title": "책 메모에서의 자기이해 패턴",
+    "summary": "책 문장 기록을 통해 자기이해는 정답 찾기보다는 반복되는 오해를 줄이는 과정을 반복적으로 인식하는 것을 의미한다. 이는 자기이해를 위한 반복적 사고 패턴으로, 메모를 통해 자기 인식을 정리하는 반복적 행동을 보여준다.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-003",
+      "memo-009",
+      "memo-010",
+      "memo-019"
+    ],
+    "identity_key": "state|decision_trace,pattern_recognition|책 메모에서의 자기이해 패턴|memo-003,memo-009,memo-010,memo-019",
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-05",
+    "created_at": "2026-04-13",
+    "updated_at": "2026-05-05"
+  },
+  "node-state-a061241e": {
+    "id": "node-state-a061241e",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "KEO 온보딩의 자기이해 패턴",
+    "summary": "KEO 온보딩에서 감정 일기 앱처럼 보이면 안 되며, 아이디어, 계획, 회피 기록을 포함하는 쪽이어야 한다는 자기이해 패턴을 반복적으로 인식하는 과정을 보여준다. 이는 사용자가 자신의 행동 패턴을 인식하고, 이를 기반으로 온보딩 경험을 개선하려는 반복적 사고를 의미한다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-021"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|keo 온보딩의 자기이해 패턴|memo-021",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-14",
+    "updated_at": "2026-04-14"
+  },
+  "node-state-40f3f89d": {
+    "id": "node-state-40f3f89d",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "작업 시작 회피 상태",
+    "summary": "작업을 시작하지 않고, 구조나 계획만 만지며 안전한 일만 고르는 상태로, 이는 반복적으로 같은 패턴을 보이는 작업 시작 회피 상태이다.",
+    "relation_tags": [
+      "overplanning",
+      "safe_task_selection",
+      "start_avoidance"
+    ],
+    "pending_evidence_ids": [
+      "memo-022"
+    ],
+    "identity_key": "state|overplanning,safe_task_selection,start_avoidance|작업 시작 회피 상태|memo-022",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-14",
+    "updated_at": "2026-04-14"
+  },
+  "node-state-648a1c06": {
+    "id": "node-state-648a1c06",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "데이터 재구성 필요",
+    "summary": "현재 데이터가 너무 깨끗해서 실제 검색 감이 안 나는 상황에서, 데이터를 다시 만들고 검증하는 과정을 반복적으로 인식하는 상태를 의미한다. 이는 데이터 검증을 위한 반복적 사고 패턴으로, 메모를 통해 데이터 재구성의 필요성을 인식하는 반복적 행동을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-026"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|데이터 재구성 필요|memo-026",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-16",
+    "updated_at": "2026-04-16"
+  },
+  "node-state-622c438f": {
+    "id": "node-state-622c438f",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "쉬지 못한 후 작은 할 일 찾기",
+    "summary": "쉬면 뒤처질까봐 자꾸 작은 할 일 찾는 상태로, 이는 쉬는 시간을 빚처럼 느끼는 감정과 관련된 반복적 패턴이다. 이는 쉬는 시간을 빚처럼 느끼는 감정과 작은 할 일 찾기의 행동이 반복되고 있음을 보여준다.",
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ],
+    "pending_evidence_ids": [
+      "memo-027",
+      "memo-096"
+    ],
+    "identity_key": "state|rest_guilt,safe_task_selection|쉬지 못한 후 작은 할 일 찾기|memo-027",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-17",
+    "updated_at": "2026-05-06"
+  },
+  "node-state-126f65cf": {
+    "id": "node-state-126f65cf",
+    "source": "llm",
+    "type": "state",
+    "title": "감정 기록이 의사결정 로그로 전환하는 상태",
+    "summary": "감정 기록은 초기에는 자기이해를 위한 도구이지만, 시간이 지남에 따라 감정 기록이 의사결정 로그로 전환되며, 이는 반복적 사고 패턴을 형성하는 자기 인식의 변화를 보여준다. 이는 감정 기록이 단순한 메모에서 더 복잡한 자기 이해로 진화하는 과정을 반복적으로 인식하는 것을 의미한다.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-003",
+      "memo-009",
+      "memo-019",
+      "memo-028"
+    ],
+    "identity_key": "state|decision_trace,pattern_recognition|감정 기록이 의사결정 로그로 전환하는 상태|memo-003,memo-009,memo-019,memo-028",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-05-02",
+    "created_at": "2026-04-17",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-c6513bdc": {
+    "id": "node-state-c6513bdc",
+    "source": "llm",
+    "type": "state",
+    "title": "메신저로 인한 맥락 분할",
+    "summary": "메신저나 메일 처리로 인해 주요 작업 맥락이 분할되어, 결과 없는 바쁨을 느끼는 상태. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "reactive_work",
+      "unfinished_loop"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-008",
+      "memo-012",
+      "memo-029"
+    ],
+    "identity_key": "state|reactive_work,unfinished_loop|메신저로 인한 맥락 분할|memo-001,memo-008,memo-012,memo-029",
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-04-18",
+    "updated_at": "2026-05-07"
+  },
+  "node-state-55583dc1": {
+    "id": "node-state-55583dc1",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "피하는 행동의 동기 분석",
+    "summary": "회의 후 기억 상실과 유사한 맥락 분할로 인한 피하는 행동의 동기 분석. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴을 보여준다.",
+    "relation_tags": [
+      "decision_trace",
+      "evaluation_fear"
+    ],
+    "pending_evidence_ids": [
+      "memo-030"
+    ],
+    "identity_key": "state|decision_trace,evaluation_fear|피하는 행동의 동기 분석|memo-030",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-18",
+    "updated_at": "2026-04-18"
+  },
+  "node-state-ee3bfece": {
+    "id": "node-state-ee3bfece",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "피로로 인한 결정 흐림",
+    "summary": "피로가 판단과 실행 전반에 번짐으로, 무의식적으로 필요 없는 물건도 담게 되는 상태. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "decision_fog",
+      "fatigue_spillover"
+    ],
+    "pending_evidence_ids": [
+      "memo-033",
+      "memo-043"
+    ],
+    "identity_key": "state|decision_fog,fatigue_spillover|피로로 인한 결정 흐림|memo-033",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-19",
+    "updated_at": "2026-04-23"
+  },
+  "node-question-7deb9652": {
+    "id": "node-question-7deb9652",
+    "source": "llm",
+    "status": "pending",
+    "type": "question",
+    "title": "진실 숨기 vs 그럴듯한 이유 붙이기",
+    "summary": "문장 기록. 사람은 진실을 숨길 때보다 그럴듯한 이유를 붙일 때 자기 자신을 더 잘 속인다. 이는 자기 자신을 속이기 위한 전략으로, 진실을 숨기는 것보다 그럴듯한 이유를 붙이는 것이 더 효과적이라는 인식을 반복적으로 인식하는 자기 인식의 변화를 보여준다. 이는 자기이해를 위한 반복적 사고 패턴으로, 메모를 통해 자기 인식을 정리하는 반복적 행동을 보여준다.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "pending_evidence_ids": [
+      "memo-036"
+    ],
+    "identity_key": "question|avoidance_rationalization,self_deception|진실 숨기 vs 그럴듯한 이유 붙이기|memo-036",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-20",
+    "updated_at": "2026-04-20"
+  },
+  "node-state-a23af3cf": {
+    "id": "node-state-a23af3cf",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "생활 일정으로 인한 하루 흐름 중단",
+    "summary": "오후 치과 방문 후 하루가 끊긴 느낌은 생활 일정이 하루 흐름을 중단시키는 상태로, 일정의 중단이 맥락 분할로 이어져 기억 상실을 유발하는 반복적 패턴이다. 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다.",
+    "relation_tags": [
+      "life_admin_overload",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-038",
+      "memo-083"
+    ],
+    "identity_key": "state|life_admin_overload,schedule_disruption|생활 일정으로 인한 하루 흐름 중단|memo-038",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-21",
+    "updated_at": "2026-05-03"
+  },
+  "node-state-e2e1dbe4": {
+    "id": "node-state-e2e1dbe4",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "의도와 표현의 차이",
+    "summary": "오늘은 말을 많이 했는데 실제 의도는 별로 남기지 못했고, 표현한 내용과 실제 내면이 어긋난 느낌. 이는 메신저나 일상 대화로 인한 맥락 분할로 인한 상태로, 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "identity_gap",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-044"
+    ],
+    "identity_key": "state|identity_gap,pattern_recognition|의도와 표현의 차이|memo-044",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-23",
+    "updated_at": "2026-04-23"
+  },
+  "node-state-b505b0f3": {
+    "id": "node-state-b505b0f3",
+    "source": "llm",
+    "type": "state",
+    "title": "사람들 만나고 나면 애매한 상태",
+    "summary": "사람들과의 만남 이후에 일정이 끊기거나 맥락이 분할되어 애매한 상태로, 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "event_aftereffect",
+      "low_energy_drift"
+    ],
+    "representative_evidence_ids": [
+      "memo-008",
+      "memo-038",
+      "memo-048"
+    ],
+    "identity_key": "state|event_aftereffect,low_energy_drift|사람들 만나고 나면 애매한 상태|memo-008,memo-038,memo-048",
+    "evidence_count": 12,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-06",
+    "created_at": "2026-04-24",
+    "updated_at": "2026-05-06"
+  },
+  "node-state-714b6ea2": {
+    "id": "node-state-714b6ea2",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "미루는 일과 자존감의 관계",
+    "summary": "미루는 일은 자존감 근처에 쌓이는 감정적 무게로, 이는 반복적 사고 패턴을 형성하며 자기 인식의 변화를 반복적으로 인식하는 자기 이해의 과정을 보여준다. 이는 감정 기록이 의사결정 로그로 전환되는 과정과 유사한 자기 인식의 변화를 반복적으로 인식하는 자기 이해의 과정을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "unfinished_loop"
+    ],
+    "pending_evidence_ids": [
+      "memo-051"
+    ],
+    "identity_key": "state|pattern_recognition,unfinished_loop|미루는 일과 자존감의 관계|memo-051",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-25",
+    "updated_at": "2026-04-25"
+  },
+  "node-state-2613f671": {
+    "id": "node-state-2613f671",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정 변경 후 애매한 상태",
+    "summary": "엄마 병원 일정으로 인한 일정 변경 후, 원래 계획된 일에 대한 맥락 분할로 인해 애매한 상태로 이어짐. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "external_priority_capture",
+      "schedule_disruption"
+    ],
+    "pending_evidence_ids": [
+      "memo-058"
+    ],
+    "identity_key": "state|external_priority_capture,schedule_disruption|일정 변경 후 애매한 상태|memo-058",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-27",
+    "updated_at": "2026-04-27"
+  },
+  "node-state-a4720abb": {
+    "id": "node-state-a4720abb",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "먹고 나서도 피곤한 상태",
+    "summary": "먹고 나서도 피곤한 상태는 기존의 회의 후 기억 상실과 유튜브 끝나고 애매한 상태에서 유래한 맥락 분할로 인한 상태로 판단된다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "low_energy_drift"
+    ],
+    "pending_evidence_ids": [
+      "memo-061"
+    ],
+    "identity_key": "state|fatigue_spillover,low_energy_drift|먹고 나서도 피곤한 상태|memo-061",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-28",
+    "updated_at": "2026-04-28"
+  },
+  "node-state-167b3d2c": {
+    "id": "node-state-167b3d2c",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "바쁨의 변명으로 인한 자기이해 패턴",
+    "summary": "바쁨을 이유로 중요한 결정을 미루는 행동은, 실제로는 마음이 산만한 상태를 반복적으로 인식하는 자기이해의 반복적 패턴을 보여준다. 이는 메신저나 일정 처리로 인한 맥락 분할이 아닌, 내면의 불안이나 무력감을 외부 요인으로 전환하는 자기 조절의 반복적 사고 패턴이다.",
+    "relation_tags": [
+      "context_fragmentation",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-072"
+    ],
+    "identity_key": "state|context_fragmentation,pattern_recognition|바쁨의 변명으로 인한 자기이해 패턴|memo-072",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-04-30",
+    "updated_at": "2026-04-30"
+  },
+  "node-state-38c08dc7": {
+    "id": "node-state-38c08dc7",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "KEO 메모에서 반복 패턴 우선 보여주는 상태",
+    "summary": "KEO 메모는 과거 다짐을 보여주는 것보다, 현재 반복 패턴을 먼저 보여주는 방식이 덜 훈계적이다. 이는 메모의 구성 방식에서 반복적 사고 패턴을 인식하고, 자기이해를 위한 반복적 행동을 반영하는 상태로, 사용자가 메모를 통해 자기 인식을 정리하는 반복적 행동을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-074"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|keo 메모에서 반복 패턴 우선 보여주는 상태|memo-074",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-01",
+    "updated_at": "2026-05-01"
+  },
+  "node-state-78293f25": {
+    "id": "node-state-78293f25",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "생활 업무 지연으로 인한 약국 방문 지연",
+    "summary": "약국 방문을 미루다 감기약이 다 떨어진 상황은, 일정 관리의 실패로 인한 생활 업무 지연의 반복적 패턴을 보여준다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴과 유사한 메커니즘을 가진 상태로, 생활 업무 지연이 일정 관리에 미치는 영향을 반복적으로 인식하는 자기 인식의 변화를 보여준다.",
+    "relation_tags": [
+      "execution_delay",
+      "life_admin_overload"
+    ],
+    "pending_evidence_ids": [
+      "memo-078"
+    ],
+    "identity_key": "state|execution_delay,life_admin_overload|생활 업무 지연으로 인한 약국 방문 지연|memo-078",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-02",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-95240ae3": {
+    "id": "node-state-95240ae3",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "의지가 아닌 구조 드러내는 하루 반복 패턴",
+    "summary": "의지가 아닌 구조적 요인이 반복되는 하루를 드러내는 상태로, 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴을 보여준다. 메모에서 반복되는 하루의 구조적 패턴을 인식하고, 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-079"
+    ],
+    "identity_key": "state|decision_trace,pattern_recognition|의지가 아닌 구조 드러내는 하루 반복 패턴|memo-079",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-02",
+    "updated_at": "2026-05-02"
+  },
+  "node-state-c69c4870": {
+    "id": "node-state-c69c4870",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "업무 연락 미루기",
+    "summary": "업무 연락 답장을 미루는 행동이 반복되고 있으며, 이는 메신저로 인한 맥락 분할과 사회적 응답 지연이 원인으로 보인다. 이는 일정과 맥락 분할이 기억 상실을 유발하는 반복적 패턴이다.",
+    "relation_tags": [
+      "evaluation_fear",
+      "social_response_delay"
+    ],
+    "pending_evidence_ids": [
+      "memo-091"
+    ],
+    "identity_key": "state|evaluation_fear,social_response_delay|업무 연락 미루기|memo-091",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-05",
+    "updated_at": "2026-05-05"
+  },
+  "node-state-00761229": {
+    "id": "node-state-00761229",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "결정과 습관의 태도 차이 인식",
+    "summary": "문장 '결심은 미래형이고 습관은 현재형이다.'라는 문장이 반복적으로 등장하며, 이는 미래에 대한 결심과 현재의 습관이 서로 다른 태도를 보여주는 것을 인식하는 자기 인식의 반복적 패턴을 나타낸다. 이는 자기 인식을 위한 반복적 사고 패턴으로, 메모를 통해 자기 인식을 정리하는 반복적 행동을 보여준다.",
+    "relation_tags": [
+      "decision_trace"
+    ],
+    "pending_evidence_ids": [
+      "memo-092"
+    ],
+    "identity_key": "state|decision_trace|결정과 습관의 태도 차이 인식|memo-092",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-05",
+    "updated_at": "2026-05-05"
+  },
+  "node-state-746722d6": {
+    "id": "node-state-746722d6",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "생활 일정 누적 후 감정 저하",
+    "summary": "생활 일정을 처리하지 못하고 쌓인 상태에서 감정이 저하되는 반복적 패턴. 생활 업무 누적으로 인한 정서적 부담이 반복적으로 발생하며, 이는 일정 관리의 실패로 인한 감정적 후유증을 나타낸다.",
+    "relation_tags": [
+      "event_aftereffect",
+      "life_admin_overload"
+    ],
+    "pending_evidence_ids": [
+      "memo-095"
+    ],
+    "identity_key": "state|event_aftereffect,life_admin_overload|생활 일정 누적 후 감정 저하|memo-095",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-06",
+    "updated_at": "2026-05-06"
+  },
+  "node-state-068a827f": {
+    "id": "node-state-068a827f",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "냉장고 정리 미루기",
+    "summary": "냉장고 정리 계획은 있지만, 메신저나 일상 업무로 인해 실행이 지연되고 있는 상태. 이는 일상 업무와 맥락 분할로 인한 반복적 패턴이다.",
+    "relation_tags": [
+      "execution_delay",
+      "life_admin_overload"
+    ],
+    "pending_evidence_ids": [
+      "memo-099",
+      "memo-031"
+    ],
+    "identity_key": "state|execution_delay,life_admin_overload|냉장고 정리 미루기|memo-031,memo-099",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-05-07",
+    "updated_at": "2026-05-07"
+  },
+  "node-state-5d65a0e1": {
+    "id": "node-state-5d65a0e1",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "자신을 속이는 상태",
+    "summary": "자신을 속이려는 합리적인 이유를 붙이지만, 실제로는 스스로를 속이지 못하는 상태로, 이는 회피와 합리화의 반복적 패턴을 보여준다. 이는 기존의 회의 후 기억 상실과 유사한 맥락 분할로 인한 상태로 판단된다.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "pending_evidence_ids": [
+      "memo-100"
+    ],
+    "identity_key": "state|avoidance_rationalization,self_deception|자신을 속이는 상태|memo-100",
+    "evidence_count": 0,
+    "confidence": 0.95,
+    "last_seen_at": null,
+    "created_at": "2026-05-07",
+    "updated_at": "2026-05-07"
+  }
+}

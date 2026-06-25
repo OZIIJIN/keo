@@ -1,0 +1,139 @@
+{
+  "node-state-e1f0082e": {
+    "id": "node-state-e1f0082e",
+    "source": "llm",
+    "status": "pending",
+    "type": "state",
+    "title": "일정 종료 후 메모 정리 필요",
+    "summary": "일정이 끝난 날 밤에 해당 일정의 메모를 다시 묶어 보여주는 것이 회의 전 기대감을 높이고, 끝나고 나서의 지침을 명확히 하는데 도움이 된다. 이는 일정 관리의 일관성과 반성의 중요성을 반영한다. 관련 메모는 memo-001과 memo-002를 포함한다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-002",
+      "memo-001"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일정 종료 후 메모 정리 필요|memo-001,memo-002",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-07",
+    "updated_at": "2026-04-07"
+  },
+  "node-pattern-95c4a0e4": {
+    "id": "node-pattern-95c4a0e4",
+    "source": "llm",
+    "status": "pending",
+    "type": "pattern",
+    "title": "일을 피하는 패턴",
+    "summary": "운동을 하기 싫어서 일로 핑계를 댄 경험에서 이전의 유사한 상황을 인지함. 일의 수행이 실제로는 별로 못 되는 경험을 반복함. 이는 회피 행동을 위한 합리화로, 반복되는 패턴을 인식함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "pending_evidence_ids": [
+      "memo-004"
+    ],
+    "identity_key": "pattern|avoidance_rationalization,pattern_recognition|일을 피하는 패턴|memo-004",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-product_insight-55ad5735": {
+    "id": "node-product_insight-55ad5735",
+    "source": "llm",
+    "status": "pending",
+    "type": "product_insight",
+    "title": "과거 다짐을 현재에 연결하는 제품 통찰",
+    "summary": "과거의 다짐을 현재의 메모로 연결해주는 기능은 사용자의 자기이해를 돕고, 훈계보다는 지속적인 자기 성찰을 유도할 수 있다. 이는 KEO의 자기이해 방향과 일치한다.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "pending_evidence_ids": [
+      "memo-005",
+      "memo-002"
+    ],
+    "identity_key": "product_insight|event_reflection_link,self_understanding_product|과거 다짐을 현재에 연결하는 제품 통찰|memo-002,memo-005",
+    "evidence_count": 0,
+    "confidence": 0.85,
+    "last_seen_at": null,
+    "created_at": "2026-04-08",
+    "updated_at": "2026-04-08"
+  },
+  "node-pattern-ab0185f2": {
+    "id": "node-pattern-ab0185f2",
+    "source": "llm",
+    "type": "pattern",
+    "title": "목표 분할로 시작 미루기",
+    "summary": "목표를 세우려는 척하면서 실제 시작을 미루는 행동. 계획 세우는 과정에서 카테고리 분할을 통해 시작을 미룸. 이는 과거의 회피 패턴과 유사함. 근거로는 memo-004의 회피 포장과 memo-001의 반응형 작업 패턴이 있음.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "overplanning",
+      "start_avoidance"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-004",
+      "memo-006"
+    ],
+    "identity_key": "pattern|avoidance_rationalization,overplanning,start_avoidance|목표 분할로 시작 미루기|memo-001,memo-004,memo-006",
+    "evidence_count": 21,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-04-08",
+    "updated_at": "2026-05-07"
+  },
+  "node-pattern-b8738beb": {
+    "id": "node-pattern-b8738beb",
+    "source": "llm",
+    "type": "pattern",
+    "title": "KEO 온보딩에서 감정 일기 대신 아이디어 및 회피 기록 중심으로",
+    "summary": "KEO 온보딩은 감정 일기 앱처럼 보이면 안 되고, 아이디어, 계획, 회피 기록을 포함하는 쪽으로 설계되어야 한다. 이는 과거의 회피 패턴과 유사하며, 사용자가 현재 상태를 반영하는 메모를 작성할 수 있도록 유도하는 데 기여한다. 근거로는 memo-004의 회피 포장과 memo-001의 반응형 작업 패턴이 있음.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-002",
+      "memo-005",
+      "memo-010",
+      "memo-017",
+      "memo-021"
+    ],
+    "identity_key": "pattern|pattern_recognition,self_understanding_product|keo 온보딩에서 감정 일기 대신 아이디어 및 회피 기록 중심으로|memo-002,memo-005,memo-010,memo-017,memo-021",
+    "evidence_count": 20,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-07",
+    "created_at": "2026-04-14",
+    "updated_at": "2026-05-07"
+  },
+  "node-state-453c66a1": {
+    "id": "node-state-453c66a1",
+    "source": "llm",
+    "type": "state",
+    "title": "결정력 저하 상태",
+    "summary": "피로가 누적되면서 판단력이 떨어지며, 불필요한 물건을 담는 등 무의식적인 행동이 나타남. 이는 피로가 판단과 실행 전반에 영향을 미치는 현상(fatigue_spillover)과 판단이 흐려지는 상태(decision_fog)를 동시에 나타냄.",
+    "relation_tags": [
+      "decision_fog",
+      "fatigue_spillover"
+    ],
+    "representative_evidence_ids": [
+      "memo-012",
+      "memo-020",
+      "memo-024",
+      "memo-027",
+      "memo-029",
+      "memo-033"
+    ],
+    "identity_key": "state|decision_fog,fatigue_spillover|결정력 저하 상태|memo-012,memo-020,memo-024,memo-027,memo-029,memo-033",
+    "evidence_count": 17,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-06",
+    "created_at": "2026-04-19",
+    "updated_at": "2026-05-06"
+  }
+}

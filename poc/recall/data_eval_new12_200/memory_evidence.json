@@ -1,0 +1,1844 @@
+[
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-039",
+    "reason": "메모에서 회의 전 기대와 후 결과의 불일치, 일정 기준으로 메모 연결의 필요성이 반복적으로 언급됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-023",
+    "reason": "메모에서 회의 전 기대와 후 결과의 불일치, 일정 기준으로 메모 연결의 필요성이 반복적으로 언급됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-002",
+    "reason": "메모에서 회의 전 기대와 후 결과의 불일치, 일정 기준으로 메모 연결의 필요성이 반복적으로 언급됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-015",
+    "reason": "메모에서 회의 전 기대와 후 결과의 불일치, 일정 기준으로 메모 연결의 필요성이 반복적으로 언급됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-008",
+    "reason": "메모에서 회의 전 기대와 후 결과의 불일치, 일정 기준으로 메모 연결의 필요성이 반복적으로 언급됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-21"
+  },
+  {
+    "node_id": "node-state-6f131caa",
+    "memo_id": "memo-046",
+    "reason": "이 메모는 KEO가 결정 실수를 묶어 보여주는 방식으로 자기이해를 돕는다는 점을 강조하고 있으며, 이는 기존의 감정 일기 앱과 차별화되는 핵심 기능으로, 여러 후속 메모에서 비슷한 결정 실수를 묶는 방식이 반복적으로 언급됨을 반영함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-6f131caa",
+    "memo_id": "memo-041",
+    "reason": "이 메모는 KEO가 결정 실수를 묶어 보여주는 방식으로 자기이해를 돕는다는 점을 강조하고 있으며, 이는 기존의 감정 일기 앱과 차별화되는 핵심 기능으로, 여러 후속 메모에서 비슷한 결정 실수를 묶는 방식이 반복적으로 언급됨을 반영함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-6f131caa",
+    "memo_id": "memo-021",
+    "reason": "이 메모는 KEO가 결정 실수를 묶어 보여주는 방식으로 자기이해를 돕는다는 점을 강조하고 있으며, 이는 기존의 감정 일기 앱과 차별화되는 핵심 기능으로, 여러 후속 메모에서 비슷한 결정 실수를 묶는 방식이 반복적으로 언급됨을 반영함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-6f131caa",
+    "memo_id": "memo-002",
+    "reason": "이 메모는 KEO가 결정 실수를 묶어 보여주는 방식으로 자기이해를 돕는다는 점을 강조하고 있으며, 이는 기존의 감정 일기 앱과 차별화되는 핵심 기능으로, 여러 후속 메모에서 비슷한 결정 실수를 묶는 방식이 반복적으로 언급됨을 반영함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-24"
+  },
+  {
+    "node_id": "node-state-6cb24ebe",
+    "memo_id": "memo-055",
+    "reason": "치과 방문 후 하루가 끊긴 느낌을 반복적으로 경험함",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-6cb24ebe",
+    "memo_id": "memo-052",
+    "reason": "치과 방문 후 하루가 끊긴 느낌을 반복적으로 경험함",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-6cb24ebe",
+    "memo_id": "memo-038",
+    "reason": "치과 방문 후 하루가 끊긴 느낌을 반복적으로 경험함",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-04-26"
+  },
+  {
+    "node_id": "node-state-adb8cda7",
+    "memo_id": "memo-076",
+    "reason": "여러 메모에서 쉬는 시간에 도망치는 감각이 반복적으로 언급되고 있으며, 이는 쉬는 시간을 제대로 활용하지 못하는 상태로 이어짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-adb8cda7",
+    "memo_id": "memo-040",
+    "reason": "여러 메모에서 쉬는 시간에 도망치는 감각이 반복적으로 언급되고 있으며, 이는 쉬는 시간을 제대로 활용하지 못하는 상태로 이어짐.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-adb8cda7",
+    "memo_id": "memo-056",
+    "reason": "여러 메모에서 쉬는 시간에 도망치는 감각이 반복적으로 언급되고 있으며, 이는 쉬는 시간을 제대로 활용하지 못하는 상태로 이어짐.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-adb8cda7",
+    "memo_id": "memo-027",
+    "reason": "여러 메모에서 쉬는 시간에 도망치는 감각이 반복적으로 언급되고 있으며, 이는 쉬는 시간을 제대로 활용하지 못하는 상태로 이어짐.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-01"
+  },
+  {
+    "node_id": "node-state-78d3f0c0",
+    "memo_id": "memo-077",
+    "reason": "운동복을 입고도 운동을 하지 않는 행동이 반복적으로 나타나며, 이는 회복 실패와 실행 지연의 구체적인 예시로, 여러 메모에서 유사한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-78d3f0c0",
+    "memo_id": "memo-004",
+    "reason": "운동복을 입고도 운동을 하지 않는 행동이 반복적으로 나타나며, 이는 회복 실패와 실행 지연의 구체적인 예시로, 여러 메모에서 유사한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-78d3f0c0",
+    "memo_id": "memo-012",
+    "reason": "운동복을 입고도 운동을 하지 않는 행동이 반복적으로 나타나며, 이는 회복 실패와 실행 지연의 구체적인 예시로, 여러 메모에서 유사한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-78d3f0c0",
+    "memo_id": "memo-057",
+    "reason": "운동복을 입고도 운동을 하지 않는 행동이 반복적으로 나타나며, 이는 회복 실패와 실행 지연의 구체적인 예시로, 여러 메모에서 유사한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-78d3f0c0",
+    "memo_id": "memo-061",
+    "reason": "운동복을 입고도 운동을 하지 않는 행동이 반복적으로 나타나며, 이는 회복 실패와 실행 지연의 구체적인 예시로, 여러 메모에서 유사한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-78d3f0c0",
+    "memo_id": "memo-076",
+    "reason": "운동복을 입고도 운동을 하지 않는 행동이 반복적으로 나타나며, 이는 회복 실패와 실행 지연의 구체적인 예시로, 여러 메모에서 유사한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-079",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해의 관계를 다루고 있으며, 여러 메모에서 패턴 인식과 관련된 주제가 반복적으로 나타나고 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-004",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해의 관계를 다루고 있으며, 여러 메모에서 패턴 인식과 관련된 주제가 반복적으로 나타나고 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-019",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해의 관계를 다루고 있으며, 여러 메모에서 패턴 인식과 관련된 주제가 반복적으로 나타나고 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-074",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해의 관계를 다루고 있으며, 여러 메모에서 패턴 인식과 관련된 주제가 반복적으로 나타나고 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-010",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9025)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-013",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9025)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-045",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9025)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-015",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9025)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-02"
+  },
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-087",
+    "reason": "이 memo는 '일정 끝난 뒤 남긴 한 줄이 회고의 핵심'이라는 점에서 기존 노드의 '회의 전 기대와 후 결과의 불일치'와 동일한 트리거를 명확히 포함하고 있으며, 일정 기준으로 전후 메모 연결의 필요성을 강조하고 있어 기존 노드에 부합합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-adb8cda7",
+    "memo_id": "memo-088",
+    "reason": "이 memo는 쉬는 시간에 도망치는 감각에 대한 추가적인 설명으로, 동일한 트리거와 결과를 가짐.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-04"
+  },
+  {
+    "node_id": "node-state-d9b236b5",
+    "memo_id": "memo-089",
+    "reason": "다수의 메모에서 출근 전이나 시작 전에 단순한 작성(문장, 목차)을 계획하고 있지만, 실제로는 다른 작업에 방해받아 본래 목표가 지연되는 패턴이 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-d9b236b5",
+    "memo_id": "memo-013",
+    "reason": "다수의 메모에서 출근 전이나 시작 전에 단순한 작성(문장, 목차)을 계획하고 있지만, 실제로는 다른 작업에 방해받아 본래 목표가 지연되는 패턴이 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-d9b236b5",
+    "memo_id": "memo-049",
+    "reason": "다수의 메모에서 출근 전이나 시작 전에 단순한 작성(문장, 목차)을 계획하고 있지만, 실제로는 다른 작업에 방해받아 본래 목표가 지연되는 패턴이 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-d9b236b5",
+    "memo_id": "memo-034",
+    "reason": "다수의 메모에서 출근 전이나 시작 전에 단순한 작성(문장, 목차)을 계획하고 있지만, 실제로는 다른 작업에 방해받아 본래 목표가 지연되는 패턴이 반복되고 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-090",
+    "reason": "메신저 확인 후 오전 흐름이 끊기는 패턴이 두 번 나타남. 메신저 확인이 트리거로, 오전 흐름 중단이 반복됨. 기존 semantic node와 유사도 0.9218로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-091",
+    "reason": "메신저 알림이 도착하면 작업 흐름이 중단되고, 중요한 작업이 중단되는 패턴이 두 번 관찰됨. 기존 semantic node와 유사도 0.8855로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-05"
+  },
+  {
+    "node_id": "node-state-adb8cda7",
+    "memo_id": "memo-096",
+    "reason": "이 memo와 candidate_evidence의 memo-027, memo-056은 쉬는 날에도 작은 할 일을 찾아내는 행동을 반복하고 있으며, 이는 rest_guilt와 safe_task_selection 태그와 관련된 불안감에서 비롯된 패턴으로 판단됨. 기존 semantic node와 유사도 0.8308로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-06"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-001",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-029",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-031",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-066",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-072",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-080",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-097",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-07"
+  },
+  {
+    "node_id": "node-state-6c580025",
+    "memo_id": "memo-101",
+    "reason": "이 memo는 회의 후 남은 일정과 기대의 불일치를 다루고 있으며, 이는 기존 노드의 핵심 트리거인 '회의 전 기대와 후 결과의 불일치'와 정확히 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-53c0ed82",
+    "memo_id": "memo-102",
+    "reason": "이 memo는 오랜만에 온 연락일수록 더 늦게 보게 된다는 내용으로, 사회적 응답 지연과 평가받을까봐 피하는 심리와 관련된 패턴을 보여준다. 이는 다른 memo들에서도 유사한 경향이 관찰되므로, 이는 반복되는 상태로 분류할 수 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-53c0ed82",
+    "memo_id": "memo-091",
+    "reason": "이 memo는 오랜만에 온 연락일수록 더 늦게 보게 된다는 내용으로, 사회적 응답 지연과 평가받을까봐 피하는 심리와 관련된 패턴을 보여준다. 이는 다른 memo들에서도 유사한 경향이 관찰되므로, 이는 반복되는 상태로 분류할 수 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-53c0ed82",
+    "memo_id": "memo-050",
+    "reason": "이 memo는 오랜만에 온 연락일수록 더 늦게 보게 된다는 내용으로, 사회적 응답 지연과 평가받을까봐 피하는 심리와 관련된 패턴을 보여준다. 이는 다른 memo들에서도 유사한 경향이 관찰되므로, 이는 반복되는 상태로 분류할 수 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-08"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-105",
+    "reason": "다수의 메모에서 초안 작성 시 준비 과정에 집중하는 행동이 반복적으로 나타남. 이는 overplanning, start_avoidance, avoidance_rationalization 태그와 함께 관찰되며, 특정 트리거(초안 작성)에 대한 일관된 결과(준비 과다)를 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-022",
+    "reason": "다수의 메모에서 초안 작성 시 준비 과정에 집중하는 행동이 반복적으로 나타남. 이는 overplanning, start_avoidance, avoidance_rationalization 태그와 함께 관찰되며, 특정 트리거(초안 작성)에 대한 일관된 결과(준비 과다)를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-034",
+    "reason": "다수의 메모에서 초안 작성 시 준비 과정에 집중하는 행동이 반복적으로 나타남. 이는 overplanning, start_avoidance, avoidance_rationalization 태그와 함께 관찰되며, 특정 트리거(초안 작성)에 대한 일관된 결과(준비 과다)를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-049",
+    "reason": "다수의 메모에서 초안 작성 시 준비 과정에 집중하는 행동이 반복적으로 나타남. 이는 overplanning, start_avoidance, avoidance_rationalization 태그와 함께 관찰되며, 특정 트리거(초안 작성)에 대한 일관된 결과(준비 과다)를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-089",
+    "reason": "다수의 메모에서 초안 작성 시 준비 과정에 집중하는 행동이 반복적으로 나타남. 이는 overplanning, start_avoidance, avoidance_rationalization 태그와 함께 관찰되며, 특정 트리거(초안 작성)에 대한 일관된 결과(준비 과다)를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-108",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 대한 생각이 끊임없이 드는 패턴이 관찰되며, 쉬는 시간을 빚처럼 느끼는 공통된 경험을 보임",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-056",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 대한 생각이 끊임없이 드는 패턴이 관찰되며, 쉬는 시간을 빚처럼 느끼는 공통된 경험을 보임",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-040",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9281)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-09",
+    "updated_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-027",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8219)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-09",
+    "updated_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-076",
+    "reason": "여러 메모에서 쉬는 날에도 할 일에 대한 생각이 끊임없이 드는 패턴이 관찰되며, 쉬는 시간을 빚처럼 느끼는 공통된 경험을 보임",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-09"
+  },
+  {
+    "node_id": "node-state-c9cf5dbe",
+    "memo_id": "memo-109",
+    "reason": "모든 메모는 운동 관련 피로 상태와 관련이 있으며, 피로가 지속되면서 일상 활동에 지장을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-c9cf5dbe",
+    "memo_id": "memo-077",
+    "reason": "모든 메모는 운동 관련 피로 상태와 관련이 있으며, 피로가 지속되면서 일상 활동에 지장을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-c9cf5dbe",
+    "memo_id": "memo-012",
+    "reason": "모든 메모는 운동 관련 피로 상태와 관련이 있으며, 피로가 지속되면서 일상 활동에 지장을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-c9cf5dbe",
+    "memo_id": "memo-061",
+    "reason": "모든 메모는 운동 관련 피로 상태와 관련이 있으며, 피로가 지속되면서 일상 활동에 지장을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-c9cf5dbe",
+    "memo_id": "memo-024",
+    "reason": "모든 메모는 운동 관련 피로 상태와 관련이 있으며, 피로가 지속되면서 일상 활동에 지장을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-909eb452",
+    "memo_id": "memo-111",
+    "reason": "다수의 메모에서 메모 추천 시 이유가 없으면 사용자 신뢰도가 떨어진다는 공통된 관찰이 있음.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-909eb452",
+    "memo_id": "memo-059",
+    "reason": "다수의 메모에서 메모 추천 시 이유가 없으면 사용자 신뢰도가 떨어진다는 공통된 관찰이 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-909eb452",
+    "memo_id": "memo-032",
+    "reason": "다수의 메모에서 메모 추천 시 이유가 없으면 사용자 신뢰도가 떨어진다는 공통된 관찰이 있음.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-10"
+  },
+  {
+    "node_id": "node-state-58a0289e",
+    "memo_id": "memo-113",
+    "reason": "커피 마시고도 불안 증가, 배고픔에 의한 피로, 저녁에 애매한 상태 등은 모두 에너지가 낮아지는 드리프트와 관련된 증상으로, 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-58a0289e",
+    "memo_id": "memo-061",
+    "reason": "커피 마시고도 불안 증가, 배고픔에 의한 피로, 저녁에 애매한 상태 등은 모두 에너지가 낮아지는 드리프트와 관련된 증상으로, 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-58a0289e",
+    "memo_id": "memo-012",
+    "reason": "커피 마시고도 불안 증가, 배고픔에 의한 피로, 저녁에 애매한 상태 등은 모두 에너지가 낮아지는 드리프트와 관련된 증상으로, 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-4034bd7c",
+    "memo_id": "memo-115",
+    "reason": "택배 관련 메모들이 반복적으로 처리 미루는 행동과 관련된 패턴을 보여줌",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-4034bd7c",
+    "memo_id": "memo-104",
+    "reason": "택배 관련 메모들이 반복적으로 처리 미루는 행동과 관련된 패턴을 보여줌",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-4034bd7c",
+    "memo_id": "memo-042",
+    "reason": "택배 관련 메모들이 반복적으로 처리 미루는 행동과 관련된 패턴을 보여줌",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-4034bd7c",
+    "memo_id": "memo-099",
+    "reason": "택배 관련 메모들이 반복적으로 처리 미루는 행동과 관련된 패턴을 보여줌",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-11"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-120",
+    "reason": "전화 통화 후 원래 계획 실행 중단 상태는 여러 메모에서 공통적으로 관찰되며, 전화 통화가 일정 중단의 직접적 원인으로 작용하는 패턴이 명확히 드러남",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-058",
+    "reason": "전화 통화 후 원래 계획 실행 중단 상태는 여러 메모에서 공통적으로 관찰되며, 전화 통화가 일정 중단의 직접적 원인으로 작용하는 패턴이 명확히 드러남",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-001",
+    "reason": "전화 통화 후 원래 계획 실행 중단 상태는 여러 메모에서 공통적으로 관찰되며, 전화 통화가 일정 중단의 직접적 원인으로 작용하는 패턴이 명확히 드러남",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-093",
+    "reason": "전화 통화 후 원래 계획 실행 중단 상태는 여러 메모에서 공통적으로 관찰되며, 전화 통화가 일정 중단의 직접적 원인으로 작용하는 패턴이 명확히 드러남",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-12"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-122",
+    "reason": "이 memo는 초안 작성 시 시작 전 준비 과다 행동과 일치하는 트리거(초안 작성)와 결과(준비 과다)를 포함하고 있으며, 관련 태그(overplanning, start_avoidance)도 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-124",
+    "reason": "여러 메모에서 작업 시작 전 준비 과다 행동이 반복되고, 이는 평가받을까봐 피하거나 회피를 정당화하는 심리와 연결됨",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-122",
+    "reason": "여러 메모에서 작업 시작 전 준비 과다 행동이 반복되고, 이는 평가받을까봐 피하거나 회피를 정당화하는 심리와 연결됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-118",
+    "reason": "여러 메모에서 작업 시작 전 준비 과다 행동이 반복되고, 이는 평가받을까봐 피하거나 회피를 정당화하는 심리와 연결됨",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-13"
+  },
+  {
+    "node_id": "node-state-884bf346",
+    "memo_id": "memo-125",
+    "reason": "돈 관련 자극이 일정의 여유를 감소시키고, 외부 우선순위를 잡아먹으며 판단이 흐려지는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-884bf346",
+    "memo_id": "memo-037",
+    "reason": "돈 관련 자극이 일정의 여유를 감소시키고, 외부 우선순위를 잡아먹으며 판단이 흐려지는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-884bf346",
+    "memo_id": "memo-073",
+    "reason": "돈 관련 자극이 일정의 여유를 감소시키고, 외부 우선순위를 잡아먹으며 판단이 흐려지는 패턴이 반복됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-14"
+  },
+  {
+    "node_id": "node-state-9ccb6dc9",
+    "memo_id": "memo-131",
+    "reason": "여러 메모에서 '쉬는 날'에 '해야 할 일'의 의무감이 책 읽기 중에 방해가 되는 패턴이 반복적으로 관찰됨. 이는 '쉬는 시간'을 '해야 할 일'의 연장으로 인식하는 심리적 구조로, 관련된 메모들의 공통된 트리거와 결과를 기반으로 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-9ccb6dc9",
+    "memo_id": "memo-056",
+    "reason": "여러 메모에서 '쉬는 날'에 '해야 할 일'의 의무감이 책 읽기 중에 방해가 되는 패턴이 반복적으로 관찰됨. 이는 '쉬는 시간'을 '해야 할 일'의 연장으로 인식하는 심리적 구조로, 관련된 메모들의 공통된 트리거와 결과를 기반으로 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-9ccb6dc9",
+    "memo_id": "memo-040",
+    "reason": "여러 메모에서 '쉬는 날'에 '해야 할 일'의 의무감이 책 읽기 중에 방해가 되는 패턴이 반복적으로 관찰됨. 이는 '쉬는 시간'을 '해야 할 일'의 연장으로 인식하는 심리적 구조로, 관련된 메모들의 공통된 트리거와 결과를 기반으로 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-9ccb6dc9",
+    "memo_id": "memo-001",
+    "reason": "여러 메모에서 '쉬는 날'에 '해야 할 일'의 의무감이 책 읽기 중에 방해가 되는 패턴이 반복적으로 관찰됨. 이는 '쉬는 시간'을 '해야 할 일'의 연장으로 인식하는 심리적 구조로, 관련된 메모들의 공통된 트리거와 결과를 기반으로 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-9ccb6dc9",
+    "memo_id": "memo-067",
+    "reason": "여러 메모에서 '쉬는 날'에 '해야 할 일'의 의무감이 책 읽기 중에 방해가 되는 패턴이 반복적으로 관찰됨. 이는 '쉬는 시간'을 '해야 할 일'의 연장으로 인식하는 심리적 구조로, 관련된 메모들의 공통된 트리거와 결과를 기반으로 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-9ccb6dc9",
+    "memo_id": "memo-004",
+    "reason": "여러 메모에서 '쉬는 날'에 '해야 할 일'의 의무감이 책 읽기 중에 방해가 되는 패턴이 반복적으로 관찰됨. 이는 '쉬는 시간'을 '해야 할 일'의 연장으로 인식하는 심리적 구조로, 관련된 메모들의 공통된 트리거와 결과를 기반으로 노드를 생성함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-15"
+  },
+  {
+    "node_id": "node-state-20ce8996",
+    "memo_id": "memo-133",
+    "reason": "달달한 음식 섭취 후 피로 지속 패턴이 반복적으로 관찰됨. 관련된 여러 메모에서 피로가 증가하거나 회복되지 않는 현상이 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-20ce8996",
+    "memo_id": "memo-061",
+    "reason": "달달한 음식 섭취 후 피로 지속 패턴이 반복적으로 관찰됨. 관련된 여러 메모에서 피로가 증가하거나 회복되지 않는 현상이 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-20ce8996",
+    "memo_id": "memo-081",
+    "reason": "달달한 음식 섭취 후 피로 지속 패턴이 반복적으로 관찰됨. 관련된 여러 메모에서 피로가 증가하거나 회복되지 않는 현상이 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-20ce8996",
+    "memo_id": "memo-113",
+    "reason": "달달한 음식 섭취 후 피로 지속 패턴이 반복적으로 관찰됨. 관련된 여러 메모에서 피로가 증가하거나 회복되지 않는 현상이 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-135",
+    "reason": "메모에서 '외출 일정 하나 들어오면 전후 준비 때문에 에너지 많이 빠진다'는 문장은 '전화 통화 후 원래 계획 실행 중단 상태' 노드의 핵심 트리거인 '전화 통화'와 유사한 '외출 일정'이라는 구체적인 트리거를 포함하고 있으며, 결과적으로도 '에너지 많이 빠짐'이라는 상태가 일치하여 정확히 같은 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-16"
+  },
+  {
+    "node_id": "node-state-ff5c0505",
+    "memo_id": "memo-139",
+    "reason": "여러 메모에서 과거 상황과 현재 상태를 연결해 주는 기능이 반복적으로 언급되고 있으며, 사용자가 자신의 행동 패턴을 이해하는 데 도움을 주는 상태로 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-ff5c0505",
+    "memo_id": "memo-002",
+    "reason": "여러 메모에서 과거 상황과 현재 상태를 연결해 주는 기능이 반복적으로 언급되고 있으며, 사용자가 자신의 행동 패턴을 이해하는 데 도움을 주는 상태로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-ff5c0505",
+    "memo_id": "memo-017",
+    "reason": "여러 메모에서 과거 상황과 현재 상태를 연결해 주는 기능이 반복적으로 언급되고 있으며, 사용자가 자신의 행동 패턴을 이해하는 데 도움을 주는 상태로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-ff5c0505",
+    "memo_id": "memo-032",
+    "reason": "여러 메모에서 과거 상황과 현재 상태를 연결해 주는 기능이 반복적으로 언급되고 있으며, 사용자가 자신의 행동 패턴을 이해하는 데 도움을 주는 상태로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-ff5c0505",
+    "memo_id": "memo-059",
+    "reason": "여러 메모에서 과거 상황과 현재 상태를 연결해 주는 기능이 반복적으로 언급되고 있으며, 사용자가 자신의 행동 패턴을 이해하는 데 도움을 주는 상태로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-ff5c0505",
+    "memo_id": "memo-074",
+    "reason": "여러 메모에서 과거 상황과 현재 상태를 연결해 주는 기능이 반복적으로 언급되고 있으며, 사용자가 자신의 행동 패턴을 이해하는 데 도움을 주는 상태로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-1d60e14c",
+    "memo_id": "memo-140",
+    "reason": "모든 메모는 '해야 할 일' 인지하지 못하고 몸을 숨기는 행동을 반복하는 상태를 보여준다. 이는 피로, 불편감, 회피 행동의 반복을 나타내며, 특정 트리거에 대한 일관된 결과를 보여준다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-1d60e14c",
+    "memo_id": "memo-076",
+    "reason": "모든 메모는 '해야 할 일' 인지하지 못하고 몸을 숨기는 행동을 반복하는 상태를 보여준다. 이는 피로, 불편감, 회피 행동의 반복을 나타내며, 특정 트리거에 대한 일관된 결과를 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-1d60e14c",
+    "memo_id": "memo-088",
+    "reason": "모든 메모는 '해야 할 일' 인지하지 못하고 몸을 숨기는 행동을 반복하는 상태를 보여준다. 이는 피로, 불편감, 회피 행동의 반복을 나타내며, 특정 트리거에 대한 일관된 결과를 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-1d60e14c",
+    "memo_id": "memo-108",
+    "reason": "모든 메모는 '해야 할 일' 인지하지 못하고 몸을 숨기는 행동을 반복하는 상태를 보여준다. 이는 피로, 불편감, 회피 행동의 반복을 나타내며, 특정 트리거에 대한 일관된 결과를 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-1d60e14c",
+    "memo_id": "memo-056",
+    "reason": "모든 메모는 '해야 할 일' 인지하지 못하고 몸을 숨기는 행동을 반복하는 상태를 보여준다. 이는 피로, 불편감, 회피 행동의 반복을 나타내며, 특정 트리거에 대한 일관된 결과를 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-1d60e14c",
+    "memo_id": "memo-109",
+    "reason": "모든 메모는 '해야 할 일' 인지하지 못하고 몸을 숨기는 행동을 반복하는 상태를 보여준다. 이는 피로, 불편감, 회피 행동의 반복을 나타내며, 특정 트리거에 대한 일관된 결과를 보여준다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-17"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-141",
+    "reason": "초안 작성 시 준비 과다로 인한 시작 지연이 반복적으로 관찰됨. 기존 semantic node와 유사도 0.9401로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-143",
+    "reason": "다수의 메모에서 짧은 답변이 필요할 때에도 준비 과정이 길어지고, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-091",
+    "reason": "다수의 메모에서 짧은 답변이 필요할 때에도 준비 과정이 길어지고, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-016",
+    "reason": "다수의 메모에서 짧은 답변이 필요할 때에도 준비 과정이 길어지고, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-122",
+    "reason": "다수의 메모에서 짧은 답변이 필요할 때에도 준비 과정이 길어지고, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-066",
+    "reason": "다수의 메모에서 짧은 답변이 필요할 때에도 준비 과정이 길어지고, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-069",
+    "reason": "다수의 메모에서 짧은 답변이 필요할 때에도 준비 과정이 길어지고, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-d9b236b5",
+    "memo_id": "memo-144",
+    "reason": "이 메모는 '정리 욕구'와 '시작 두려움'을 연결하며, '출근 전에 첫 문장만 적어두는 상태'와 동일한 구조적 패턴을 보여준다. '정리 욕구가 커질수록 시작을 두려워하고'라는 문장은 '출근 전에 첫 문장만 적어두고, 이후로는 다른 작업에 방해받아 본래 목표인 글쓰기 진행이 지연되는 상태'와 동일한 트리거와 결과를 가진다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-18"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-145",
+    "reason": "여러 메모에서 정리, 분류, 청소 같은 안전한 일에 대한 욕구가 어려운 작업 시작 전에 나타나고, 이로 인해 실제 작업 시작이 지연되는 패턴이 반복적으로 관찰되었습니다. 이는 회피를 포장하는 행동으로 분류됩니다. 기존 semantic node와 유사도 0.8368로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-022",
+    "reason": "여러 메모에서 정리, 분류, 청소 같은 안전한 일에 대한 욕구가 어려운 작업 시작 전에 나타나고, 이로 인해 실제 작업 시작이 지연되는 패턴이 반복적으로 관찰되었습니다. 이는 회피를 포장하는 행동으로 분류됩니다. 기존 semantic node와 유사도 0.8368로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-035",
+    "reason": "여러 메모에서 정리, 분류, 청소 같은 안전한 일에 대한 욕구가 어려운 작업 시작 전에 나타나고, 이로 인해 실제 작업 시작이 지연되는 패턴이 반복적으로 관찰되었습니다. 이는 회피를 포장하는 행동으로 분류됩니다. 기존 semantic node와 유사도 0.8368로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-1de26a72",
+    "memo_id": "memo-144",
+    "reason": "여러 메모에서 정리, 분류, 청소 같은 안전한 일에 대한 욕구가 어려운 작업 시작 전에 나타나고, 이로 인해 실제 작업 시작이 지연되는 패턴이 반복적으로 관찰되었습니다. 이는 회피를 포장하는 행동으로 분류됩니다. 기존 semantic node와 유사도 0.8368로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-148",
+    "reason": "여러 메모에서 쉬는 날에도 할 일 찾는 행동이 반복되고, 쉬는 시간을 빚처럼 느끼는 감정이 공통적으로 나타남. 기존 semantic node와 유사도 0.9457로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-19"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-152",
+    "reason": "이 memo는 '관계에 들어가는 에너지가 없어서'라는 핵심 트리거와 'social_response_delay' 태그를 공유하며, 기존 노드의 요약과 일치하는 패턴을 보여줍니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-20"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-153",
+    "reason": "여러 메모에서 '초안 작성 시 준비 과다'와 '시작을 미루는 행동'이 반복적으로 나타나며, 이는 명확한 트리거와 결과를 가진 지속적인 패턴으로 판단됨. 기존 semantic node와 유사도 0.9200로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-031",
+    "reason": "여러 메모에서 '초안 작성 시 준비 과다'와 '시작을 미루는 행동'이 반복적으로 나타나며, 이는 명확한 트리거와 결과를 가진 지속적인 패턴으로 판단됨. 기존 semantic node와 유사도 0.9200로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-c3c55950",
+    "memo_id": "memo-154",
+    "reason": "이전 메시지에 대한 응답 지연이 반복적으로 관찰되며, 동료, 메시지 등의 핵심 키워드가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-c3c55950",
+    "memo_id": "memo-102",
+    "reason": "이전 메시지에 대한 응답 지연이 반복적으로 관찰되며, 동료, 메시지 등의 핵심 키워드가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-c3c55950",
+    "memo_id": "memo-071",
+    "reason": "이전 메시지에 대한 응답 지연이 반복적으로 관찰되며, 동료, 메시지 등의 핵심 키워드가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-c3c55950",
+    "memo_id": "memo-050",
+    "reason": "이전 메시지에 대한 응답 지연이 반복적으로 관찰되며, 동료, 메시지 등의 핵심 키워드가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-114",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-062",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-090",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-155",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-21"
+  },
+  {
+    "node_id": "node-state-22cb0e04",
+    "memo_id": "memo-157",
+    "reason": "여러 메모에서 '안전한 일 선택', '작은 할 일 찾기', '시작 미루기' 등의 키워드가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 명확한 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-22cb0e04",
+    "memo_id": "memo-022",
+    "reason": "여러 메모에서 '안전한 일 선택', '작은 할 일 찾기', '시작 미루기' 등의 키워드가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 명확한 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-22cb0e04",
+    "memo_id": "memo-096",
+    "reason": "여러 메모에서 '안전한 일 선택', '작은 할 일 찾기', '시작 미루기' 등의 키워드가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 명확한 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-22cb0e04",
+    "memo_id": "memo-145",
+    "reason": "여러 메모에서 '안전한 일 선택', '작은 할 일 찾기', '시작 미루기' 등의 키워드가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 명확한 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-012",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-061",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-128",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-160",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-109",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-148",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-114",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-c4f498a3",
+    "memo_id": "memo-027",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-c4f498a3",
+    "memo_id": "memo-142",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-c4f498a3",
+    "memo_id": "memo-148",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-4f54bbf4",
+    "memo_id": "memo-142",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.8219)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-c4f498a3",
+    "memo_id": "memo-040",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9804)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-027",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9011)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-142",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9011)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-3fc8533e",
+    "memo_id": "memo-040",
+    "reason": "split에서 기존 유사 node로 재배분 (유사도 0.9029)",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-05-22"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-162",
+    "reason": "메모에서 '부모님 일정 확인'이 '전화 통화'로 추론되며, '원래 계획 실행 중단' 결과가 명확히 드러남. 이는 기존 노드의 핵심 트리거와 결과가 정확히 일치하므로 첨부가 적절함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-909eb452",
+    "memo_id": "memo-163",
+    "reason": "이 memo는 메모 추천 시스템의 투명성과 사용자 신뢰도에 대한 논의를 이어가며, '메모 추천이 이유 없으면 사용자 신뢰도 떨어지는 상태'라는 기존 노드의 핵심 트리거와 일치함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-23"
+  },
+  {
+    "node_id": "node-state-f8ab0edc",
+    "memo_id": "memo-165",
+    "reason": "점심 급식 후 오후 집중력 저하가 반복적으로 관찰되며, 관련된 메모들에서 피로감과 에너지 저하가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-f8ab0edc",
+    "memo_id": "memo-061",
+    "reason": "점심 급식 후 오후 집중력 저하가 반복적으로 관찰되며, 관련된 메모들에서 피로감과 에너지 저하가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-f8ab0edc",
+    "memo_id": "memo-081",
+    "reason": "점심 급식 후 오후 집중력 저하가 반복적으로 관찰되며, 관련된 메모들에서 피로감과 에너지 저하가 공통적으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-166",
+    "reason": "여러 메모에서 수면 부족과 판단 흐름의 연관성이 반복적으로 관찰되며, 이는 특정한 상태로 분류할 수 있는 명확한 패턴을 보여준다. 기존 semantic node와 유사도 0.8618로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-020",
+    "reason": "여러 메모에서 수면 부족과 판단 흐름의 연관성이 반복적으로 관찰되며, 이는 특정한 상태로 분류할 수 있는 명확한 패턴을 보여준다. 기존 semantic node와 유사도 0.8618로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-367dc59d",
+    "memo_id": "memo-033",
+    "reason": "여러 메모에서 수면 부족과 판단 흐름의 연관성이 반복적으로 관찰되며, 이는 특정한 상태로 분류할 수 있는 명확한 패턴을 보여준다. 기존 semantic node와 유사도 0.8618로 병합",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-299e7140",
+    "memo_id": "memo-167",
+    "reason": "여러 메모에서 생활 업무 부담과 끝나지 않은 일에 대한 감정이 반복적으로 나타나며, 정리 미루는 행동이 반복되고 있는 패턴이 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-299e7140",
+    "memo_id": "memo-095",
+    "reason": "여러 메모에서 생활 업무 부담과 끝나지 않은 일에 대한 감정이 반복적으로 나타나며, 정리 미루는 행동이 반복되고 있는 패턴이 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-299e7140",
+    "memo_id": "memo-051",
+    "reason": "여러 메모에서 생활 업무 부담과 끝나지 않은 일에 대한 감정이 반복적으로 나타나며, 정리 미루는 행동이 반복되고 있는 패턴이 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-299e7140",
+    "memo_id": "memo-040",
+    "reason": "여러 메모에서 생활 업무 부담과 끝나지 않은 일에 대한 감정이 반복적으로 나타나며, 정리 미루는 행동이 반복되고 있는 패턴이 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-299e7140",
+    "memo_id": "memo-093",
+    "reason": "여러 메모에서 생활 업무 부담과 끝나지 않은 일에 대한 감정이 반복적으로 나타나며, 정리 미루는 행동이 반복되고 있는 패턴이 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-409f72bd",
+    "memo_id": "memo-168",
+    "reason": "여러 번의 메모에서 '표현한 나와 실제 내가 어긋난 느낌'이라는 표현이 반복적으로 사용되었으며, 이는 특정 상태를 반복적으로 인지하는 증거로, '표현한 나와 실제 내가 어긋난 느낌'이라는 정확한 제목으로 노드를 생성할 수 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-409f72bd",
+    "memo_id": "memo-044",
+    "reason": "여러 번의 메모에서 '표현한 나와 실제 내가 어긋난 느낌'이라는 표현이 반복적으로 사용되었으며, 이는 특정 상태를 반복적으로 인지하는 증거로, '표현한 나와 실제 내가 어긋난 느낌'이라는 정확한 제목으로 노드를 생성할 수 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-409f72bd",
+    "memo_id": "memo-084",
+    "reason": "여러 번의 메모에서 '표현한 나와 실제 내가 어긋난 느낌'이라는 표현이 반복적으로 사용되었으며, 이는 특정 상태를 반복적으로 인지하는 증거로, '표현한 나와 실제 내가 어긋난 느낌'이라는 정확한 제목으로 노드를 생성할 수 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-24"
+  },
+  {
+    "node_id": "node-state-35c6fab7",
+    "memo_id": "memo-171",
+    "reason": "여러 메모에서 미루는 행동이 자존감에 영향을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-35c6fab7",
+    "memo_id": "memo-051",
+    "reason": "여러 메모에서 미루는 행동이 자존감에 영향을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-35c6fab7",
+    "memo_id": "memo-042",
+    "reason": "여러 메모에서 미루는 행동이 자존감에 영향을 주는 패턴이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-c9cf5dbe",
+    "memo_id": "memo-172",
+    "reason": "메모에서 '캘린더엔 한 줄인데 실제 피로는 몇 줄짜리다.'라는 문장은 운동 관련 피로 상태와 유사한 '피로가 지속되며 일상 활동에 지장을 주는 상태'를 설명하고 있으며, 'fatigue_spillover' 태그가 공유되고 있어 정확한 일치를 보인다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-25"
+  },
+  {
+    "node_id": "node-state-32a9e092",
+    "memo_id": "memo-173",
+    "reason": "이 memo는 초안 작성 시 시작 전 준비 과다 행동에 해당하는 특정 트리거(초안 작성)와 결과(준비 과다)를 명확히 포함하고 있으며, 기존 노드의 핵심 트리거와 일치합니다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-0623d768",
+    "memo_id": "memo-175",
+    "reason": "모든 메모는 에너지 부족과 답장 지연의 관계를 공유하고 있으며, 이는 일관된 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-0623d768",
+    "memo_id": "memo-152",
+    "reason": "모든 메모는 에너지 부족과 답장 지연의 관계를 공유하고 있으며, 이는 일관된 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-0623d768",
+    "memo_id": "memo-050",
+    "reason": "모든 메모는 에너지 부족과 답장 지연의 관계를 공유하고 있으며, 이는 일관된 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-0623d768",
+    "memo_id": "memo-143",
+    "reason": "모든 메모는 에너지 부족과 답장 지연의 관계를 공유하고 있으며, 이는 일관된 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-0623d768",
+    "memo_id": "memo-016",
+    "reason": "모든 메모는 에너지 부족과 답장 지연의 관계를 공유하고 있으며, 이는 일관된 패턴으로 나타남.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-26"
+  },
+  {
+    "node_id": "node-state-884bf346",
+    "memo_id": "memo-177",
+    "reason": "이 memo는 돈 걱정이 생기면 중요한 일보다 당장 불안 줄이는 쪽으로 손이 간다는 점에서, 기존 노드 '돈 생각 올라오는 날엔 여유 감소 상태'의 핵심 트리거인 '돈에 대한 고민'과 일치하며, 결과도 '여유 감소'와 유사함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-27"
+  },
+  {
+    "node_id": "node-state-c3f3c6a1",
+    "memo_id": "memo-181",
+    "reason": "산책 계획 후 실행 지연이 반복적으로 나타나는 패턴을 확인함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-c3f3c6a1",
+    "memo_id": "memo-057",
+    "reason": "산책 계획 후 실행 지연이 반복적으로 나타나는 패턴을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-c3f3c6a1",
+    "memo_id": "memo-129",
+    "reason": "산책 계획 후 실행 지연이 반복적으로 나타나는 패턴을 확인함.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-145f9845",
+    "memo_id": "memo-182",
+    "reason": "의도한 일을 하려는 의도는 있지만 실행이 지연되는 행동이 반복됨. 세탁기 돌리기, 재활용 버리기, 운동복 입고 누우기 등은 일상 관리 업무에 대한 부담으로 인한 실행 지연 상태를 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-145f9845",
+    "memo_id": "memo-063",
+    "reason": "의도한 일을 하려는 의도는 있지만 실행이 지연되는 행동이 반복됨. 세탁기 돌리기, 재활용 버리기, 운동복 입고 누우기 등은 일상 관리 업무에 대한 부담으로 인한 실행 지연 상태를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-145f9845",
+    "memo_id": "memo-077",
+    "reason": "의도한 일을 하려는 의도는 있지만 실행이 지연되는 행동이 반복됨. 세탁기 돌리기, 재활용 버리기, 운동복 입고 누우기 등은 일상 관리 업무에 대한 부담으로 인한 실행 지연 상태를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-145f9845",
+    "memo_id": "memo-130",
+    "reason": "의도한 일을 하려는 의도는 있지만 실행이 지연되는 행동이 반복됨. 세탁기 돌리기, 재활용 버리기, 운동복 입고 누우기 등은 일상 관리 업무에 대한 부담으로 인한 실행 지연 상태를 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-23ab04f6",
+    "memo_id": "memo-183",
+    "reason": "기록 후 자세를 반영한 회고가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-23ab04f6",
+    "memo_id": "memo-003",
+    "reason": "기록 후 자세를 반영한 회고가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-23ab04f6",
+    "memo_id": "memo-051",
+    "reason": "기록 후 자세를 반영한 회고가 반복적으로 나타나며, 이는 특정한 상태로 분류될 수 있는 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-184",
+    "reason": "이 메모는 반복 패턴 인식과 자기 이해의 관계를 다루고 있으며, 여러 메모에서 패턴 인식과 관련된 주제가 반복적으로 나타나고 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-28"
+  },
+  {
+    "node_id": "node-state-35cfb96d",
+    "memo_id": "memo-187",
+    "reason": "메모에서 '전화 통화 후 원래 계획 실행 중단 상태'와 일치하는 '메신저 몇 번 보고 나니까 흐름 끊김' 및 '부모님 통화 길어지고 나니까 원래 하려던 생각이 끊김'과 같은 구체적 상황이 드러남",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-29"
+  },
+  {
+    "node_id": "node-state-0524e56e",
+    "memo_id": "memo-189",
+    "reason": "습한 날과 창밖이 흐리면 발생하는 사고 속도 감소 현상은 모두 환경적 요인이 사고 리듬에 영향을 미치는 패턴으로, 같은 메커니즘을 공유하고 있다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0524e56e",
+    "memo_id": "memo-085",
+    "reason": "습한 날과 창밖이 흐리면 발생하는 사고 속도 감소 현상은 모두 환경적 요인이 사고 리듬에 영향을 미치는 패턴으로, 같은 메커니즘을 공유하고 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0524e56e",
+    "memo_id": "memo-169",
+    "reason": "습한 날과 창밖이 흐리면 발생하는 사고 속도 감소 현상은 모두 환경적 요인이 사고 리듬에 영향을 미치는 패턴으로, 같은 메커니즘을 공유하고 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0524e56e",
+    "memo_id": "memo-179",
+    "reason": "습한 날과 창밖이 흐리면 발생하는 사고 속도 감소 현상은 모두 환경적 요인이 사고 리듬에 영향을 미치는 패턴으로, 같은 메커니즘을 공유하고 있다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-1c37492a",
+    "memo_id": "memo-190",
+    "reason": "메신저 알림을 받은 후 일정 흐름이 중단되는 상황이 반복적으로 나타나며, '메신저', '알림' 등의 핵심 키워드가 공통적으로 나타남. 기존 semantic node와 유사도 0.8823로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-191",
+    "reason": "이 메모는 패턴 인식과 자기 이해의 관계를 다루고 있으며, 기존 노드의 주제와 일치하는 특정 상황을 설명하고 있어 첨부가 적절함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0ba244fe",
+    "memo_id": "memo-192",
+    "reason": "이 메모는 다른 메모들과 마찬가지로 메모 내용이 서로 다른 얘기처럼 보이지만, 근본적인 회피 행동이 반복되고 있음을 지적하고 있어, 같은 상태를 나타내는 일관된 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0ba244fe",
+    "memo_id": "memo-132",
+    "reason": "이 메모는 다른 메모들과 마찬가지로 메모 내용이 서로 다른 얘기처럼 보이지만, 근본적인 회피 행동이 반복되고 있음을 지적하고 있어, 같은 상태를 나타내는 일관된 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-0ba244fe",
+    "memo_id": "memo-060",
+    "reason": "이 메모는 다른 메모들과 마찬가지로 메모 내용이 서로 다른 얘기처럼 보이지만, 근본적인 회피 행동이 반복되고 있음을 지적하고 있어, 같은 상태를 나타내는 일관된 패턴을 보여줌.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-30"
+  },
+  {
+    "node_id": "node-state-45a7795e",
+    "memo_id": "memo-193",
+    "reason": "여러 메모에서 작업 시작을 미루는 행동이 반복적으로 나타나며, '작업 시작'이라는 핵심 트리거가 명확히 포함됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-45a7795e",
+    "memo_id": "memo-006",
+    "reason": "여러 메모에서 작업 시작을 미루는 행동이 반복적으로 나타나며, '작업 시작'이라는 핵심 트리거가 명확히 포함됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-45a7795e",
+    "memo_id": "memo-031",
+    "reason": "여러 메모에서 작업 시작을 미루는 행동이 반복적으로 나타나며, '작업 시작'이라는 핵심 트리거가 명확히 포함됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-45a7795e",
+    "memo_id": "memo-049",
+    "reason": "여러 메모에서 작업 시작을 미루는 행동이 반복적으로 나타나며, '작업 시작'이라는 핵심 트리거가 명확히 포함됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-45a7795e",
+    "memo_id": "memo-069",
+    "reason": "여러 메모에서 작업 시작을 미루는 행동이 반복적으로 나타나며, '작업 시작'이라는 핵심 트리거가 명확히 포함됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-8a609603",
+    "memo_id": "memo-194",
+    "reason": "여러 메모에서 피로가 판단과 실행에 영향을 미치고, 컨디션에 맞춰 일하는 방식이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-8a609603",
+    "memo_id": "memo-020",
+    "reason": "여러 메모에서 피로가 판단과 실행에 영향을 미치고, 컨디션에 맞춰 일하는 방식이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-8a609603",
+    "memo_id": "memo-024",
+    "reason": "여러 메모에서 피로가 판단과 실행에 영향을 미치고, 컨디션에 맞춰 일하는 방식이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-8a609603",
+    "memo_id": "memo-169",
+    "reason": "여러 메모에서 피로가 판단과 실행에 영향을 미치고, 컨디션에 맞춰 일하는 방식이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-8a609603",
+    "memo_id": "memo-004",
+    "reason": "여러 메모에서 피로가 판단과 실행에 영향을 미치고, 컨디션에 맞춰 일하는 방식이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-8a609603",
+    "memo_id": "memo-056",
+    "reason": "여러 메모에서 피로가 판단과 실행에 영향을 미치고, 컨디션에 맞춰 일하는 방식이 반복적으로 관찰됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-b9b598b5",
+    "memo_id": "memo-195",
+    "reason": "이 메모는 짧은 답장이 필요할 때에도 불필요한 준비 과정을 거쳐 시간이 지연되는 현상과 일치하며, 타이밍을 재거나 완벽한 답변을 기대하며 미루는 행동이 반복됨을 확인함.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-81e672c9",
+    "memo_id": "memo-196",
+    "reason": "이 메모는 자기이해를 구축하는 과정에서 반복적인 메모 작성과 그 패턴을 인식하는 행동이 반복적으로 나타나는 것을 나타낸다. 이는 기존의 '다른 얘기 같지만 밑바닥 비슷한 회피 상태'나 '피곤한 날엔 컨디션 기준으로 일하는 상태'와는 다른 구체적인 자기이해에 대한 인식을 보여준다. 기존 semantic node와 유사도 0.8211로 병합",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-05-31"
+  },
+  {
+    "node_id": "node-state-d985174b",
+    "memo_id": "memo-197",
+    "reason": "이전 메모에서 할 일 처리 후에도 작은 할 일을 찾아내는 행동이 반복적으로 나타났으며, 현재 메모에서도 비슷한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-d985174b",
+    "memo_id": "memo-029",
+    "reason": "이전 메모에서 할 일 처리 후에도 작은 할 일을 찾아내는 행동이 반복적으로 나타났으며, 현재 메모에서도 비슷한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-d985174b",
+    "memo_id": "memo-084",
+    "reason": "이전 메모에서 할 일 처리 후에도 작은 할 일을 찾아내는 행동이 반복적으로 나타났으며, 현재 메모에서도 비슷한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-d985174b",
+    "memo_id": "memo-044",
+    "reason": "이전 메모에서 할 일 처리 후에도 작은 할 일을 찾아내는 행동이 반복적으로 나타났으며, 현재 메모에서도 비슷한 패턴이 관찰된다.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-14a2682a",
+    "memo_id": "memo-198",
+    "reason": "예산 맞추려다 판단 흐려지는 상태는 여러 메모에서 반복적으로 관찰됨. 외부 자극과 피로도 관련된 메모가 함께 나타나고 있어 이는 상태로 분류됨.",
+    "source": "llm",
+    "weight": 0.85,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-14a2682a",
+    "memo_id": "memo-106",
+    "reason": "예산 맞추려다 판단 흐려지는 상태는 여러 메모에서 반복적으로 관찰됨. 외부 자극과 피로도 관련된 메모가 함께 나타나고 있어 이는 상태로 분류됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-14a2682a",
+    "memo_id": "memo-177",
+    "reason": "예산 맞추려다 판단 흐려지는 상태는 여러 메모에서 반복적으로 관찰됨. 외부 자극과 피로도 관련된 메모가 함께 나타나고 있어 이는 상태로 분류됨.",
+    "source": "llm",
+    "weight": 0.65,
+    "created_at": "2026-06-01"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-136",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-064",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-107",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-124",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-109",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-176",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-131",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-158",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-188",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  },
+  {
+    "node_id": "node-state-aa9ea5ff-2",
+    "memo_id": "memo-084",
+    "reason": "split으로 새 node 생성",
+    "source": "evolve",
+    "weight": 0.75,
+    "created_at": "2026-06-17T02:44:47Z"
+  }
+]

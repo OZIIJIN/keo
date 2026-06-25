@@ -1,0 +1,1565 @@
+{
+  "node-state-e7d6b8cf": {
+    "id": "node-state-e7d6b8cf",
+    "source": "llm",
+    "type": "state",
+    "title": "흐름이 끊기는 일상 상태",
+    "summary": "메신저 상호작용으로 인해 컨텍스트가 조각내져, 일관된 작업 흐름이 방해받는 상태. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "representative_evidence_ids": [
+      "memo-001"
+    ],
+    "identity_key": "state|context_fragmentation,reactive_work|흐름이 끊기는 일상 상태|memo-001",
+    "evidence_count": 165,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-04-07",
+    "updated_at": "2026-07-08"
+  },
+  "node-state-3557fa10": {
+    "id": "node-state-3557fa10",
+    "source": "llm",
+    "type": "state",
+    "title": "일정 종료 후 회고 상태",
+    "summary": "일정이 끝난 후 회고를 통해 기대와 결과를 비교하며, 지침을 정리하는 상태. 메신저 상호작용으로 인한 컨텍스트 분할이 아닌, 의도적인 회고를 위한 상태로, 일관된 작업 흐름이 유지됨.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일정 종료 후 회고 상태|memo-001,memo-002",
+    "evidence_count": 27,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-29",
+    "created_at": "2026-04-07",
+    "updated_at": "2026-06-29"
+  },
+  "node-state-a443bb36": {
+    "id": "node-state-a443bb36",
+    "source": "llm",
+    "type": "state",
+    "title": "일상적 회피 패턴",
+    "summary": "운동을 하기 싫어하는 감정을 일에 대한 핑계로 회피하고, 실제로는 일도 잘 못하는 반복적인 패턴. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-003",
+      "memo-004"
+    ],
+    "identity_key": "state|avoidance_rationalization,pattern_recognition|일상적 회피 패턴|memo-001,memo-002,memo-003,memo-004",
+    "evidence_count": 47,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-04-08",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-46f0a18f": {
+    "id": "node-state-46f0a18f",
+    "source": "llm",
+    "type": "state",
+    "title": "일상적 회고와 회피 상태",
+    "summary": "메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피 패턴이 결합된 상태. 이 상태에서는 일정 종료 후 회고를 통해 지침을 정리하려는 의도와, 운동을 하기 싫어하는 감정을 일로 핑계하는 회피 행동이 동시에 나타나며, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-004",
+      "memo-005"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|일상적 회고와 회피 상태|memo-001,memo-002,memo-004,memo-005",
+    "evidence_count": 53,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-29",
+    "created_at": "2026-04-08",
+    "updated_at": "2026-06-29"
+  },
+  "node-state-f0db221b": {
+    "id": "node-state-f0db221b",
+    "source": "llm",
+    "type": "state",
+    "title": "회의 후 기억 상실 상태",
+    "summary": "회의 두 번 진행 후 본인의 목표나 의도가 흐려지며, 일정이 하루를 먹는 듯한 느낌을 주는 상태. 메신저 상호작용과 일정의 중단으로 인한 컨텍스트 분할로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "context_fragmentation",
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-002",
+      "memo-004",
+      "memo-007",
+      "memo-008"
+    ],
+    "identity_key": "state|context_fragmentation,schedule_disruption|회의 후 기억 상실 상태|memo-001,memo-002,memo-004,memo-007,memo-008",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-16",
+    "created_at": "2026-04-09",
+    "updated_at": "2026-06-16"
+  },
+  "node-state-bc01ac39": {
+    "id": "node-state-bc01ac39",
+    "source": "llm",
+    "type": "state",
+    "title": "일정 중단 후 회복 시도 상태",
+    "summary": "엄마 병원 일정으로 인한 일상 일정 중단 후, 일정을 다시 시작하려는 회복 시도 상태. 일정 중단 후의 회복 시도로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "event_aftereffect",
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-011"
+    ],
+    "identity_key": "state|event_aftereffect,schedule_disruption|일정 중단 후 회복 시도 상태|memo-011",
+    "evidence_count": 74,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-04-10",
+    "updated_at": "2026-07-08"
+  },
+  "node-state-8b9f8f27": {
+    "id": "node-state-8b9f8f27",
+    "source": "llm",
+    "type": "state",
+    "title": "데이터 정제와 기능 개발의 균형 상태",
+    "summary": "현재 데이터가 너무 깨끗해 실제 검색 감이 떨어지므로, 새 기능 개발 전에 데이터 정제를 우선시하는 상태. 이 상태에서는 기존의 흐름 끊김과 회피 패턴을 반복하며, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-026"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|데이터 정제와 기능 개발의 균형 상태|memo-026",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-26",
+    "created_at": "2026-04-16",
+    "updated_at": "2026-06-26"
+  },
+  "node-state-2887cca8": {
+    "id": "node-state-2887cca8",
+    "source": "llm",
+    "type": "state",
+    "title": "쉬는 날에도 불안한 일상 상태",
+    "summary": "쉬려고 했지만 쉬지 못하고, 작은 할 일 찾는 불안감. 쉬면 뒤처질까봐 자꾸 작은 할 일 찾음. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-004",
+      "memo-027"
+    ],
+    "identity_key": "state|rest_guilt,safe_task_selection|쉬는 날에도 불안한 일상 상태|memo-001,memo-004,memo-027",
+    "evidence_count": 14,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-27",
+    "created_at": "2026-04-17",
+    "updated_at": "2026-05-27"
+  },
+  "node-state-e715a7c1": {
+    "id": "node-state-e715a7c1",
+    "source": "llm",
+    "type": "state",
+    "title": "의사결정 로그 생성 상태",
+    "summary": "감정이나 상황이 해결되지 않았을 때, 이를 후속 의사결정 로그로 전환하는 반복적 상태. 이로 인해 자잘한 대응이 발생하며, 감정이 의사결정에 영향을 미치는 패턴이 드러남.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-028"
+    ],
+    "identity_key": "state|decision_trace,pattern_recognition|의사결정 로그 생성 상태|memo-028",
+    "evidence_count": 37,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-04-17",
+    "updated_at": "2026-07-08"
+  },
+  "node-question-172524f2": {
+    "id": "node-question-172524f2",
+    "source": "llm",
+    "type": "question",
+    "title": "회고와 회피의 관계 질문",
+    "summary": "메신저 상호작용으로 인한 흐름 끊김과 일상적 회피 패턴이 결합되어, 회고를 통해 지침을 정리하려는 의도와 운동을 하기 싫어하는 감정을 일로 핑계하는 행동이 동시에 나타나는 상태. 이는 자잘한 대응만 발생하며, 감정과 의사결정의 관계를 탐구하는 질문으로, 평가받을까봐 피하거나 망설이는 심리적 동기를 분석한다.",
+    "relation_tags": [
+      "decision_trace",
+      "evaluation_fear"
+    ],
+    "representative_evidence_ids": [
+      "memo-030"
+    ],
+    "identity_key": "question|decision_trace,evaluation_fear|회고와 회피의 관계 질문|memo-030",
+    "evidence_count": 7,
+    "confidence": 0.85,
+    "last_seen_at": "2026-07-05",
+    "created_at": "2026-04-18",
+    "updated_at": "2026-07-05"
+  },
+  "node-state-d432a272": {
+    "id": "node-state-d432a272",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 결정 흐름 손실 상태",
+    "summary": "피로가 판단과 실행 전반에 번짐으로 인해, 일관된 작업 흐름이 방해받는 상태. 이로 인해 자잘한 대응만 발생함. 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 패턴으로, 반복되는 피로 상태가 관찰됨.",
+    "relation_tags": [
+      "decision_fog",
+      "fatigue_spillover"
+    ],
+    "representative_evidence_ids": [
+      "memo-033"
+    ],
+    "identity_key": "state|decision_fog,fatigue_spillover|피로로 인한 결정 흐름 손실 상태|memo-033",
+    "evidence_count": 39,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-04-19",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-0357f9cb": {
+    "id": "node-state-0357f9cb",
+    "source": "llm",
+    "type": "state",
+    "title": "불안한 일상에서의 안전한 일 선택 상태",
+    "summary": "어려운 일 앞두면 이상하게 정리, 분류, 청소 같은 걸 먼저 한다. 이는 성실한 척 회피하는 패턴으로, 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함. 이 상태는 쉬는 날에도 불안한 일상 상태와 유사하지만, 더 강한 회피 성향을 보이며, 일정 종료 후 회고 상태와도 연결됨.",
+    "relation_tags": [
+      "pattern_recognition",
+      "safe_task_selection"
+    ],
+    "representative_evidence_ids": [
+      "memo-004",
+      "memo-006",
+      "memo-022",
+      "memo-027",
+      "memo-035"
+    ],
+    "identity_key": "state|pattern_recognition,safe_task_selection|불안한 일상에서의 안전한 일 선택 상태|memo-004,memo-006,memo-022,memo-027,memo-035",
+    "evidence_count": 43,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-04-20",
+    "updated_at": "2026-07-02"
+  },
+  "node-question-00f0421d": {
+    "id": "node-question-00f0421d",
+    "source": "llm",
+    "type": "question",
+    "title": "자기 자신을 속이는 질문",
+    "summary": "문장 기록. 사람은 진실을 숨길 때보다 그럴듯한 이유를 붙일 때 자기 자신을 더 잘 속인다. 이는 자기 회피와 정당화의 패턴을 반영하며, 왜 이러한 자기 속임이 발생하는지에 대한 질문을 제기함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "self_deception"
+    ],
+    "representative_evidence_ids": [
+      "memo-036"
+    ],
+    "identity_key": "question|avoidance_rationalization,self_deception|자기 자신을 속이는 질문|memo-036",
+    "evidence_count": 3,
+    "confidence": 0.65,
+    "last_seen_at": "2026-05-08",
+    "created_at": "2026-04-20",
+    "updated_at": "2026-05-08"
+  },
+  "node-state-764d48d6": {
+    "id": "node-state-764d48d6",
+    "source": "llm",
+    "type": "state",
+    "title": "생활 일 처리 지연 상태",
+    "summary": "작은 생활 일도 계속 밀리면 자존감에 은근히 영향 줌. 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "execution_delay",
+      "life_admin_overload"
+    ],
+    "representative_evidence_ids": [
+      "memo-042"
+    ],
+    "identity_key": "state|execution_delay,life_admin_overload|생활 일 처리 지연 상태|memo-042",
+    "evidence_count": 46,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-04-22",
+    "updated_at": "2026-07-07"
+  },
+  "node-state-aa7e2b0f": {
+    "id": "node-state-aa7e2b0f",
+    "source": "llm",
+    "type": "state",
+    "title": "감정과 결정 실수의 반복 패턴",
+    "summary": "메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피 패턴이 결합된 상태에서, 비슷한 감정보다는 비슷한 결정 실수를 묶어 보여주는 반복적 행동. 이는 일상적 회피와 메신저 상호작용의 영향으로 자잘한 대응만 발생하며, 자기이해를 위한 제품 통찰을 제공함.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-046"
+    ],
+    "identity_key": "state|pattern_recognition,self_understanding_product|감정과 결정 실수의 반복 패턴|memo-046",
+    "evidence_count": 17,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-03",
+    "created_at": "2026-04-24",
+    "updated_at": "2026-07-03"
+  },
+  "node-state-2558f036": {
+    "id": "node-state-2558f036",
+    "source": "llm",
+    "type": "state",
+    "title": "작업 시작을 미루는 일상 상태",
+    "summary": "메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함. 이 상태는 쉬는 날에도 불안한 일상 상태와 유사하지만, 더 강한 회피 성향을 보이며, 일정 종료 후 회고 상태와도 연결됨.",
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "representative_evidence_ids": [
+      "memo-049"
+    ],
+    "identity_key": "state|start_avoidance|작업 시작을 미루는 일상 상태|memo-049",
+    "evidence_count": 24,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-18",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-06-18"
+  },
+  "node-state-80d4dc78": {
+    "id": "node-state-80d4dc78",
+    "source": "llm",
+    "type": "state",
+    "title": "미뤄진 일의 자존감 영향 상태",
+    "summary": "미뤄진 일은 사라지지 않고 자존감 근처에 쌓임. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생하며, 감정이 의사결정에 영향을 미치는 패턴이 드러남.",
+    "relation_tags": [
+      "pattern_recognition",
+      "unfinished_loop"
+    ],
+    "representative_evidence_ids": [
+      "memo-009",
+      "memo-028",
+      "memo-040",
+      "memo-051"
+    ],
+    "identity_key": "state|pattern_recognition,unfinished_loop|미뤄진 일의 자존감 영향 상태|memo-009,memo-028,memo-040,memo-051",
+    "evidence_count": 16,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-30",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-06-30"
+  },
+  "node-state-c89bc2a1": {
+    "id": "node-state-c89bc2a1",
+    "source": "llm",
+    "type": "state",
+    "title": "비 오는 날엔 시작 버튼 누르기 어려운 상태",
+    "summary": "비 오는 날엔 유독 작업 시작이 어려운 경향이 있음. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함. 비 오는 날엔 기운이 떨어지거나 흐려지기 쉬워 작업 시작에 어려움이 있음.",
+    "relation_tags": [
+      "low_energy_drift",
+      "start_avoidance"
+    ],
+    "representative_evidence_ids": [
+      "memo-065"
+    ],
+    "identity_key": "state|low_energy_drift,start_avoidance|비 오는 날엔 시작 버튼 누르기 어려운 상태|memo-065",
+    "evidence_count": 10,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-29",
+    "created_at": "2026-04-29",
+    "updated_at": "2026-05-29"
+  },
+  "node-state-ec499867": {
+    "id": "node-state-ec499867",
+    "source": "llm",
+    "type": "state",
+    "title": "불확실한 결정에서의 안전한 일 선택 상태",
+    "summary": "결정을 내려야 할 상황에서, 캘린더 색만 만지며 무의식적으로 안전한 일 선택을 하는 상태. 이는 불확실성에 대한 회피로, 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 패턴으로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "control_seeking",
+      "safe_task_selection"
+    ],
+    "representative_evidence_ids": [
+      "memo-022",
+      "memo-033",
+      "memo-065",
+      "memo-070"
+    ],
+    "identity_key": "state|control_seeking,safe_task_selection|불확실한 결정에서의 안전한 일 선택 상태|memo-022,memo-033,memo-065,memo-070",
+    "evidence_count": 13,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-26",
+    "created_at": "2026-04-30",
+    "updated_at": "2026-06-26"
+  },
+  "node-state-2c49df55": {
+    "id": "node-state-2c49df55",
+    "source": "llm",
+    "type": "state",
+    "title": "생활비 계산으로 인한 결정 흐름 손실 상태",
+    "summary": "생활비 계산 과정에서 갑작스럽게 일상의 작은 일들이 부담스러워지면서 판단이 흐려지는 상태. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 패턴으로, 반복되는 피로 상태가 관찰됨.",
+    "relation_tags": [
+      "decision_fog",
+      "life_admin_overload"
+    ],
+    "representative_evidence_ids": [
+      "memo-073"
+    ],
+    "identity_key": "state|decision_fog,life_admin_overload|생활비 계산으로 인한 결정 흐름 손실 상태|memo-073",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-05-01",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-b08871aa": {
+    "id": "node-state-b08871aa",
+    "source": "llm",
+    "type": "state",
+    "title": "중요한 일에 반응하는 일상 상태",
+    "summary": "캘린더를 살펴보니 중요한 일보다 끼어든 일에 더 반응하는 경향이 있음. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 패턴으로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "external_priority_capture",
+      "reactive_work"
+    ],
+    "representative_evidence_ids": [
+      "memo-080"
+    ],
+    "identity_key": "state|external_priority_capture,reactive_work|중요한 일에 반응하는 일상 상태|memo-080",
+    "evidence_count": 4,
+    "confidence": 0.7,
+    "last_seen_at": "2026-05-11",
+    "created_at": "2026-05-02",
+    "updated_at": "2026-05-11"
+  },
+  "node-state-cbe514b2": {
+    "id": "node-state-cbe514b2",
+    "source": "llm",
+    "type": "state",
+    "title": "감각 피하기 상태",
+    "summary": "불편한 감각을 피하기 위해 일이나 메신저 상호작용으로 포장하는 반복적 행동. 이로 인해 자잘한 대응만 발생하며, 감정과 의사결정의 관계가 드러남.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "decision_trace"
+    ],
+    "representative_evidence_ids": [
+      "memo-001",
+      "memo-088"
+    ],
+    "identity_key": "state|avoidance_rationalization,decision_trace|감각 피하기 상태|memo-001,memo-088",
+    "evidence_count": 31,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-05",
+    "created_at": "2026-05-04",
+    "updated_at": "2026-07-05"
+  },
+  "node-question-15ee5890": {
+    "id": "node-question-15ee5890",
+    "source": "llm",
+    "type": "question",
+    "title": "도망은 성실한 얼굴로 온다",
+    "summary": "문장 기록. 도망은 종종 성실한 얼굴을 하고 온다. 이는 자기 회피와 정당화의 패턴을 반영하며, 왜 이러한 자기 속임이 발생하는지에 대한 질문을 제기함.",
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-103"
+    ],
+    "identity_key": "question|avoidance_rationalization,pattern_recognition|도망은 성실한 얼굴로 온다|memo-103",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-08",
+    "created_at": "2026-05-08",
+    "updated_at": "2026-05-08"
+  },
+  "node-state-f44c9db6": {
+    "id": "node-state-f44c9db6",
+    "source": "llm",
+    "type": "state",
+    "title": "결정 전 피로로 인한 안전한 일 선택 상태",
+    "summary": "계좌 잔액 확인 후 피로가 쌓여, 결정을 내리기 어려워지면서 안전한 일 선택이 우선되는 상태. 이는 피로로 인한 판단 흐름 손실과 불확실한 결정에서의 안전한 일 선택 상태의 중간 형태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "decision_fog",
+      "external_priority_capture",
+      "safe_task_selection"
+    ],
+    "representative_evidence_ids": [
+      "memo-106"
+    ],
+    "identity_key": "state|decision_fog,external_priority_capture,safe_task_selection|결정 전 피로로 인한 안전한 일 선택 상태|memo-106",
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-26",
+    "created_at": "2026-05-09",
+    "updated_at": "2026-06-26"
+  },
+  "node-state-061dcefb": {
+    "id": "node-state-061dcefb",
+    "source": "llm",
+    "type": "state",
+    "title": "피로로 인한 일상적 회피 상태",
+    "summary": "피로가 일상적 회피 행동을 유발하며, 작은 할 일 찾는 불안감과 함께 자잘한 대응만 발생함. 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 반복되는 피로 상태가 관찰됨.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "recovery_failure"
+    ],
+    "representative_evidence_ids": [
+      "memo-109"
+    ],
+    "identity_key": "state|fatigue_spillover,recovery_failure|피로로 인한 일상적 회피 상태|memo-109",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-05-29",
+    "created_at": "2026-05-10",
+    "updated_at": "2026-05-29"
+  },
+  "node-state-22b6e610": {
+    "id": "node-state-22b6e610",
+    "source": "llm",
+    "type": "state",
+    "title": "기운이 떨어져서 결정이 흐려지는 상태",
+    "summary": "커피를 마시더라도 불안이 증가하는 현상은 기운이 떨어져서 결정이 흐려지는 상태를 반영함. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 패턴으로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "low_energy_drift"
+    ],
+    "representative_evidence_ids": [
+      "memo-113"
+    ],
+    "identity_key": "state|low_energy_drift|기운이 떨어져서 결정이 흐려지는 상태|memo-113",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-11",
+    "created_at": "2026-05-11",
+    "updated_at": "2026-05-11"
+  },
+  "node-state-d428c28f": {
+    "id": "node-state-d428c28f",
+    "source": "llm",
+    "type": "state",
+    "title": "기운이 떨어져서 집중력이 빠지는 상태",
+    "summary": "해 지기 전 그 애매한 시간만 되면 집중력이 먼저 빠진다. 이는 기운이 떨어지거나 흐려지면서 집중력이 떨어지는 상태로, 일상적인 피로와 불안의 영향을 받는 반복적인 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-117"
+    ],
+    "identity_key": "state|low_energy_drift,rhythm_disruption|기운이 떨어져서 집중력이 빠지는 상태|memo-117",
+    "evidence_count": 10,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-28",
+    "created_at": "2026-05-12",
+    "updated_at": "2026-06-28"
+  },
+  "node-state-d9f7a28b": {
+    "id": "node-state-d9f7a28b",
+    "source": "llm",
+    "type": "state",
+    "title": "평가받을까봐 피하는 작업 시작 상태",
+    "summary": "작업 시작을 미루는 행동이 평가받을까봐 피하거나 망설이는 심리적 동기로 연결됨. 이 상태는 쉬는 날에도 불안한 일상 상태와 유사하지만, 더 강한 회피 성향을 보이며, 일정 종료 후 회고 상태와도 연결됨.",
+    "relation_tags": [
+      "evaluation_fear",
+      "overplanning",
+      "start_avoidance"
+    ],
+    "representative_evidence_ids": [
+      "memo-122"
+    ],
+    "identity_key": "state|evaluation_fear,overplanning,start_avoidance|평가받을까봐 피하는 작업 시작 상태|memo-122",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-05-13",
+    "created_at": "2026-05-13",
+    "updated_at": "2026-05-13"
+  },
+  "node-question-1eab7a43": {
+    "id": "node-question-1eab7a43",
+    "source": "llm",
+    "type": "question",
+    "title": "일상적 회고와 회피 패턴의 관계",
+    "summary": "메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피가 결합된 상태에서, 일상적 회고와 회피 행동이 반복적으로 나타나며, 이는 자기이해를 위한 제품 통찰로 이어짐. 반복 패턴을 통해 회고와 회피의 관계를 분석하고, 이를 기반으로 제품 개선 방향을 제시해야 함.",
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-126"
+    ],
+    "identity_key": "question|pattern_recognition,self_understanding_product|일상적 회고와 회피 패턴의 관계|memo-126",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-14",
+    "created_at": "2026-05-14",
+    "updated_at": "2026-05-14"
+  },
+  "node-state-bf30d42c": {
+    "id": "node-state-bf30d42c",
+    "source": "llm",
+    "type": "state",
+    "title": "외출 일정으로 인한 피로 상태",
+    "summary": "외출 일정 하나 들어오면 전후 준비 때문에 생각보다 에너지 많이 빠진다. 이는 피로가 판단과 실행 전반에 번짐으로, 일관된 작업 흐름이 방해받는 상태로, 자잘한 대응만 발생함. 이는 메모-033과 유사한 피로 관련 패턴으로, 기존 노드에 연결하고 새로운 상태 노드를 생성함.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-135"
+    ],
+    "identity_key": "state|fatigue_spillover,schedule_disruption|외출 일정으로 인한 피로 상태|memo-135",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-05-25",
+    "created_at": "2026-05-16",
+    "updated_at": "2026-05-25"
+  },
+  "node-state-3a703ce2": {
+    "id": "node-state-3a703ce2",
+    "source": "llm",
+    "type": "state",
+    "title": "메신저 상호작용으로 인한 흐름 끊김과 회피 행동의 결합 상태",
+    "summary": "메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피 행동이 결합되어, 자잘한 대응과 감정적 회피가 동시에 나타나는 상태. 이는 작업 흐름의 끊김과 평가받을까봐 피하는 심리적 동기의 복합 상태로, 자잘한 대응과 감정적 회피를 동시에 반영.",
+    "relation_tags": [
+      "evaluation_fear",
+      "social_response_delay"
+    ],
+    "representative_evidence_ids": [
+      "memo-066",
+      "memo-091",
+      "memo-122",
+      "memo-143"
+    ],
+    "identity_key": "state|evaluation_fear,social_response_delay|메신저 상호작용으로 인한 흐름 끊김과 회피 행동의 결합 상태|memo-066,memo-091,memo-122,memo-143",
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-05-22",
+    "created_at": "2026-05-18",
+    "updated_at": "2026-05-22"
+  },
+  "node-state-d762c5f6": {
+    "id": "node-state-d762c5f6",
+    "source": "llm",
+    "type": "state",
+    "title": "가격표 반응으로 인한 결정 흐름 손실 상태",
+    "summary": "가격표를 보는 과정에서 방어적으로 반응하는 행동이 일어나며, 이로 인해 판단과 실행 전반에 번짐으로 인해 일관된 작업 흐름이 방해받는 상태. 이는 피로로 인한 결정 흐름 손실과 불확실한 결정에서의 안전한 일 선택 상태의 중간 형태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "decision_fog",
+      "external_priority_capture"
+    ],
+    "representative_evidence_ids": [
+      "memo-158"
+    ],
+    "identity_key": "state|decision_fog,external_priority_capture|가격표 반응으로 인한 결정 흐름 손실 상태|memo-158",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-22",
+    "created_at": "2026-05-22",
+    "updated_at": "2026-05-22"
+  },
+  "node-state-e4fd68db": {
+    "id": "node-state-e4fd68db",
+    "source": "llm",
+    "type": "state",
+    "title": "메모 연결 힌트 제공 상태",
+    "summary": "메모 검색 결과에 연결 힌트를 제공하여 사용자가 왜 이 메모가 떠 있는지 이해하도록 돕는 상태. 이 상태에서는 메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피 패턴이 결합되어, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-002",
+      "memo-010",
+      "memo-032",
+      "memo-059",
+      "memo-111",
+      "memo-163"
+    ],
+    "identity_key": "state|event_reflection_link,self_understanding_product|메모 연결 힌트 제공 상태|memo-002,memo-010,memo-032,memo-059,memo-111,memo-163",
+    "evidence_count": 39,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-05-23",
+    "updated_at": "2026-07-08"
+  },
+  "node-state-38c2cf18": {
+    "id": "node-state-38c2cf18",
+    "source": "llm",
+    "type": "state",
+    "title": "점심 후 피로로 인한 집중력 저하 상태",
+    "summary": "점심 후 급하게 먹고 나서 오후 집중력이 떨어지는 현상은 피로가 판단과 실행 전반에 번짐으로, 일관된 작업 흐름이 방해받는 상태. 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 패턴으로, 반복되는 피로 상태가 관찰됨.",
+    "relation_tags": [
+      "fatigue_spillover",
+      "low_energy_drift"
+    ],
+    "representative_evidence_ids": [
+      "memo-165"
+    ],
+    "identity_key": "state|fatigue_spillover,low_energy_drift|점심 후 피로로 인한 집중력 저하 상태|memo-165",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-05-29",
+    "created_at": "2026-05-24",
+    "updated_at": "2026-05-29"
+  },
+  "node-state-516677c3": {
+    "id": "node-state-516677c3",
+    "source": "llm",
+    "type": "state",
+    "title": "날씨에 따른 리듬 변화 상태",
+    "summary": "날씨 탓만 하긴 싫은데 이런 날은 확실히 리듬이 다르다. 이는 날씨 변화에 따른 생활 리듬의 방해로, 기운이 떨어지거나 흐려지면서 집중력이 떨어지는 상태로, 일상적인 피로와 불안의 영향을 받는 반복적인 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-169"
+    ],
+    "identity_key": "state|low_energy_drift,rhythm_disruption|날씨에 따른 리듬 변화 상태|memo-169",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-25",
+    "created_at": "2026-05-25",
+    "updated_at": "2026-05-25"
+  },
+  "node-state-15d60c26": {
+    "id": "node-state-15d60c26",
+    "source": "llm",
+    "type": "state",
+    "title": "돈 걱정으로 인한 결정 흐름 손실 상태",
+    "summary": "돈 걱정이 생기면 중요한 일보다 당장 불안 줄이는 쪽으로 손이 간다. 이는 피로로 인한 결정 흐름 손실과 불확실한 결정에서의 안전한 일 선택 상태 사이의 중간 형태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "decision_fog",
+      "external_priority_capture"
+    ],
+    "representative_evidence_ids": [
+      "memo-177"
+    ],
+    "identity_key": "state|decision_fog,external_priority_capture|돈 걱정으로 인한 결정 흐름 손실 상태|memo-177",
+    "evidence_count": 10,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-05-27",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-85a173ee": {
+    "id": "node-state-85a173ee",
+    "source": "llm",
+    "type": "state",
+    "title": "작은 일 처리 지연과 기운 저하 상태",
+    "summary": "걷기라도 하자 싶었는데 해 지는 거 보고 그냥 포기. 이는 작은 일 처리 지연과 기운 저하 상태로, 기존 노드 node-state-764d48d6(생활 일 처리 지연 상태)와 node-state-c89bc2a1(비 오는 날엔 시작 버튼 누르기 어려운 상태)와 유사한 패턴으로, 작은 일도 계속 밀리고 기운이 떨어져서 결정이 흐려지는 상태로 새로운 노드 생성 필요.",
+    "relation_tags": [
+      "execution_delay",
+      "low_energy_drift"
+    ],
+    "representative_evidence_ids": [
+      "memo-181"
+    ],
+    "identity_key": "state|execution_delay,low_energy_drift|작은 일 처리 지연과 기운 저하 상태|memo-181",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-28",
+    "created_at": "2026-05-28",
+    "updated_at": "2026-05-28"
+  },
+  "node-state-8e3aac6d": {
+    "id": "node-state-8e3aac6d",
+    "source": "llm",
+    "type": "state",
+    "title": "창밖이 흐려지면 머릿속도 천천히 움직이는 상태",
+    "summary": "창밖이 흐리면 머릿속도 천천히 움직이는 것은 기운이 떨어지거나 흐려지면서 집중력이 떨어지는 상태로, 일상적인 피로와 불안의 영향을 받는 반복적인 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-189"
+    ],
+    "identity_key": "state|low_energy_drift,rhythm_disruption|창밖이 흐려지면 머릿속도 천천히 움직이는 상태|memo-189",
+    "evidence_count": 3,
+    "confidence": 0.65,
+    "last_seen_at": "2026-07-01",
+    "created_at": "2026-05-30",
+    "updated_at": "2026-07-01"
+  },
+  "node-state-a4622dcc": {
+    "id": "node-state-a4622dcc",
+    "source": "llm",
+    "type": "state",
+    "title": "메모 유형 혼합 상태",
+    "summary": "생활 메모와 제품 메모가 섞여 있어도 일관된 흐름을 제공하는 상태. 이 상태에서는 메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피 패턴이 결합되어, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-208"
+    ],
+    "identity_key": "state|self_understanding_product|메모 유형 혼합 상태|memo-208",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-06",
+    "created_at": "2026-05-06",
+    "updated_at": "2026-05-06"
+  },
+  "node-state-8e51eb33": {
+    "id": "node-state-8e51eb33",
+    "source": "llm",
+    "type": "state",
+    "title": "감각 잔상으로 인한 일상 중단 후 회복 시도 상태",
+    "summary": "문장이나 사건의 잔상이 일상 일정을 중단시키고, 이로 인한 회복 시도 상태. 감각 잔상이 일상 회복에 영향을 미치는 반복적 패턴.",
+    "relation_tags": [
+      "decision_trace",
+      "event_aftereffect"
+    ],
+    "representative_evidence_ids": [
+      "memo-055",
+      "memo-206",
+      "memo-211"
+    ],
+    "identity_key": "state|decision_trace,event_aftereffect|감각 잔상으로 인한 일상 중단 후 회복 시도 상태|memo-055,memo-206,memo-211",
+    "evidence_count": 16,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-05",
+    "created_at": "2026-05-08",
+    "updated_at": "2026-07-05"
+  },
+  "node-state-a2b17c34": {
+    "id": "node-state-a2b17c34",
+    "source": "llm",
+    "type": "state",
+    "title": "택배 반품 지연 상태",
+    "summary": "택배 반품을 미루다 보면 자존감에 영향을 줌. 작은 일도 계속 밀리면 자존감에 은근히 영향 줌. 반복적으로 반품을 미루는 행동은 생활 일 처리 지연 상태와 유사한 패턴으로, 기존 노드와 새로운 상태 노드 생성 필요.",
+    "relation_tags": [
+      "execution_delay",
+      "life_admin_overload"
+    ],
+    "representative_evidence_ids": [
+      "memo-042",
+      "memo-047",
+      "memo-104",
+      "memo-115",
+      "memo-204",
+      "memo-218"
+    ],
+    "identity_key": "state|execution_delay,life_admin_overload|택배 반품 지연 상태|memo-042,memo-047,memo-104,memo-115,memo-204,memo-218",
+    "evidence_count": 10,
+    "confidence": 0.95,
+    "last_seen_at": "2026-06-01",
+    "created_at": "2026-05-11",
+    "updated_at": "2026-06-01"
+  },
+  "node-state-a9d81710": {
+    "id": "node-state-a9d81710",
+    "source": "llm",
+    "type": "state",
+    "title": "생활 일 처리 지연과 예약 변경 지연 상태",
+    "summary": "치과 예약 변경 전화 미루는 행동은 생활 일 처리 지연 상태와 유사한 패턴으로, 기존 노드 node-state-764d48d6(생활 일 처리 지연 상태)와 node-state-a2b17c34(택배 반품 지연 상태)와 유사한 메커니즘을 보이며 새로운 상태 노드 생성 필요. 예약 변경은 일상적인 생활 일로, 지속적인 미루는 행동은 자존감에 은근히 영향 줌.",
+    "relation_tags": [
+      "execution_delay",
+      "life_admin_overload"
+    ],
+    "representative_evidence_ids": [
+      "memo-224"
+    ],
+    "identity_key": "state|execution_delay,life_admin_overload|생활 일 처리 지연과 예약 변경 지연 상태|memo-224",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-13",
+    "created_at": "2026-05-13",
+    "updated_at": "2026-05-13"
+  },
+  "node-state-0374e61a": {
+    "id": "node-state-0374e61a",
+    "source": "llm",
+    "type": "state",
+    "title": "운동을 위한 일 처리 지연 상태",
+    "summary": "운동을 하기 위해 필요한 작은 일 처리가 계속 밀리면 자존감에 은근히 영향 줌. 이는 생활 일 처리 지연 상태와 유사한 패턴으로, 운동 관련 일도 계속 밀리는 경향이 있음을 반영함.",
+    "relation_tags": [
+      "execution_delay",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-226"
+    ],
+    "identity_key": "state|execution_delay,rhythm_disruption|운동을 위한 일 처리 지연 상태|memo-226",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-05-13",
+    "created_at": "2026-05-13",
+    "updated_at": "2026-05-13"
+  },
+  "node-state-82f25e7c": {
+    "id": "node-state-82f25e7c",
+    "source": "llm",
+    "type": "state",
+    "title": "루틴 중단 후 회복 시도 상태",
+    "summary": "아침에 루틴을 중단하고 회복 시도하는 상태로, 피로로 인한 일상적 회피 행동과 기운이 떨어지면서 집중력이 떨어지는 상태가 겹치는 복합적 상태. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-228"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|루틴 중단 후 회복 시도 상태|memo-228",
+    "evidence_count": 38,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-05-14",
+    "updated_at": "2026-07-07"
+  },
+  "node-state-a9a45c83": {
+    "id": "node-state-a9a45c83",
+    "source": "llm",
+    "type": "state",
+    "title": "냉장고 정리 지연 상태",
+    "summary": "냉장고 정리 미루다 보면 자존감에 영향을 줌. 작은 일도 계속 밀리면 자존감에 은근히 영향 줌. 반복적으로 냉장고 정리 미루는 행동은 생활 일 처리 지연 상태와 유사한 패턴으로, 기존 노드와 새로운 상태 노드 생성 필요.",
+    "relation_tags": [
+      "control_seeking",
+      "life_admin_overload"
+    ],
+    "representative_evidence_ids": [
+      "memo-231"
+    ],
+    "identity_key": "state|control_seeking,life_admin_overload|냉장고 정리 지연 상태|memo-231",
+    "evidence_count": 5,
+    "confidence": 0.75,
+    "last_seen_at": "2026-06-25",
+    "created_at": "2026-05-15",
+    "updated_at": "2026-06-25"
+  },
+  "node-question-efd749a8": {
+    "id": "node-question-efd749a8",
+    "source": "llm",
+    "type": "question",
+    "title": "메모의 심리적 해석과 부담감에 대한 질문",
+    "summary": "KEO가 일상 메모를 너무 심리적으로 해석하면 사용자에게 부담을 줄 수 있다는 점을 인식하고, 이에 대한 해결책을 모색해야 함. 메모의 심리적 해석이 과도할 경우, 사용자는 자신의 감정을 이해하는 데 어려움을 겪을 수 있으며, 이는 제품의 자기이해 기능에 대한 재평가를 요구함.",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-245"
+    ],
+    "identity_key": "question|self_understanding_product|메모의 심리적 해석과 부담감에 대한 질문|memo-245",
+    "evidence_count": 12,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-05",
+    "created_at": "2026-05-18",
+    "updated_at": "2026-07-05"
+  },
+  "node-state-94621967": {
+    "id": "node-state-94621967",
+    "source": "llm",
+    "type": "state",
+    "title": "저녁 메모의 솔직함 패턴",
+    "summary": "아침보다 저녁 메모가 더 솔직하게 작성되는 경향이 있음. 이는 일상적 회피와 메신저 상호작용의 영향으로 자잘한 대응이 발생하며, 감정이 의사결정에 영향을 미치는 패턴이 드러남.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-246"
+    ],
+    "identity_key": "state|pattern_recognition|저녁 메모의 솔직함 패턴|memo-246",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-07-06",
+    "created_at": "2026-05-19",
+    "updated_at": "2026-07-06"
+  },
+  "node-state-bd28f855": {
+    "id": "node-state-bd28f855",
+    "source": "llm",
+    "type": "state",
+    "title": "지하철 환승으로 인한 일상 중단 후 회복 시도 상태",
+    "summary": "지하철 환승 구간이 긴 날은 일상 일정이 중단되고, 피로가 쌓여 회복 시도가 일어나는 상태. 이는 일정 중단 후의 회복 시도 패턴으로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "schedule_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-253"
+    ],
+    "identity_key": "state|schedule_disruption|지하철 환승으로 인한 일상 중단 후 회복 시도 상태|memo-253",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-19",
+    "created_at": "2026-05-20",
+    "updated_at": "2026-06-19"
+  },
+  "node-state-c67b59b3": {
+    "id": "node-state-c67b59b3",
+    "source": "llm",
+    "type": "state",
+    "title": "햇빛이 좋은 날의 판단 너그러움 상태",
+    "summary": "햇빛이 좋은 날엔 이유 없이 판단이 너그러워지는 현상으로, 기운이 떨어지거나 흐려지면서 집중력이 떨어지는 상태로, 일상적인 피로와 불안의 영향을 받는 반복적인 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "event_aftereffect",
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-270"
+    ],
+    "identity_key": "state|event_aftereffect,low_energy_drift,rhythm_disruption|햇빛이 좋은 날의 판단 너그러움 상태|memo-270",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-22",
+    "created_at": "2026-05-23",
+    "updated_at": "2026-06-22"
+  },
+  "node-question-a5a016df": {
+    "id": "node-question-a5a016df",
+    "source": "llm",
+    "type": "question",
+    "title": "문장의 멈춤 지점이 의사결정에 미치는 영향 질문",
+    "summary": "문장의 멈춤 지점이 의사결정의 흐름을 설명하는 데 어떤 역할을 하는지 탐구하는 질문. 이는 감정이 해결되지 않은 상태에서 의사결정 로그로 전환되는 패턴과, 메모 연결 힌트 제공 상태의 관계를 분석하며, 자잘한 대응이 발생하는 감정과 의사결정의 관계를 탐구한다.",
+    "relation_tags": [
+      "decision_trace"
+    ],
+    "representative_evidence_ids": [
+      "memo-274"
+    ],
+    "identity_key": "question|decision_trace|문장의 멈춤 지점이 의사결정에 미치는 영향 질문|memo-274",
+    "evidence_count": 8,
+    "confidence": 0.9,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-05-24",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-c8dd150f": {
+    "id": "node-state-c8dd150f",
+    "source": "llm",
+    "type": "state",
+    "title": "금요일 집중 작업 배치 상태",
+    "summary": "금요일엔 이동이 많으니 집중 작업을 정리 작업으로 배치하는 반복적 패턴. 이로 인해 자잘한 대응만 발생하며, 감각 잔상과 일정 배치의 관계가 드러남.",
+    "relation_tags": [
+      "decision_trace",
+      "event_aftereffect"
+    ],
+    "representative_evidence_ids": [
+      "memo-277"
+    ],
+    "identity_key": "state|decision_trace,event_aftereffect|금요일 집중 작업 배치 상태|memo-277",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-24",
+    "created_at": "2026-05-25",
+    "updated_at": "2026-06-24"
+  },
+  "node-state-0e5fcac1": {
+    "id": "node-state-0e5fcac1",
+    "source": "llm",
+    "type": "state",
+    "title": "작은 행동으로 감추는 자기 인식 차단 상태",
+    "summary": "작은 행동으로 감추려는 자기 인식 차단은, 실제 내 상태를 늦게 알아차리는 행동으로, 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함. 이 상태는 일상적 회피 패턴, 불안한 일상에서의 안전한 일 선택 상태, 감각 피하기 상태와 유사하지만, 더 강한 자기 인식 차단 성향을 보이며, 일정 종료 후 회고 상태와도 연결됨.",
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "representative_evidence_ids": [
+      "memo-287"
+    ],
+    "identity_key": "state|identity_gap|작은 행동으로 감추는 자기 인식 차단 상태|memo-287",
+    "evidence_count": 23,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-08",
+    "created_at": "2026-05-27",
+    "updated_at": "2026-07-08"
+  },
+  "node-state-546e02b0": {
+    "id": "node-state-546e02b0",
+    "source": "llm",
+    "type": "state",
+    "title": "장소 변화로 인한 회고 상태",
+    "summary": "같은 장소에 다시 가면 예전의 나와 지금의 내가 나란히 보이는 경험은, 일상 일정 중단 후 회복 시도와 일정 종료 후 회고 상태의 중간 단계로, 감각 잔상과 회고의 복합적 상태로 자잘한 대응이 발생함.",
+    "relation_tags": [
+      "event_aftereffect",
+      "event_reflection_link"
+    ],
+    "representative_evidence_ids": [
+      "memo-309"
+    ],
+    "identity_key": "state|event_aftereffect,event_reflection_link|장소 변화로 인한 회고 상태|memo-309",
+    "evidence_count": 29,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-05-31",
+    "updated_at": "2026-07-07"
+  },
+  "node-state-2e3ad9a9": {
+    "id": "node-state-2e3ad9a9",
+    "source": "llm",
+    "type": "state",
+    "title": "카페인 과다 섭취 후 집중력 저하 상태",
+    "summary": "카페인 두 잔째부터는 집중보다 몸의 조급함이 먼저 올라오며, 피로와 리듬 중단으로 인한 회복 실패가 반복적으로 관찰됨. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-314"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|카페인 과다 섭취 후 집중력 저하 상태|memo-314",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-07-01",
+    "created_at": "2026-06-01",
+    "updated_at": "2026-07-01"
+  },
+  "node-state-64cba25c": {
+    "id": "node-state-64cba25c",
+    "source": "llm",
+    "type": "state",
+    "title": "일상 메모의 감정과 조건 반영 패턴",
+    "summary": "일상 메모가 많아지면 감정보다 생활 조건이 먼저 보인다. 이는 메신저 상호작용과 일상적 회피, 미뤄진 일의 자존감 영향, 안전한 일 선택 상태와 연결된 반복적 패턴으로, 자잘한 대응이 발생하며 감정이 의사결정에 영향을 미치는 현상이 드러남.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-336"
+    ],
+    "identity_key": "state|pattern_recognition|일상 메모의 감정과 조건 반영 패턴|memo-336",
+    "evidence_count": 11,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-06",
+    "created_at": "2026-06-06",
+    "updated_at": "2026-07-06"
+  },
+  "node-state-c78a78a6": {
+    "id": "node-state-c78a78a6",
+    "source": "llm",
+    "type": "state",
+    "title": "물 섭취 부족으로 인한 오후 피로 상태",
+    "summary": "물병을 채워두는 작은 일이 오후 컨디션에 영향을 주는 것으로, 물 섭취 부족이 오후 피로와 리듬 중단으로 인한 회복 실패를 유발하는 반복적 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-239",
+      "memo-340"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|물 섭취 부족으로 인한 오후 피로 상태|memo-239,memo-340",
+    "evidence_count": 4,
+    "confidence": 0.7,
+    "last_seen_at": "2026-07-06",
+    "created_at": "2026-06-06",
+    "updated_at": "2026-07-06"
+  },
+  "node-state-e8ab805b": {
+    "id": "node-state-e8ab805b",
+    "source": "llm",
+    "type": "state",
+    "title": "의자에 걸친 옷으로 인한 흐름 끊김 상태",
+    "summary": "의자에 걸친 옷이 계속 보이면 끝난 일이 안 끝난 것처럼 남는다. 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "context_fragmentation"
+    ],
+    "representative_evidence_ids": [
+      "memo-342"
+    ],
+    "identity_key": "state|context_fragmentation|의자에 걸친 옷으로 인한 흐름 끊김 상태|memo-342",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-06-07",
+    "updated_at": "2026-07-07"
+  },
+  "node-state-8649ea2a": {
+    "id": "node-state-8649ea2a",
+    "source": "llm",
+    "type": "state",
+    "title": "밤에 폰 사용으로 인한 다음날 피로 상태",
+    "summary": "밤에 폰을 오래 사용하면 다음 날 아침이 흐릿한 현상은 피로로 인한 일상적 회피 행동과 리듬 중단으로 인한 회복 실패가 반복적으로 관찰됨. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-344"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|밤에 폰 사용으로 인한 다음날 피로 상태|memo-344",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-07-07",
+    "created_at": "2026-06-07",
+    "updated_at": "2026-07-07"
+  },
+  "node-state-5f305ac6": {
+    "id": "node-state-5f305ac6",
+    "source": "llm",
+    "type": "state",
+    "title": "카페에서의 반복적 메모 톤 패턴",
+    "summary": "같은 카페에서 쓴 메모들의 톤이 닮아 있다는 관찰을 기반으로, 일상적 회피와 메신저 상호작용의 영향으로 자잘한 대응이 반복되는 상태. 이는 메모의 톤이 특정 장소와 연결되어 있는 반복적 패턴을 보여준다.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-351"
+    ],
+    "identity_key": "state|pattern_recognition|카페에서의 반복적 메모 톤 패턴|memo-351",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-21",
+    "created_at": "2026-06-09",
+    "updated_at": "2026-06-21"
+  },
+  "node-state-090c90e8": {
+    "id": "node-state-090c90e8",
+    "source": "llm",
+    "type": "state",
+    "title": "외로움으로 인한 자기 인식 지연 상태",
+    "summary": "외로움이나 혼자 있을 때 실제 내 상태를 늦게 인식하는 경향이 있음. 사람들 앞에서는 빠르게 반응하지만 혼자 있을 때는 정리가 늦어지는 현상은 외로움으로 인한 자기 인식 지연 상태로, 이는 메신저 상호작용으로 인한 컨텍스트 분할과 유사한 상태로, 자잘한 대응만 발생함. 이 상태는 일상적 회피 패턴, 불안한 일상에서의 안전한 일 선택 상태, 감각 피하기 상태와 유사하지만, 외로움에 따른 자기 인식 지연 성향을 보이며, 일정 종료 후 회고 상태와도 연결됨.",
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "representative_evidence_ids": [
+      "memo-064",
+      "memo-362"
+    ],
+    "identity_key": "state|identity_gap|외로움으로 인한 자기 인식 지연 상태|memo-064,memo-362",
+    "evidence_count": 5,
+    "confidence": 0.75,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-06-11",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-2265a840": {
+    "id": "node-state-2265a840",
+    "source": "llm",
+    "type": "state",
+    "title": "자기이해 카드의 가설적 접근",
+    "summary": "자기이해 카드는 정답이 아닌 가설로 제시되어야 하며, 이는 메신저 상호작용으로 인한 컨텍스트 분할과 일상적 회피 패턴이 결합된 상태에서 발생하는 반복적 행동을 반영한다. 메모-365의 내용은 이러한 패턴을 강조하며, 자기이해를 위한 제품 통찰을 제공한다.",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-365"
+    ],
+    "identity_key": "state|self_understanding_product|자기이해 카드의 가설적 접근|memo-365",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-11",
+    "created_at": "2026-06-11",
+    "updated_at": "2026-06-11"
+  },
+  "node-state-f34fdb9b": {
+    "id": "node-state-f34fdb9b",
+    "source": "llm",
+    "type": "state",
+    "title": "의사결정 로그 생성 상태에서의 순서 중요성",
+    "summary": "할 일 목록보다 순서가 더 중요할 때는 감정이나 상황이 해결되지 않은 상태로, 이로 인해 자잘한 대응이 발생하며, 감정이 의사결정에 영향을 미치는 패턴이 드러남.",
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-367"
+    ],
+    "identity_key": "state|decision_trace,pattern_recognition|의사결정 로그 생성 상태에서의 순서 중요성|memo-367",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-12",
+    "created_at": "2026-06-12",
+    "updated_at": "2026-06-12"
+  },
+  "node-state-c5fe5234": {
+    "id": "node-state-c5fe5234",
+    "source": "llm",
+    "type": "state",
+    "title": "생활 유지 작업으로 인한 회복 실패 상태",
+    "summary": "생활 유지 작업은 티가 안 나도 다음 행동의 마찰을 줄인다. 이는 일상적인 회복 시도가 실패하고, 생활 유지 작업이 다음 행동에 마찰을 줄어 회복 실패 상태로 이어지는 반복적 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-370"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|생활 유지 작업으로 인한 회복 실패 상태|memo-370",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-12",
+    "created_at": "2026-06-12",
+    "updated_at": "2026-06-12"
+  },
+  "node-state-63c8c641": {
+    "id": "node-state-63c8c641",
+    "source": "llm",
+    "type": "state",
+    "title": "장보기 지연으로 인한 일상 상태",
+    "summary": "장보기 메모가 생활 기록으로 남으면 그 주의 리듬도 같이 보일 것 같다. 반복적인 장보기 지연은 자존감에 은근히 영향 줌. 이는 생활 일 처리 지연 상태와 유사한 패턴으로, 기존 노드와 새로운 상태 노드 생성 필요.",
+    "relation_tags": [
+      "life_admin_overload"
+    ],
+    "representative_evidence_ids": [
+      "memo-371"
+    ],
+    "identity_key": "state|life_admin_overload|장보기 지연으로 인한 일상 상태|memo-371",
+    "evidence_count": 10,
+    "confidence": 0.95,
+    "last_seen_at": "2026-07-01",
+    "created_at": "2026-06-13",
+    "updated_at": "2026-07-01"
+  },
+  "node-state-df4c4bca": {
+    "id": "node-state-df4c4bca",
+    "source": "llm",
+    "type": "state",
+    "title": "감정 기록과 달리 몸 기록이 반복적 패턴을 드러내는 상태",
+    "summary": "몸 기록은 감정 기록보다 덜 극적인데 원인을 더 잘 보여줄 때가 있다. 이는 감정 기록과 달리 반복적 패턴을 드러내는 상태로, 피로와 리듬 중단으로 인한 회복 실패가 반복적으로 관찰됨.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-374"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|감정 기록과 달리 몸 기록이 반복적 패턴을 드러내는 상태|memo-374",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-13",
+    "created_at": "2026-06-13",
+    "updated_at": "2026-06-13"
+  },
+  "node-state-c5bcc676": {
+    "id": "node-state-c5bcc676",
+    "source": "llm",
+    "type": "state",
+    "title": "회의 후 자기 인식 지연 상태",
+    "summary": "회의에서 말한 내용과 실제 감정이 어긋나는 자기 인식 지연 상태. 회의 후에야 비로소 실제 감정을 인식하게 되는 경향이 있음. 이는 외로움으로 인한 자기 인식 지연 상태와 유사하지만, 회의 상황에서의 자기 인식 지연을 특징으로 하며, 일정 종료 후 회고 상태와도 연결됨.",
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "representative_evidence_ids": [
+      "memo-242",
+      "memo-392"
+    ],
+    "identity_key": "state|identity_gap|회의 후 자기 인식 지연 상태|memo-242,memo-392",
+    "evidence_count": 3,
+    "confidence": 0.65,
+    "last_seen_at": "2026-07-02",
+    "created_at": "2026-06-17",
+    "updated_at": "2026-07-02"
+  },
+  "node-state-7d6068de": {
+    "id": "node-state-7d6068de",
+    "source": "llm",
+    "type": "state",
+    "title": "흐림으로 인한 일상 중단 후 회복 시도 상태",
+    "summary": "날이 흐리면 같은 일도 조금 더 무겁게 시작되는 느낌으로, 일상 일정 중단 후 회복 시도 상태. 흐림은 일상 일정을 중단시키고, 이로 인한 회복 시도로, 감각 잔상과 일정 배치의 관계가 드러남.",
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "representative_evidence_ids": [
+      "memo-405"
+    ],
+    "identity_key": "state|event_aftereffect|흐림으로 인한 일상 중단 후 회복 시도 상태|memo-405",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-19",
+    "created_at": "2026-06-19",
+    "updated_at": "2026-06-19"
+  },
+  "node-pattern-8605f51f": {
+    "id": "node-pattern-8605f51f",
+    "source": "llm",
+    "type": "pattern",
+    "title": "장소 기반 반복적 사고 패턴",
+    "summary": "같은 장소에서 반복적으로 비슷한 생각을 적는 행동이 반복되는 패턴. 이는 일상적 회피와 메신저 상호작용으로 인한 컨텍스트 분할의 영향을 받으며, 자잘한 대응만 발생함. 메모-411과 메모-351은 같은 카페에서의 톤 유사성과 장소 변화에 따른 회고 상태와 연결되어 새로운 패턴 인식을 제시함.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-411"
+    ],
+    "identity_key": "pattern|pattern_recognition|장소 기반 반복적 사고 패턴|memo-411",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-21",
+    "created_at": "2026-06-21",
+    "updated_at": "2026-06-21"
+  },
+  "node-state-482cbd7d": {
+    "id": "node-state-482cbd7d",
+    "source": "llm",
+    "type": "state",
+    "title": "스트레칭으로 인한 긴장 완화 상태",
+    "summary": "스트레칭으로 어깨 긴장이 빠르게 완화되는 현상은 피로로 인한 일상적 회피 행동과 리듬 중단으로 인한 회복 실패가 반복적으로 관찰됨. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-269",
+      "memo-419"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|스트레칭으로 인한 긴장 완화 상태|memo-269,memo-419",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-22",
+    "created_at": "2026-06-22",
+    "updated_at": "2026-06-22"
+  },
+  "node-question-927725d5": {
+    "id": "node-question-927725d5",
+    "source": "llm",
+    "type": "question",
+    "title": "메모의 반박 가능성과 자기이해 제품 통찰",
+    "summary": "메모는 카드처럼 보이되 사용자가 반박할 수 있어야 하며, 이는 일상적 회피 패턴과 자기이해를 위한 제품 통찰을 연결하는 방향으로 해석될 수 있음. 반박 가능성은 사용자가 자신의 감정과 결정을 더 깊이 이해하도록 유도함.",
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "representative_evidence_ids": [
+      "memo-275",
+      "memo-425"
+    ],
+    "identity_key": "question|self_understanding_product|메모의 반박 가능성과 자기이해 제품 통찰|memo-275,memo-425",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-23",
+    "created_at": "2026-06-23",
+    "updated_at": "2026-06-23"
+  },
+  "node-state-ee7dffdf": {
+    "id": "node-state-ee7dffdf",
+    "source": "llm",
+    "type": "state",
+    "title": "짧은 요청으로 인한 깊은 작업 회피 상태",
+    "summary": "짧은 요청들이 쌓이면 한 번도 깊게 들어가지 않은 날이 되는 경향이 있음. 메신저 상호작용과 일정 중단으로 인한 컨텍스트 분할로, 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "representative_evidence_ids": [
+      "memo-428"
+    ],
+    "identity_key": "state|context_fragmentation,reactive_work|짧은 요청으로 인한 깊은 작업 회피 상태|memo-428",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-06-24",
+    "created_at": "2026-06-24",
+    "updated_at": "2026-06-24"
+  },
+  "node-state-7c50b12c": {
+    "id": "node-state-7c50b12c",
+    "source": "llm",
+    "type": "state",
+    "title": "점심 늦게 먹는 행동이 판단 흐름에 영향 주는 상태",
+    "summary": "점심을 늦게 먹으면 저녁까지 판단이 거칠어지는 현상은 피로로 인한 일상적 회피 행동과 리듬 중단으로 인한 회복 실패가 반복적으로 관찰됨. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "recovery_failure",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-299",
+      "memo-449"
+    ],
+    "identity_key": "state|recovery_failure,rhythm_disruption|점심 늦게 먹는 행동이 판단 흐름에 영향 주는 상태|memo-299,memo-449",
+    "evidence_count": 2,
+    "confidence": 0.6,
+    "last_seen_at": "2026-06-28",
+    "created_at": "2026-06-28",
+    "updated_at": "2026-06-28"
+  },
+  "node-pattern-c37755e8": {
+    "id": "node-pattern-c37755e8",
+    "source": "llm",
+    "type": "pattern",
+    "title": "작은 문장 속 반복 패턴",
+    "summary": "작은 문장들 사이에 반복 패턴이 드러나며, 이는 감정이나 상황이 해결되지 않았을 때 의사결정 로그로 전환되는 상태와, 미뤄진 일의 자존감 영향, 일상 메모의 감정과 조건 반영 패턴 등과 연결됨. 반복 패턴은 큰 사건보다 작은 문장들 사이에 더 잘 보이며, 이름 붙인 뒤에 더 명확하게 인식됨.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-074",
+      "memo-306",
+      "memo-321",
+      "memo-366",
+      "memo-381",
+      "memo-456"
+    ],
+    "identity_key": "pattern|pattern_recognition|작은 문장 속 반복 패턴|memo-074,memo-306,memo-321,memo-366,memo-381,memo-456",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-06-30",
+    "created_at": "2026-06-30",
+    "updated_at": "2026-06-30"
+  },
+  "node-state-e26871ec": {
+    "id": "node-state-e26871ec",
+    "source": "llm",
+    "type": "state",
+    "title": "창밖 밝음으로 인한 일상 중단 후 회복 시도 상태",
+    "summary": "창밖이 밝으면 방 안의 일도 덜 닫힌 느낌은 기운이 떨어지거나 흐려지면서 집중력이 떨어지는 상태로, 일상적인 피로와 불안의 영향을 받는 반복적인 패턴이다. 이로 인해 자잘한 대응만 발생함.",
+    "relation_tags": [
+      "event_aftereffect",
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "representative_evidence_ids": [
+      "memo-465"
+    ],
+    "identity_key": "state|event_aftereffect,low_energy_drift,rhythm_disruption|창밖 밝음으로 인한 일상 중단 후 회복 시도 상태|memo-465",
+    "evidence_count": 1,
+    "confidence": 0.55,
+    "last_seen_at": "2026-07-01",
+    "created_at": "2026-07-01",
+    "updated_at": "2026-07-01"
+  },
+  "node-pattern-5c72a076": {
+    "id": "node-pattern-5c72a076",
+    "source": "llm",
+    "type": "pattern",
+    "title": "문장 순서 반복 패턴",
+    "summary": "비슷한 단어가 아니라 비슷한 순서가 반복되는 패턴을 인식함. 이는 일상적 회피와 메신저 상호작용의 영향으로 자잘한 대응이 반복되는 상태로, 작은 문장들 사이에 반복 패턴이 더 잘 드러남. 이 패턴은 이름 붙인 후 더 명확하게 인식되며, KEO의 자기이해를 위한 제품 통찰과도 일치함.",
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "representative_evidence_ids": [
+      "memo-261",
+      "memo-306",
+      "memo-321",
+      "memo-411",
+      "memo-456",
+      "memo-471"
+    ],
+    "identity_key": "pattern|pattern_recognition|문장 순서 반복 패턴|memo-261,memo-306,memo-321,memo-411,memo-456,memo-471",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-07-03",
+    "created_at": "2026-07-03",
+    "updated_at": "2026-07-03"
+  },
+  "node-state-4ed944d8": {
+    "id": "node-state-4ed944d8",
+    "source": "llm",
+    "type": "state",
+    "title": "단호하게 말하지 못한 감각 잔상 상태",
+    "summary": "단호하게 말하지 못한 장면이나 감각 잔상이 일상 일정을 중단시키고, 이로 인한 회복 시도 상태. 말과 실제 생각의 불일치로 인한 감각 잔상이 반복적 패턴으로, 자기 인식 차단 상태와 연결됨.",
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "representative_evidence_ids": [
+      "memo-211",
+      "memo-214",
+      "memo-294",
+      "memo-332",
+      "memo-444",
+      "memo-482"
+    ],
+    "identity_key": "state|identity_gap|단호하게 말하지 못한 감각 잔상 상태|memo-211,memo-214,memo-294,memo-332,memo-444,memo-482",
+    "evidence_count": 6,
+    "confidence": 0.8,
+    "last_seen_at": "2026-07-05",
+    "created_at": "2026-07-05",
+    "updated_at": "2026-07-05"
+  }
+}

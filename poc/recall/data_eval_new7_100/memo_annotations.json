@@ -1,0 +1,684 @@
+{
+  "memo-001": {
+    "relation_tags": [
+      "reactive_work",
+      "context_fragmentation"
+    ],
+    "short_summary": "아침엔 의욕 있었는데 메신저 몇 번 보고 나니까 흐름 끊김. 오늘 또 자잘한 대응만 함."
+  },
+  "memo-002": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "short_summary": "KEO에서 일정 끝난 날 밤에 그날 메모 다시 묶어 보여주면 좋겠다. 회의 전 기대, 끝나고 지침 같은 거."
+  },
+  "memo-003": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ],
+    "short_summary": "책 메모: 사람은 기록을 남기는 게 아니라, 나중의 나에게 힌트를 남긴다."
+  },
+  "memo-004": {
+    "relation_tags": [
+      "avoidance_rationalization",
+      "pattern_recognition"
+    ],
+    "short_summary": "운동 가기 싫어서 일 핑계 댔는데 막상 일도 별로 못 함. 이런 날 패턴 비슷한 듯."
+  },
+  "memo-005": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "short_summary": "앱 아이디어. 과거 다짐을 지금 메모 밑에 작은 카드로. 너무 훈계처럼 보이면 안 됨."
+  },
+  "memo-006": {
+    "relation_tags": [
+      "start_avoidance",
+      "overplanning",
+      "avoidance_rationalization"
+    ],
+    "short_summary": "이번 주 목표 3개만 쓰려다가 또 카테고리 쪼개기 시작함. 계획 세우는 척하면서 시작을 미룸."
+  },
+  "memo-007": {
+    "relation_tags": [],
+    "short_summary": "점심 때 잠깐 걸었더니 머리 좀 맑아짐. 오후 첫 40분이 오늘 제일 괜찮았다."
+  },
+  "memo-008": {
+    "relation_tags": [
+      "schedule_disruption",
+      "context_fragmentation"
+    ],
+    "short_summary": "회의 두 개 하고 나면 내가 뭘 하려던 사람이었는지 잊는다. 일정이 하루를 먹는 느낌."
+  },
+  "memo-009": {
+    "relation_tags": [
+      "avoidance_rationalization",
+      "decision_trace"
+    ],
+    "short_summary": "책에서 밑줄. 바쁨은 종종 중요한 결정을 미루는 가장 그럴듯한 변명이다."
+  },
+  "memo-010": {
+    "relation_tags": [
+      "self_understanding_product",
+      "decision_trace"
+    ],
+    "short_summary": "어제 적어둔 기능보다 지금 드는 찜찜함이 더 중요할 수도. 사용자는 왜 이 메모가 지금 뜨는지 납득해야 함."
+  },
+  "memo-011": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_aftereffect"
+    ],
+    "short_summary": "엄마 병원 일정 챙기느라 일 루틴 완전 깨짐. 근데 이런 개인 일정 흔들림도 회고엔 중요하네."
+  },
+  "memo-012": {
+    "relation_tags": [
+      "low_energy_drift",
+      "recovery_failure"
+    ],
+    "short_summary": "저녁엔 괜찮아질 줄 알았는데 유튜브만 보다 끝. 쉬는 것도 아니고 일한 것도 아니고 애매."
+  },
+  "memo-013": {
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "short_summary": "오늘 메모는 짧게라도 남기자. 길게 정리하려고 하면 또 안 쓴다."
+  },
+  "memo-014": {
+    "relation_tags": [
+      "pattern_recognition"
+    ],
+    "short_summary": "retrieval eval 만들 때 키워드 맞추기 문제로 가면 안 됨. 미룸이 없어도 회피 냄새가 잡혀야 함."
+  },
+  "memo-015": {
+    "relation_tags": [
+      "event_reflection_link",
+      "schedule_disruption"
+    ],
+    "short_summary": "아침에 캘린더 보니까 지난주 금요일도 집중 작업 써놓고 결국 회의로 밀렸네. 일정-회고 연결 포인트 이거다."
+  },
+  "memo-016": {
+    "relation_tags": [
+      "social_response_delay",
+      "unfinished_loop"
+    ],
+    "short_summary": "친구 답장 또 미룸. 별 내용 아닌데 쌓일수록 더 손대기 싫다."
+  },
+  "memo-017": {
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "short_summary": "제품 메모. 지금 상태 설명보다 최근 반복된 패턴을 먼저 보여주는 화면 가능할까."
+  },
+  "memo-018": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog"
+    ],
+    "short_summary": "오늘 할 일 적다가 급한 것, 중요한 것, 남 눈치 보이는 것이 다 섞여서 머리 복잡."
+  },
+  "memo-019": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ],
+    "short_summary": "책 문장 기록. 자기이해는 정답 찾기가 아니라 반복되는 오해를 줄이는 일."
+  },
+  "memo-020": {
+    "relation_tags": [
+      "rhythm_disruption",
+      "low_energy_drift"
+    ],
+    "short_summary": "어제 늦게 자서 오전 완전 퍼짐. 이런 날은 큰 판단 말고 정리성 일만 해야겠다."
+  },
+  "memo-021": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ],
+    "short_summary": "KEO 온보딩에서 감정 일기 앱처럼 보이면 안 된다. 아이디어, 계획, 회피 기록 다 들어오는 쪽이어야."
+  },
+  "memo-022": {
+    "relation_tags": [
+      "safe_task_selection",
+      "start_avoidance",
+      "overplanning"
+    ],
+    "short_summary": "초안 먼저 만들자고 며칠째 적는데 또 구조부터 만지고 있음. 나 지금 또 안전한 일만 고르는 중."
+  },
+  "memo-023": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "short_summary": "회의 전에 적은 기대랑 회의 끝나고 남긴 한 줄을 나란히 보면 재밌겠다. 일정이 회고 트리거가 되네."
+  },
+  "memo-024": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "recovery_failure"
+    ],
+    "short_summary": "오늘은 진짜 피곤해서 산책도 패스. 이런 날은 자책 적게 하고 그냥 일찍 자는 게 맞는 듯."
+  },
+  "memo-025": {
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "short_summary": "사용자 메모 톤이 너무 모범답안이면 안 믿길 듯. 중간에 끊긴 문장, 애매한 표현도 살아 있어야."
+  },
+  "memo-026": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ],
+    "short_summary": "새 기능보다 먼저 eval data부터 다시 만들기. 지금 데이터가 너무 깨끗해서 실제 검색 감이 안 남."
+  },
+  "memo-027": {
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ],
+    "short_summary": "토요일 일정 비워놨는데 막상 쉬지를 못함. 쉬면 뒤처질까봐 자꾸 작은 할 일 찾음."
+  },
+  "memo-028": {
+    "relation_tags": [
+      "decision_trace",
+      "pattern_recognition"
+    ],
+    "short_summary": "문장 기록. 해결되지 않은 감정도 나중엔 의사결정 로그가 된다."
+  },
+  "memo-029": {
+    "relation_tags": [
+      "reactive_work",
+      "unfinished_loop"
+    ],
+    "short_summary": "오늘은 뭘 한 건지 애매하지만 메신저, 메일은 많이 처리함. 결과 없는 바쁨 느낌."
+  },
+  "memo-030": {
+    "relation_tags": [
+      "evaluation_fear",
+      "decision_trace"
+    ],
+    "short_summary": "회고 질문 메모. 내가 피한 건 일이 어려워서였나, 평가받을까봐였나."
+  },
+  "memo-031": {
+    "relation_tags": [
+      "reactive_work",
+      "context_fragmentation"
+    ],
+    "short_summary": "아침에 카페 앉아서 오늘 한 가지만 끝내자고 적어놓고 또 받은 톡부터 처리함."
+  },
+  "memo-032": {
+    "relation_tags": [
+      "self_understanding_product",
+      "event_reflection_link"
+    ],
+    "short_summary": "제품 메모. 지금 기분이랑 지난번 비슷한 상황을 같이 보여주면 왜 이 메모가 떴는지 덜 뜬금없을 듯."
+  },
+  "memo-033": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_fog"
+    ],
+    "short_summary": "저녁에 장 보러 갔다가 필요 없는 것도 담음. 피곤하면 결정이 다 느슨해지는 느낌."
+  },
+  "memo-034": {
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "short_summary": "내일 오전엔 문서 초안 1개만. 조사 더 하지 말고 일단 목차부터."
+  },
+  "memo-035": {
+    "relation_tags": [
+      "safe_task_selection",
+      "pattern_recognition"
+    ],
+    "short_summary": "어려운 일 앞두면 이상하게 정리, 분류, 청소 같은 걸 먼저 한다. 성실한 척 회피하는 패턴."
+  },
+  "memo-036": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization"
+    ],
+    "short_summary": "문장 기록. 사람은 진실을 숨길 때보다 그럴듯한 이유를 붙일 때 자기 자신을 더 잘 속인다."
+  },
+  "memo-037": {
+    "relation_tags": [
+      "priority_confusion",
+      "decision_fog",
+      "life_admin_overload"
+    ],
+    "short_summary": "오늘 일정표엔 여유 있어 보였는데 막상 시작하니 급한 일, 생활 일, 돈 걱정이 한꺼번에 올라와서 멍함."
+  },
+  "memo-038": {
+    "relation_tags": [
+      "schedule_disruption",
+      "life_admin_overload"
+    ],
+    "short_summary": "오후 치과 다녀오고 나니 하루가 끊긴 느낌. 이런 생활 일정도 회고에서 빼면 안 되겠다."
+  },
+  "memo-039": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "short_summary": "미팅 전에 기대한 것과 끝나고 남긴 한 줄이 자주 다르다. 일정 기준으로 전후 메모를 붙여보면 좋겠음."
+  },
+  "memo-040": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ],
+    "short_summary": "쉬는 날인데도 책 읽다가 자꾸 해야 할 일 떠오름. 쉬는 시간을 자꾸 빚처럼 느낌."
+  },
+  "memo-041": {
+    "relation_tags": [
+      "self_understanding_product",
+      "pattern_recognition"
+    ],
+    "short_summary": "앱 메모. 감정 이름만 모으는 게 아니라, 반복되는 결정 실수도 보여줘야 자기이해 쪽이 선명해질 듯."
+  },
+  "memo-042": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ],
+    "short_summary": "택배 반품 미루다가 결국 또 하루 지남. 작은 생활 일도 계속 밀리면 자존감에 은근히 영향 줌."
+  },
+  "memo-043": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_trace"
+    ],
+    "short_summary": "계좌 내역 정리하다 보니 충동 구매한 날엔 대체로 저녁에 이미 지쳐 있었음."
+  },
+  "memo-044": {
+    "relation_tags": [
+      "identity_gap",
+      "pattern_recognition"
+    ],
+    "short_summary": "오늘은 말을 많이 했는데 내가 진짜 하려던 생각은 별로 안 남겼다. 표현한 나와 실제 내가 조금 어긋난 느낌."
+  },
+  "memo-045": {
+    "relation_tags": [
+      "safe_task_selection",
+      "reactive_work"
+    ],
+    "short_summary": "카페 왔는데 정작 해야 할 문서 안 열고 메일함부터 뒤적임."
+  },
+  "memo-046": {
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "short_summary": "제품 메모. 비슷한 감정끼리보다 비슷한 결정 실수끼리 묶어 보여주는 쪽이 더 KEO답다."
+  },
+  "memo-047": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ],
+    "short_summary": "반품 신청 아직 안 함. 5분이면 되는데 이게 며칠 간다."
+  },
+  "memo-048": {
+    "relation_tags": [
+      "event_aftereffect",
+      "low_energy_drift"
+    ],
+    "short_summary": "사람들 만나고 나면 괜히 속이 비어 있는 날이 있다."
+  },
+  "memo-049": {
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "short_summary": "내일 오전엔 목차만 잡기. 자료 더 찾지 말고."
+  },
+  "memo-050": {
+    "relation_tags": [
+      "social_response_delay"
+    ],
+    "short_summary": "친구 답장 또 안 보냄. 미안한데 손이 안 간다."
+  },
+  "memo-051": {
+    "relation_tags": [
+      "unfinished_loop",
+      "pattern_recognition"
+    ],
+    "short_summary": "문장 기록. 미뤄진 일은 사라지지 않고 자존감 근처에 쌓인다."
+  },
+  "memo-052": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_aftereffect"
+    ],
+    "short_summary": "치과 다녀오고 나니 하루가 중간에서 뚝 끊긴 느낌."
+  },
+  "memo-053": {
+    "relation_tags": [
+      "safe_task_selection",
+      "start_avoidance"
+    ],
+    "short_summary": "문서 열기 싫어서 폴더 이름부터 고침."
+  },
+  "memo-054": {
+    "relation_tags": [
+      "decision_fog"
+    ],
+    "short_summary": "카드값 보고 괜히 마음이 급해졌다."
+  },
+  "memo-055": {
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "short_summary": "지하철에서 졸다 깬 사람 표정이 하루 종일 남는다."
+  },
+  "memo-056": {
+    "relation_tags": [
+      "rest_guilt",
+      "recovery_failure"
+    ],
+    "short_summary": "쉬는 날인데도 계속 뭔가 해야 할 것 같아서 책도 제대로 안 읽힘."
+  },
+  "memo-057": {
+    "relation_tags": [
+      "execution_delay"
+    ],
+    "short_summary": "산책 나가려다가 그냥 커피만 사서 들어옴."
+  },
+  "memo-058": {
+    "relation_tags": [
+      "schedule_disruption",
+      "external_priority_capture"
+    ],
+    "short_summary": "엄마 병원 일정 같이 보고 나니까 원래 하려던 일 생각이 안 났다."
+  },
+  "memo-059": {
+    "relation_tags": [
+      "self_understanding_product",
+      "event_reflection_link"
+    ],
+    "short_summary": "왜 이 메모가 지금 뜨는지 한 줄 설명이 있으면 덜 뜬금없을 듯."
+  },
+  "memo-060": {
+    "relation_tags": [
+      "unfinished_loop",
+      "pattern_recognition"
+    ],
+    "short_summary": "지난 메모 다시 보니까 이번 주도 결국 미룬 일 주변만 맴돌았다."
+  },
+  "memo-061": {
+    "relation_tags": [
+      "low_energy_drift",
+      "fatigue_spillover"
+    ],
+    "short_summary": "배고픈 줄 알았는데 먹고 나서도 그대로 피곤했다."
+  },
+  "memo-062": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_fog",
+      "rhythm_disruption"
+    ],
+    "short_summary": "어제 늦게 자서 오늘 판단이 전반적으로 탁했다."
+  },
+  "memo-063": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ],
+    "short_summary": "세탁기 돌려야 하는데 이상하게 계속 뒤로 밀림."
+  },
+  "memo-064": {
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "short_summary": "사람들 앞에서는 괜찮은 척했는데 혼자 오니까 바로 힘 풀림."
+  },
+  "memo-065": {
+    "relation_tags": [
+      "start_avoidance",
+      "low_energy_drift"
+    ],
+    "short_summary": "비 오는 날엔 유독 시작 버튼 누르기가 더 어렵다."
+  },
+  "memo-066": {
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "short_summary": "오늘은 진짜 한 문단만 쓰자 했는데 슬랙 확인하다가 오전이 갔다."
+  },
+  "memo-067": {
+    "relation_tags": [
+      "fatigue_spillover",
+      "decision_trace"
+    ],
+    "short_summary": "책에서 밑줄. 사람은 피곤할수록 쉬운 설명을 고른다."
+  },
+  "memo-068": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_aftereffect"
+    ],
+    "short_summary": "은행 들렀다 오니까 다시 일 모드 붙이기 어려웠다."
+  },
+  "memo-069": {
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "short_summary": "오늘 저녁 30분만 써보기. 잘하려고 하지 말 것."
+  },
+  "memo-070": {
+    "relation_tags": [
+      "control_seeking",
+      "safe_task_selection"
+    ],
+    "short_summary": "결정 하나 내려야 하는데 캘린더 색만 만지고 있었다."
+  },
+  "memo-071": {
+    "relation_tags": [
+      "social_response_delay"
+    ],
+    "short_summary": "동생 메시지 읽고 표시만 해둠."
+  },
+  "memo-072": {
+    "relation_tags": [
+      "context_fragmentation",
+      "pattern_recognition"
+    ],
+    "short_summary": "바빴다는 말은 쉬운데, 사실은 마음이 산만했다는 말이 더 정확함."
+  },
+  "memo-073": {
+    "relation_tags": [
+      "life_admin_overload",
+      "decision_fog"
+    ],
+    "short_summary": "생활비 계산하다 보니 갑자기 하루가 작게 느껴짐."
+  },
+  "memo-074": {
+    "relation_tags": [
+      "pattern_recognition",
+      "self_understanding_product"
+    ],
+    "short_summary": "예전 다짐을 그대로 보여주는 것보다 요즘 반복 패턴을 먼저 보여주는 편이 덜 훈계 같다."
+  },
+  "memo-075": {
+    "relation_tags": [
+      "event_aftereffect"
+    ],
+    "short_summary": "편의점 냉장고 앞에서 한참 멍했던 순간이 이상하게 기억남."
+  },
+  "memo-076": {
+    "relation_tags": [
+      "rest_guilt",
+      "avoidance_rationalization"
+    ],
+    "short_summary": "침대에 누워 있는데 쉬는 게 아니라 도망치는 기분이 든다."
+  },
+  "memo-077": {
+    "relation_tags": [
+      "recovery_failure",
+      "execution_delay"
+    ],
+    "short_summary": "운동복까지 입었는데 결국 누워 있었다."
+  },
+  "memo-078": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ],
+    "short_summary": "약국 가는 것도 미뤄서 감기약 다 떨어짐."
+  },
+  "memo-079": {
+    "relation_tags": [
+      "pattern_recognition",
+      "decision_trace"
+    ],
+    "short_summary": "적어둠. 반복되는 하루는 의지가 아니라 구조를 드러낸다."
+  },
+  "memo-080": {
+    "relation_tags": [
+      "reactive_work",
+      "external_priority_capture"
+    ],
+    "short_summary": "캘린더 훑어보니 중요한 일보다 끼어든 일에 더 많이 반응했다."
+  },
+  "memo-081": {
+    "relation_tags": [
+      "fatigue_spillover"
+    ],
+    "short_summary": "야식 먹고 바로 후회. 배를 채운 게 아니라 기분을 눌렀던 듯."
+  },
+  "memo-082": {
+    "relation_tags": [
+      "schedule_disruption",
+      "event_aftereffect"
+    ],
+    "short_summary": "집안 부탁 하나 처리하고 나면 집중 다시 붙이기 어렵다."
+  },
+  "memo-083": {
+    "relation_tags": [
+      "schedule_disruption",
+      "rhythm_disruption"
+    ],
+    "short_summary": "팀 미팅 하나 있었을 뿐인데 오전 리듬이 다 무너짐."
+  },
+  "memo-084": {
+    "relation_tags": [
+      "identity_gap"
+    ],
+    "short_summary": "오늘 말은 많았는데 정작 진짜 생각은 하나도 안 꺼낸 느낌."
+  },
+  "memo-085": {
+    "relation_tags": [
+      "low_energy_drift",
+      "rhythm_disruption"
+    ],
+    "short_summary": "습한 날은 생각도 같이 눅눅해지는 느낌."
+  },
+  "memo-086": {
+    "relation_tags": [
+      "context_fragmentation"
+    ],
+    "short_summary": "집중하려고 이어폰 꼈는데 결국 브라우저 탭만 늘어남."
+  },
+  "memo-087": {
+    "relation_tags": [
+      "event_reflection_link",
+      "self_understanding_product"
+    ],
+    "short_summary": "일정 끝난 뒤 남긴 한 줄이 의외로 회고의 핵심일 수 있음. 그걸 놓치지 않게."
+  },
+  "memo-088": {
+    "relation_tags": [
+      "avoidance_rationalization",
+      "decision_trace"
+    ],
+    "short_summary": "오늘 피한 건 일이 아니라 불편한 감각 쪽이었던 것 같다."
+  },
+  "memo-089": {
+    "relation_tags": [
+      "start_avoidance"
+    ],
+    "short_summary": "출근 전에 첫 문장만 적어두기."
+  },
+  "memo-090": {
+    "relation_tags": [
+      "rhythm_disruption",
+      "decision_fog"
+    ],
+    "short_summary": "중간에 몇 번 깨서 그런지 하루 종일 멍함."
+  },
+  "memo-091": {
+    "relation_tags": [
+      "social_response_delay",
+      "evaluation_fear"
+    ],
+    "short_summary": "업무 연락 답해야 하는데 문장 고르기 귀찮아서 미룸."
+  },
+  "memo-092": {
+    "relation_tags": [
+      "decision_trace"
+    ],
+    "short_summary": "오늘 꽂힌 문장: 결심은 미래형이고 습관은 현재형이다."
+  },
+  "memo-093": {
+    "relation_tags": [
+      "life_admin_overload",
+      "avoidance_rationalization"
+    ],
+    "short_summary": "전화 한 통 하면 끝날 일을 메모 앱만 들락날락함."
+  },
+  "memo-094": {
+    "relation_tags": [
+      "event_aftereffect",
+      "decision_fog"
+    ],
+    "short_summary": "자동이체 빠져나간 거 보고 집중 확 꺾임."
+  },
+  "memo-095": {
+    "relation_tags": [
+      "life_admin_overload",
+      "event_aftereffect"
+    ],
+    "short_summary": "공과금 확인 못 하고 넘어갔는데 이런 거 쌓이면 기분이 탁해진다."
+  },
+  "memo-096": {
+    "relation_tags": [
+      "rest_guilt",
+      "safe_task_selection"
+    ],
+    "short_summary": "오늘은 좀 비워도 되는데 계속 작은 할 일을 찾아냈다."
+  },
+  "memo-097": {
+    "relation_tags": [
+      "context_fragmentation",
+      "reactive_work"
+    ],
+    "short_summary": "노트북 켰을 때는 분명 중요한 거 하려던 사람이었는데 알림 몇 개 보고 흐름 끊김."
+  },
+  "memo-098": {
+    "relation_tags": [
+      "self_understanding_product"
+    ],
+    "short_summary": "사용자가 감정 이름을 몰라도 메모를 남길 수 있어야 함. 해석은 나중."
+  },
+  "memo-099": {
+    "relation_tags": [
+      "life_admin_overload",
+      "execution_delay"
+    ],
+    "short_summary": "냉장고 정리해야지 해놓고 또 배달부터 시킴."
+  },
+  "memo-100": {
+    "relation_tags": [
+      "self_deception",
+      "avoidance_rationalization"
+    ],
+    "short_summary": "계속 합리적인 이유를 붙이는데 이상하게 스스로도 잘 안 믿긴다."
+  }
+}
