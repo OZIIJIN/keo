@@ -36,6 +36,15 @@ RETRIEVAL_RELATION = "relation"
 RETRIEVAL_RRF = "rrf"
 RETRIEVAL_RELATION_GATE = "relation_gate"
 RETRIEVAL_TEXT_RERANK = "text_rerank"
+RETRIEVAL_HYBRID = "hybrid"
+RETRIEVAL_TEXT_FILTER = "text_filter"
+RETRIEVAL_TEXT_AUGMENT = "text_augment"
+
+MIN_DENSE_SCORE_FOR_FILTER = 0.55
+
+_OKT = None
+BM25_INDEX = None
+BM25_MEMO_IDS: list[str] = []
 EMBED_CACHE: dict[tuple[str, str], list[float]] = {}
 EMBED_CACHE_LOADED_MODELS: set[str] = set()
 EMBED_CACHE_DIRTY_MODELS: set[str] = set()
@@ -68,6 +77,27 @@ RERANK_RESPONSE_SCHEMA = {
         },
     },
     "required": ["label", "reason", "results"],
+}
+FILTER_RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "should_show": {"type": "boolean"},
+        "label": {"type": "string"},
+        "reason": {"type": "string"},
+        "results": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {"type": "string"},
+                    "relevance": {"type": "string"},
+                    "reason": {"type": "string"},
+                },
+                "required": ["id", "relevance", "reason"],
+            },
+        },
+    },
+    "required": ["should_show", "label", "reason", "results"],
 }
 
 
@@ -145,8 +175,15 @@ def load_eval_cases(path: Path) -> list[dict]:
         raise ValueError("eval cases file must contain a JSON list")
 
     for case in cases:
-        if "id" not in case or "current_memo" not in case or "expected_ids" not in case:
-            raise ValueError("each eval case must have id, current_memo, and expected_ids")
+        if "id" not in case or "current_memo" not in case:
+            raise ValueError("each eval case must have id and current_memo")
+        # 구버전 호환: expected_ids → must_ids
+        if "expected_ids" in case and "must_ids" not in case:
+            case["must_ids"] = case["expected_ids"]
+        if "must_ids" not in case:
+            raise ValueError("each eval case must have must_ids or expected_ids")
+        case.setdefault("acceptable_ids", [])
+        case.setdefault("bad_ids", [])
 
     return cases
 
@@ -334,6 +371,131 @@ def build_rerank_prompt(current_memo: str, candidates: list[dict], top_k: int) -
     )
 
 
+def build_query_rewrite_prompt(memo: str) -> str:
+    return "\n".join([
+        "/no_think",
+        "You convert a personal Korean memo into a retrieval-optimized pattern description.",
+        "Describe the behavioral or emotional pattern the memo represents.",
+        "Be concise (1-2 sentences). Write in Korean. Return plain text only, no JSON.",
+        "Focus on the repeated pattern, not the specific situation.",
+        "",
+        "[Memo]",
+        memo.strip(),
+        "",
+        "[Pattern description]",
+    ])
+
+
+def rewrite_query(
+    memo: str,
+    model: str,
+    timeout: int = GENERATE_TIMEOUT_SECONDS,
+) -> str:
+    try:
+        return generate_text(build_query_rewrite_prompt(memo), model, timeout=timeout)
+    except Exception:
+        return memo
+
+
+def build_filter_prompt(current_memo: str, candidates: list[dict], top_k: int) -> str:
+    candidate_lines = [
+        f"- {c['id']} | score={c['score']:.4f}: {c['text']}"
+        for c in candidates
+    ]
+    return "\n".join([
+        "/no_think",
+        "You decide whether to show past Korean memos as related memories.",
+        "The current memo is a new user record.",
+        "The candidates were retrieved by dense embedding similarity.",
+        "Return one JSON object only. No markdown or explanation outside JSON.",
+        "",
+        "Select only candidates that a user would recognize as genuinely related past records.",
+        "Prefer shared behavioral or emotional patterns over surface word overlap.",
+        "Reject candidates that only share keywords, topic, or vague mood.",
+        "A candidate can be relevant even if the domain differs, if the repeated pattern is similar.",
+        "If there are no useful candidates, return should_show=false and results=[].",
+        f"Return at most {top_k} candidates.",
+        "",
+        "Use relevance labels:",
+        "- strong: same repeated pattern",
+        "- medium: similar but weaker pattern",
+        "- weak: do not include",
+        "",
+        'Required JSON shape:',
+        '{"should_show":true,"label":"회피","reason":"짧은 한 문장","results":[{"id":"memo-001","relevance":"strong","reason":"짧은 이유"}]}',
+        'When no useful candidates: {"should_show":false,"label":"","reason":"","results":[]}',
+        "Write label and reason in Korean.",
+        "",
+        "[Current memo]",
+        current_memo.strip(),
+        "",
+        "[Candidates]",
+        *candidate_lines,
+    ])
+
+
+def filter_with_llm(
+    current_memo: str,
+    candidates: list[dict],
+    model: str,
+    top_k: int,
+    timeout: int = GENERATE_TIMEOUT_SECONDS,
+) -> tuple[list[dict], dict]:
+    empty_summary = {"should_show": False, "label": "", "reason": "", "results": []}
+
+    if not candidates:
+        return [], empty_summary
+
+    prompt = build_filter_prompt(current_memo, candidates, top_k)
+    response = generate_text(prompt, model, timeout=timeout, response_format=FILTER_RESPONSE_SCHEMA)
+
+    try:
+        payload = extract_json_object(response)
+    except (ValueError, json.JSONDecodeError):
+        return [], empty_summary
+
+    if not payload.get("should_show"):
+        return [], {**empty_summary, "reason": payload.get("reason", "")}
+
+    raw_results = payload.get("results", [])
+    if not isinstance(raw_results, list):
+        return [], empty_summary
+
+    candidate_by_id = {c["id"]: c for c in candidates}
+    selected = []
+    seen_ids: set[str] = set()
+
+    for item in raw_results:
+        if not isinstance(item, dict):
+            continue
+        memo_id = item.get("id")
+        relevance = item.get("relevance")
+        reason = item.get("reason", "")
+        if memo_id not in candidate_by_id or memo_id in seen_ids:
+            continue
+        if relevance not in {"strong", "medium"}:
+            continue
+        selected.append({
+            **candidate_by_id[memo_id],
+            "relevance": relevance,
+            "filter_reason": reason if isinstance(reason, str) else "",
+        })
+        seen_ids.add(memo_id)
+        if len(selected) >= top_k:
+            break
+
+    if not selected:
+        return [], empty_summary
+
+    summary = {
+        "should_show": True,
+        "label": payload.get("label", ""),
+        "reason": payload.get("reason", ""),
+        "results": raw_results,
+    }
+    return selected, summary
+
+
 def extract_json_value(text: str) -> object:
     start = text.find("{")
     array_start = text.find("[")
@@ -499,6 +661,63 @@ def cosine_similarity(left: list[float], right: list[float]) -> float:
     return dot / (left_norm * right_norm)
 
 
+_KO_STOPWORDS = {
+    # Okt가 Noun으로 분류하는 기능어
+    "안", "더", "또", "것", "거", "함", "듯", "내", "때", "뒤", "줄", "적",
+    "이", "그", "저", "이것", "그것", "저것", "여기", "거기",
+    # 시간/맥락 일반어
+    "오늘", "날", "하루", "지금", "이번", "지난", "요즘", "매일",
+    # 고빈도 동사 (내용 없음)
+    "하다", "되다", "보다", "나다", "이다", "있다", "없다", "같다",
+    # 부사 필러
+    "좀", "다시", "계속", "자꾸", "너무", "많이", "정말",
+    # KEO 도메인 일반어
+    "메모",
+}
+
+
+def _get_okt():
+    global _OKT
+    if _OKT is None:
+        from konlpy.tag import Okt
+        _OKT = Okt()
+    return _OKT
+
+
+def tokenize_korean(text: str) -> list[str]:
+    try:
+        okt = _get_okt()
+        tokens = okt.pos(text, norm=True, stem=True)
+        return [
+            word for word, pos in tokens
+            if pos in {"Noun", "Verb", "Adjective"} and word not in _KO_STOPWORDS and len(word) > 1
+        ]
+    except Exception:
+        return [t for t in text.split() if t not in _KO_STOPWORDS]
+
+
+def build_bm25_index(past_memos: list[dict]) -> None:
+    global BM25_INDEX, BM25_MEMO_IDS
+    from rank_bm25 import BM25Okapi
+    BM25_MEMO_IDS = [m["id"] for m in past_memos]
+    tokenized = [tokenize_korean(m["text"]) for m in past_memos]
+    BM25_INDEX = BM25Okapi(tokenized)
+
+
+def rank_by_bm25(query: str, past_memos: list[dict]) -> list[dict]:
+    if BM25_INDEX is None:
+        return []
+    query_tokens = tokenize_korean(query)
+    scores = BM25_INDEX.get_scores(query_tokens)
+    memo_by_id = {m["id"]: m for m in past_memos}
+    results = []
+    for memo_id, score in zip(BM25_MEMO_IDS, scores):
+        memo = memo_by_id.get(memo_id)
+        if memo is not None:
+            results.append({**memo, "score": float(score)})
+    return sorted(results, key=lambda x: x["score"], reverse=True)
+
+
 def build_past_memo_index(
     past_memos: list[dict],
     model: str,
@@ -514,7 +733,7 @@ def build_past_memo_index(
         text_embedding = None
         relation_embedding = None
 
-        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK}:
+        if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK, RETRIEVAL_HYBRID, RETRIEVAL_TEXT_FILTER, RETRIEVAL_TEXT_AUGMENT}:
             text_embedding = embed_text(memo["text"], model)
 
         if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE} and relation_text:
@@ -529,6 +748,10 @@ def build_past_memo_index(
                 "relation_embedding": relation_embedding,
             }
         )
+
+    if retrieval_mode == RETRIEVAL_HYBRID:
+        print("BM25 인덱스 빌드 중...", file=sys.stderr)
+        build_bm25_index(indexed_memos)
 
     return indexed_memos
 
@@ -608,7 +831,7 @@ def find_similar_memos(
     text_query_embedding = None
     relation_query_embedding = None
 
-    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK}:
+    if retrieval_mode in {RETRIEVAL_TEXT, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK, RETRIEVAL_HYBRID, RETRIEVAL_TEXT_FILTER, RETRIEVAL_TEXT_AUGMENT}:
         text_query_embedding = embed_text(current_memo, model)
 
     if retrieval_mode in {RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE} and relation_text:
@@ -616,6 +839,11 @@ def find_similar_memos(
 
     text_results = rank_by_embedding(text_query_embedding, past_memos, "text_embedding")
     relation_results = rank_by_embedding(relation_query_embedding, past_memos, "relation_embedding")
+
+    if retrieval_mode == RETRIEVAL_HYBRID:
+        bm25_results = rank_by_bm25(current_memo, past_memos)
+        results = rrf_fuse([text_results, bm25_results], top_k, rrf_k)
+        return results, None, None
 
     if retrieval_mode == RETRIEVAL_TEXT:
         return text_results[:top_k], None, None
@@ -633,6 +861,31 @@ def find_similar_memos(
             raise RuntimeError("LLM reranker model is required for text_rerank mode")
         text_candidates = text_results[:rerank_candidate_k]
         results, summary = rerank_with_llm(
+            current_memo,
+            text_candidates,
+            rerank_model,
+            top_k,
+            timeout=generate_timeout,
+        )
+        return results, None, summary
+
+    if retrieval_mode == RETRIEVAL_TEXT_AUGMENT:
+        if rerank_model is None:
+            raise RuntimeError("--rerank-model is required for text_augment mode")
+        rewritten = rewrite_query(current_memo, rerank_model, timeout=generate_timeout)
+        rewritten_embedding = embed_text(rewritten, model)
+        rewritten_results = rank_by_embedding(rewritten_embedding, past_memos, "text_embedding")
+        results = rrf_fuse([text_results, rewritten_results], top_k, rrf_k)
+        return results, rewritten, None
+
+    if retrieval_mode == RETRIEVAL_TEXT_FILTER:
+        if rerank_model is None:
+            raise RuntimeError("LLM filter model is required for text_filter mode")
+        text_candidates = [
+            memo for memo in text_results[:rerank_candidate_k]
+            if memo["score"] >= MIN_DENSE_SCORE_FOR_FILTER
+        ]
+        results, summary = filter_with_llm(
             current_memo,
             text_candidates,
             rerank_model,
@@ -675,57 +928,81 @@ def print_results(
         hit = ""
         if expected_ids is not None:
             hit = f" hit={'YES' if memo['id'] in expected_ids else 'NO'}"
-        print(f"\n{rank}. score={memo['score']:.4f}{hit} id={memo['id']}")
+        relevance = f" [{memo['relevance']}]" if memo.get("relevance") else ""
+        print(f"\n{rank}. score={memo['score']:.4f}{relevance}{hit} id={memo['id']}")
         if memo.get("date"):
             print(f"   date: {memo['date']}")
         if memo.get("relation_tags"):
             print(f"   relation_tags: {', '.join(memo['relation_tags'])}")
         print(f"   text: {memo['text']}")
+        if memo.get("filter_reason"):
+            print(f"   → {memo['filter_reason']}")
 
 
-def summarize_hits(expected_ids: set[str], results: list[dict]) -> dict:
+def summarize_hits(case: dict, results: list[dict]) -> dict:
     result_ids = {memo["id"] for memo in results}
-    hits = expected_ids & result_ids
-    missed = expected_ids - result_ids
+    must_ids = set(case["must_ids"])
+    acceptable_ids = set(case.get("acceptable_ids", []))
+    bad_ids = set(case.get("bad_ids", []))
+
+    must_hits = must_ids & result_ids
+    acceptable_hits = (must_ids | acceptable_ids) & result_ids
+    bad_hits = bad_ids & result_ids
+
     return {
-        "hits": hits,
-        "missed": missed,
-        "num_hits": len(hits),
-        "num_expected": len(expected_ids),
+        "must_hits": must_hits,
+        "must_missed": must_ids - result_ids,
+        "num_must_hits": len(must_hits),
+        "num_must": len(must_ids),
+        "num_acceptable_hits": len(acceptable_hits),
+        "num_acceptable": len(must_ids | acceptable_ids),
+        "bad_hits": bad_hits,
+        "num_bad_hits": len(bad_hits),
+        "num_results": len(result_ids),
     }
 
 
 def print_eval_summary(case: dict, results: list[dict], top_k: int) -> None:
-    summary = summarize_hits(set(case["expected_ids"]), results)
+    s = summarize_hits(case, results)
 
     print("\n[Eval summary]")
     print(f"case: {case['id']}")
-    print(f"hits@{top_k}: {summary['num_hits']}/{summary['num_expected']}")
-    print(f"hit ids: {', '.join(sorted(summary['hits'])) if summary['hits'] else '-'}")
-    print(f"missed ids: {', '.join(sorted(summary['missed'])) if summary['missed'] else '-'}")
+    print(f"must@{top_k}:       {s['num_must_hits']}/{s['num_must']}")
+    print(f"acceptable@{top_k}: {s['num_acceptable_hits']}/{s['num_acceptable']}")
+    if s["num_bad_hits"]:
+        print(f"bad hits:    {s['num_bad_hits']} ({', '.join(sorted(s['bad_hits']))})")
+    print(f"must missed: {', '.join(sorted(s['must_missed'])) if s['must_missed'] else '-'}")
 
 
 def empty_stats() -> dict:
     return {
-        "total_hits": 0,
-        "total_expected": 0,
-        "zero_hit_cases": 0,
-        "full_hit_cases": 0,
-        "partial_hit_cases": 0,
+        "total_must_hits": 0,
+        "total_must": 0,
+        "total_acceptable_hits": 0,
+        "total_acceptable": 0,
+        "total_bad_hits": 0,
+        "total_results": 0,
+        "zero_must_hit_cases": 0,
+        "full_must_hit_cases": 0,
+        "partial_must_hit_cases": 0,
     }
 
 
-def update_stats(stats: dict, expected_ids: set[str], results: list[dict]) -> None:
-    summary = summarize_hits(expected_ids, results)
-    stats["total_hits"] += summary["num_hits"]
-    stats["total_expected"] += summary["num_expected"]
+def update_stats(stats: dict, case: dict, results: list[dict]) -> None:
+    s = summarize_hits(case, results)
+    stats["total_must_hits"] += s["num_must_hits"]
+    stats["total_must"] += s["num_must"]
+    stats["total_acceptable_hits"] += s["num_acceptable_hits"]
+    stats["total_acceptable"] += s["num_acceptable"]
+    stats["total_bad_hits"] += s["num_bad_hits"]
+    stats["total_results"] += s["num_results"]
 
-    if summary["num_hits"] == 0:
-        stats["zero_hit_cases"] += 1
-    elif summary["num_hits"] == summary["num_expected"]:
-        stats["full_hit_cases"] += 1
+    if s["num_must_hits"] == 0:
+        stats["zero_must_hit_cases"] += 1
+    elif s["num_must_hits"] == s["num_must"]:
+        stats["full_must_hit_cases"] += 1
     else:
-        stats["partial_hit_cases"] += 1
+        stats["partial_must_hit_cases"] += 1
 
 
 def evaluate_cases(
@@ -752,7 +1029,6 @@ def evaluate_cases(
         if not print_details:
             print(f"[eval] {index}/{total_cases} {case['id']}", file=sys.stderr, flush=True)
 
-        expected_ids = set(case["expected_ids"])
         try:
             query_annotation = resolve_query_annotation(
                 case["current_memo"],
@@ -780,23 +1056,28 @@ def evaluate_cases(
             print(f"case: {case['id']}")
             print(f"current_memo: {case['current_memo']}")
             raise
-        update_stats(stats, expected_ids, results)
+        update_stats(stats, case, results)
 
         if print_details:
-            print_results(model, case["current_memo"], retrieval_text, results, rerank_summary, expected_ids)
+            must_ids = set(case["must_ids"])
+            print_results(model, case["current_memo"], retrieval_text, results, rerank_summary, must_ids)
             print_eval_summary(case, results, top_k)
 
     return stats
 
 
 def print_overall_stats(stats: dict, top_k: int) -> None:
-    total_expected = stats["total_expected"]
-    hit_rate = (stats["total_hits"] / total_expected * 100) if total_expected else 0.0
-    print(f"hits@{top_k}: {stats['total_hits']}/{total_expected}")
-    print(f"hit rate: {hit_rate:.2f}%")
-    print(f"zero-hit cases: {stats['zero_hit_cases']}")
-    print(f"partial-hit cases: {stats['partial_hit_cases']}")
-    print(f"full-hit cases: {stats['full_hit_cases']}")
+    must_rate = (stats["total_must_hits"] / stats["total_must"] * 100) if stats["total_must"] else 0.0
+    acc_rate = (stats["total_acceptable_hits"] / stats["total_acceptable"] * 100) if stats["total_acceptable"] else 0.0
+    total_results = stats["total_results"]
+    bad_precision = ((total_results - stats["total_bad_hits"]) / total_results * 100) if total_results else 0.0
+
+    print(f"must hit@{top_k}:       {stats['total_must_hits']}/{stats['total_must']} ({must_rate:.2f}%)")
+    print(f"acceptable hit@{top_k}: {stats['total_acceptable_hits']}/{stats['total_acceptable']} ({acc_rate:.2f}%)")
+    print(f"precision@{top_k}:      {bad_precision:.2f}% ({stats['total_bad_hits']} bad shown)")
+    print(f"zero-must-hit cases:   {stats['zero_must_hit_cases']}")
+    print(f"partial-must-hit cases:{stats['partial_must_hit_cases']}")
+    print(f"full-must-hit cases:   {stats['full_must_hit_cases']}")
 
 
 def run_eval(args: argparse.Namespace) -> None:
@@ -922,9 +1203,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--retrieval-mode",
-        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK],
+        choices=[RETRIEVAL_TEXT, RETRIEVAL_RELATION, RETRIEVAL_RRF, RETRIEVAL_RELATION_GATE, RETRIEVAL_TEXT_RERANK, RETRIEVAL_HYBRID, RETRIEVAL_TEXT_FILTER, RETRIEVAL_TEXT_AUGMENT],
         default=RETRIEVAL_TEXT,
-        help="retrieval channel to use: text-only, relation-only, text+relation RRF, relation-gated text rerank, or dense candidates plus LLM rerank",
+        help="retrieval channel to use: text-only, relation-only, text+relation RRF, relation-gated text rerank, dense+LLM rerank, or text+BM25 hybrid",
     )
     parser.add_argument(
         "--relation-tags",

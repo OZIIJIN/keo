@@ -1161,5 +1161,401 @@
       "memo-151",
       "memo-210"
     ]
+  },
+  {
+    "id": "case-107",
+    "current_memo": "장보기나 냉장고 정리 같은 작은 생활 메모가 쌓이면 하루 뒤쪽에서 계속 신경을 잡아끈다.",
+    "expected_ids": [
+      "memo-166",
+      "memo-213",
+      "memo-216",
+      "memo-219",
+      "memo-231"
+    ]
+  },
+  {
+    "id": "case-108",
+    "current_memo": "빨래나 분리수거처럼 중간에 멈춘 집안일이 계속 눈에 보이면 일 시작도 괜히 늦어진다.",
+    "expected_ids": [
+      "memo-115",
+      "memo-167",
+      "memo-217",
+      "memo-221",
+      "memo-230"
+    ]
+  },
+  {
+    "id": "case-109",
+    "current_memo": "전화 한 통이면 끝나는 예약 변경을 계속 미루는 게 제일 이상하게 오래 남는다.",
+    "expected_ids": [
+      "memo-047",
+      "memo-071",
+      "memo-151",
+      "memo-210",
+      "memo-224"
+    ]
+  },
+  {
+    "id": "case-110",
+    "current_memo": "비 오는 날이나 이동 전에 챙길 게 하나 생기면 그 작은 준비 때문에 흐름이 흔들린다.",
+    "expected_ids": [
+      "memo-058",
+      "memo-110",
+      "memo-162",
+      "memo-220",
+      "memo-222"
+    ]
+  },
+  {
+    "id": "case-111",
+    "current_memo": "메신저를 잠깐 확인했을 뿐인데 이동 시간도 놓치고 원래 하려던 흐름도 끊겼다.",
+    "expected_ids": [
+      "memo-001",
+      "memo-031",
+      "memo-066",
+      "memo-149",
+      "memo-232"
+    ]
+  },
+  {
+    "id": "case-112",
+    "current_memo": "주말에 크게 정리하겠다고 잡으면 또 안 하게 되니 작게 한 군데만 치우는 쪽이 낫다.",
+    "expected_ids": [
+      "memo-022",
+      "memo-053",
+      "memo-157",
+      "memo-223",
+      "memo-235"
+    ]
+  },
+  {
+    "id": "case-113",
+    "current_memo": "장보기나 냉장고 확인 같은 기록이 많아지면 생활 리듬이 어디서 새는지보다 무엇을 자주 관리하는지가 보인다.",
+    "expected_ids": [
+      "memo-236",
+      "memo-251",
+      "memo-266",
+      "memo-281",
+      "memo-296"
+    ]
+  },
+  {
+    "id": "case-114",
+    "current_memo": "집 안 물건 위치와 시선이 하루 집중을 은근히 바꾸는 것 같다.",
+    "expected_ids": [
+      "memo-237",
+      "memo-252",
+      "memo-267",
+      "memo-282",
+      "memo-297"
+    ]
+  },
+  {
+    "id": "case-115",
+    "current_memo": "이동이나 날씨 같은 작은 조건이 하루 일정의 체감 크기를 바꾼다.",
+    "expected_ids": [
+      "memo-238",
+      "memo-253",
+      "memo-268",
+      "memo-283",
+      "memo-298"
+    ]
+  },
+  {
+    "id": "case-116",
+    "current_memo": "물, 잠, 산책 같은 몸 루틴이 감정보다 먼저 하루 톤을 결정할 때가 있다.",
+    "expected_ids": [
+      "memo-239",
+      "memo-254",
+      "memo-269",
+      "memo-284",
+      "memo-299"
+    ]
+  },
+  {
+    "id": "case-117",
+    "current_memo": "날씨와 감각은 별일 아닌 것 같아도 그날 판단의 배경으로 오래 남는다.",
+    "expected_ids": [
+      "memo-240",
+      "memo-255",
+      "memo-270",
+      "memo-285",
+      "memo-300"
+    ]
+  },
+  {
+    "id": "case-118",
+    "current_memo": "짧은 대화나 작은 친절이 하루의 결을 부드럽게 바꾸는 경우가 있다.",
+    "expected_ids": [
+      "memo-241",
+      "memo-256",
+      "memo-271",
+      "memo-286",
+      "memo-301"
+    ]
+  },
+  {
+    "id": "case-119",
+    "current_memo": "사람들 앞에서 한 말과 나중에 혼자 정리한 생각 사이에 간격이 생긴다.",
+    "expected_ids": [
+      "memo-242",
+      "memo-257",
+      "memo-272",
+      "memo-287",
+      "memo-302"
+    ]
+  },
+  {
+    "id": "case-120",
+    "current_memo": "돈 기록은 단순 지출보다 선택 폭과 판단 모드가 어떻게 좁아지는지 보여준다.",
+    "expected_ids": [
+      "memo-243",
+      "memo-258",
+      "memo-273",
+      "memo-288",
+      "memo-303"
+    ]
+  },
+  {
+    "id": "case-121",
+    "current_memo": "읽다 남긴 문장은 나중에 내 판단 흐름을 다시 비춰주는 근거가 된다.",
+    "expected_ids": [
+      "memo-244",
+      "memo-259",
+      "memo-274",
+      "memo-289",
+      "memo-304"
+    ]
+  },
+  {
+    "id": "case-122",
+    "current_memo": "KEO는 일상 메모를 전부 심리 분석하지 않고 가볍게 연결하는 감각이 필요하다.",
+    "expected_ids": [
+      "memo-245",
+      "memo-260",
+      "memo-275",
+      "memo-290",
+      "memo-305"
+    ]
+  },
+  {
+    "id": "case-123",
+    "current_memo": "패턴은 큰 사건보다 자주 등장하는 사소한 생활 문장 사이에서 보일 때가 많다.",
+    "expected_ids": [
+      "memo-246",
+      "memo-261",
+      "memo-276",
+      "memo-291",
+      "memo-306"
+    ]
+  },
+  {
+    "id": "case-124",
+    "current_memo": "계획 메모는 의지를 다지는 말보다 하루 배치를 확인하는 기록에 가깝다.",
+    "expected_ids": [
+      "memo-247",
+      "memo-262",
+      "memo-277",
+      "memo-292",
+      "memo-307"
+    ]
+  },
+  {
+    "id": "case-125",
+    "current_memo": "업무량보다 요청과 알림의 방향이 많을 때 생각이 얇아진다.",
+    "expected_ids": [
+      "memo-248",
+      "memo-263",
+      "memo-278",
+      "memo-293",
+      "memo-308"
+    ]
+  },
+  {
+    "id": "case-126",
+    "current_memo": "장소는 사건을 자세히 적지 않아도 예전의 판단과 시간을 다시 불러온다.",
+    "expected_ids": [
+      "memo-249",
+      "memo-264",
+      "memo-279",
+      "memo-294",
+      "memo-309"
+    ]
+  },
+  {
+    "id": "case-127",
+    "current_memo": "생활 유지 작업은 티가 덜 나도 다음 행동의 마찰을 줄여준다.",
+    "expected_ids": [
+      "memo-250",
+      "memo-265",
+      "memo-280",
+      "memo-295",
+      "memo-310"
+    ]
+  },
+  {
+    "id": "case-128",
+    "current_memo": "같은 생활 메모라도 저장 직후에는 분석보다 나중에 다시 연결될 수 있다는 감각이 중요하다.",
+    "expected_ids": [
+      "memo-245",
+      "memo-275",
+      "memo-305",
+      "memo-335",
+      "memo-365"
+    ]
+  },
+  {
+    "id": "case-129",
+    "current_memo": "공간이 정리되면 의욕이 커진다기보다 시선이 덜 끊긴다.",
+    "expected_ids": [
+      "memo-252",
+      "memo-282",
+      "memo-312",
+      "memo-342",
+      "memo-372"
+    ]
+  },
+  {
+    "id": "case-130",
+    "current_memo": "가벼운 관계 기록은 대화 내용보다 몸에 남은 느낌을 더 잘 보여준다.",
+    "expected_ids": [
+      "memo-256",
+      "memo-286",
+      "memo-316",
+      "memo-346",
+      "memo-376"
+    ]
+  },
+  {
+    "id": "case-131",
+    "current_memo": "건강 루틴 메모는 극적인 감정보다 반복 조건을 조용히 보여준다.",
+    "expected_ids": [
+      "memo-269",
+      "memo-299",
+      "memo-329",
+      "memo-359",
+      "memo-389"
+    ]
+  },
+  {
+    "id": "case-132",
+    "current_memo": "업무 중 전환이 잦으면 끝난 일은 있어도 중심이 약하게 남는다.",
+    "expected_ids": [
+      "memo-278",
+      "memo-308",
+      "memo-338",
+      "memo-368",
+      "memo-398"
+    ]
+  },
+  {
+    "id": "case-133",
+    "current_memo": "소비 기록은 후회보다 그 뒤에 켜지는 계산 모드를 보는 데 쓸모 있다.",
+    "expected_ids": [
+      "memo-273",
+      "memo-303",
+      "memo-333",
+      "memo-363",
+      "memo-393"
+    ]
+  },
+  {
+    "id": "case-134",
+    "current_memo": "장소와 날씨 메모는 하루 감정의 배경값처럼 나중에 같이 읽혀야 한다.",
+    "expected_ids": [
+      "memo-285",
+      "memo-294",
+      "memo-315",
+      "memo-324",
+      "memo-345"
+    ]
+  },
+  {
+    "id": "case-135",
+    "current_memo": "계획은 크게 잡는 것보다 일정과 에너지의 배치를 확인하는 쪽이 더 현실적이다.",
+    "expected_ids": [
+      "memo-292",
+      "memo-322",
+      "memo-352",
+      "memo-382",
+      "memo-412"
+    ]
+  },
+  {
+    "id": "case-136",
+    "current_memo": "자주 등장하는 물건과 공간 기록이 한 사람의 생활 조건을 설명한다.",
+    "expected_ids": [
+      "memo-296",
+      "memo-297",
+      "memo-326",
+      "memo-327",
+      "memo-356"
+    ]
+  },
+  {
+    "id": "case-137",
+    "current_memo": "앱이 memory node를 정답처럼 말하기보다 가설처럼 보여줘야 한다.",
+    "expected_ids": [
+      "memo-290",
+      "memo-320",
+      "memo-350",
+      "memo-380",
+      "memo-410"
+    ]
+  },
+  {
+    "id": "case-138",
+    "current_memo": "반복 패턴을 볼 때 같은 단어보다 비슷한 순서와 조건을 보는 편이 낫다.",
+    "expected_ids": [
+      "memo-291",
+      "memo-321",
+      "memo-351",
+      "memo-381",
+      "memo-411"
+    ]
+  },
+  {
+    "id": "case-139",
+    "current_memo": "몸 루틴과 공간 정리는 감정 기록 없이도 하루가 부드러워지는 조건을 보여준다.",
+    "expected_ids": [
+      "memo-280",
+      "memo-299",
+      "memo-310",
+      "memo-340",
+      "memo-370"
+    ]
+  },
+  {
+    "id": "case-140",
+    "current_memo": "사람 앞의 나와 혼자 남은 뒤의 내가 다르게 정리되는 경우가 반복된다.",
+    "expected_ids": [
+      "memo-302",
+      "memo-317",
+      "memo-332",
+      "memo-347",
+      "memo-362"
+    ]
+  },
+  {
+    "id": "case-141",
+    "current_memo": "가볍게 남긴 일상 기록도 나중에 제품적으로는 중요한 evidence가 될 수 있다.",
+    "expected_ids": [
+      "memo-305",
+      "memo-335",
+      "memo-365",
+      "memo-395",
+      "memo-425"
+    ]
+  },
+  {
+    "id": "case-142",
+    "current_memo": "문장과 장소가 이어질 때 사건보다 오래 남는 회고 단서가 된다.",
+    "expected_ids": [
+      "memo-304",
+      "memo-309",
+      "memo-334",
+      "memo-339",
+      "memo-364"
+    ]
   }
 ]
