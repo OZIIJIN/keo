@@ -1,600 +1,2858 @@
 [
   {
     "id": "case-001",
-    "current_memo": "오늘 헬스장 갔다. 하체 운동 위주로 했다.",
+    "current_memo": "알림이나 대응 몇 번만 섞여도 하루 집중 줄이 금방 끊긴다.",
     "expected_ids": [
-      "clean-001",
-      "clean-011",
-      "clean-026",
-      "clean-034",
-      "clean-048",
-      "clean-061",
-      "clean-073",
-      "clean-081",
-      "clean-092",
-      "noisy-001",
-      "noisy-007",
-      "noisy-023",
-      "noisy-031",
-      "noisy-044",
-      "noisy-056",
-      "noisy-062",
-      "noisy-072",
-      "noisy-078",
-      "noisy-082",
-      "noisy-087"
+      "memo-001",
+      "memo-002",
+      "memo-003",
+      "memo-008"
     ]
   },
   {
     "id": "case-002",
-    "current_memo": "점심에 냉면 먹었다. 더운 날씨에 딱이었다.",
+    "current_memo": "큰일을 안 한 건 아닌데 하루가 한 덩어리로 안 느껴진다.",
     "expected_ids": [
-      "clean-012",
-      "clean-037",
-      "clean-062",
-      "noisy-001",
-      "noisy-005",
-      "noisy-008",
-      "noisy-022",
-      "noisy-030",
-      "noisy-039",
-      "noisy-057",
-      "noisy-067",
-      "noisy-088",
-      "noisy-098"
+      "memo-005",
+      "memo-006",
+      "memo-008",
+      "memo-009"
     ]
   },
   {
     "id": "case-003",
-    "current_memo": "두통이 심해서 오후에 집중이 안 됐다.",
+    "current_memo": "조용히 앉아는 있었는데 손이 자꾸 다른 쪽으로 샌 날.",
     "expected_ids": [
-      "clean-004",
-      "clean-032",
-      "clean-052",
-      "clean-068",
-      "clean-079",
-      "clean-091",
-      "clean-100",
-      "noisy-002",
-      "noisy-009",
-      "noisy-011",
-      "noisy-023",
-      "noisy-027",
-      "noisy-036",
-      "noisy-048",
-      "noisy-063",
-      "noisy-064",
-      "noisy-071",
-      "noisy-075",
-      "noisy-083",
-      "noisy-085",
-      "noisy-089",
-      "noisy-094"
+      "memo-002",
+      "memo-004",
+      "memo-009",
+      "memo-010"
     ]
   },
   {
     "id": "case-004",
-    "current_memo": "재택근무인데 오전에 집중이 잘 됐다.",
+    "current_memo": "바빴다기보다 자잘한 반응이 계속 흐름을 잘랐다.",
     "expected_ids": [
-      "clean-003",
-      "clean-030",
-      "clean-051",
-      "clean-063",
-      "clean-077",
-      "clean-087",
-      "clean-099",
-      "noisy-002",
-      "noisy-008",
-      "noisy-017",
-      "noisy-018",
-      "noisy-021",
-      "noisy-025",
-      "noisy-029",
-      "noisy-037",
-      "noisy-047",
-      "noisy-058",
-      "noisy-061",
-      "noisy-073",
-      "noisy-082",
-      "noisy-086",
-      "noisy-091",
-      "noisy-096"
+      "memo-001",
+      "memo-003",
+      "memo-006",
+      "memo-007"
     ]
   },
   {
     "id": "case-005",
-    "current_memo": "카페에서 작업했다. 집보다 집중이 잘 된다.",
+    "current_memo": "산만함이 시끄러움보다 전환이 많아서 생기는 느낌이다.",
     "expected_ids": [
-      "clean-010",
-      "clean-022",
-      "clean-041",
-      "clean-057",
-      "clean-070",
-      "clean-083",
-      "clean-088",
-      "noisy-016",
-      "noisy-020",
-      "noisy-024",
-      "noisy-028",
-      "noisy-030",
-      "noisy-038",
-      "noisy-059",
-      "noisy-065",
-      "noisy-074",
-      "noisy-076",
-      "noisy-085",
-      "noisy-090",
-      "noisy-095"
+      "memo-006",
+      "memo-007",
+      "memo-009"
     ]
   },
   {
     "id": "case-006",
-    "current_memo": "또 야근했다. 11시에 퇴근.",
+    "current_memo": "알림이나 대응 몇 번만 섞여도 하루 집중 줄이 금방 끊긴다 같은 흐름이 또 보인다.",
     "expected_ids": [
-      "clean-009",
-      "clean-029",
-      "clean-046",
-      "clean-066",
-      "clean-076",
-      "clean-089",
-      "noisy-004",
-      "noisy-006",
-      "noisy-026",
-      "noisy-033",
-      "noisy-046",
-      "noisy-047",
-      "noisy-066",
-      "noisy-081",
-      "noisy-087",
-      "noisy-091",
-      "noisy-095"
+      "memo-001",
+      "memo-002",
+      "memo-003",
+      "memo-008"
     ]
   },
   {
     "id": "case-007",
-    "current_memo": "아침 달리기 나갔다. 30분 뛰었다.",
+    "current_memo": "캘린더에 짧게 적힌 일정인데 실제론 하루 결 전체를 바꾼다.",
     "expected_ids": [
-      "clean-005",
-      "clean-017",
-      "clean-028",
-      "clean-039",
-      "clean-064",
-      "clean-075",
-      "clean-085",
-      "clean-097",
-      "noisy-003",
-      "noisy-012",
-      "noisy-020",
-      "noisy-024",
-      "noisy-027",
-      "noisy-035",
-      "noisy-050",
-      "noisy-060",
-      "noisy-070",
-      "noisy-080",
-      "noisy-083",
-      "noisy-086",
-      "noisy-093"
+      "memo-011",
+      "memo-012",
+      "memo-013",
+      "memo-018"
     ]
   },
   {
     "id": "case-008",
-    "current_memo": "잠을 제대로 못 잔 것 같다. 오전 내내 멍했다.",
+    "current_memo": "회의나 외출은 앞뒤 준비까지 포함해서 에너지를 잡아먹는다.",
     "expected_ids": [
-      "clean-015",
-      "clean-025",
-      "clean-045",
-      "clean-060",
-      "clean-067",
-      "clean-092",
-      "noisy-013",
-      "noisy-032",
-      "noisy-034",
-      "noisy-042",
-      "noisy-057",
-      "noisy-064",
-      "noisy-071",
-      "noisy-075",
-      "noisy-084",
-      "noisy-085",
-      "noisy-089",
-      "noisy-099"
+      "memo-011",
+      "memo-014",
+      "memo-019"
     ]
   },
   {
     "id": "case-009",
-    "current_memo": "주말에 청소했다. 해놓고 나니까 개운하다.",
+    "current_memo": "일정 전후 메모를 같이 봐야 내 패턴이 더 잘 보일 것 같다.",
     "expected_ids": [
-      "clean-006",
-      "clean-023",
-      "clean-043",
-      "clean-057",
-      "clean-072",
-      "clean-082",
-      "clean-096",
-      "noisy-019",
-      "noisy-038",
-      "noisy-043",
-      "noisy-053",
-      "noisy-065",
-      "noisy-075",
-      "noisy-082",
-      "noisy-083",
-      "noisy-092"
+      "memo-015",
+      "memo-017",
+      "memo-020"
     ]
   },
   {
     "id": "case-010",
-    "current_memo": "커피를 너무 많이 마셔서 오후에 심장이 두근거렸다.",
+    "current_memo": "생활 일정은 사소해 보여도 일 리듬을 자주 흔든다.",
     "expected_ids": [
-      "clean-019",
-      "clean-059",
-      "noisy-010",
-      "noisy-031",
-      "noisy-041",
-      "noisy-054",
-      "noisy-057",
-      "noisy-079",
-      "noisy-097"
+      "memo-013",
+      "memo-016",
+      "memo-018",
+      "memo-020"
     ]
   },
   {
     "id": "case-011",
-    "current_memo": "헬스장 PT 받았다. 무게를 올렸다.",
+    "current_memo": "시간은 남아 있는데 이미 흐름이 꺾여서 다시 들어가기 어렵다.",
     "expected_ids": [
-      "clean-020",
-      "clean-026",
-      "clean-035",
-      "clean-053",
-      "clean-073",
-      "clean-081",
-      "noisy-001",
-      "noisy-007",
-      "noisy-044",
-      "noisy-045",
-      "noisy-055",
-      "noisy-077",
-      "noisy-087",
-      "noisy-097"
+      "memo-012",
+      "memo-013",
+      "memo-019"
     ]
   },
   {
     "id": "case-012",
-    "current_memo": "마트 장 봤다. 여름이라 과일 위주로 샀다.",
+    "current_memo": "캘린더에 짧게 적힌 일정인데 실제론 하루 결 전체를 바꾼다 같은 흐름이 또 보인다.",
     "expected_ids": [
-      "clean-007",
-      "clean-024",
-      "clean-038",
-      "clean-068",
-      "clean-087",
-      "noisy-019",
-      "noisy-046",
-      "noisy-053",
-      "noisy-058",
-      "noisy-065",
-      "noisy-074",
-      "noisy-090",
-      "noisy-100"
+      "memo-011",
+      "memo-012",
+      "memo-013",
+      "memo-018"
     ]
   },
   {
     "id": "case-013",
-    "current_memo": "친구 S랑 오랜만에 밥 먹었다.",
+    "current_memo": "중요한 건 아는데 시작 직전에서만 계속 맴도는 날.",
     "expected_ids": [
-      "clean-054",
-      "clean-065",
-      "clean-086",
-      "noisy-014",
-      "noisy-073",
-      "noisy-088"
+      "memo-021",
+      "memo-022",
+      "memo-025",
+      "memo-030"
     ]
   },
   {
     "id": "case-014",
-    "current_memo": "저녁에 혼자 요리했다. 점점 실력이 느는 것 같다.",
+    "current_memo": "첫 문장 쓰기 전 단계에서 괜히 오래 머문다.",
     "expected_ids": [
-      "clean-014",
-      "clean-042",
-      "clean-076",
-      "clean-097",
-      "noisy-067"
+      "memo-022",
+      "memo-023",
+      "memo-026",
+      "memo-027"
     ]
   },
   {
     "id": "case-015",
-    "current_memo": "책 읽었다. 오늘 두 챕터.",
+    "current_memo": "일을 모르는 게 아니라 착수 자체가 잘 안 붙는다.",
     "expected_ids": [
-      "clean-013",
-      "clean-033",
-      "clean-041",
-      "clean-047",
-      "clean-071",
-      "clean-085",
-      "clean-095",
-      "noisy-017",
-      "noisy-018",
-      "noisy-028",
-      "noisy-038",
-      "noisy-042",
-      "noisy-050",
-      "noisy-059",
-      "noisy-066",
-      "noisy-067",
-      "noisy-076",
-      "noisy-077",
-      "noisy-079",
-      "noisy-100"
+      "memo-025",
+      "memo-028",
+      "memo-029"
     ]
   },
   {
     "id": "case-016",
-    "current_memo": "동료 K랑 점심 먹으면서 결혼 준비 얘기 들었다.",
+    "current_memo": "시작 버튼 하나 누르는 게 유독 크게 느껴지는 날.",
     "expected_ids": [
-      "clean-069",
-      "clean-084",
-      "clean-096",
-      "noisy-015",
-      "noisy-030",
-      "noisy-080"
+      "memo-024",
+      "memo-027",
+      "memo-029",
+      "memo-030"
     ]
   },
   {
     "id": "case-017",
-    "current_memo": "발표가 있었는데 잘 됐다. 준비한 보람이 있었다.",
+    "current_memo": "본격적으로 하기 전에 서성이는 시간이 길다.",
     "expected_ids": [
-      "clean-024",
-      "clean-060",
-      "clean-090",
-      "noisy-007",
-      "noisy-021"
+      "memo-021",
+      "memo-026",
+      "memo-028",
+      "memo-030"
     ]
   },
   {
     "id": "case-018",
-    "current_memo": "회의가 연속으로 있어서 실질적으로 아무것도 못 했다.",
+    "current_memo": "중요한 건 아는데 시작 직전에서만 계속 맴도는 날 같은 흐름이 또 보인다.",
     "expected_ids": [
-      "clean-018",
-      "noisy-009",
-      "noisy-071"
+      "memo-021",
+      "memo-022",
+      "memo-025",
+      "memo-030"
     ]
   },
   {
     "id": "case-019",
-    "current_memo": "근육통이 있다. 어제 운동을 너무 세게 했나봐.",
+    "current_memo": "초안만 쓰면 되는데 자꾸 자료 정리나 폴더 정리부터 한다.",
     "expected_ids": [
-      "clean-021",
-      "noisy-012",
-      "noisy-068"
+      "memo-031",
+      "memo-033",
+      "memo-038",
+      "memo-039"
     ]
   },
   {
     "id": "case-020",
-    "current_memo": "사이드 프로젝트 진도가 나갔다. 뭔가 만들어지는 게 보인다.",
+    "current_memo": "바쁜 척은 했는데 핵심 작업은 결국 안 건드렸다.",
     "expected_ids": [
-      "clean-022",
-      "clean-057",
-      "clean-083",
-      "clean-088"
+      "memo-032",
+      "memo-034",
+      "memo-036",
+      "memo-040"
     ]
   },
   {
     "id": "case-021",
-    "current_memo": "수면이 부족한 날이 이어진다. 생활 리듬이 어긋난 것 같다.",
+    "current_memo": "만만한 일은 했는데 제일 중요한 건 그대로 남아 있다.",
     "expected_ids": [
-      "clean-015",
-      "clean-025",
-      "clean-044",
-      "clean-060",
-      "clean-067",
-      "clean-092",
-      "noisy-010",
-      "noisy-013",
-      "noisy-032",
-      "noisy-034",
-      "noisy-042",
-      "noisy-075",
-      "noisy-085",
-      "noisy-089",
-      "noisy-095",
-      "noisy-099"
+      "memo-034",
+      "memo-035",
+      "memo-039",
+      "memo-040"
     ]
   },
   {
     "id": "case-022",
-    "current_memo": "저녁 커피 마시면 잠이 안 온다는 걸 알면서 또 마셨다.",
+    "current_memo": "준비나 조사로 새면서 실제 시작은 계속 뒤로 밀린다.",
     "expected_ids": [
-      "clean-019",
-      "clean-059",
-      "noisy-010",
-      "noisy-041",
-      "noisy-042",
-      "noisy-057",
-      "noisy-071",
-      "noisy-079"
+      "memo-033",
+      "memo-037",
+      "memo-038"
     ]
   },
   {
     "id": "case-023",
-    "current_memo": "아침 달리기는 일찍 나가야 한다. 6시가 딱 좋다.",
+    "current_memo": "안전한 일만 골라 쥐는 날은 성실한데도 찜찜하다.",
     "expected_ids": [
-      "clean-028",
-      "clean-075",
-      "clean-085",
-      "noisy-020",
-      "noisy-086"
+      "memo-035",
+      "memo-036",
+      "memo-039",
+      "memo-040"
     ]
   },
   {
     "id": "case-024",
-    "current_memo": "두통이 이번 달만 세 번째다. 병원 가봐야 할 것 같다.",
+    "current_memo": "초안만 쓰면 되는데 자꾸 자료 정리나 폴더 정리부터 한다 같은 흐름이 또 보인다.",
     "expected_ids": [
-      "clean-004",
-      "clean-032",
-      "clean-052",
-      "clean-068",
-      "clean-079",
-      "clean-091",
-      "clean-100",
-      "noisy-002",
-      "noisy-009",
-      "noisy-011",
-      "noisy-023",
-      "noisy-027",
-      "noisy-036",
-      "noisy-048",
-      "noisy-064",
-      "noisy-071",
-      "noisy-075",
-      "noisy-083",
-      "noisy-085",
-      "noisy-094"
+      "memo-031",
+      "memo-033",
+      "memo-038",
+      "memo-039"
     ]
   },
   {
     "id": "case-025",
-    "current_memo": "잠을 충분히 잤더니 오전 집중력이 달랐다.",
+    "current_memo": "쉬어도 쉬는 느낌이 안 나고 자꾸 작은 일을 붙잡게 된다.",
     "expected_ids": [
-      "clean-025",
-      "clean-060",
-      "noisy-013",
-      "noisy-064"
+      "memo-041",
+      "memo-042",
+      "memo-045",
+      "memo-048"
     ]
   },
   {
     "id": "case-026",
-    "current_memo": "국밥 또 먹었다. 결국 또 거기 가게 됐다.",
+    "current_memo": "휴식이 회복보다 손실처럼 느껴지는 쪽에 가깝다.",
     "expected_ids": [
-      "clean-002",
-      "clean-047",
-      "clean-063",
-      "noisy-003",
-      "noisy-008",
-      "noisy-022",
-      "noisy-026",
-      "noisy-033",
-      "noisy-049"
+      "memo-043",
+      "memo-044",
+      "memo-049",
+      "memo-050"
     ]
   },
   {
     "id": "case-027",
-    "current_memo": "운동하고 나면 기분이 좋아진다. 가기 싫어도 가야 하는 이유.",
+    "current_memo": "몸은 멈췄는데 마음은 계속 다음 일을 찾는다.",
     "expected_ids": [
-      "clean-001",
-      "clean-011",
-      "clean-026",
-      "clean-034",
-      "clean-048",
-      "clean-061",
-      "noisy-023",
-      "noisy-062",
-      "noisy-072",
-      "noisy-087"
+      "memo-043",
+      "memo-047",
+      "memo-048",
+      "memo-050"
     ]
   },
   {
     "id": "case-028",
-    "current_memo": "두통이 있었는데 달리기 나갔더니 나아졌다.",
+    "current_memo": "오늘은 안 하긴 했는데 제대로 쉰 것도 아닌 애매한 날.",
     "expected_ids": [
-      "noisy-027",
-      "noisy-070"
+      "memo-042",
+      "memo-045",
+      "memo-046"
     ]
   },
   {
     "id": "case-029",
-    "current_memo": "재택 중에 오전은 집중 잘 됐는데 오후에 나른해졌다.",
+    "current_memo": "멈추면 괜히 불안해져서 확인성 행동만 늘어난다.",
     "expected_ids": [
-      "clean-003",
-      "clean-030",
-      "clean-051",
-      "clean-063",
-      "clean-077",
-      "clean-099",
-      "noisy-008",
-      "noisy-018",
-      "noisy-029",
-      "noisy-037",
-      "noisy-058",
-      "noisy-073",
-      "noisy-082",
-      "noisy-091"
+      "memo-041",
+      "memo-047",
+      "memo-049",
+      "memo-050"
     ]
   },
   {
     "id": "case-030",
-    "current_memo": "달리기 후에 집중이 잘 되는 것 같다.",
+    "current_memo": "쉬어도 쉬는 느낌이 안 나고 자꾸 작은 일을 붙잡게 된다 같은 흐름이 또 보인다.",
     "expected_ids": [
-      "clean-005",
-      "clean-017",
-      "clean-039",
-      "clean-064",
-      "clean-098",
-      "noisy-020",
-      "noisy-070",
-      "noisy-080",
-      "noisy-086"
+      "memo-041",
+      "memo-042",
+      "memo-045",
+      "memo-048"
     ]
   },
   {
     "id": "case-031",
-    "current_memo": "카페에서 책 읽었다. 집중이 잘 됐다.",
+    "current_memo": "몸이 먼저 퍼지면 의욕 문제가 아니라 리듬 전체가 약해진다.",
     "expected_ids": [
-      "clean-041",
-      "noisy-016",
-      "noisy-018",
-      "noisy-028",
-      "noisy-059",
-      "noisy-067",
-      "noisy-076",
-      "noisy-085"
+      "memo-051",
+      "memo-055",
+      "memo-058",
+      "memo-060"
     ]
   },
   {
     "id": "case-032",
-    "current_memo": "부모님 뵈러 갔다. 집밥 먹었다.",
+    "current_memo": "잠이나 체력 영향이 생각보다 판단에 바로 붙는 날이 있다.",
     "expected_ids": [
-      "clean-016",
-      "clean-075"
+      "memo-052",
+      "memo-056",
+      "memo-057"
     ]
   },
   {
     "id": "case-033",
-    "current_memo": "헬스장 가기 싫었는데 두통 때문에 포기했다.",
+    "current_memo": "컨디션이 안 좋은 날은 계획보다 생존 쪽으로 기울게 된다.",
     "expected_ids": [
-      "noisy-011",
-      "noisy-023",
-      "clean-052"
+      "memo-053",
+      "memo-054",
+      "memo-059"
     ]
   },
   {
     "id": "case-034",
-    "current_memo": "야근하고 집에 와서 간단하게 먹고 잠들었다.",
+    "current_memo": "마음보다 몸 상태가 하루 톤을 먼저 정하는 느낌.",
     "expected_ids": [
-      "clean-009",
-      "clean-029",
-      "clean-046",
-      "clean-066",
-      "clean-076",
-      "clean-089",
-      "noisy-006",
-      "noisy-026",
-      "noisy-033",
-      "noisy-047",
-      "noisy-081",
-      "noisy-091",
-      "noisy-095"
+      "memo-051",
+      "memo-057",
+      "memo-058"
     ]
   },
   {
     "id": "case-035",
-    "current_memo": "회의 취소됐다. 그 시간에 혼자 작업했더니 많이 했다.",
+    "current_memo": "피곤하면 자책보다 구조를 줄여야 맞는 날이 있다.",
     "expected_ids": [
-      "clean-077",
-      "clean-087",
-      "clean-099",
-      "noisy-025",
-      "noisy-029",
-      "noisy-091",
-      "noisy-096"
+      "memo-055",
+      "memo-059",
+      "memo-060"
+    ]
+  },
+  {
+    "id": "case-036",
+    "current_memo": "몸이 먼저 퍼지면 의욕 문제가 아니라 리듬 전체가 약해진다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-051",
+      "memo-055",
+      "memo-058",
+      "memo-060"
+    ]
+  },
+  {
+    "id": "case-037",
+    "current_memo": "짧게 쉬고 나면 다시 사람 되는 느낌이 드는 날이 있다.",
+    "expected_ids": [
+      "memo-061",
+      "memo-062",
+      "memo-068",
+      "memo-070"
+    ]
+  },
+  {
+    "id": "case-038",
+    "current_memo": "전환 하나 잘 주면 흐름을 다시 붙일 수 있을 때가 있다.",
+    "expected_ids": [
+      "memo-063",
+      "memo-066",
+      "memo-067",
+      "memo-069"
+    ]
+  },
+  {
+    "id": "case-039",
+    "current_memo": "잠깐 걷거나 밖에 나갔다 오는 게 생각보다 하루를 살린다.",
+    "expected_ids": [
+      "memo-061",
+      "memo-064",
+      "memo-065",
+      "memo-068"
+    ]
+  },
+  {
+    "id": "case-040",
+    "current_memo": "짧은 회복이 남은 시간의 결을 바꾸는 날.",
+    "expected_ids": [
+      "memo-062",
+      "memo-069",
+      "memo-070"
+    ]
+  },
+  {
+    "id": "case-041",
+    "current_memo": "환경을 바꾸는 것만으로도 판단 톤이 덜 거칠어질 수 있다.",
+    "expected_ids": [
+      "memo-065",
+      "memo-067",
+      "memo-068"
+    ]
+  },
+  {
+    "id": "case-042",
+    "current_memo": "짧게 쉬고 나면 다시 사람 되는 느낌이 드는 날이 있다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-061",
+      "memo-062",
+      "memo-068",
+      "memo-070"
+    ]
+  },
+  {
+    "id": "case-043",
+    "current_memo": "사람 만나고 나면 겉으로 보인 나랑 실제 속 상태가 좀 어긋난다.",
+    "expected_ids": [
+      "memo-071",
+      "memo-072",
+      "memo-076",
+      "memo-079"
+    ]
+  },
+  {
+    "id": "case-044",
+    "current_memo": "말은 많이 했는데 정작 내 진짜 생각은 거의 안 남겼다.",
+    "expected_ids": [
+      "memo-072",
+      "memo-074",
+      "memo-079",
+      "memo-080"
+    ]
+  },
+  {
+    "id": "case-045",
+    "current_memo": "밖에선 괜찮았는데 혼자 오면 힘이 확 빠지는 날.",
+    "expected_ids": [
+      "memo-071",
+      "memo-073",
+      "memo-077",
+      "memo-078"
+    ]
+  },
+  {
+    "id": "case-046",
+    "current_memo": "관계보다 대응 모드가 길어져서 피곤한 느낌이다.",
+    "expected_ids": [
+      "memo-075",
+      "memo-078",
+      "memo-080"
+    ]
+  },
+  {
+    "id": "case-047",
+    "current_memo": "남들 앞의 나와 혼자 있을 때의 내가 꽤 다르게 느껴진다.",
+    "expected_ids": [
+      "memo-073",
+      "memo-076",
+      "memo-077"
+    ]
+  },
+  {
+    "id": "case-048",
+    "current_memo": "사람 만나고 나면 겉으로 보인 나랑 실제 속 상태가 좀 어긋난다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-071",
+      "memo-072",
+      "memo-076",
+      "memo-079"
+    ]
+  },
+  {
+    "id": "case-049",
+    "current_memo": "관계에서 조금 따뜻한 연결이 생기면 이상하게 긴장이 풀린다.",
+    "expected_ids": [
+      "memo-081",
+      "memo-083",
+      "memo-088",
+      "memo-090"
+    ]
+  },
+  {
+    "id": "case-050",
+    "current_memo": "짧은 안부나 응원 하나가 하루 톤을 덜 거칠게 만든다.",
+    "expected_ids": [
+      "memo-082",
+      "memo-084",
+      "memo-089",
+      "memo-090"
+    ]
+  },
+  {
+    "id": "case-051",
+    "current_memo": "사람 때문에 지치는 날만 있는 건 아니라는 느낌이 들 때가 있다.",
+    "expected_ids": [
+      "memo-085",
+      "memo-086",
+      "memo-087"
+    ]
+  },
+  {
+    "id": "case-052",
+    "current_memo": "편한 대화 한 번이 혼자 있는 시간의 결도 바꿔준다.",
+    "expected_ids": [
+      "memo-081",
+      "memo-087",
+      "memo-088"
+    ]
+  },
+  {
+    "id": "case-053",
+    "current_memo": "문제가 풀리진 않아도 따뜻함이 하루의 톤은 바꿀 수 있다.",
+    "expected_ids": [
+      "memo-084",
+      "memo-089",
+      "memo-090"
+    ]
+  },
+  {
+    "id": "case-054",
+    "current_memo": "관계에서 조금 따뜻한 연결이 생기면 이상하게 긴장이 풀린다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-081",
+      "memo-083",
+      "memo-088",
+      "memo-090"
+    ]
+  },
+  {
+    "id": "case-055",
+    "current_memo": "잔액이나 지출 생각이 켜지면 중요한 일보다 불안부터 줄이고 싶어진다.",
+    "expected_ids": [
+      "memo-091",
+      "memo-092",
+      "memo-095",
+      "memo-100"
+    ]
+  },
+  {
+    "id": "case-056",
+    "current_memo": "돈 문제는 금액보다 마음의 여유를 먼저 줄인다.",
+    "expected_ids": [
+      "memo-094",
+      "memo-096",
+      "memo-098",
+      "memo-100"
+    ]
+  },
+  {
+    "id": "case-057",
+    "current_memo": "지출 확인 한 번이 집중이나 판단 폭까지 같이 좁힌다.",
+    "expected_ids": [
+      "memo-091",
+      "memo-093",
+      "memo-097",
+      "memo-099"
+    ]
+  },
+  {
+    "id": "case-058",
+    "current_memo": "예산 생각이 올라오면 선택이 전반적으로 방어적으로 된다.",
+    "expected_ids": [
+      "memo-092",
+      "memo-095",
+      "memo-096"
+    ]
+  },
+  {
+    "id": "case-059",
+    "current_memo": "숫자보다 긴장 톤이 오래 남는 날이 있다.",
+    "expected_ids": [
+      "memo-093",
+      "memo-098",
+      "memo-099"
+    ]
+  },
+  {
+    "id": "case-060",
+    "current_memo": "잔액이나 지출 생각이 켜지면 중요한 일보다 불안부터 줄이고 싶어진다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-091",
+      "memo-092",
+      "memo-095",
+      "memo-100"
+    ]
+  },
+  {
+    "id": "case-061",
+    "current_memo": "작은 생활 일이 밀릴수록 하루 끝에 찝찝함이 길게 남는다.",
+    "expected_ids": [
+      "memo-101",
+      "memo-102",
+      "memo-108",
+      "memo-110"
+    ]
+  },
+  {
+    "id": "case-062",
+    "current_memo": "시간은 조금이면 되는데 늘 마지막까지 미루게 되는 일들이 있다.",
+    "expected_ids": [
+      "memo-101",
+      "memo-104",
+      "memo-106"
+    ]
+  },
+  {
+    "id": "case-063",
+    "current_memo": "사소한 생활 관리 일이 자존감까지 건드리는 날이 있다.",
+    "expected_ids": [
+      "memo-105",
+      "memo-107",
+      "memo-109"
+    ]
+  },
+  {
+    "id": "case-064",
+    "current_memo": "별일 아닌데 끝나지 않아서 계속 마음 한쪽을 점유한다.",
+    "expected_ids": [
+      "memo-102",
+      "memo-103",
+      "memo-108",
+      "memo-110"
+    ]
+  },
+  {
+    "id": "case-065",
+    "current_memo": "자잘한 일들이 쌓이면 내가 느슨해진 사람처럼 느껴진다.",
+    "expected_ids": [
+      "memo-105",
+      "memo-107",
+      "memo-109"
+    ]
+  },
+  {
+    "id": "case-066",
+    "current_memo": "작은 생활 일이 밀릴수록 하루 끝에 찝찝함이 길게 남는다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-101",
+      "memo-102",
+      "memo-108",
+      "memo-110"
+    ]
+  },
+  {
+    "id": "case-067",
+    "current_memo": "작게라도 하나 끝내고 나면 하루가 덜 헛돈다.",
+    "expected_ids": [
+      "memo-111",
+      "memo-113",
+      "memo-117",
+      "memo-120"
+    ]
+  },
+  {
+    "id": "case-068",
+    "current_memo": "대단한 건 없어도 내 리듬대로 갔다는 느낌이 있다.",
+    "expected_ids": [
+      "memo-112",
+      "memo-116",
+      "memo-118",
+      "memo-119"
+    ]
+  },
+  {
+    "id": "case-069",
+    "current_memo": "속도보다 방향을 안 잃고 간 날의 안정감이 있다.",
+    "expected_ids": [
+      "memo-114",
+      "memo-115",
+      "memo-118"
+    ]
+  },
+  {
+    "id": "case-070",
+    "current_memo": "작은 완료 하나가 하루 전체를 묶어주는 느낌.",
+    "expected_ids": [
+      "memo-111",
+      "memo-117",
+      "memo-120"
+    ]
+  },
+  {
+    "id": "case-071",
+    "current_memo": "많이 하진 못했어도 중심이 있는 날이 있다.",
+    "expected_ids": [
+      "memo-112",
+      "memo-116",
+      "memo-119"
+    ]
+  },
+  {
+    "id": "case-072",
+    "current_memo": "작게라도 하나 끝내고 나면 하루가 덜 헛돈다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-111",
+      "memo-113",
+      "memo-117",
+      "memo-120"
+    ]
+  },
+  {
+    "id": "case-073",
+    "current_memo": "계속 비슷한 방식으로 막힌다는 걸 알아차리는 순간이 중요하다.",
+    "expected_ids": [
+      "memo-121",
+      "memo-122",
+      "memo-128",
+      "memo-130"
+    ]
+  },
+  {
+    "id": "case-074",
+    "current_memo": "상황보다 반응 순서가 비슷하게 반복되는 느낌이다.",
+    "expected_ids": [
+      "memo-121",
+      "memo-124",
+      "memo-125",
+      "memo-129"
+    ]
+  },
+  {
+    "id": "case-075",
+    "current_memo": "또 같은 패턴이라는 걸 보면 자책보다 구조를 봐야 할 것 같다.",
+    "expected_ids": [
+      "memo-126",
+      "memo-127",
+      "memo-130"
+    ]
+  },
+  {
+    "id": "case-076",
+    "current_memo": "다른 사건 같아도 메모들을 다시 보면 비슷한 냄새가 난다.",
+    "expected_ids": [
+      "memo-123",
+      "memo-127",
+      "memo-129"
+    ]
+  },
+  {
+    "id": "case-077",
+    "current_memo": "막히는 위치가 늘 비슷하다는 게 중요한 단서다.",
+    "expected_ids": [
+      "memo-122",
+      "memo-125",
+      "memo-128"
+    ]
+  },
+  {
+    "id": "case-078",
+    "current_memo": "계속 비슷한 방식으로 막힌다는 걸 알아차리는 순간이 중요하다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-121",
+      "memo-122",
+      "memo-128",
+      "memo-130"
+    ]
+  },
+  {
+    "id": "case-079",
+    "current_memo": "KEO는 감정만 모으는 게 아니라 생활 흐름과 실행 흔적도 같이 보여줘야 한다.",
+    "expected_ids": [
+      "memo-131",
+      "memo-132",
+      "memo-136",
+      "memo-140"
+    ]
+  },
+  {
+    "id": "case-080",
+    "current_memo": "생활 메모와 제품 아이디어가 따로가 아니라 한 사람의 흐름처럼 이어져야 한다.",
+    "expected_ids": [
+      "memo-132",
+      "memo-135",
+      "memo-140"
+    ]
+  },
+  {
+    "id": "case-081",
+    "current_memo": "추천이 맞더라도 왜 지금 이 메모가 나왔는지 설명이 있어야 설득된다.",
+    "expected_ids": [
+      "memo-133",
+      "memo-138"
+    ]
+  },
+  {
+    "id": "case-082",
+    "current_memo": "예전 다짐 자체보다 최근 반복 흐름을 먼저 보여주는 편이 덜 훈계 같다.",
+    "expected_ids": [
+      "memo-134",
+      "memo-136",
+      "memo-139"
+    ]
+  },
+  {
+    "id": "case-083",
+    "current_memo": "일정 전후 메모나 생활 패턴도 제품 안에서 회고 재료가 되어야 한다.",
+    "expected_ids": [
+      "memo-137",
+      "memo-139",
+      "memo-140"
+    ]
+  },
+  {
+    "id": "case-084",
+    "current_memo": "KEO는 감정만 모으는 게 아니라 생활 흐름과 실행 흔적도 같이 보여줘야 한다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-131",
+      "memo-132",
+      "memo-136",
+      "memo-140"
+    ]
+  },
+  {
+    "id": "case-085",
+    "current_memo": "자기이해는 기분 이름보다 반복되는 반응 순서를 보는 쪽에 가깝다.",
+    "expected_ids": [
+      "memo-141",
+      "memo-143",
+      "memo-144",
+      "memo-149"
+    ]
+  },
+  {
+    "id": "case-086",
+    "current_memo": "바쁨이 중요한 결정을 미루는 가장 그럴듯한 변명이 되는 순간이 있다.",
+    "expected_ids": [
+      "memo-142",
+      "memo-147"
+    ]
+  },
+  {
+    "id": "case-087",
+    "current_memo": "회복을 미루면 판단도 같이 흐려진다는 감각이 있다.",
+    "expected_ids": [
+      "memo-145",
+      "memo-150"
+    ]
+  },
+  {
+    "id": "case-088",
+    "current_memo": "작은 완료나 패턴 인식이 자기신뢰에 닿는다는 문장들.",
+    "expected_ids": [
+      "memo-146",
+      "memo-149"
+    ]
+  },
+  {
+    "id": "case-089",
+    "current_memo": "기록은 저장보다 나중에 다시 연결될 때 의미가 생긴다.",
+    "expected_ids": [
+      "memo-141",
+      "memo-148"
+    ]
+  },
+  {
+    "id": "case-090",
+    "current_memo": "자기이해는 기분 이름보다 반복되는 반응 순서를 보는 쪽에 가깝다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-141",
+      "memo-143",
+      "memo-144",
+      "memo-149"
+    ]
+  },
+  {
+    "id": "case-091",
+    "current_memo": "계획을 더 다듬기보다 바로 손대는 쪽이 필요한 날이다.",
+    "expected_ids": [
+      "memo-151",
+      "memo-152",
+      "memo-157",
+      "memo-159"
+    ]
+  },
+  {
+    "id": "case-092",
+    "current_memo": "준비보다 착수가 필요한 날이라고 스스로 적어두는 느낌.",
+    "expected_ids": [
+      "memo-151",
+      "memo-156",
+      "memo-157",
+      "memo-160"
+    ]
+  },
+  {
+    "id": "case-093",
+    "current_memo": "계획이 세밀해질수록 실행이 그대로인 게 이상하게 느껴진다.",
+    "expected_ids": [
+      "memo-153",
+      "memo-155",
+      "memo-159"
+    ]
+  },
+  {
+    "id": "case-094",
+    "current_memo": "할 일을 줄이고 목차나 첫 동작부터 잡는 날.",
+    "expected_ids": [
+      "memo-154",
+      "memo-156",
+      "memo-158"
+    ]
+  },
+  {
+    "id": "case-095",
+    "current_memo": "내일은 덜 겁먹고 바로 써보기로 적어두는 결심.",
+    "expected_ids": [
+      "memo-152",
+      "memo-157",
+      "memo-160"
+    ]
+  },
+  {
+    "id": "case-096",
+    "current_memo": "계획을 더 다듬기보다 바로 손대는 쪽이 필요한 날이다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-151",
+      "memo-152",
+      "memo-157",
+      "memo-159"
+    ]
+  },
+  {
+    "id": "case-097",
+    "current_memo": "완벽하게 쓰려다 아예 안 남기는 것보다 짧게라도 적는 쪽이 하루를 덜 흩어지게 한다.",
+    "expected_ids": [
+      "memo-161",
+      "memo-168",
+      "memo-169",
+      "memo-170"
+    ]
+  },
+  {
+    "id": "case-098",
+    "current_memo": "한 줄 메모만으로도 머릿속이 조금 정리되는 날이 있다.",
+    "expected_ids": [
+      "memo-162",
+      "memo-163",
+      "memo-166",
+      "memo-167"
+    ]
+  },
+  {
+    "id": "case-099",
+    "current_memo": "정확한 결론은 없어도 적어두면 마음이 덜 쌓인다.",
+    "expected_ids": [
+      "memo-164",
+      "memo-165",
+      "memo-169"
+    ]
+  },
+  {
+    "id": "case-100",
+    "current_memo": "길게 못 써도 짧은 기록이 생각 정리에 의외로 도움 된다.",
+    "expected_ids": [
+      "memo-161",
+      "memo-167",
+      "memo-168"
+    ]
+  },
+  {
+    "id": "case-101",
+    "current_memo": "적어두는 행위 자체가 하루 결을 다시 보게 한다.",
+    "expected_ids": [
+      "memo-165",
+      "memo-166",
+      "memo-170"
+    ]
+  },
+  {
+    "id": "case-102",
+    "current_memo": "완벽하게 쓰려다 아예 안 남기는 것보다 짧게라도 적는 쪽이 하루를 덜 흩어지게 한다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-161",
+      "memo-168",
+      "memo-169",
+      "memo-170"
+    ]
+  },
+  {
+    "id": "case-103",
+    "current_memo": "완벽하지 않아도 지금 내 리듬과 판단을 믿고 가는 날이 있다.",
+    "expected_ids": [
+      "memo-171",
+      "memo-173",
+      "memo-179",
+      "memo-180"
+    ]
+  },
+  {
+    "id": "case-104",
+    "current_memo": "기준을 조금 낮추고 스스로 허락하니 오히려 손이 덜 굳는다.",
+    "expected_ids": [
+      "memo-172",
+      "memo-174",
+      "memo-178"
+    ]
+  },
+  {
+    "id": "case-105",
+    "current_memo": "자책보다 조정 쪽으로 가는 선택이 더 맞는 날이 있다.",
+    "expected_ids": [
+      "memo-175",
+      "memo-176",
+      "memo-177"
+    ]
+  },
+  {
+    "id": "case-106",
+    "current_memo": "남이 보기 좋은 방식보다 내가 이어갈 수 있는 방식이 더 중요하다.",
+    "expected_ids": [
+      "memo-171",
+      "memo-177",
+      "memo-179"
+    ]
+  },
+  {
+    "id": "case-107",
+    "current_memo": "스스로를 너무 의심하지 않으면 하루 흔들림이 줄어드는 느낌.",
+    "expected_ids": [
+      "memo-173",
+      "memo-178",
+      "memo-180"
+    ]
+  },
+  {
+    "id": "case-108",
+    "current_memo": "완벽하지 않아도 지금 내 리듬과 판단을 믿고 가는 날이 있다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-171",
+      "memo-173",
+      "memo-179",
+      "memo-180"
+    ]
+  },
+  {
+    "id": "case-109",
+    "current_memo": "압박이 올라오면 집중보다 조급함이 먼저 커지는 느낌이다.",
+    "expected_ids": [
+      "memo-181",
+      "memo-183",
+      "memo-185",
+      "memo-190"
+    ]
+  },
+  {
+    "id": "case-110",
+    "current_memo": "해야 할 일 양보다 마음속 소음이 더 큰 날이 있다.",
+    "expected_ids": [
+      "memo-182",
+      "memo-186",
+      "memo-189"
+    ]
+  },
+  {
+    "id": "case-111",
+    "current_memo": "마감이나 압박이 손을 빠르게 하기보다 쉬운 일로 새게 만든다.",
+    "expected_ids": [
+      "memo-184",
+      "memo-187",
+      "memo-188"
+    ]
+  },
+  {
+    "id": "case-112",
+    "current_memo": "압박은 있는데 방향은 흐려져서 더 피곤한 날.",
+    "expected_ids": [
+      "memo-183",
+      "memo-188",
+      "memo-189"
+    ]
+  },
+  {
+    "id": "case-113",
+    "current_memo": "긴장 톤이 높아질수록 순서와 판단이 더 망가진다.",
+    "expected_ids": [
+      "memo-185",
+      "memo-186",
+      "memo-190"
+    ]
+  },
+  {
+    "id": "case-114",
+    "current_memo": "압박이 올라오면 집중보다 조급함이 먼저 커지는 느낌이다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-181",
+      "memo-183",
+      "memo-185",
+      "memo-190"
+    ]
+  },
+  {
+    "id": "case-115",
+    "current_memo": "대단한 성취보다 생활 박자가 맞는 날이 하루를 더 살린다.",
+    "expected_ids": [
+      "memo-191",
+      "memo-193",
+      "memo-196",
+      "memo-200"
+    ]
+  },
+  {
+    "id": "case-116",
+    "current_memo": "정해둔 순서대로 가는 것만으로도 난이도가 내려간다.",
+    "expected_ids": [
+      "memo-192",
+      "memo-194",
+      "memo-199"
+    ]
+  },
+  {
+    "id": "case-117",
+    "current_memo": "수면이나 식사 리듬이 맞으면 집중도 덜 무리하게 붙는다.",
+    "expected_ids": [
+      "memo-195",
+      "memo-196",
+      "memo-197"
+    ]
+  },
+  {
+    "id": "case-118",
+    "current_memo": "특별히 잘한 건 없어도 무너지지 않은 날의 안정감이 있다.",
+    "expected_ids": [
+      "memo-193",
+      "memo-198",
+      "memo-199"
+    ]
+  },
+  {
+    "id": "case-119",
+    "current_memo": "기세보다 리듬이 버팀목이 되는 날이 있다.",
+    "expected_ids": [
+      "memo-191",
+      "memo-195",
+      "memo-200"
+    ]
+  },
+  {
+    "id": "case-120",
+    "current_memo": "대단한 성취보다 생활 박자가 맞는 날이 하루를 더 살린다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-191",
+      "memo-193",
+      "memo-196",
+      "memo-200"
+    ]
+  },
+  {
+    "id": "case-121",
+    "current_memo": "메시지이나 대응 몇 번만 섞여도 하루 몰입 줄이 금방 끊긴다.",
+    "expected_ids": [
+      "memo-201",
+      "memo-202",
+      "memo-203",
+      "memo-208"
+    ]
+  },
+  {
+    "id": "case-122",
+    "current_memo": "큰일을 안 한 건 아닌데 하루가 한 덩어리로 안 느껴진다.",
+    "expected_ids": [
+      "memo-205",
+      "memo-206",
+      "memo-208",
+      "memo-209"
+    ]
+  },
+  {
+    "id": "case-123",
+    "current_memo": "조용히 앉아는 있었는데 손이 자꾸 다른 쪽으로 샌 날.",
+    "expected_ids": [
+      "memo-202",
+      "memo-204",
+      "memo-209",
+      "memo-210"
+    ]
+  },
+  {
+    "id": "case-124",
+    "current_memo": "바빴다기보다 자잘한 반응이 계속 리듬을 잘랐다.",
+    "expected_ids": [
+      "memo-201",
+      "memo-203",
+      "memo-206",
+      "memo-207"
+    ]
+  },
+  {
+    "id": "case-125",
+    "current_memo": "산만함이 시끄러움보다 전환이 많아서 생기는 느낌이다.",
+    "expected_ids": [
+      "memo-206",
+      "memo-207",
+      "memo-209"
+    ]
+  },
+  {
+    "id": "case-126",
+    "current_memo": "메시지이나 대응 몇 번만 섞여도 하루 몰입 줄이 금방 끊긴다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-201",
+      "memo-202",
+      "memo-203",
+      "memo-208"
+    ]
+  },
+  {
+    "id": "case-127",
+    "current_memo": "알림이나 대응 몇 번만 섞여도 하루 집중 줄이 금방 끊긴다.",
+    "expected_ids": [
+      "memo-211",
+      "memo-212",
+      "memo-213",
+      "memo-218"
+    ]
+  },
+  {
+    "id": "case-128",
+    "current_memo": "큰일을 안 한 건 아닌데 하루가 한 덩어리로 안 느껴진다.",
+    "expected_ids": [
+      "memo-215",
+      "memo-216",
+      "memo-218",
+      "memo-219"
+    ]
+  },
+  {
+    "id": "case-129",
+    "current_memo": "조용히 앉아는 있었는데 손이 자꾸 다른 쪽으로 샌 날.",
+    "expected_ids": [
+      "memo-212",
+      "memo-214",
+      "memo-219",
+      "memo-220"
+    ]
+  },
+  {
+    "id": "case-130",
+    "current_memo": "바빴다기보다 자잘한 반응이 계속 흐름을 잘랐다.",
+    "expected_ids": [
+      "memo-211",
+      "memo-213",
+      "memo-216",
+      "memo-217"
+    ]
+  },
+  {
+    "id": "case-131",
+    "current_memo": "산만함이 시끄러움보다 전환이 많아서 생기는 느낌이다.",
+    "expected_ids": [
+      "memo-216",
+      "memo-217",
+      "memo-219"
+    ]
+  },
+  {
+    "id": "case-132",
+    "current_memo": "알림이나 대응 몇 번만 섞여도 하루 집중 줄이 금방 끊긴다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-211",
+      "memo-212",
+      "memo-213",
+      "memo-218"
+    ]
+  },
+  {
+    "id": "case-133",
+    "current_memo": "캘린더에 짧게 적힌 약속인데 실제론 오늘 결 전체를 바꾼다.",
+    "expected_ids": [
+      "memo-221",
+      "memo-222",
+      "memo-223",
+      "memo-228"
+    ]
+  },
+  {
+    "id": "case-134",
+    "current_memo": "미팅나 외출은 앞뒤 준비까지 포함해서 에너지를 잡아먹는다.",
+    "expected_ids": [
+      "memo-221",
+      "memo-224",
+      "memo-229"
+    ]
+  },
+  {
+    "id": "case-135",
+    "current_memo": "약속 전후 메모를 같이 봐야 내 패턴이 더 잘 보일 것 같다.",
+    "expected_ids": [
+      "memo-225",
+      "memo-227",
+      "memo-230"
+    ]
+  },
+  {
+    "id": "case-136",
+    "current_memo": "생활 약속은 사소해 보여도 일 리듬을 자주 흔든다.",
+    "expected_ids": [
+      "memo-223",
+      "memo-226",
+      "memo-228",
+      "memo-230"
+    ]
+  },
+  {
+    "id": "case-137",
+    "current_memo": "시간은 남아 있는데 이미 흐름이 꺾여서 다시 들어가기 어렵다.",
+    "expected_ids": [
+      "memo-222",
+      "memo-223",
+      "memo-229"
+    ]
+  },
+  {
+    "id": "case-138",
+    "current_memo": "캘린더에 짧게 적힌 약속인데 실제론 오늘 결 전체를 바꾼다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-221",
+      "memo-222",
+      "memo-223",
+      "memo-228"
+    ]
+  },
+  {
+    "id": "case-139",
+    "current_memo": "일정표에 짧게 적힌 일정인데 실제론 하루 결 전체를 바꾼다.",
+    "expected_ids": [
+      "memo-231",
+      "memo-232",
+      "memo-233",
+      "memo-238"
+    ]
+  },
+  {
+    "id": "case-140",
+    "current_memo": "회의나 외출은 앞뒤 준비까지 포함해서 기운를 잡아먹는다.",
+    "expected_ids": [
+      "memo-231",
+      "memo-234",
+      "memo-239"
+    ]
+  },
+  {
+    "id": "case-141",
+    "current_memo": "일정 전후 메모를 같이 봐야 내 패턴이 더 잘 보일 것 같다.",
+    "expected_ids": [
+      "memo-235",
+      "memo-237",
+      "memo-240"
+    ]
+  },
+  {
+    "id": "case-142",
+    "current_memo": "생활 일정은 사소해 보여도 일 리듬을 자주 흔든다.",
+    "expected_ids": [
+      "memo-233",
+      "memo-236",
+      "memo-238",
+      "memo-240"
+    ]
+  },
+  {
+    "id": "case-143",
+    "current_memo": "시간은 남아 있는데 이미 흐름이 꺾여서 다시 들어가기 어렵다.",
+    "expected_ids": [
+      "memo-232",
+      "memo-233",
+      "memo-239"
+    ]
+  },
+  {
+    "id": "case-144",
+    "current_memo": "일정표에 짧게 적힌 일정인데 실제론 하루 결 전체를 바꾼다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-231",
+      "memo-232",
+      "memo-233",
+      "memo-238"
+    ]
+  },
+  {
+    "id": "case-145",
+    "current_memo": "중요한 건 아는데 착수 직전에서만 계속 맴도는 날.",
+    "expected_ids": [
+      "memo-241",
+      "memo-242",
+      "memo-245",
+      "memo-250"
+    ]
+  },
+  {
+    "id": "case-146",
+    "current_memo": "첫 문장 쓰기 전 단계에서 괜히 오래 머문다.",
+    "expected_ids": [
+      "memo-242",
+      "memo-243",
+      "memo-246",
+      "memo-247"
+    ]
+  },
+  {
+    "id": "case-147",
+    "current_memo": "일을 모르는 게 아니라 착수 자체가 잘 안 붙는다.",
+    "expected_ids": [
+      "memo-245",
+      "memo-248",
+      "memo-249"
+    ]
+  },
+  {
+    "id": "case-148",
+    "current_memo": "착수 버튼 하나 누르는 게 유독 크게 느껴지는 날.",
+    "expected_ids": [
+      "memo-244",
+      "memo-247",
+      "memo-249",
+      "memo-250"
+    ]
+  },
+  {
+    "id": "case-149",
+    "current_memo": "본격적으로 하기 전에 서성이는 시간이 길다.",
+    "expected_ids": [
+      "memo-241",
+      "memo-246",
+      "memo-248",
+      "memo-250"
+    ]
+  },
+  {
+    "id": "case-150",
+    "current_memo": "중요한 건 아는데 착수 직전에서만 계속 맴도는 날 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-241",
+      "memo-242",
+      "memo-245",
+      "memo-250"
+    ]
+  },
+  {
+    "id": "case-151",
+    "current_memo": "중요한 건 아는데 시작 직전에서만 계속 맴도는 날.",
+    "expected_ids": [
+      "memo-251",
+      "memo-252",
+      "memo-255",
+      "memo-260"
+    ]
+  },
+  {
+    "id": "case-152",
+    "current_memo": "첫 줄 쓰기 전 단계에서 괜히 오래 머문다.",
+    "expected_ids": [
+      "memo-252",
+      "memo-253",
+      "memo-256",
+      "memo-257"
+    ]
+  },
+  {
+    "id": "case-153",
+    "current_memo": "일을 모르는 게 아니라 착수 자체가 잘 안 붙는다.",
+    "expected_ids": [
+      "memo-255",
+      "memo-258",
+      "memo-259"
+    ]
+  },
+  {
+    "id": "case-154",
+    "current_memo": "시작 진입 하나 누르는 게 유독 크게 느껴지는 날.",
+    "expected_ids": [
+      "memo-254",
+      "memo-257",
+      "memo-259",
+      "memo-260"
+    ]
+  },
+  {
+    "id": "case-155",
+    "current_memo": "본격적으로 하기 전에 서성이는 시간이 길다.",
+    "expected_ids": [
+      "memo-251",
+      "memo-256",
+      "memo-258",
+      "memo-260"
+    ]
+  },
+  {
+    "id": "case-156",
+    "current_memo": "중요한 건 아는데 시작 직전에서만 계속 맴도는 날 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-251",
+      "memo-252",
+      "memo-255",
+      "memo-260"
+    ]
+  },
+  {
+    "id": "case-157",
+    "current_memo": "초안만 쓰면 되는데 자꾸 자료 분류나 폴더 분류부터 한다.",
+    "expected_ids": [
+      "memo-261",
+      "memo-263",
+      "memo-268",
+      "memo-269"
+    ]
+  },
+  {
+    "id": "case-158",
+    "current_memo": "바쁜 척은 했는데 본론 작업은 결국 안 건드렸다.",
+    "expected_ids": [
+      "memo-262",
+      "memo-264",
+      "memo-266",
+      "memo-270"
+    ]
+  },
+  {
+    "id": "case-159",
+    "current_memo": "만만한 일은 했는데 제일 중요한 건 그대로 남아 있다.",
+    "expected_ids": [
+      "memo-264",
+      "memo-265",
+      "memo-269",
+      "memo-270"
+    ]
+  },
+  {
+    "id": "case-160",
+    "current_memo": "세팅나 조사로 새면서 실제 시작은 계속 뒤로 밀린다.",
+    "expected_ids": [
+      "memo-263",
+      "memo-267",
+      "memo-268"
+    ]
+  },
+  {
+    "id": "case-161",
+    "current_memo": "안전한 일만 골라 쥐는 날은 성실한데도 찜찜하다.",
+    "expected_ids": [
+      "memo-265",
+      "memo-266",
+      "memo-269",
+      "memo-270"
+    ]
+  },
+  {
+    "id": "case-162",
+    "current_memo": "초안만 쓰면 되는데 자꾸 자료 분류나 폴더 분류부터 한다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-261",
+      "memo-263",
+      "memo-268",
+      "memo-269"
+    ]
+  },
+  {
+    "id": "case-163",
+    "current_memo": "초안만 쓰면 되는데 자꾸 자료 정리나 폴더 정리부터 한다.",
+    "expected_ids": [
+      "memo-271",
+      "memo-273",
+      "memo-278",
+      "memo-279"
+    ]
+  },
+  {
+    "id": "case-164",
+    "current_memo": "바쁜 척은 했는데 핵심 작업은 결국 안 건드렸다.",
+    "expected_ids": [
+      "memo-272",
+      "memo-274",
+      "memo-276",
+      "memo-280"
+    ]
+  },
+  {
+    "id": "case-165",
+    "current_memo": "만만한 일은 했는데 제일 중요한 건 그대로 남아 있다.",
+    "expected_ids": [
+      "memo-274",
+      "memo-275",
+      "memo-279",
+      "memo-280"
+    ]
+  },
+  {
+    "id": "case-166",
+    "current_memo": "준비나 탐색로 새면서 실제 착수은 계속 뒤로 밀린다.",
+    "expected_ids": [
+      "memo-273",
+      "memo-277",
+      "memo-278"
+    ]
+  },
+  {
+    "id": "case-167",
+    "current_memo": "안전한 일만 골라 쥐는 날은 부지런한데도 찜찜하다.",
+    "expected_ids": [
+      "memo-275",
+      "memo-276",
+      "memo-279",
+      "memo-280"
+    ]
+  },
+  {
+    "id": "case-168",
+    "current_memo": "초안만 쓰면 되는데 자꾸 자료 정리나 폴더 정리부터 한다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-271",
+      "memo-273",
+      "memo-278",
+      "memo-279"
+    ]
+  },
+  {
+    "id": "case-169",
+    "current_memo": "쉬어도 멈추는 느낌이 안 나고 자꾸 작은 일을 붙잡게 된다.",
+    "expected_ids": [
+      "memo-281",
+      "memo-282",
+      "memo-285",
+      "memo-288"
+    ]
+  },
+  {
+    "id": "case-170",
+    "current_memo": "휴식이 복구보다 손실처럼 느껴지는 쪽에 가깝다.",
+    "expected_ids": [
+      "memo-283",
+      "memo-284",
+      "memo-289",
+      "memo-290"
+    ]
+  },
+  {
+    "id": "case-171",
+    "current_memo": "몸은 멈췄는데 마음은 계속 다음 일을 찾는다.",
+    "expected_ids": [
+      "memo-283",
+      "memo-287",
+      "memo-288",
+      "memo-290"
+    ]
+  },
+  {
+    "id": "case-172",
+    "current_memo": "오늘은 안 하긴 했는데 제대로 쉰 것도 아닌 애매한 날.",
+    "expected_ids": [
+      "memo-282",
+      "memo-285",
+      "memo-286"
+    ]
+  },
+  {
+    "id": "case-173",
+    "current_memo": "멈추면 괜히 초조해져서 확인성 행동만 늘어난다.",
+    "expected_ids": [
+      "memo-281",
+      "memo-287",
+      "memo-289",
+      "memo-290"
+    ]
+  },
+  {
+    "id": "case-174",
+    "current_memo": "쉬어도 멈추는 느낌이 안 나고 자꾸 작은 일을 붙잡게 된다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-281",
+      "memo-282",
+      "memo-285",
+      "memo-288"
+    ]
+  },
+  {
+    "id": "case-175",
+    "current_memo": "쉬어도 쉬는 느낌이 안 나고 자꾸 작은 일을 붙잡게 된다.",
+    "expected_ids": [
+      "memo-291",
+      "memo-292",
+      "memo-295",
+      "memo-298"
+    ]
+  },
+  {
+    "id": "case-176",
+    "current_memo": "쉼이 회복보다 손해처럼 느껴지는 쪽에 가깝다.",
+    "expected_ids": [
+      "memo-293",
+      "memo-294",
+      "memo-299",
+      "memo-300"
+    ]
+  },
+  {
+    "id": "case-177",
+    "current_memo": "몸은 멈췄는데 마음은 계속 다음 일을 찾는다.",
+    "expected_ids": [
+      "memo-293",
+      "memo-297",
+      "memo-298",
+      "memo-300"
+    ]
+  },
+  {
+    "id": "case-178",
+    "current_memo": "오늘은 안 하긴 했는데 제대로 쉰 것도 아닌 애매한 날.",
+    "expected_ids": [
+      "memo-292",
+      "memo-295",
+      "memo-296"
+    ]
+  },
+  {
+    "id": "case-179",
+    "current_memo": "멈추면 괜히 불안해져서 확인성 행동만 늘어난다.",
+    "expected_ids": [
+      "memo-291",
+      "memo-297",
+      "memo-299",
+      "memo-300"
+    ]
+  },
+  {
+    "id": "case-180",
+    "current_memo": "쉬어도 쉬는 느낌이 안 나고 자꾸 작은 일을 붙잡게 된다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-291",
+      "memo-292",
+      "memo-295",
+      "memo-298"
+    ]
+  },
+  {
+    "id": "case-181",
+    "current_memo": "컨디션이 먼저 퍼지면 의욕 문제가 아니라 페이스 전체가 약해진다.",
+    "expected_ids": [
+      "memo-301",
+      "memo-305",
+      "memo-308",
+      "memo-310"
+    ]
+  },
+  {
+    "id": "case-182",
+    "current_memo": "잠이나 체력 영향이 생각보다 판단에 바로 붙는 날이 있다.",
+    "expected_ids": [
+      "memo-302",
+      "memo-306",
+      "memo-307"
+    ]
+  },
+  {
+    "id": "case-183",
+    "current_memo": "컨디션이 안 좋은 날은 계획보다 생존 쪽으로 기울게 된다.",
+    "expected_ids": [
+      "memo-303",
+      "memo-304",
+      "memo-309"
+    ]
+  },
+  {
+    "id": "case-184",
+    "current_memo": "마음보다 컨디션 상태가 하루 톤을 먼저 정하는 느낌.",
+    "expected_ids": [
+      "memo-301",
+      "memo-307",
+      "memo-308"
+    ]
+  },
+  {
+    "id": "case-185",
+    "current_memo": "지침하면 자책보다 구조를 줄여야 맞는 날이 있다.",
+    "expected_ids": [
+      "memo-305",
+      "memo-309",
+      "memo-310"
+    ]
+  },
+  {
+    "id": "case-186",
+    "current_memo": "컨디션이 먼저 퍼지면 의욕 문제가 아니라 페이스 전체가 약해진다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-301",
+      "memo-305",
+      "memo-308",
+      "memo-310"
+    ]
+  },
+  {
+    "id": "case-187",
+    "current_memo": "몸이 먼저 퍼지면 의욕 문제가 아니라 리듬 전체가 약해진다.",
+    "expected_ids": [
+      "memo-311",
+      "memo-315",
+      "memo-318",
+      "memo-320"
+    ]
+  },
+  {
+    "id": "case-188",
+    "current_memo": "잠이나 에너지 영향이 생각보다 판단에 바로 붙는 날이 있다.",
+    "expected_ids": [
+      "memo-312",
+      "memo-316",
+      "memo-317"
+    ]
+  },
+  {
+    "id": "case-189",
+    "current_memo": "컨디션이 안 좋은 날은 계획보다 생존 쪽으로 기울게 된다.",
+    "expected_ids": [
+      "memo-313",
+      "memo-314",
+      "memo-319"
+    ]
+  },
+  {
+    "id": "case-190",
+    "current_memo": "마음보다 몸 상태가 하루 톤을 먼저 정하는 느낌.",
+    "expected_ids": [
+      "memo-311",
+      "memo-317",
+      "memo-318"
+    ]
+  },
+  {
+    "id": "case-191",
+    "current_memo": "피곤하면 자책보다 구조를 줄여야 맞는 날이 있다.",
+    "expected_ids": [
+      "memo-315",
+      "memo-319",
+      "memo-320"
+    ]
+  },
+  {
+    "id": "case-192",
+    "current_memo": "몸이 먼저 퍼지면 의욕 문제가 아니라 리듬 전체가 약해진다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-311",
+      "memo-315",
+      "memo-318",
+      "memo-320"
+    ]
+  },
+  {
+    "id": "case-193",
+    "current_memo": "짧게 쉬고 나면 다시 사람 되는 느낌이 드는 날이 있다.",
+    "expected_ids": [
+      "memo-321",
+      "memo-322",
+      "memo-328",
+      "memo-330"
+    ]
+  },
+  {
+    "id": "case-194",
+    "current_memo": "전환 하나 잘 주면 페이스을 다시 붙일 수 있을 때가 있다.",
+    "expected_ids": [
+      "memo-323",
+      "memo-326",
+      "memo-327",
+      "memo-329"
+    ]
+  },
+  {
+    "id": "case-195",
+    "current_memo": "잠깐 걷거나 밖에 나갔다 오는 게 생각보다 하루를 살린다.",
+    "expected_ids": [
+      "memo-321",
+      "memo-324",
+      "memo-325",
+      "memo-328"
+    ]
+  },
+  {
+    "id": "case-196",
+    "current_memo": "짧은 리셋이 남은 시간의 결을 바꾸는 날.",
+    "expected_ids": [
+      "memo-322",
+      "memo-329",
+      "memo-330"
+    ]
+  },
+  {
+    "id": "case-197",
+    "current_memo": "환경을 바꾸는 것만으로도 판단 톤이 덜 거칠어질 수 있다.",
+    "expected_ids": [
+      "memo-325",
+      "memo-327",
+      "memo-328"
+    ]
+  },
+  {
+    "id": "case-198",
+    "current_memo": "짧게 쉬고 나면 다시 사람 되는 느낌이 드는 날이 있다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-321",
+      "memo-322",
+      "memo-328",
+      "memo-330"
+    ]
+  },
+  {
+    "id": "case-199",
+    "current_memo": "짧게 쉬고 나면 다시 사람 되는 느낌이 드는 날이 있다.",
+    "expected_ids": [
+      "memo-331",
+      "memo-332",
+      "memo-338",
+      "memo-340"
+    ]
+  },
+  {
+    "id": "case-200",
+    "current_memo": "전환 하나 잘 주면 흐름을 다시 붙일 수 있을 때가 있다.",
+    "expected_ids": [
+      "memo-333",
+      "memo-336",
+      "memo-337",
+      "memo-339"
+    ]
+  },
+  {
+    "id": "case-201",
+    "current_memo": "짧게 걷거나 밖에 나갔다 오는 게 생각보다 오늘를 살린다.",
+    "expected_ids": [
+      "memo-331",
+      "memo-334",
+      "memo-335",
+      "memo-338"
+    ]
+  },
+  {
+    "id": "case-202",
+    "current_memo": "짧은 회복이 남은 시간의 결을 바꾸는 날.",
+    "expected_ids": [
+      "memo-332",
+      "memo-339",
+      "memo-340"
+    ]
+  },
+  {
+    "id": "case-203",
+    "current_memo": "환경을 바꾸는 것만으로도 판단 톤이 덜 거칠어질 수 있다.",
+    "expected_ids": [
+      "memo-335",
+      "memo-337",
+      "memo-338"
+    ]
+  },
+  {
+    "id": "case-204",
+    "current_memo": "짧게 쉬고 나면 다시 사람 되는 느낌이 드는 날이 있다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-331",
+      "memo-332",
+      "memo-338",
+      "memo-340"
+    ]
+  },
+  {
+    "id": "case-205",
+    "current_memo": "사람 만나고 나면 겉으로 보인 나랑 실제 속 상태가 좀 어긋난다.",
+    "expected_ids": [
+      "memo-341",
+      "memo-342",
+      "memo-346",
+      "memo-349"
+    ]
+  },
+  {
+    "id": "case-206",
+    "current_memo": "말은 많이 했는데 정작 내 진짜 생각은 거의 안 남겼다.",
+    "expected_ids": [
+      "memo-342",
+      "memo-344",
+      "memo-349",
+      "memo-350"
+    ]
+  },
+  {
+    "id": "case-207",
+    "current_memo": "밖에선 괜찮았는데 혼자 오면 힘이 확 빠지는 날.",
+    "expected_ids": [
+      "memo-341",
+      "memo-343",
+      "memo-347",
+      "memo-348"
+    ]
+  },
+  {
+    "id": "case-208",
+    "current_memo": "관계보다 대응 모드가 길어져서 피곤한 느낌이다.",
+    "expected_ids": [
+      "memo-345",
+      "memo-348",
+      "memo-350"
+    ]
+  },
+  {
+    "id": "case-209",
+    "current_memo": "남들 앞의 나와 혼자 있을 때의 내가 꽤 다르게 느껴진다.",
+    "expected_ids": [
+      "memo-343",
+      "memo-346",
+      "memo-347"
+    ]
+  },
+  {
+    "id": "case-210",
+    "current_memo": "사람 만나고 나면 겉으로 보인 나랑 실제 속 상태가 좀 어긋난다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-341",
+      "memo-342",
+      "memo-346",
+      "memo-349"
+    ]
+  },
+  {
+    "id": "case-211",
+    "current_memo": "사람 만나고 나면 겉으로 보인 나랑 실제 속 상태가 좀 어긋난다.",
+    "expected_ids": [
+      "memo-351",
+      "memo-352",
+      "memo-356",
+      "memo-359"
+    ]
+  },
+  {
+    "id": "case-212",
+    "current_memo": "말은 많이 했는데 정작 내 진짜 생각은 거의 안 남겼다.",
+    "expected_ids": [
+      "memo-352",
+      "memo-354",
+      "memo-359",
+      "memo-360"
+    ]
+  },
+  {
+    "id": "case-213",
+    "current_memo": "밖에선 괜찮았는데 혼자 오면 에너지가 확 빠지는 날.",
+    "expected_ids": [
+      "memo-351",
+      "memo-353",
+      "memo-357",
+      "memo-358"
+    ]
+  },
+  {
+    "id": "case-214",
+    "current_memo": "관계보다 대응 모드가 길어져서 피곤한 느낌이다.",
+    "expected_ids": [
+      "memo-355",
+      "memo-358",
+      "memo-360"
+    ]
+  },
+  {
+    "id": "case-215",
+    "current_memo": "남들 앞의 나와 혼자 있을 때의 내가 꽤 다르게 느껴진다.",
+    "expected_ids": [
+      "memo-353",
+      "memo-356",
+      "memo-357"
+    ]
+  },
+  {
+    "id": "case-216",
+    "current_memo": "사람 만나고 나면 겉으로 보인 나랑 실제 속 상태가 좀 어긋난다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-351",
+      "memo-352",
+      "memo-356",
+      "memo-359"
+    ]
+  },
+  {
+    "id": "case-217",
+    "current_memo": "관계에서 조금 다정한 연결이 생기면 이상하게 긴장이 풀린다.",
+    "expected_ids": [
+      "memo-361",
+      "memo-363",
+      "memo-368",
+      "memo-370"
+    ]
+  },
+  {
+    "id": "case-218",
+    "current_memo": "짧은 안부나 한마디 하나가 하루 톤을 덜 거칠게 만든다.",
+    "expected_ids": [
+      "memo-362",
+      "memo-364",
+      "memo-369",
+      "memo-370"
+    ]
+  },
+  {
+    "id": "case-219",
+    "current_memo": "사람 때문에 지치는 날만 있는 건 아니라는 느낌이 들 때가 있다.",
+    "expected_ids": [
+      "memo-365",
+      "memo-366",
+      "memo-367"
+    ]
+  },
+  {
+    "id": "case-220",
+    "current_memo": "편한 대화 한 번이 혼자 있는 시간의 결도 바꿔준다.",
+    "expected_ids": [
+      "memo-361",
+      "memo-367",
+      "memo-368"
+    ]
+  },
+  {
+    "id": "case-221",
+    "current_memo": "문제가 풀리진 않아도 따뜻함이 하루의 톤은 바꿀 수 있다.",
+    "expected_ids": [
+      "memo-364",
+      "memo-369",
+      "memo-370"
+    ]
+  },
+  {
+    "id": "case-222",
+    "current_memo": "관계에서 조금 다정한 연결이 생기면 이상하게 긴장이 풀린다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-361",
+      "memo-363",
+      "memo-368",
+      "memo-370"
+    ]
+  },
+  {
+    "id": "case-223",
+    "current_memo": "관계에서 조금 따뜻한 연결이 생기면 이상하게 긴장이 풀린다.",
+    "expected_ids": [
+      "memo-371",
+      "memo-373",
+      "memo-378",
+      "memo-380"
+    ]
+  },
+  {
+    "id": "case-224",
+    "current_memo": "짧은 안부나 응원 하나가 하루 결을 덜 거칠게 만든다.",
+    "expected_ids": [
+      "memo-372",
+      "memo-374",
+      "memo-379",
+      "memo-380"
+    ]
+  },
+  {
+    "id": "case-225",
+    "current_memo": "사람 때문에 지치는 날만 있는 건 아니라는 느낌이 들 때가 있다.",
+    "expected_ids": [
+      "memo-375",
+      "memo-376",
+      "memo-377"
+    ]
+  },
+  {
+    "id": "case-226",
+    "current_memo": "가벼운 대화 한 번이 혼자 있는 시간의 결도 바꿔준다.",
+    "expected_ids": [
+      "memo-371",
+      "memo-377",
+      "memo-378"
+    ]
+  },
+  {
+    "id": "case-227",
+    "current_memo": "문제가 풀리진 않아도 따뜻함이 하루의 결은 바꿀 수 있다.",
+    "expected_ids": [
+      "memo-374",
+      "memo-379",
+      "memo-380"
+    ]
+  },
+  {
+    "id": "case-228",
+    "current_memo": "관계에서 조금 따뜻한 연결이 생기면 이상하게 긴장이 풀린다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-371",
+      "memo-373",
+      "memo-378",
+      "memo-380"
+    ]
+  },
+  {
+    "id": "case-229",
+    "current_memo": "통장 잔고이나 소비 생각이 켜지면 중요한 일보다 불안부터 줄이고 싶어진다.",
+    "expected_ids": [
+      "memo-381",
+      "memo-382",
+      "memo-385",
+      "memo-390"
+    ]
+  },
+  {
+    "id": "case-230",
+    "current_memo": "돈 문제는 금액보다 마음의 여유를 먼저 줄인다.",
+    "expected_ids": [
+      "memo-384",
+      "memo-386",
+      "memo-388",
+      "memo-390"
+    ]
+  },
+  {
+    "id": "case-231",
+    "current_memo": "소비 확인 한 번이 집중이나 판단 폭까지 같이 좁힌다.",
+    "expected_ids": [
+      "memo-381",
+      "memo-383",
+      "memo-387",
+      "memo-389"
+    ]
+  },
+  {
+    "id": "case-232",
+    "current_memo": "한도 생각이 올라오면 선택이 전반적으로 방어적으로 된다.",
+    "expected_ids": [
+      "memo-382",
+      "memo-385",
+      "memo-386"
+    ]
+  },
+  {
+    "id": "case-233",
+    "current_memo": "숫자보다 긴장 톤이 오래 남는 날이 있다.",
+    "expected_ids": [
+      "memo-383",
+      "memo-388",
+      "memo-389"
+    ]
+  },
+  {
+    "id": "case-234",
+    "current_memo": "통장 잔고이나 소비 생각이 켜지면 중요한 일보다 불안부터 줄이고 싶어진다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-381",
+      "memo-382",
+      "memo-385",
+      "memo-390"
+    ]
+  },
+  {
+    "id": "case-235",
+    "current_memo": "잔액이나 지출 생각이 켜지면 중요한 일보다 초조부터 줄이고 싶어진다.",
+    "expected_ids": [
+      "memo-391",
+      "memo-392",
+      "memo-395",
+      "memo-400"
+    ]
+  },
+  {
+    "id": "case-236",
+    "current_memo": "지출 문제는 금액보다 마음의 여유를 먼저 줄인다.",
+    "expected_ids": [
+      "memo-394",
+      "memo-396",
+      "memo-398",
+      "memo-400"
+    ]
+  },
+  {
+    "id": "case-237",
+    "current_memo": "지출 확인 한 번이 집중이나 판단 폭까지 같이 좁힌다.",
+    "expected_ids": [
+      "memo-391",
+      "memo-393",
+      "memo-397",
+      "memo-399"
+    ]
+  },
+  {
+    "id": "case-238",
+    "current_memo": "예산 생각이 올라오면 결정이 전반적으로 방어적으로 된다.",
+    "expected_ids": [
+      "memo-392",
+      "memo-395",
+      "memo-396"
+    ]
+  },
+  {
+    "id": "case-239",
+    "current_memo": "숫자보다 긴장 톤이 오래 남는 날이 있다.",
+    "expected_ids": [
+      "memo-393",
+      "memo-398",
+      "memo-399"
+    ]
+  },
+  {
+    "id": "case-240",
+    "current_memo": "잔액이나 지출 생각이 켜지면 중요한 일보다 초조부터 줄이고 싶어진다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-391",
+      "memo-392",
+      "memo-395",
+      "memo-400"
+    ]
+  },
+  {
+    "id": "case-241",
+    "current_memo": "자잘한 일이 밀릴수록 하루 끝에 거슬림이 길게 남는다.",
+    "expected_ids": [
+      "memo-401",
+      "memo-402",
+      "memo-408",
+      "memo-410"
+    ]
+  },
+  {
+    "id": "case-242",
+    "current_memo": "시간은 조금이면 되는데 늘 마지막까지 미루게 되는 일들이 있다.",
+    "expected_ids": [
+      "memo-401",
+      "memo-404",
+      "memo-406"
+    ]
+  },
+  {
+    "id": "case-243",
+    "current_memo": "사소한 생활 관리 일이 기분까지 건드리는 날이 있다.",
+    "expected_ids": [
+      "memo-405",
+      "memo-407",
+      "memo-409"
+    ]
+  },
+  {
+    "id": "case-244",
+    "current_memo": "별일 아닌데 끝나지 않아서 계속 마음 한쪽을 점유한다.",
+    "expected_ids": [
+      "memo-402",
+      "memo-403",
+      "memo-408",
+      "memo-410"
+    ]
+  },
+  {
+    "id": "case-245",
+    "current_memo": "자잘한 일들이 쌓이면 내가 느슨해진 사람처럼 느껴진다.",
+    "expected_ids": [
+      "memo-405",
+      "memo-407",
+      "memo-409"
+    ]
+  },
+  {
+    "id": "case-246",
+    "current_memo": "자잘한 일이 밀릴수록 하루 끝에 거슬림이 길게 남는다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-401",
+      "memo-402",
+      "memo-408",
+      "memo-410"
+    ]
+  },
+  {
+    "id": "case-247",
+    "current_memo": "작은 생활 일이 밀릴수록 하루 끝에 찝찝함이 길게 남는다.",
+    "expected_ids": [
+      "memo-411",
+      "memo-412",
+      "memo-418",
+      "memo-420"
+    ]
+  },
+  {
+    "id": "case-248",
+    "current_memo": "시간은 조금이면 되는데 늘 마지막까지 미루게 되는 일들이 있다.",
+    "expected_ids": [
+      "memo-411",
+      "memo-414",
+      "memo-416"
+    ]
+  },
+  {
+    "id": "case-249",
+    "current_memo": "사소한 생활 관리 일이 자존감까지 건드리는 날이 있다.",
+    "expected_ids": [
+      "memo-415",
+      "memo-417",
+      "memo-419"
+    ]
+  },
+  {
+    "id": "case-250",
+    "current_memo": "별일 아닌데 끝나지 않아서 계속 머릿속을 점유한다.",
+    "expected_ids": [
+      "memo-412",
+      "memo-413",
+      "memo-418",
+      "memo-420"
+    ]
+  },
+  {
+    "id": "case-251",
+    "current_memo": "자잘한 일들이 쌓이면 내가 흐트러진 사람처럼 느껴진다.",
+    "expected_ids": [
+      "memo-415",
+      "memo-417",
+      "memo-419"
+    ]
+  },
+  {
+    "id": "case-252",
+    "current_memo": "작은 생활 일이 밀릴수록 하루 끝에 찝찝함이 길게 남는다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-411",
+      "memo-412",
+      "memo-418",
+      "memo-420"
+    ]
+  },
+  {
+    "id": "case-253",
+    "current_memo": "작게라도 하나 끝내고 나면 하루가 덜 헛돈다.",
+    "expected_ids": [
+      "memo-421",
+      "memo-423",
+      "memo-427",
+      "memo-430"
+    ]
+  },
+  {
+    "id": "case-254",
+    "current_memo": "대단한 건 없어도 내 페이스대로 갔다는 느낌이 있다.",
+    "expected_ids": [
+      "memo-422",
+      "memo-426",
+      "memo-428",
+      "memo-429"
+    ]
+  },
+  {
+    "id": "case-255",
+    "current_memo": "속도보다 방향을 안 잃고 간 날의 안정감이 있다.",
+    "expected_ids": [
+      "memo-424",
+      "memo-425",
+      "memo-428"
+    ]
+  },
+  {
+    "id": "case-256",
+    "current_memo": "작은 마무리 하나가 하루 전체를 묶어주는 느낌.",
+    "expected_ids": [
+      "memo-421",
+      "memo-427",
+      "memo-430"
+    ]
+  },
+  {
+    "id": "case-257",
+    "current_memo": "많이 하진 못했어도 축이 있는 날이 있다.",
+    "expected_ids": [
+      "memo-422",
+      "memo-426",
+      "memo-429"
+    ]
+  },
+  {
+    "id": "case-258",
+    "current_memo": "작게라도 하나 끝내고 나면 하루가 덜 헛돈다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-421",
+      "memo-423",
+      "memo-427",
+      "memo-430"
+    ]
+  },
+  {
+    "id": "case-259",
+    "current_memo": "작게라도 하나 끝내고 나면 오늘가 덜 헛돈다.",
+    "expected_ids": [
+      "memo-431",
+      "memo-433",
+      "memo-437",
+      "memo-440"
+    ]
+  },
+  {
+    "id": "case-260",
+    "current_memo": "대단한 건 없어도 내 리듬대로 갔다는 느낌이 있다.",
+    "expected_ids": [
+      "memo-432",
+      "memo-436",
+      "memo-438",
+      "memo-439"
+    ]
+  },
+  {
+    "id": "case-261",
+    "current_memo": "속도보다 방향을 안 잃고 간 날의 편안함이 있다.",
+    "expected_ids": [
+      "memo-434",
+      "memo-435",
+      "memo-438"
+    ]
+  },
+  {
+    "id": "case-262",
+    "current_memo": "작은 완료 하나가 오늘 전체를 묶어주는 느낌.",
+    "expected_ids": [
+      "memo-431",
+      "memo-437",
+      "memo-440"
+    ]
+  },
+  {
+    "id": "case-263",
+    "current_memo": "많이 하진 못했어도 중심이 있는 날이 있다.",
+    "expected_ids": [
+      "memo-432",
+      "memo-436",
+      "memo-439"
+    ]
+  },
+  {
+    "id": "case-264",
+    "current_memo": "작게라도 하나 끝내고 나면 오늘가 덜 헛돈다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-431",
+      "memo-433",
+      "memo-437",
+      "memo-440"
+    ]
+  },
+  {
+    "id": "case-265",
+    "current_memo": "계속 비슷한 방식으로 막힌다는 걸 알아차리는 순간이 중요하다.",
+    "expected_ids": [
+      "memo-441",
+      "memo-442",
+      "memo-448",
+      "memo-450"
+    ]
+  },
+  {
+    "id": "case-266",
+    "current_memo": "상황보다 대응 순서가 비슷하게 반복되는 느낌이다.",
+    "expected_ids": [
+      "memo-441",
+      "memo-444",
+      "memo-445",
+      "memo-449"
+    ]
+  },
+  {
+    "id": "case-267",
+    "current_memo": "또 같은 흐름이라는 걸 보면 자책보다 틀를 봐야 할 것 같다.",
+    "expected_ids": [
+      "memo-446",
+      "memo-447",
+      "memo-450"
+    ]
+  },
+  {
+    "id": "case-268",
+    "current_memo": "다른 사건 같아도 메모들을 다시 보면 비슷한 냄새가 난다.",
+    "expected_ids": [
+      "memo-443",
+      "memo-447",
+      "memo-449"
+    ]
+  },
+  {
+    "id": "case-269",
+    "current_memo": "막히는 위치가 늘 비슷하다는 게 중요한 단서다.",
+    "expected_ids": [
+      "memo-442",
+      "memo-445",
+      "memo-448"
+    ]
+  },
+  {
+    "id": "case-270",
+    "current_memo": "계속 비슷한 방식으로 막힌다는 걸 알아차리는 순간이 중요하다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-441",
+      "memo-442",
+      "memo-448",
+      "memo-450"
+    ]
+  },
+  {
+    "id": "case-271",
+    "current_memo": "계속 비슷한 방식으로 막힌다는 걸 알아차리는 순간이 중요하다.",
+    "expected_ids": [
+      "memo-451",
+      "memo-452",
+      "memo-458",
+      "memo-460"
+    ]
+  },
+  {
+    "id": "case-272",
+    "current_memo": "상황보다 반응 순서가 비슷하게 반복되는 느낌이다.",
+    "expected_ids": [
+      "memo-451",
+      "memo-454",
+      "memo-455",
+      "memo-459"
+    ]
+  },
+  {
+    "id": "case-273",
+    "current_memo": "또 같은 패턴이라는 걸 보면 몰아세움보다 구조를 봐야 할 것 같다.",
+    "expected_ids": [
+      "memo-456",
+      "memo-457",
+      "memo-460"
+    ]
+  },
+  {
+    "id": "case-274",
+    "current_memo": "다른 사건 같아도 메모들을 다시 보면 비슷한 냄새가 난다.",
+    "expected_ids": [
+      "memo-453",
+      "memo-457",
+      "memo-459"
+    ]
+  },
+  {
+    "id": "case-275",
+    "current_memo": "막히는 위치가 늘 비슷하다는 게 중요한 힌트다.",
+    "expected_ids": [
+      "memo-452",
+      "memo-455",
+      "memo-458"
+    ]
+  },
+  {
+    "id": "case-276",
+    "current_memo": "계속 비슷한 방식으로 막힌다는 걸 알아차리는 순간이 중요하다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-451",
+      "memo-452",
+      "memo-458",
+      "memo-460"
+    ]
+  },
+  {
+    "id": "case-277",
+    "current_memo": "KEO는 감정만 모으는 게 아니라 생활 흐름과 실행 흔적도 같이 보여줘야 한다.",
+    "expected_ids": [
+      "memo-461",
+      "memo-462",
+      "memo-466",
+      "memo-470"
+    ]
+  },
+  {
+    "id": "case-278",
+    "current_memo": "생활 메모와 앱 아이디어가 따로가 아니라 한 사람의 흐름처럼 이어져야 한다.",
+    "expected_ids": [
+      "memo-462",
+      "memo-465",
+      "memo-470"
+    ]
+  },
+  {
+    "id": "case-279",
+    "current_memo": "추천이 맞더라도 왜 지금 이 메모가 나왔는지 설명이 있어야 설득된다.",
+    "expected_ids": [
+      "memo-463",
+      "memo-468"
+    ]
+  },
+  {
+    "id": "case-280",
+    "current_memo": "예전 다짐 자체보다 최근 반복 흐름을 먼저 보여주는 편이 덜 훈계 같다.",
+    "expected_ids": [
+      "memo-464",
+      "memo-466",
+      "memo-469"
+    ]
+  },
+  {
+    "id": "case-281",
+    "current_memo": "일정 전후 메모나 생활 패턴도 앱 안에서 되돌아보기 재료가 되어야 한다.",
+    "expected_ids": [
+      "memo-467",
+      "memo-469",
+      "memo-470"
+    ]
+  },
+  {
+    "id": "case-282",
+    "current_memo": "KEO는 감정만 모으는 게 아니라 생활 흐름과 실행 흔적도 같이 보여줘야 한다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-461",
+      "memo-462",
+      "memo-466",
+      "memo-470"
+    ]
+  },
+  {
+    "id": "case-283",
+    "current_memo": "KEO는 감정만 모으는 게 아니라 생활 맥락과 실행 로그도 같이 보여줘야 한다.",
+    "expected_ids": [
+      "memo-471",
+      "memo-472",
+      "memo-476",
+      "memo-480"
+    ]
+  },
+  {
+    "id": "case-284",
+    "current_memo": "생활 메모와 제품 아이디어가 따로가 아니라 한 사람의 맥락처럼 이어져야 한다.",
+    "expected_ids": [
+      "memo-472",
+      "memo-475",
+      "memo-480"
+    ]
+  },
+  {
+    "id": "case-285",
+    "current_memo": "추천이 맞더라도 왜 지금 이 메모가 나왔는지 설명이 있어야 납득된다.",
+    "expected_ids": [
+      "memo-473",
+      "memo-478"
+    ]
+  },
+  {
+    "id": "case-286",
+    "current_memo": "예전 다짐 자체보다 최근 반복 맥락을 먼저 보여주는 편이 덜 훈계 같다.",
+    "expected_ids": [
+      "memo-474",
+      "memo-476",
+      "memo-479"
+    ]
+  },
+  {
+    "id": "case-287",
+    "current_memo": "일정 전후 메모나 생활 패턴도 제품 안에서 회고 재료가 되어야 한다.",
+    "expected_ids": [
+      "memo-477",
+      "memo-479",
+      "memo-480"
+    ]
+  },
+  {
+    "id": "case-288",
+    "current_memo": "KEO는 감정만 모으는 게 아니라 생활 맥락과 실행 로그도 같이 보여줘야 한다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-471",
+      "memo-472",
+      "memo-476",
+      "memo-480"
+    ]
+  },
+  {
+    "id": "case-289",
+    "current_memo": "자기이해는 기분 이름보다 반복되는 반응 순서를 보는 쪽에 가깝다.",
+    "expected_ids": [
+      "memo-481",
+      "memo-483",
+      "memo-484",
+      "memo-489"
+    ]
+  },
+  {
+    "id": "case-290",
+    "current_memo": "바쁨이 중요한 결정을 미루는 가장 그럴듯한 변명이 되는 순간이 있다.",
+    "expected_ids": [
+      "memo-482",
+      "memo-487"
+    ]
+  },
+  {
+    "id": "case-291",
+    "current_memo": "회복을 미루면 판단도 같이 흐려진다는 감각이 있다.",
+    "expected_ids": [
+      "memo-485",
+      "memo-490"
+    ]
+  },
+  {
+    "id": "case-292",
+    "current_memo": "작은 완료나 패턴 인식이 자기신뢰에 닿는다는 문장들.",
+    "expected_ids": [
+      "memo-486",
+      "memo-489"
+    ]
+  },
+  {
+    "id": "case-293",
+    "current_memo": "메모은 저장보다 나중에 다시 연결될 때 의미가 생긴다.",
+    "expected_ids": [
+      "memo-481",
+      "memo-488"
+    ]
+  },
+  {
+    "id": "case-294",
+    "current_memo": "자기이해는 기분 이름보다 반복되는 반응 순서를 보는 쪽에 가깝다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-481",
+      "memo-483",
+      "memo-484",
+      "memo-489"
+    ]
+  },
+  {
+    "id": "case-295",
+    "current_memo": "자기이해는 기분 이름보다 반복되는 반응 순서를 보는 쪽에 가깝다.",
+    "expected_ids": [
+      "memo-491",
+      "memo-493",
+      "memo-494",
+      "memo-499"
+    ]
+  },
+  {
+    "id": "case-296",
+    "current_memo": "바쁨이 중요한 결정을 미루는 가장 그럴듯한 변명이 되는 순간이 있다.",
+    "expected_ids": [
+      "memo-492",
+      "memo-497"
+    ]
+  },
+  {
+    "id": "case-297",
+    "current_memo": "회복을 미루면 판단도 같이 흐려진다는 감각이 있다.",
+    "expected_ids": [
+      "memo-495",
+      "memo-500"
+    ]
+  },
+  {
+    "id": "case-298",
+    "current_memo": "작은 완료나 패턴 인식이 자기신뢰에 닿는다는 문장들.",
+    "expected_ids": [
+      "memo-496",
+      "memo-499"
+    ]
+  },
+  {
+    "id": "case-299",
+    "current_memo": "기록은 저장보다 나중에 다시 보게될 때 의미가 생긴다.",
+    "expected_ids": [
+      "memo-491",
+      "memo-498"
+    ]
+  },
+  {
+    "id": "case-300",
+    "current_memo": "자기이해는 기분 이름보다 반복되는 반응 순서를 보는 쪽에 가깝다 같은 흐름이 또 보인다.",
+    "expected_ids": [
+      "memo-491",
+      "memo-493",
+      "memo-494",
+      "memo-499"
     ]
   }
 ]
